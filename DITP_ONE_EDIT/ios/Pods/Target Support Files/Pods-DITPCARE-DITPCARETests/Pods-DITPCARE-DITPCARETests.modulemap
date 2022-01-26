@@ -1,0 +1,6 @@
+module Pods_DITPCARE_DITPCARETests {
+  umbrella header "Pods-DITPCARE-DITPCARETests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "302523589217",
+    "firebase_url": "https://thaitradefair-default-rtdb.firebaseio.com",
+    "project_id": "thaitradefair",
+    "storage_bucket": "thaitradefair.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302523589217:android:2bdc526e169d9d7bd2c020",
+        "android_client_info": {
+          "package_name": "com.ditp.ditpone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302523589217-ma43s5ak0o2iadik8qv0jm515pd8qv3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8WZNsrYk49Moxp9dHKtzF4TXMc38Tdbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302523589217-ma43s5ak0o2iadik8qv0jm515pd8qv3f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "302523589217-tuqrbh0v3pn1fuhtf49ns31nbb5u3n1k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ditp.app.one"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

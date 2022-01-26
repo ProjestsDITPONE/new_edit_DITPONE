@@ -1,0 +1,50 @@
+{
+  "_from": "react-native-sortable-gridview",
+  "_id": "react-native-sortable-gridview@1.1.5",
+  "_inBundle": false,
+  "_integrity": "sha512-7EWf2oOKChARn8Z3KVIZ9O/vZ+kNPBMpoN4tbo5NzYIPXeaUhxjteXyXmEnZZu6+sC7fCQm1PdMh3alltVqLjw==",
+  "_location": "/react-native-sortable-gridview",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-sortable-gridview",
+    "name": "react-native-sortable-gridview",
+    "escapedName": "react-native-sortable-gridview",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-sortable-gridview/-/react-native-sortable-gridview-1.1.5.tgz",
+  "_shasum": "8b34d7d8b4fe14eee6a2b521c8143cca74ea7f6d",
+  "_spec": "react-native-sortable-gridview",
+  "_where": "/Users/ibc_mac0021/Desktop/DITPCARE",
+  "author": {
+    "name": "Kyle Cheng"
+  },
+  "bugs": {
+    "url": "https://github.com/ge6285790/react-native-sortable-gridview/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "react-fast-compare": "^2.0.4"
+  },
+  "deprecated": false,
+  "description": "Deprecate",
+  "homepage": "https://github.com/ge6285790/react-native-sortable-gridview#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-sortable-gridview",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ge6285790/react-native-sortable-gridview.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.5"
+}

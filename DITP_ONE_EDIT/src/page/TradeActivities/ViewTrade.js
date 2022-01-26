@@ -1787,7 +1787,7 @@ class ViewTrade extends React.Component {
                     fontSize: 20,
                     textAlign: 'center',
                   }}>
-                  ค้นหา
+                  {I18n.t('translate_Seachcontry')}
                 </Text>
               </TouchableOpacity>
             </View>
@@ -2218,7 +2218,7 @@ class ViewTrade extends React.Component {
                             this.setState({ckhide: true});
                           }}
                           style={Styles.popupTexthideText}>
-                          แสดงรายละเอียด
+                          {I18n.t('transalte_show_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -2770,7 +2770,7 @@ class ViewTrade extends React.Component {
                       color: '#FFFFFF',
                       fontSize: 25,
                     }}>
-                    ค้นหา
+                    {I18n.t('translate_Seachcontry')}
                   </Text>
                 </TouchableOpacity>
               </View>

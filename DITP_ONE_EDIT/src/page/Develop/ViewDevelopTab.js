@@ -2223,7 +2223,7 @@ class ViewDevelop extends React.Component {
                             this.setState({ckhide2: true});
                           }}
                           style={Styles.popupTexthideText}>
-                          แสดงรายละเอียด
+                          {I18n.t('transalte_show_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -2821,7 +2821,7 @@ class ViewDevelop extends React.Component {
                         fontSize: 20,
                         textAlign: 'center',
                       }}>
-                      ค้นหา
+                      {I18n.t('translate_Seachcontry')}
                     </Text>
                   </TouchableOpacity>
                 </View>
@@ -2846,7 +2846,7 @@ class ViewDevelop extends React.Component {
                     left: 48,
                     top: 3.5,
                   }}>
-                  ค้นหาขั้นสูง
+                  {I18n.t('translate_searchAdvanced')}
                 </Text>
               </TouchableOpacity>
             </View>
@@ -3217,7 +3217,7 @@ class ViewDevelop extends React.Component {
                         fontSize: 20,
                         textAlign: 'center',
                       }}>
-                      ค้นหา
+                      {I18n.t('translate_Seachcontry')}
                     </Text>
                   </TouchableOpacity>
                 </View>
@@ -3242,7 +3242,7 @@ class ViewDevelop extends React.Component {
                     left: 48,
                     top: 3.5,
                   }}>
-                  ค้นหาขั้นสูง
+                  {I18n.t('translate_searchAdvanced')}
                 </Text>
               </TouchableOpacity>
             </View>

@@ -3322,7 +3322,7 @@ class Activities extends React.Component {
                         marginTop: 10,
                       }}>
                       <Text style={{color: '#FFFFFF', fontSize: 18}}>
-                        {'เรียนต่อ'}
+                        {I18n.t('translate_learn')}
                       </Text>
                     </TouchableOpacity>
                   )}

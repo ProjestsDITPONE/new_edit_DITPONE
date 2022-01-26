@@ -126,7 +126,7 @@ class DevelopProfile extends React.Component {
       ],
       Allcontents1: [
         {
-          title: 'ข้อมูลนิติบุคคล',
+          title: I18n.t('transalte_Juristic_Person_Information'),
         },
       ],
 

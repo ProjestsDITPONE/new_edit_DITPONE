@@ -212,7 +212,7 @@ class DevlopRegister extends React.Component {
       ],
       Allcontents1: [
         {
-          title: "ข้อมูลนิติบุคคล",
+          title: I18n.t('transalte_Juristic_Person_Information'),
         },
       ],
 
@@ -9965,7 +9965,7 @@ class DevlopRegister extends React.Component {
                                             color: "#FFFFFF",
                                           }}
                                         >
-                                          ค้นหา
+                                          {I18n.t('translate_Seachcontry')}
                                         </Text>
                                       </TouchableOpacity>
                                     </View>
@@ -11701,7 +11701,7 @@ class DevlopRegister extends React.Component {
                                             color: "#FFFFFF",
                                           }}
                                         >
-                                          ค้นหา
+                                          {I18n.t('translate_Seachcontry')}
                                         </Text>
                                       </TouchableOpacity>
                                     </View>
@@ -12708,7 +12708,7 @@ class DevlopRegister extends React.Component {
                                                 marginHorizontal: 35,
                                               }}
                                             >
-                                              {"ประเทศ"}
+                                              {I18n.t('translate_country')}
                                             </Text>
                                             <Text
                                               style={{
@@ -12819,7 +12819,7 @@ class DevlopRegister extends React.Component {
                                                         marginHorizontal: 15,
                                                       }}
                                                     >
-                                                      {"ประเทศ"}
+                                                     {I18n.t('translate_country')}
                                                     </Text>
                                                   )}
                                                 </View>
@@ -13791,7 +13791,7 @@ class DevlopRegister extends React.Component {
                                               marginHorizontal: 10,
                                             }}
                                           >
-                                            ประเทศ
+                                            {I18n.t('translate_country')}
                                           </Text>
                                           <Text
                                             style={{
@@ -15981,7 +15981,7 @@ class DevlopRegister extends React.Component {
                               textAlign: "center",
                             }}
                           >
-                            ข้าพเจ้ายอมรับเงื่อนไขข้อกำหนดของกรม
+                            {I18n.t('transalte_accept_the_terms')}
                           </Text>
                         </View>
                         <TouchableOpacity
@@ -15999,7 +15999,7 @@ class DevlopRegister extends React.Component {
                               textDecorationLine: "underline",
                             }}
                           >
-                            อ่านเงื่อนไขข้อกำหนดของกรม
+                            {I18n.t('transalte_Read_terms')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -16357,7 +16357,7 @@ class DevlopRegister extends React.Component {
               <Text
                 style={{ textAlign: "center", fontSize: 20, color: "#6f7d91" }}
               >
-                เพิ่มข้อมูลผู้ติดต่อ
+                {I18n.t('transalte_Add_contact_info')}
               </Text>
             </View>
 
@@ -16422,7 +16422,7 @@ class DevlopRegister extends React.Component {
                       fontSize: 20,
                     }}
                   >
-                    ค้นหา
+                    {I18n.t('translate_Seachcontry')}
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -16574,7 +16574,7 @@ class DevlopRegister extends React.Component {
                     color: "#20416e",
                   }}
                 >
-                  ตรวจสอบผู้เข้าร่วมกิจกกรม
+                  {I18n.t('transalte_Check_participants')}
                 </Text>
               </View>
               <View style={{ height: 130 }}>
@@ -16589,7 +16589,7 @@ class DevlopRegister extends React.Component {
 
               <View
                 style={{
-                  height: Platform.OS === "android" ? 40 : 0,
+                  height: 35,
                   borderRadius: 18,
                   borderWidth: 1,
                   borderColor: "#dadada",
@@ -16654,7 +16654,7 @@ class DevlopRegister extends React.Component {
                     fontSize: 20,
                   }}
                 >
-                  ค้นหา
+                  {I18n.t('translate_Seachcontry')}
                 </Text>
               </TouchableOpacity>
             </ScrollView>
@@ -18190,7 +18190,7 @@ class DevlopRegister extends React.Component {
                                     marginTop: 5,
                                   }}
                                 >
-                                  ลบผู้เข้าร่วม
+                                  {I18n.t('transalte_Bt_del_participants')}
                                 </Text>
                               </TouchableOpacity>
                               <TouchableOpacity
@@ -18309,7 +18309,7 @@ class DevlopRegister extends React.Component {
                                       marginTop: 3.5,
                                     }}
                                   >
-                                    ลบผู้เข้าร่วม
+                                    {I18n.t('transalte_Bt_del_participants')}
                                   </Text>
                                 </TouchableOpacity>
                               </View>
@@ -18487,7 +18487,7 @@ class DevlopRegister extends React.Component {
                     color: "#FFFFFF",
                   }}
                 >
-                  ยืนยันการสมัคร
+                  {I18n.t('transalte_Bt_confirmation_apply')}
                 </Text>
               </TouchableOpacity>
             </View>

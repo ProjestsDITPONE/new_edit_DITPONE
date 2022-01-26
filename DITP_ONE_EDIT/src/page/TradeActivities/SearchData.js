@@ -1856,7 +1856,7 @@ class SearchData extends Component {
                                 {this.state.valueSelectActivity3dev ===
                                 undefined ? (
                                   <Text style={Styles2.viewckText}>
-                                    {'   '}ความต้องการ
+                                   {I18n.t('transalte_Demand')}
                                   </Text>
                                 ) : (
                                   <Text
@@ -2234,7 +2234,7 @@ class SearchData extends Component {
                               fontSize: 20,
                               textAlign: 'center',
                             }}>
-                            ค้นหา
+                            {I18n.t('translate_Seachcontry')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2507,7 +2507,7 @@ class SearchData extends Component {
                             textAlign: 'center',
                             textDecorationLine: 'underline',
                           }}>
-                          แสดงรายละเอียด
+                          {I18n.t('transalte_show_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"

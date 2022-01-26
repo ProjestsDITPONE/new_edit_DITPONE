@@ -1836,11 +1836,11 @@ class SearchAdvancedDevelop extends Component {
                             placeholder={{
                               label:
                                 I18n.locale === 'th'
-                                  ? 'ความต้องการทั้งหมด'
+                                  ? I18n.t('transalte_all_requirements')
                                   : 'All',
                               value:
                                 I18n.locale === 'th'
-                                  ? 'ความต้องการทั้งหมด'
+                                  ? I18n.t('transalte_all_requirements')
                                   : 'All',
                             }}
                             onValueChange={(value, index) => {
@@ -1866,7 +1866,7 @@ class SearchAdvancedDevelop extends Component {
                                 {this.state.valueSelectActivity3dev ===
                                 undefined ? (
                                   <Text style={Styles2.viewText}>
-                                    {'   '}ความต้องการทั้งหมด
+                                    {I18n.t('transalte_all_requirements')}
                                   </Text>
                                 ) : (
                                   <Text
@@ -2172,7 +2172,7 @@ class SearchAdvancedDevelop extends Component {
                               fontSize: 20,
                               textAlign: 'center',
                             }}>
-                            ค้นหา
+                            {I18n.t('translate_Seachcontry')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2440,7 +2440,7 @@ class SearchAdvancedDevelop extends Component {
                             textAlign: 'center',
                             textDecorationLine: 'underline',
                           }}>
-                          แสดงรายละเอียด
+                          {I18n.t('transalte_show_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"

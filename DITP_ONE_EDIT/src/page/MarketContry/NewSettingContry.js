@@ -477,7 +477,7 @@ class NewSettingContry extends React.Component {
             <View style={{paddingHorizontal: '13%', marginTop: 15}}>
               <View style={{marginBottom: 10}}>
                 <Text style={Style.TextCountry}>
-                  {I18n.t('translate_COUNTRY')}
+                  {I18n.t('translate_Country')}
                 </Text>
               </View>
               <View

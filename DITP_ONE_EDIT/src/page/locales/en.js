@@ -45,6 +45,7 @@ export default {
   translate_good3: 'Revamp',
   translate_goodDetail: 'Details',
   transalte_Hide_details: 'Hide details',
+  transalte_ProductPLZ : 'Please select the market and products you are interested in.',
 
   //Setting
   translate_changelang: 'Change language',
@@ -54,7 +55,6 @@ export default {
   transalte_set_Passcode: 'Complete Passcode',
   transalte_Confirm_Change_Passcode: 'Confirm Change Passcode',
   transalte_Change_Passcode: 'Change Passcode',
-  transalte_Set_Passcode: 'Complete PassCode',
   translate_Policy: 'Policy',
   translate_RegisterPolicy: 'Policy',
   translate_Canclemember: 'Cancel Membership DITP ONE',
@@ -152,6 +152,9 @@ export default {
   transalte_brand_name: 'Brand Name',
   transalte_select_product_group: 'Select Product Group',
   transalte_please_select: 'Please Select',
+  transalte_savefavorites:'Save Favorites',
+  transalte_Searchcontinents:'Search Continent And Country',
+  transalte_marketofinterest:'Market Of Interest',
 
   //TradeActivitiesScreen (กิจกรรมส่งเสริมการค้าระหว่างประเทศ) &&ViewTrade
   translate_Toppick: 'TOP Pick',
@@ -163,6 +166,7 @@ export default {
   translate_Category_activities: 'All Activity Types',
   transalte_ButtonSearch: 'Search',
   transalte_Demand: 'Need',
+  transalte_all_requirements: 'All Requirements',
   translate_activities: 'Activities',
   translate_Numberexposure: 'Nº of opening slots',
   translate_Products: 'Products',
@@ -282,8 +286,9 @@ export default {
   translate_Readmore_Deve: 'Detail',
   translate_Recommended_course: 'Recommended programmes',
   translate_Title_DevelopScreen: 'All Training',
-  translate_Title_AllDEV: 'ฝึกอบรม/สัมมนา',
+  translate_Title_AllDEV: 'Training/Seminars',
   translate_Title_Elearning: 'E-Learning',
+  transalte_Read_terms: 'Read the terms and conditions of the department.',
 
   // สถิติการค้าระหว่างประเทศ StatisticsScreen
   translate_StatisticsH: 'Statistics International',
@@ -324,7 +329,7 @@ export default {
   translate_Fine_filter: 'Advanced filter',
   translate_Cancel: 'Cancel',
   translate_Date: 'MM/YYYY',
-  translate_COUNTRY: 'Country',
+  // translate_COUNTRY: 'Country',
   translate_PRODUCTS: 'Products',
   translate_SaveCconnect: 'บันทึกเงื่อนไขรับข้อมูล',
   translate_Clean: 'ล้าง',
@@ -770,6 +775,7 @@ export default {
   DeleteNonti: 'ลบรายการแจ้งเตือน',
   DeleteNontiAll: 'ลบการแจ้งเตือน',
 
+
   //แจ้งยกเลิกสมาชิก
   translate_ReportUn: 'Notice Of Cancellation Of My Account',
   translate_nameUn: 'Name',
@@ -993,7 +999,7 @@ export default {
   translate_place: 'สถานที่จัดกิจกรรม',
   translate_DataRegister: 'วันที่รับสมัคร',
   translate_group_product: 'กลุ่มสินค้า',
-  translate_ThanksDITP: 'ขอบคุณสำหรับการประเมิน',
+  translate_ThanksDITP: 'Thank you for the evaluation',
 
   transalte_registersme: 'การสมัคร',
   transalte_Plzregister: 'ขอรับการสนับสนุนเข้าร่วมกิจกรรม',
@@ -1017,7 +1023,7 @@ export default {
   //register
   transalte_registerdevlop: 'Training activities and Seminars',
   transalte_ThailandWeek: 'Thailand Week',
-  transalte_evaluation: 'แบบประเมินการฝึกอบรม/สัมมนา',
+  transalte_evaluation: 'Training/Seminar Assessment Form',
   transalte_analyze: 'Analyze Trade Opportunities (AI)',
   transalte_Registers: 'Register to visit\nExhibitions (Visitor)',
   transalte_Done_text: 'Done',

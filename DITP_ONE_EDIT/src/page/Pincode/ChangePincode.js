@@ -11,7 +11,7 @@ import ReactNativePinView from 'react-native-pin-view-edit';
 import EncryptedStorage from 'react-native-encrypted-storage';
 import Icon4 from 'react-native-vector-icons/AntDesign';
 import {ViewScale} from '../../config/ViewScale'
-
+import I18n from '../../utils/I18n';
 
 
 const ChangePincodepassword = ({navigation, route}) => {
@@ -201,7 +201,7 @@ const ChangePincodepassword = ({navigation, route}) => {
               color: 'rgba(255,255,255,0.7)',
               fontSize: 30,
             }}>
-            กรอก Passcode
+            {I18n.t('transalte_set_Passcode')}
           </Text>
           <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView
@@ -246,7 +246,7 @@ const ChangePincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize: 30, color: '#FFF'}}>ลบ</Text>
+                    <Text style={{fontSize: 30, color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
                   </View>
                 ) : (
                   undefined
@@ -324,7 +324,7 @@ const ChangePincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize: 30, color: '#FFF'}}>ลบ</Text>
+                    <Text style={{fontSize: 30, color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
                   </View>
                 ) : (
                   undefined
@@ -403,7 +403,7 @@ const ChangePincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize: 30, color: '#FFF'}}>ลบ</Text>
+                    <Text style={{fontSize: 30, color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
                   </View>
                 ) : (
                   undefined

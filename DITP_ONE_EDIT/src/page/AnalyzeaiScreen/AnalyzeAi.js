@@ -1880,7 +1880,7 @@ class AnalyzeAi extends React.Component {
                  }}>
                  <View
                    style={{fontSize: 12, color: '#4b4b4b', marginHorizontal: 5}}>
-                   <Text>ข่าวเชิงลบ</Text>
+                   <Text>{I18n.t('translate_negative_news')}</Text>
                  </View>
                  <View
                    style={{
@@ -1944,7 +1944,7 @@ class AnalyzeAi extends React.Component {
                  />
                  <View
                    style={{fontSize: 12, color: '#4b4b4b', marginHorizontal: 5}}>
-                   <Text>ข่าวเชิงบวก</Text>
+                   <Text>{I18n.t('translate_positive_news')}</Text>
                  </View>
                </View>
                <View style={{flexDirection: 'row', marginHorizontal: 10}}>
@@ -2079,7 +2079,7 @@ class AnalyzeAi extends React.Component {
                        fontFamily: 'Mitr-Regular',
                        color: '#FFF',
                      }}>
-                     {'ล้างทั้งหมด'}
+                     {I18n.t('transalte_Bt_clear_all')}
                    </Text>
                  </TouchableOpacity>
                </View>
@@ -2122,7 +2122,7 @@ class AnalyzeAi extends React.Component {
                        style={Styles.fromTouchableOpacity}>
                        <View style={Styles.view1}>
                          <View style={Styles.view2}>
-                           <Text style={Styles.viewtext3}>ช่วงเวลา</Text>
+                           <Text style={Styles.viewtext3}>{I18n.t('transalte_tradeActivities_search_time')}</Text>
                          </View>
    
                          {/* <View style={Styles.viewivon4}>
@@ -2448,7 +2448,7 @@ class AnalyzeAi extends React.Component {
                            fontSize: 20,
                            textAlign: 'center',
                          }}>
-                         ค้นหา
+                         {I18n.t('translate_Seachcontry')}
                        </Text>
                      </TouchableOpacity>
                    </View>
@@ -2508,7 +2508,7 @@ class AnalyzeAi extends React.Component {
                          fontSize: 20,
                          textAlign: 'center',
                        }}>
-                       ประเทศ
+                       {I18n.t('translate_Country')}
                      </Text>
                    </View>
                  </TouchableOpacity>

@@ -2067,7 +2067,7 @@ class TradeActivitiesScreen extends React.Component {
                                 );
                               }}
                               style={{flex: 1, justifyContent: 'center'}}>
-                              <Text style={Styles.searchText1}>ค้นหา</Text>
+                              <Text style={Styles.searchText1}>{I18n.t('translate_Seachcontry')}</Text>
                             </TouchableOpacity>
                           </View>
                           <View
@@ -2150,14 +2150,14 @@ class TradeActivitiesScreen extends React.Component {
                               }
                               value={
                                 this.state.valueSelectActivity3dev === undefined
-                                  ? 'ความต้องการ'
+                                  ? I18n.t('transalte_Demand')
                                   : this.state.valueSelectActivity3dev
                               }
                               onValueChange={(value, index) => {
                                 this.setState({
                                   valueSelectActivity3dev:
                                     index === 0
-                                      ? 'ความต้องการ'
+                                      ? I18n.t('transalte_Demand')
                                       : this.state.dataproductNeed[index - 1]
                                           .Need,
                                   valueindexdev:
@@ -2205,7 +2205,7 @@ class TradeActivitiesScreen extends React.Component {
                                   {this.state.valueSelectActivity3dev ===
                                   undefined ? (
                                     <Text style={Styles.viewckText}>
-                                      {'   '}ความต้องการ
+                                      {I18n.t('transalte_Demand')}
                                     </Text>
                                   ) : (
                                     <Text
@@ -2888,7 +2888,7 @@ class TradeActivitiesScreen extends React.Component {
                             textAlign: 'center',
                             textDecorationLine: 'underline',
                           }}>
-                          แสดงรายละเอียด
+                          {I18n.t('transalte_show_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -3359,7 +3359,7 @@ class TradeActivitiesScreen extends React.Component {
                             this.setState({ckhide2: true});
                           }}
                           style={Styles.popupTexthideText}>
-                          แสดงรายละเอียด
+                          {I18n.t('transalte_show_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"

@@ -73,6 +73,8 @@ export default {
     '\t\tคุณต้องการที่จะยกเลิก\nคำขอการแจ้งยกเลิกการเป็นสมาชิกกรม ?',
   translate_QuesSelec: 'เลือกได้มากกว่า 1 ข้อ',
   transalte_Delete_Code: 'ลบ',
+  transalte_Read_terms: 'อ่านเงื่อนไขข้อกำหนดของกรม.',
+
 
   //ProfileActivity ตรวจสอบสถานะ
   translate_ViewProfile: 'ดูรูปโปรไฟล์',
@@ -169,6 +171,7 @@ export default {
   translate_Category_activities: 'ประเภทกิจกรรมทั้งหมด',
   transalte_ButtonSearch: 'ค้นหา', 
   transalte_Demand: 'ความต้องการ',
+  transalte_all_requirements: 'ความต้องการทั้งหมด',
   translate_activities: 'กิจกรรม',
   translate_Numberexposure: 'จำนวนที่เปิดรับ',
   translate_Products: 'สินค้า',
@@ -335,12 +338,16 @@ export default {
   translate_Fine_filter: 'ตั้งค่าตัวกรอง',
   translate_Cancel: 'ยกเลิก',
   translate_Date: 'เดือน/ปี',
-  translate_COUNTRY: 'ประเทศ',
+  // translate_COUNTRY: 'ประเทศ',
   translate_PRODUCTS: 'สินค้า',
   translate_SaveCconnect: 'บันทึกเป็นรายการโปรด',
   translate_Clean: 'ล้าง',
   translate_Aceept: 'ตกลง',
   translate_ALL_maket:'ทั้งหมด',
+  transalte_ProductPLZ : 'โปรดเลือกตลาดและสินค้าที่ท่านสนใจ',
+  transalte_savefavorites:' บันทึกรายการโปรด',
+  transalte_Searchcontinents:'ค้นหาทวีปและประเทศ',
+  transalte_marketofinterest:'ตลาดที่สนใจ',
 
   //ตะกร้าของฉัน Mybasket
   translate_Mybasket: 'รายการโปรด',

@@ -1,0 +1,66 @@
+const DataBrand = [
+  {
+    name: 'Thailand Trust Mark',
+    img: require('../../image/bitmap.png'),
+    img2: require('../../image/ThaiTrust.png'),
+    accept: 'ได้รับแล้ว',
+    naccept: 'สมัครรางวัล',
+  },
+  {
+    name: 'THAILAND STYLED',
+    img: require('../../image/ThaiStyle.png'),
+    img2: require('../../image/thaistyle2.png'),
+    accept: 'ได้รับแล้ว',
+    naccept: 'สมัครรางวัล',
+  },
+  {
+    name: 'DEmark Award',
+    img: require('../../image/DEmarkAward.png'),
+    img2: require('../../image/Demark.png'),
+    accept: 'ได้รับแล้ว',
+    naccept: 'สมัครรางวัล',
+  },
+  {
+    name: 'Thai 10/10',
+    img: require('../../image/Thai10.png'),
+    img2: require('../../image/Thai10v2.png'),
+    accept: 'ได้รับแล้ว',
+    naccept: 'สมัครรางวัล',
+  },
+  {
+    name: 'Talent Thai & Designers’ Room',
+    img: require('../../image/Talent.png'),
+    img2: require('../../image/TalentV2.png'),
+    accept: 'ได้รับแล้ว',
+    naccept: 'สมัครรางวัล',
+  },
+  {
+    name: 'PM Export Award',
+    img: require('../../image/PM.png'),
+    img2: require('../../image/PMV2.png'),
+    accept: 'ได้รับแล้ว',
+    naccept: 'สมัครรางวัล',
+  },
+  {
+    name: 'MOC4i',
+    img: require('../../image/moc4i.png'),
+    img2: require('../../image/Moc4iV2.png'),
+    accept: 'ได้รับแล้ว',
+    naccept: 'สมัครรางวัล',
+  },
+  {
+    name: 'Innovation and Design Zone (IDZ)',
+    img: require('../../image/IDZ1.png'),
+    img2: require('../../image/IDZ3.png'),
+    accept: 'ได้รับแล้ว',
+    naccept: 'สมัครรางวัล',
+  },
+  {
+    name: 'Thai Brand: IDEALAB',
+    img: require('../../image/ThaiBrand.png'),
+    img2: require('../../image/ThaiBrandV2.png'),
+    accept: 'ได้รับแล้ว',
+    naccept: 'สมัครรางวัล',
+  },
+];
+export default DataBrand;

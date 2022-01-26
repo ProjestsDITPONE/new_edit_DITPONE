@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="splashscreen_bg">#ff3b00</color>
+    <color name="app_bg">#424242</color> -->
+    <color name="primary_dark">#000000</color>
+    <color name="status_bar_color">#ebf5fc</color>
+</resources>

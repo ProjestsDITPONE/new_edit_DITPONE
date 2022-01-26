@@ -151,6 +151,13 @@ export default {
   transalte_company_information: 'ข้อมูลบริษัท',
   transalte_ID_card_number: 'ระบุเลขบัตรประชาชน',
   transalte_Check_participants: 'ตรวจสอบผู้เข้าร่วมกิจกกรม',
+  transalte_ID_card_number: 'กรอกเลขประจำตัวประชาชน/เลขพาสปอร์ต',
+  transalte_not_product: 'ไม่มีสินค้า',
+  transalte_not_company_info: 'ไม่มีข้อมูลบริษัท',
+  transalte_Not_participant_info: 'ไม่มีข้อมูลผู้เข้าร่วมกิจกรรม',
+  transalte_brand_name: 'ชื่อแบรนด์',
+  transalte_select_product_group: 'เลือกกลุ่มสินค้า',
+  transalte_please_select: 'โปรดเลือก',
 
   //TradeActivitiesScreen (กิจกรรมส่งเสริมการค้าระหว่างประเทศ) &&ViewTrade
   translate_Toppick: 'TOP Pick',

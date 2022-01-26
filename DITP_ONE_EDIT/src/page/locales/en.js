@@ -145,6 +145,13 @@ export default {
   transalte_Search_contact_history: 'Search Contact History',
   transalte_ID_card_number: 'Enter your ID card number',
   transalte_Check_participants: 'Check The Participants',
+  transalte_ID_card_number: 'Fill In Your ID Card Number',
+  transalte_not_product: 'Not product',
+  transalte_not_company_info: 'Not Company Information',
+  transalte_Not_participant_info: 'Not Participant Information',
+  transalte_brand_name: 'Brand Name',
+  transalte_select_product_group: 'Select Product Group',
+  transalte_please_select: 'Please Select',
 
   //TradeActivitiesScreen (กิจกรรมส่งเสริมการค้าระหว่างประเทศ) &&ViewTrade
   translate_Toppick: 'TOP Pick',
@@ -196,7 +203,7 @@ export default {
   transalte_Condition_details:
     'In the event that the company does not produce the product itself. There must be a letter certifying from the company that manufactures the product stating that the product has been manufactured. Along with attaching a copy of the product quality standard certificate from the relevant department of the company that produces the product. (Every item that the company that produces the product has been certified for product quality standards) All documents must be signed certifying true copy by the authorized signatory of the company producing the product and stamp the company that produces the product',
   transalte_export_market: 'Attractive Export Market',
-  transalte_Add_info_affiliated_company: 'เพิ่มข้อมูลในบริษัทสังกัด',
+  transalte_Add_info_affiliated_company: 'Add information in the affiliated company',
 
   //register TradeActivitiesRegister
   transalte_postcode: 'Postcode',

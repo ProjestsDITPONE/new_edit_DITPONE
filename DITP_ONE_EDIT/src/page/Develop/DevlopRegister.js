@@ -7876,7 +7876,7 @@ class DevlopRegister extends React.Component {
                                         fontSize: 18,
                                       }}
                                     >
-                                      โปรดเลือก
+                                      {I18n.t('transalte_please_select')}
                                     </Text>
                                   </View>
                                 </TouchableOpacity>
@@ -7928,7 +7928,7 @@ class DevlopRegister extends React.Component {
                                       marginHorizontal: 35,
                                     }}
                                   >
-                                    ไม่มีสินค้า
+                                    {I18n.t('transalte_not_product')}
                                   </Text>
                                 </View>
                               </View>
@@ -8432,7 +8432,7 @@ class DevlopRegister extends React.Component {
                                                 fontSize: 24,
                                               }}
                                             >
-                                              เลือกกลุ่มสินค้า{" "}
+                                              {I18n.t('transalte_select_product_group')}
                                             </Text>
                                           ) : (
                                             <Text
@@ -8616,7 +8616,7 @@ class DevlopRegister extends React.Component {
                                         marginHorizontal: 10,
                                       }}
                                     >
-                                      ชื่อแบรนด์
+                                      {I18n.t('transalte_brand_name')}
                                     </Text>
                                   </View>
 
@@ -9917,7 +9917,7 @@ class DevlopRegister extends React.Component {
                                       marginHorizontal: 35,
                                     }}
                                   >
-                                    ไม่มีข้อมูลบริษัท
+                                    {I18n.t('transalte_not_company_info')}
                                   </Text>
                                 </View>
                               </View>
@@ -13125,7 +13125,7 @@ class DevlopRegister extends React.Component {
                                             marginHorizontal: 35,
                                           }}
                                         >
-                                          ไม่มีข้อมูลผู้เข้ากิจกรรม
+                                          {I18n.t('transalte_Not_participant_info')}
                                         </Text>
                                       </View>
                                     </View>
@@ -16389,7 +16389,7 @@ class DevlopRegister extends React.Component {
                   style={[Styles.Image, { marginTop: 3 }]}
                   source={require("../../image/searchblue.png")}
                 />
-                <View style={{height: 50, width: 150,}}>
+                <View style={{ height: 50, width: 150 }}>
                   <TextInput
                     style={{ fontSize: 20, flex: 1, color: "#0D0C0C" }}
                     placeholder={I18n.t("transalte_ID_card_number")}
@@ -16609,27 +16609,31 @@ class DevlopRegister extends React.Component {
                   }}
                   source={require("../../image/searchbluex.png")}
                 />
-                <TextInput
-                  keyboardType="numeric"
-                  style={{
-                    fontSize: 20,
-                    flex: 1,
-                    color: "#0D0C0C",
-                  }}
-                  placeholder={"กรอกเลขประจำตัวประชาชน/เลขพาสปอร์ต"}
-                  placeholderTextColor={"#999999"}
-                  onChangeText={(textnumberid) =>
-                    this.setState({ IDnemberCI: textnumberid })
-                  }
-                >
-                  {this.state.IDnemberCI === undefined ? (
-                    <Text style={{ color: "#0D0C0C", fontSize: 13 }}>{""}</Text>
-                  ) : (
-                    <Text style={{ color: "#0D0C0C", fontSize: 13 }}>
-                      {this.state.IDnemberCI}
-                    </Text>
-                  )}
-                </TextInput>
+                <View style={{height: 50, width: '100%'}}>
+                  <TextInput
+                    keyboardType="numeric"
+                    style={{
+                      fontSize: 20,
+                      flex: 1,
+                      color: "#0D0C0C",
+                    }}
+                    placeholder={I18n.t("transalte_ID_card_number")}
+                    placeholderTextColor={"#999999"}
+                    onChangeText={(textnumberid) =>
+                      this.setState({ IDnemberCI: textnumberid })
+                    }
+                  >
+                    {this.state.IDnemberCI === undefined ? (
+                      <Text style={{ color: "#0D0C0C", fontSize: 13 }}>
+                        {""}
+                      </Text>
+                    ) : (
+                      <Text style={{ color: "#0D0C0C", fontSize: 13 }}>
+                        {this.state.IDnemberCI}
+                      </Text>
+                    )}
+                  </TextInput>
+                </View>
               </View>
 
               <TouchableOpacity

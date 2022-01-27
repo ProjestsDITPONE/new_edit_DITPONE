@@ -4010,7 +4010,7 @@ class Mybasket extends React.Component {
                               this.setState({ckhide: true});
                             }}
                             style={Styles.popupTexthideText}>
-                            แสดงรายละเอียด
+                            {I18n.t('transalte_show_details')}
                           </Text>
                           <Icon6
                             color="#2d6dc4"

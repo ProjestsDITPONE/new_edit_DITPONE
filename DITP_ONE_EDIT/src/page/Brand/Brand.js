@@ -190,17 +190,17 @@ class Brand extends React.Component {
          {''}
         </Text>
         <Text style={{color:'#163c70',fontSize:22}}>
-        ชื่อบริษัท : {I18n.locale === 'th'? item.company_name_th: item.company_name_en}
+        {I18n.t('translate_Juristic_company_name')} : {I18n.locale === 'th'? item.company_name_th: item.company_name_en}
         </Text>
        
         <Text style={{color:'#163c70',fontSize:22}}>
-        วันที่สมัคร : { item.register_date}
+        {I18n.t('transalte_apply_date')} : { item.register_date}
         </Text>
         <Text style={{color:'#163c70',fontSize:22}}>
-        วันหมดอายุ : { item.expired_date}
+        {I18n.t('transalte_expiration_date')} : { item.expired_date}
         </Text>
         <Text style={{color:'#163c70',fontSize:22}}>
-         สถานะ { item.status}
+         {I18n.t('translate_Status')} { item.status}
         </Text>
       
       </View>
@@ -216,7 +216,7 @@ class Brand extends React.Component {
         />
 
         <View style={{marginTop: Platform.OS === 'android' && 90}} />
-        <Headerstage nameTab="สมัครกิจกรรมเพิ่มมูลค่า/ตรวจสอบตราสัญลักษณ์" />
+        <Headerstage nameTab={I18n.t('transalte_Value_Check_Badge')} />
         <View style={{zIndex: -1, flex: 1}}>
           <FlatList
             // numColumns={2}

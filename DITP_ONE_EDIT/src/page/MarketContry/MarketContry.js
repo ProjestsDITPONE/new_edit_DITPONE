@@ -1610,7 +1610,7 @@ class MarketContry extends React.Component {
                           color: '#FFFFFF',
                           fontSize: 22,
                         }}>
-                        ค้นหา
+                        {I18n.t('translate_Seachcontry')}
                       </Text>
                     </TouchableOpacity>
                   </View>
@@ -1628,7 +1628,7 @@ class MarketContry extends React.Component {
                   }}
                   style={Style.choosecontry}>
                   <View style={Style.Viewin1}>
-                    <Text style={Style.ViewTextin}> ประเทศ</Text>
+                    <Text style={Style.ViewTextin}>{I18n.t('translate_country')}</Text>
                   </View>
                   <View style={Style.Viewin2}>
                     <Icon
@@ -2329,7 +2329,7 @@ class MarketContry extends React.Component {
                   textAlign: 'center',
                   fontSize: 20,
                 }}>
-                ค้นหาสินค้า
+                {I18n.t('translate_osec_seach_product')}
               </Text>
             </TouchableOpacity>
           </Overlay>

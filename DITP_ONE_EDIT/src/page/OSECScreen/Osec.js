@@ -140,7 +140,7 @@ class OSECScreen extends React.Component {
                   marginHorizontal: 15,
                 }}>
                 <Text style={{fontSize: 23, color: '#40536d', marginBottom: 6}}>
-                  ค้นหาสินค้า
+                  {I18n.t('translate_osec_seach_product')}
                 </Text>
               </View>
               <View

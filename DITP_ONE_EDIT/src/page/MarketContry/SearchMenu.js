@@ -655,7 +655,7 @@ class SearchMenu extends React.Component {
             <View style={Style.ViewCountry}>
               <View style={{marginBottom: -10}}>
                 <Text style={Style.TextCountry}>
-                  {I18n.t('translate_COUNTRY')}
+                  {I18n.t('translate_Country')}
                 </Text>
               </View>
               <View

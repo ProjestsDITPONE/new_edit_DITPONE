@@ -1,57 +1,57 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:1:1-35:12
-MERGED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:1:1-35:12
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:1:1-35:12
+MERGED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:1:1-35:12
 MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/07c4fbb9f0d9fbdfca207286f3b8b554/jetified-flipper-0.33.1/AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/8e6eece9777d19e78432b655b4e62d9c/jetified-flipper-network-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7da553781b27070568468e7921662b19/jetified-flipper-fresco-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
 MERGED from [androidx.multidex:multidex:2.0.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7a5068c65d61d622fd0b797052dab33a/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
-MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
-MERGED from [:react-native-screens] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-33:12
-MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-45:12
-MERGED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-29:12
+MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
+MERGED from [:react-native-screens] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-33:12
+MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-45:12
+MERGED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-29:12
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/e288b0be979675fad1fbd185c2c50e11/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/d2615ea93e1fb4daa774b7114e835ef7/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/2ae8f832dc8a1c38028c798a449fc2a4/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [:react-native-fast-image] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-25:12
-MERGED from [:react-native-push-notification] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-push-notification/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
+MERGED from [:react-native-fast-image] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-25:12
+MERGED from [:react-native-push-notification] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-push-notification/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:2:1-58:12
-MERGED from [:react-native-community_art] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-community_async-storage] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-community_datetimepicker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
-MERGED from [:react-native-community_masked-view] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
-MERGED from [:react-native-community_progress-bar-android] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/progress-bar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-community_progress-view] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/progress-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-community_toolbar-android] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/toolbar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-android-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-android-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-document-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-document-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-encrypted-storage] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-encrypted-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
-MERGED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-16:12
-MERGED from [:react-native-gesture-handler] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-i18n] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-i18n/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [:react-native-localize] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-localize/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-month-year-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-month-year-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-pager-view] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-pager-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-pdf] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-pdf/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-permissions] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-reanimated] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-safe-area-context] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-splash-screen] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
-MERGED from [:react-native-svg] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-vector-icons] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-47:12
+MERGED from [:react-native-community_art] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_async-storage] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_datetimepicker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-community_masked-view] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-community_progress-bar-android] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/progress-bar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-community_progress-view] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/progress-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-community_toolbar-android] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/toolbar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-android-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-android-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-document-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-document-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-encrypted-storage] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-encrypted-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-16:12
+MERGED from [:react-native-gesture-handler] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-i18n] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-i18n/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-localize] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-localize/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-month-year-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-month-year-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-pager-view] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-pager-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-pdf] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-pdf/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-permissions] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-reanimated] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-splash-screen] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-svg] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-47:12
 MERGED from [com.facebook.react:react-native:0.62.3] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/880068fad96d195e3f5409665aa28cb8/jetified-react-native-0.62.3/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.biometric:biometric:1.0.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/6dec5c765cd73e714934cf8c5386cb42/biometric-1.0.1/AndroidManifest.xml:17:1-34:12
 MERGED from [com.wei.android.lib:fingerprintidentify:1.2.6] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/f17592ac17cb9ca4f008604c5d454a4b/jetified-fingerprintidentify-1.2.6/AndroidManifest.xml:2:1-11:12
@@ -144,8 +144,8 @@ MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/IBCSTA
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/f5656abb0f7cd018a2097c5792b89727/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
 MERGED from [com.facebook.fresco:animated-gif:2.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1cc6193253f1144e7e4ae9b6bc3df6dd/jetified-animated-gif-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [org.webkit:android-jsc:r245459] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/bf8fa8cfba3c62a364a43e332be5f91c/jetified-android-jsc-r245459/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-37:12
-MERGED from [:react-native-linear-gradient] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-37:12
+MERGED from [:react-native-linear-gradient] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/549869884d8692ba69bde1f86ad5a7ba/jetified-flipper-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/fe87c28c5d282e28a005c885bbea3979/jetified-stetho-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/62bcda62b432c78bd77595d3faf19d3c/jetified-fresco-2.0.0/AndroidManifest.xml:2:1-9:12
@@ -165,44 +165,44 @@ MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/IBCSTAFF/.gradle/cac
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/d793fefe4662595cb2d3be018139c69e/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/ecf2c25ac1230f808e057cdede9c3129/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/9de125d9dea2a687849ff8f330c43415/jetified-rxandroid-2.0.2/AndroidManifest.xml:15:1-21:12
-INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 	package
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:1:70-96
-		INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:1:70-96
-		INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:1:70-96
+		INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:1:70-96
+		INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:1:1-35:12
-		INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml:2:70-116
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml:2:70-116
 	android:versionCode
-		INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:1:1-35:12
-		INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:3:3-65
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:3:3-65
 MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/07c4fbb9f0d9fbdfca207286f3b8b554/jetified-flipper-0.33.1/AndroidManifest.xml:15:5-67
 MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/07c4fbb9f0d9fbdfca207286f3b8b554/jetified-flipper-0.33.1/AndroidManifest.xml:15:5-67
-MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
-MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
-MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
-MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
-MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
-MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
+MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
+MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:12:5-67
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:12:5-67
-MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
-MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:15:5-67
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:15:5-67
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-67
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-67
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-67
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-67
 MERGED from [com.google.firebase:firebase-database:20.0.2] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/9ef0dfa4f0d66db2cdde8491a78f7ab6/jetified-firebase-database-20.0.2/AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:20.0.2] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/9ef0dfa4f0d66db2cdde8491a78f7ab6/jetified-firebase-database-20.0.2/AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/07c78b2224d9263fe57c62a6b47f90a8/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:22:5-67
@@ -222,101 +222,101 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /U
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/82a7f607ac7f4ba0cafcded79ccccec1/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/82a7f607ac7f4ba0cafcded79ccccec1/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:3:20-62
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:3:20-62
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:4:3-80
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:4:3-80
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7082528a270698edac11f40734fc0f95/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7082528a270698edac11f40734fc0f95/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/038bd2aa7d614b10d2a5a118ca5599c4/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:11:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/038bd2aa7d614b10d2a5a118ca5599c4/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:11:5-82
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:4:20-77
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:4:20-77
 uses-permission#android.permission.CAMERA
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:5:3-63
-MERGED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:5:3-63
-MERGED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:5:3-63
-MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
-MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:5:3-63
+MERGED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:5:3-63
+MERGED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:5:3-63
+MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
+MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:5:20-60
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:5:20-60
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:6:3-78
-MERGED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:6:3-78
-MERGED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:6:3-78
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:6:3-78
+MERGED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:6:3-78
+MERGED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:6:3-78
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:6:20-75
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:6:20-75
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:7:3-79
-MERGED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:7:3-79
-MERGED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:7:3-79
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:5-81
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:5-81
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:7:3-79
+MERGED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:7:3-79
+MERGED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:7:3-79
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:5-81
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:5-81
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:7:20-76
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:7:20-76
 uses-feature#android.hardware.camera
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:8:3-58
-MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
-MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:8:3-58
+MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:8:17-55
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:8:17-55
 uses-feature#android.hardware.camera.autofocus
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:9:3-68
-MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
-MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:9:3-68
+MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:9:17-65
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:9:17-65
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:10:3-64
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:10:3-64
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:14:5-66
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:14:5-66
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:10:20-61
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:10:20-61
 uses-permission#android.permission.READ_CONTACTS
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:11:3-70
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:11:3-70
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:11:20-67
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:11:20-67
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:12:3-76
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:12:3-76
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:12:20-74
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:12:20-74
 uses-permission#android.permission.USE_BIOMETRIC
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:13:3-70
-MERGED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-72
-MERGED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-72
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:13:3-70
+MERGED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-72
+MERGED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-72
 MERGED from [androidx.biometric:biometric:1.0.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/6dec5c765cd73e714934cf8c5386cb42/biometric-1.0.1/AndroidManifest.xml:24:5-72
 MERGED from [androidx.biometric:biometric:1.0.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/6dec5c765cd73e714934cf8c5386cb42/biometric-1.0.1/AndroidManifest.xml:24:5-72
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:13:20-67
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:13:20-67
 application
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:3-33:17
-MERGED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:3-33:17
-MERGED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:3-33:17
-MERGED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
-MERGED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
-MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-31:19
-MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-31:19
-MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-43:19
-MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-43:19
-MERGED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-27:19
-MERGED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-27:19
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:3-33:17
+MERGED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:3-33:17
+MERGED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:3-33:17
+MERGED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-31:19
+MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-31:19
+MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-43:19
+MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-43:19
+MERGED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-27:19
+MERGED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-27:19
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:22:5-30:19
-MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:5-23:19
-MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:5-23:19
-MERGED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-17:19
-MERGED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-17:19
+MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:5-23:19
+MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:5-23:19
+MERGED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-17:19
+MERGED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-17:19
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:19:5-56:19
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:19:5-56:19
-MERGED from [:react-native-community_datetimepicker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
-MERGED from [:react-native-community_datetimepicker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
-MERGED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-splash-screen] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-splash-screen] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-45:19
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-45:19
+MERGED from [:react-native-community_datetimepicker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
+MERGED from [:react-native-community_datetimepicker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
+MERGED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-splash-screen] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-splash-screen] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-45:19
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-45:19
 MERGED from [com.facebook.react:react-native:0.62.3] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/880068fad96d195e3f5409665aa28cb8/jetified-react-native-0.62.3/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.62.3] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/880068fad96d195e3f5409665aa28cb8/jetified-react-native-0.62.3/AndroidManifest.xml:11:5-20
 MERGED from [androidx.biometric:biometric:1.0.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/6dec5c765cd73e714934cf8c5386cb42/biometric-1.0.1/AndroidManifest.xml:27:5-32:19
@@ -402,101 +402,101 @@ MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/IBCSTAFF/.gradle/cac
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/d793fefe4662595cb2d3be018139c69e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/d793fefe4662595cb2d3be018139c69e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 	android:requestLegacyExternalStorage
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:283-326
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:283-326
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:283-326
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:283-326
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/be5c9b9ed529d958cb78b64576f39bae/core-1.3.2/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:73-105
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:73-105
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:73-105
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:73-105
 	tools:ignore
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml:8:76-115
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml:8:76-115
 	android:roundIcon
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:141-186
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:141-186
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:141-186
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:141-186
 	tools:targetApi
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml:8:55-75
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml:8:55-75
 	android:largeHeap
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:48-72
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:48-72
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:48-72
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:48-72
 	android:icon
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:106-140
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:106-140
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:106-140
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:106-140
 	android:allowBackup
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:187-214
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:187-214
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:187-214
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:187-214
 	android:theme
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:215-246
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:215-246
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:215-246
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:215-246
 	android:usesCleartextTraffic
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:247-282
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:247-282
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:16-47
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:16-47
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:16-47
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:16-47
 meta-data#com.dieam.reactnativepushnotification.notification_channel_name
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:17:5-144
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:17:5-144
 	android:value
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:17:95-141
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:17:95-141
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:17:16-94
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:17:16-94
 meta-data#com.dieam.reactnativepushnotification.notification_channel_description
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:18:5-158
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:18:5-158
 	android:value
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:18:102-155
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:18:102-155
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:18:16-101
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:18:16-101
 activity#com.ditp.ditpone.MainActivity
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:5-30:16
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:5-30:16
 	android:screenOrientation
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:77-113
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:77-113
 	android:label
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:44-76
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:44-76
 	android:launchMode
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:192-223
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:192-223
 	android:windowSoftInputMode
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:224-263
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:224-263
 	android:configChanges
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:114-191
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:114-191
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:15-43
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:15-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:20:7-23:23
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:20:7-23:23
 action#android.intent.action.MAIN
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:21:9-61
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:21:9-61
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:21:17-58
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:21:17-58
 category#android.intent.category.LAUNCHER
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:22:9-69
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:22:9-69
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:22:19-66
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:22:19-66
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:my-host+data:scheme:ditpone
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:24:7-29:23
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:24:7-29:23
 action#android.intent.action.VIEW
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:25:9-61
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:25:9-61
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:25:17-58
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:25:17-58
 category#android.intent.category.DEFAULT
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:26:9-68
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:26:9-68
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:26:19-65
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:26:19-65
 category#android.intent.category.BROWSABLE
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:27:9-70
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:27:9-70
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:27:19-67
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:27:19-67
 data
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:28:9-65
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:28:9-65
 	android:host
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:28:40-62
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:28:40-62
 	android:scheme
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:28:15-39
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:28:15-39
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:31:5-82
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:31:5-82
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:31:15-79
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:31:15-79
 uses-sdk
-INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml
 MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/07c4fbb9f0d9fbdfca207286f3b8b554/jetified-flipper-0.33.1/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/07c4fbb9f0d9fbdfca207286f3b8b554/jetified-flipper-0.33.1/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/8e6eece9777d19e78432b655b4e62d9c/jetified-flipper-network-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
@@ -505,20 +505,20 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/IBCSTAFF/
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7da553781b27070568468e7921662b19/jetified-flipper-fresco-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
 MERGED from [androidx.multidex:multidex:2.0.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7a5068c65d61d622fd0b797052dab33a/multidex-2.0.1/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7a5068c65d61d622fd0b797052dab33a/multidex-2.0.1/AndroidManifest.xml:20:5-43
-MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-screens] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-camera] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/e288b0be979675fad1fbd185c2c50e11/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
@@ -527,70 +527,70 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/IBCSTAFF/.grad
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/d2615ea93e1fb4daa774b7114e835ef7/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/2ae8f832dc8a1c38028c798a449fc2a4/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/2ae8f832dc8a1c38028c798a449fc2a4/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [:react-native-fast-image] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fast-image] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-push-notification] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-push-notification/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-push-notification] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-push-notification/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fast-image] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fast-image] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-push-notification/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-push-notification/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:7:5-9:41
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_art] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_art] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_async-storage] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_async-storage] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_datetimepicker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_datetimepicker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_masked-view] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_masked-view] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_progress-bar-android] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/progress-bar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_progress-bar-android] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/progress-bar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_progress-view] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/progress-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_progress-view] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/progress-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_toolbar-android] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/toolbar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_toolbar-android] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/toolbar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-android-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-android-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-android-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-android-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-document-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-document-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-document-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-document-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-encrypted-storage] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-encrypted-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:react-native-encrypted-storage] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-encrypted-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-i18n] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-i18n/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-i18n] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-i18n/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-localize] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-localize/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-localize] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-localize/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-month-year-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-month-year-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-month-year-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-month-year-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-pager-view] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-pager-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-pager-view] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-pager-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-pdf] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-pdf/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-pdf] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-pdf/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-permissions] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-permissions] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-reanimated] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-safe-area-context] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-splash-screen] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-splash-screen] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-svg] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-svg] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-vector-icons] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_art] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_art] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_datetimepicker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_datetimepicker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_masked-view] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_progress-bar-android] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/progress-bar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_progress-bar-android] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/progress-bar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_progress-view] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/progress-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_progress-view] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/progress-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_toolbar-android] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/toolbar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_toolbar-android] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/toolbar-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-android-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-android-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-android-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-android-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-document-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-document-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-document-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-document-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-encrypted-storage] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-encrypted-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:react-native-encrypted-storage] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-encrypted-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-i18n] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-i18n/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-i18n] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-i18n/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-localize] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-localize/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-localize] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-localize/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-month-year-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-month-year-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-month-year-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-month-year-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-pager-view] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-pager-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-pager-view] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-pager-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-pdf] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-pdf/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-pdf] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-pdf/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-permissions] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-permissions] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-splash-screen] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.62.3] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/880068fad96d195e3f5409665aa28cb8/jetified-react-native-0.62.3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.62.3] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/880068fad96d195e3f5409665aa28cb8/jetified-react-native-0.62.3/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.biometric:biometric:1.0.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/6dec5c765cd73e714934cf8c5386cb42/biometric-1.0.1/AndroidManifest.xml:20:5-22:41
@@ -775,10 +775,10 @@ MERGED from [com.facebook.fresco:animated-gif:2.0.0] /Users/IBCSTAFF/.gradle/cac
 MERGED from [com.facebook.fresco:animated-gif:2.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1cc6193253f1144e7e4ae9b6bc3df6dd/jetified-animated-gif-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [org.webkit:android-jsc:r245459] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/bf8fa8cfba3c62a364a43e332be5f91c/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/bf8fa8cfba3c62a364a43e332be5f91c/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/549869884d8692ba69bde1f86ad5a7ba/jetified-flipper-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/549869884d8692ba69bde1f86ad5a7ba/jetified-flipper-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/fe87c28c5d282e28a005c885bbea3979/jetified-stetho-2.0.0/AndroidManifest.xml:5:5-7:41
@@ -817,46 +817,46 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/IBCST
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/ecf2c25ac1230f808e057cdede9c3129/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/9de125d9dea2a687849ff8f330c43415/jetified-rxandroid-2.0.2/AndroidManifest.xml:19:5-43
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/9de125d9dea2a687849ff8f330c43415/jetified-rxandroid-2.0.2/AndroidManifest.xml:19:5-43
-INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml:4:5-78
+ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml:4:5-78
 	android:name
-		ADDED from /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml:4:22-75
+		ADDED from /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml:4:22-75
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.facebook.flipper:flipper:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/07c4fbb9f0d9fbdfca207286f3b8b554/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
-MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-76
-MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-76
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:5-76
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:5-76
+MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-76
+MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-76
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:5-76
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:5-76
 	android:name
 		ADDED from [com.facebook.flipper:flipper:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/07c4fbb9f0d9fbdfca207286f3b8b554/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
 meta-data#in_app_messaging_auto_collection_enabled
-ADDED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
+ADDED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
 	android:value
-		ADDED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
+		ADDED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
 	android:name
-		ADDED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-68
+		ADDED from [:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-68
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-79
-MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
-MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
-MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
-MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-79
+MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:11:5-79
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:11:5-79
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:12:5-79
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:12:5-79
-MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
-MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-79
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-79
+MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [:react-native-community_netinfo] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-79
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-79
 MERGED from [androidx.work:work-runtime:2.5.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/9d26975e24a426011363d9c467225f79/work-runtime-2.5.0/AndroidManifest.xml:26:5-79
 MERGED from [androidx.work:work-runtime:2.5.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/9d26975e24a426011363d9c467225f79/work-runtime-2.5.0/AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7082528a270698edac11f40734fc0f95/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:22:5-79
@@ -882,17 +882,17 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] /User
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/01ae0d727a8d8951bf87c65e81396a6a/jetified-transport-runtime-3.1.0/AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/01ae0d727a8d8951bf87c65e81396a6a/jetified-transport-runtime-3.1.0/AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-76
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-68
-MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
-MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
-MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
-MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
+ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-68
+MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
+MERGED from [:react-native-firebase_database] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/database/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
+MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
+MERGED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:11:5-68
 MERGED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:11:5-68
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-68
-MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-68
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-68
+MERGED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-68
 MERGED from [androidx.work:work-runtime:2.5.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/9d26975e24a426011363d9c467225f79/work-runtime-2.5.0/AndroidManifest.xml:25:5-68
 MERGED from [androidx.work:work-runtime:2.5.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/9d26975e24a426011363d9c467225f79/work-runtime-2.5.0/AndroidManifest.xml:25:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7082528a270698edac11f40734fc0f95/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:23:5-68
@@ -908,93 +908,93 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/5e5bc4b953ace13f7c1b02c6621f9d7c/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/5e5bc4b953ace13f7c1b02c6621f9d7c/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-65
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-65
 meta-data#firebase_analytics_collection_enabled
-ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:36
+ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:36
 	android:value
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-33
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-33
 	android:name
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-65
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-65
 meta-data#firebase_analytics_collection_deactivated
-ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:37
+ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:37
 	android:value
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-34
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-34
 	android:name
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-69
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-69
 meta-data#google_analytics_adid_collection_enabled
-ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-24:36
+ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-24:36
 	android:value
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-33
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-33
 	android:name
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-68
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-68
 meta-data#google_analytics_ssaid_collection_enabled
-ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-27:36
+ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-27:36
 	android:value
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-33
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-33
 	android:name
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-69
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-69
 meta-data#google_analytics_default_allow_ad_personalization_signals
-ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:9-30:36
+ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:9-30:36
 	android:value
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-33
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-33
 	android:name
-		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-85
+		ADDED from [:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-85
 service#io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService
-ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-111
+ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-111
 	android:name
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-108
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-108
 service#io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService
-ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-23:19
+ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-23:19
 	android:exported
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-37
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-95
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-95
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-22:29
+ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-22:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:17-78
+ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:17-78
 	android:name
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:25-75
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:25-75
 receiver#io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver
-ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-32:20
+ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-32:20
 	android:exported
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-36
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-36
 	android:permission
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-73
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-73
 	android:name
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-96
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-96
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
-ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-31:29
+ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-31:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-81
+ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-81
 	android:name
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-78
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-78
 meta-data#firebase_messaging_auto_init_enabled
-ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:9-36:36
+ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:9-36:36
 	android:value
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-33
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-33
 	android:name
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-64
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-64
 meta-data#com.google.firebase.messaging.default_notification_channel_id
-ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:9-39:32
+ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:9-39:32
 	android:value
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-29
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-29
 	android:name
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-89
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-89
 meta-data#com.google.firebase.messaging.default_notification_color
-ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:9-42:47
+ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:9-42:47
 	android:resource
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-44
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-44
 	android:name
-		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-84
+		ADDED from [:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-84
 meta-data#app_data_collection_default_enabled
-ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
+ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
 	android:value
-		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
+		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
 	android:name
-		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
+		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
+ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:23:9-29:19
 MERGED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:23:9-29:19
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7082528a270698edac11f40734fc0f95/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:49:9-55:19
@@ -1020,27 +1020,27 @@ MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/IBCSTAFF/.gradle
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/3e26631c757fc84968745998a719c6ff/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
+		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
 meta-data#com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar
-ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:85
+ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:85
 	android:value
-		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-82
+		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-82
 	android:name
-		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-120
+		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-120
 provider#io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider
-ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-26:38
+ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-26:38
 	android:authorities
-		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-86
+		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-86
 	android:exported
-		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
+		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
 	android:initOrder
-		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-35
+		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-35
 	android:name
-		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-88
+		ADDED from [:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-88
 queries
 ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:14:5-20:15
-MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-18:15
-MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-18:15
+MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-18:15
+MERGED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-18:15
 intent
 ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:15:9-19:18
 meta-data#com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar
@@ -1050,23 +1050,23 @@ ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/I
 	android:name
 		ADDED from [com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:27:17-144
 uses-permission#android.permission.QUERY_ALL_PACKAGES
-ADDED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-77
+ADDED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-77
 	android:name
-		ADDED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-74
+		ADDED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-74
 activity#com.proyecto26.inappbrowser.ChromeTabsManagerActivity
-ADDED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-22:20
+ADDED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-22:20
 	android:name
-		ADDED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:19-87
+		ADDED from [:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:19-87
 provider#io.invertase.notifee.NotifeeInitProvider
-ADDED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-16:40
+ADDED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-16:40
 	android:authorities
-		ADDED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-73
+		ADDED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-73
 	android:exported
-		ADDED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+		ADDED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
 	android:initOrder
-		ADDED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-37
+		ADDED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-37
 	android:name
-		ADDED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-68
+		ADDED from [:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-68
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:13:5-81
 MERGED from [androidx.work:work-runtime:2.5.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/9d26975e24a426011363d9c467225f79/work-runtime-2.5.0/AndroidManifest.xml:27:5-81
@@ -1138,59 +1138,59 @@ ADDED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-
 	android:name
 		ADDED from [notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:53:25-105
 uses-permission#android.permission.USE_FINGERPRINT
-ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-74
+ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-74
 MERGED from [androidx.biometric:biometric:1.0.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/6dec5c765cd73e714934cf8c5386cb42/biometric-1.0.1/AndroidManifest.xml:25:5-74
 MERGED from [androidx.biometric:biometric:1.0.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/6dec5c765cd73e714934cf8c5386cb42/biometric-1.0.1/AndroidManifest.xml:25:5-74
 	android:name
-		ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-71
+		ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-71
 uses-permission#com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER
-ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-91
+ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-91
 	android:name
-		ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-88
+		ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-88
 uses-permission#com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
-ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-117
+ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-117
 	android:name
-		ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:22-114
+		ADDED from [:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:22-114
 provider#com.imagepicker.ImagePickerProvider
-ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-71
+		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-71
 	android:exported
-		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
+		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
+ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
 	android:resource
-		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
 	android:name
-		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+		ADDED from [:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
 provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
-ADDED from [:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+ADDED from [:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+		ADDED from [:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+		ADDED from [:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
 	android:exported
-		ADDED from [:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+		ADDED from [:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
 uses-permission#com.android.vending.CHECK_LICENSE
-ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-73
+ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-73
 	android:name
-		ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-70
+		ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-70
 provider#com.RNFetchBlob.Utils.FileProvider
-ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:9-44:20
+ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:9-44:20
 	android:grantUriPermissions
-		ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-47
+		ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-47
 	android:authorities
-		ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-60
+		ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-60
 	android:exported
-		ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-37
+		ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-37
 	android:name
-		ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-62
+		ADDED from [:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-62
 activity#androidx.biometric.DeviceCredentialHandlerActivity
 ADDED from [androidx.biometric:biometric:1.0.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/6dec5c765cd73e714934cf8c5386cb42/biometric-1.0.1/AndroidManifest.xml:28:9-31:67
 	android:exported
@@ -1586,102 +1586,102 @@ ADDED from [com.google.android.datatransport:transport-runtime:3.1.0] /Users/IBC
 	android:name
 		ADDED from [com.google.android.datatransport:transport-runtime:3.1.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/01ae0d727a8d8951bf87c65e81396a6a/jetified-transport-runtime-3.1.0/AndroidManifest.xml:33:13-132
 uses-permission#com.sec.android.provider.badge.BadgeProvider
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-84
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-84
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-81
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-81
 uses-permission#com.sec.android.provider.badge.permission.READ
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-86
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-86
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-83
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-83
 uses-permission#com.sec.android.provider.badge.permission.WRITE
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-87
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-87
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-84
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-84
 uses-permission#com.htc.launcher.permission.READ_SETTINGS
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-81
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-81
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-78
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-78
 uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-83
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-83
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:22-80
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:22-80
 uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-88
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-88
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:22-85
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:22-85
 uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-92
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-92
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:22-89
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:22-89
 uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-84
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-84
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:22-81
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:22-81
 uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:5-83
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:5-83
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:22-80
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:22-80
 uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:5-91
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:5-91
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:22-88
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:22-88
 uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:5-92
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:5-92
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:22-89
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:22-89
 uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-93
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-93
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:22-90
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:22-90
 uses-permission#android.permission.READ_APP_BADGE
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:5-73
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:5-73
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:22-70
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:22-70
 uses-permission#com.oppo.launcher.permission.READ_SETTINGS
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:5-82
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:5-82
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:22-79
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:22-79
 uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:5-83
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:5-83
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:22-80
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:22-80
 uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:5-88
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:5-88
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:22-85
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:22-85
 uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
-ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-89
+ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-89
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/646b352eea4d9b4ca80cd5cb09f29c1b/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
 	android:name
-		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:22-86
+		ADDED from [:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:22-86

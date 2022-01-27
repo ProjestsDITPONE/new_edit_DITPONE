@@ -50,7 +50,7 @@ const IC_ARR_UP = require('../../../image/ArrowUpx.png');
 const dada = [
   {
     id: 1,
-    txt: 'ข้อมูลนิติบุคคล',
+    txt: I18n.t('transalte_Juristic_Person_Information'),
   },
   {
     id: 2,
@@ -58,7 +58,7 @@ const dada = [
   },
   {
     id: 3,
-    txt: 'ข้อมูลผู้ติดต่อ',
+    txt: I18n.t('transalte_contact_information'),
   },
   {
     id: 4,
@@ -126,7 +126,7 @@ class TradeActivitiesRegister extends React.Component {
     this.state = {
       Allprofile: [
         {
-          title: 'ข้อมูลนิติบุคคล',
+          title: I18n.t('transalte_Juristic_Person_Information'),
         },
       ],
       Alldataoperator: [
@@ -136,7 +136,7 @@ class TradeActivitiesRegister extends React.Component {
       ],
       Allcontact: [
         {
-          title: 'ข้อมูลผู้ติดต่อ',
+          title: I18n.t('transalte_contact_information'),
         },
       ],
       Alldataproduct: [
@@ -3427,7 +3427,7 @@ class TradeActivitiesRegister extends React.Component {
                                     textAlign: 'center',
                                     fontFamily: 'Kittithada Bold 75',
                                   }}>
-                                  ข้อมูลผู้ติดต่อ
+                                  {I18n.t('transalte_contact_information')}
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -3754,7 +3754,7 @@ class TradeActivitiesRegister extends React.Component {
                                             textAlign: 'center',
                                             marginTop: 9.1,
                                           }}>
-                                          ลบผู้เข้าร่วม
+                                          {I18n.t('transalte_Bt_del_participants')}
                                         </Text>
                                       </TouchableOpacity>
                                       <TouchableOpacity
@@ -4335,7 +4335,7 @@ class TradeActivitiesRegister extends React.Component {
                                     marginHorizontal: 15,
                                     paddingBottom: 10,
                                   }}>
-                                  ข้อมูลผู้ติดต่อ
+                                  {I18n.t('transalte_contact_information')}
                                 </Text>
                               </View>
                               <TouchableOpacity
@@ -4821,7 +4821,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                               marginHorizontal: 10,
                                             }}>
-                                            ประเทศ
+                                            {I18n.t('translate_country')}
                                           </Text>
                                           <Text
                                             style={{
@@ -6432,7 +6432,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             marginHorizontal: 10,
                                           }}>
-                                          ประเทศ
+                                          {I18n.t('translate_country')}
                                         </Text>
                                         <Text
                                           style={{
@@ -9863,7 +9863,7 @@ class TradeActivitiesRegister extends React.Component {
                               color: '#40536d',
                               textAlign: 'center',
                             }}>
-                            ข้าพเจ้ายอมรับเงื่อนไขข้อกำหนดของกรม
+                            {I18n.t('transalte_accept_the_terms')}
                           </Text>
                         </View>
                         <TouchableOpacity onPress={() => {}}>
@@ -9874,7 +9874,7 @@ class TradeActivitiesRegister extends React.Component {
                               textAlign: 'center',
                               textDecorationLine: 'underline',
                             }}>
-                            อ่านเงื่อนไขข้อกำหนดของกรม
+                            {I18n.t('transalte_Read_terms')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -9951,7 +9951,7 @@ class TradeActivitiesRegister extends React.Component {
                         fontSize: 22,
                         color: '#FFFFFF',
                       }}>
-                      ยืนยันการสมัคร
+                      {I18n.t('transalte_Bt_confirmation_apply')}
                     </Text>
                   </TouchableOpacity>
                 </View>

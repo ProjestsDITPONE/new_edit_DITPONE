@@ -719,7 +719,7 @@ class ViewTrade extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('สำเสร็จ');
+          alert(I18n.t('alert_succeed'));
         } else {
           // shared
           alert(result.activityType);
@@ -742,7 +742,7 @@ class ViewTrade extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('สำเสร็จ');
+          alert(I18n.t('alert_succeed'));
         } else {
           // shared
           alert(result.activityType);
@@ -1538,7 +1538,7 @@ class ViewTrade extends React.Component {
                       textAlign:'center'
                      
                     }}>
-                    ช่วงเวลา
+                    {I18n.t('transalte_period_time')}
                   </Text>
                 </View>
                 <View style={{justifyContent:'center',flex:0.2}}>
@@ -1787,7 +1787,7 @@ class ViewTrade extends React.Component {
                     fontSize: 20,
                     textAlign: 'center',
                   }}>
-                  ค้นหา
+                  {I18n.t('translate_Seachcontry')}
                 </Text>
               </TouchableOpacity>
             </View>
@@ -2117,7 +2117,7 @@ class ViewTrade extends React.Component {
 
                             borderRadius: 11,
                           }}>
-                          <Text style={Styles.popupTextMap}>แผนที่</Text>
+                          <Text style={Styles.popupTextMap}>{I18n.t('transalte_map')}</Text>
                         </TouchableOpacity>
                       </View>
                     </View>
@@ -2218,7 +2218,7 @@ class ViewTrade extends React.Component {
                             this.setState({ckhide: true});
                           }}
                           style={Styles.popupTexthideText}>
-                          แสดงรายละเอียด
+                          {I18n.t('transalte_show_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -2289,7 +2289,7 @@ class ViewTrade extends React.Component {
                               this.setState({ckhide: false});
                             }}
                             style={Styles.popupTexthideText}>
-                            ซ่อนรายละเอียด
+                            {I18n.t('transalte_Hide_details')}
                           </Text>
                           <Icon3
                             color="#2d6dc4"
@@ -2309,10 +2309,10 @@ class ViewTrade extends React.Component {
 
                     <View style={{flex: 1}}>
                       <Text style={Styles.popupTextdetail}>
-                        หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
+                        {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                       </Text>
                       <Text style={Styles.popupTextdetail}>
-                        เจ้าหน้าที่โครงการ :{' '}
+                        {I18n.t('transalte_project_staff')} :{' '}
                         {this.officer_name(this.state.officer_name)}
                       </Text>
                       <View style={{flexDirection: 'row'}}>
@@ -2435,7 +2435,7 @@ class ViewTrade extends React.Component {
                                 <Text style={Styles.textactivityregister}>
                                   {this.state.Close
                                     ? I18n.t('translate_Apply_activities')
-                                    : 'ปิดรับสมัครกิจกรรม'}
+                                    : I18n.t('translate_Applacation')}
                                 </Text>
                               </TouchableOpacity>
                             ) : (
@@ -2770,7 +2770,7 @@ class ViewTrade extends React.Component {
                       color: '#FFFFFF',
                       fontSize: 25,
                     }}>
-                    ค้นหา
+                    {I18n.t('translate_Seachcontry')}
                   </Text>
                 </TouchableOpacity>
               </View>

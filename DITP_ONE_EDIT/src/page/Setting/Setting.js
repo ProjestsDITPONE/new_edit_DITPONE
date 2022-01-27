@@ -92,8 +92,8 @@ const Setting = ({
 
   const AlertLogout = () => {
     Alert.alert(
-      'ท่านได้เปลี่ยนรหัสผ่านสำเร็จ',
-      'กรุณาเข้าสู่ระบบใหม่อีกครั้ง',
+      I18n.t('translate_ChangepasswordProTitle'),
+      I18n.t('translate_ChangepasswordProSubtitle'),
       [{text: 'ตกลง', onPress: () => onLogout()}],
       {cancelable: false},
     );

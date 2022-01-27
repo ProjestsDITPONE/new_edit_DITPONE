@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
+            "outputFile": "/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
             "map": [
                 {
                     "source": "/Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/a7e2de456151da052561a2b8e9175810/jetified-play-services-base-17.5.0/res/values-sl/values.xml",

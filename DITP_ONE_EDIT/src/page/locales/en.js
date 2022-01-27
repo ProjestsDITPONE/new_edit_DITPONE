@@ -1151,6 +1151,9 @@ export default {
   transalte_export_market: 'Attractive Export Market',
   transalte_Add_info_affiliated_company: 'Add information in the affiliated company',
 
+  //ViewTrade.js
+transalte_period_time: 'Time Period',
+
 };
 // translate_Checkstatus_title: 'Check status',
 // translate_Checkstatus_subtitle: 'participate',

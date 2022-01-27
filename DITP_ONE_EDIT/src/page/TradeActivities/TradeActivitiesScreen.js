@@ -2987,7 +2987,7 @@ class TradeActivitiesScreen extends React.Component {
                         {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                       </Text>
                       <Text style={{color: '#3a3a3a', fontSize: 18}}>
-                        {I18n.t(transalte_project_staff)} :
+                        {I18n.t('transalte_project_staff')} :
                         {this.officer_name(this.state.officer_name)}
                       </Text>
                       <View style={{flexDirection: 'row'}}>

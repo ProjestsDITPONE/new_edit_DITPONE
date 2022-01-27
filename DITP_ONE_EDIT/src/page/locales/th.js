@@ -188,7 +188,6 @@ export default {
   transalte_Department_Category: 'ประเภทสมาชิกกรม',
   transalte_Number_Juristic: 'เลขนิติบุคคล (Username)',
   transalte_Company_ฺBusiness: 'บริษัท / กิจการ',
-  transalte_tradeActivities_search_time: 'เลือกช่วงเวลา', 
   transalte_Bt_sesrch: 'ค้นหา',
   transalte_Bt_clear_all: 'ล้างทั้งหมด',
   transalte_map: 'แผนที่',
@@ -1057,5 +1056,9 @@ translate_assessment: 'ทำแบบประเมิน',
 transalte_show_details: 'แสดงรายละเอียด',
 transalte_see_details: 'ดูรายละเอียด',
 
+//VieDevelop.js
+transalte_succeed: 'สำเร็จ',
+transalte_Data_verification_progress: 'กำลังดำเนินการตรวจสอบข้อมูล',
+transalte_tradeActivities_search_time: 'เลือกช่วงเวลา', 
 
 };

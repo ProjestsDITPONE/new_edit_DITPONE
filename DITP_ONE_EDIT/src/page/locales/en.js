@@ -183,7 +183,6 @@ export default {
   transalte_Department_Category: 'Department Category',
   transalte_Number_Juristic: 'Number Juristic (Username)',
   transalte_Company_ฺBusiness: 'Company / Business',
-  transalte_tradeActivities_search_time: 'Time Period',
   transalte_Bt_sesrch: 'Search',
   transalte_Bt_clear_all: 'Clear All',
   transalte_map: 'Map',
@@ -1060,6 +1059,10 @@ export default {
   transalte_show_details: 'Show Details',
   transalte_see_details: 'See Details',
 
+  //VieDevelop.js
+  transalte_succeed: 'Succeed',
+  transalte_Data_verification_progress: 'Data verification is in progress.',
+  transalte_tradeActivities_search_time: 'Time Period',
 
 };
 // translate_Checkstatus_title: 'Check status',

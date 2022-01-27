@@ -53,26 +53,7 @@ export default {
   // transalte_Reason_forUdealte:'เหตุผลการแจ้งขอยกเลิกการเป็นสมาชิก',
   // translate_RequestDelateUrAccont:'แจ้งการยกเลิกเป็นสมาชิก',
   //อันเก่า
-  translate_changelang: 'เปลี่ยนภาษา',
-  translate_nonti: 'การแจ้งเตือน',
-  translate_Password: 'เปลี่ยนรหัสผ่าน (Reset Password)',
-  translate_RegisterPolicy: 'เงื่อนไขและกฎระเบียบ',
-  translate_Setting_Passcode: 'ตั่งค่า Passcode',
-  transalte_Set_Passcode: 'กรอก Passcode',
-  transalte_Change_Passcode: 'เปลี่ยนรหัสผ่าน Passcode',
-  transalte_Confirm_Change_Passcode: 'ยืนยันการเปลี่ยนรหัสผ่าน Passcode',
-  translate_Policy: 'นโยบายการใช้งาน',
-  translate_Canclemember: 'แจ้งยกเลิกบัญชีของฉัน',
-  translate_logout: 'ออกจากระบบ',
-  translate_questionnaire: 'ทำแบบสอบถาม',
-  translate_CanclememberAg: 'ยกเลิกการลงทะเบียนระบบ DITP ONE',
-  translate_CheckPhone: 'กรุณาตรวจสอบหมายเลขโทรศัพท์',
-  translate_Logout: 'ท่านยืนยันที่จะออกจากระบบ',
-  translate_UnDitp:
-    '\t\tคุณต้องการที่จะยกเลิก\nคำขอการแจ้งยกเลิกการเป็นสมาชิกกรม ?',
-  translate_QuesSelec: 'เลือกได้มากกว่า 1 ข้อ',
-  transalte_Delete_Code: 'ลบ',
-  transalte_Read_terms: 'อ่านเงื่อนไขข้อกำหนดของกรม.',
+ 
 
 
   //ProfileActivity ตรวจสอบสถานะ
@@ -1107,4 +1088,26 @@ transalte_expiration_date: 'วันหมดอายุ',
 
 //ChangeScreen.js
 transalte_new_pass: 'รหัสผ่านใหม่',
+
+//Setting.js
+translate_changelang: 'เปลี่ยนภาษา',
+translate_nonti: 'การแจ้งเตือน',
+translate_Password: 'เปลี่ยนรหัสผ่าน (Reset Password)',
+translate_RegisterPolicy: 'เงื่อนไขและกฎระเบียบ',
+translate_Setting_Passcode: 'ตั่งค่า Passcode',
+transalte_Set_Passcode: 'กรอก Passcode',
+transalte_Change_Passcode: 'เปลี่ยนรหัสผ่าน Passcode',
+transalte_Confirm_Change_Passcode: 'ยืนยันการเปลี่ยนรหัสผ่าน Passcode',
+translate_Policy: 'นโยบายการใช้งาน',
+translate_Canclemember: 'แจ้งยกเลิกบัญชีของฉัน',
+translate_logout: 'ออกจากระบบ',
+translate_questionnaire: 'ทำแบบสอบถาม',
+translate_CanclememberAg: 'ยกเลิกการลงทะเบียนระบบ DITP ONE',
+translate_CheckPhone: 'กรุณาตรวจสอบหมายเลขโทรศัพท์',
+translate_Logout: 'ท่านยืนยันที่จะออกจากระบบ',
+translate_UnDitp:
+  '\t\tคุณต้องการที่จะยกเลิก\nคำขอการแจ้งยกเลิกการเป็นสมาชิกกรม ?',
+translate_QuesSelec: 'เลือกได้มากกว่า 1 ข้อ',
+transalte_Delete_Code: 'ลบ',
+transalte_Read_terms: 'อ่านเงื่อนไขข้อกำหนดของกรม.',
 };

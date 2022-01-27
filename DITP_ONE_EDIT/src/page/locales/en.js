@@ -128,8 +128,8 @@ export default {
   translate_EndAct: 'The activity is over',
   translate_identityPro:
     '\t*หากท่านไม่ทำการยืนยันตัวตน\nท่านจะไม่สามารถสมัครเข้าร่วมกิจกรรมได้',
-  translate_ChangepasswordProTitle: 'ท่านได้เปลี่ยนรหัสผ่านสำเร็จ',
-  translate_ChangepasswordProSubtitle: 'กรุณาเข้าสู่ระบบใหม่อีกครั้ง',
+  translate_ChangepasswordProTitle: 'You have successfully changed your password.',
+  translate_ChangepasswordProSubtitle: 'Please login again.',
   translate_SvaeEdit: 'คุณต้องการบันทึกข้อมูลที่แก้ไขหรือไม่ ?',
   translate_fill_inapplication: 'Fill Application',
   translate_learn:'Learn More',

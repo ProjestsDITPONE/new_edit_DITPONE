@@ -2613,7 +2613,7 @@ class Activities extends React.Component {
                                               ครบกำหนด
                                             </Text>
                                           </View>
-                                          <View style={{width: '100%'}}>
+                                          <View style={{width: '100%', marginTop: Platform.OS === 'android' ? 5 : null, }}>
                                             <Text
                                               style={{
                                                 fontSize: 14,
@@ -4142,7 +4142,7 @@ class Activities extends React.Component {
                                               ครบกำหนด
                                             </Text>
                                           </View>
-                                          <View style={{width: '100%'}}>
+                                          <View style={{width: '100%', marginTop: Platform.OS === 'android' ? 5 : null,}}>
                                             <Text
                                               style={{
                                                 fontSize: 14,

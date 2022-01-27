@@ -1099,4 +1099,9 @@ transalte_Search_contact_history: 'ค้นหาประวัติข้อ
 
 //ViewTrade.js
 transalte_period_time: 'ช่วงเวลา',
+
+//Brand.js
+transalte_Value_Check_Badge: 'มูลค่า/ตรวจสอบตราสัญลักษณ์',
+transalte_apply_date: 'วันที่สมัคร',
+transalte_expiration_date: 'วันหมดอายุ',
 };

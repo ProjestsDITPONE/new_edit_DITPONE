@@ -1154,6 +1154,11 @@ export default {
   //ViewTrade.js
 transalte_period_time: 'Time Period',
 
+//Brand.js
+transalte_Value_Check_Badge: 'Value / Check Badge',
+transalte_apply_date: 'Application Date',
+transalte_expiration_date: 'Expiration Date',
+
 };
 // translate_Checkstatus_title: 'Check status',
 // translate_Checkstatus_subtitle: 'participate',

@@ -44,7 +44,6 @@ export default {
   translate_good2: 'Fair',
   translate_good3: 'Revamp',
   translate_goodDetail: 'Details',
-  transalte_Hide_details: 'Hide details',
   transalte_ProductPLZ : 'Please select the market and products you are interested in.',
 
   //Setting
@@ -102,7 +101,6 @@ export default {
   translate_Passed_initial: 'Preliminary verification passed',
   translate_lPayment: 'Make payment',
   translate_Approved: 'Approved',
-  translate_assessment: 'Complete survey',
   translate_Contactprojectstaff: 'Contact project co-ordinator',
   translate_Detail: 'Detail',
   translate_Trainingcourse:
@@ -134,11 +132,9 @@ export default {
   translate_ChangepasswordProSubtitle: 'กรุณาเข้าสู่ระบบใหม่อีกครั้ง',
   translate_SvaeEdit: 'คุณต้องการบันทึกข้อมูลที่แก้ไขหรือไม่ ?',
   translate_fill_inapplication: 'Fill Application',
-  translate_assessment: 'Assessment',
   translate_learn:'Learn More',
   transalte_assessment_form: 'Assessment Form',
   transalte_duly: 'Duly',
-  transalte_considered_selection: 'To be considered in the next selection',
   transalte_personal_information: 'Personal Info',
   transalte_Participants:'Participants',
   transalte_company_information: 'Company Info',
@@ -190,7 +186,6 @@ export default {
   transalte_tradeActivities_search_time: 'Time Period',
   transalte_Bt_sesrch: 'Search',
   transalte_Bt_clear_all: 'Clear All',
-  transalte_show_details: 'Show Details',
   transalte_map: 'Map',
   transalte_Juristic_Person_Information: 'Juristic Information',
   transalte_ฺฺAccompanying_Information: 'Accompanying Info',
@@ -1051,6 +1046,21 @@ export default {
   alert_Please_add_product_info: 'Please add product information.',
   alert_add_info_affiliated_company: 'Please add information in the affiliated company.',
   alert_Please_add_contact: 'Please add contact information.',
+
+  //Activities.js
+  transalte_waiting_payment: 'Waiting For Payment',
+  transalte_due: 'Due',
+  transalte_considered_selection: 'To be considered in the next selection',
+  transalte_Hide_details: 'Hide details',
+  transalte_responsible_agency: 'Responsible training agency',
+  transalte_project_staff: 'Project Staff',
+  transalte_Application_amendment_details: 'Application Amendment Details',
+  transalte_edit_application: 'Edit Application',
+  translate_assessment: 'Complete survey',
+  transalte_show_details: 'Show Details',
+  transalte_see_details: 'See Details',
+
+
 };
 // translate_Checkstatus_title: 'Check status',
 // translate_Checkstatus_subtitle: 'participate',

@@ -101,7 +101,7 @@ const IC_ARR_UP = require("../../image/ArrowUpx.png");
 const dadamenu3 = [
   {
     id: 1,
-    txt: I18n.t("transalte_personal_information"),
+    txt: I18n.locale === 'th' ? 'ข้อมูลส่วนตัว' : 'Personal Info',
   },
   {
     id: 2,
@@ -120,7 +120,7 @@ const dadamenu3 = [
 const dadamenu1 = [
   {
     id: 1,
-    txt: I18n.t("transalte_personal_information"),
+    txt: I18n.locale === 'th' ? 'ข้อมูลส่วนตัว' : 'Personal Info',
   },
   {
     id: 2,
@@ -207,7 +207,7 @@ class DevlopRegister extends React.Component {
 
       Allcontents: [
         {
-          title: I18n.t("transalte_personal_information"),
+          title: I18n.locale === 'th' ? 'ข้อมูลส่วนตัว' : 'Personal Info',
         },
       ],
       Allcontents1: [

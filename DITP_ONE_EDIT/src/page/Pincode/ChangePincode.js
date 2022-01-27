@@ -90,7 +90,7 @@ const ChangePincodepassword = ({navigation, route}) => {
           storeUserSession(PinChageCKconfirm);
           navigation.navigate('HomeStackScreen');
         } else {
-          alert('กรุณาใส่รหัส PIN ใหม่อีกครั้ง');
+          alert(I18n.t('transalte_enter_new_PIN_code_again'));
           pconfirm.current.clearAll();
         }
       } else {
@@ -279,7 +279,7 @@ const ChangePincodepassword = ({navigation, route}) => {
               color: 'rgba(255,255,255,0.7)',
               fontSize: 30,
             }}>
-            เปลี่ยนรหัสผ่าน Passcode
+            {I18n.t('transalte_Change_Passcode')}
           </Text>
           <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView
@@ -358,7 +358,7 @@ const ChangePincodepassword = ({navigation, route}) => {
               color: 'rgba(255,255,255,0.7)',
               fontSize: 30,
             }}>
-            ยืนยันเปลี่ยนรหัสผ่าน Passcode
+            {I18n.t('transalte_Confirm_Change_Passcode')}
           </Text>
           <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView

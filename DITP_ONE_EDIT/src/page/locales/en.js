@@ -46,25 +46,7 @@ export default {
   translate_goodDetail: 'Details',
   transalte_ProductPLZ : 'Please select the market and products you are interested in.',
 
-  //Setting
-  translate_changelang: 'Change language',
-  translate_nonti: 'Notification',
-  translate_Password: 'Change password',
-  translate_Setting_Passcode: 'Setting Passcode',
-  transalte_set_Passcode: 'Complete Passcode',
-  transalte_Confirm_Change_Passcode: 'Confirm Change Passcode',
-  transalte_Change_Passcode: 'Change Passcode',
-  translate_Policy: 'Policy',
-  translate_RegisterPolicy: 'Policy',
-  translate_Canclemember: 'Cancel Membership DITP ONE',
-  translate_logout: 'Logout',
-  translate_questionnaire: 'Survey',
-  translate_CanclememberAg: 'Unregister DITP ONE',
-  translate_CheckPhone: 'Please Check the Phone Numer.',
-  translate_Logout: 'Do you want to Singout ?',
-  translate_UnDitp: 'Do you want Cancel Membership DITP ONE ?',
-  translate_QuesSelec: '"เลือกได้มากกว่า 1 ข้อ"',
-  transalte_Delete_Code: 'Del',
+  
 
   //ProfileActivity ตรวจสอบสถานะ
   translate_ViewProfile: 'ViewProfile',
@@ -1161,6 +1143,27 @@ transalte_expiration_date: 'Expiration Date',
 
 //ChangeScreen.js
 transalte_new_pass: 'New Password',
+
+//Setting
+translate_changelang: 'Change language',
+translate_nonti: 'Notification',
+translate_Password: 'Change password',
+translate_Setting_Passcode: 'Setting Passcode',
+transalte_set_Passcode: 'Complete Passcode',
+transalte_Confirm_Change_Passcode: 'Confirm Change Passcode',
+transalte_Change_Passcode: 'Change Passcode',
+translate_Policy: 'Policy',
+translate_RegisterPolicy: 'Policy',
+translate_Canclemember: 'Cancel Membership DITP ONE',
+translate_logout: 'Logout',
+translate_questionnaire: 'Survey',
+translate_CanclememberAg: 'Unregister DITP ONE',
+translate_CheckPhone: 'Please Check the Phone Numer.',
+translate_Logout: 'Do you want to Singout ?',
+translate_UnDitp: 'Do you want Cancel Membership DITP ONE ?',
+translate_QuesSelec: '"เลือกได้มากกว่า 1 ข้อ"',
+transalte_Delete_Code: 'Del',
+transalte_enter_new_PIN_code_again: 'Please enter a new PIN code again.',
 
 };
 // translate_Checkstatus_title: 'Check status',

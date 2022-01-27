@@ -1110,4 +1110,5 @@ translate_UnDitp:
 translate_QuesSelec: 'เลือกได้มากกว่า 1 ข้อ',
 transalte_Delete_Code: 'ลบ',
 transalte_Read_terms: 'อ่านเงื่อนไขข้อกำหนดของกรม.',
+transalte_enter_new_PIN_code_again: 'กรุณาใส่รหัส PIN ใหม่อีกครั้ง',
 };

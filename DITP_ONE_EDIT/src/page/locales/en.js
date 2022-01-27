@@ -1047,6 +1047,7 @@ export default {
   alert_Select_list_delete: 'Please select the item you want to delete.',
   alert_add_information: 'Please add information',
   alert_succeed: 'Succeed',
+  alert_Data_verification_progress: 'Data verification is in progress.',
 
   //Activities.js
   transalte_waiting_payment: 'Waiting For Payment',

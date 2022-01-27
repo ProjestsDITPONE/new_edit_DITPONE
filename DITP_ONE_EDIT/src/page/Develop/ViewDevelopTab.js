@@ -139,7 +139,7 @@ class ViewDevelop extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('สำเสร็จ')
+          alert(I18n.t('transalte_succeed'))
         } else {
           // shared
           // alert(result.activityType);
@@ -162,7 +162,7 @@ class ViewDevelop extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('สำเสร็จ')
+          alert(I18n.t('transalte_succeed'))
         } else {
           // shared
           alert(result.activityType);
@@ -2121,7 +2121,7 @@ class ViewDevelop extends React.Component {
                           }}>
                           <Text
                             style={Styles.popupTextMap}>
-                            แผนที่
+                            {I18n.t('transalte_map')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2305,7 +2305,7 @@ class ViewDevelop extends React.Component {
                               this.setState({ckhide2: false});
                             }}
                             style={Styles.popupTexthideText}>
-                            ซ่อนรายละเอียด
+                            {I18n.t('transalte_Hide_details')}
                           </Text>
                           <Icon3
                             color="#2d6dc4"
@@ -2323,10 +2323,10 @@ class ViewDevelop extends React.Component {
                     </View>
                     <View style={{flex: 1}}>
                       <Text style={Styles.popupTextdetail}>
-                        หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
+                        {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                       </Text>
                       <Text style={Styles.popupTextdetail}>
-                        เจ้าหน้าที่โครงการ : {this.state.officer_name}
+                        {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                       </Text>
                       <View style={{flexDirection: 'row'}}>
                         <Image
@@ -2576,7 +2576,7 @@ class ViewDevelop extends React.Component {
                         left: 48,
                         top: 3.5,
                       }}>
-                      เลือกช่วงเวลา
+                      {I18n.t('transalte_tradeActivities_search_time')}
                     </Text>
                   </TouchableOpacity>
                 }>
@@ -2972,7 +2972,7 @@ class ViewDevelop extends React.Component {
                         left: 48,
                         top: 3.5,
                       }}>
-                      เลือกช่วงเวลา
+                      {I18n.t('transalte_tradeActivities_search_time')}
                     </Text>
                   </TouchableOpacity>
                 }>

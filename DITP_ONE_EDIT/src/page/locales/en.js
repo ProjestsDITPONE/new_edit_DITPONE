@@ -185,7 +185,6 @@ export default {
   transalte_Company_ฺBusiness: 'Company / Business',
   transalte_Bt_sesrch: 'Search',
   transalte_Bt_clear_all: 'Clear All',
-  transalte_map: 'Map',
   transalte_Juristic_Person_Information: 'Juristic Information',
   transalte_ฺฺAccompanying_Information: 'Accompanying Info',
   transalte_Contact_Information: 'Contact Information',
@@ -1064,6 +1063,9 @@ export default {
   transalte_Data_verification_progress: 'Data verification is in progress.',
   transalte_tradeActivities_search_time: 'Time Period',
 
+  //ViewDevelopTap.js
+  transalte_: '',
+  transalte_map: 'Map',
 };
 // translate_Checkstatus_title: 'Check status',
 // translate_Checkstatus_subtitle: 'participate',

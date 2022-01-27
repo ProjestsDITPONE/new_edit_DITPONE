@@ -190,7 +190,6 @@ export default {
   transalte_Company_ฺBusiness: 'บริษัท / กิจการ',
   transalte_Bt_sesrch: 'ค้นหา',
   transalte_Bt_clear_all: 'ล้างทั้งหมด',
-  transalte_map: 'แผนที่',
   transalte_Juristic_Person_Information: 'ข้อมูลนิติบุคคล',
   transalte_ฺฺAccompanying_Information: 'ข้อมูลประกอบ',
   transalte_Contact_Information: 'ข้อมูลผู็ติดต่อ' ,
@@ -1060,5 +1059,9 @@ transalte_see_details: 'ดูรายละเอียด',
 transalte_succeed: 'สำเร็จ',
 transalte_Data_verification_progress: 'กำลังดำเนินการตรวจสอบข้อมูล',
 transalte_tradeActivities_search_time: 'เลือกช่วงเวลา', 
+
+//ViewDevelopTap.js
+transalte_: '',
+transalte_map: 'แผนที่',
 
 };

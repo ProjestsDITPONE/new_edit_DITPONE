@@ -9,64 +9,64 @@
 9        android:targetSdkVersion="30" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml:4:5-78
-11-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/debug/AndroidManifest.xml:4:22-75
+11-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml:4:5-78
+11-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/debug/AndroidManifest.xml:4:22-75
 12    <uses-permission android:name="android.permission.CAMERA" />
-12-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:5:3-63
-12-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:5:20-60
+12-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:5:3-63
+12-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:5:20-60
 13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-13-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:6:3-78
-13-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:6:20-75
+13-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:6:3-78
+13-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:6:20-75
 14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-14-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:7:3-79
-14-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:7:20-76
+14-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:7:3-79
+14-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:7:20-76
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:3:3-65
-15-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:3:20-62
+15-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:3:3-65
+15-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:3:20-62
 16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-16-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:4:3-80
-16-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:4:20-77
+16-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:4:3-80
+16-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:4:20-77
 17
 18    <uses-feature android:name="android.hardware.camera" />
-18-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:8:3-58
-18-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:8:17-55
+18-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:8:3-58
+18-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:8:17-55
 19    <uses-feature android:name="android.hardware.camera.autofocus" />
-19-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:9:3-68
-19-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:9:17-65
+19-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:9:3-68
+19-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:9:17-65
 20
 21    <uses-permission android:name="android.permission.VIBRATE" />
-21-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:10:3-64
-21-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:10:20-61
+21-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:10:3-64
+21-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:10:20-61
 22    <uses-permission android:name="android.permission.READ_CONTACTS" />
-22-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:11:3-70
-22-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:11:20-67
+22-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:11:3-70
+22-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:11:20-67
 23    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-23-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:12:3-76
-23-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:12:20-74
+23-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:12:3-76
+23-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:12:20-74
 24    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
-24-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:13:3-70
-24-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:13:20-67
+24-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:13:3-70
+24-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:13:20-67
 25    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 25-->[com.facebook.flipper:flipper:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/07c4fbb9f0d9fbdfca207286f3b8b554/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
 25-->[com.facebook.flipper:flipper:0.33.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/07c4fbb9f0d9fbdfca207286f3b8b554/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
 26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-26-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-79
-26-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-76
+26-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-79
+26-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-76
 27    <uses-permission android:name="android.permission.WAKE_LOCK" />
-27-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-68
-27-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-65
+27-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-68
+27-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-65
 28
 29    <queries>
 29-->[com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:14:5-20:15
 30        <intent>
 30-->[com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:15:9-19:18
 31            <action android:name="android.intent.action.VIEW" />
-31-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:25:9-61
-31-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:25:17-58
+31-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:25:9-61
+31-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:25:17-58
 32
 33            <data android:scheme="https" />
-33-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:28:9-65
-33-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:28:15-39
+33-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:28:9-65
+33-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:28:15-39
 34        </intent>
 35        <intent>
 35-->[com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:15:9-19:18
@@ -75,8 +75,8 @@
 38    </queries>
 39
 40    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
-40-->[:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-77
-40-->[:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-74
+40-->[:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-77
+40-->[:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-74
 41    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 41-->[notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:13:5-81
 41-->[notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:13:22-78
@@ -87,267 +87,267 @@
 43-->[notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:17:5-81
 43-->[notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:17:22-78
 44    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-44-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-74
-44-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-71
+44-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-74
+44-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-71
 45    <uses-permission android:name="com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER" />
-45-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-91
-45-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-88
+45-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-91
+45-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-88
 46    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" /> <!-- Required to access Google Play Licensing -->
-46-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-117
-46-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:22-114
+46-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-117
+46-->[:react-native-fingerprint-scanner] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-fingerprint-scanner/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:22-114
 47    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
-47-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-73
-47-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-70
+47-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-73
+47-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-70
 48    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Samsung -->
 48-->[com.google.android.gms:play-services-measurement:20.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/8a372fb5da5a0001236f73533e466ff8/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:26:5-110
 48-->[com.google.android.gms:play-services-measurement:20.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/8a372fb5da5a0001236f73533e466ff8/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:26:22-107
 49    <uses-permission android:name="com.sec.android.provider.badge.BadgeProvider" />
-49-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-84
-49-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-81
+49-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-84
+49-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-81
 50    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
-50-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-86
-50-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-83
+50-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-86
+50-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-83
 51    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
-51-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-87
-51-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-84
+51-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-87
+51-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-84
 52    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
-52-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-81
-52-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-78
+52-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-81
+52-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-78
 53    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
-53-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-83
-53-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:22-80
+53-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-83
+53-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:22-80
 54    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
-54-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-88
-54-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:22-85
+54-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-88
+54-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:22-85
 55    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
-55-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-92
-55-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:22-89
+55-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-92
+55-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:22-89
 56    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
-56-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-84
-56-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:22-81
+56-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-84
+56-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:22-81
 57    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
-57-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:5-83
-57-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:22-80
+57-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:5-83
+57-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:22-80
 58    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
-58-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:5-91
-58-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:22-88
+58-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:5-91
+58-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:22-88
 59    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
-59-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:5-92
-59-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:22-89
+59-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:5-92
+59-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:22-89
 60    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
-60-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-93
-60-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:22-90
+60-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-93
+60-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:22-90
 61    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
-61-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:5-73
-61-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:22-70
+61-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:5-73
+61-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:22-70
 62    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
-62-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:5-82
-62-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:22-79
+62-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:5-82
+62-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:22-79
 63    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
-63-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:5-83
-63-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:22-80
+63-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:5-83
+63-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:22-80
 64    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
-64-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:5-88
-64-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:22-85
+64-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:5-88
+64-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:22-85
 65    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
-65-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-89
-65-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:22-86
+65-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-89
+65-->[:react-native-app-badge] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-app-badge/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:22-86
 66
 67    <application
-67-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:3-33:17
+67-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:3-33:17
 68        android:name="com.ditp.ditpone.MainApplication"
-68-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:16-47
+68-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:16-47
 69        android:allowBackup="false"
-69-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:187-214
+69-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:187-214
 70        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 70-->[androidx.core:core:1.3.2] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/be5c9b9ed529d958cb78b64576f39bae/core-1.3.2/AndroidManifest.xml:24:18-86
 71        android:debuggable="true"
 72        android:extractNativeLibs="false"
 73        android:icon="@mipmap/ic_launcher"
-73-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:106-140
+73-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:106-140
 74        android:label="@string/app_name"
-74-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:73-105
+74-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:73-105
 75        android:largeHeap="true"
-75-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:48-72
+75-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:48-72
 76        android:requestLegacyExternalStorage="true"
-76-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:283-326
+76-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:283-326
 77        android:roundIcon="@mipmap/ic_launcher_round"
-77-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:141-186
+77-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:141-186
 78        android:theme="@style/AppTheme"
-78-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:215-246
+78-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:215-246
 79        android:usesCleartextTraffic="true" >
-79-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:16:247-282
+79-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:16:247-282
 80        <meta-data
-80-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:17:5-144
+80-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:17:5-144
 81            android:name="com.dieam.reactnativepushnotification.notification_channel_name"
-81-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:17:16-94
+81-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:17:16-94
 82            android:value="YOUR NOTIFICATION CHANNEL NAME" />
-82-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:17:95-141
+82-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:17:95-141
 83        <meta-data
-83-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:18:5-158
+83-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:18:5-158
 84            android:name="com.dieam.reactnativepushnotification.notification_channel_description"
-84-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:18:16-101
+84-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:18:16-101
 85            android:value="YOUR NOTIFICATION CHANNEL DESCRIPTION" />
-85-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:18:102-155
+85-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:18:102-155
 86
 87        <activity
-87-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:5-30:16
+87-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:5-30:16
 88            android:name="com.ditp.ditpone.MainActivity"
-88-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:15-43
+88-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:15-43
 89            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-89-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:114-191
+89-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:114-191
 90            android:label="@string/app_name"
-90-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:44-76
+90-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:44-76
 91            android:launchMode="singleTask"
-91-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:192-223
+91-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:192-223
 92            android:screenOrientation="portrait"
-92-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:77-113
+92-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:77-113
 93            android:windowSoftInputMode="adjustPan" >
-93-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:19:224-263
+93-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:19:224-263
 94            <intent-filter>
-94-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:20:7-23:23
+94-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:20:7-23:23
 95                <action android:name="android.intent.action.MAIN" />
-95-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:21:9-61
-95-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:21:17-58
+95-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:21:9-61
+95-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:21:17-58
 96
 97                <category android:name="android.intent.category.LAUNCHER" />
-97-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:22:9-69
-97-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:22:19-66
+97-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:22:9-69
+97-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:22:19-66
 98            </intent-filter>
 99            <intent-filter>
-99-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:24:7-29:23
+99-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:24:7-29:23
 100                <action android:name="android.intent.action.VIEW" />
-100-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:25:9-61
-100-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:25:17-58
+100-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:25:9-61
+100-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:25:17-58
 101
 102                <category android:name="android.intent.category.DEFAULT" />
-102-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:26:9-68
-102-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:26:19-65
+102-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:26:9-68
+102-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:26:19-65
 103                <category android:name="android.intent.category.BROWSABLE" />
-103-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:27:9-70
-103-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:27:19-67
+103-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:27:9-70
+103-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:27:19-67
 104
 105                <data
-105-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:28:9-65
+105-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:28:9-65
 106                    android:host="my-host"
-106-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:28:40-62
+106-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:28:40-62
 107                    android:scheme="ditpone" />
-107-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:28:15-39
+107-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:28:15-39
 108            </intent-filter>
 109        </activity>
 110        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-110-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:31:5-82
-110-->/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/src/main/AndroidManifest.xml:31:15-79
+110-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:31:5-82
+110-->/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/src/main/AndroidManifest.xml:31:15-79
 111
 112        <meta-data
-112-->[:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
+112-->[:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
 113            android:name="in_app_messaging_auto_collection_enabled"
-113-->[:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-68
+113-->[:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-68
 114            android:value="true" />
-114-->[:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
+114-->[:react-native-firebase_in-app-messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/in-app-messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
 115        <meta-data
-115-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:36
+115-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:36
 116            android:name="firebase_analytics_collection_enabled"
-116-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-65
+116-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-65
 117            android:value="true" />
-117-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-33
+117-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-33
 118        <meta-data
-118-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:37
+118-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:37
 119            android:name="firebase_analytics_collection_deactivated"
-119-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-69
+119-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-69
 120            android:value="false" />
-120-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-34
+120-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-34
 121        <meta-data
-121-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-24:36
+121-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-24:36
 122            android:name="google_analytics_adid_collection_enabled"
-122-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-68
+122-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-68
 123            android:value="true" />
-123-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-33
+123-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-33
 124        <meta-data
-124-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-27:36
+124-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-27:36
 125            android:name="google_analytics_ssaid_collection_enabled"
-125-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-69
+125-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-69
 126            android:value="true" />
-126-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-33
+126-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-33
 127        <meta-data
-127-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:9-30:36
+127-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:9-30:36
 128            android:name="google_analytics_default_allow_ad_personalization_signals"
-128-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-85
+128-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-85
 129            android:value="true" />
-129-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-33
+129-->[:react-native-firebase_analytics] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/analytics/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-33
 130
 131        <service android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService" />
-131-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-111
-131-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-108
+131-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-111
+131-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-108
 132        <service
-132-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-23:19
+132-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-23:19
 133            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
-133-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-95
+133-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-95
 134            android:exported="false" >
-134-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-37
+134-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-37
 135            <intent-filter>
-135-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-22:29
+135-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-22:29
 136                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-136-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:17-78
-136-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:25-75
+136-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:17-78
+136-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:25-75
 137            </intent-filter>
 138        </service>
 139
 140        <receiver
-140-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-32:20
+140-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-32:20
 141            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
-141-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-96
+141-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-96
 142            android:exported="true"
-142-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-36
+142-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-36
 143            android:permission="com.google.android.c2dm.permission.SEND" >
-143-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-73
+143-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-73
 144            <intent-filter>
-144-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-31:29
+144-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-31:29
 145                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-145-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-81
-145-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-78
+145-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-81
+145-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-78
 146            </intent-filter>
 147        </receiver>
 148
 149        <meta-data
-149-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:9-36:36
+149-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:9-36:36
 150            android:name="firebase_messaging_auto_init_enabled"
-150-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-64
+150-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-64
 151            android:value="true" />
-151-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-33
+151-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-33
 152        <meta-data
-152-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:9-39:32
+152-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:9-39:32
 153            android:name="com.google.firebase.messaging.default_notification_channel_id"
-153-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-89
+153-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-89
 154            android:value="" />
-154-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-29
+154-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-29
 155        <meta-data
-155-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:9-42:47
+155-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:9-42:47
 156            android:name="com.google.firebase.messaging.default_notification_color"
-156-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-84
+156-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-84
 157            android:resource="@color/white" />
-157-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-44
+157-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-44
 158        <meta-data
-158-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
+158-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
 159            android:name="app_data_collection_default_enabled"
-159-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
+159-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
 160            android:value="true" />
-160-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
+160-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
 161
 162        <service
-162-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
+162-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
 163            android:name="com.google.firebase.components.ComponentDiscoveryService"
-163-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
+163-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
 164            android:directBootAware="true"
 164-->[com.google.firebase:firebase-common:20.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/3e26631c757fc84968745998a719c6ff/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
 165            android:exported="false" >
 165-->[com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:25:13-37
 166            <meta-data
-166-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:85
+166-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:85
 167                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
-167-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-120
+167-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-120
 168                android:value="com.google.firebase.components.ComponentRegistrar" />
-168-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-82
+168-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-82
 169            <meta-data
 169-->[com.google.firebase:firebase-inappmessaging-display:20.1.1] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/1a9539bc6ac40d98f4cd56359d794658/jetified-firebase-inappmessaging-display-20.1.1/AndroidManifest.xml:26:13-28:85
 170                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
@@ -399,31 +399,31 @@
 193        </service>
 194
 195        <provider
-195-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-26:38
+195-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-26:38
 196            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
-196-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-88
+196-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-88
 197            android:authorities="com.ditp.ditpone.reactnativefirebaseappinitprovider"
-197-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-86
+197-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-86
 198            android:exported="false"
-198-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
+198-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
 199            android:initOrder="99" />
-199-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-35
+199-->[:react-native-firebase_app] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-35
 200
 201        <activity android:name="com.proyecto26.inappbrowser.ChromeTabsManagerActivity" >
-201-->[:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-22:20
-201-->[:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:19-87
+201-->[:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-22:20
+201-->[:react-native-inappbrowser-reborn] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-inappbrowser-reborn/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:19-87
 202        </activity>
 203
 204        <provider
-204-->[:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-16:40
+204-->[:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-16:40
 205            android:name="io.invertase.notifee.NotifeeInitProvider"
-205-->[:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-68
+205-->[:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-68
 206            android:authorities="com.ditp.ditpone.notifee-init-provider"
-206-->[:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-73
+206-->[:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-73
 207            android:exported="false"
-207-->[:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+207-->[:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
 208            android:initOrder="-100" /> <!-- Receiver Service -->
-208-->[:notifee_react-native] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-37
+208-->[:notifee_react-native] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-37
 209        <service
 209-->[notifee_core_release.aar] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/b98ebf12afb8c1fc5a58b88cb7cdc8eb/jetified-notifee_core_release/AndroidManifest.xml:22:9-24:40
 210            android:name="app.notifee.core.ReceiverService"
@@ -490,55 +490,55 @@
 238        </receiver>
 239
 240        <provider
-240-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+240-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
 241            android:name="com.imagepicker.ImagePickerProvider"
-241-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
+241-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
 242            android:authorities="com.ditp.ditpone.imagepickerprovider"
-242-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-71
+242-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-71
 243            android:exported="false"
-243-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+243-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
 244            android:grantUriPermissions="true" >
-244-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+244-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
 245            <meta-data
-245-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
+245-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
 246                android:name="android.support.FILE_PROVIDER_PATHS"
-246-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+246-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
 247                android:resource="@xml/imagepicker_provider_paths" />
-247-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+247-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
 248        </provider>
 249        <provider
-249-->[:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+249-->[:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
 250            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-250-->[:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+250-->[:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
 251            android:authorities="com.ditp.ditpone.fileprovider"
-251-->[:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+251-->[:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
 252            android:exported="false"
-252-->[:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+252-->[:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
 253            android:grantUriPermissions="true" >
-253-->[:react-native-webview] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+253-->[:react-native-webview] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
 254            <meta-data
-254-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
+254-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
 255                android:name="android.support.FILE_PROVIDER_PATHS"
-255-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+255-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
 256                android:resource="@xml/file_provider_paths" />
-256-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+256-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
 257        </provider>
 258        <provider
-258-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:9-44:20
+258-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:9-44:20
 259            android:name="com.RNFetchBlob.Utils.FileProvider"
-259-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-62
+259-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-62
 260            android:authorities="com.ditp.ditpone.provider"
-260-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-60
+260-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-60
 261            android:exported="false"
-261-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-37
+261-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-37
 262            android:grantUriPermissions="true" >
-262-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-47
+262-->[:rn-fetch-blob] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-47
 263            <meta-data
-263-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
+263-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
 264                android:name="android.support.FILE_PROVIDER_PATHS"
-264-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+264-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
 265                android:resource="@xml/provider_paths" />
-265-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+265-->[:react-native-image-picker] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
 266        </provider>
 267
 268        <activity
@@ -784,10 +784,10 @@
 394            android:permission="com.google.android.c2dm.permission.SEND" >
 394-->[com.google.firebase:firebase-messaging:23.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7082528a270698edac11f40734fc0f95/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
 395            <intent-filter>
-395-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-31:29
+395-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-31:29
 396                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-396-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-81
-396-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-78
+396-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-81
+396-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-78
 397            </intent-filter>
 398        </receiver>
 399        <!--
@@ -803,10 +803,10 @@
 406            android:exported="false" >
 406-->[com.google.firebase:firebase-messaging:23.0.0] /Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7082528a270698edac11f40734fc0f95/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
 407            <intent-filter android:priority="-500" >
-407-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-22:29
+407-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-22:29
 408                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-408-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:17-78
-408-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:25-75
+408-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:17-78
+408-->[:react-native-firebase_messaging] /Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:25-75
 409            </intent-filter>
 410        </service>
 411

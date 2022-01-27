@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/IBCSTAFF/Desktop/App_DITP_ONE_PUBLIC/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml",
+            "outputFile": "/Users/IBCSTAFF/Desktop/new_edit_DITPONE/DITP_ONE_EDIT/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml",
             "map": [
                 {
                     "source": "/Users/IBCSTAFF/.gradle/caches/transforms-2/files-2.1/7082528a270698edac11f40734fc0f95/jetified-firebase-messaging-23.0.0/res/values-iw/values.xml",

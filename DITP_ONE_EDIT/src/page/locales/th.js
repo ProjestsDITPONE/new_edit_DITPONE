@@ -1041,6 +1041,8 @@ alert_Please_add_information: 'กรุณาเพิ่มข้อมูล�
 alert_Please_add_product_info: 'กรุณาเพิ่มข้อมูลสินค้า',
 alert_add_info_affiliated_company: 'กรุณาเพิ่มข้อมูลในบริษัทสังกัด',
 alert_Please_add_contact: 'กรุณาเพิ่มข้อมูลติดต่อ',
+alert_Select_list_delete: 'กรุณาเลือกรายการที่ต้องการลบ',
+alert_add_information: 'กรุณาเพิ่มข้อมูลประกอบ',
 
 //Activities.js
 transalte_waiting_payment: 'รอการชำระเงิน',
@@ -1064,4 +1066,26 @@ transalte_tradeActivities_search_time: 'เลือกช่วงเวลา'
 transalte_: '',
 transalte_map: 'แผนที่',
 
+//DevlopRegister.js
+transalte_company_info: 'ข้อมูลบริษัท',
+transalte_manufacturer: 'ผู้ผลิต',
+transalte_exporter: 'ผู้ส่งออก',
+transalte_international_trading_company: 'บริษัทการค้าระหว่างประเทศ',
+transalte_specify_details: 'กรณีอื่นๆ กรุณาระบุรายละเอียด',
+transalte_select_subcategory: 'เลือกประเภทสินค้าย่อย',
+transalte_100_characters: '100 ตัวอักษร',
+transalte_product_image: "Product's Image / รูปสินค้า",
+transalte_Search_corporate_number: 'ค้นหาเลขนิติบุคคล',
+transalte_select_province: 'เลือกจังหวัด',
+transalte_select_district: 'เลือกอำเภอ',
+transalte_select_subdistrict: 'เลือกตำบล',
+transalte_corporate_registration_number: 'เลขทะเบียนนิติบุคคล',
+transalte_company_business_thai: 'บริษัท/กิจการ (ไทย)',
+transalte_address_thai: 'ที่อยู่ (ไทย)',
+transalte_address_eng: 'ที่อยู่ (อังกฤษ)',
+transalte_fax_number: 'เบอร์โทรสาร',
+transalte_name_prefix: 'คำนำหน้าชื่อ',
+transalte_select_name_prefix: 'เลือกคำนำหน้าชื่อ',
+transalte_Trading_company_between: 'บริษัทการค้าระหว่าง...',
+transalte_add_company: 'เพิ่มบริษัท',
 };

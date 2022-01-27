@@ -1044,6 +1044,8 @@ export default {
   alert_Please_add_product_info: 'Please add product information.',
   alert_add_info_affiliated_company: 'Please add information in the affiliated company.',
   alert_Please_add_contact: 'Please add contact information.',
+  alert_Select_list_delete: 'Please select the item you want to delete.',
+  alert_add_information: 'Please add information',
 
   //Activities.js
   transalte_waiting_payment: 'Waiting For Payment',
@@ -1066,6 +1068,29 @@ export default {
   //ViewDevelopTap.js
   transalte_: '',
   transalte_map: 'Map',
+
+  //DevlopRegister.js
+  transalte_company_info: 'Company Info',
+  transalte_manufacturer: 'Manufacturer',
+  transalte_exporter: 'Exporter',
+  transalte_international_trading_company: 'International Trading Company',
+  transalte_specify_details: 'In other cases, please specify details.',
+  transalte_select_subcategory: 'Select a subcategory',
+  transalte_100_characters: '100 characters',
+  transalte_product_image: "Product's Image / รูปสินค้า",
+  transalte_Search_corporate_number: 'Search for a corporate number',
+  transalte_select_province: 'Select Province',
+  transalte_select_district: 'Select District',
+  transalte_select_subdistrict: 'Sub-District',
+  transalte_corporate_registration_number: 'Corporate Registration Number',
+  transalte_company_business_thai: 'company/business (thai)',
+  transalte_address_thai: 'Address (thai)',
+  transalte_address_eng: 'Address (eng)',
+  transalte_fax_number: 'Fax Number',
+  transalte_name_prefix: 'Name Prefix',
+  transalte_select_name_prefix: 'Select Prefix',
+  transalte_Trading_company_between: 'Trading company between...',
+  transalte_add_company: 'Increase Company',
 };
 // translate_Checkstatus_title: 'Check status',
 // translate_Checkstatus_subtitle: 'participate',

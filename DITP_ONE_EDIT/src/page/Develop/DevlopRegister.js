@@ -113,7 +113,7 @@ const dadamenu3 = [
   },
   {
     id: 4,
-    txt: "ข้อมูลบริษัท",
+    txt: I18n.t('transalte_company_info'),
     txt2: I18n.t("transalte_Participants"),
   },
 ];
@@ -228,7 +228,7 @@ class DevlopRegister extends React.Component {
       ],
       Alldatacompany: [
         {
-          title: "ข้อมูลบริษัท",
+          title: I18n.t('transalte_company_info'),
         },
       ],
       Alldatanumber: [
@@ -641,10 +641,10 @@ class DevlopRegister extends React.Component {
             updateByUser: response.res_result[0].Items[1].Data,
           });
         } else {
-          alert(" ไม่พบข้อมูล " + value.ID + " ในระบบ");
+          alert(I18n.t('alert_no_found') + value.ID + I18n.t('alert_in_system'));
         }
       } else {
-        alert("กรุณากรอกเลขนิติบุคคล");
+        alert(I18n.t('alert_enter_corporate_number'));
       }
     } catch (e) {
       console.log(e);
@@ -687,7 +687,7 @@ class DevlopRegister extends React.Component {
 
         // this._getPersonCorporate();
 
-        alert("บันทึกสำเร็จ");
+        alert(I18n.t('alert_Save_successfully'));
       }
     } catch (error) {}
   };
@@ -769,10 +769,10 @@ class DevlopRegister extends React.Component {
 
           this._getPersonCorporate();
 
-          alert("บันทึกสำเร็จ");
+          alert(I18n.t('alert_Save_successfully'));
         }
       } else {
-        alert("กรุณากรอกข้อมูลให้ครบ");
+        alert(I18n.t('alert_complete_info'));
       }
     } catch (e) {}
   };
@@ -801,7 +801,7 @@ class DevlopRegister extends React.Component {
     ) {
       this.setState({ sucess: true });
     } else {
-      alert("กรุณากรอกข้อมูลให้ครบ");
+      alert(I18n.t('alert_complete_info'));
     }
   }
 
@@ -1150,7 +1150,7 @@ class DevlopRegister extends React.Component {
         /// จบ จบ //////
         ///////////////
       } else {
-        alert("กรุณากดยอมรับเงื่อนไข");
+        alert(I18n.t('alert_please_ress_accept'));
       }
     } catch (error) {}
   };
@@ -1702,7 +1702,7 @@ class DevlopRegister extends React.Component {
           this._getDataparticipant_search();
         }
       } else {
-        alert("กรุณาเลือกรายการที่ต้องการลบ");
+        alert(I18n.t('alert_Select_list_delete'));
       }
     } catch (error) {}
   };
@@ -1752,7 +1752,7 @@ class DevlopRegister extends React.Component {
 
       console.log("BOBOB", JSON.stringify(response));
       if (response.Search.success === true) {
-        alert("ไม่พบข้อมูล");
+        alert(I18n.t('alert_no_found'));
         this.setState({ datamemberSearch1: [], ckdatamemberSearch1: false });
       } else {
         this.setState({ ckdatamemberSearch1: false });
@@ -1912,7 +1912,7 @@ class DevlopRegister extends React.Component {
           }
         }
       } else {
-        alert("กรุณากรอกข้อมูลให้ครบ");
+        alert(I18n.t('alert_complete_info'));
       }
     } catch (error) {}
   };
@@ -1968,7 +1968,7 @@ class DevlopRegister extends React.Component {
 
         console.log("UDUDUDUUDUDUD", response);
       } else {
-        alert("กรุณาเลือกรูป");
+        alert(I18n.t('alert_please_select_picture'));
       }
     } catch (error) {
       console.log(error);
@@ -2640,7 +2640,7 @@ class DevlopRegister extends React.Component {
           this._sendItem_geturlimg({ Item: response.result.itemID });
         }
       } else {
-        alert("กรุณากรอกข้อมูลให้ครบ");
+        alert(I18n.t('alert_complete_info'));
       }
     } catch (error) {}
   };
@@ -2671,7 +2671,7 @@ class DevlopRegister extends React.Component {
           this._geDataProduct();
         }
       } else {
-        alert("กรุณาเลือกสินค้าที่ต้องการลบ");
+        alert(I18n.t('alert_Select_item_delete'));
       }
     } catch (error) {}
   };
@@ -4568,7 +4568,7 @@ class DevlopRegister extends React.Component {
                   marginHorizontal: 35,
                 }}
               >
-                ที่อยู่ติดต่อ
+                {I18n.t('translate_Contactaddress')}
               </Text>
               <Text
                 style={{
@@ -6377,7 +6377,7 @@ class DevlopRegister extends React.Component {
                                             >
                                               <RNPickerSelect
                                                 placeholder={{
-                                                  label: "เลือกจังหวัด",
+                                                  label: I18n.t('transalte_select_province'),
                                                   value: 0,
                                                 }}
                                                 // enabled={this.state.enabled}
@@ -6562,7 +6562,7 @@ class DevlopRegister extends React.Component {
                                             >
                                               <RNPickerSelect
                                                 placeholder={{
-                                                  label: "เลือกอำเภอ",
+                                                  label: I18n.t('transalte_select_district'),
                                                   value: 0,
                                                 }}
                                                 // disabled={this.state.enabled}
@@ -6740,7 +6740,7 @@ class DevlopRegister extends React.Component {
                                             >
                                               <RNPickerSelect
                                                 placeholder={{
-                                                  label: "เลือกตำบล",
+                                                  label: I18n.t('transalte_select_subdistrict'),
                                                   value: 0,
                                                 }}
                                                 // disabled={this.state.enabled}
@@ -7567,7 +7567,7 @@ class DevlopRegister extends React.Component {
                                                   marginTop: 0,
                                                 }}
                                               >
-                                                {"ผู้ผลิต"}
+                                                {I18n.t('transalte_manufacturer')}
                                               </Text>
                                             )}
                                           </View>
@@ -7581,7 +7581,7 @@ class DevlopRegister extends React.Component {
                                                   marginTop: 0,
                                                 }}
                                               >
-                                                {"ผู้ส่งออก"}
+                                                {I18n.t('transalte_exporter')}
                                               </Text>
                                             )}
                                           </View>
@@ -7595,7 +7595,7 @@ class DevlopRegister extends React.Component {
                                                   marginTop: 0,
                                                 }}
                                               >
-                                                {"บริษัทการค้าระหว่างประเทศ"}
+                                                {I18n.t('transalte_international_trading_company')}
                                               </Text>
                                             )}
                                           </View>
@@ -7609,7 +7609,7 @@ class DevlopRegister extends React.Component {
                                                   marginTop: 0,
                                                 }}
                                               >
-                                                {"อื่นๆ"}
+                                                {I18n.t('transalte_other')}
                                               </Text>
                                             )}
                                           </View>
@@ -7788,7 +7788,7 @@ class DevlopRegister extends React.Component {
                                 }}
                               >
                                 <TextInput
-                                  placeholder={"กรณีอื่นๆ กรุณาระบุรายละเอียด"}
+                                  placeholder={I18n.t('transalte_specify_details')}
                                   placeholderTextColor={"#999999"}
                                   onChangeText={(text) => {
                                     this.setState({
@@ -8039,7 +8039,7 @@ class DevlopRegister extends React.Component {
                                     <RNPickerSelect
                                       mode="dropdown"
                                       placeholder={{
-                                        label: "เลือกประเภทสินค้า",
+                                        label: I18n.t('select2_knowLedge'),
                                         value: 0,
                                       }}
                                       useNativeAndroidPickerStyle={false}
@@ -8204,7 +8204,7 @@ class DevlopRegister extends React.Component {
                                     {/* เลือกประเภทสินค้าย่อย */}
                                     <RNPickerSelect
                                       placeholder={{
-                                        label: "เลือกประเภทสินค้าย่อย",
+                                        label: I18n.t('transalte_select_subcategory'),
                                         value: 0,
                                       }}
                                       useNativeAndroidPickerStyle={false}
@@ -8368,7 +8368,7 @@ class DevlopRegister extends React.Component {
                                     <RNPickerSelect
                                       placeholderTextColor={"#999999"}
                                       placeholder={{
-                                        label: "เลือกกลุ่มสินค้า",
+                                        label: I18n.t('transalte_select_product_group'),
                                         value: 0,
                                       }}
                                       useNativeAndroidPickerStyle={false}
@@ -8581,7 +8581,7 @@ class DevlopRegister extends React.Component {
                                         right: 70,
                                       }}
                                     >
-                                      100 Charecter
+                                      {I18n.t('transalte_100_characters')}
                                     </Text>
                                   </ImageBackground>
                                 </View>
@@ -8616,7 +8616,7 @@ class DevlopRegister extends React.Component {
                                         marginHorizontal: 10,
                                       }}
                                     >
-                                      {I18n.t('transalte_brand_name')}
+                                      {I18n.t('transalte_ProductBrandNameEN')}
                                     </Text>
                                   </View>
 
@@ -8658,7 +8658,7 @@ class DevlopRegister extends React.Component {
                                         marginHorizontal: 10,
                                       }}
                                     >
-                                      รายละเอียดสินค้า
+                                      {I18n.t('transalte_ProductDescription')}
                                     </Text>
                                   </View>
 
@@ -8697,7 +8697,7 @@ class DevlopRegister extends React.Component {
                                         right: 70,
                                       }}
                                     >
-                                      100 Charecter
+                                      {I18n.t('transalte_100_characters')}
                                     </Text>
                                   </ImageBackground>
                                 </View>
@@ -8737,7 +8737,7 @@ class DevlopRegister extends React.Component {
                                         marginHorizontal: 10,
                                       }}
                                     >
-                                      Product's Image / รูปสินค้า
+                                      {I18n.t('transalte_product_image')}
                                     </Text>
                                   </View>
                                   {/* เช็ครูปภาพและ  ขนากรูปภาพ 4 MB */}
@@ -8840,7 +8840,7 @@ class DevlopRegister extends React.Component {
                                             textAlign: "center",
                                           }}
                                         >
-                                          อัพโหลดไฟล์
+                                          {I18n.t('transalte_Upload_files')}
                                         </Text>
                                       </View>
                                     </TouchableOpacity>
@@ -9074,7 +9074,7 @@ class DevlopRegister extends React.Component {
                                     <RNPickerSelect
                                       placeholderTextColor={"#999999"}
                                       placeholder={{
-                                        label: "เลือกประเภทสินค้าย่อย",
+                                        label: I18n.t('transalte_select_subcategory'),
                                         value: 0,
                                       }}
                                       useNativeAndroidPickerStyle={false}
@@ -9245,7 +9245,7 @@ class DevlopRegister extends React.Component {
                                     <RNPickerSelect
                                       placeholderTextColor={"#999999"}
                                       placeholder={{
-                                        label: "เลือกกลุ่มสินค้า",
+                                        label: I18n.t('transalte_select_product_group'),
                                         value: 0,
                                       }}
                                       useNativeAndroidPickerStyle={false}
@@ -9378,7 +9378,7 @@ class DevlopRegister extends React.Component {
                                         marginHorizontal: 10,
                                       }}
                                     >
-                                      Product Brand Name
+                                      {I18n.t('transalte_ProductBrandNameEN')}
                                     </Text>
                                   </View>
 
@@ -9441,7 +9441,7 @@ class DevlopRegister extends React.Component {
                                         marginHorizontal: 10,
                                       }}
                                     >
-                                      Product Description
+                                      {I18n.t('transalte_ProductDescription')}
                                     </Text>
                                   </View>
 
@@ -9508,7 +9508,7 @@ class DevlopRegister extends React.Component {
                                         right: 70,
                                       }}
                                     >
-                                      100 Charecter
+                                      {I18n.t('transalte_100_characters')}
                                     </Text>
                                   </ImageBackground>
                                 </View>
@@ -9543,7 +9543,7 @@ class DevlopRegister extends React.Component {
                                         marginHorizontal: 10,
                                       }}
                                     >
-                                      ชื่อแบรนด์
+                                      {I18n.t('transalte_ProductBrandNameEN')}
                                     </Text>
                                   </View>
 
@@ -9610,7 +9610,7 @@ class DevlopRegister extends React.Component {
                                         marginHorizontal: 10,
                                       }}
                                     >
-                                      รายละเอียดสินค้า
+                                      {I18n.t('transalte_ProductDescription')}
                                     </Text>
                                   </View>
 
@@ -9675,7 +9675,7 @@ class DevlopRegister extends React.Component {
                                         right: 70,
                                       }}
                                     >
-                                      100 Charecter
+                                      {I18n.t('transalte_100_characters')}
                                     </Text>
                                   </ImageBackground>
                                 </View>
@@ -9945,7 +9945,7 @@ class DevlopRegister extends React.Component {
                                         }}
                                         style={{ fontSize: 18, flex: 1 }}
                                         placeholderTextColor={"#999999"}
-                                        placeholder="ค้นหาเลขนิติบุคคล"
+                                        placeholder={I18n.t('transalte_Search_corporate_number')}
                                       />
                                     </View>
                                     <View style={{ flex: 0.3 }}>
@@ -10449,7 +10449,7 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <RNPickerSelect
                                                       placeholder={{
-                                                        label: "เลือกจังหวัด",
+                                                        label: I18n.t('transalte_select_province'),
                                                         value: 0,
                                                       }}
                                                       // enabled={this.state.enabled}
@@ -10647,7 +10647,7 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <RNPickerSelect
                                                       placeholder={{
-                                                        label: "เลือกอำเภอ",
+                                                        label: I18n.t('transalte_select_district'),
                                                         value: 0,
                                                       }}
                                                       // disabled={this.state.enabled}
@@ -10838,7 +10838,7 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <RNPickerSelect
                                                       placeholder={{
-                                                        label: "เลือกตำบล",
+                                                        label: I18n.t('transalte_select_subdistrict'),
                                                         value: 0,
                                                       }}
                                                       // disabled={this.state.enabled}
@@ -11681,7 +11681,7 @@ class DevlopRegister extends React.Component {
                                         }}
                                         style={{ fontSize: 18, flex: 1 }}
                                         placeholderTextColor={"#999999"}
-                                        placeholder="ค้นหาเลขนิติบุคคล"
+                                        placeholder={I18n.t('transalte_Search_corporate_number')}
                                       />
                                     </View>
                                     <View style={{ flex: 0.3 }}>
@@ -11730,7 +11730,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={Styles.texttitlecompany}
                                             >
-                                              {"เลขทะเบียนนิติบุคคล"}
+                                              {I18n.t('transalte_corporate_registration_number')}
                                             </Text>
                                             <Text style={Styles.textredcompany}>
                                               *
@@ -11779,7 +11779,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={Styles.texttitlecompany}
                                             >
-                                              {"บริษัท/กิจการ (ไทย)"}
+                                              {I18n.t('transalte_company_business_thai')}
                                             </Text>
                                             <Text style={Styles.textredcompany}>
                                               *
@@ -11893,7 +11893,7 @@ class DevlopRegister extends React.Component {
                                                 marginHorizontal: 35,
                                               }}
                                             >
-                                              {"ที่อยู่ (ไทย)"}
+                                              {I18n.t('transalte_address_thai')}
                                             </Text>
                                             <Text
                                               style={{
@@ -11984,7 +11984,7 @@ class DevlopRegister extends React.Component {
                                                 marginHorizontal: 35,
                                               }}
                                             >
-                                              {"ที่อยู่ (อังกฤษ)"}
+                                              {I18n.t('transalte_address_eng')}
                                             </Text>
                                             <Text
                                               style={{
@@ -12076,7 +12076,7 @@ class DevlopRegister extends React.Component {
                                                 marginHorizontal: 35,
                                               }}
                                             >
-                                              {"จังหวัด"}
+                                              {I18n.t('transalte_province')}
                                             </Text>
                                             <Text
                                               style={{
@@ -12104,7 +12104,7 @@ class DevlopRegister extends React.Component {
                                           >
                                             <RNPickerSelect
                                               placeholder={{
-                                                label: "เลือกจังหวัด",
+                                                label: I18n.t('transalte_select_province'),
                                                 value: 0,
                                               }}
                                               // enabled={this.state.enabled}
@@ -12202,7 +12202,7 @@ class DevlopRegister extends React.Component {
                                                         marginHorizontal: 15,
                                                       }}
                                                     >
-                                                      {"เลือกจังหวัด"}
+                                                      {I18n.t('transalte_select_province')}
                                                     </Text>
                                                   )}
                                                 </View>
@@ -12261,7 +12261,7 @@ class DevlopRegister extends React.Component {
                                                 marginHorizontal: 35,
                                               }}
                                             >
-                                              {"อำเภอ"}
+                                              {I18n.t('transalte_district')}
                                             </Text>
                                             <Text
                                               style={{
@@ -12289,7 +12289,7 @@ class DevlopRegister extends React.Component {
                                           >
                                             <RNPickerSelect
                                               placeholder={{
-                                                label: "เลือกอำเภอ",
+                                                label: I18n.t('transalte_select_district'),
                                                 value: 0,
                                               }}
                                               // disabled={this.state.enabled}
@@ -12380,7 +12380,7 @@ class DevlopRegister extends React.Component {
                                                         marginHorizontal: 15,
                                                       }}
                                                     >
-                                                      {"เลือกอำเภอ"}
+                                                      {I18n.t('transalte_select_district')}
                                                     </Text>
                                                   )}
                                                 </View>
@@ -12439,7 +12439,7 @@ class DevlopRegister extends React.Component {
                                                 marginHorizontal: 35,
                                               }}
                                             >
-                                              {"ตำบล"}
+                                              {I18n.t('transalte_sub_district')}
                                             </Text>
                                             <Text
                                               style={{
@@ -12467,7 +12467,7 @@ class DevlopRegister extends React.Component {
                                           >
                                             <RNPickerSelect
                                               placeholder={{
-                                                label: "เลือกตำบล",
+                                                label: I18n.t('transalte_select_subdistrict'),
                                                 value: 0,
                                               }}
                                               // disabled={this.state.enabled}
@@ -12556,7 +12556,7 @@ class DevlopRegister extends React.Component {
                                                         marginHorizontal: 15,
                                                       }}
                                                     >
-                                                       {"เลือกตำบล"}
+                                                      {I18n.t('transalte_select_subdistrict')}
                                                     </Text>
                                                   )}
                                                 </View>
@@ -12615,7 +12615,7 @@ class DevlopRegister extends React.Component {
                                                 marginHorizontal: 35,
                                               }}
                                             >
-                                              {"รหัสไปรษณีย์"}
+                                              {I18n.t('transalte_postcode')}
                                             </Text>
                                             <Text
                                               style={{
@@ -12736,7 +12736,7 @@ class DevlopRegister extends React.Component {
                                           >
                                             <RNPickerSelect
                                               placeholder={{
-                                                label: "เลือกประเทศ",
+                                                label: I18n.t('transalte_select_country'),
                                                 value: 0,
                                               }}
                                               // enabled={this.state.enabled}
@@ -12864,7 +12864,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={Styles.texttitlecompany}
                                             >
-                                              {"เบอร์โทรศัพท์"}
+                                              {I18n.t('phone_regis')}
                                             </Text>
                                             <Text style={Styles.textredcompany}>
                                               *
@@ -12913,7 +12913,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={Styles.texttitlecompany}
                                             >
-                                              {"เบอร์โทรสาร"}
+                                              {I18n.t('transalte_fax_number')}
                                             </Text>
                                             <Text style={Styles.textredcompany}>
                                               *
@@ -12962,7 +12962,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={Styles.texttitlecompany}
                                             >
-                                              {"อีเมล"}
+                                              {I18n.t('translate_Email')}
                                             </Text>
                                             <Text style={Styles.textredcompany}>
                                               *
@@ -13009,7 +13009,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={Styles.texttitlecompany}
                                             >
-                                              {"เว็บไซต์"}
+                                              {I18n.t('translate_website')}
                                             </Text>
                                             <Text style={Styles.textredcompany}>
                                               *
@@ -13184,7 +13184,7 @@ class DevlopRegister extends React.Component {
                                             marginTop: 3,
                                           }}
                                         >
-                                           
+                                          
                                           {I18n.t(
                                             "transalte_Search_contact_history"
                                           )}
@@ -13277,7 +13277,7 @@ class DevlopRegister extends React.Component {
                                                 marginHorizontal: 10,
                                               }}
                                             >
-                                              คำนำหน้าชื่อ
+                                              {I18n.t('transalte_name_prefix')}
                                             </Text>
                                             <Text
                                               style={{
@@ -13349,7 +13349,7 @@ class DevlopRegister extends React.Component {
                                                       fontSize: 24,
                                                     }}
                                                   >
-                                                    {"เลือกคำนำหน้า"}
+                                                    {I18n.t('transalte_select_name_prefix')}
                                                   </Text>
                                                 ) : (
                                                   <Text
@@ -13935,7 +13935,7 @@ class DevlopRegister extends React.Component {
                                               marginHorizontal: 10,
                                             }}
                                           >
-                                            รหัสไปรษณีย์
+                                            {I18n.t('transalte_postcode')}
                                           </Text>
                                           <Text
                                             style={{
@@ -13987,7 +13987,7 @@ class DevlopRegister extends React.Component {
                                               marginHorizontal: 10,
                                             }}
                                           >
-                                            จังหวัด
+                                            {I18n.t('transalte_province')}
                                           </Text>
                                           <Text
                                             style={{
@@ -14112,7 +14112,7 @@ class DevlopRegister extends React.Component {
                                                     }}
                                                   >
                                                     {/* {this.checkContry(item.Data)} */}
-                                                    {"เลือกจังหวัด"}
+                                                    {I18n.t('transalte_select_province')}
                                                   </Text>
                                                 )}
                                               </View>
@@ -14146,7 +14146,7 @@ class DevlopRegister extends React.Component {
                                               marginHorizontal: 10,
                                             }}
                                           >
-                                            อำเภอ/เขต
+                                            {I18n.t('transalte_district')}
                                           </Text>
                                           <Text
                                             style={{
@@ -14267,7 +14267,7 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     {/* {this.checkContry(item.Data)} */}
 
-                                                    {"เลือกอำเภอ"}
+                                                    {I18n.t('transalte_select_district')}
                                                   </Text>
                                                 )}
                                               </View>
@@ -14301,7 +14301,7 @@ class DevlopRegister extends React.Component {
                                               marginHorizontal: 10,
                                             }}
                                           >
-                                            ตำบล/แขวง
+                                            {I18n.t('transalte_sub_district')}
                                           </Text>
                                           <Text
                                             style={{
@@ -14412,7 +14412,7 @@ class DevlopRegister extends React.Component {
                                                     }}
                                                   >
                                                     {/* {this.checkContry(item.Data)} */}
-                                                    {"เลือกตำบล"}
+                                                    {I18n.t('transalte_select_subdistrict')}
                                                   </Text>
                                                 )}
                                               </View>
@@ -14446,7 +14446,7 @@ class DevlopRegister extends React.Component {
                                               marginHorizontal: 10,
                                             }}
                                           >
-                                            ที่อยู่ติดต่อ
+                                            {I18n.t('transalte_contact')}
                                           </Text>
                                           <Text
                                             style={{
@@ -14498,7 +14498,7 @@ class DevlopRegister extends React.Component {
                                               marginHorizontal: 10,
                                             }}
                                           >
-                                            อีเมล
+                                            {I18n.t('translate_Email')}
                                           </Text>
                                         </View>
 
@@ -14544,7 +14544,7 @@ class DevlopRegister extends React.Component {
                                               marginHorizontal: 10,
                                             }}
                                           >
-                                            หมายเลขโทรศัพท์
+                                            {I18n.t('translate_Phonenumber')}
                                           </Text>
 
                                           <ImageBackground
@@ -14667,7 +14667,7 @@ class DevlopRegister extends React.Component {
                                                 marginHorizontal: 10,
                                               }}
                                             >
-                                              Title
+                                              {I18n.t('translate_General_title')}
                                             </Text>
                                             <Text
                                               style={{
@@ -15584,7 +15584,7 @@ class DevlopRegister extends React.Component {
                                                 marginTop: 0,
                                               }}
                                             >
-                                              {"ผู้ผลิต"}
+                                              {I18n.t('transalte_manufacturer')}
                                               {" ,"}
                                             </Text>
                                           )}
@@ -15599,7 +15599,7 @@ class DevlopRegister extends React.Component {
                                                 marginTop: 0,
                                               }}
                                             >
-                                              {"ผู้ส่งออก"}
+                                              {I18n.t('transalte_exporter')}
                                               {" ,"}
                                             </Text>
                                           )}
@@ -15614,7 +15614,7 @@ class DevlopRegister extends React.Component {
                                                 marginTop: 0,
                                               }}
                                             >
-                                              {"บริษัทการค้าระหว่าง..."}
+                                              {I18n.t('transalte_Trading_company_between')}
                                               {" ,"}
                                             </Text>
                                           )}
@@ -15630,7 +15630,7 @@ class DevlopRegister extends React.Component {
                                                 marginTop: 0,
                                               }}
                                             >
-                                              {"อื่นๆ"}
+                                              {I18n.t('transalte_other')}
                                               {" ,"}
                                             </Text>
                                           )}
@@ -16262,13 +16262,13 @@ class DevlopRegister extends React.Component {
                 }}
               >
                 <Text style={{ color: "#163c70", fontSize: 20 }}>
-                  ชื่อแบรนด์ :
+                  {I18n.t('transalte_ProductBrandNameEN')} :
                 </Text>
                 <Text style={{ color: "#2d6dc4", fontSize: 20 }}>
                   {this.state.ProductBrandNameTh_popup}
                 </Text>
                 <Text style={{ color: "#163c70", fontSize: 20 }}>
-                  รายละเอียดสินค้า :
+                {I18n.t('transalte_ProductDescription')} :
                 </Text>
                 <Text style={{ color: "#2d6dc4", fontSize: 20 }}>
                   {this.state.ProductDescriptionTh_popup}
@@ -16292,13 +16292,13 @@ class DevlopRegister extends React.Component {
                 }}
               >
                 <Text style={{ color: "#163c70", fontSize: 20 }}>
-                  Product Brand Name :
+                {I18n.t('transalte_ProductBrandNameEN')} :
                 </Text>
                 <Text style={{ color: "#2d6dc4", fontSize: 20 }}>
                   {this.state.ProductBrandNameEn_popup}
                 </Text>
                 <Text style={{ color: "#163c70", fontSize: 20 }}>
-                  Product Description :
+                {I18n.t('transalte_ProductDescription')} :
                 </Text>
                 <Text style={{ color: "#2d6dc4", fontSize: 20 }}>
                   {this.state.ProductDescriptionEn_popup}
@@ -17404,7 +17404,7 @@ class DevlopRegister extends React.Component {
                                       marginTop: 3.5,
                                     }}
                                   >
-                                    ยกเลิก
+                                    {I18n.t('translate_Cancel')}
                                   </Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity
@@ -17695,7 +17695,7 @@ class DevlopRegister extends React.Component {
                                       marginTop: 5,
                                     }}
                                   >
-                                    เพิ่มข้อมูลในบริษัทสังกัด
+                                    {I18n.t('transalte_Add_info_affiliated_company')}
                                   </Text>
                                 </View>
                               </TouchableOpacity>
@@ -17816,11 +17816,11 @@ class DevlopRegister extends React.Component {
                                           0 &&
                                         this.state.itemMaket.length === 0
                                       ) {
-                                        alert("กรุณาเพิ่มข้อมูประกอบ");
+                                        alert(I18n.t('alert_add_information'));
                                       } else if (
                                         this.state.dataProduct.length === 0
                                       ) {
-                                        alert("กรุณาเพิ่มข้อมูลสินค้า");
+                                        alert(I18n.t('alert_Please_add_product_info'));
                                       } else {
                                         this.setState({ sucess: true });
                                       }
@@ -17881,7 +17881,7 @@ class DevlopRegister extends React.Component {
                                 <TouchableOpacity
                                   onPress={() => {
                                     if (this.state.Addcompany === false) {
-                                      alert("กรุณาเพิ่มข้อมูลในบริษัทสังกัด");
+                                      alert(I18n.t('alert_add_info_affiliated_company'));
 
                                       // alert('บันทึก');
 
@@ -17891,11 +17891,11 @@ class DevlopRegister extends React.Component {
                                         0 &&
                                       this.state.itemMaket.length === 0
                                     ) {
-                                      alert("กรุณาเพิ่มข้อมูลประกอบ");
+                                      alert(I18n.t('alert_add_information'));
                                     } else if (
                                       this.state.dataProduct.length === 0
                                     ) {
-                                      alert("กรุณาเพิ่มข้อมูลสินค้า");
+                                      alert(I18n.t('alert_Please_add_product_info'));
                                     } else {
                                       this.setState({ sucess: true });
                                     }
@@ -17958,7 +17958,7 @@ class DevlopRegister extends React.Component {
                               onPress={() => {
                                 // this.setState({Isative: 3});
 
-                                alert("กรุณาเพิ่มข้อมูลติดต่อ");
+                                alert(I18n.t('alert_Please_add_contact'));
                               }}
                               style={{
                                 backgroundColor: "#2d6dc4",
@@ -18053,7 +18053,7 @@ class DevlopRegister extends React.Component {
                                     marginTop: 5,
                                   }}
                                 >
-                                  เพิ่มบริษัท
+                                  {I18n.t('transalte_add_company')}
                                 </Text>
                               </TouchableOpacity>
                             ) : (
@@ -18273,7 +18273,7 @@ class DevlopRegister extends React.Component {
                                       marginTop: 3.5,
                                     }}
                                   >
-                                    ยกเลิก
+                                    {I18n.t('translate_Cancel')}
                                   </Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity

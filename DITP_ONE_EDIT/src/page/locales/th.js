@@ -1043,6 +1043,7 @@ alert_add_info_affiliated_company: 'กรุณาเพิ่มข้อม�
 alert_Please_add_contact: 'กรุณาเพิ่มข้อมูลติดต่อ',
 alert_Select_list_delete: 'กรุณาเลือกรายการที่ต้องการลบ',
 alert_add_information: 'กรุณาเพิ่มข้อมูลประกอบ',
+alert_succeed: 'สำเร็จ',
 
 //Activities.js
 transalte_waiting_payment: 'รอการชำระเงิน',
@@ -1088,4 +1089,10 @@ transalte_name_prefix: 'คำนำหน้าชื่อ',
 transalte_select_name_prefix: 'เลือกคำนำหน้าชื่อ',
 transalte_Trading_company_between: 'บริษัทการค้าระหว่าง...',
 transalte_add_company: 'เพิ่มบริษัท',
+
+//SearchAdvancedDevelop.js
+transalte_location: 'สถานที่่' ,
+transalte_Find_Advanced_Training: 'ค้นหขั้นสูงฝึกอบรม',
+transalte_Thailand: 'ประเทศไทย',
+transalte_foreign_country: 'ต่างประเทศ',
 };

@@ -1046,6 +1046,7 @@ export default {
   alert_Please_add_contact: 'Please add contact information.',
   alert_Select_list_delete: 'Please select the item you want to delete.',
   alert_add_information: 'Please add information',
+  alert_succeed: 'Succeed',
 
   //Activities.js
   transalte_waiting_payment: 'Waiting For Payment',
@@ -1091,6 +1092,13 @@ export default {
   transalte_select_name_prefix: 'Select Prefix',
   transalte_Trading_company_between: 'Trading company between...',
   transalte_add_company: 'Increase Company',
+  
+  //SearchAdvancedDevelop.js
+  transalte_location: 'Location' ,
+  transalte_Find_Advanced_Training: 'Find Advanced Training',
+  transalte_Thailand: 'Thailand',
+  transalte_foreign_country: 'Foreign Country',
+
 };
 // translate_Checkstatus_title: 'Check status',
 // translate_Checkstatus_subtitle: 'participate',

@@ -178,7 +178,7 @@ export default {
   translate_addFavorites: 'Add Favorites',
   translate_returnBack: 'ย้อนหลัง',
   translate_Online: 'Online',
-  translate_PleaseRate: 'โปรดประเมินความพึงพอใจ\nในการใช้งาน DITP ONE',
+  translate_PleaseRate: 'Please rate your satisfaction\nUsing DITP ONE.',
   transalte_Department_Members: 'Department Members',
   transalte_Department_Category: 'Department Category',
   transalte_Number_Juristic: 'Number Juristic (Username)',

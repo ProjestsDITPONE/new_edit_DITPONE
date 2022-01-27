@@ -1104,4 +1104,7 @@ transalte_period_time: 'ช่วงเวลา',
 transalte_Value_Check_Badge: 'มูลค่า/ตรวจสอบตราสัญลักษณ์',
 transalte_apply_date: 'วันที่สมัคร',
 transalte_expiration_date: 'วันหมดอายุ',
+
+//ChangeScreen.js
+transalte_new_pass: 'รหัสผ่านใหม่',
 };

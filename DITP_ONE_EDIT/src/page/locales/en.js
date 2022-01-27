@@ -1159,6 +1159,9 @@ transalte_Value_Check_Badge: 'Value / Check Badge',
 transalte_apply_date: 'Application Date',
 transalte_expiration_date: 'Expiration Date',
 
+//ChangeScreen.js
+transalte_new_pass: 'New Password',
+
 };
 // translate_Checkstatus_title: 'Check status',
 // translate_Checkstatus_subtitle: 'participate',

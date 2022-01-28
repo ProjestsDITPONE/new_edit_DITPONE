@@ -312,6 +312,10 @@ export default {
   transalte_Juristic_Person: 'นิติบุคคล',
   transalte_Add_Myname: 'เพิ่มชื่อของฉัน',
   transalte_Add_my_buyer: 'เพิ่มผูซื้อของฉัน',
+  transalte_trade_situation_news: 'ข่าวสถานการณ์การค้า',
+  transalte_published_by: 'เผยแพร่โดย',
+  transalte_set_nickname: 'ตั้งชื่อเล่น',
+  transalte_add_my_buyer: 'เพิ่มผู้ซื้อของฉัน',
   
   // Mybasket general person
   translate_General_title: 'คำนำหน้า',
@@ -978,6 +982,9 @@ alert_Select_list_delete: 'กรุณาเลือกรายการท�
 alert_add_information: 'กรุณาเพิ่มข้อมูลประกอบ',
 alert_succeed: 'สำเร็จ',
 alert_Data_verification_progress: 'กำลังดำเนินการตรวจสอบข้อมูล',
+alert_Share_successfully: 'แชร์สำเร็จ',
+
+
 
 //Activities.js
 transalte_waiting_payment: 'รอการชำระเงิน',

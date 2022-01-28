@@ -341,6 +341,11 @@ export default {
   transalte_Juristic_Person: 'Juristic Person',
   transalte_Add_Myname: 'Increase Name',
   transalte_Add_my_buyer: 'Increase My Buyer',
+  transalte_trade_situation_news: 'Trade situation news',
+  transalte_published_by: 'Published By',
+  transalte_set_nickname: 'Set NickName',
+  transalte_add_my_buyer: 'Add My Buyer',
+  
 
   // Mybasket general person
   translate_General_title: 'Name Prefix / Sex',
@@ -1027,6 +1032,7 @@ export default {
   alert_add_information: 'Please add information',
   alert_succeed: 'Succeed',
   alert_Data_verification_progress: 'Data verification is in progress.',
+  alert_Share_successfully: 'Share successfully',
 
   //Activities.js
   transalte_waiting_payment: 'Waiting For Payment',

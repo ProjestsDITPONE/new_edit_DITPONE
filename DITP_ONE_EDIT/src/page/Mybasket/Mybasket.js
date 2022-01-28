@@ -298,7 +298,7 @@ class Mybasket extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('แชร์สำเสร็จ');
+          alert(I18n.t('alert_Share_successfully'));
         } else {
           // shared
           alert(result.activityType);
@@ -323,7 +323,7 @@ class Mybasket extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('แชร์สำเสร็จ');
+          alert(I18n.t('alert_Share_successfully'));
         } else {
           // shared
           alert(result.activityType);
@@ -1058,7 +1058,7 @@ class Mybasket extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('แชร์สำเสร็จ');
+          alert(I18n.t('alert_Share_successfully'));
         } else {
           // shared
           alert(result.activityType);
@@ -2609,7 +2609,7 @@ class Mybasket extends React.Component {
                     }}>
                     <View style={Styles.ViewSub10AI}>
                       <Text style={{color: '#8b9bb0', fontSize: 14}}>
-                        เผยแพร่โดย - {item.publisher}
+                        {I18n.t('transalte_published_by')} - {item.publisher}
                       </Text>
                     </View>
                   </View>
@@ -2886,7 +2886,7 @@ class Mybasket extends React.Component {
                   }}>
                   <View style={Styles.ViewSub10AI}>
                     <Text style={{color: '#8b9bb0', fontSize: 14}}>
-                      เผยแพร่โดย - {item.publisher}
+                      {I18n.t('transalte_published_by')} - {item.publisher}
                     </Text>
                   </View>
                 </View>
@@ -3089,11 +3089,11 @@ class Mybasket extends React.Component {
                     <Icon name="x" size={16} style={Styles.Iconoverlay} />
                   </TouchableOpacity>
                 </View>
-                <Text style={Styles.TextOverlay}>{'ตั้งชื่อเล่น '}</Text>
+                <Text style={Styles.TextOverlay}>{I18n.t('transalte_set_nickname')}</Text>
               </View>
               <View style={Styles.ViewOverlay5}>
                 <Text style={Styles.TextOverlay3}>
-                  ตั้งชื่อเล่น : {item.title_th} {this.state.name}
+                  {I18n.t('transalte_set_nickname')} : {item.title_th} {this.state.name}
                 </Text>
                 <View style={Styles.ViewOverlay4}>
                   <TextInput
@@ -3506,11 +3506,11 @@ class Mybasket extends React.Component {
                     <Icon name="x" size={16} style={Styles.Iconoverlay} />
                   </TouchableOpacity>
                 </View>
-                <Text style={Styles.TextOverlay}>{'ตั้งชื่อเล่น'}</Text>
+                <Text style={Styles.TextOverlay}>{I18n.t('transalte_set_nickname')}</Text>
               </View>
               <View style={Styles.ViewOverlay5}>
                 <Text style={Styles.TextOverlay3}>
-                  ตั้งชื่อเล่น : {this.state.name}{' '}
+                  {I18n.t('transalte_set_nickname')} : {this.state.name}{' '}
                 </Text>
                 <View style={Styles.ViewOverlay4}>
                   <TextInput
@@ -3959,7 +3959,7 @@ class Mybasket extends React.Component {
 
                               borderRadius: 11,
                             }}>
-                            <Text style={Styles.popupTextMap}>แผนที่</Text>
+                            <Text style={Styles.popupTextMap}>{I18n.t('transalte_map')}</Text>
                           </TouchableOpacity>
                         </View>
                       </View>
@@ -4080,7 +4080,7 @@ class Mybasket extends React.Component {
                                 this.setState({ckhide: false});
                               }}
                               style={Styles.popupTexthideText}>
-                              ซ่อนรายละเอียด
+                              {I18n.t('transalte_Hide_details')}
                             </Text>
                             <Icon6
                               color="#2d6dc4"
@@ -4100,10 +4100,10 @@ class Mybasket extends React.Component {
 
                       <View style={{flex: 1}}>
                         <Text style={Styles.popupTextdetail}>
-                          หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
+                          {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                         </Text>
                         <Text style={Styles.popupTextdetail}>
-                          เจ้าหน้าที่โครงการ : {this.state.officer_name}
+                          {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                         </Text>
                         <View style={{flexDirection: 'row'}}>
                           <Image
@@ -4158,7 +4158,7 @@ class Mybasket extends React.Component {
                                             .status_confirm_identity
                                             .status_code === 1
                                         ) {
-                                          alert('กำลังดำเนินการตรวจสอบข้อมูล');
+                                          alert(I18n.t('alert_Data_verification_progress'));
                                         } else {
                                           if (
                                             this.state.formTypeActivity === 1
@@ -4676,7 +4676,7 @@ class Mybasket extends React.Component {
                         ? Styles.texttabnewsck2
                         : Styles.texttabnewsck1
                     }>
-                    {'ข่าวสถานการณ์ค้า'}
+                    {I18n.t('transalte_trade_situation_news')}
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -4892,7 +4892,7 @@ class Mybasket extends React.Component {
                           marginTop: 4,
                         }}>
                         {' '}
-                        เพิ่มด้วยตัวเอง
+                        {I18n.t('translate_Bt_Add_Manually')}
                       </Text>
                     </TouchableOpacity>
                     <TouchableOpacity
@@ -4920,7 +4920,7 @@ class Mybasket extends React.Component {
                           marginTop: 4,
                         }}>
                         {' '}
-                        เพิ่มด้วย QR Code
+                        {I18n.t('translate_Bt_Add_QRcode')}
                       </Text>
                     </TouchableOpacity>
                   </View>
@@ -4969,7 +4969,7 @@ class Mybasket extends React.Component {
                           marginTop: 4,
                         }}>
                         <Text style={{color: '#2d6dc4', fontSize: 24}}>
-                          เพิ่มผู้ซื้อของฉัน
+                          {I18n.t('transalte_add_my_buyer')}
                         </Text>
                       </View>
                       <View
@@ -5009,7 +5009,7 @@ class Mybasket extends React.Component {
                               color: '#FFFFFF',
                               textAlign: 'center',
                             }}>
-                            บุคคลทั่วไป
+                            {I18n.t('transalte_General_Person')}
                           </Text>
                         </TouchableOpacity>
                         <TouchableOpacity
@@ -5031,7 +5031,7 @@ class Mybasket extends React.Component {
                               color: '#FFFFFF',
                               textAlign: 'center',
                             }}>
-                            นิติบุคคล
+                            {I18n.t('transalte_Juristic_Person')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -5222,7 +5222,7 @@ class Mybasket extends React.Component {
                             marginTop: 4,
                           }}>
                           {' '}
-                          เพิ่มด้วยตัวเอง
+                          {I18n.t('translate_Bt_Add_Manually')}
                         </Text>
                       </TouchableOpacity>
                       <TouchableOpacity
@@ -5250,7 +5250,7 @@ class Mybasket extends React.Component {
                             marginTop: 4,
                           }}>
                           {' '}
-                          เพิ่มด้วย QR Code
+                          {I18n.t('translate_Bt_Add_QRcode')}
                         </Text>
                       </TouchableOpacity>
                     </View>
@@ -5300,7 +5300,7 @@ class Mybasket extends React.Component {
                           marginTop: 4,
                         }}>
                         <Text style={{color: '#2d6dc4', fontSize: 24}}>
-                          เพิ่มเครือข่าย
+                          {I18n.t('transalte_Add_Network')}
                         </Text>
                       </View>
                       <View
@@ -5336,7 +5336,7 @@ class Mybasket extends React.Component {
                               color: '#FFFFFF',
                               textAlign: 'center',
                             }}>
-                            บุคคลทั่วไป
+                            {I18n.t('transalte_General_Person')}
                           </Text>
                         </TouchableOpacity>
                         <TouchableOpacity
@@ -5354,7 +5354,7 @@ class Mybasket extends React.Component {
                               color: '#FFFFFF',
                               textAlign: 'center',
                             }}>
-                            นิติบุคคล
+                            {I18n.t('transalte_Juristic_Person')}
                           </Text>
                         </TouchableOpacity>
                       </View>

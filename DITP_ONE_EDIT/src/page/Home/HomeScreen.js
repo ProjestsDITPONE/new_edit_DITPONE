@@ -22,7 +22,7 @@ import {Avatar, Overlay} from 'react-native-elements';
 
 import AutoDragSortableView from '../../lib_edit/AutoDragSortableView';
 import Icon from 'react-native-vector-icons/AntDesign';
-import Icon2 from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon2 from 'react-native-vector-icons/Entypo';
 import Icon3 from 'react-native-vector-icons/Feather';
 import I18n from '../../utils/I18n';
 import {useIsFocused} from '@react-navigation/native';
@@ -55,6 +55,9 @@ import SlideDownPanel from '../../lib_edit/react-native-slide-down-panel';
 import Popup5 from '../../components/Popup5';
 
 import PopupCk from '../../components/Popupcheck'
+
+import {ViewScale} from '../../config/ViewScale'
+
 
 const window = Dimensions.get('window');
 const {height, width} = Dimensions.get('window');
@@ -535,7 +538,7 @@ const HomeScreen = ({
             </View>
 
             <View style={styles.item_icon_arrrow}>
-              <Icon2 name="chevron-right" size={25} color="#FFF" />
+              <Icon2 name="chevron-small-right" size={ViewScale(30)} color="#FFF" />
             </View>
           </ImageBackground>
           {/* </View> */}
@@ -693,6 +696,7 @@ const HomeScreen = ({
         style={[
           styles.parallaxView,
           Platform.OS === 'android' && {zIndex: -1, marginTop: 5},
+          
         ]}
         renderBackground={() => (
           <ImageBackground
@@ -704,10 +708,11 @@ const HomeScreen = ({
           <View
             style={{
               position: 'absolute',
-              left: 29,
+              left: ViewScale(30),
               top: '45%',
               flexDirection: 'row',
               width: '90%',
+              // borderWidth:1
             }}>
             <TouchableOpacity
               onPress={() => navigation.navigate('ProfileActivity')}>
@@ -718,7 +723,7 @@ const HomeScreen = ({
                   {getImg.isSuccess ? (
                     <View>
                       <Avatar
-                        size={69}
+                        size={ViewScale(90)}
                         rounded
                         overlayContainerStyle={{
                           borderWidth: 2,
@@ -736,15 +741,16 @@ const HomeScreen = ({
                     </View>
                   ) : (
                     <Avatar
-                      size={69}
+                    size={ViewScale(90)}
                       rounded
                       overlayContainerStyle={{
+                        backgroundColor:'#FFF',
                         borderWidth: 2,
                         borderColor: '#FFFFFF',
                       }}
                       source={require('../../image/accounnull.png')}
                     />
-                  )}
+                 )} 
 
                   <View
                     style={{
@@ -801,7 +807,7 @@ const HomeScreen = ({
                 <View style={{width: '100%'}}>
                   {getUser.userDetails.res_result.type === 1 && (
                     <View>
-                      <View style={{width: aspectRatio2}}>
+                      <View style={{width: '70%',}}>
                         {/* <Text
                           numberOfLines={1}
                           style={[
@@ -996,7 +1002,7 @@ const HomeScreen = ({
               {getUser.isSuccess ? (
                 <View>
                   {getUser.userDetails.res_result.type === 3 && (
-                    <View>
+                    <View style={{}}>
                       <Text
                         style={[styles.fontCompayProfile, styles.colorFFFFFF]}>
                         {getUser.userDetails.res_result.member.titleTh +
@@ -1009,7 +1015,7 @@ const HomeScreen = ({
                           {getStatus1.isResult.status_ditp.status ===
                           'active ditp' ? (
                             <Text style={{fontSize: 20, color: '#ffffff'}}>
-                              {I18n.t('translate_Member')} EL. nnnn
+                              {I18n.t('translate_Member')} EL. 
                             </Text>
                           ) : (
                             <View />
@@ -1023,7 +1029,7 @@ const HomeScreen = ({
                           numberOfLines={2}
                           style={[
                             {
-                              fontSize: 15,
+                              fontSize:ViewScale(19),
                               marginTop: -3,
                               fontFamily: 'Pridi-Regular',
                             },
@@ -1064,7 +1070,7 @@ const HomeScreen = ({
             </View>
           </View>
         )}
-        parallaxHeaderHeight={220}>
+        parallaxHeaderHeight={ViewScale(250)}>
         {Time === true && (
           <View style={[styles.BGeff0f6]}>
             {ThanksDITP === true && (
@@ -1409,7 +1415,7 @@ const HomeScreen = ({
                 {getUser.isSuccess ? (
                   <View>
                     {getUser.userDetails.res_result.type != 6 ? (
-                      <View>
+                      <View  >
                         <SortableGridview
                           data={[
                             {
@@ -1570,8 +1576,10 @@ const HomeScreen = ({
                               <Animated.View
                                 uniqueKey={item.name}
                                 style={[
-                                  styles.button,
+                                 
                                   {
+                                    // borderWidth:1,
+                                    // height:ViewScale(300),
                                     // shadowColor: '#FFF',
                                     // shadowOffset: {
                                     //   width: 0,
@@ -1603,6 +1611,7 @@ const HomeScreen = ({
                                         flexDirection: 'row-reverse',
                                         top: 5,
                                         right: 5,
+                                        // borderWidth:1
                                       }}>
                                       {getStatus1.isSuccess ? (
                                         <View>
@@ -2070,47 +2079,9 @@ const HomeScreen = ({
           </View>
         )}
 
-        {/* {Box === false && ( */}
-          {/* <TouchableOpacity
-            onPress={() =>
-              setTimeout(() => {
-                setBox(true);
-              }, 200)
-            }>
-            <View style={styles.ViewBottom}>
-              <Icon
-                name="pluscircle"
-                size={17}
-                color={'#3b4254'}
-                style={styles.IconBottom}
-              />
-              <Text style={styles.TextBottom}>
-                {I18n.t('translate_Customize')}
-              </Text>
-            </View>
-          </TouchableOpacity> */}
-        {/* )} */}
-        {/* {/* {Box === true && ( */}
+       
           <View>
-            {/* <TouchableOpacity
-              onPress={() => {
-                _SendMenuHome();
-                setTimeout(() => {
-                  setBox(false);
-                }, 200);
-              }}>
-              <View style={styles.ViewBottom1}>
-                <Icon
-                  name="checkcircle"
-                  size={17}
-                  color={'#3b4254'}
-                  style={styles.IconBottom}
-                />
-                <Text style={styles.TextBottom}>
-                  {I18n.t('translate_Accept')}
-                </Text>
-              </View>
-            </TouchableOpacity> */}
+           
             <TouchableOpacity
               onPress={() =>
                 setTimeout(() => {
@@ -2169,7 +2140,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    fontSize: 13,
+    fontSize: ViewScale(16),
     color: '#2d6dc4',
     alignSelf: 'center',
     fontFamily: 'Mitr-Medium',
@@ -2201,7 +2172,7 @@ const styles = StyleSheet.create({
     marginTop: -4,
   },
   ViewText: {
-    bottom: 18,
+    bottom: ViewScale(18),
     position: 'absolute',
     // paddingHorizontal: 8,
   },
@@ -2231,6 +2202,7 @@ const styles = StyleSheet.create({
   },
   TabScan: {
     width: '50%',
+   
     flexDirection: 'row',
     justifyContent: 'center',
     alignSelf: 'center',
@@ -2240,12 +2212,12 @@ const styles = StyleSheet.create({
     borderRightWidth: 2,
   },
   IconScan: {
-    width: 23,
-    height: 18,
+    width:ViewScale(25),
+    height:ViewScale(21),
   },
   IconQR: {
-    width: 20,
-    height: 20,
+    width: ViewScale(24),
+    height: ViewScale(24),
   },
   ViewTabTop: {
     flexDirection: 'row',
@@ -2258,7 +2230,7 @@ const styles = StyleSheet.create({
   },
   TextQR: {
     color: '#2d6dc4',
-    fontSize: 14,
+    fontSize: ViewScale(17),
     marginLeft: 8,
     fontFamily: 'Mitr-Regular',
   },
@@ -2266,8 +2238,8 @@ const styles = StyleSheet.create({
     width: '80%',
   },
   BGProfileLogo: {
-    width: 80,
-    height: 80,
+    width:ViewScale(105),
+    height:ViewScale(105),
     resizeMode: 'stretch',
   },
   marginTop14: {
@@ -2280,7 +2252,7 @@ const styles = StyleSheet.create({
   },
   HeaderTest: {
     width: '100%',
-    height: 220,
+    height:ViewScale(250),
     resizeMode: 'cover',
     backgroundColor: '#ffffff',
   },
@@ -2353,7 +2325,7 @@ const styles = StyleSheet.create({
   },
   item_text: {
     color: '#ffffff',
-    fontSize: 15,
+    fontSize:ViewScale(17),
     marginLeft: 1,
     marginRight: 2,
     textAlign: 'right',
@@ -2374,27 +2346,27 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   bannerTest: {
-    height: 100,
+    height: 101,
     resizeMode: 'cover',
     width: '100%',
   },
   fontDetailProfile2: {
-    fontSize: 16,
+    fontSize:ViewScale(19),
     marginTop: -3,
     fontFamily: 'Pridi-Regular',
   },
   fontDetailProfile3: {
-    fontSize: 16,
+    fontSize:ViewScale(19),
     marginTop: -3,
     fontFamily: 'Pridi-Regular',
   },
   fontCompayProfile: {
-    fontSize: 16,
+    fontSize:ViewScale(19),
     marginTop: -1,
     fontFamily: 'Pridi-Regular',
   },
   font27: {
-    fontSize: 22,
+    fontSize: ViewScale(24),
     fontFamily: 'Pridi-Regular',
   },
   marginL17: {
@@ -2403,7 +2375,7 @@ const styles = StyleSheet.create({
   ViewBottom: {
     backgroundColor: '#f4f8fb',
     width: '100%',
-    height: 35,
+    height: ViewScale(35),
     alignSelf: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
@@ -2417,7 +2389,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   TextBottom: {
-    fontSize: 13,
+    fontSize: ViewScale(15),
     color: '#3b4254',
     marginTop: 5,
     fontFamily: 'Mitr-Regular',
@@ -2427,6 +2399,7 @@ const styles = StyleSheet.create({
     marginRight: 5,
   },
   parallaxView: {
+    // borderWidth:1,
     // overflow: 'hidden',
     marginTop: -90,
     // top:-90,

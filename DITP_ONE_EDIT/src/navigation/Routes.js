@@ -215,7 +215,7 @@ const Routes = ({
     try {
       const ForceUp = await dispatch(
         ForeUpdate({
-          res: {type: Platform.OS === 'android' ? 1 : 2, build: 20220125},
+          res: {type: Platform.OS === 'android' ? 1 : 2, build: 20220127},
         }),
       );
 

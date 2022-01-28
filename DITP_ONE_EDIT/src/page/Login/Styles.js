@@ -1,5 +1,6 @@
 import { StyleSheet, Dimensions } from 'react-native';
 const width = Dimensions.get('window').width;
+import {ViewScale} from '../../config/ViewScale'
 export default StyleSheet.create({
   ImgBackground: {
     height: '100%',
@@ -13,8 +14,8 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   ImgSub1: {
-    width: 174,
-    height: 235,
+    width:ViewScale(174),
+    height:ViewScale(235),
   },
   ViewSub2: {
     flex: 0.5,
@@ -22,14 +23,14 @@ export default StyleSheet.create({
   },
   ImgBackground2: {
     // width: 300,
-    width: width - 70,
-    height: 120,
+    width:ViewScale(width ),
+    height:ViewScale(120),
     // resizeMode: 'cover',
     alignItems: 'center',
     justifyContent: 'center',
   },
   TextSub1: {
-    fontSize: 28,
+    fontSize:ViewScale(30),
     color: '#20416E',
   },
   TocuhSub1: {
@@ -42,7 +43,7 @@ export default StyleSheet.create({
     height: 24,
   },
   TextSub2: {
-    fontSize: 22,
+    fontSize:ViewScale(27),
     color: '#819eb0',
     textDecorationLine: 'underline',
     marginTop: -2,
@@ -54,8 +55,8 @@ export default StyleSheet.create({
     right: 5,
   },
   ImgSub3: {
-    width: 100,
-    height: 25,
+    width:ViewScale(110),
+    height:ViewScale(30),
   },
   ViewSub4: {
     // width: '50%',

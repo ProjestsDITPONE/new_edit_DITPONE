@@ -189,7 +189,7 @@ const Contect = ({navigation, dispatch}) => {
                         style={Styles.Img2}
                         source={require('../../image/makerlocation.png')}
                       />
-                      <Text style={Styles.ViewFont1}>{'  '}{I18n.t('transalte_map')}</Text>
+                      <Text style={Styles.ViewFont1}>{'  '}แผนที่</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
@@ -280,7 +280,7 @@ const Contect = ({navigation, dispatch}) => {
                             style={Styles.Img2}
                             source={require('../../image/makerlocation.png')}
                           />
-                          <Text style={Styles.ViewFont1}>{'  '}{I18n.t('transalte_map')}</Text>
+                          <Text style={Styles.ViewFont1}>{'  '}แผนที่</Text>
                         </TouchableOpacity>
                       </View>
                     </View>
@@ -383,7 +383,7 @@ const Contect = ({navigation, dispatch}) => {
                     marginBottom: 5,
                     marginTop: 5,
                   }}>
-                  {I18n.t('translate_Cantats')}
+                  ช่องทางการติดต่อ
                 </Text>
                 <View style={{flexDirection: 'row'}}>
                   <TouchableOpacity

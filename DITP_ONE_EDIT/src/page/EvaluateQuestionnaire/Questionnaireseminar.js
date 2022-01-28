@@ -25,7 +25,7 @@ const {width} = Dimensions.get('window');
 const dataQA = [
   {
     id: '1',
-    name: I18n.t('transalte_personal_information'),
+    name: 'ข้อมูลส่วนตัว',
   },
   {
     id: '2',
@@ -557,7 +557,7 @@ class Questionnaireseminar extends React.Component {
                     styles.text,
                     {fontSize: 22, color: '#163c70', paddingBottom: 5},
                   ]}>
-                  1.{I18n.t('transalte_personal_information')}
+                  1.ข้อมูลส่วนตัว
                 </Text>
                 <Point1 />
                 <View

@@ -267,7 +267,7 @@ class DevelopScreen extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert(I18n.t('alert_succeed'));
+          alert('สำเสร็จ');
         } else {
           // shared
           // alert(result.activityType);
@@ -1823,7 +1823,7 @@ class DevelopScreen extends React.Component {
                               else if(this.props.getStatus1.isResult
                                 .status_confirm_identity.status_code === 1  ){
 
-                                  alert(I18n.t('alert_Data_verification_progress'))
+                                  alert('กำลังดำเนินการตรวจสอบข้อมูล')
 
                               }
                               
@@ -2257,7 +2257,7 @@ class DevelopScreen extends React.Component {
                           }}>
                           <Text
                             style={Styles.popupTextMap}>
-                            {I18n.t('transalte_map')}
+                            แผนที่
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2368,7 +2368,7 @@ class DevelopScreen extends React.Component {
                             this.setState({ckhide: true});
                           }}
                           style={Styles.popupTexthideText}>
-                          {I18n.t('transalte_show_details')}
+                          แสดงรายละเอียด
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -2418,7 +2418,7 @@ class DevelopScreen extends React.Component {
                               this.setState({ckhide: false});
                             }}
                             style={Styles.popupTexthideText}>
-                            {I18n.t('transalte_Hide_details')}
+                            ซ่อนรายละเอียด
                           </Text>
                           <Icon3
                             color="#2d6dc4"
@@ -2449,10 +2449,10 @@ class DevelopScreen extends React.Component {
 
                     <View style={{flex: 1}}>
                       <Text style={Styles.popupTextdetail}>
-                        {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
+                        หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
                       </Text>
                       <Text style={Styles.popupTextdetail}>
-                        {I18n.t('transalte_project_staff')} : {this.state.officer_name}
+                        เจ้าหน้าที่โครงการ : {this.state.officer_name}
                       </Text>
                       <View style={{flexDirection: 'row'}}>
                         <Image

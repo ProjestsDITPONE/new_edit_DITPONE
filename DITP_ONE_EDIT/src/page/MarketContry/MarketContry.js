@@ -1610,7 +1610,7 @@ class MarketContry extends React.Component {
                           color: '#FFFFFF',
                           fontSize: 22,
                         }}>
-                        {I18n.t('translate_Seachcontry')}
+                        ค้นหา
                       </Text>
                     </TouchableOpacity>
                   </View>
@@ -1628,7 +1628,7 @@ class MarketContry extends React.Component {
                   }}
                   style={Style.choosecontry}>
                   <View style={Style.Viewin1}>
-                    <Text style={Style.ViewTextin}>{I18n.t('translate_country')}</Text>
+                    <Text style={Style.ViewTextin}> ประเทศ</Text>
                   </View>
                   <View style={Style.Viewin2}>
                     <Icon
@@ -1657,7 +1657,7 @@ class MarketContry extends React.Component {
                     }}
                     style={Style.chooseproducts}>
                     <View style={Style.Viewin1}>
-                      <Text style={Style.ViewTextin}>{I18n.t('translate_PRODUCTS')}</Text>
+                      <Text style={Style.ViewTextin}> สินค้า</Text>
                     </View>
                     <View style={Style.Viewin2}>
                       <Icon
@@ -1679,7 +1679,7 @@ class MarketContry extends React.Component {
                     }}
                     style={Style.chooseproducts}>
                     <View style={Style.Viewin1}>
-                      <Text style={Style.ViewTextin}>{I18n.t('translate_PRODUCTS')}</Text>
+                      <Text style={Style.ViewTextin}> สินค้า</Text>
                     </View>
                     <View style={Style.Viewin2}>
                       <Icon
@@ -1899,7 +1899,27 @@ class MarketContry extends React.Component {
                     )}
                   </>
                 ) : (
-                  <NewSettingContry />
+                  <> 
+                  {this.state.ckindex === 0 ? (
+                    <NewSettingContry />
+                  ):(
+                    <FlatList
+                        style={{}}
+                        keyExtractor={(item, index) => index}
+                        data={this.state.dataMarketData}
+                        onEndReached={() => this._getMarketData()}
+                        onEndReachedThreshold={0.5}
+                        renderItem={this.ListMarket_Trend}
+                        ItemSeparatorComponent={() => (
+                          <View style={Style.separator} />
+                        )}
+                        ListFooterComponent={this.renderFooter.bind(this)}
+                      />
+
+                  )}
+                  
+                  </>
+                 
                 )}
               </>
            
@@ -2329,7 +2349,7 @@ class MarketContry extends React.Component {
                   textAlign: 'center',
                   fontSize: 20,
                 }}>
-                {I18n.t('translate_osec_seach_product')}
+                ค้นหาสินค้า
               </Text>
             </TouchableOpacity>
           </Overlay>

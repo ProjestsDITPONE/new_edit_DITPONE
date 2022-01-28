@@ -492,7 +492,7 @@ class ChatScreen extends Component {
 
         if (response.res_code === '00') {
           Alert.alert(
-            I18n.t('translate_ThanksDITP'),
+            'ขอบคุณสำหรับการประเมิน',
             '',
             [{text: 'ตกลง', onPress: () => console.log('OK Pressed')}],
             {cancelable: false},

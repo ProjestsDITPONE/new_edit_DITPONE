@@ -46,16 +46,26 @@ export default {
   translate_good2: 'พอใจ',
   translate_good3: 'ปรับปรุง',
   translate_goodDetail: 'ข้อเสนอแนะ',
-
   //Setting
   //เพิ่มใหม่
   // transalte_ARUSuretoDelate: 'ยืนยันการยกเลิกเป็นสมาชิก DITP ONE',
   // transalte_Reason_forUdealte:'เหตุผลการแจ้งขอยกเลิกการเป็นสมาชิก',
   // translate_RequestDelateUrAccont:'แจ้งการยกเลิกเป็นสมาชิก',
   //อันเก่า
- 
-
-
+  translate_changelang: 'เปลี่ยนภาษา',
+  translate_nonti: 'การแจ้งเตือน',
+  translate_Password: 'เปลี่ยนรหัสผ่าน (Reset Password)',
+  translate_RegisterPolicy: 'เงื่อนไขและกฎระเบียบ',
+  translate_Policy: 'นโยบายการใช้งาน',
+  translate_Canclemember: 'แจ้งยกเลิกบัญชีของฉัน',
+  translate_logout: 'ออกจากระบบ',
+  translate_questionnaire: 'ทำแบบสอบถาม',
+  translate_CanclememberAg: 'ยกเลิกการลงทะเบียนระบบ DITP ONE',
+  translate_CheckPhone: 'กรุณาตรวจสอบหมายเลขโทรศัพท์',
+  translate_Logout: 'ท่านยืนยันที่จะออกจากระบบ',
+  translate_UnDitp:
+    '\t\tคุณต้องการที่จะยกเลิก\nคำขอการแจ้งยกเลิกการเป็นสมาชิกกรม ?',
+  translate_QuesSelec: 'เลือกได้มากกว่า 1 ข้อ',
   //ProfileActivity ตรวจสอบสถานะ
   translate_ViewProfile: 'ดูรูปโปรไฟล์',
   translate_Company_Profile: 'บริษัท',
@@ -64,8 +74,6 @@ export default {
   translate_Datemembership: 'วันที่เป็นสมาชิก',
   translate_Memberinformation: 'ข้อมูลของฉัน',
   translate_Activities: 'กิจกรรมที่เข้าร่วม',
-  translate_waiting_application: 'รอยื่นใบสมัคร',
-  translate_Activitie_Department: 'กิจกรรมกรม',
   translate_Juristic_ID_Profile: 'เลขนิติบุคคล',
   translate_Nameentity: 'ชื่อนิติบุคคล',
   translate_Corporate: 'ที่อยู่นิติบุคคล',
@@ -91,6 +99,7 @@ export default {
   translate_Passed_initial: 'ผ่านพิจารณาขั้นต้น',
   translate_lPayment: 'ชำระเงิน',
   translate_Approved: 'อนุมัติเรียบร้อย',
+  translate_assessment: 'ทำแบบประเมิน',
   translate_Contactprojectstaff: 'ติดต่อเจ้าหน้าที่โครงการ',
   translate_Detail: 'รายละเอียด',
   translate_Trainingcourse:
@@ -121,95 +130,28 @@ export default {
   translate_ChangepasswordProTitle: 'ท่านได้เปลี่ยนรหัสผ่านสำเร็จ',
   translate_ChangepasswordProSubtitle: 'กรุณาเข้าสู่ระบบใหม่อีกครั้ง',
   translate_SvaeEdit: 'คุณต้องการบันทึกข้อมูลที่แก้ไขหรือไม่ ?',
-  translate_fill_inapplication: 'กรอกใบสมัครต่อ',
-  translate_learn:'เรียนรู้เพิ่มเติม',
-  transalte_assessment_form: 'ทำแบบประเมิน',
-  transalte_duly: 'ครบกำหนด',
+
+  //TradeActivitiesScreen (กิจกรรมส่งเสริมการค้าระหว่างประเทศ) &&ViewTrade
+  translate_Toppick: 'TOP Pick',
+  translate_By: 'by',
+  translate_Toppickanddoolan:'น้องดูแลเลือกให้ Top Pick',
+  translate_Recommended_activities: 'เปิดรับสมัครอยู่',
+  translate_Nodata: 'ไม่มีข้อมูล',
+  translate_All_activities: 'กิจกรรมทั้งหมด',
+  translate_activities: 'กิจกรรม',
+  translate_Numberexposure: 'จำนวนที่เปิดรับ',
+  translate_Case: 'ราย',
+  translate_Prepare: 'เตรียมพบ',
+  translate_Apply_activities: 'สมัครร่วมกิจกรรม',
+  translate_Readmore: 'รายละเอียด',
+  translate_Backward: 'ย้อนหลัง',
+  translate_LIVE: 'LIVE',
+  translate_OnAir: 'On Air',
+  translate_HearderTrade: 'กิจกรรมส่งเสริมการค้าระหว่างประเทศ',
+  translate_addFavorites: 'เพิ่มรายการโปรด',
+  translate_returnBack: 'ย้อนหลัง',
+
   
-  transalte_personal_information: 'ข้อมูลส่วนตัว',
-  transalte_Participants:'ผู้เข้าร่วมกิจกรรม',
-  transalte_company_information: 'ข้อมูลบริษัท',
-  transalte_ID_card_number: 'ระบุเลขบัตรประชาชน',
-  transalte_Check_participants: 'ตรวจสอบผู้เข้าร่วมกิจกกรม',
-  transalte_ID_card_number: 'กรอกเลขประจำตัวประชาชน/เลขพาสปอร์ต',
-  transalte_not_product: 'ไม่มีสินค้า',
-  transalte_not_company_info: 'ไม่มีข้อมูลบริษัท',
-  transalte_Not_participant_info: 'ไม่มีข้อมูลผู้เข้าร่วมกิจกรรม',
-  transalte_brand_name: 'ชื่อแบรนด์',
-  transalte_select_product_group: 'เลือกกลุ่มสินค้า',
-  transalte_please_select: 'โปรดเลือก',
-
-  //register TradeActivitiesRegister
-  transalte_postcode: 'รหัสไปรษณีย์',
-  transalte_province: 'จังหวัด',
-  transalte_district: 'อำเภอ / เขต',
-  transalte_sub_district: 'ตำบล / แขวง',
-  transalte_contact: 'ที่อยู่ติดต่อ',
-  transalte_contact_number: 'เบอร์โทรติดต่อ',
-
-  //accompanying TradeActivitiesRegister
-  transalte_Number_Affiliates: 'จำนวนบริษัทในเครือ',
-  transalte_Please_Specify: 'โปรดระบุ',
-  transalte_trade_association_member: 'สมาชิกสมาคมการค้า',
-  transalte_License: 'มาตรฐานการผลิต / ใบอนุญาตผลิต / ใบอนุญาตส่งออก / ใบจดแจ้ง กับ อย. (เช่น ISO, GMP, HACCPเป็นต้น)',
-  transalte_Product_Exportation: 'สินค้า / บริการส่งออก',
-  transalte_current_business_operations_services: 'การดำเนินธุรกิจของท่านในปัจจุบันส่งออกสินค้า/บริการได้แก่',
-  transalte_export_share_domestic: 'สัดส่วนการส่งออก : ในประเทศ',
-  transalte_main_markets_countries: 'มีตลาดหลัก ได้แก่ ประเทศ',
-  transalte_expand_the_export_of_new_products_services_namely: 'ท่านต้องการขยายการส่งออกสินค้า/บริการใหมได้แก่',
-  transalte_There_new_markets_such_countries: 'มีตลาดใหม่ ได้แก่ ประเทศ',
-  transalte_Country_target_group: 'โดยมีกลุ่มเป้าหมายประเภทใด',
-  transalte_Proportion_exports_services_markets_domestic: 'สัดส่วนการส่งออกสินค้า / บริการ ไปตลาดต่างประเทศต่อการจำหน่ายในประเทศ',
-  transalte_importer: 'ผู้นำเข้า',
-  transalte_dealer: 'ผู้แทนจำหน่าย',
-  transalte_factor_manufacturer: 'โรงงาน / ผู้ผลิต',
-  transalte_other: 'อื่น ๆ',
-
-  //Button
-  transalte_Bt_edit_accompanying_information: 'แก้ไขข้อมูลส่วนประกอบ',
-  transalte_Bt_back: 'ย้อนกลับ',
-  transalte_Bt_add_participants: 'เพิ่มผู้เข้าร่วม',
-  transalte_Bt_del_participants: 'ลบผู้เข้าร่วม',
-  transalte_Bt_add_product: 'เพิ่มสินค้า',
-  transalte_Bt_del_product: 'ลบสินค้า',
-  transalte_Bt_add_faculty_member: 'เพิ่มเจ้าหน้าที่',
-  transalte_Bt_del_faculty_member: 'ลบเจ้าหน้าที่',
-  transalte_Bt_confirmation_apply: 'ยืนยันการสมัคร',
-  transalte_save_favorites: 'บันทึกรายการโปรด',
-  transalte_edit_accompanying_info: 'แก้ไขข้อมูลประกอบ',
-  transalte_Add_contact_info: 'เพิ่มข้อมูลผู้ติดต่อ (รายใหม่)',
-
-  // contact
-  transalte_contact_information: 'ข้อมูลผู้ติดต่อ',
-  transalte_Faculty_member_information : 'ข้อมูลเจ้าหน้าที่ร่วมคณะ',
-
-  //Expenses
-  transalte_Upload_files: 'อัพโหลดไฟล์',
-  transalte_privilege_discount: 'สิทธิพิเศษ / ส่วนลด',
-  transalte_total_cost: 'ค่าใช้จ่ายรวม',
-  transalte_net_expenses: 'ค่าใช้จ่ายสุทธิ',
-
-  //Attachment
-  transalte_product_certificate: 'ใบรับรองมาตรฐานสินค้าจากหน่วยงานที่เกี่ยวข้อง',
-  transalte_trademark_patent: 'เอกสารการจดทะเบียนสิทธิบัตรเครื่องหมายการค้า',
-  transalte_reward_innovation_intellectual_property: 'รางวัล/นวัตกรรม/สิทธิในทรัพย์สินทางปัญญา',
-  transalte_documents_consider: 'เอกสารเพื่อประกอบการพิจารณา',
-  transalte_other_documents: 'เอกสารอื่น ๆ (ถ้ามี) ประกอบการพิจารณา',
-
-  //International Market Situation and Trends
-  transalte_Please_select_market_products_interested: 'โปรดเลือกตลาดและสินค้าที่ท่านสนใจ',
-  transalte_select_country: 'เลือกประเทศ',
-  transalte_choose_product: 'เลือกสินค้า',
-  translate_seach_time: 'ค้นหา',
-  translate_seach_continent_country: 'ค้นหวีปและประเทศ',
-  translate_seach_product: 'ค้นหาสินค้า',
-
-  //OSEC
-  transalte_headerOSEC:'ศึกษาขั้นตอนการส่งออก (OSEC)',
-  transalte_OSECis:'OSEC คือ ศูนย์บริการส่งออกแบบเบ็ดเสร็จ (One Stop Export Service Center)',
-  translate_osec_seach_product: 'ค้นหาสินค้า',
-  translate_osec_select_category: 'เลือกหมวดหมู่',
-  translate_osec_select_List: 'เลือกรายการ',
 
   //Brand  ตราสัญลักษณ์ของกรม
   translate_Received: 'ได้รับแล้ว',
@@ -265,16 +207,12 @@ export default {
   translate_Fine_filter: 'ตั้งค่าตัวกรอง',
   translate_Cancel: 'ยกเลิก',
   translate_Date: 'เดือน/ปี',
-  // translate_COUNTRY: 'ประเทศ',
+  translate_COUNTRY: 'ประเทศ',
   translate_PRODUCTS: 'สินค้า',
   translate_SaveCconnect: 'บันทึกเป็นรายการโปรด',
   translate_Clean: 'ล้าง',
   translate_Aceept: 'ตกลง',
   translate_ALL_maket:'ทั้งหมด',
-  transalte_ProductPLZ : 'โปรดเลือกตลาดและสินค้าที่ท่านสนใจ',
-  transalte_savefavorites:' บันทึกรายการโปรด',
-  transalte_Searchcontinents:'ค้นหาทวีปและประเทศ',
-  transalte_marketofinterest:'ตลาดที่สนใจ',
 
   //ตะกร้าของฉัน Mybasket
   translate_Mybasket: 'รายการโปรด',
@@ -288,7 +226,6 @@ export default {
   translate_DataMarketnews:  'ข่าว',
   translate_Mybuy: 'ผู้ซื้อของฉัน',
   translate_Mynetwork: 'เครือข่าย',
-  transalte_Add_Network: 'เพิ่มเครือข่าย',
   translate_Note: 'Note',
   translate_Save: 'บันทึก',
   translate_Emptry: 'ไม่มีรายการ',
@@ -306,35 +243,7 @@ export default {
   transalte_ACT :'กิจกรรม',
   transalte_name:'ราย',
   transalte_Newss:'ข่าว',
-  translate_Bt_Add_Manually: 'เพิ่มด้วยตัวเอง',
-  translate_Bt_Add_QRcode: 'เพิ่มด้วย QR Code',
-  transalte_General_Person: 'บุคคลทั่วไป',
-  transalte_Juristic_Person: 'นิติบุคคล',
-  transalte_Add_Myname: 'เพิ่มชื่อของฉัน',
-  transalte_Add_my_buyer: 'เพิ่มผูซื้อของฉัน',
-  
-  // Mybasket general person
-  translate_General_title: 'คำนำหน้า',
-  transalte_General_firtname: 'ชื่อ',
-  translate_Grneral_lastname: 'นามสกุล',
-  translate_Grneral_nickname: 'ชื่อเล่น',
-  translate_Grneral_position: 'ตำแหน่ง',
-  translate_Grneral_email: 'อีเมล',
-  translate_Grneral_tel: 'หมายเลขโทรศัพท์',
-  translate_Grneral_event: 'กิจกรรมที่พบหรือหารือ',
-  translate_Bt_save: 'บันทึก',
-  translate_Bt_cancel: 'ยกเลิก',
-  // Mybasket juristic person
-  translate_Juristic_company_name: 'ชื่อบริษัท',
-  translate_Juristic_address: 'ที่อยู่บริษัท',
-  translate_Juristic_title: 'คำนำหน้า',
-  translate_Juristic_firtname: 'ชื่อ',
-  translate_Juristic_lastname: 'นามสกุล',
-  translate_Juristic_nickname: 'ชื่อเล่น',
-  translate_Juristic_position: 'ตำแหน่ง',
-  translate_Juristic_email: 'อีเมล',
-  translate_Juristic_tel: 'โทรศัพท์',
-  translate_Juristic_event: 'กิจกรรมที่พบหรือหารือ',
+
   
 
   //ติดต่อกรม Contect
@@ -352,7 +261,6 @@ export default {
   translate_Address_ฺtranslate_Ratchadaphisek:
     'กรมส่งเสริมการค้าระหว่างประเทศ (ถนนรัชดาภิเษก) 22/77ถนนรัชดาภิเษก เขตจตุจักร กรุงเทพ 10900',
   translate_Contect1: 'ช่องทางการติดต่อ',
-  translate_Callcenter_1169: 'โทร 1169',
 
   //หน้าหลัก DITPCARE
   translate_Report: 'แจ้งเรื่องร้องเรียน',
@@ -389,7 +297,7 @@ export default {
   translate_NameContect: 'ชื่อที่ติดต่อ',
   translate_PhoneNumberContect: 'หมายเลขโทรศัพท์ที่ติดต่อ',
   translate_EmailContect: 'E-mail ที่ติดต่อ',
-  translate_Commercialregistration: 'หมายเลขทะเบียนการค้า (ถ้าทราบ)',
+  translate_Commercialregistration: 'เลขนิติบุคคล (ถ้าทราบ)',
   translate_Contect: 'ที่อยู่ติดต่อ',
   translate_Country: 'ประเทศ',
   translate_Country_Selec: 'Country',
@@ -474,7 +382,7 @@ export default {
   nameComp_regis: 'ชื่อบริษัท',
   branchComp_regis: 'สาขา',
   faxComp_regis: '  เบอร์แฟกซ์',
-  tradeNumberComp_regis: 'หมายเลขทะเบียนการค้า',
+  tradeNumberComp_regis: 'เลขนิติบุคคล',
   textMember1_regis: 'สมาชิกกรม',
   textMember2_regis: 'เป็นสมาชิกกรม',
   textMember3_regis: 'ไม่เป็นสมาชิกกรม',
@@ -539,8 +447,8 @@ export default {
   /*********************/
 
   /* page 10ComplaintProcess2.html */
-  tradeNumberComp_complaintP2: 'หมายเลขทะเบียนการค้า (ถ้าทราบ)',
-  tradeNumberComp_complaintP2new: 'หมายเลขทะเบียนการค้า',
+  tradeNumberComp_complaintP2: 'เลขนิติบุคคล (ถ้าทราบ)',
+  tradeNumberComp_complaintP2new: 'เลขนิติบุคคล',
   companyDetail_complaintP3: 'ข้อมูลผู้ร้องเรียนในต่างประเทศ',
   /*********************/
 
@@ -584,8 +492,6 @@ export default {
   cre_mess_noti: 'สร้างข้อความใหม่',
   transalte_noread :'ยังไม่ได้อ่าน',
   transalte_readed  :'อ่านแล้ว',
-  transalte_MoveAll_Read: 'ย้ายทั้งหมด "อ่านแล้ว"',
-  transalte_Select_Item: 'เลืออกรายการ',
   /*********************/
 
   /* page 16MessagesNew.html */
@@ -776,11 +682,7 @@ export default {
   translate_ConversationEnd: 'สนทนาจบแล้ว',
   translate_Cantats: 'ช่องทางการติดต่อ',
   translate_ConsultUs: 'คุยกับน้องใส่ใจ',
-  translate_StartChat_saijai_Bt: 'เริ่มสนทนา',
-  translate_StartChat_saijai_Text: 'วันนี้อยากให้น้องใส่ใจช่วยอะไรดีค่ะ',
   translate_ConversationHistory: 'ประวัติการสนทนา',
-  translate_chatting_saijai: 'สนทนาอยู่',
-  translate_Keep_Chat: 'เก็บการสนทนา',
   translate_EndConversation: 'จบการสนทนา',
   translate_ARUWantConversation: 'ยืนยันการจบสนทนา',
   translate_PleaseRate: 'โปรดประเมินความพึงพอใจ\nในการใช้งาน DITP ONE',
@@ -917,7 +819,8 @@ translate_chooseyear1:'ปี',
 translate_ThanksDITP:'ขอบคุณสำหรับการประเมิน',
   //ศึกษาขั้ยตอนการส่งออก
 
-
+transalte_headerOSEC:'ศึกษาขั้นตอนการส่งออก (OSEC)',
+transalte_OSECis:'OSEC คือ ศูนย์บริการส่งออกแบบเบ็ดเสร็จ (One Stop Export Service Center)',
 
 transalte_registersme: 'การสมัคร',
 transalte_Plzregister:'ขอรับการสนับสนุนเข้าร่วมกิจกรรม',
@@ -926,10 +829,8 @@ transalte_Passcode :'ตั้งค่า Passcode',
 transalte_QAQA :' โปรดทำแบบสอบถามเพื่อการแนะนำกิจกรรมที่เหมาะสมให้แก่ท่าน',
 //แจ้งเตือย
 transalte_newsNoti:'ข่าว',
-transalte_applyActivities: 'กิจกรรมสมัคร',
 transalte_newsActivity:'กิจกรรม (สมัคร / รายการโปรด)',
 transalte_newsChat:'Chat กับน้องใส่ใจ',
-transalte_webImport: 'Chat กับผู้นำเข้า thaitradefair.com',
 transalte_newconfrim:'ยืนยันตัวตน',
 transalte_newrequest:'ข้อร้องเรียน',
 transalte_newSMEsProactive :'SMEs Pro-active',
@@ -945,12 +846,10 @@ transalte_ThailandWeek :'Thailand Week',
 
 // แบบปรเมิน
 transalte_evaluation:'แบบประเมินการฝึกอบรม/สัมมนา',
+
 transalte_analyze:'วิเคราะห์โอกาสทางการค้าด้วย AI',
 transalte_Registers:'ลงทะเบียนเข้าชม\nงานแสดงสินค้า (Visitor)',
 transalte_Done_text :'ตกลง',
-translate_negative_news: 'ข่าวเชิงลบ',
-translate_positive_news: 'ข่าวเชิงบวก',
-translate_trade_dispute: 'ร้องเรียนข้อพิพาททางการค้าระหว่างประเทศ',
 
 //สินค้า
 
@@ -961,160 +860,12 @@ transalte_cateProductText3:'กลุ่มสินค้า / Product Group',
 transalte_ProductBrandNameEN:' ชื่อแบรนด์ / Product Brand Name',
 transalte_ProductDescription:'รายละเอียดสินค้า / Product Description',
 
-//alert
-alert_complete_info: 'กรุณากรอกข้อมูลให้ครบ',
-alert_enter_corporate_number: 'กรุณากรอกเลขนิติบุคคล',
-alert_no_found: 'ไม่พบข้อมูล',
-alert_in_system: 'ในระบบ',
-alert_Save_successfully: 'บันทึกสำเร็จ',
-alert_please_ress_accept: 'กรุณากดยอมรับเงื่อนไข',
-alert_Select_item_delete: 'กรุณาเลือกสินค้าที่ต้องการลบ',
-alert_please_select_picture: 'กรุณาเลือกรูป',
-alert_Please_add_information: 'กรุณาเพิ่มข้อมูลประกอบ',
-alert_Please_add_product_info: 'กรุณาเพิ่มข้อมูลสินค้า',
-alert_add_info_affiliated_company: 'กรุณาเพิ่มข้อมูลในบริษัทสังกัด',
-alert_Please_add_contact: 'กรุณาเพิ่มข้อมูลติดต่อ',
-alert_Select_list_delete: 'กรุณาเลือกรายการที่ต้องการลบ',
-alert_add_information: 'กรุณาเพิ่มข้อมูลประกอบ',
-alert_succeed: 'สำเร็จ',
-alert_Data_verification_progress: 'กำลังดำเนินการตรวจสอบข้อมูล',
+transalte_ProductPLZ : 'โปรดเลือกตลาดและสินค้าที่ท่านสนใจ',
+transalte_savefavorites:' บันทึกรายการโปรด',
+transalte_Searchcontinents:'ค้นหาทวีปและประเทศ',
+transalte_marketofinterest:'ตลาดที่สนใจ'
 
-//Activities.js
-transalte_waiting_payment: 'รอการชำระเงิน',
-transalte_due: 'ครบกำหนด',
-transalte_considered_selection: 'เพื่อใช้ประกอบการพิจารณาคัดเลือกเข้าร่วมกิจกรรมครั้งต่อไป',
-transalte_Hide_details: 'ซ่อนรายละเอียด',
-transalte_responsible_agency: 'หน่วยงานอบรมรับผิดชอบ',
-transalte_project_staff: 'เจ้าหน้าที่โครงการ',
-transalte_Application_amendment_details: 'รายละเอียดการแก้ไขใบสมัคร',
-transalte_edit_application: 'แก้ไขใบสมัคร',
-translate_assessment: 'ทำแบบประเมิน',
-transalte_show_details: 'แสดงรายละเอียด',
-transalte_see_details: 'ดูรายละเอียด',
 
-//VieDevelop.js
-transalte_succeed: 'สำเร็จ',
-transalte_Data_verification_progress: 'กำลังดำเนินการตรวจสอบข้อมูล',
-transalte_tradeActivities_search_time: 'เลือกช่วงเวลา', 
 
-//ViewDevelopTap.js
-transalte_: '',
-transalte_map: 'แผนที่',
-
-//DevlopRegister.js
-transalte_company_info: 'ข้อมูลบริษัท',
-transalte_manufacturer: 'ผู้ผลิต',
-transalte_exporter: 'ผู้ส่งออก',
-transalte_international_trading_company: 'บริษัทการค้าระหว่างประเทศ',
-transalte_specify_details: 'กรณีอื่นๆ กรุณาระบุรายละเอียด',
-transalte_select_subcategory: 'เลือกประเภทสินค้าย่อย',
-transalte_100_characters: '100 ตัวอักษร',
-transalte_product_image: "Product's Image / รูปสินค้า",
-transalte_Search_corporate_number: 'ค้นหาเลขนิติบุคคล',
-transalte_select_province: 'เลือกจังหวัด',
-transalte_select_district: 'เลือกอำเภอ',
-transalte_select_subdistrict: 'เลือกตำบล',
-transalte_corporate_registration_number: 'เลขทะเบียนนิติบุคคล',
-transalte_company_business_thai: 'บริษัท/กิจการ (ไทย)',
-transalte_address_thai: 'ที่อยู่ติดต่อ (ไทย)',
-transalte_address_eng: 'ที่อยู่ติดต่อ (อังกฤษ)',
-transalte_fax_number: 'เบอร์โทรสาร',
-transalte_name_prefix: 'คำนำหน้าชื่อ',
-transalte_select_name_prefix: 'เลือกคำนำหน้าชื่อ',
-transalte_Trading_company_between: 'บริษัทการค้าระหว่าง...',
-transalte_add_company: 'เพิ่มบริษัท',
-
-//SearchAdvancedDevelop.js
-transalte_location: 'สถานที่่' ,
-transalte_Find_Advanced_Training: 'ค้นหขั้นสูงฝึกอบรม',
-transalte_Thailand: 'ประเทศไทย',
-transalte_foreign_country: 'ต่างประเทศ',
-
-//TradeActivitiesScreen (กิจกรรมส่งเสริมการค้าระหว่างประเทศ) &&ViewTrade
-translate_Toppick: 'TOP Pick',
-translate_By: 'by',
-translate_Toppickanddoolan:'น้องดูแลเลือกให้ Top Pick',
-translate_Recommended_activities: 'เปิดรับสมัครอยู่',
-translate_Nodata: 'ไม่มีข้อมูล',
-translate_All_activities: 'กิจกรรมทั้งหมด',
-translate_Category_activities: 'ประเภทกิจกรรมทั้งหมด',
-transalte_ButtonSearch: 'ค้นหา', 
-transalte_Demand: 'ความต้องการ',
-transalte_all_requirements: 'ความต้องการทั้งหมด',
-translate_activities: 'กิจกรรม',
-translate_Numberexposure: 'จำนวนที่เปิดรับ',
-translate_Products: 'สินค้า',
-translate_All_Location: 'สถานที่ทั้งหมด',
-translate_Case: 'ราย',
-translate_Prepare: 'เตรียมพบ',
-translate_Apply_activities: 'สมัครร่วมกิจกรรม',
-translate_Readmore: 'รายละเอียด',
-translate_Backward: 'ย้อนหลัง',
-translate_LIVE: 'LIVE',
-translate_OnAir: 'On Air',
-translate_HearderTrade: 'กิจกรรมส่งเสริมการค้าระหว่างประเทศ',
-translate_addFavorites: 'เพิ่มรายการโปรด',
-translate_returnBack: 'ย้อนหลัง',
-translate_Online: 'ออนไลน์',
-transalte_Department_Members: 'หมายเลขสมาชิกกรม',
-transalte_Department_Category: 'ประเภทสมาชิกกรม',
-transalte_Number_Juristic: 'เลขนิติบุคคล (Username)',
-transalte_Company_ฺBusiness: 'บริษัท / กิจการ',
-transalte_Bt_sesrch: 'ค้นหา',
-transalte_Bt_clear_all: 'ล้างทั้งหมด',
-transalte_Juristic_Person_Information: 'ข้อมูลนิติบุคคล',
-transalte_ฺฺAccompanying_Information: 'ข้อมูลประกอบ',
-transalte_Contact_Information: 'ข้อมูลผู็ติดต่อ' ,
-transalte_Product_TraedAc: 'สินค้า',
-transalte_Edit_Juristic_Information: 'แก้ไขข้อมูลนิติบุคคล',
-transalte_accept_the_terms: 'ข้าพเจ้ายอมรับเงื่อนไขข้อกำหนดของกรม',
-transalte_read_terms: 'อ่านข้อกำหนดและเงื่อนไขของกรม',
-transalte_total_accuracy_and_document_expiration_date: 'โปรดตรวจสอบความถูกต้อง และวันหมดอายุของเอกสาร',
-transalte_Condition_details: 'กรณีที่บริษัทไม่ได้ทำการผลิตสินค้าเอง จะต้องมีจดหมายรับรองจากบริษัทที่ผลิตสินค้าให้ว่าได้ทำการผลิตสินค้าให้ พร้อมทั้งแนบสำเนาหนังสือรับรองคุณภาพมาตรฐานสินค้าจากหน่วยงานที่เกี่ยวข้องของบริษัทที่ผลิตสินค้าให้ (ทุกรายการที่บริษัทที่ผลิตสินค้าให้ได้รับการรับรองคุณภาพมาตรฐานสินค้า) เอกสารทุกฉบับจะต้องมีการเซ็นรับรองสำเนาถูกต้องโดยผู้มีอำนาจลงนามของบริษัทที่ทำการผลิตสินค้าให้และประทับตราบริษัทที่ทำการผลิตสินค้าให้',
-transalte_export_market: 'ตลาดส่งออกที่น่าสนใจ',
-transalte_Add_info_affiliated_company: 'เพิ่มข้อมูลในบริษัทสังกัด',
-transalte_Search_contact_history: 'ค้นหาประวัติข้อมูลผู้ติดต่อ (รายเดิม)',
-
-//ViewTrade.js
-transalte_period_time: 'ช่วงเวลา',
-
-//Brand.js
-transalte_Value_Check_Badge: 'มูลค่า/ตรวจสอบตราสัญลักษณ์',
-transalte_apply_date: 'วันที่สมัคร',
-transalte_expiration_date: 'วันหมดอายุ',
-
-//ChangeScreen.js
-transalte_new_pass: 'รหัสผ่านใหม่',
-
-//Setting.js
-translate_changelang: 'เปลี่ยนภาษา',
-translate_nonti: 'การแจ้งเตือน',
-translate_Password: 'เปลี่ยนรหัสผ่าน (Reset Password)',
-translate_RegisterPolicy: 'เงื่อนไขและกฎระเบียบ',
-translate_Setting_Passcode: 'ตั่งค่า Passcode',
-transalte_Set_Passcode: 'กรอก Passcode',
-transalte_Change_Passcode: 'เปลี่ยนรหัสผ่าน Passcode',
-transalte_Confirm_Change_Passcode: 'ยืนยันการเปลี่ยนรหัสผ่าน Passcode',
-translate_Policy: 'นโยบายการใช้งาน',
-translate_Canclemember: 'แจ้งยกเลิกบัญชีของฉัน',
-translate_logout: 'ออกจากระบบ',
-translate_questionnaire: 'ทำแบบสอบถาม',
-translate_CanclememberAg: 'ยกเลิกการลงทะเบียนระบบ DITP ONE',
-translate_CheckPhone: 'กรุณาตรวจสอบหมายเลขโทรศัพท์',
-translate_Logout: 'ท่านยืนยันที่จะออกจากระบบ',
-translate_UnDitp:
-  '\t\tคุณต้องการที่จะยกเลิก\nคำขอการแจ้งยกเลิกการเป็นสมาชิกกรม ?',
-translate_QuesSelec: 'เลือกได้มากกว่า 1 ข้อ',
-transalte_Delete_Code: 'ลบ',
-transalte_Read_terms: 'อ่านเงื่อนไขข้อกำหนดของกรม.',
-transalte_enter_new_PIN_code_again: 'กรุณาใส่รหัส PIN ใหม่อีกครั้ง',
-
-//TradeAcivitiesRegister.js
-transalte_Expenses: 'ค่าใช้จ่าย',
-transalte_Attachment:'เอกสารแนบ (ถ้ามี)',
-transalte_No_participant_information: 'ไม่มีข้อมูลผู้เข้ากิจกรรม',
-transalte_thai: 'ไทย',
-transalte_Department_reserves : 'กรมสงวนสิทธิ์ในการพิจารณาจัดสรรคูหาตามความเหมาะสม',
-transalte_Company_Profile: 'Profile บริษัท',
 
 };

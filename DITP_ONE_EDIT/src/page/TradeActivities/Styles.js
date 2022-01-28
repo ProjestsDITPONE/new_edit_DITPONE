@@ -199,6 +199,7 @@ export default StyleSheet.create({
   flastListContainer: {
     backgroundColor: '#ffffff',
     borderColor: '#ffffff',
+    // marginTop:10
   },
   TouchSub1: {
     marginTop: 10,

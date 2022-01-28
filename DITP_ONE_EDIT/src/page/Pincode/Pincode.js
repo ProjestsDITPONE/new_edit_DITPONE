@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import ReactNativePinView from 'react-native-pin-view-edit';
 import EncryptedStorage from 'react-native-encrypted-storage';
-import I18n from '../../utils/I18n';
+
 import FingerprintScanner from 'react-native-fingerprint-scanner';
 import Icon1 from 'react-native-vector-icons/MaterialIcons';
 
@@ -20,7 +20,9 @@ import {ViewScale} from '../../config/ViewScale'
 
 
 const window = Dimensions.get('window');
+
 const {height, width} = Dimensions.get('window');
+const {height_screen, width__screen} = Dimensions.get('screen');
 
 //ipad
 var aspectRatio = 1.6;
@@ -353,16 +355,17 @@ const Pincodepassword = ({navigation, route}) => {
               paddingTop: 0,
               paddingBottom: 48,
               color: 'rgba(255,255,255,0.7)',
-              fontSize: 30,
+              fontSize: ViewScale(35),
             }}>
             ตั้งค่า Passcode
           </Text>
+          {/* <View style={{paddingHorizontal: 25,width:width__screen}}> */}
           <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView
-              inputSize={20}
+              inputSize={ViewScale(20)}
               ref={pinView}
               pinLength={6}
-              buttonSize={90}
+              buttonSize={ViewScale(90)}
               onValueChange={value => setEnteredPin(value)}
               buttonAreaStyle={{
                 marginTop: 30,
@@ -383,6 +386,7 @@ const Pincodepassword = ({navigation, route}) => {
                 borderColor: '#FFF',
               }}
               buttonTextStyle={{
+                fontSize:ViewScale(35),
                 color: '#FFF',
               }}
               onButtonPress={key => {
@@ -402,7 +406,7 @@ const Pincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize: 30, color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
+                    <Text style={{fontSize: ViewScale(30), color: '#FFF'}}>ลบ</Text>
                   </View>
                 ) : (
                   undefined
@@ -434,16 +438,16 @@ const Pincodepassword = ({navigation, route}) => {
               paddingTop: 0,
               paddingBottom: 48,
               color: 'rgba(255,255,255,0.7)',
-              fontSize: 30,
+              fontSize: ViewScale(35),
             }}>
             ยืนยัน Passcode
           </Text>
           <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView
-              inputSize={20}
+              inputSize={ViewScale(20)}
               ref={pinViewNew}
               pinLength={6}
-              buttonSize={90}
+              buttonSize={ViewScale(90)}
               onValueChange={value => setEnteredPinNew(value)}
               buttonAreaStyle={{
                 marginTop: 30,
@@ -464,6 +468,7 @@ const Pincodepassword = ({navigation, route}) => {
                 borderColor: '#FFF',
               }}
               buttonTextStyle={{
+                fontSize:ViewScale(35),
                 color: '#FFF',
               }}
               onButtonPress={key => {
@@ -482,7 +487,7 @@ const Pincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize: 30, color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
+                    <Text style={{fontSize: ViewScale(30), color: '#FFF'}}>ลบ</Text>
                   </View>
                 ) : (
                   undefined
@@ -517,16 +522,18 @@ const Pincodepassword = ({navigation, route}) => {
               paddingTop: 0,
               paddingBottom: 48,
               color: 'rgba(255,255,255,0.7)',
-              fontSize: 30,
+              fontSize: ViewScale(35),
             }}>
-            {I18n.t('transalte_set_Passcode')}
+            กรอก Passcode 
           </Text>
+         
+           {/* <View style={{paddingHorizontal: 25, width:width}}> */}
           <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView
-              inputSize={20}
+              inputSize={ViewScale(20)}
               ref={pinViewNewChage}
               pinLength={6}
-              buttonSize={90}
+              buttonSize={ViewScale(90)}
               onValueChange={value => setEnteredPinNewChage(value)}
               buttonAreaStyle={{
                 marginTop: 30,
@@ -547,6 +554,7 @@ const Pincodepassword = ({navigation, route}) => {
                 borderColor: '#FFF',
               }}
               buttonTextStyle={{
+                fontSize:ViewScale(35),
                 color: '#FFF',
               }}
               onButtonPress={key => {
@@ -565,7 +573,7 @@ const Pincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize: 30, color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
+                    <Text style={{fontSize: ViewScale(30), color: '#FFF'}}>ลบ</Text>
                   </View>
                 ) : (
                   undefined
@@ -596,16 +604,16 @@ const Pincodepassword = ({navigation, route}) => {
               paddingTop: 0,
               paddingBottom: 48,
               color: 'rgba(255,255,255,0.7)',
-              fontSize: 30,
+              fontSize: ViewScale(35),
             }}>
             เปลี่ยนรหัสผ่าน Passcode
           </Text>
-          <View style={{paddingHorizontal: 25,borderWidth:1,width:ViewScale(450)}}>
+          <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView
-              inputSize={20}
+              inputSize={ViewScale(20)}
               ref={pinViewCKNew}
               pinLength={6}
-              buttonSize={90}
+              buttonSize={ViewScale(90)}
               onValueChange={value => setPinNewChageCK(value)}
               buttonAreaStyle={{
                 marginTop: 30,
@@ -626,6 +634,7 @@ const Pincodepassword = ({navigation, route}) => {
                 borderColor: '#FFF',
               }}
               buttonTextStyle={{
+                fontSize:ViewScale(35),
                 color: '#FFF',
               }}
               onButtonPress={key => {
@@ -644,7 +653,7 @@ const Pincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize: 30, color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
+                    <Text style={{fontSize: ViewScale(30), color: '#FFF'}}>ลบ</Text>
                   </View>
                 ) : (
                   undefined
@@ -676,16 +685,16 @@ const Pincodepassword = ({navigation, route}) => {
               paddingTop: 0,
               paddingBottom: 48,
               color: 'rgba(255,255,255,0.7)',
-              fontSize: 30,
+              fontSize: ViewScale(35),
             }}>
             ยืนยันเปลี่ยนรหัสผ่าน Passcode
           </Text>
           <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView
-              inputSize={20}
+              inputSize={ViewScale(20)}
               ref={pconfirm}
               pinLength={6}
-              buttonSize={90}
+              buttonSize={ViewScale(90)}
               onValueChange={value => setPinconfirm(value)}
               buttonAreaStyle={{
                 marginTop: 30,
@@ -706,6 +715,7 @@ const Pincodepassword = ({navigation, route}) => {
                 borderColor: '#FFF',
               }}
               buttonTextStyle={{
+                fontSize:ViewScale(35),
                 color: '#FFF',
               }}
               onButtonPress={key => {
@@ -724,7 +734,7 @@ const Pincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize: 30, color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
+                    <Text style={{fontSize: ViewScale(30), color: '#FFF'}}>ลบ</Text>
                   </View>
                 ) : (
                   undefined
@@ -756,16 +766,18 @@ const Pincodepassword = ({navigation, route}) => {
               paddingTop: 0,
               paddingBottom: 48,
               color: 'rgba(255,255,255,0.7)',
-              fontSize: 30,
+              fontSize:ViewScale(35),
             }}>
-            {I18n.t('transalte_set_Passcode')}
+            กรอก Passcode
           </Text>
+          
+           {/* <View style={{paddingHorizontal: 25,width:width}}> */}
           <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView
-              inputSize={20}
+              inputSize={ViewScale(20)}
               ref={pinViewNewlogin}
               pinLength={6}
-              buttonSize={90}
+              buttonSize={ViewScale(90)}
               onValueChange={value => setEnteredPinNewlogin(value)}
               buttonAreaStyle={{
                 marginTop: 30,
@@ -773,10 +785,12 @@ const Pincodepassword = ({navigation, route}) => {
               inputAreaStyle={{
                 marginBottom: 24,
               }}
+              
               inputViewEmptyStyle={{
                 backgroundColor: 'transparent',
                 borderWidth: 1,
                 borderColor: '#FFF',
+                
               }}
               inputViewFilledStyle={{
                 backgroundColor: '#FFF',
@@ -786,6 +800,7 @@ const Pincodepassword = ({navigation, route}) => {
                 borderColor: '#FFF',
               }}
               buttonTextStyle={{
+                fontSize:ViewScale(35),
                 color: '#FFF',
               }}
               onButtonPress={key => {
@@ -804,7 +819,7 @@ const Pincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize: 30, color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
+                    <Text style={{fontSize:ViewScale(30), color: '#FFF'}}>ลบ</Text>
                   </View>
                 ) : (
                   undefined
@@ -812,7 +827,7 @@ const Pincodepassword = ({navigation, route}) => {
               }
               customRightButton={
                 CheackFaceIDTouchID === true ? (
-                  <Icon1 name={'fingerprint'} size={36} color={'#FFF'} />
+                  <Icon1 name={'fingerprint'} size={ ViewScale(36)} color={'#FFF'} />
                 ) : (
                   undefined
                 )

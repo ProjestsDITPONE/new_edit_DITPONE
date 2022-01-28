@@ -92,8 +92,8 @@ const Setting = ({
 
   const AlertLogout = () => {
     Alert.alert(
-      I18n.t('translate_ChangepasswordProTitle'),
-      I18n.t('translate_ChangepasswordProSubtitle'),
+      'ท่านได้เปลี่ยนรหัสผ่านสำเร็จ',
+      'กรุณาเข้าสู่ระบบใหม่อีกครั้ง',
       [{text: 'ตกลง', onPress: () => onLogout()}],
       {cancelable: false},
     );
@@ -542,7 +542,7 @@ const Setting = ({
                 <TouchableOpacity >
                   <View style={Styles.ViewSub3}>
                     <View style={Styles.ViewSub10}>
-                      <Text style={Styles.TextSub1}>Version 20220125</Text>
+                      <Text style={Styles.TextSub1}>Version 20220127</Text>
                       <View style={Styles.ViewSub4}>
                         <Image
                           style={{width: 8, height: 13}}

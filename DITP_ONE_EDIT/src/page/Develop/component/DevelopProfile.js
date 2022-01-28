@@ -49,38 +49,38 @@ const width = Dimensions.get('window').width;
 const dadamenu3 = [
   {
     id: 1,
-    txt: I18n.t('transalte_personal_information'),
+    txt: 'ข้อมูลส่วนตัว',
   },
   {
     id: 2,
-    txt: I18n.t('transalte_ฺฺAccompanying_Information'),
+    txt: 'ข้อมูลประกอบ',
   },
   {
     id: 3,
-    txt: I18n.t('translate_PRODUCTS'),
+    txt: 'สินค้า',
   },
   {
     id: 4,
     txt: 'ข้อมูลบริษัท',
-    txt2: I18n.t('transalte_Participants'),
+    txt2: 'ผู้เข้าร่วมกิจกรรม',
   },
 ];
 const dadamenu1 = [
   {
     id: 1,
-    txt: I18n.t('transalte_personal_information'),
+    txt: 'ข้อมูลส่วนตัว',
   },
   {
     id: 2,
-    txt: I18n.t('transalte_ฺฺAccompanying_Information'),
+    txt: 'ข้อมูลประกอบ',
   },
   {
     id: 3,
-    txt: I18n.t('translate_PRODUCTS'),
+    txt: 'สินค้า',
   },
   {
     id: 4,
-    txt: I18n.t('transalte_Participants'),
+    txt: 'ผู้เข้าร่วมกิจกรรม',
   },
 ];
 const data2 = [
@@ -121,23 +121,23 @@ class DevelopProfile extends React.Component {
     this.state = {
       Allcontents: [
         {
-          title: I18n.t('transalte_personal_information'),
+          title: 'ข้อมูลส่วนตัว',
         },
       ],
       Allcontents1: [
         {
-          title: I18n.t('transalte_Juristic_Person_Information'),
+          title: 'ข้อมูลนิติบุคคล',
         },
       ],
 
       Alldataoperator: [
         {
-          title: I18n.t('transalte_ฺฺAccompanying_Information'),
+          title: 'ข้อมูลประกอบ',
         },
       ],
       Alldataproduct: [
         {
-          title: I18n.t('translate_PRODUCTS'),
+          title: 'สินค้า',
         },
       ],
       Alldatacompany: [
@@ -147,7 +147,7 @@ class DevelopProfile extends React.Component {
       ],
       Alldatanumber: [
         {
-          title: I18n.t('transalte_Participants'),
+          title: 'ผู้เข้าร่วมกิจกรรม',
         },
       ],
       ///////เก็บข้อมูลข้อทมูลประกอบ
@@ -1259,7 +1259,7 @@ class DevelopProfile extends React.Component {
                         textAlign: 'center',
                         color: '#FFFFFF',
                       }}>
-                      {I18n.t('transalte_Edit_Juristic_Information')}
+                      แก้ไขข้อมูลนิติบุคคล
                     </Text>
                   </TouchableOpacity>
                 )}
@@ -1288,7 +1288,7 @@ class DevelopProfile extends React.Component {
                           textAlign: 'center',
                           color: '#FFFFFF',
                         }}>
-                        {I18n.t('translate_Next')}
+                        ต่อไป
                       </Text>
                     </View>
                     <View style={{}}>
@@ -1329,7 +1329,7 @@ class DevelopProfile extends React.Component {
                           textAlign: 'center',
                           color: '#FFFFFF',
                         }}>
-                        {I18n.t('translate_Save')}
+                        บันทึก
                       </Text>
                     </View>
                   </TouchableOpacity>
@@ -1988,7 +1988,7 @@ class DevelopProfile extends React.Component {
                         textAlign: 'center',
                         color: '#FFFFFF',
                       }}>
-                      {I18n.t('transalte_Edit_Juristic_Information')}
+                      แก้ไขข้อมูลนิติบุคคล
                     </Text>
                   </TouchableOpacity>
                 )}
@@ -2017,7 +2017,7 @@ class DevelopProfile extends React.Component {
                           textAlign: 'center',
                           color: '#FFFFFF',
                         }}>
-                        {I18n.t('translate_Next')}
+                        ต่อไป
                       </Text>
                     </View>
                     <View style={{}}>
@@ -2055,7 +2055,7 @@ class DevelopProfile extends React.Component {
                           textAlign: 'center',
                           color: '#FFFFFF',
                         }}>
-                        {I18n.t('translate_Save')}
+                        บันทึก
                       </Text>
                     </View>
                   </TouchableOpacity>

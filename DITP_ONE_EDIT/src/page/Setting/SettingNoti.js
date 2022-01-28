@@ -35,7 +35,7 @@ const SettingNoti = ({navigation}) => {
             textAlign: 'center',
             fontFamily: 'Kittithada Bold 75',
           }}>
-          {I18n.t('translate_nonti')}
+          การแจ้งเตือน
         </Text>
       </View>
       <ScrollView style={{zIndex: -1}}>
@@ -132,7 +132,7 @@ const SettingNoti = ({navigation}) => {
                   color: '#4b4b4b',
                   fontFamily: 'Kittithada Bold 75',
                 }}>
-               {I18n.t('transalte_applyActivities')}
+               {'กิจกรรมสมัคร'}
               </Text>
 
               <View style={{flexDirection: 'row-reverse', flex: 1}}>
@@ -201,7 +201,7 @@ const SettingNoti = ({navigation}) => {
                   color: '#4b4b4b',
                   fontFamily: 'Kittithada Bold 75',
                 }}>
-                {I18n.t('transalte_newsActivity')}
+                กิจกรรมรายการโปรด
               </Text>
 
               <View style={{flexDirection: 'row-reverse', flex: 1}}>
@@ -344,7 +344,7 @@ const SettingNoti = ({navigation}) => {
                   color: '#4b4b4b',
                   fontFamily: 'Kittithada Bold 75',
                 }}>
-                {I18n.t('transalte_webImport')}
+                {'Chat กับผู้นำเข้าจาก thaitradefair.com'}
               </Text>
 
               <View style={{flexDirection: 'row-reverse', flex: 1}}>

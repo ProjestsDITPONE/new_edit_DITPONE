@@ -271,7 +271,7 @@ class SearchData extends Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert(I18n.t('alert_succeed'));
+          alert('สำเสร็จ');
         } else {
           // shared
           alert(result.activityType);
@@ -294,7 +294,7 @@ class SearchData extends Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert(I18n.t('alert_succeed'));
+          alert('สำเสร็จ');
         } else {
           // shared
           alert(result.activityType);
@@ -1632,7 +1632,7 @@ class SearchData extends Component {
                                       Styles2.viewckText,
                                       {color: '#4b4b4b'},
                                     ]}>
-                                    {I18n.t('translate_PRODUCTS')}
+                                    {'   '}สินค้า
                                   </Text>
                                 ) : (
                                   <Text
@@ -1687,7 +1687,7 @@ class SearchData extends Component {
                               value:
                                 I18n.locale === 'th' ? 'สถานที่ทั้งหมด' : 'All',
                             }}
-                            doneText={I18n.locale === 'th' ? 'เลือก' : 'Done'}
+                            doneText={I18n.locale === 'th' ? ' เลือก' : 'Done'}
                             onValueChange={(value, index) =>
                               this.setState(
                                 {
@@ -1723,7 +1723,7 @@ class SearchData extends Component {
                               <View style={Styles2.view2}>
                                 {this.state.textSelectActivity4 === null ? (
                                   <Text style={Styles2.viewckText}>
-                                    {I18n.t('translate_All_Location')}
+                                    {'   '}สถานที่ทั้งหมด
                                   </Text>
                                 ) : (
                                   <Text
@@ -1770,7 +1770,7 @@ class SearchData extends Component {
                                 fontSize: 20,
                                 color: '#2d6dc4',
                               }}>
-                              {I18n.t('translate_Online')}
+                              Online
                             </Text>
                           </TouchableOpacity>
                         ) : (
@@ -1797,7 +1797,7 @@ class SearchData extends Component {
                                 fontSize: 20,
                                 color: '#FFFFFF',
                               }}>
-                              {I18n.t('translate_Online')}
+                              Online
                             </Text>
                           </TouchableOpacity>
                         )}
@@ -1856,7 +1856,7 @@ class SearchData extends Component {
                                 {this.state.valueSelectActivity3dev ===
                                 undefined ? (
                                   <Text style={Styles2.viewckText}>
-                                   {I18n.t('transalte_Demand')}
+                                    {'   '}ความต้องการ
                                   </Text>
                                 ) : (
                                   <Text
@@ -2234,7 +2234,7 @@ class SearchData extends Component {
                               fontSize: 20,
                               textAlign: 'center',
                             }}>
-                            {I18n.t('translate_Seachcontry')}
+                            ค้นหา
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2288,7 +2288,7 @@ class SearchData extends Component {
                               fontSize: 20,
                               textAlign: 'center',
                             }}>
-                            {I18n.t('transalte_Bt_clear_all')}
+                            ล้างทั้งหมด
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2399,7 +2399,7 @@ class SearchData extends Component {
                               color: '#FFFFFF',
                               fontSize: 18,
                             }}>
-                            {I18n.t('transalte_map')}
+                            แผนที่
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2507,7 +2507,7 @@ class SearchData extends Component {
                             textAlign: 'center',
                             textDecorationLine: 'underline',
                           }}>
-                          {I18n.t('transalte_show_details')}
+                          แสดงรายละเอียด
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -2583,7 +2583,7 @@ class SearchData extends Component {
                               textAlign: 'center',
                               textDecorationLine: 'underline',
                             }}>
-                            {I18n.t('transalte_Hide_details')}
+                            ซ่อนรายละเอียด
                           </Text>
                           <Icon3
                             color="#2d6dc4"
@@ -2603,10 +2603,10 @@ class SearchData extends Component {
 
                     <View style={{flex: 1}}>
                       <Text style={{color: '#3a3a3a', fontSize: 18}}>
-                        {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
+                        หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
                       </Text>
                       <Text style={{color: '#3a3a3a', fontSize: 18}}>
-                        {I18n.t('transalte_project_staff')} : {this.state.officer_name}
+                        เจ้าหน้าที่โครงการ : {this.state.officer_name}
                       </Text>
                       <View style={{flexDirection: 'row'}}>
                         <Image
@@ -2774,7 +2774,7 @@ class SearchData extends Component {
                               }}>
                               {this.state.Close
                                 ? I18n.t('translate_Apply_activities')
-                                : I18n.t('translate_Applacation')}
+                                : '  ปิดรับสมัครกิจกรรม  '}
                             </Text>
                           </TouchableOpacity>
                         ) : (
@@ -2828,7 +2828,7 @@ class SearchData extends Component {
                       color: '#FFFFFF',
                       fontFamily: 'PSL Kittithada Pro',
                     }}>
-                    {I18n.t('transalte_Thailand')}
+                    {'ประเทศไทย'}
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -2900,7 +2900,7 @@ class SearchData extends Component {
                               color: '#FFFFFF',
                               fontFamily: 'PSL Kittithada Pro',
                             }}>
-                            {I18n.t('transalte_foreign_country')}
+                            {'ต่างประเทศ'}
                           </Text>
                         ) : (
                           <Text

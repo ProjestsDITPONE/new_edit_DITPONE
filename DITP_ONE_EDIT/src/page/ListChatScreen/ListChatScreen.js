@@ -33,14 +33,14 @@ import {
   getStatusChat,
   getChatHistoryNew,
   createTokenChat,
-  getChatRealtime
+  getChatRealtime,
+  chatCreate,
 } from '../../actions/data.actions';
 import {UpdateCountChat, GetChatCount} from '../../actions/auth.actions';
 import Styles from './Styles';
 import I18n from '../../utils/I18n';
 import {ViewScale} from '../../config/ViewScale';
 var date = new Date();
-
 
 import Moment from 'moment';
 
@@ -52,17 +52,15 @@ class ListChatScreen extends Component {
       dataMarketData: [],
       currentlyOpenSwipeable: null,
       datachat: [],
-      datachatNew:[],
+      datachatNew: [],
       statusOpen: false,
       heightTab: 0,
-      datarealtime:[]
+      datarealtime: [],
     };
   }
 
-
   _getMarketData = async values => {
     try {
-
       var today = new Date();
       var dd = String(today.getDate()).padStart(2, '0');
       var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -73,106 +71,135 @@ class ListChatScreen extends Component {
 
       // alert(dayend)
 
-      console.log(this.props.getUser.userDetails.res_result.naturalId)
-    
-          const payload = {};
-          const responsetoken = await this.props.dispatch(createTokenChat(payload));
-          console.log(responsetoken, 'responsetoken ===> prolist');
-          // alert(JSON.stringify(responsetoken))
-          // console.log(
-          //   this.props.getUser.userDetails.res_result.naturalId,
-          //   'UIDNew',
-          // );
-          if (responsetoken.res_code == '00') {
+      // console.log(this.props.getUser.userDetails.res_result.naturalId)
+
+      const payload = {};
+      const responsetoken = await this.props.dispatch(createTokenChat(payload));
+
+      this.setState({accessToken: responsetoken.res_result});
+      // console.log('+1');
+      // alert(JSON.stringify(responsetoken))
+      // console.log(
+      //   this.props.getUser.userDetails.res_result.naturalId,
+      //   'UIDNew',
+      // );
+
+      // if (responsetoken.res_code == '00') {
+      //   const payload1 = {
+      //     accessToken: responsetoken.res_result,
+      //     uid: this.props.getUser.userDetails.res_result.naturalId,
+      //     type: 'pro',
+      //   };
+
+      // const response1 = await this.props.dispatch(chatCreate(payload1));
+
+      // console.log('TEstByProgrammerresponse1' + JSON.stringify(response1));
+
       this.response2 = await this.props.dispatch(
-        getChatHistoryNew({
-          
-          accessToken:responsetoken.res_result,
+       getChatHistoryNew ({
+          accessToken: responsetoken.res_result,
           uid: this.props.getUser.userDetails.res_result.naturalId,
-          limit:1000,
-          page:0,
-          start: "2021-11-01 00:00:00",
+          limit: 1000,
+          page: 0,
+          start: '2021-11-01 00:00:00',
           end: dayend,
-          social_network_ref_id:'uNPxpBP5afzA4u5NtZxSahtUsKZSX40k',
-          token_chat:'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4NDQ3MjU4OC00NzcwLTRjNTMtOGE2NC00ZDExMWVjMDcwMmQiLCJjb21wYW55SWQiOiI2MDJjYzdlNWZmYTk4NzAwMDFmZWNiNmIiLCJjb21wYW55TmFtZSI6IkRJVFAiLCJ1aWQiOiIxNjMwNTAwMTA3MDYxIiwic29jaWFsTmV0d29ya0lkIjoiNjBkMmQ4ZGExZjI1OGQwMDAxZGFiNGFjIiwiaW'
-          ,type:'pro'
+          social_network_ref_id: 'uNPxpBP5afzA4u5NtZxSahtUsKZSX40k',
+          token_chat: '',
+          type: 'pro',
         }),
       );
-      console.log('HHHHHFFFFFFFF1111'+ JSON.stringify(this.response2.results) );
-      if (this.response2.res_code === '00') {
 
-        this.response2.results.map(NewData =>{
+      console.log('NEw +@222=>' + JSON.stringify(this.response2));
+      // alert("else"+JSON.stringify( this.response2))
 
-          console.log("NewData"+NewData)
-          this.state.datachatNew.push({
-            chat_token : NewData.chat_token.toString(),
-            datetime : NewData.datetime.substring(0,10),
-            messages :NewData.messages.toString(),
-            status :NewData.status.toString(),
-            status_basket :NewData.status_basket.toString(),
-            user_token :NewData.user_token.toString(),
-          })
-        })
-
-        let newDirectory =   Object.values(this.state.datachatNew.reduce((acc,item)=>{
-
-          if (!acc[item.datetime]) acc[item.datetime] = {
-            chat_token :item.chat_token,
-            messages : item.messages,
-            datetime : item.datetime,
-            status : item.status,
-            status_basket : item.status_basket,
-            user_token : item.user_token,
-
+      if (this.response2.resultsRealtime ) {
+       
+        const payload1 = {
+          accessToken: responsetoken.res_result,
+          uid: this.props.getUser.userDetails.res_result.naturalId,
+          type: 'pro',
         };
 
-          // if(!acc[item.datetime]){
-          //   acc[item.datetime]={
-          //     mess : item.messages,
-          //     data : item.datetime
-          //   }
-          // }
-          return acc;
-        },{}))
+        const response1 = await this.props.dispatch(chatCreate(payload1));
 
-        console.log("newDirectory"+ JSON.stringify(newDirectory) )
-
+        console.log('New =>>>> ckresponse1 ' + JSON.stringify(response1));
 
         this.setState({
-          dataMarketData: this.response2,
+          token_chat: response1.res_result,
+          activateBot: response1.activateBot,
         });
-        this.setState({datachat: newDirectory});
+
+        // alert( "if"+response1.res_result)
+     
+  
+      } else {
+       
+        // console.log(this.response2.resultsRealtime[0].chat_token);
+        this.setState({
+          token_chat: this.response2?.resultsRealtime[0]?.chat_token,
+          activateBot: false,
+        });
+     
+  
       }
 
 
-      this.responserealtime = await this.props.dispatch(
-        getChatRealtime({
 
-          accessToken:responsetoken.res_result,
-          uid: this.props.getUser.userDetails.res_result.naturalId,
-          limit:1000,
-          page:0,
-          start: dayStart,
-          end: dayend,
-          // social_network_ref_id:'O2df29xA7ujiRnD3Y7zGVZzXWP2cgN0M',
-          social_network_ref_id:'uNPxpBP5afzA4u5NtZxSahtUsKZSX40k',
-          
-          token_chat:'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4NDQ3MjU4OC00NzcwLTRjNTMtOGE2NC00ZDExMWVjMDcwMmQiLCJjb21wYW55SWQiOiI2MDJjYzdlNWZmYTk4NzAwMDFmZWNiNmIiLCJjb21wYW55TmFtZSI6IkRJVFAiLCJ1aWQiOiIxNjMwNTAwMTA3MDYxIiwic29jaWFsTmV0d29ya0lkIjoiNjBkMmQ4ZGExZjI1OGQwMDAxZGFiNGFjIiwiaW',
-          type:'pro'
-        }),
+    
+
+      if (this.response2.res_code === '00') {
+        this.response2.results.map(NewData => {
+          // console.log("NewData"+NewData)
+          this.state.datachatNew.push({
+            chat_token: NewData.chat_token.toString(),
+            datetime: NewData.datetime.substring(0, 10),
+            messages: NewData.messages.toString(),
+            status: NewData.status.toString(),
+            status_basket: NewData.status_basket.toString(),
+            user_token: NewData.user_token.toString(),
+          });
+        });
+
+        // this.state.datachatNew = this.state.datachatNew;
+
+        // let newDirectory =   Object.values(this.state.datachatNew.reduce((acc,item)=>{
+
+        //   if (!acc[item.datetime]) acc[item.datetime] = {
+        //     chat_token :item.chat_token,
+        //     messages : item.messages,
+        //     datetime : item.datetime,
+        //     status : item.status,
+        //     status_basket : item.status_basket,
+        //     user_token : item.user_token,
+
+        // };
+
+        // if(!acc[item.datetime]){
+        //   acc[item.datetime]={
+        //     mess : item.messages,
+        //     data : item.datetime
+        //   }
+        // }
+        // return acc;
+      }
+
+      // console.log("realtime =>+3"+ JSON.stringify(this.response2.resultsRealtime) )
+
+      console.log(
+        'realtime =>+3' + JSON.stringify(this.response2.resultsRealtime),
       );
 
-      console.log('responserealtimeresponserealtime'+ JSON.stringify(this.responserealtime.results) );
+      this.setState({
+        dataMarketData: this.response2,
+      });
+      // this.setState({datachat: this.state.datachatNew});
+      this.setState({
+        datachat: this.response2.results,
+        datarealtime: this.response2.resultsRealtime,
+      });
+      // }
 
-
-    this.setState({
-      datarealtime:this.responserealtime.results
-    })
-
-
-
-
-    }
+      //}
     } catch (error) {
       console.log(error);
     }
@@ -181,7 +208,7 @@ class ListChatScreen extends Component {
   _UpdateCountChat = async values => {
     try {
       var tokenMenu = this.props.authData.token;
-      console.log('tokenMenu',tokenMenu)
+      console.log('tokenMenu', tokenMenu);
       const response = await this.props.dispatch(
         UpdateCountChat({token: tokenMenu}),
       );
@@ -209,20 +236,19 @@ class ListChatScreen extends Component {
   };
 
   componentDidMount() {
+    //  var getDate = new Date("YYYY-MMMM-DDDD")
+    //  var disablemonth= getDate.getMonth()
+    //  var disableday = getDate.getDate()
+    //  var disableyear = getDate.getFullYear()
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
 
-  //  var getDate = new Date("YYYY-MMMM-DDDD")
-  //  var disablemonth= getDate.getMonth()
-  //  var disableday = getDate.getDate()
-  //  var disableyear = getDate.getFullYear()
-  var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
+    var dayStart = yyyy + '-' + dd + '-' + mm + 'T00:00:00.000Z';
+    var dayend = yyyy + '-' + dd + '-' + mm + 'T23:59:59.999Z';
 
-var dayStart =  yyyy+ '-' + dd + '-' + mm+'T00:00:00.000Z';
-var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
-
-  //  alert(dayStart + dayend )
+    //  alert(dayStart + dayend )
 
     // alert(disableyear+"-"+disablemonth+"-"+disableday  )
     const {navigation} = this.props;
@@ -233,7 +259,7 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
     });
 
     this._getStatusChat();
-    console.log('xxxxwwwweeee');
+    // console.log('xxxxwwwweeee');
   }
 
   _getStatusChat = async values => {
@@ -255,9 +281,7 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
   };
 
   render() {
-
-
-    console.log("this.state.datarealtime11"+JSON.stringify(this.state.datarealtime.length))
+    // console.log("this.state.datarealtime11"+JSON.stringify(this.state.datarealtime.length))
 
     const {currentlyOpenSwipeable} = this.state;
     const itemProps = {
@@ -284,154 +308,163 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
         <HeaderText nameTab={I18n.t('NongSaijai')} />
         <View style={{alignItems: 'center', flex: 1, zIndex: -1}}>
           {/* {this.state.dataMarketData.length == undefined && ( */}
-            <View style={{width: '100%'}}>
-              <View
-                style={{
-                  width: ViewScale(400),
-                  alignSelf: 'center',
-                  height: ViewScale(80),
-                  marginBottom: 15,
-                }}>
-                <ListItem
-                  leftAvatar={
-                    <View style={{flex: 0.1}}>
-                      <Image
-                        style={{width:ViewScale(40), height:ViewScale(40)}}
-                        source={{
-                          uri:
-                            'http://one.ditp.go.th/dist/img/icon/iconAdminChat.png',
-                        }}
-                      />
+          <View style={{width: '100%'}}>
+            <View
+              style={{
+                width: ViewScale(400),
+                alignSelf: 'center',
+                height: ViewScale(80),
+                marginBottom: 15,
+              }}>
+              <ListItem
+                leftAvatar={
+                  <View style={{flex: 0.1}}>
+                    <Image
+                      style={{width: ViewScale(40), height: ViewScale(40)}}
+                      source={{
+                        uri:
+                          'http://one.ditp.go.th/dist/img/icon/iconAdminChat.png',
+                      }}
+                    />
+                  </View>
+                }
+                style={[Styles.listDataItem, Styles.listDataView]}
+                disabled={
+                  false
+                  // !this.state.dataMarketData.resultsRealtime.length > 0
+                }
+                containerStyle={{
+                  height: 80,
+                  backgroundColor: 'transparent',
+                }}
+                title={
+                  // เช็คกำลังสนทนาอยู่
+                  // this.state.dataMarketData.resultsRealtime.length > 0 ? (
+                  //   <Text style={Styles.titleStyle}>
+                  //     {this.state.dataMarketData.resultsRealtime[0].messages}
+                  //     {/* {I18n.t('translate_DateSaijai')} */}
+                  //   </Text>
+                  // ) : (
+                  //   <View
+                  //     style={{
+                  //       backgroundColor: 'red',
+                  //       alignSelf: 'center',
+                  //     }}>
+                  //     <Text style={Styles.titleStyle}>
+                  //       {I18n.t('translate_DateSaijai')}
+                  //     </Text>
+                  //   </View>
+                  // )
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      height: ViewScale(60),
+                      width: ViewScale(350),
+                    }}>
+                    <View style={{flex: 1, marginHorizontal: 4}}>
+                      <View
+                        style={{
+                          flex: 1,
+                          backgroundColor: '#e3e4e7',
+                          borderRadius: 8,
+                          justifyContent: 'center',
+                        }}>
+                        <Text
+                          style={{
+                            color: '#20416e',
+                            fontSize: ViewScale(20),
+                            marginHorizontal: 9,
+                          }}>
+                          {'วันนี้อยากให้น้องใส่ใจ\nช่วยอะไรดีคะ?'}
+                        </Text>
+                      </View>
                     </View>
-                  }
-                  style={[Styles.listDataItem, Styles.listDataView]}
-                  disabled={
-                    false
-                    // !this.state.dataMarketData.resultsRealtime.length > 0
-                  }
-                  containerStyle={{
-                    height: 80,
-                    backgroundColor: 'transparent',
-                  }}
-                  title={
-                    // เช็คกำลังสนทนาอยู่
-                    // this.state.dataMarketData.resultsRealtime.length > 0 ? (
-                    //   <Text style={Styles.titleStyle}>
-                    //     {this.state.dataMarketData.resultsRealtime[0].messages}
-                    //     {/* {I18n.t('translate_DateSaijai')} */}
-                    //   </Text>
-                    // ) : (
-                    //   <View
-                    //     style={{
-                    //       backgroundColor: 'red',
-                    //       alignSelf: 'center',
-                    //     }}>
-                    //     <Text style={Styles.titleStyle}>
-                    //       {I18n.t('translate_DateSaijai')}
-                    //     </Text>
-                    //   </View>
-                    // )
-                    <View style={{flexDirection: 'row',height:ViewScale(60), width: ViewScale(350)}}>
-                      <View style={{flex: 1, marginHorizontal: 4}}>
+                    {/* {this.state.statusOpen ? ( */}
+                    <View
+                      style={{
+                        flex: 1,
+                        marginHorizontal: 4,
+                        justifyContent: 'center',
+                      }}>
+                      <TouchableOpacity
+                        onPress={async () => {
+                          console.log('+++');
+                          if (
+                            this.state.dataMarketData.resultsRealtime.length > 0
+                          ) {
+                            this.props.navigation.navigate('ChatScreen', {
+                              token_chat: this.state.token_chat,
+                              activateBot: this.state.activateBot,
+                              accessToken: this.state.accessToken,
+                            });
+                            console.log('Chat=>_UpdateCountChat');
+                            // this._UpdateCountChat();
+                          } else {
+                            // this._UpdateCountChat();
+                            Alert.alert(
+                              I18n.t('translate_Message_AddYourRequest'),
+                              '',
+                              [
+                                {
+                                  text: I18n.t('translate_Cancel'),
+                                  onPress: () => console.log('OK Pressed'),
+                                },
+                                {
+                                  text: I18n.t('translate_Accept'),
+                                  onPress: () =>
+                                  this.props.navigation.navigate('ChatScreen', {
+                                    token_chat: this.state.token_chat,
+                                    activateBot: this.state.activateBot,
+                                    accessToken: this.state.accessToken,
+                                  }),
+                                  style: 'cancel',
+                                },
+                              ],
+                              {cancelable: false},
+                            );
+                          }
+                        }}
+                        style={{
+                          backgroundColor: '#04a68a',
+                          borderRadius: 8,
+                          flexDirection: 'row',
+                          width: '100%',
+                          justifyContent: 'center',
+                          height: ViewScale(60),
+                        }}>
                         <View
                           style={{
-                            flex: 1,
-                            backgroundColor: '#e3e4e7',
-                            borderRadius: 8,
-                            justifyContent:'center'
+                            flex: 0.5,
+
+                            justifyContent: 'center',
+                            alignItems: 'center',
                           }}>
+                          <Image
+                            style={{
+                              height: ViewScale(28),
+                              width: ViewScale(30),
+                            }}
+                            source={require('../../image/MESSN.png')}
+                          />
+                        </View>
+                        <View style={{flex: 1}}>
                           <Text
                             style={{
-                              color: '#20416e',
-                              fontSize:ViewScale(20),
+                              color: '#FFFFFF',
+                              fontSize: ViewScale(22),
                               marginHorizontal: 9,
-                              
+                              marginTop: 12,
                             }}>
-                              
-                            {'วันนี้อยากให้น้องใส่ใจ\nช่วยอะไรดีคะ?'}
-                           
+                            {'เริ่มสนทนา  '}
                           </Text>
                         </View>
-                      </View>
-                      {/* {this.state.statusOpen ? ( */}
-                        <View style={{flex: 1, marginHorizontal: 4,justifyContent:'center'}}>
-                          <TouchableOpacity
-                            onPress={async () => {
-                              console.log('+++');
-                              if (
-                                this.state.dataMarketData.resultsRealtime
-                                  .length > 0
-                              ) {
-                                this.props.navigation.navigate('ChatScreen');
-                                this._UpdateCountChat();
-                              } else {
-                                this._UpdateCountChat();
-                                Alert.alert(
-                                  I18n.t('translate_Message_AddYourRequest'),
-                                  '',
-                                  [
-                                    {
-                                      text: I18n.t('translate_Cancel'),
-                                      onPress: () => console.log('OK Pressed'),
-                                    },
-                                    {
-                                      text: I18n.t('translate_Accept'),
-                                      onPress: () =>
-                                        this.props.navigation.navigate(
-                                          'ChatScreen',
-                                        ),
-                                      style: 'cancel',
-                                    },
-                                  ],
-                                  {cancelable: false},
-                                );
-                              }
-                            }}
-                            style={{
-                              backgroundColor: '#04a68a',
-                              borderRadius: 8,
-                              flexDirection: 'row',
-                              width: '100%',
-                             justifyContent:'center',
-                              height: ViewScale(60)
-                            }}>
-                            <View
-                              style={{
-                                flex: 0.5,
-
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                              }}>
-                              <Image
-                                style={{height:ViewScale(28), width:ViewScale(30)}}
-                                source={require('../../image/MESSN.png')}
-                              />
-                            </View>
-                            <View style={{flex: 1,}}>
-                              <Text
-                                style={{
-                                  color: '#FFFFFF',
-                                  fontSize:ViewScale(22),
-                                  marginHorizontal: 9,
-                                  marginTop:12
-                               
-                                }}>
-                                {'เริ่มสนทนา  '}
-                              </Text>
-                            </View>
-                          </TouchableOpacity>
-                        </View>
-                  
+                      </TouchableOpacity>
                     </View>
-                  }
-
-                />
-
-              
-              </View>
-          
-
+                  </View>
+                }
+              />
             </View>
+          </View>
           {/* )} */}
 
           <View
@@ -444,7 +477,7 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
             <TouchableOpacity
               style={{
                 flex: 0.5,
-                height:ViewScale(45),
+                height: ViewScale(45),
                 justifyContent: 'center',
                 borderWidth: 0.8,
                 borderColor: '#5dbde6',
@@ -460,7 +493,7 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
                     ? ['#5dbde6', '#1d61bd']
                     : ['#FFFFFF', '#FFFFFF']
                 }
-                style={{height:ViewScale(45), justifyContent: 'center'}}>
+                style={{height: ViewScale(45), justifyContent: 'center'}}>
                 <Text
                   style={
                     this.state.heightTab == 0
@@ -474,7 +507,7 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
             <TouchableOpacity
               style={{
                 flex: 0.7,
-                height:ViewScale(45),
+                height: ViewScale(45),
                 justifyContent: 'center',
                 borderWidth: 0.8,
                 borderColor: '#5dbde6',
@@ -490,7 +523,7 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
                     ? ['#5dbde6', '#1d61bd']
                     : ['#FFFFFF', '#FFFFFF']
                 }
-                style={{height:ViewScale(45), justifyContent: 'center'}}>
+                style={{height: ViewScale(45), justifyContent: 'center'}}>
                 <Text
                   style={
                     this.state.heightTab == 1
@@ -504,7 +537,7 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
             <TouchableOpacity
               style={{
                 flex: 0.7,
-                height:ViewScale(45),
+                height: ViewScale(45),
                 justifyContent: 'center',
                 borderWidth: 0.8,
                 borderColor: '#5dbde6',
@@ -520,7 +553,7 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
                     ? ['#5dbde6', '#1d61bd']
                     : ['#FFFFFF', '#FFFFFF']
                 }
-                style={{ height:ViewScale(45), justifyContent: 'center'}}>
+                style={{height: ViewScale(45), justifyContent: 'center'}}>
                 <Text
                   style={
                     this.state.heightTab == 2
@@ -563,16 +596,12 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
                         </View>
                       }
                       style={[Styles.listDataItem, Styles.listDataView]}
-                      disabled={
-                        !this.state.datarealtime.length > 0
-                      }
+                      disabled={!this.state.datarealtime.length > 0}
                       onPress={async () => {
-                        if (
-                          this.state.datarealtime.length > 0
-                        ) {
-                          this.props.navigation.navigate('ChatScreen');
-                          this._UpdateCountChat();
-                          // console.log('Chat');
+                        if (this.state.datarealtime.length > 0) {
+                          // this.props.navigation.navigate('ChatScreen');
+                          // this._UpdateCountChat();
+                          console.log('Chat=>_UpdateCountChat');
                         } else {
                           this._UpdateCountChat();
                           Alert.alert(
@@ -605,15 +634,10 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
                       }}
                       title={
                         <View>
-                          {this.state.datarealtime.length >=
-                            0 && (
+                          {this.state.datarealtime.length >= 0 && (
                             <View style={{}}>
                               <Text numberOfLines={2} style={Styles.titleStyle}>
-                                {
-                                  this.state.datarealtime[0]
-                                    .messages
-                                }
-                               
+                                {this.state.datarealtime[0].messages}
                               </Text>
                             </View>
                           )}
@@ -647,37 +671,38 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
                       }}>
                       <View style={{alignSelf: 'center'}}>
                         <Image
-                          style={{width:ViewScale(35), height:ViewScale(30)}}
+                          style={{width: ViewScale(35), height: ViewScale(30)}}
                           source={require('../../image/MessNo.png')}
                         />
                       </View>
                       <View style={{}}>
-                        <Text style={{color: '#7d7d7d', fontSize: ViewScale(18)}}>
+                        <Text
+                          style={{color: '#7d7d7d', fontSize: ViewScale(18)}}>
                           {'ไม่มีการสนทนา'}
                         </Text>
                       </View>
                     </View>
                   )}
                 </View>
-              ):(
-                <View
-                      style={{
-                        marginTop: 45,
-                        alignSelf: 'center',
-                      }}>
-                      <View style={{alignSelf: 'center'}}>
-                        <Image
-                          style={{width:ViewScale(35), height:ViewScale(30)}}
-                          source={require('../../image/MessNo.png')}
-                        />
-                      </View>
-                      <View style={{}}>
-                        <Text style={{color: '#7d7d7d', fontSize: ViewScale(18)}}>
-                          {'ไม่มีการสนทนา'}
-                        </Text>
-                      </View>
-                    </View>
-
+              ) : (
+                <View style={{marginTop: 40}}>
+                  <View
+                    style={{
+                      alignItems: 'center',
+                      // backgroundColor: 'red',
+                      // height: '100%',
+                      // flexDirection: 'column-reverse',
+                      // flex: 1,
+                    }}>
+                    <Image
+                      style={{width: 40, height: 35}}
+                      source={require('../../image/chatHistory.png')}
+                    />
+                    <Text style={{fontSize: 20, color: '#7d7d7d'}}>
+                      {I18n.t('translate_History_notFind')}
+                    </Text>
+                  </View>
+                </View>
               )}
             </View>
           )}
@@ -691,136 +716,140 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
                     scrollEnabled={
                        false
                     }> */}
-                    {this.state.datachat !=  undefined ? (
-                      <FlatList
-                        scrollEnabled={true}
-                        style={{width: '100%',  }}
-                        keyExtractor={(item, index) => index}
-
-                        
-                        data={this.state.datachat}
-                        // renderItem={this.ListData}
-                        renderItem={({item, index}) => (
-
+                  {this.state.datachat != undefined ? (
+                    <FlatList
+                      scrollEnabled={true}
+                      style={{width: '100%'}}
+                      keyExtractor={(item, index) => index}
+                      data={this.state.datachat}
+                      // renderItem={this.ListData}
+                      renderItem={({item, index}) => (
                         // alert(JSON.stringify(item)),
-                          <Swipeable
-                            rightButtons={[
-                              <TouchableOpacity
-                                onPress={async () => {
-                                  Alert.alert(
-                                    I18n.t('translate_wantDeleteChat'),
-                                    '',
-                                    [
-                                      {
-                                        text: I18n.t('translate_Cancel'),
-                                        onPress: () => {
-                                          currentlyOpenSwipeable.recenter();
-                                          this.setState({
-                                            xxx: '',
-                                          });
-                                        },
+                        <Swipeable
+                          rightButtons={[
+                            <TouchableOpacity
+                              onPress={async () => {
+                                Alert.alert(
+                                  I18n.t('translate_wantDeleteChat'),
+                                  '',
+                                  [
+                                    {
+                                      text: I18n.t('translate_Cancel'),
+                                      onPress: () => {
+                                        currentlyOpenSwipeable.recenter();
+                                        this.setState({
+                                          xxx: '',
+                                        });
                                       },
-                                      {
-                                        text: I18n.t('translate_Accept'),
-                                        onPress: async () => {
-                                          try {
-                                            this.response = await this.props.dispatch(
-                                              deleteChatHistory({
-                                                chat_token: item.chat_token,
-                                              }),
+                                    },
+                                    {
+                                      text: I18n.t('translate_Accept'),
+                                      onPress: async () => {
+                                        try {
+                                          this.response = await this.props.dispatch(
+                                            deleteChatHistory({
+                                              chat_token: item.chat_token,
+                                            }),
+                                          );
+                                          if (this.response.res_code === '00') {
+                                            this.state.dataMarketData.results.splice(
+                                              index,
+                                              1,
                                             );
-                                            if (
-                                              this.response.res_code === '00'
-                                            ) {
-                                              this.state.dataMarketData.results.splice(
-                                                index,
-                                                1,
-                                              );
-                                              currentlyOpenSwipeable.recenter();
-                                              this.setState({
-                                                xxx: '',
-                                              });
-                                            }
-                                          } catch (error) {
-                                            console.log(error);
+                                            currentlyOpenSwipeable.recenter();
+                                            this.setState({
+                                              xxx: '',
+                                            });
                                           }
-                                        },
-                                        style: 'cancel',
+                                        } catch (error) {
+                                          console.log(error);
+                                        }
                                       },
-                                    ],
-                                    {cancelable: false},
-                                  );
+                                      style: 'cancel',
+                                    },
+                                  ],
+                                  {cancelable: false},
+                                );
+                              }}
+                              style={[
+                                styles.rightSwipeItem,
+                                {backgroundColor: '#e7e7e7'},
+                              ]}>
+                              <Image
+                                style={{
+                                  width: ViewScale(24),
+                                  height: ViewScale(30),
                                 }}
-                                style={[
-                                  styles.rightSwipeItem,
-                                  {backgroundColor: '#e7e7e7'},
-                                ]}>
-                                <Image
-                                  style={{width:ViewScale(24), height:ViewScale(30)}}
-                                  source={require('../../image/deleteChat.png')}
-                                />
-                              </TouchableOpacity>,
-                            ]}
-                            rightButtonWidth={75}
-                            onRightButtonsOpenRelease={itemProps.onOpen}
-                            onRightButtonsCloseRelease={itemProps.onClose}>
-                            <View style={{width: '90%', alignSelf: 'center',borderBottomRightRadius:23}}>
-                              <ListItem
-                                leftAvatar={{
-                                  source: {
-                                    uri:
-                                      'http://one.ditp.go.th/dist/img/icon/iconAdminChat.png',
-                                  },
-                                  rounded: false,
-                                }}
-                                style={[
-                                  Styles.listDataItem,
-                                  Styles.listDataView,
-                                ]}
-                                onPress={async () => {
-                                  console.log('+++');
-                                  // this.props.navigation.navigate(
-                                  //   'ChatScreenHistory',
-                                  //   {
-                                  //     chat_token: item.chat_token,
-                                  //     datatime:item.datetime
+                                source={require('../../image/deleteChat.png')}
+                              />
+                            </TouchableOpacity>,
+                          ]}
+                          rightButtonWidth={75}
+                          onRightButtonsOpenRelease={itemProps.onOpen}
+                          onRightButtonsCloseRelease={itemProps.onClose}>
+                          <View
+                            style={{
+                              width: '90%',
+                              alignSelf: 'center',
+                              borderBottomRightRadius: 23,
+                            }}>
+                            <ListItem
+                              leftAvatar={{
+                                source: {
+                                  uri:
+                                    'http://one.ditp.go.th/dist/img/icon/iconAdminChat.png',
+                                },
+                                rounded: false,
+                              }}
+                              style={[Styles.listDataItem, Styles.listDataView]}
+                              onPress={async () => {
+                                console.log('+++');
+                                // this.props.navigation.navigate(
+                                //   'ChatScreenHistory',
+                                //   {
+                                //     chat_token: item.chat_token,
+                                //     datatime:item.datetime
 
-                                  //   },
-                                  // );
-                                }}
-                                containerStyle={Styles.ListSub1}
-                                title={
-                                  <View style={{flexDirection: 'row',}}>
-                                    <View style={{flex: 1}}>
-                                      <Text
-                                        style={Styles.titleStyle}
-                                        numberOfLines={2}>
-                                        {item.messages}
-                                      </Text>
-                                    </View>
-                                    <TouchableOpacity style={{}}>
-                                      <View>
-                                        <Image
-                                          style={{width: ViewScale(23), height: ViewScale(23),marginTop:20}}
-                                          source={require('../../image/starChat.png')}
-                                        />
-                                      </View>
-                                    </TouchableOpacity>
-                                  </View>
-                                }
-                                subtitleNumberOfLines={2}
-                                subtitle={
-                                  <View>
+                                //   },
+                                // );
+                              }}
+                              containerStyle={Styles.ListSub1}
+                              title={
+                                <View style={{flexDirection: 'row'}}>
+                                  <View style={{flex: 1}}>
                                     <Text
-                                      style={[Styles.TextSub4, Styles.TextSub3]}
+                                      style={Styles.titleStyle}
                                       numberOfLines={2}>
-                                      {I18n.t('translate_EndChat')}{' '}
-                                      {item.datetime}
+                                      {item.messages}
                                     </Text>
                                   </View>
-                                }
-                              />
-                              {/* <View
+                                  <TouchableOpacity style={{}}>
+                                    <View>
+                                      <Image
+                                        style={{
+                                          width: ViewScale(23),
+                                          height: ViewScale(23),
+                                          marginTop: 20,
+                                        }}
+                                        source={require('../../image/starChat.png')}
+                                      />
+                                    </View>
+                                  </TouchableOpacity>
+                                </View>
+                              }
+                              subtitleNumberOfLines={2}
+                              subtitle={
+                                <View>
+                                  <Text
+                                    style={[Styles.TextSub4, Styles.TextSub3]}
+                                    numberOfLines={2}>
+                                    {I18n.t('translate_EndChat')}{' '}
+                                    {item.datetime}
+                                  </Text>
+                                </View>
+                              }
+                            />
+                            {/* <View
                             style={{
                               width: 14,
                               height: 14,
@@ -832,37 +861,55 @@ var dayend =  yyyy+ '-' + dd + '-' + mm+'T23:59:59.999Z';
                               borderRadius: 20,
                             }}
                           /> */}
-                            </View>
-                          </Swipeable>
-                        )}
-                      />
-                    ) : (
-                      <View style={{marginTop: 40}}>
-                        <View
-                          style={{
-                            alignItems: 'center',
-                            // backgroundColor: 'red',
-                            // height: '100%',
-                            // flexDirection: 'column-reverse',
-                            // flex: 1,
-                          }}>
-                          <Image
-                            style={{width: 40, height: 35}}
-                            source={require('../../image/chatHistory.png')}
-                          />
-                          <Text style={{fontSize: 20, color: '#7d7d7d'}}>
-                            {I18n.t('translate_History_notFind')}
-                          </Text>
-                        </View>
+                          </View>
+                        </Swipeable>
+                      )}
+                    />
+                  ) : (
+                    <View style={{marginTop: 40}}>
+                      <View
+                        style={{
+                          alignItems: 'center',
+                          // backgroundColor: 'red',
+                          // height: '100%',
+                          // flexDirection: 'column-reverse',
+                          // flex: 1,
+                        }}>
+                        <Image
+                          style={{width: 40, height: 35}}
+                          source={require('../../image/chatHistory.png')}
+                        />
+                        <Text style={{fontSize: 20, color: '#7d7d7d'}}>
+                          {I18n.t('translate_History_notFind')}
+                        </Text>
                       </View>
-                    )}
+                    </View>
+                  )}
                   {/* </ScrollView> */}
                 </View>
-              ):(
+              ) : (
                 // <View>
                 //   <Text>{'jkkkkk'}</Text>
                 // </View>
-                <ActivityIndicator color="black" style={{margin: 15}} />
+                // <ActivityIndicator color="black" style={{margin: 15}} />
+                <View style={{marginTop: 40}}>
+                  <View
+                    style={{
+                      alignItems: 'center',
+                      // backgroundColor: 'red',
+                      // height: '100%',
+                      // flexDirection: 'column-reverse',
+                      // flex: 1,
+                    }}>
+                    <Image
+                      style={{width: 40, height: 35}}
+                      source={require('../../image/chatHistory.png')}
+                    />
+                    <Text style={{fontSize: 20, color: '#7d7d7d'}}>
+                      {I18n.t('translate_History_notFind')}
+                    </Text>
+                  </View>
+                </View>
               )}
             </>
           )}

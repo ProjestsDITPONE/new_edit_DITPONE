@@ -184,7 +184,6 @@ export default {
   transalte_Faculty_member_information : 'ข้อมูลเจ้าหน้าที่ร่วมคณะ',
 
   //Expenses
-  transalte_Attachment:'เอกสารแนบ (ถ้ามี)',
   transalte_Upload_files: 'อัพโหลดไฟล์',
   transalte_privilege_discount: 'สิทธิพิเศษ / ส่วนลด',
   transalte_total_cost: 'ค่าใช้จ่ายรวม',
@@ -1017,8 +1016,8 @@ transalte_select_district: 'เลือกอำเภอ',
 transalte_select_subdistrict: 'เลือกตำบล',
 transalte_corporate_registration_number: 'เลขทะเบียนนิติบุคคล',
 transalte_company_business_thai: 'บริษัท/กิจการ (ไทย)',
-transalte_address_thai: 'ที่อยู่ (ไทย)',
-transalte_address_eng: 'ที่อยู่ (อังกฤษ)',
+transalte_address_thai: 'ที่อยู่ติดต่อ (ไทย)',
+transalte_address_eng: 'ที่อยู่ติดต่อ (อังกฤษ)',
 transalte_fax_number: 'เบอร์โทรสาร',
 transalte_name_prefix: 'คำนำหน้าชื่อ',
 transalte_select_name_prefix: 'เลือกคำนำหน้าชื่อ',
@@ -1067,8 +1066,6 @@ transalte_Juristic_Person_Information: 'ข้อมูลนิติบุค�
 transalte_ฺฺAccompanying_Information: 'ข้อมูลประกอบ',
 transalte_Contact_Information: 'ข้อมูลผู็ติดต่อ' ,
 transalte_Product_TraedAc: 'สินค้า',
-transalte_Expenses: 'ค่าใช้จ่าย',
-transalte_Attachment: 'เอกสารแนบ',
 transalte_Edit_Juristic_Information: 'แก้ไขข้อมูลนิติบุคคล',
 transalte_accept_the_terms: 'ข้าพเจ้ายอมรับเงื่อนไขข้อกำหนดของกรม',
 transalte_read_terms: 'อ่านข้อกำหนดและเงื่อนไขของกรม',
@@ -1111,4 +1108,13 @@ translate_QuesSelec: 'เลือกได้มากกว่า 1 ข้อ'
 transalte_Delete_Code: 'ลบ',
 transalte_Read_terms: 'อ่านเงื่อนไขข้อกำหนดของกรม.',
 transalte_enter_new_PIN_code_again: 'กรุณาใส่รหัส PIN ใหม่อีกครั้ง',
+
+//TradeAcivitiesRegister.js
+transalte_Expenses: 'ค่าใช้จ่าย',
+transalte_Attachment:'เอกสารแนบ (ถ้ามี)',
+transalte_No_participant_information: 'ไม่มีข้อมูลผู้เข้ากิจกรรม',
+transalte_thai: 'ไทย',
+transalte_Department_reserves : 'กรมสงวนสิทธิ์ในการพิจารณาจัดสรรคูหาตามความเหมาะสม',
+transalte_Company_Profile: 'Profile บริษัท',
+
 };

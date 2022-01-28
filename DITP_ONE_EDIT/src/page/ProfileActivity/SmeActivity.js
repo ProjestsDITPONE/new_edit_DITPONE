@@ -340,7 +340,7 @@ class SmeAct extends React.Component {
                       {'\t'}
                     </Text>
                     <Text style={{fontSize: 20, color: '#73838f'}}>
-                      : ขอรับการสนับสนุนเข้าร่วมกิจกรรม
+                      : {I18n.t('translate_Requesting_support')}
                     </Text>
                   </View>
 
@@ -627,7 +627,7 @@ class SmeAct extends React.Component {
                       {'\t'}
                     </Text>
                     <Text style={{fontSize: 20, color: '#73838f'}}>
-                      : ขอรับการสนับสนุนเข้าร่วมกิจกรรม
+                      : {I18n.t('translate_Requesting_support')}
                     </Text>
                   </View>
 
@@ -937,7 +937,7 @@ class SmeAct extends React.Component {
               onPress={() => {
                 this.setState({checkColor: true, typehis: 2});
 
-                alert('coming กำลังรอ API');
+                alert( I18n.locale === 'th' ? 'coming กำลังรอ API' : 'coming pending API');
                 // this._getActivitySme(2);
 
                 // this._handleTabHeight2(1);
@@ -960,7 +960,7 @@ class SmeAct extends React.Component {
                     color: '#FFFFFF',
                     marginTop: 10,
                   }}>
-                  {'สิทธิงานแสดงสินค้า\nเสมือนจริง'}
+                  {I18n.t('transalte_Trade_show_rights_Virtual')}
                 </Text>
                 <Text
                   style={{

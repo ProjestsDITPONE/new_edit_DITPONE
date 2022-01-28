@@ -11,6 +11,7 @@ import ReactNativePinView from 'react-native-pin-view-edit';
 import EncryptedStorage from 'react-native-encrypted-storage';
 import Icon4 from 'react-native-vector-icons/AntDesign';
 import {ViewScale} from '../../config/ViewScale'
+import I18n from '../../utils/I18n';
 
 
 
@@ -58,7 +59,7 @@ const ChangePincodepassword = ({navigation, route}) => {
           setPassPINCode('ChageNew');
           pinViewNewChage.current.clearAll();
         } else {
-          alert('กรุณาใส่รหัส PIN ใหม่อีกครั้ง');
+          alert(I18n.t('transalte_enter_new_PIN_code_again'));
           pinViewNewChage.current.clearAll();
         }
       } else {
@@ -90,7 +91,7 @@ const ChangePincodepassword = ({navigation, route}) => {
           storeUserSession(PinChageCKconfirm);
           navigation.navigate('HomeStackScreen');
         } else {
-          alert('กรุณาใส่รหัส PIN ใหม่อีกครั้ง');
+          alert(I18n.t('transalte_enter_new_PIN_code_again'));
           pconfirm.current.clearAll();
         }
       } else {
@@ -201,7 +202,7 @@ const ChangePincodepassword = ({navigation, route}) => {
               color: 'rgba(255,255,255,0.7)',
               fontSize:ViewScale(35),
             }}>
-            กรอก Passcode
+            {I18n.t('transalte_Set_Passcode')}
           </Text>
           <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView
@@ -247,7 +248,7 @@ const ChangePincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize:ViewScale(30), color: '#FFF'}}>ลบ</Text>
+                    <Text style={{fontSize:ViewScale(30), color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
                   </View>
                 ) : (
                   undefined
@@ -280,7 +281,7 @@ const ChangePincodepassword = ({navigation, route}) => {
               color: 'rgba(255,255,255,0.7)',
               fontSize:ViewScale(35),
             }}>
-            เปลี่ยนรหัสผ่าน Passcode
+            {I18n.t('transalte_Change_Passcode')}
           </Text>
           <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView
@@ -326,7 +327,7 @@ const ChangePincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize:ViewScale(30), color: '#FFF'}}>ลบ</Text>
+                    <Text style={{fontSize:ViewScale(30), color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
                   </View>
                 ) : (
                   undefined
@@ -360,7 +361,7 @@ const ChangePincodepassword = ({navigation, route}) => {
               color: 'rgba(255,255,255,0.7)',
               fontSize:ViewScale(35),
             }}>
-            ยืนยันเปลี่ยนรหัสผ่าน Passcode
+            {I18n.t('transalte_Confirm_Change_Passcode')}
           </Text>
           <View style={{paddingHorizontal: 25,width:ViewScale(450)}}>
             <ReactNativePinView
@@ -406,7 +407,7 @@ const ChangePincodepassword = ({navigation, route}) => {
                 showRemoveButton ? (
                   // <Icon name={'ios-backspace'} size={36} color={'#FFF'} />
                   <View>
-                    <Text style={{fontSize:ViewScale(30), color: '#FFF'}}>ลบ</Text>
+                    <Text style={{fontSize:ViewScale(30), color: '#FFF'}}>{I18n.t('transalte_Delete_Code')}</Text>
                   </View>
                 ) : (
                   undefined

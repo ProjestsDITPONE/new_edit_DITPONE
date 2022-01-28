@@ -30,7 +30,7 @@ export default {
   translate_identity: 'Please identify yourself to be eligible for application',
   translate_across: 'Skip',
   translate_Confirm: 'Identify yourself',
-  translate_questionnaire_HOME: 'Please complete the survey for better results',
+  translate_questionnaire_HOME: 'Please complete \n the survey for better results',
   translate_Takequestionnaire: 'Complete the survey',
   translate_survey: 'Survey',
   translate_Live_HOME: 'Live',
@@ -51,6 +51,10 @@ export default {
   translate_Policy: 'Policy',
   translate_RegisterPolicy: 'Policy',
   translate_Canclemember: 'Cancel Membership DITP ONE',
+  transalte_Confirm_Change_Passcode: 'Confirm Passcode Change',
+  transalte_Change_Passcode: 'Change Passcode',
+  transalte_Set_Passcode: 'Complete Passcode',
+  transalte_Delete_Code: 'Delete',
   translate_logout: 'Logout',
   translate_questionnaire: 'Survey',
   translate_CanclememberAg: 'Unregister DITP ONE',
@@ -58,6 +62,12 @@ export default {
   translate_Logout: 'Do you want to Singout ?',
   translate_UnDitp: 'Do you want Cancel Membership DITP ONE ?',
   translate_QuesSelec: '"เลือกได้มากกว่า 1 ข้อ"',
+  transalte_application_activities: 'Apply Activities',
+  transalte_Favorite_activity: 'Favorite Activity',
+  transalte_Chat_with_importers: 'Chat importers from thaitradefair.com' ,
+  transalte_enter_new_PIN_code_again: 'Please enter a new PIN code again.',
+  transalte_Invalid_passcode: 'Invalid PIN password',
+  transalte_Verify_Passcode: 'Verify Passcode',
 
   //ProfileActivity ตรวจสอบสถานะ
   translate_ViewProfile: 'ViewProfile',
@@ -82,7 +92,7 @@ export default {
   translate_Savechanges: 'Save changes',
   translate_Changepassword: 'Change password',
   translate_History_invo: 'Participation history',
-  translate_Activities_actualize: 'Ongoing activities',
+  translate_Activities_actualize: 'Pending Action',
   translate_subject: 'Title',
   translate_Waitingpayment: 'Payment pending',
   translate_Payment: 'Payment complete',
@@ -107,7 +117,7 @@ export default {
   translate_rejected: 'Rejected',
   translate_contact: 'Contact',
   translate_fiscalyear: 'Fiscal year',
-  translate_Completed_activities: 'Completed activities',
+  translate_Completed_activities: 'Completed',
   translate_History_SMEs_Pro: 'SMEs Pro Active history',
   translate_permissions: 'Use the right',
   translate_Hide: 'Hide',
@@ -116,13 +126,14 @@ export default {
   translate_EditProfile:
     ' You want to change the information\n You must confirm your identity again.',
   translate_assessmentBotton: 'survey',
-  translate_Join: 'วันที่สมัครเข้าร่วม',
+  translate_Join: 'Enrollment Date',
   translate_EndAct: 'สิ้นสุดกิจกรรมแล้ว',
   translate_identityPro:
     '\t*หากท่านไม่ทำการยืนยันตัวตน\nท่านจะไม่สามารถสมัครเข้าร่วมกิจกรรมได้',
   translate_ChangepasswordProTitle: 'ท่านได้เปลี่ยนรหัสผ่านสำเร็จ',
   translate_ChangepasswordProSubtitle: 'กรุณาเข้าสู่ระบบใหม่อีกครั้ง',
   translate_SvaeEdit: 'คุณต้องการบันทึกข้อมูลที่แก้ไขหรือไม่ ?',
+  transalte_Not_Apply_Department: 'Not yet subscribed to the department',
 
   //TradeActivitiesScreen (กิจกรรมส่งเสริมการค้าระหว่างประเทศ) &&ViewTrade
   translate_Toppick: 'TOP Pick',
@@ -154,7 +165,7 @@ export default {
   translate_Readmore_Deve: 'Detail',
   translate_Recommended_course: 'Recommended programmes',
   translate_Title_DevelopScreen: 'All Training',
-  translate_Title_AllDEV:'ฝึกอบรม/สัมมนา',
+  translate_Title_AllDEV:'Training/Seminars',
   translate_Title_Elearning:'E-Learning',
 
   // สถิติการค้าระหว่างประเทศ StatisticsScreen
@@ -876,18 +887,18 @@ export default {
   transalte_registersme: 'การสมัคร',
   transalte_Plzregister: 'ขอรับการสนับสนุนเข้าร่วมกิจกรรม',
   transalte_FfaceIDTouchID: 'Face ID/Touch ID',
-  transalte_Passcode: 'ตั้งค่า Passcode',
-  transalte_QAQA: ' โปรดทำแบบสอบถามเพื่อการแนะนำกิจกรรมที่เหมาะสมให้แก่ท่าน',
+  transalte_Passcode: 'Set Passcode',
+  transalte_QAQA: 'Please complete the activity recommendation questionnaire.',
 
   //แจ้งเตือย
-  transalte_newsNoti: 'ข่าว',
-  transalte_newsActivity: 'กิจกรรม (สมัคร / รายการโปรด)',
+  transalte_newsNoti: 'News',
+  transalte_newsActivity: 'Activities (Subscribe / Favourite)',
   transalte_newsChat: 'Chat',
-  transalte_newconfrim: 'ยืนยันตัวตน',
-  transalte_newrequest: 'ข้อร้องเรียน',
+  transalte_newconfrim: 'Verify Identity',
+  transalte_newrequest: 'Complaints',
   transalte_newSMEsProactive: 'SMEs Pro-active',
   //brand
-  transalte_getbrand: 'ได้รับแล้ว',
+  transalte_getbrand: 'Received',
 
 
 
@@ -926,6 +937,9 @@ export default {
   alert_succeed: 'Succeed',
   alert_Data_verification_progress: 'Data verification is in progress.',
   alert_Share_successfully: 'Share successfully',
+  alert_Application_amendment_details: 'Application Amendment Details',
+  alert_edit_application: 'Edit Application',
+  alert_Please_add_info: 'Please add information',
 
   //Activities.js
   transalte_waiting_payment: 'Waiting For Payment',
@@ -939,6 +953,11 @@ export default {
   translate_assessment: 'Complete survey',
   transalte_show_details: 'Show Details',
   transalte_see_details: 'See Details',
+  transalte_waiting_application: 'Application',
+  transalte_free_of_charge: 'Free of charge',
+  transalte_Continue: 'Continue Apply',
+  transalte_edit_info_waiting_verify_properties: 'Edit information (waiting to verify properties)',
+  transalte_learn_more: 'Learn more',
 
   //VieDevelop.js
   transalte_succeed: 'Succeed',
@@ -948,6 +967,8 @@ export default {
   //ViewDevelopTap.js
   transalte_: '',
   transalte_map: 'Map',
+  transalte_Other: 'Other',
+  
 
   //DevlopRegister.js
   transalte_company_info: 'Company Info',
@@ -964,6 +985,7 @@ export default {
   transalte_select_subdistrict: 'Sub-District',
   transalte_corporate_registration_number: 'Corporate Registration Number',
   transalte_company_business_thai: 'company/business (thai)',
+  transalte_company_business_eng: 'company/business (eng))',
   transalte_address_thai: 'Address (thai)',
   transalte_address_eng: 'Address (eng)',
   transalte_fax_number: 'Fax Number',
@@ -972,7 +994,7 @@ export default {
   transalte_Trading_company_between: 'Trading company between...',
   transalte_add_company: 'Increase Company',
 
-  transalte_registerdevlop:'กิจกรรมฝึกอบรมและสัมมนา',
+  transalte_registerdevlop:'Training activities and seminars',
   transalte_ThailandWeek :'Thailand Week',
   transalte_evaluation:'แบบประเมินการฝึกอบรม/สัมมนา',
   transalte_analyze:'วิเคราะห์โอกาสทางการค้า (AI)',
@@ -991,7 +1013,41 @@ transalte_ProductPLZ : 'Please select the market and products you are interested
 translate_Seachcontry:'Search ',
 transalte_savefavorites:'save favorites',
 transalte_Searchcontinents:'Search continents',
-transalte_marketofinterest:'market of interest'
+transalte_marketofinterest:'market of interest',
+
+//SMEActivity.js
+transalte_Trade_show_rights_Virtual: 'Trade show rights\nVirtual',
+transalte_application_submission_date: 'Apply Submission Date',
+transalte_Event_date: 'Event Date',
+transalte_application_status: 'Apply Status',
+
+//new
+transalte_personal_info: 'Personal Info',
+transalte_accompanying_info: 'Accompanying Info',
+transalte_Participants: 'Participants',
+transalte_ButtonSearch: 'Search', 
+transalte_interested_export_market: 'Interested Export Market',
+transalte_please_select: 'Please Select',
+transalte_not_product: 'Not Product',
+transalte_select_product_group: 'Select Product Group',
+transalte_uploade_file: 'Uploade File',
+transalte_select_type_product: 'Select Product Type',
+transalte_no_company_information: 'Not Company Info',
+transalte_select_country: 'Select Country',
+transalte_Add_contact_information: 'Add Contact Info',
+transalte_Add_contact_information_new: 'Add Contact Info (New)',
+transalte_delete_product: 'Delete Product',
+transalte_add_product: 'Add Product',
+transalte_delete_participant: 'Delete Participant',
+transalte_confirmation_apply: 'Confirmation Of Apply',
+transalte_Edit_Juristic_Information: 'Edit Corporate Info',
+transalte_edit_accompanying_info: 'Edit Accompanying Info',
+transalte_Search_contact_history: 'Search history of contact information (existing)',
+transalte_No_participant_information: 'No participant information',
+
+
 };
+
+
 // translate_Checkstatus_title: 'Check status',
 // translate_Checkstatus_subtitle: 'participate',

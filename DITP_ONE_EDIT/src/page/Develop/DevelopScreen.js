@@ -267,7 +267,7 @@ class DevelopScreen extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('สำเสร็จ');
+          alert(I18n.t('alert_succeed'));
         } else {
           // shared
           // alert(result.activityType);
@@ -1823,7 +1823,7 @@ class DevelopScreen extends React.Component {
                               else if(this.props.getStatus1.isResult
                                 .status_confirm_identity.status_code === 1  ){
 
-                                  alert('กำลังดำเนินการตรวจสอบข้อมูล')
+                                  alert(I18n.t('alert_Data_verification_progress'))
 
                               }
                               
@@ -1966,7 +1966,7 @@ class DevelopScreen extends React.Component {
                               style={Styles.textactivityregister}>
                               {item.active_status === true
                                 ? I18n.t('translate_Apply_activities')
-                                : 'ปิดรับสมัครกิจกรรม'}
+                                : I18n.t('translate_Applacation')}
                             </Text>
                           </TouchableOpacity>
                         ) : (
@@ -2257,7 +2257,7 @@ class DevelopScreen extends React.Component {
                           }}>
                           <Text
                             style={Styles.popupTextMap}>
-                            แผนที่
+                            {I18n.t('transalte_map')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2368,7 +2368,7 @@ class DevelopScreen extends React.Component {
                             this.setState({ckhide: true});
                           }}
                           style={Styles.popupTexthideText}>
-                          แสดงรายละเอียด
+                          {I18n.t('transalte_show_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -2418,7 +2418,7 @@ class DevelopScreen extends React.Component {
                               this.setState({ckhide: false});
                             }}
                             style={Styles.popupTexthideText}>
-                            ซ่อนรายละเอียด
+                            {I18n.t('transalte_Hide_details')}
                           </Text>
                           <Icon3
                             color="#2d6dc4"
@@ -2449,10 +2449,10 @@ class DevelopScreen extends React.Component {
 
                     <View style={{flex: 1}}>
                       <Text style={Styles.popupTextdetail}>
-                        หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
+                        {I18n.t('transalte_Hide_details')} : {this.state.daparment_name}
                       </Text>
                       <Text style={Styles.popupTextdetail}>
-                        เจ้าหน้าที่โครงการ : {this.state.officer_name}
+                        {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                       </Text>
                       <View style={{flexDirection: 'row'}}>
                         <Image

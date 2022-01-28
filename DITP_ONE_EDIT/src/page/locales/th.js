@@ -66,6 +66,7 @@ export default {
   translate_UnDitp:
     '\t\tคุณต้องการที่จะยกเลิก\nคำขอการแจ้งยกเลิกการเป็นสมาชิกกรม ?',
   translate_QuesSelec: 'เลือกได้มากกว่า 1 ข้อ',
+
   //ProfileActivity ตรวจสอบสถานะ
   translate_ViewProfile: 'ดูรูปโปรไฟล์',
   translate_Company_Profile: 'บริษัท',
@@ -130,6 +131,7 @@ export default {
   translate_ChangepasswordProTitle: 'ท่านได้เปลี่ยนรหัสผ่านสำเร็จ',
   translate_ChangepasswordProSubtitle: 'กรุณาเข้าสู่ระบบใหม่อีกครั้ง',
   translate_SvaeEdit: 'คุณต้องการบันทึกข้อมูลที่แก้ไขหรือไม่ ?',
+  transalte_Not_Apply_Department: 'ยังไม่ได้สมัครสมาชิกกรม',
 
   //TradeActivitiesScreen (กิจกรรมส่งเสริมการค้าระหว่างประเทศ) &&ViewTrade
   translate_Toppick: 'TOP Pick',
@@ -732,6 +734,9 @@ export default {
   transalte_ARUSuretoDelate: 'ยืนยันการยกเลิกเป็นสมาชิก DITP ONE',
   transalte_Reason_forUdealte: 'เหตุผลการแจ้งขอยกเลิกการเป็นสมาชิก',
   translate_RequestDelateUrAccont: 'แจ้งการยกเลิกเป็นสมาชิก',
+  transalte_application_activities: 'กิจกรรมสมัคร',
+  transalte_Favorite_activity: 'กิจกรรมรายการโปรด',
+  transalte_Chat_with_importers: 'Chat กับผู้นำเข้าจาก thaitradefair.com' ,
 
   //หน้าแบบสอบถาม 
   translate_PleaseSpicifyProduct: 'โปรดระบุสินค้า/บริการหลักของบริษัท',
@@ -860,6 +865,7 @@ transalte_registersme: 'การสมัคร',
 transalte_Plzregister:'ขอรับการสนับสนุนเข้าร่วมกิจกรรม',
 transalte_FfaceIDTouchID:'Face ID/Touch ID',
 transalte_Passcode :'ตั้งค่า Passcode',
+transalte_Verify_Passcode: 'ยืนยัน Passcode',
 transalte_QAQA :' โปรดทำแบบสอบถามเพื่อการแนะนำกิจกรรมที่เหมาะสมให้แก่ท่าน',
 //แจ้งเตือย
 transalte_newsNoti:'ข่าว',
@@ -913,7 +919,9 @@ alert_add_information: 'กรุณาเพิ่มข้อมูลปร�
 alert_succeed: 'สำเร็จ',
 alert_Data_verification_progress: 'กำลังดำเนินการตรวจสอบข้อมูล',
 alert_Share_successfully: 'แชร์สำเร็จ',
-
+alert_Application_amendment_details: 'รายละเอียดการแก้ไขใบสมัคร',
+alert_edit_application: 'แก้ไขใบสมัคร',
+alert_Please_add_info: 'กรุณาเพิ่มข้อมูประกอบ',
 
 
 //Activities.js
@@ -928,6 +936,11 @@ transalte_edit_application: 'แก้ไขใบสมัคร',
 translate_assessment: 'ทำแบบประเมิน',
 transalte_show_details: 'แสดงรายละเอียด',
 transalte_see_details: 'ดูรายละเอียด',
+transalte_waiting_application: 'รอยื่นใบสมัคร',
+transalte_free_of_charge: 'ไม่มีค่าใช้จ่าย',
+transalte_Continue: 'กรอกใบสมัครต่อ',
+transalte_edit_info_waiting_verify_properties: 'แก้ไขข้อมูล (รอตรวจสอบคุณสมบัติ)',
+transalte_learn_more: 'เรียนรู้เพิ่มเติม',
 
 //VieDevelop.js
 transalte_succeed: 'สำเร็จ',
@@ -937,6 +950,7 @@ transalte_tradeActivities_search_time: 'เลือกช่วงเวลา'
 //ViewDevelopTap.js
 transalte_: '',
 transalte_map: 'แผนที่',
+transalte_Other: 'อื่น ๆ',
 
 //DevlopRegister.js
 transalte_company_info: 'ข้อมูลบริษัท',
@@ -953,6 +967,7 @@ transalte_select_district: 'เลือกอำเภอ',
 transalte_select_subdistrict: 'เลือกตำบล',
 transalte_corporate_registration_number: 'เลขทะเบียนนิติบุคคล',
 transalte_company_business_thai: 'บริษัท/กิจการ (ไทย)',
+transalte_company_business_eng: 'บริษัท/กิจการ (อังกฤษ)',
 transalte_address_thai: 'ที่อยู่ติดต่อ (ไทย)',
 transalte_address_eng: 'ที่อยู่ติดต่อ (อังกฤษ)',
 transalte_fax_number: 'เบอร์โทรสาร',
@@ -1045,6 +1060,7 @@ translate_QuesSelec: 'เลือกได้มากกว่า 1 ข้อ'
 transalte_Delete_Code: 'ลบ',
 transalte_Read_terms: 'อ่านเงื่อนไขข้อกำหนดของกรม.',
 transalte_enter_new_PIN_code_again: 'กรุณาใส่รหัส PIN ใหม่อีกครั้ง',
+transalte_Invalid_passcode: 'รหัสผ่าน PIN ไม่ถูกต้อง',
 
 //TradeAcivitiesRegister.js
 transalte_Expenses: 'ค่าใช้จ่าย',
@@ -1057,9 +1073,32 @@ transalte_Company_Profile: 'Profile บริษัท',
 transalte_ProductPLZ : 'โปรดเลือกตลาดและสินค้าที่ท่านสนใจ',
 transalte_savefavorites:' บันทึกรายการโปรด',
 transalte_Searchcontinents:'ค้นหาทวีปและประเทศ',
-transalte_marketofinterest:'ตลาดที่สนใจ'
+transalte_marketofinterest:'ตลาดที่สนใจ',
 
+//SMEActivity.js
+transalte_Trade_show_rights_Virtual: 'สิทธิงานแสดงสินค้า\nเสมือนจริง',
+transalte_application_submission_date: 'วันที่ส่งใบสมัคร',
+transalte_Event_date: 'วันที่จัดกิจกรรม',
+transalte_application_status: 'สถานะใบสมัคร',
 
-
+//new
+transalte_personal_info: 'ข้อมูลส่วนตัว',
+transalte_accompanying_info: 'ข้อมูลประกอบ',
+transalte_Participants: 'ผู้เข้าร่วมกิจกรรม',
+transalte_interested_export_market: 'ตลาดส่งออกที่สนใจ',
+transalte_please_select: 'โปรดเลือก',
+transalte_not_product: 'ไม่มีสินค้า',
+transalte_select_product_group: 'เลือกกลุ่มสินค้า',
+transalte_uploade_file: 'อัพโหลดไฟล์',
+transalte_select_type_product: 'เลือกประเภทสินค้า',
+transalte_no_company_information: 'ไม่มีข้อมูลบริษัท',
+transalte_select_country: 'เลือกประเทศ',
+transalte_Add_contact_information: 'เพิ่มข้อมูลผู้ติดต่อ',
+transalte_Add_contact_information_new: 'เพิ่มข้อมูลผู้ติดต่อ (รายใหม่)',
+transalte_delete_product: 'ลบสินค้า',
+transalte_add_product: 'เพิ่มสินค้า',
+transalte_delete_participant: 'ลบผู็เข้าร่วม',
+transalte_confirmation_apply: 'ยืนยันการสมัคร',
+transalte_edit_accompanying_info: 'แก้ไขข้อมูลประกอบ',
 
 };

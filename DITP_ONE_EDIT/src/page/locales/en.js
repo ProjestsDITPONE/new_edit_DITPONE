@@ -229,6 +229,60 @@ export default {
   transalte_ACT: 'Activity',
   transalte_name: 'number',
   transalte_Newss: 'News',
+
+  translate_Bt_Add_Manually: 'Add Manually',
+  translate_Bt_Add_QRcode: 'Add Too QR Code',
+  transalte_General_Person: 'General Person',
+  transalte_Juristic_Person: 'Juristic Person',
+  transalte_Add_Myname: 'Increase Name',
+  transalte_Add_my_buyer: 'Increase My Buyer',
+  transalte_trade_situation_news: 'Trade situation news',
+  transalte_published_by: 'Published By',
+  transalte_set_nickname: 'Set NickName',
+  transalte_add_my_buyer: 'Add My Buyer',
+  
+
+  // Mybasket general person
+  translate_General_title: 'Name Prefix / Sex',
+  transalte_General_firtname: 'Name',
+  translate_Grneral_lastname: 'Surname',
+  translate_Grneral_nickname: 'Nickname',
+  translate_Grneral_position: 'Position',
+  translate_Grneral_email: 'Email',
+  translate_Grneral_tel: 'Phone Number',
+  translate_Grneral_event: 'Event / Activities',
+  translate_Bt_save: 'Save',
+  translate_Bt_cancel: 'Cancel',
+  // Mybasket juristic person
+  translate_Juristic_company_name: 'Company Name',
+  translate_Juristic_address: 'Contact / Address',
+  translate_Juristic_title: 'Name Prefix / Sex',
+  translate_Juristic_firtname: 'Name',
+  translate_Juristic_lastname: 'Surname',
+  translate_Juristic_nickname: 'Nickname',
+  translate_Juristic_position: 'Position',
+  translate_Juristic_email: 'Email',
+  translate_Juristic_tel: 'Phone Number',
+  translate_Juristic_event: 'Event / Activities',
+
+  //International Market Situation and Trends
+  transalte_Please_select_market_products_interested:
+    'Please select the market and products you are interested in.',
+  transalte_select_country: 'Country',
+  transalte_choose_product: 'Product',
+  translate_seach_time: 'Seach',
+  translate_seach_continent_country: 'Seach',
+  translate_seach_product: 'Seach',
+
+  //OSEC
+  transalte_headerOSEC: 'Study the export process (OSEC)',
+  transalte_OSECis:
+    'OSEC One-stop export service center (One Stop Export Service Center)',
+  translate_osec_seach_product: 'Seach Product',
+  translate_osec_select_category: 'Category',
+  translate_osec_select_List: 'List Item',
+
+
   //ติดต่อกรม Contect
   translate_ฺBangKraso: 'Address (Bang Kra Sor)',
   translate_Address: 'Address',
@@ -836,12 +890,94 @@ export default {
   transalte_getbrand: 'ได้รับแล้ว',
 
 
-  //register
+
+  transalte_registerdevlop: 'Training activities and Seminars',
+  transalte_ThailandWeek: 'Thailand Week',
+  transalte_evaluation: 'Training/Seminar Assessment Form',
+  transalte_analyze: 'Analyze Trade Opportunities (AI)',
+  transalte_Registers: 'Register to visit\nExhibitions (Visitor)',
+  transalte_Done_text: 'Done',
+  translate_negative_news: 'Negative News',
+  translate_positive_news: 'Positive News',
+  translate_trade_dispute: 'Complaint in international trade disputes',
+
+  transalte_cateProductText: 'Category/ประเภทสินค้า',
+  transalte_cateProductText2: ' Sub-Category/ประเภทสินค้าย่อย',
+  transalte_cateProductText3: 'Product Group/กลุ่มสินค้า',
+  transalte_ProductBrandNameEN: ' Product Brand Name / ชื่อแบรนด์',
+  transalte_ProductDescription: 'Product Description / รายละเอียดสินค้า',
+
+
+  //alert
+  alert_complete_info: 'Please complete the information.',
+  alert_enter_corporate_number: 'Please enter corporate number.',
+  alert_no_found: 'No Found',
+  alert_in_system: 'In the system',
+  alert_Save_successfully: 'Save success',
+  alert_please_ress_accept: 'Please accept the terms and conditions.',
+  alert_Select_item_delete: 'Select the item you want to delete.',
+  alert_please_select_picture: 'please select a picture.',
+  alert_Please_add_information: 'Please add information.',
+  alert_Please_add_product_info: 'Please add product information.',
+  alert_add_info_affiliated_company: 'Please add information in the affiliated company.',
+  alert_Please_add_contact: 'Please add contact information.',
+  alert_Select_list_delete: 'Please select the item you want to delete.',
+  alert_add_information: 'Please add information',
+  alert_succeed: 'Succeed',
+  alert_Data_verification_progress: 'Data verification is in progress.',
+  alert_Share_successfully: 'Share successfully',
+
+  //Activities.js
+  transalte_waiting_payment: 'Waiting For Payment',
+  transalte_due: 'Due',
+  transalte_considered_selection: 'To be considered in the next selection',
+  transalte_Hide_details: 'Hide details',
+  transalte_responsible_agency: 'Responsible training agency',
+  transalte_project_staff: 'Project Staff',
+  transalte_Application_amendment_details: 'Application Amendment Details',
+  transalte_edit_application: 'Edit Application',
+  translate_assessment: 'Complete survey',
+  transalte_show_details: 'Show Details',
+  transalte_see_details: 'See Details',
+
+  //VieDevelop.js
+  transalte_succeed: 'Succeed',
+  transalte_Data_verification_progress: 'Data verification is in progress.',
+  transalte_tradeActivities_search_time: 'Time Period',
+
+  //ViewDevelopTap.js
+  transalte_: '',
+  transalte_map: 'Map',
+
+  //DevlopRegister.js
+  transalte_company_info: 'Company Info',
+  transalte_manufacturer: 'Manufacturer',
+  transalte_exporter: 'Exporter',
+  transalte_international_trading_company: 'International Trading Company',
+  transalte_specify_details: 'In other cases, please specify details.',
+  transalte_select_subcategory: 'Select a subcategory',
+  transalte_100_characters: '100 characters',
+  transalte_product_image: "Product's Image / รูปสินค้า",
+  transalte_Search_corporate_number: 'Search for a corporate number',
+  transalte_select_province: 'Select Province',
+  transalte_select_district: 'Select District',
+  transalte_select_subdistrict: 'Sub-District',
+  transalte_corporate_registration_number: 'Corporate Registration Number',
+  transalte_company_business_thai: 'company/business (thai)',
+  transalte_address_thai: 'Address (thai)',
+  transalte_address_eng: 'Address (eng)',
+  transalte_fax_number: 'Fax Number',
+  transalte_name_prefix: 'Name Prefix',
+  transalte_select_name_prefix: 'Select Prefix',
+  transalte_Trading_company_between: 'Trading company between...',
+  transalte_add_company: 'Increase Company',
+
   transalte_registerdevlop:'กิจกรรมฝึกอบรมและสัมมนา',
   transalte_ThailandWeek :'Thailand Week',
   transalte_evaluation:'แบบประเมินการฝึกอบรม/สัมมนา',
   transalte_analyze:'วิเคราะห์โอกาสทางการค้า (AI)',
   transalte_Registers:'Register to visit\nExhibitions (Visitor)',
+
   
   transalte_Done_text :'Done',
 

@@ -1003,6 +1003,9 @@ transalte_marketofinterest:'market of interest',
 
 //SMEActivity.js
 transalte_Trade_show_rights_Virtual: 'Trade show rights\nVirtual',
+transalte_application_submission_date: 'Apply Submission Date',
+transalte_Event_date: 'Event Date',
+transalte_application_status: 'Apply Status',
 };
 // translate_Checkstatus_title: 'Check status',
 // translate_Checkstatus_subtitle: 'participate',

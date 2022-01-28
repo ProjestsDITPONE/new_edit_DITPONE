@@ -356,7 +356,7 @@ class SmesActivityShowBusiness extends React.Component {
                       {'\t'}
                     </Text>
                     <Text style={{fontSize: 20, color: '#73838f'}}>
-                      : ขอรับการสนับสนุนเข้าร่วมกิจกรรม
+                      : {I18n.t('translate_Requesting_support')}
                     </Text>
                   </View>
 
@@ -680,7 +680,7 @@ class SmesActivityShowBusiness extends React.Component {
                       {'\t'}
                     </Text>
                     <Text style={{fontSize: 20, color: '#73838f'}}>
-                      : ขอรับการสนับสนุนเข้าร่วมกิจกรรม
+                      : {I18n.t('translate_Requesting_support')}
                     </Text>
                   </View>
 
@@ -816,7 +816,7 @@ class SmesActivityShowBusiness extends React.Component {
                                       color: '#2d6dc4',
                                       textAlign: 'center',
                                     }}>
-                                    อนุมัติเรียบร้อย
+                                    {I18n.t('translate_UrrequestBeenAppproved')}
                                   </Text>
                                 </TouchableOpacity>
                               </View>
@@ -869,7 +869,7 @@ class SmesActivityShowBusiness extends React.Component {
               <View>
               <Text
                   style={{alignSelf: 'center', color: '#73838f', fontSize: 16}}>
-                  {'วันที่ส่งใบสมัคร'}
+                  {I18n.t('transalte_application_submission_date')}
                  
                 </Text>
                 <Text
@@ -901,7 +901,7 @@ class SmesActivityShowBusiness extends React.Component {
               {/*อนุมัติเรียบร้อย */}
               <View style={{flexDirection: 'row'}}>
                 <Text style={{fontSize: 18, color: '#73838f', left: 20}}>
-                  ประเทศ :
+                  {I18n.t('translate_country')} :
                 </Text>
 
                 <Text style={{fontSize: 18, color: '#163c70', left: 20}}>
@@ -911,7 +911,7 @@ class SmesActivityShowBusiness extends React.Component {
               </View>
               <View style={{flexDirection: 'row'}}>
                 <Text style={{fontSize: 18, color: '#73838f', left: 20}}>
-                  วันที่จัดกิจกรรม :
+                  {I18n.t('transalte_Event_date')} :
                 </Text>
 
                 <Text style={{fontSize: 18, color: '#163c70', left: 20}}>
@@ -931,7 +931,7 @@ class SmesActivityShowBusiness extends React.Component {
                   <Text  numberOfLines={1} style={Styles.textDateEnd}>
                     {' '}
                     {/* {I18n.t('translate_EndAct')} */}
-                    {'สถานะใบสมัคร : '} {item.activity_status[3].status_name}
+                    {I18n.t('transalte_application_status')}{' : '} {item.activity_status[3].status_name}
                   </Text>
                 </View>
               </View>

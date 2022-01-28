@@ -1069,7 +1069,9 @@ transalte_marketofinterest:'ตลาดที่สนใจ',
 
 //SMEActivity.js
 transalte_Trade_show_rights_Virtual: 'สิทธิงานแสดงสินค้า\nเสมือนจริง',
-
+transalte_application_submission_date: 'วันที่ส่งใบสมัคร',
+transalte_Event_date: 'วันที่จัดกิจกรรม',
+transalte_application_status: 'สถานะใบสมัคร',
 
 
 

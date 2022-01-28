@@ -1065,7 +1065,10 @@ transalte_Company_Profile: 'Profile บริษัท',
 transalte_ProductPLZ : 'โปรดเลือกตลาดและสินค้าที่ท่านสนใจ',
 transalte_savefavorites:' บันทึกรายการโปรด',
 transalte_Searchcontinents:'ค้นหาทวีปและประเทศ',
-transalte_marketofinterest:'ตลาดที่สนใจ'
+transalte_marketofinterest:'ตลาดที่สนใจ',
+
+//SMEActivity.js
+transalte_Trade_show_rights_Virtual: 'สิทธิงานแสดงสินค้า\nเสมือนจริง',
 
 
 

@@ -999,7 +999,10 @@ transalte_ProductPLZ : 'Please select the market and products you are interested
 translate_Seachcontry:'Search ',
 transalte_savefavorites:'save favorites',
 transalte_Searchcontinents:'Search continents',
-transalte_marketofinterest:'market of interest'
+transalte_marketofinterest:'market of interest',
+
+//SMEActivity.js
+transalte_Trade_show_rights_Virtual: 'Trade show rights\nVirtual',
 };
 // translate_Checkstatus_title: 'Check status',
 // translate_Checkstatus_subtitle: 'participate',

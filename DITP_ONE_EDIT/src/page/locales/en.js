@@ -116,13 +116,14 @@ export default {
   translate_EditProfile:
     ' You want to change the information\n You must confirm your identity again.',
   translate_assessmentBotton: 'survey',
-  translate_Join: 'วันที่สมัครเข้าร่วม',
+  translate_Join: 'Enrollment Date',
   translate_EndAct: 'สิ้นสุดกิจกรรมแล้ว',
   translate_identityPro:
     '\t*หากท่านไม่ทำการยืนยันตัวตน\nท่านจะไม่สามารถสมัครเข้าร่วมกิจกรรมได้',
   translate_ChangepasswordProTitle: 'ท่านได้เปลี่ยนรหัสผ่านสำเร็จ',
   translate_ChangepasswordProSubtitle: 'กรุณาเข้าสู่ระบบใหม่อีกครั้ง',
   translate_SvaeEdit: 'คุณต้องการบันทึกข้อมูลที่แก้ไขหรือไม่ ?',
+  transalte_Not_Apply_Department: 'Not yet subscribed to the department',
 
   //TradeActivitiesScreen (กิจกรรมส่งเสริมการค้าระหว่างประเทศ) &&ViewTrade
   translate_Toppick: 'TOP Pick',

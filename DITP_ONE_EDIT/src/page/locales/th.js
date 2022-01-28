@@ -66,6 +66,7 @@ export default {
   translate_UnDitp:
     '\t\tคุณต้องการที่จะยกเลิก\nคำขอการแจ้งยกเลิกการเป็นสมาชิกกรม ?',
   translate_QuesSelec: 'เลือกได้มากกว่า 1 ข้อ',
+
   //ProfileActivity ตรวจสอบสถานะ
   translate_ViewProfile: 'ดูรูปโปรไฟล์',
   translate_Company_Profile: 'บริษัท',
@@ -130,6 +131,7 @@ export default {
   translate_ChangepasswordProTitle: 'ท่านได้เปลี่ยนรหัสผ่านสำเร็จ',
   translate_ChangepasswordProSubtitle: 'กรุณาเข้าสู่ระบบใหม่อีกครั้ง',
   translate_SvaeEdit: 'คุณต้องการบันทึกข้อมูลที่แก้ไขหรือไม่ ?',
+  transalte_Not_Apply_Department: 'ยังไม่ได้สมัครสมาชิกกรม',
 
   //TradeActivitiesScreen (กิจกรรมส่งเสริมการค้าระหว่างประเทศ) &&ViewTrade
   translate_Toppick: 'TOP Pick',

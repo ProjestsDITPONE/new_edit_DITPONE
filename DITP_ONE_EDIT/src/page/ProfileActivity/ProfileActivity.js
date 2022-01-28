@@ -1582,7 +1582,7 @@ const ProfileActivity = ({
                                 textAlign: 'center',
                                 marginTop: -2,
                               }}>
-                              ยังไม่ได้สมัครสมาชิกกรม
+                              {I18n.t('transalte_Not_Apply_Department')}
                             </Text>
                           </LinearGradient>
                         </TouchableOpacity>
@@ -4080,7 +4080,7 @@ const ProfileActivity = ({
                         {flex: 1, marginHorizontal: 8},
                       ]}>
                       <Text style={[Styles.TextHearderSub1]}>
-                        {'กิจกรรมกรม'}
+                        {I18n.locale === 'th' ? 'กิจกกรมกรม' : 'Activities'}
                       </Text>
                     </View>
                     <View style={[Styles.ViewSub37, {flex: 0.3}]}>

@@ -171,8 +171,6 @@ export default {
   transalte_ฺฺAccompanying_Information: 'Accompanying Info',
   transalte_Contact_Information: 'Contact Information',
   transalte_Product_TraedAc: 'Product',
-  transalte_Expenses: 'Expenses',
-  transalte_Attachment: 'Attachment',
   transalte_Edit_Juristic_Information: 'Edit Juristic Information',
   transalte_accept_the_terms:
     'I accept the terms and conditions of the department',
@@ -236,7 +234,6 @@ export default {
   translate_Social_Media: 'Social Media',
 
   //Expenses
-  transalte_Attachment: 'Attachment',
   transalte_Upload_files: 'Upload Files',
   transalte_privilege_discount: 'Privilege / Discount',
   transalte_total_cost: 'Total Cost',
@@ -1109,7 +1106,7 @@ export default {
   translate_addFavorites: 'Add Favorites',
   translate_returnBack: 'ย้อนหลัง',
   translate_Online: 'Online',
-  translate_PleaseRate: 'โปรดประเมินความพึงพอใจ\nในการใช้งาน DITP ONE',
+  translate_PleaseRate: 'Please rate your satisfaction\nUsage DITP ONE',
   transalte_Department_Members: 'Department Members',
   transalte_Department_Category: 'Department Category',
   transalte_Number_Juristic: 'Number Juristic (Username)',
@@ -1121,7 +1118,6 @@ export default {
   transalte_Contact_Information: 'Contact Information',
   transalte_Product_TraedAc: 'Product',
   transalte_Expenses: 'Expenses',
-  transalte_Attachment: 'Attachment',
   transalte_Edit_Juristic_Information: 'Edit Juristic Information',
   transalte_accept_the_terms:
     'I accept the terms and conditions of the department',
@@ -1164,6 +1160,14 @@ translate_UnDitp: 'Do you want Cancel Membership DITP ONE ?',
 translate_QuesSelec: '"เลือกได้มากกว่า 1 ข้อ"',
 transalte_Delete_Code: 'Del',
 transalte_enter_new_PIN_code_again: 'Please enter a new PIN code again.',
+
+//TradeAcivitiesRegister.js
+  transalte_Expenses: 'Expenses',
+  transalte_Attachment: 'Attachment',
+  transalte_No_participant_information: 'No participant information',
+  transalte_thai: 'thai',
+  transalte_Department_reserves : 'The department reserves the right to consider allocating booths as appropriate.',
+  transalte_Company_Profile: 'Profile Company',
 
 };
 // translate_Checkstatus_title: 'Check status',

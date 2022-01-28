@@ -30,7 +30,7 @@ export default {
   translate_identity: 'Please identify yourself to be eligible for application',
   translate_across: 'Skip',
   translate_Confirm: 'Identify yourself',
-  translate_questionnaire_HOME: 'Please complete the survey for better results',
+  translate_questionnaire_HOME: 'Please complete \n the survey for better results',
   translate_Takequestionnaire: 'Complete the survey',
   translate_survey: 'Survey',
   translate_Live_HOME: 'Live',
@@ -58,6 +58,9 @@ export default {
   translate_Logout: 'Do you want to Singout ?',
   translate_UnDitp: 'Do you want Cancel Membership DITP ONE ?',
   translate_QuesSelec: '"เลือกได้มากกว่า 1 ข้อ"',
+  transalte_application_activities: 'Apply Activities',
+  transalte_Favorite_activity: 'Favorite Activity',
+  transalte_Chat_with_importers: 'Chat importers from thaitradefair.com' ,
 
   //ProfileActivity ตรวจสอบสถานะ
   translate_ViewProfile: 'ViewProfile',
@@ -877,18 +880,18 @@ export default {
   transalte_registersme: 'การสมัคร',
   transalte_Plzregister: 'ขอรับการสนับสนุนเข้าร่วมกิจกรรม',
   transalte_FfaceIDTouchID: 'Face ID/Touch ID',
-  transalte_Passcode: 'ตั้งค่า Passcode',
-  transalte_QAQA: ' โปรดทำแบบสอบถามเพื่อการแนะนำกิจกรรมที่เหมาะสมให้แก่ท่าน',
+  transalte_Passcode: 'Set Passcode',
+  transalte_QAQA: 'Please complete the activity recommendation questionnaire.',
 
   //แจ้งเตือย
-  transalte_newsNoti: 'ข่าว',
-  transalte_newsActivity: 'กิจกรรม (สมัคร / รายการโปรด)',
+  transalte_newsNoti: 'News',
+  transalte_newsActivity: 'Activities (Subscribe / Favourite)',
   transalte_newsChat: 'Chat',
-  transalte_newconfrim: 'ยืนยันตัวตน',
-  transalte_newrequest: 'ข้อร้องเรียน',
+  transalte_newconfrim: 'Verify Identity',
+  transalte_newrequest: 'Complaints',
   transalte_newSMEsProactive: 'SMEs Pro-active',
   //brand
-  transalte_getbrand: 'ได้รับแล้ว',
+  transalte_getbrand: 'Received',
 
 
 

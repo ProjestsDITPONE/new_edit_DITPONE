@@ -734,6 +734,9 @@ export default {
   transalte_ARUSuretoDelate: 'ยืนยันการยกเลิกเป็นสมาชิก DITP ONE',
   transalte_Reason_forUdealte: 'เหตุผลการแจ้งขอยกเลิกการเป็นสมาชิก',
   translate_RequestDelateUrAccont: 'แจ้งการยกเลิกเป็นสมาชิก',
+  transalte_application_activities: 'กิจกรรมสมัคร',
+  transalte_Favorite_activity: 'กิจกรรมรายการโปรด',
+  transalte_Chat_with_importers: 'Chat กับผู้นำเข้าจาก thaitradefair.com' ,
 
   //หน้าแบบสอบถาม 
   translate_PleaseSpicifyProduct: 'โปรดระบุสินค้า/บริการหลักของบริษัท',

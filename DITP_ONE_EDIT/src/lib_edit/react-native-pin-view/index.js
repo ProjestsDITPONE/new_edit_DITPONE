@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 import { Text, TouchableOpacity, View } from "react-native"
 import PinViewStyle from "./PinViewStyle.js"
 
+import {ViewScale} from '../../config/ViewScale'
+
 const ViewButton = ({
   activeOpacity,
   onButtonPress,
@@ -111,7 +113,7 @@ const PinView = React.forwardRef(
       customRightButtonViewStyle,
       customLeftButtonDisabled,
       customRightButtonDisabled,
-      customLeftButtonSize = 90,
+      customLeftButtonSize =  90,
       customRightButtonSize = 60,
     },
     ref
@@ -275,7 +277,7 @@ const PinView = React.forwardRef(
             text={buttonTextByKey.zero}
             customTextStyle={buttonTextStyle}
             customViewStyle={buttonViewStyle}
-            buttonSize={customLeftButtonSize}
+            buttonSize={ViewScale(customLeftButtonSize) }
           />
           
             {customLeftButton !== undefined ? (

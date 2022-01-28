@@ -167,11 +167,11 @@ class NewSettingContry extends React.Component {
   // };
 
   Selecitem = ({index, item}) => {
-    console.log('ประเทศ', index);
+    // console.log('ประเทศ', index);
     let {Selec} = this.state;
     Selec[index] = !Selec[index];
     this.setState({Selec: Selec});
-    console.log('ประเทศเลือก', Selec);
+    // console.log('ประเทศเลือก', Selec);
     if (Selec[index]) {
       console.log('1');
       this.setState({
@@ -195,14 +195,14 @@ class NewSettingContry extends React.Component {
   };
 
   SelecitemHearderT = ({index, item}) => {
-    console.log('ทวีปTT' + index, item);
+    // console.log('ทวีปTT' + index, item);
     let {Seleccon, Selec, datatest} = this.state;
     Seleccon[index] = !Seleccon[index];
     this.setState({Seleccon: Seleccon, cccc: Seleccon[index], ckAll: false});
 
     // this.Selecitem({index: item.id, item: index,});
 
-    console.log('ทวีปUU', item.continent_code, Seleccon[index], item);
+    // console.log('ทวีปUU', item.continent_code, Seleccon[index], item);
     if (Seleccon[index]) {
       this.setState({
         selectcontinentFilter: [
@@ -257,7 +257,7 @@ class NewSettingContry extends React.Component {
   };
   SelecitemHead = ({index, item}) => {
     let {togleUser} = this.state;
-    console.log('togleUser' + togleUser);
+    // console.log('togleUser' + togleUser);
     togleUser[index] = !togleUser[index];
     this.setState({togleUser: togleUser});
   };
@@ -279,7 +279,7 @@ class NewSettingContry extends React.Component {
       const response = await this.props.dispatch(getRegion());
 
       if (response.res_code === '00') {
-        console.log('SDFSDFresponse.res_results',JSON.stringify(response.res_results) );
+        // console.log('SDFSDFresponse.res_results',JSON.stringify(response.res_results) );
         this.setState({Continent: response.res_results});
       }
     } catch (error) {}
@@ -321,7 +321,7 @@ class NewSettingContry extends React.Component {
       });
 
       this.props.filterCounty.data.selectcontinentFilter.map(data => {
-        console.log('component', data);
+        // console.log('component', data);
         this.state.Seleccon[data] = true;
         copy3.push(data);
       });
@@ -477,7 +477,7 @@ class NewSettingContry extends React.Component {
             <View style={{paddingHorizontal: '13%', marginTop: 15}}>
               <View style={{marginBottom: 10}}>
                 <Text style={Style.TextCountry}>
-                  {I18n.t('translate_Country')}
+                  {I18n.t('translate_COUNTRY')}
                 </Text>
               </View>
               <View
@@ -811,7 +811,7 @@ class NewSettingContry extends React.Component {
                         height: 25,
                       }}
                       onPress={() => {
-                        console.log('OOOOKOKO');
+                        // console.log('OOOOKOKO');
                         this.setState({
                           // checkFocus: false,
                           checkFocus2: true,
@@ -980,7 +980,7 @@ class NewSettingContry extends React.Component {
                       textAlign: 'center',
                       fontSize: 20,
                     }}>
-                    {I18n.t('translate_Save')}
+                    บันทึก
                   </Text>
                 </TouchableOpacity>
               </Overlay>
@@ -1018,14 +1018,14 @@ class NewSettingContry extends React.Component {
                 },
               });
 
-              console.log({
-                selectCountryFilter: this.state.selectCountryFilter,
-                selectProductFilter: this.state.selectProductFilter,
-                selectcontinentFilter: this.state.selectcontinentFilter,
-                selectidcontinentFilter: this.state.selectidcontinentFilter,
-                dateSech: this.state.date2,
-                checksech: this.state.check,
-              });
+              // console.log({
+              //   selectCountryFilter: this.state.selectCountryFilter,
+              //   selectProductFilter: this.state.selectProductFilter,
+              //   selectcontinentFilter: this.state.selectcontinentFilter,
+              //   selectidcontinentFilter: this.state.selectidcontinentFilter,
+              //   dateSech: this.state.date2,
+              //   checksech: this.state.check,
+              // });
 
               this.props.dispatch(
                 regisFilternoti({
@@ -1040,14 +1040,14 @@ class NewSettingContry extends React.Component {
                   ),
                 }),
               );
-              console.log('ANUCHITTESTSTSTSTS', {
-                sso_id:
-                  this.props.getUser.userDetails.res_result.type != 6
-                    ? this.props.getUser.userDetails.res_result.ssoid
-                    : this.props.getUser.userDetails.res_result.id,
-                countrie: this.state.selectCountryFilter,
-                product: this.state.selectProductFilter,
-              });
+              // console.log('ANUCHITTESTSTSTSTS', {
+              //   sso_id:
+              //     this.props.getUser.userDetails.res_result.type != 6
+              //       ? this.props.getUser.userDetails.res_result.ssoid
+              //       : this.props.getUser.userDetails.res_result.id,
+              //   countrie: this.state.selectCountryFilter,
+              //   product: this.state.selectProductFilter,
+              // });
 
               // this._getSeachCountry();
               // this._getSeachProduct();

@@ -405,7 +405,7 @@ class HeadersAndroid extends React.Component {
                 style={styles.imageMenuTop}
                 source={require('../image/IconMenuTop5.png')}
               />
-              <Text style={styles.textMenuTop}>{I18n.t('Noti_Header')}</Text>
+              <Text style={styles.textMenuTop}>การแจ้งเตือน</Text>
             </Animated.View>
           </View>
           <View style={styles.ViewColMenuTop}>
@@ -417,7 +417,7 @@ class HeadersAndroid extends React.Component {
                   style={styles.imageMenuTop}
                   source={require('../image/IconMenuTop3.png')}
                 />
-                <Text style={styles.textMenuTop}>{I18n.t('transalte_personal_information')}</Text>
+                <Text style={styles.textMenuTop}>ข้อมูลส่วนตัว</Text>
               </Animated.View>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => this.onLogout()}>
@@ -427,7 +427,7 @@ class HeadersAndroid extends React.Component {
                   style={styles.imageMenuTop}
                   source={require('../image/IconMenuTop6.png')}
                 />
-                <Text style={styles.textMenuTop}>{I18n.t('Logout_Header')}</Text>
+                <Text style={styles.textMenuTop}>ออกจากระบบ</Text>
               </Animated.View>
             </TouchableOpacity>
           </View>

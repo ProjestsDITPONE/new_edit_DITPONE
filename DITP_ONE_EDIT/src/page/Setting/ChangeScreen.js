@@ -17,7 +17,7 @@ const ChangeScreen = ({navigation}) => {
       <Headers badgeNumber="2" navigation={navigation} backScreen={false} />
       <View style={{marginTop: Platform.OS === 'android' && 90}} />
       <View style={{marginTop: 20, zIndex: -1}}>
-        <Text style={{fontSize: 28, color: '#40536d'}}>{I18n.t('translate_Changepassword')}</Text>
+        <Text style={{fontSize: 28, color: '#40536d'}}>เปลี่ยนรหัสผ่าน</Text>
         <View style={{marginLeft: 5, marginTop: 10}}>
           <ImageBackground
             source={require('../../image/textbox.png')}
@@ -33,7 +33,7 @@ const ChangeScreen = ({navigation}) => {
               onChangeText={text => setNewpassword(text)}
               secureTextEntry={true}
               style={{fontSize: 26, left: 30}}
-              placeholder={I18n.t('transalte_new_pass')}
+              placeholder="รหัสผ่านใหม่"
               placeholderTextColor="#cad8e1"
             />
           </ImageBackground>
@@ -52,7 +52,7 @@ const ChangeScreen = ({navigation}) => {
               onChangeText={text => setconfirmpassword(text)}
               secureTextEntry={true}
               style={{fontSize: 26, left: 30}}
-              placeholder={I18n.t('password2_regis')}
+              placeholder="ยืนยันรหัสผ่าน"
               placeholderTextColor="#cad8e1"
             />
           </ImageBackground>
@@ -71,7 +71,7 @@ const ChangeScreen = ({navigation}) => {
                 alignItems: 'center',
                 borderRadius: 21.5,
               }}>
-              <Text style={{fontSize: 27, color: '#ffffff'}}>{I18n.t('translate_Accept')}</Text>
+              <Text style={{fontSize: 27, color: '#ffffff'}}>ยืนยัน</Text>
             </TouchableOpacity>
           </View>
         </View>

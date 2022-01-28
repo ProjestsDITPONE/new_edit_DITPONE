@@ -4527,7 +4527,7 @@ _getDataparticipant = async value =>{
                                 textAlign: 'center',
                                 color: '#FFFFFF',
                               }}>
-                              {I18n.t('transalte_Edit_Juristic_Information')}
+                              แก้ไขข้อมูลนิติบุคคล
                             </Text>
                           </TouchableOpacity>
                         )}
@@ -4556,7 +4556,7 @@ _getDataparticipant = async value =>{
                                   textAlign: 'center',
                                   color: '#FFFFFF',
                                 }}>
-                                {I18n.t('translate_Next')}
+                                ต่อไป
                               </Text>
                             </View>
                             <View style={{}}>
@@ -4628,7 +4628,7 @@ _getDataparticipant = async value =>{
 
                                     marginHorizontal: 35,
                                   }}>
-                                  {I18n.t('member_business')}
+                                  ประเภทธุรกิจ
                                 </Text>
                                 {this.state.showDatabusiness != undefined && (
                                   <View
@@ -4789,7 +4789,7 @@ _getDataparticipant = async value =>{
                                   marginHorizontal: 35,
                                   marginTop: 25,
                                 }}>
-                                {I18n.t('member_business')}{' '}
+                                ประเภทธุรกิจ{' '}
                               </Text>
                               {this.state.fromBisiness.map((Data1, index) => {
                                 return (
@@ -5011,7 +5011,7 @@ _getDataparticipant = async value =>{
 
                                     marginTop: 0,
                                   }}>
-                                  {I18n.t('transalte_Bt_back')}
+                                  กลับ
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -5039,7 +5039,7 @@ _getDataparticipant = async value =>{
                                   textAlign: 'center',
                                   marginTop: 5.5,
                                 }}>
-                                {I18n.t('translate_Next')}
+                                ต่อไป
                               </Text>
                               <Icon
                                 name="chevron-right"
@@ -5107,7 +5107,7 @@ _getDataparticipant = async value =>{
 
                                   marginTop: 0,
                                 }}>
-                                {I18n.t('transalte_Bt_back')}
+                                กลับ
                               </Text>
                             </View>
                           </TouchableOpacity>
@@ -5214,7 +5214,7 @@ _getDataparticipant = async value =>{
                                     fontSize: 22,
                                     marginTop: 9.1,
                                   }}>
-                                  {I18n.t('transalte_Bt_add_product')}
+                                  เพิ่มสินค้า
                                 </Text>
                               </TouchableOpacity>
                               <View
@@ -5267,7 +5267,7 @@ _getDataparticipant = async value =>{
 
                                         marginTop: 0,
                                       }}>
-                                      {I18n.t('transalte_Bt_back')}
+                                      กลับ
                                     </Text>
                                   </View>
                                 </TouchableOpacity>
@@ -5295,7 +5295,7 @@ _getDataparticipant = async value =>{
 
                                       textAlign: 'center',
                                     }}>
-                                    {I18n.t('translate_Next')}
+                                    ต่อไป
                                   </Text>
                                   <Icon
                                     name="chevron-right"
@@ -5353,7 +5353,7 @@ _getDataparticipant = async value =>{
                                         fontSize: 22,
                                         marginTop: 9.1,
                                       }}>
-                                      {I18n.t('transalte_Bt_add_product')}
+                                      เพิ่มสินค้า
                                     </Text>
                                   </TouchableOpacity>
 
@@ -5407,7 +5407,7 @@ _getDataparticipant = async value =>{
 
                                             // marginTop: 9.1,
                                           }}>
-                                          {I18n.t('transalte_Bt_back')}
+                                          กลับ
                                         </Text>
                                       </View>
                                     </TouchableOpacity>
@@ -5465,7 +5465,7 @@ _getDataparticipant = async value =>{
                                           flex: 0.5,
                                           marginTop: 9.1,
                                         }}>
-                                        {I18n.t('translate_Next')}
+                                        ต่อไป
                                       </Text>
                                       <Icon
                                         name="chevron-right"
@@ -6415,7 +6415,7 @@ _getDataparticipant = async value =>{
 
                                     marginTop: 0,
                                   }}>
-                                  {I18n.t('transalte_Bt_back')}
+                                  กลับ
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -7223,7 +7223,7 @@ _getDataparticipant = async value =>{
                                             fontSize: 22,
                                             textAlign: 'center',
                                           }}>
-                                          {I18n.t('transalte_Bt_back')}
+                                          กลับ
                                         </Text>
                                       </View>
                                     </TouchableOpacity>
@@ -7252,7 +7252,7 @@ _getDataparticipant = async value =>{
                                             fontSize: 22,
                                             textAlign: 'center',
                                           }}>
-                                          {I18n.t('translate_Next')}
+                                          ต่อไป
                                         </Text>
                                       </View>
                                       <View style={{}}>
@@ -7388,7 +7388,7 @@ _getDataparticipant = async value =>{
 
                                                 // marginTop: 9.1,
                                               }}>
-                                              {I18n.t('transalte_Bt_back')}
+                                              กลับ
                                             </Text>
                                           </View>
                                         </TouchableOpacity>
@@ -7448,7 +7448,7 @@ _getDataparticipant = async value =>{
                                               flex: 0.5,
                                               marginTop: 9.1,
                                             }}>
-                                            {I18n.t('translate_Next')}
+                                            ต่อไป
                                           </Text>
                                           <Icon
                                             name="chevron-right"
@@ -8340,7 +8340,7 @@ _getDataparticipant = async value =>{
 
                                         marginTop: 0,
                                       }}>
-                                      {I18n.t('transalte_Bt_back')}
+                                      กลับ
                                     </Text>
                                   </View>
                                 </TouchableOpacity>
@@ -8465,7 +8465,7 @@ _getDataparticipant = async value =>{
 
                                       // marginTop: 9.1,
                                     }}>
-                                    {I18n.t('transalte_Bt_back')}
+                                    กลับ
                                   </Text>
                                 </View>
                               </TouchableOpacity>
@@ -8508,7 +8508,7 @@ _getDataparticipant = async value =>{
 
                                       // marginTop: 9.1,
                                     }}>
-                                    {I18n.t('transalte_Bt_back')}
+                                    กลับ
                                   </Text>
                                 </View>
                               </TouchableOpacity>
@@ -8543,7 +8543,7 @@ _getDataparticipant = async value =>{
 
                                       // marginTop: 9.1,
                                     }}>
-                                    {I18n.t('translate_Next')}
+                                    ต่อไป
                                   </Text>
                                 </View>
                                 <View style={{flex: 0.2}}>
@@ -9514,7 +9514,7 @@ _getDataparticipant = async value =>{
                                       color: '#163c70',
                                       textAlign: 'right',
                                     }}>
-                                    {I18n.t('member_business')} :{' '}
+                                    ประเภทธุรกิจ :{' '}
                                   </Text>
                                 </View>
                                 <View
@@ -9888,7 +9888,7 @@ _getDataparticipant = async value =>{
                             fontSize: 22,
                             color: '#2d6dc4',
                           }}>
-                          {I18n.t('transalte_Bt_back')}
+                          กลับ
                         </Text>
                       </View>
                     </TouchableOpacity>

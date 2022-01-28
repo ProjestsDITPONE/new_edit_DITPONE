@@ -180,7 +180,7 @@ class Viewpeople extends React.Component {
                   this.SearchSubmit(e);
                 }}
                 style={Styles.TextInputSub1}
-                placeholder={I18n.t('translate_Seachcontry')}
+                placeholder="ค้นหา"
               />
             </View>
           </View>

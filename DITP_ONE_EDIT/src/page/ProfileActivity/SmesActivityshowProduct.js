@@ -901,7 +901,7 @@ class SmesActivityProduct extends React.Component {
               {/*อนุมัติเรียบร้อย */}
               <View style={{flexDirection: 'row'}}>
                 <Text style={{fontSize: 18, color: '#73838f', left: 20}}>
-                  {I18n.t('translate_country')} :
+                  ประเทศ :
                 </Text>
 
                 <Text style={{fontSize: 18, color: '#163c70', left: 20}}>

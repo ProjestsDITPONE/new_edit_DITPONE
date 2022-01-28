@@ -485,7 +485,7 @@ const Addperson = ({navigation,dispatch}) => {
                       fontSize: 25,
                       color: '#FFFFFF',
                     }}>
-                    {I18n.t('translate_Save')}
+                    บันทึก
                   </Text>
                 </TouchableOpacity>
               </View>

@@ -1513,7 +1513,7 @@ const ProfileActivity = ({
                   {getStatus.isResult != undefined && (
                     <View style={Styles.ViewSub4}>
                       {getStatus.isResult.status_ditp.status !=
-                      'not active ditp' ? (
+                      'not active ditp' && getStatus.isResult.status_ditp.status != undefined ? (
                         <View style={[Styles.flexDirectionRow, {}]}>
                           {getStatus.isResult.status_ditp.nameEn != null &&(
                           <LinearGradient
@@ -4080,7 +4080,7 @@ const ProfileActivity = ({
                         {flex: 1, marginHorizontal: 8},
                       ]}>
                       <Text style={[Styles.TextHearderSub1]}>
-                        {I18n.t('translate_Activitie_Department')}
+                        {'กิจกรรมกรม'}
                       </Text>
                     </View>
                     <View style={[Styles.ViewSub37, {flex: 0.3}]}>

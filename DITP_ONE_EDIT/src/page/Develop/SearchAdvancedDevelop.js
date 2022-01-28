@@ -266,7 +266,7 @@ class SearchAdvancedDevelop extends Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('สำเสร็จ');
+          alert(I18n.t('alert_succeed'));
         } else {
           // shared
           alert(result.activityType);
@@ -289,7 +289,7 @@ class SearchAdvancedDevelop extends Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('สำเสร็จ');
+          alert(I18n.t('alert_succeed'));
         } else {
           // shared
           alert(result.activityType);
@@ -1440,7 +1440,7 @@ class SearchAdvancedDevelop extends Component {
           backScreen={false}
         />
         <View style={{marginTop: Platform.OS === 'android' && 90}} />
-        <Headerstage nameTab={'ค้นหาขั้นสูงฝึกอบรม'} />
+        <Headerstage nameTab={I18n.t('transalte_Find_Advanced_Training')} />
         {/* <View style={{alignItems: 'center'}} /> */}
         <RBSheet
           ref={ref => {
@@ -1578,7 +1578,7 @@ class SearchAdvancedDevelop extends Component {
                               value:
                                 I18n.locale === 'th' ? 'สถานที่ทั้งหมด' : 'All',
                             }}
-                            doneText={I18n.locale === 'th' ? ' เลือก' : 'Done'}
+                            doneText={I18n.locale === 'th' ? 'เลือก' : 'Done'}
                             onValueChange={(value, index) => {
                               // alert(index);
 
@@ -1622,7 +1622,7 @@ class SearchAdvancedDevelop extends Component {
                               {this.state.textSelectActivity4 === null ? (
                                 <View style={Styles2.viewcheckText}>
                                   <Text style={Styles2.viewText}>
-                                    {'   '}สถานที่
+                                    {'   '}{I18n.t('transalte_location')}
                                   </Text>
                                 </View>
                               ) : (
@@ -1671,7 +1671,7 @@ class SearchAdvancedDevelop extends Component {
                                 fontSize: 20,
                                 color: '#2d6dc4',
                               }}>
-                              Online
+                              {I18n.t('translate_Online')}
                             </Text>
                           </TouchableOpacity>
                         ) : (
@@ -1698,7 +1698,7 @@ class SearchAdvancedDevelop extends Component {
                                 fontSize: 20,
                                 color: '#FFFFFF',
                               }}>
-                              Online
+                              {I18n.t('translate_Online')}
                             </Text>
                           </TouchableOpacity>
                         )}
@@ -1781,7 +1781,7 @@ class SearchAdvancedDevelop extends Component {
                                       Styles2.viewText,
                                       {color: '#4b4b4b'},
                                     ]}>
-                                    {'   '}สินค้า
+                                    {'   '}{I18n.t('translate_Products')}
                                   </Text>
                                 </View>
                               ) : (
@@ -1851,7 +1851,7 @@ class SearchAdvancedDevelop extends Component {
                               });
                             }}
                             value={this.state.valueSelectActivity3dev === undefined?
-                              'ต้องการทั้งหมด' :
+                              'ต้องการทั้งหมด':
                               this.state.valueSelectActivity3dev
                             
                             }
@@ -1866,7 +1866,7 @@ class SearchAdvancedDevelop extends Component {
                                 {this.state.valueSelectActivity3dev ===
                                 undefined ? (
                                   <Text style={Styles2.viewText}>
-                                    {'   '}ความต้องการทั้งหมด
+                                    {'   '}{I18n.t('transalte_all_requirements')}
                                   </Text>
                                 ) : (
                                   <Text
@@ -2172,7 +2172,7 @@ class SearchAdvancedDevelop extends Component {
                               fontSize: 20,
                               textAlign: 'center',
                             }}>
-                            ค้นหา
+                            {I18n.t('transalte_ButtonSearch')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2221,7 +2221,7 @@ class SearchAdvancedDevelop extends Component {
                               fontSize: 20,
                               textAlign: 'center',
                             }}>
-                            ล้างทั้งหมด
+                            {I18n.t('transalte_Bt_clear_all')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2332,7 +2332,7 @@ class SearchAdvancedDevelop extends Component {
                               color: '#FFFFFF',
                               fontSize: 18,
                             }}>
-                            แผนที่
+                            {I18n.t('transalte_map')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2440,7 +2440,7 @@ class SearchAdvancedDevelop extends Component {
                             textAlign: 'center',
                             textDecorationLine: 'underline',
                           }}>
-                          แสดงรายละเอียด
+                          {I18n.t('transalte_show_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -2516,7 +2516,7 @@ class SearchAdvancedDevelop extends Component {
                               textAlign: 'center',
                               textDecorationLine: 'underline',
                             }}>
-                            ซ่อนรายละเอียด
+                            {I18n.t('transalte_Hide_details')}
                           </Text>
                           <Icon3
                             color="#2d6dc4"
@@ -2536,10 +2536,10 @@ class SearchAdvancedDevelop extends Component {
 
                     <View style={{flex: 1}}>
                       <Text style={{color: '#3a3a3a', fontSize: 18}}>
-                        หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
+                        {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                       </Text>
                       <Text style={{color: '#3a3a3a', fontSize: 18}}>
-                        เจ้าหน้าที่โครงการ : {this.state.officer_name}
+                        {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                       </Text>
                       <View style={{flexDirection: 'row'}}>
                         <Image
@@ -2707,7 +2707,7 @@ class SearchAdvancedDevelop extends Component {
                               }}>
                               {this.state.Close
                                 ? I18n.t('translate_Apply_activities')
-                                : '  ปิดรับสมัครกิจกรรม  '}
+                                : I18n.t('translate_Applacation')}
                             </Text>
                           </TouchableOpacity>
                         ) : (
@@ -2761,7 +2761,7 @@ class SearchAdvancedDevelop extends Component {
                       color: '#FFFFFF',
                       fontFamily: 'PSL Kittithada Pro',
                     }}>
-                    {'ประเทศไทย'}
+                    {I18n.t(transalte_Thailand)}
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -2833,7 +2833,7 @@ class SearchAdvancedDevelop extends Component {
                               color: '#FFFFFF',
                               fontFamily: 'PSL Kittithada Pro',
                             }}>
-                            {'ต่างประเทศ'}
+                            {I18n.t('transalte_foreign_country')}
                           </Text>
                         ) : (
                           <Text

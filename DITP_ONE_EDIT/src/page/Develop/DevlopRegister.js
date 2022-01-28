@@ -15062,7 +15062,7 @@ class DevlopRegister extends React.Component {
                               textAlign: 'center',
                               textDecorationLine: 'underline',
                             }}>
-                            อ่านเงื่อนไขข้อกำหนดของกรม
+                            {I18n.t('transalte_Read_terms')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -15441,7 +15441,7 @@ class DevlopRegister extends React.Component {
                 />
                 <TextInput
                   style={{fontSize: 20, flex: 1, color: '#0D0C0C'}}
-                  placeholder={'ระบุเลขบัตรประจำตัวประชาชน'}
+                  placeholder={I18n.t('transalte_Enter_ID_card_number')}
                   placeholderTextColor={'#999999'}
                   onChangeText={searchTerm => this.setState({searchTerm})}
                 />
@@ -15467,7 +15467,7 @@ class DevlopRegister extends React.Component {
                       textAlign: 'center',
                       fontSize: 20,
                     }}>
-                    ค้นหา
+                    {I18n.t('transalte_ButtonSearch')}
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -15607,7 +15607,7 @@ class DevlopRegister extends React.Component {
               <View style={{marginTop: 30}}>
                 <Text
                   style={{textAlign: 'center', fontSize: 24, color: '#20416e'}}>
-                  ตรวจสอบผู้เข้าร่วมกิจกกรม
+                  {I18n.t('transalte_Check_participants')}
                 </Text>
               </View>
               <View style={{height: 130}}>
@@ -15678,7 +15678,7 @@ class DevlopRegister extends React.Component {
                     textAlign: 'center',
                     fontSize: 20,
                   }}>
-                  ค้นหา
+                  {I18n.t('transalte_Bt_sesrch')}
                 </Text>
               </TouchableOpacity>
             </ScrollView>
@@ -16068,7 +16068,7 @@ class DevlopRegister extends React.Component {
                               fontSize: 22,
                               marginTop: 5,
                             }}>
-                            เพิ่มสินค้า
+                            {I18n.t('transalte_add_product')}
                           </Text>
                         </TouchableOpacity>
                         <View

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   View,
   Text,
@@ -15,47 +15,45 @@ import {
   StyleSheet,
   Share,
   Alert,
-} from 'react-native';
-import Headers from '../../components/Headers';
-import Headers2 from '../../components/Headerstage4';
-import Headerstage2 from '../../components/Headerstage2';
-import {connect} from 'react-redux';
-import {CheckBox, Overlay, ListItem} from 'react-native-elements';
+} from "react-native";
+import Headers from "../../components/Headers";
+import Headers2 from "../../components/Headerstage4";
+import Headerstage2 from "../../components/Headerstage2";
+import { connect } from "react-redux";
+import { CheckBox, Overlay, ListItem } from "react-native-elements";
 import {
   getAllDevelop,
   getAllDevelopElearning,
   CheckRegisterActivity,
   RegisterActivity,
-} from '../../actions/data.actions';
-import InAppBrowser from 'react-native-inappbrowser-reborn';
-import {getDeepLinkAct} from '../../config/utilities';
-import {SendBasket, DeleteBasket} from '../../actions/auth.actions';
-import Popover from 'react-native-popover-view';
-import I18n from '../../utils/I18n';
-import Styles from './Styles';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import Icon3 from 'react-native-vector-icons/MaterialIcons';
-import RNPickerSelect from 'react-native-picker-select';
-import SegmentedControlTab from 'react-native-segmented-control-tabedit';
-import {height} from '../Typeappeal/Styles';
+} from "../../actions/data.actions";
+import InAppBrowser from "react-native-inappbrowser-reborn";
+import { getDeepLinkAct } from "../../config/utilities";
+import { SendBasket, DeleteBasket } from "../../actions/auth.actions";
+import Popover from "react-native-popover-view";
+import I18n from "../../utils/I18n";
+import Styles from "./Styles";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import Icon3 from "react-native-vector-icons/MaterialIcons";
+import RNPickerSelect from "react-native-picker-select";
+import SegmentedControlTab from "react-native-segmented-control-tabedit";
+import { height } from "../Typeappeal/Styles";
 var date = new Date();
 var mm = date.getMonth();
 var YYDF1 = mm + 1;
 class ViewDevelop extends React.Component {
   constructor(props) {
     try {
-      AsyncStorage.getItem('language', (err, result) => {
-        if (result == 'TH') {
-          this.setState({language: 'TH'});
+      AsyncStorage.getItem("language", (err, result) => {
+        if (result == "TH") {
+          this.setState({ language: "TH" });
         } else {
-          this.setState({language: 'EN'});
+          this.setState({ language: "EN" });
         }
       });
     } catch (error) {}
     super(props);
     this.state = {
-
-      
       Selec2: [],
       countYear: [],
       setdefulttear: null,
@@ -70,7 +68,7 @@ class ViewDevelop extends React.Component {
       loading2: false,
       fetching_from_server: false,
       fetching_from_server2: false,
-      count: '',
+      count: "",
       count1: null,
       closePopover: false,
       daparment_name: null,
@@ -104,26 +102,26 @@ class ViewDevelop extends React.Component {
   }
 
   FullDate(Viewdate) {
-    var strSplitDate = String(Viewdate).split(' ');
+    var strSplitDate = String(Viewdate).split(" ");
     var date = new Date(strSplitDate[0]);
     // alert(date);
     var dd = date.getDate();
     var mm = date.getMonth() + 1; //January is 0!
     var yyyy =
-      I18n.locale === 'th' ? date.getFullYear() + 543 : date.getFullYear();
+      I18n.locale === "th" ? date.getFullYear() + 543 : date.getFullYear();
     if (dd < 10) {
-      dd = '0' + dd;
+      dd = "0" + dd;
     }
     if (mm < 10) {
       mm;
     }
-    date = dd + ' ' + this.CheckMonthFull(mm) + ' ' + yyyy;
+    date = dd + " " + this.CheckMonthFull(mm) + " " + yyyy;
     return date.toString();
   }
-  Call = number => {
+  Call = (number) => {
     console.log(number);
-    let phoneNumber = '';
-    if (Platform.OS === 'android') {
+    let phoneNumber = "";
+    if (Platform.OS === "android") {
       phoneNumber = `tel:${number}`;
     } else {
       phoneNumber = `telprompt:${number}`;
@@ -131,8 +129,8 @@ class ViewDevelop extends React.Component {
     Linking.openURL(phoneNumber);
   };
 
-  onShare = async value => {
-    console.log('vakkkk', value);
+  onShare = async (value) => {
+    console.log("vakkkk", value);
     try {
       const result = await Share.share({
         message: value.activity_list_topic_th,
@@ -142,7 +140,7 @@ class ViewDevelop extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert(I18n.t('alert_succeed'));
+          alert(I18n.t("alert_succeed"));
         } else {
           // shared
           // alert(result.activityType);
@@ -165,7 +163,7 @@ class ViewDevelop extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert(I18n.t('alert_succeed'));
+          alert(I18n.t("alert_succeed"));
         } else {
           // shared
           alert(result.activityType);
@@ -181,7 +179,7 @@ class ViewDevelop extends React.Component {
   yearCount() {
     var start_year = date.getFullYear();
     for (var yearDef = start_year; yearDef < start_year + 9; yearDef++) {
-      if (I18n.locale === 'th') {
+      if (I18n.locale === "th") {
         this.state.countYear.push({
           YearN: yearDef + 543,
         });
@@ -190,46 +188,46 @@ class ViewDevelop extends React.Component {
           YearN: yearDef,
         });
       }
-      if (I18n.locale === 'th') {
+      if (I18n.locale === "th") {
         this.state.setdefulttear = start_year + 543;
       } else {
         this.state.setdefulttear = start_year;
       }
-      console.log('ฆฆฆฆฆฆ');
+      console.log("ฆฆฆฆฆฆ");
       console.log(this.state.setdefulttear);
     }
   }
 
-  CheckMonth = month => {
+  CheckMonth = (month) => {
     // console.log(month);
     if (month === null) {
-      return 'DD-MM';
+      return "DD-MM";
     } else {
       var Month = null;
       if (month === 1) {
-        return I18n.locale === 'th' ? (Month = 'ม.ค.') : (Month = 'JAN');
+        return I18n.locale === "th" ? (Month = "ม.ค.") : (Month = "JAN");
       } else if (month === 2) {
-        return I18n.locale === 'th' ? (Month = 'ก.พ.') : (Month = 'FEB');
+        return I18n.locale === "th" ? (Month = "ก.พ.") : (Month = "FEB");
       } else if (month === 3) {
-        return I18n.locale === 'th' ? (Month = 'มี.ค.') : (Month = 'MAR');
+        return I18n.locale === "th" ? (Month = "มี.ค.") : (Month = "MAR");
       } else if (month === 4) {
-        return I18n.locale === 'th' ? (Month = 'เม.ย.') : (Month = 'APR');
+        return I18n.locale === "th" ? (Month = "เม.ย.") : (Month = "APR");
       } else if (month === 5) {
-        return I18n.locale === 'th' ? (Month = 'พ.ค.') : (Month = 'MAY');
+        return I18n.locale === "th" ? (Month = "พ.ค.") : (Month = "MAY");
       } else if (month === 6) {
-        return I18n.locale === 'th' ? (Month = 'มิ.ย.') : (Month = 'JUN');
+        return I18n.locale === "th" ? (Month = "มิ.ย.") : (Month = "JUN");
       } else if (month === 7) {
-        return I18n.locale === 'th' ? (Month = 'ก.ค.') : (Month = 'JUL');
+        return I18n.locale === "th" ? (Month = "ก.ค.") : (Month = "JUL");
       } else if (month === 8) {
-        return I18n.locale === 'th' ? (Month = 'ส.ค.') : (Month = 'AUG');
+        return I18n.locale === "th" ? (Month = "ส.ค.") : (Month = "AUG");
       } else if (month === 9) {
-        return I18n.locale === 'th' ? (Month = 'ก.ย.') : (Month = 'SEP');
+        return I18n.locale === "th" ? (Month = "ก.ย.") : (Month = "SEP");
       } else if (month === 10) {
-        return I18n.locale === 'th' ? (Month = 'ต.ค.') : (Month = 'OCT');
+        return I18n.locale === "th" ? (Month = "ต.ค.") : (Month = "OCT");
       } else if (month === 11) {
-        return I18n.locale === 'th' ? (Month = 'พ.ย.') : (Month = 'NOV');
+        return I18n.locale === "th" ? (Month = "พ.ย.") : (Month = "NOV");
       } else if (month === 12) {
-        return I18n.locale === 'th' ? (Month = 'ธ.ค.') : (Month = 'DEC');
+        return I18n.locale === "th" ? (Month = "ธ.ค.") : (Month = "DEC");
       }
     }
   };
@@ -238,57 +236,57 @@ class ViewDevelop extends React.Component {
     var DFMM = mm + 1;
 
     if (DFMM === 1) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'มกราคม'})
-        : this.setState({valueSelectMMMM: 'January'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "มกราคม" })
+        : this.setState({ valueSelectMMMM: "January" });
     } else if (DFMM === 2) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'กุมภาพันธ์'})
-        : this.setState({valueSelectMMMM: 'February'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "กุมภาพันธ์" })
+        : this.setState({ valueSelectMMMM: "February" });
     } else if (DFMM === 3) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'มีนาคม'})
-        : this.setState({valueSelectMMMM: 'Murch'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "มีนาคม" })
+        : this.setState({ valueSelectMMMM: "Murch" });
     } else if (DFMM === 4) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'เมษายน'})
-        : this.setState({valueSelectMMMM: 'April'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "เมษายน" })
+        : this.setState({ valueSelectMMMM: "April" });
     } else if (DFMM === 5) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'พฤษาภาคม'})
-        : this.setState({valueSelectMMMM: 'May'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "พฤษาภาคม" })
+        : this.setState({ valueSelectMMMM: "May" });
     } else if (DFMM === 6) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'มิถุนายน'})
-        : this.setState({valueSelectMMMM: 'June'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "มิถุนายน" })
+        : this.setState({ valueSelectMMMM: "June" });
     } else if (DFMM === 7) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'กรกฎาคม'})
-        : this.setState({valueSelectMMMM: 'July'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "กรกฎาคม" })
+        : this.setState({ valueSelectMMMM: "July" });
     } else if (DFMM === 8) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'สิงหาคม'})
-        : this.setState({valueSelectMMMM: 'August'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "สิงหาคม" })
+        : this.setState({ valueSelectMMMM: "August" });
     } else if (DFMM === 9) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'กันยายน'})
-        : this.setState({valueSelectMMMM: 'September'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "กันยายน" })
+        : this.setState({ valueSelectMMMM: "September" });
     } else if (DFMM === 10) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'ตุลาคม'})
-        : this.setState({valueSelectMMMM: 'October'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "ตุลาคม" })
+        : this.setState({ valueSelectMMMM: "October" });
     } else if (DFMM === 11) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'พฤศจิกายน'})
-        : this.setState({valueSelectMMMM: 'Noverber'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "พฤศจิกายน" })
+        : this.setState({ valueSelectMMMM: "Noverber" });
     } else if (DFMM === 12) {
-      I18n.locale === 'th'
-        ? this.setState({valueSelectMMMM: 'ธันวาคม'})
-        : this.setState({valueSelectMMMM: 'December'});
+      I18n.locale === "th"
+        ? this.setState({ valueSelectMMMM: "ธันวาคม" })
+        : this.setState({ valueSelectMMMM: "December" });
     }
   }
   Star_Date(Viewdate) {
-    var strSplitDate = String(Viewdate).split(' ');
+    var strSplitDate = String(Viewdate).split(" ");
     var date = new Date(strSplitDate[0]);
     // alert(date);
     var dd = date.getDate();
@@ -296,31 +294,31 @@ class ViewDevelop extends React.Component {
 
     var yyyy = date.getFullYear();
     if (dd < 10) {
-      dd = '0' + dd;
+      dd = "0" + dd;
     }
     if (mm < 10) {
       mm;
     }
-    date = dd + ' ' + this.CheckMonth(mm);
+    date = dd + " " + this.CheckMonth(mm);
     return date.toString();
   }
 
   End_Date(Viewdate) {
-    var strSplitDate = String(Viewdate).split(' ');
+    var strSplitDate = String(Viewdate).split(" ");
     var date = new Date(strSplitDate[0]);
     // alert(date);
     var dd = date.getDate();
     var mm = date.getMonth() + 1; //January is 0!
 
     var yyyy =
-      I18n.locale === 'th' ? date.getFullYear() + 543 : date.getFullYear();
+      I18n.locale === "th" ? date.getFullYear() + 543 : date.getFullYear();
     if (dd < 10) {
-      dd = '0' + dd;
+      dd = "0" + dd;
     }
     if (mm < 10) {
       mm;
     }
-    date = ' - ' + dd + ' ' + this.CheckMonth(mm) + ' ';
+    date = " - " + dd + " " + this.CheckMonth(mm) + " ";
     return date.toString();
   }
 
@@ -334,59 +332,59 @@ class ViewDevelop extends React.Component {
   // }
 
   Yearend(Viewdate) {
-    var strSplitDate = String(Viewdate).split(' ');
+    var strSplitDate = String(Viewdate).split(" ");
     var date = new Date(strSplitDate[0]);
 
     var yyyy =
-      I18n.locale === 'th' ? date.getFullYear() + 543 : date.getFullYear();
+      I18n.locale === "th" ? date.getFullYear() + 543 : date.getFullYear();
 
     return yyyy.toString();
   }
 
-  CheckMonthFull = month => {
+  CheckMonthFull = (month) => {
     // console.log(month);
     if (month === null) {
-      return 'DD-MM';
+      return "DD-MM";
     } else {
       var Month = null;
       if (month === 1) {
-        return I18n.locale === 'th' ? (Month = 'มกราคม') : (Month = 'January');
+        return I18n.locale === "th" ? (Month = "มกราคม") : (Month = "January");
       } else if (month === 2) {
-        return I18n.locale === 'th'
-          ? (Month = 'กุมภาพันธ์')
-          : (Month = 'February');
+        return I18n.locale === "th"
+          ? (Month = "กุมภาพันธ์")
+          : (Month = "February");
       } else if (month === 3) {
-        return I18n.locale === 'th' ? (Month = 'มีนาคม') : (Month = 'March');
+        return I18n.locale === "th" ? (Month = "มีนาคม") : (Month = "March");
       } else if (month === 4) {
-        return I18n.locale === 'th' ? (Month = 'เมษายน') : (Month = 'April');
+        return I18n.locale === "th" ? (Month = "เมษายน") : (Month = "April");
       } else if (month === 5) {
-        return I18n.locale === 'th' ? (Month = 'พฤษภาคม') : (Month = 'May');
+        return I18n.locale === "th" ? (Month = "พฤษภาคม") : (Month = "May");
       } else if (month === 6) {
-        return I18n.locale === 'th' ? (Month = 'มิถุนายน') : (Month = 'June');
+        return I18n.locale === "th" ? (Month = "มิถุนายน") : (Month = "June");
       } else if (month === 7) {
-        return I18n.locale === 'th' ? (Month = 'กรกฎาคม') : (Month = 'July');
+        return I18n.locale === "th" ? (Month = "กรกฎาคม") : (Month = "July");
       } else if (month === 8) {
-        return I18n.locale === 'th' ? (Month = 'สิงหาคม') : (Month = 'August');
+        return I18n.locale === "th" ? (Month = "สิงหาคม") : (Month = "August");
       } else if (month === 9) {
-        return I18n.locale === 'th'
-          ? (Month = 'กันยายน')
-          : (Month = 'September');
+        return I18n.locale === "th"
+          ? (Month = "กันยายน")
+          : (Month = "September");
       } else if (month === 10) {
-        return I18n.locale === 'th' ? (Month = 'ตุลาคม') : (Month = 'October');
+        return I18n.locale === "th" ? (Month = "ตุลาคม") : (Month = "October");
       } else if (month === 11) {
-        return I18n.locale === 'th'
-          ? (Month = 'พฤศจิกายน')
-          : (Month = 'November');
+        return I18n.locale === "th"
+          ? (Month = "พฤศจิกายน")
+          : (Month = "November");
       } else if (month === 12) {
-        return I18n.locale === 'th'
-          ? (Month = 'ธันวาคม')
-          : (Month = 'December');
+        return I18n.locale === "th"
+          ? (Month = "ธันวาคม")
+          : (Month = "December");
       }
     }
   };
 
   End_DateR(Viewdate) {
-    var strSplitDate = String(Viewdate).split(' ');
+    var strSplitDate = String(Viewdate).split(" ");
     var date = new Date(strSplitDate[0]);
     // alert(date);
     var dd = date.getDate();
@@ -394,12 +392,12 @@ class ViewDevelop extends React.Component {
 
     var yyyy = date.getFullYear() + 543;
     if (dd < 10) {
-      dd = '0' + dd;
+      dd = "0" + dd;
     }
     if (mm < 10) {
       mm;
     }
-    date = ' - ' + dd + ' ' + this.CheckMonth(mm);
+    date = " - " + dd + " " + this.CheckMonth(mm);
     return date.toString();
   }
   renderFooter() {
@@ -407,19 +405,22 @@ class ViewDevelop extends React.Component {
       <View
         style={{
           padding: 10,
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'row',
-          backgroundColor: '#ffffff',
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "row",
+          backgroundColor: "#ffffff",
           marginTop: this.state.AllDevelop.length == 0 ? height * 0.45 : 0,
-        }}>
+        }}
+      >
         {this.state.fetching_from_server ? (
-          <ActivityIndicator color="black" style={{margin: 15}} />
+          <ActivityIndicator color="black" style={{ margin: 15 }} />
         ) : (
           <View>
             {this.state.AllDevelop.length == 0 ? (
-              <View style={{alignItems: 'center'}}>
-                <Text style={{fontSize: 22}}>{I18n.t('translate_Nodata')}</Text>
+              <View style={{ alignItems: "center" }}>
+                <Text style={{ fontSize: 22 }}>
+                  {I18n.t("translate_Nodata")}
+                </Text>
               </View>
             ) : null}
           </View>
@@ -432,20 +433,23 @@ class ViewDevelop extends React.Component {
       <View
         style={{
           padding: 10,
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'row',
-          backgroundColor: '#ffffff',
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "row",
+          backgroundColor: "#ffffff",
           marginTop:
             this.state.AllDevelopElearning.length == 0 ? height * 0.45 : 0,
-        }}>
+        }}
+      >
         {this.state.fetching_from_server ? (
-          <ActivityIndicator color="black" style={{margin: 15}} />
+          <ActivityIndicator color="black" style={{ margin: 15 }} />
         ) : (
           <View>
             {this.state.AllDevelopElearning.length == 0 ? (
-              <View style={{alignItems: 'center'}}>
-                <Text style={{fontSize: 22}}>{I18n.t('translate_Nodata')}</Text>
+              <View style={{ alignItems: "center" }}>
+                <Text style={{ fontSize: 22 }}>
+                  {I18n.t("translate_Nodata")}
+                </Text>
               </View>
             ) : null}
           </View>
@@ -464,12 +468,12 @@ class ViewDevelop extends React.Component {
   //   );
   // }
 
-  _insertRegister = async values => {
+  _insertRegister = async (values) => {
     try {
       // alert('กล้วย', values.activity_code, values.member_cid, values.type);
-      const {authData} = this.props;
+      const { authData } = this.props;
       const payload = authData.token;
-      var tokenActivity = '';
+      var tokenActivity = "";
       if (this.props.getUser.userDetails.res_result.type == 6) {
         tokenActivity = this.props.authData.token.res_result.token;
       } else {
@@ -484,11 +488,11 @@ class ViewDevelop extends React.Component {
             type: values.type,
           },
           token: tokenActivity,
-        }),
+        })
       );
-      if (response.res_code === '00') {
+      if (response.res_code === "00") {
         // alert(response.result.pid)
-        this.props.navigation.navigate('DevlopRegister', {
+        this.props.navigation.navigate("DevlopRegister", {
           img: values.img,
           StarD_1: values.StarD_1,
           EndD_1: values.EndD_1,
@@ -517,19 +521,22 @@ class ViewDevelop extends React.Component {
           deparment_tel: values.deparment_tel,
           pid: response.result.pid,
           activity_code: values.activity_code,
-          member_cid: values.member_cid === undefined ? this.state.IDcard: values.member_cid,
+          member_cid:
+            values.member_cid === undefined
+              ? this.state.IDcard
+              : values.member_cid,
           type: values.type,
           case: 1,
           imgtype:
-            values.location === 'ออนไลน์'
-              ? require('../../image/Elearing.png')
-              : require('../../image/devlop.png'),
+            values.location === "ออนไลน์"
+              ? require("../../image/Elearing.png")
+              : require("../../image/devlop.png"),
         });
       }
     } catch (error) {}
   };
 
-  _CheckRegister = async values => {
+  _CheckRegister = async (values) => {
     // alert(values.formTypeActivity);
 
     try {
@@ -538,9 +545,9 @@ class ViewDevelop extends React.Component {
       //  console.log('values.member_cid'+JSON.stringify(values) )
       // alert(values.member_cid)
       // const {authData} = this.props;
-      const {authData} = this.props;
+      const { authData } = this.props;
       const payload = authData.token;
-      var tokenActivity = '';
+      var tokenActivity = "";
       if (this.props.getUser.userDetails.res_result.type == 6) {
         tokenActivity = this.props.authData.token.res_result.token;
       } else {
@@ -554,20 +561,22 @@ class ViewDevelop extends React.Component {
             member_cid: this.state.IDcard,
             type: this.props.getUser.userDetails.res_result.type,
             formTypeActivity:
-              values.formTypeActivity === undefined ? 1 : values.formTypeActivity,
+              values.formTypeActivity === undefined
+                ? 1
+                : values.formTypeActivity,
           },
           token: tokenActivity,
-        }),
+        })
       );
 
-      console.log('FFFFffffresponseDDDDnew', response);
+      console.log("FFFFffffresponseDDDDnew", response);
 
-      if (response.res_code === '00') {
-        console.log('Register !!!');
+      if (response.res_code === "00") {
+        console.log("Register !!!");
 
-        this.setState({CheckStatus: response.result.status});
+        this.setState({ CheckStatus: response.result.status });
 
-        console.log('response.result.pidnew1dddddd');
+        console.log("response.result.pidnew1dddddd");
 
         console.log(response.result.pid);
         console.log(values.activity_code);
@@ -579,7 +588,7 @@ class ViewDevelop extends React.Component {
           // alert('case 1')
           alert(response.result.message);
 
-          this.props.navigation.navigate('DevlopRegister', {
+          this.props.navigation.navigate("DevlopRegister", {
             img: values.img,
             StarD_1: values.StarD_1,
             EndD_1: values.EndD_1,
@@ -608,14 +617,17 @@ class ViewDevelop extends React.Component {
             deparment_tel: values.deparment_tel,
             pid: response.result.pid,
             activity_code: values.activity_code,
-            member_cid: values.member_cid === undefined ? this.state.IDcard: values.member_cid,
+            member_cid:
+              values.member_cid === undefined
+                ? this.state.IDcard
+                : values.member_cid,
             type: values.type,
             case: 1,
             formTypeActivity: values.formTypeActivity,
             imgtype:
-              values.location === 'ออนไลน์'
-                ? require('../../image/Elearing.png')
-                : require('../../image/devlop.png'),
+              values.location === "ออนไลน์"
+                ? require("../../image/Elearing.png")
+                : require("../../image/devlop.png"),
           });
         } else if (
           response.result.pid === 0 &&
@@ -625,21 +637,21 @@ class ViewDevelop extends React.Component {
 
           Alert.alert(
             response.result.message,
-            '',
+            "",
             [
               {
-                text: I18n.t('translate_Cancel'),
-                onPress: () => console.log('OK cancel'),
+                text: I18n.t("translate_Cancel"),
+                onPress: () => console.log("OK cancel"),
               },
               {
-                text: I18n.t('translate_Accept'),
+                text: I18n.t("translate_Accept"),
                 onPress: () => this._insertRegister(values),
                 // console.log('OK Pressed'),
 
-                style: 'cancel',
+                style: "cancel",
               },
             ],
-            {cancelable: false},
+            { cancelable: false }
           );
         } else {
           alert(response.result.message);
@@ -650,18 +662,18 @@ class ViewDevelop extends React.Component {
     }
   };
 
-  _getAllDevelop = async values => {
+  _getAllDevelop = async (values) => {
     var mm = date.getFullYear();
     console.log(
-      ';',
+      ";",
       this.state.YYDF,
       this.state.valueSelectMouthdev + 1,
       this.state.valueSelectActivity3dev - 543,
-      mm,
+      mm
     );
     try {
       if (!this.state.fetching_from_server && !this.state.isListEnd) {
-        this.setState({fetching_from_server: true}, async () => {
+        this.setState({ fetching_from_server: true }, async () => {
           try {
             const num = this.offset;
             this.response = await this.props.dispatch(
@@ -675,17 +687,17 @@ class ViewDevelop extends React.Component {
                       : this.state.valueSelectMouthdev + 1,
                   year:
                     this.state.valueSelectActivity3dev === undefined
-                      ? ''
-                      : this.state.language === 'TH'
+                      ? ""
+                      : this.state.language === "TH"
                       ? this.state.valueSelectActivity3dev - 543
                       : this.state.valueSelectActivity3dev,
-                  text_search: '',
+                  text_search: "",
                 },
                 token: this.props.authData.token,
-              }),
+              })
             );
 
-            if (this.response.res_code === '00') {
+            if (this.response.res_code === "00") {
               if (this.response.result.length > 0) {
                 this.offset = this.offset + 1;
                 this.setState({
@@ -693,14 +705,16 @@ class ViewDevelop extends React.Component {
                     ...this.state.AllDevelop,
                     ...this.response.result,
                   ],
-                     CheckRecom: [...this.state.AllDevelop, ...this.response.result],
+                  CheckRecom: [
+                    ...this.state.AllDevelop,
+                    ...this.response.result,
+                  ],
                   count: this.response.sum_result,
                   fetching_from_server: false,
-               
                 });
                 this.arrayholder = this.state.AllDevelop;
                 // console.log(this.response.result.length);
-                this.state.AllDevelop.map(data => {
+                this.state.AllDevelop.map((data) => {
                   this.state.selec[data.activity_code] = data.status_basket;
                 });
               } else {
@@ -722,14 +736,14 @@ class ViewDevelop extends React.Component {
       }
     } catch (error) {}
   };
-  _getAllDevelopElearning = async values => {
+  _getAllDevelopElearning = async (values) => {
     var mm = date.getFullYear();
     // const YY = parseInt(this.state.valueSelectActivity3dev)
     // alert(YY - 543)
-    console.log(this.state.valueSelectMouthdev + '<=>' + this.state.YYDF);
+    console.log(this.state.valueSelectMouthdev + "<=>" + this.state.YYDF);
     try {
       if (!this.state.fetching_from_server2 && !this.state.isListEnd2) {
-        this.setState({fetching_from_server2: true}, async () => {
+        this.setState({ fetching_from_server2: true }, async () => {
           try {
             const num = this.offset;
             this.response = await this.props.dispatch(
@@ -740,21 +754,21 @@ class ViewDevelop extends React.Component {
                   month:
                     this.state.valueSelectMouthdevE === undefined ||
                     this.state.valueSelectMouthdevE === 0
-                      ? ''
+                      ? ""
                       : this.state.valueSelectMouthdevE,
                   year:
                     this.state.valueSelectActivity3dev === undefined
-                      ? ''
-                      : I18n.locale === 'th'
+                      ? ""
+                      : I18n.locale === "th"
                       ? this.state.valueSelectActivity3dev - 543
                       : this.state.valueSelectActivity3dev,
-                  text_search: '',
+                  text_search: "",
                 },
                 token: this.props.authData.token,
-              }),
+              })
             );
 
-            if (this.response.res_code === '00') {
+            if (this.response.res_code === "00") {
               if (this.response.result.length > 0) {
                 this.offset = this.offset + 1;
                 this.setState({
@@ -762,14 +776,17 @@ class ViewDevelop extends React.Component {
                     ...this.state.AllDevelopElearning,
                     ...this.response.result,
                   ],
-                  CheckRecom2: [...this.state.AllDevelopElearning, ...this.response.result],
+                  CheckRecom2: [
+                    ...this.state.AllDevelopElearning,
+                    ...this.response.result,
+                  ],
                   count1: this.response.sum_result,
                   fetching_from_server2: false,
                 });
                 this.arrayholder2 = this.state.AllDevelopElearning;
                 // console.log(this.response.result.length);
 
-                this.state.AllDevelopElearning.map(data => {
+                this.state.AllDevelopElearning.map((data) => {
                   this.state.Selec2[data.activity_code] = data.status_basket;
                 });
               } else {
@@ -792,31 +809,31 @@ class ViewDevelop extends React.Component {
     } catch (error) {}
   };
 
-  SearchSubmit = e => {
-    const newData = this.arrayholder.filter(item => {
+  SearchSubmit = (e) => {
+    const newData = this.arrayholder.filter((item) => {
       const itemData = `${item.activity_list_topic_th.toUpperCase()}${item.activity_list_topic_en.toUpperCase()}`;
       const textData = e.toUpperCase();
       return itemData.indexOf(textData) > -1;
     });
     // console.log(newData);
-    this.setState({AllDevelop: newData});
+    this.setState({ AllDevelop: newData });
   };
-  SearchSubmit2 = e => {
-    const newData = this.arrayholder2.filter(item => {
+  SearchSubmit2 = (e) => {
+    const newData = this.arrayholder2.filter((item) => {
       const itemData = `${item.activity_list_topic_th.toUpperCase()}${item.activity_list_topic_en.toUpperCase()}`;
       const textData = e.toUpperCase();
       return itemData.indexOf(textData) > -1;
     });
     // console.log(newData);
-    this.setState({AllDevelopElearning: newData});
+    this.setState({ AllDevelopElearning: newData });
   };
 
-  _SendBasket = async values => {
+  _SendBasket = async (values) => {
     // alert(values.code1);
     try {
-      const {authData} = this.props;
+      const { authData } = this.props;
       const payload = authData.token;
-      var tokenActivity = '';
+      var tokenActivity = "";
       if (this.props.getUser.userDetails.res_result.type == 6) {
         tokenActivity = this.props.authData.token.res_result.token;
       } else {
@@ -826,15 +843,15 @@ class ViewDevelop extends React.Component {
         SendBasket({
           results: {
             basket_code: values.code1,
-            basket_type: '2',
+            basket_type: "2",
           },
           token: tokenActivity,
           type: this.props.getUser.userDetails.res_result.type,
-        }),
+        })
       );
       if (values.check == 1) {
         // alert('')
-        if (response.res_code === '00') {
+        if (response.res_code === "00") {
           this.setState({
             isListEnd: false,
             loading: false,
@@ -850,38 +867,38 @@ class ViewDevelop extends React.Component {
     } catch (error) {}
   };
 
-  Selecitem = ({index, item}) => {
-    console.log('SelecitemSelecitemSelecitem', item.activity_code);
-    let {Selec, DataTopPick} = this.state;
+  Selecitem = ({ index, item }) => {
+    console.log("SelecitemSelecitemSelecitem", item.activity_code);
+    let { Selec, DataTopPick } = this.state;
     Selec[index] = !Selec[index];
-    this.setState({Selec: Selec});
+    this.setState({ Selec: Selec });
     if (Selec[index] === true) {
-      console.log('ส่ง', item.activity_code);
-      return this._SendBasket({code1: item.activity_code});
+      console.log("ส่ง", item.activity_code);
+      return this._SendBasket({ code1: item.activity_code });
     } else {
-      console.log('ลบ', item.activity_code);
-      return this._DeleteBasket({code1: item.activity_code});
+      console.log("ลบ", item.activity_code);
+      return this._DeleteBasket({ code1: item.activity_code });
     }
   };
 
-  Selecitem2 = ({index, item}) => {
+  Selecitem2 = ({ index, item }) => {
     // alert('Selecitem2Ficii'+item.activity_code);
-    let {Selec2, DataTopPick} = this.state;
+    let { Selec2, DataTopPick } = this.state;
     Selec2[index] = !Selec2[index];
-    this.setState({Selec2: Selec2});
+    this.setState({ Selec2: Selec2 });
     if (Selec2[index] === true) {
-      console.log('ส่ง', item.activity_code);
-      return this._SendBasket({code1: item.activity_code});
+      console.log("ส่ง", item.activity_code);
+      return this._SendBasket({ code1: item.activity_code });
     } else {
-      console.log('ลบ', item.activity_code);
-      return this._DeleteBasket({code1: item.activity_code});
+      console.log("ลบ", item.activity_code);
+      return this._DeleteBasket({ code1: item.activity_code });
     }
   };
 
-  _DeleteBasket = async values => {
-    console.log('delete', values);
+  _DeleteBasket = async (values) => {
+    console.log("delete", values);
     try {
-      var tokenActivity = '';
+      var tokenActivity = "";
       if (this.props.getUser.userDetails.res_result.type == 6) {
         tokenActivity = this.props.authData.token.res_result.token;
       } else {
@@ -894,16 +911,16 @@ class ViewDevelop extends React.Component {
             basket: [
               {
                 basket_code: values.code1,
-                basket_type: '2',
+                basket_type: "2",
               },
             ],
           },
           token: tokenActivity,
           type: this.props.getUser.userDetails.res_result.type,
-        }),
+        })
       );
       if (values.check == 1) {
-        if (response.res_code === '00') {
+        if (response.res_code === "00") {
           // this._getAllDevelop();
 
           this.setState({
@@ -917,12 +934,12 @@ class ViewDevelop extends React.Component {
           this._getAllDevelop();
         }
       }
-      console.log(response, 'Delete');
+      console.log(response, "Delete");
     } catch (error) {}
   };
 
   web(item) {
-    var uri = item.split('/');
+    var uri = item.split("/");
     console.log(uri[10]);
     return uri[10];
     // return item.substring(83, 88);
@@ -942,29 +959,29 @@ class ViewDevelop extends React.Component {
       if (await InAppBrowser.isAvailable()) {
         const result = await InAppBrowser.open(url, deepLink, {
           // iOS Properties
-          dismissButtonStyle: 'cancel',
-          preferredBarTintColor: '#453AA4',
-          preferredControlTintColor: 'white',
+          dismissButtonStyle: "cancel",
+          preferredBarTintColor: "#453AA4",
+          preferredControlTintColor: "white",
           readerMode: false,
           animated: true,
-          modalPresentationStyle: 'fullScreen',
-          modalTransitionStyle: 'partialCurl',
+          modalPresentationStyle: "fullScreen",
+          modalTransitionStyle: "partialCurl",
           modalEnabled: true,
           enableBarCollapsing: false,
           // Android Properties
           showTitle: true,
-          toolbarColor: '#6200EE',
-          secondaryToolbarColor: 'black',
+          toolbarColor: "#6200EE",
+          secondaryToolbarColor: "black",
           enableUrlBarHiding: true,
           enableDefaultShare: true,
           forceCloseOnRedirection: false,
           // Specify full animation resource identifier(package:anim/name)
           // or only resource name(in case of animation bundled with app).
           animations: {
-            startEnter: 'slide_in_right',
-            startExit: 'slide_out_left',
-            endEnter: 'slide_in_left',
-            endExit: 'slide_out_right',
+            startEnter: "slide_in_right",
+            startExit: "slide_out_left",
+            endEnter: "slide_in_left",
+            endExit: "slide_out_right",
           },
         });
       } else Linking.openURL(url);
@@ -973,41 +990,41 @@ class ViewDevelop extends React.Component {
     }
   }
 
-  SelecItemStatus = item => {
+  SelecItemStatus = (item) => {
     // console.log(item);
-    let {AllDevelop} = this.state;
+    let { AllDevelop } = this.state;
 
-    AllDevelop = AllDevelop.map(e => {
+    AllDevelop = AllDevelop.map((e) => {
       if (item.status_basket === e.status_basket) {
-        item.status_basket = 'Y';
+        item.status_basket = "Y";
 
         return item;
       } else {
-        e.status_basket = 'N';
+        e.status_basket = "N";
         return e;
       }
     });
     // this.setState({Detail});
   };
 
-  SelecItemStatus2 = item => {
+  SelecItemStatus2 = (item) => {
     // console.log(item);
-    let {AllDevelopElearning} = this.state;
+    let { AllDevelopElearning } = this.state;
 
-    AllDevelopElearning = AllDevelopElearning.map(e => {
+    AllDevelopElearning = AllDevelopElearning.map((e) => {
       if (item.status_basket === e.status_basket) {
-        item.status_basket = 'Y';
+        item.status_basket = "Y";
 
         return item;
       } else {
-        e.status_basket = 'N';
+        e.status_basket = "N";
         return e;
       }
     });
     // this.setState({Detail});
   };
 
-  Listre = ({item, index}) => {
+  Listre = ({ item, index }) => {
     if (item.status_basket === true) {
       this.state.Selec.push(true);
     }
@@ -1016,43 +1033,43 @@ class ViewDevelop extends React.Component {
     }
 
     return (
-      <View style={{backgroundColor: '#f7f9fc'}}>
+      <View style={{ backgroundColor: "#f7f9fc" }}>
         <ListItem
-       containerStyle={{
-        marginBottom: 8,
-        borderRadius: 10,
-        alignSelf: 'center',
-        flex: 1,
-        width: '95%',
-        // shadowColor: '#f4f6fa ',
-        // shadowOffset: {
-        //   width: 0,
-        //   height: 1,
-        // },=j;
-        // shadowOpacity: 0.18,
-        // shadowRadius: 1.00,
-        shadowColor: '#000',
-        shadowOffset: {
-          width: 0,
-          height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
+          containerStyle={{
+            marginBottom: 8,
+            borderRadius: 10,
+            alignSelf: "center",
+            flex: 1,
+            width: "95%",
+            // shadowColor: '#f4f6fa ',
+            // shadowOffset: {
+            //   width: 0,
+            //   height: 1,
+            // },=j;
+            // shadowOpacity: 0.18,
+            // shadowRadius: 1.00,
+            shadowColor: "#000",
+            shadowOffset: {
+              width: 0,
+              height: 2,
+            },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
 
-        elevation: 5,
-      }}
+            elevation: 5,
+          }}
           style={{
-            width: '100%',
+            width: "100%",
             height: null,
             flex: 1,
 
-            backgroundColor: '#f4f5f850',
+            backgroundColor: "#f4f5f850",
           }}
           leftAvatar={
-            <View style={[Styles.alignItemsCenter, {flex: 0.4}]}>
-              <View style={{alignItems: 'center'}}>
+            <View style={[Styles.alignItemsCenter, { flex: 0.4 }]}>
+              <View style={{ alignItems: "center" }}>
                 <TouchableOpacity
-                  style={{alignItems: 'center'}}
+                  style={{ alignItems: "center" }}
                   onPress={() =>
                     this.setState({
                       Show: !this.state.Show,
@@ -1062,11 +1079,11 @@ class ViewDevelop extends React.Component {
                       StarD: this.FullDate(item.activity_list_start_date),
                       EndD: this.FullDate(item.activity_list_end_date),
                       name:
-                        I18n.locale === 'th'
+                        I18n.locale === "th"
                           ? item.activity_list_topic_th
                           : item.activity_list_topic_en,
                       location:
-                        I18n.locale === 'th'
+                        I18n.locale === "th"
                           ? item.activity_list_location_th
                           : item.activity_list_topic_en,
                       detail: item.activity_list_desc_th,
@@ -1075,14 +1092,14 @@ class ViewDevelop extends React.Component {
                       code: item.activity_code,
                       Close: item.active_status,
                       price:
-                        I18n.locale === 'th'
+                        I18n.locale === "th"
                           ? item.activity_price_th
                           : item.activity_price_en,
                       StatusFa: this.state.Selec[index] === true ? true : false,
                       linklive: item.activity_list_live_url,
                       live: item.status_live,
                       contry_TH:
-                        I18n.locale === 'th'
+                        I18n.locale === "th"
                           ? item.list_country_name_th
                           : item.list_country_name_en,
 
@@ -1096,18 +1113,19 @@ class ViewDevelop extends React.Component {
                       url: item.list_register_url,
                       formTypeActivity: item.formTypeActivity,
                     })
-                  }>
+                  }
+                >
                   {/* <Image
                     source={{uri: item.activity_list_logo_thumb}}
                     style={{width: 60, height: 55, borderRadius: 15}}
                   /> */}
                   <Image
-                    source={require('../../image/devlop.png')}
-                    style={{width: 55, height: 50, borderRadius: 15}}
+                    source={require("../../image/devlop.png")}
+                    style={{ width: 55, height: 50, borderRadius: 15 }}
                   />
                   <Text style={Styles.textactivityDate}>
                     {this.Star_Date(item.activity_list_start_date)}
-                    {this.End_Date(item.activity_list_end_date)}{' '}
+                    {this.End_Date(item.activity_list_end_date)}{" "}
                     {this.Yearend(item.activity_list_end_date)}
                   </Text>
                 </TouchableOpacity>
@@ -1115,9 +1133,9 @@ class ViewDevelop extends React.Component {
             </View>
           }
           title={
-            <View style={{flex: 1}}>
-              <View style={{flexDirection: 'row'}}>
-                <View style={{width: '83%'}}>
+            <View style={{ flex: 1 }}>
+              <View style={{ flexDirection: "row" }}>
+                <View style={{ width: "83%" }}>
                   <Text
                     onPress={() =>
                       this.setState({
@@ -1128,11 +1146,11 @@ class ViewDevelop extends React.Component {
                         StarD: this.FullDate(item.activity_list_start_date),
                         EndD: this.FullDate(item.activity_list_end_date),
                         name:
-                          I18n.locale === 'th'
+                          I18n.locale === "th"
                             ? item.activity_list_topic_th
                             : item.activity_list_topic_en,
                         location:
-                          I18n.locale === 'th'
+                          I18n.locale === "th"
                             ? item.activity_list_location_th
                             : item.activity_list_topic_en,
                         detail: item.activity_list_desc_th,
@@ -1141,7 +1159,7 @@ class ViewDevelop extends React.Component {
                         code: item.activity_code,
                         Close: item.active_status,
                         price:
-                          I18n.locale === 'th'
+                          I18n.locale === "th"
                             ? item.activity_price_th
                             : item.activity_price_en,
                         StatusFa:
@@ -1149,14 +1167,14 @@ class ViewDevelop extends React.Component {
                         linklive: item.activity_list_live_url,
                         live: item.status_live,
                         contry_TH:
-                          I18n.locale === 'th'
+                          I18n.locale === "th"
                             ? item.list_country_name_th
                             : item.list_country_name_en,
 
                         contry_img_flag: item.img_flag,
                         endregis: this.FullDate(item.activity_list_end_regis),
                         starretgis: this.FullDate(
-                          item.activity_list_start_regis,
+                          item.activity_list_start_regis
                         ),
                         product_category: item.activity_product_category,
                         daparment_name: item.activity_list_department_name,
@@ -1167,70 +1185,74 @@ class ViewDevelop extends React.Component {
                       })
                     }
                     numberOfLines={2}
-                    style={Styles.textActivityTitl}>
-                    {I18n.locale === 'th'
+                    style={Styles.textActivityTitl}
+                  >
+                    {I18n.locale === "th"
                       ? item.activity_list_topic_th
                       : item.activity_list_topic_en}
                   </Text>
                 </View>
                 <View
                   style={{
-                    width: '30%',
+                    width: "30%",
                     bottom: 10,
-                  }}>
+                  }}
+                >
                   <CheckBox
                     checkedIcon={
                       <Image
-                        style={{width: 25, height: 25, top: -10}}
-                        source={require('../../image/PickerMarket.png')}
+                        style={{ width: 25, height: 25, top: -10 }}
+                        source={require("../../image/PickerMarket.png")}
                       />
                     }
                     uncheckedIcon={
                       <Image
-                        style={{width: 25, height: 25, top: -10}}
-                        source={require('../../image/shoping.png')}
+                        style={{ width: 25, height: 25, top: -10 }}
+                        source={require("../../image/shoping.png")}
                       />
                     }
                     checked={this.state.Selec[index]}
                     onPress={() => {
                       this.SelecItemStatus(item);
-                      this.Selecitem({item: item, index: index});
+                      this.Selecitem({ item: item, index: index });
                     }}
                   />
                 </View>
               </View>
-              <View style={{flex: 1, flexDirection: 'row'}}>
+              <View style={{ flex: 1, flexDirection: "row" }}>
                 <View
                   style={{
                     flex: 0.1,
-                    flexDirection: 'row',
-                    alignItems: 'center',
+                    flexDirection: "row",
+                    alignItems: "center",
 
-                    alignSelf: 'flex-start',
-                  }}>
-                  {item.activity_list_location_th === 'ออนไลน์' ? (
+                    alignSelf: "flex-start",
+                  }}
+                >
+                  {item.activity_list_location_th === "ออนไลน์" ? (
                     <Image
-                      style={{width: 13, height: 13, top: 3}}
-                      source={require('../../image/WWW.png')}
+                      style={{ width: 13, height: 13, top: 3 }}
+                      source={require("../../image/WWW.png")}
                     />
                   ) : (
                     <Image
-                      style={{width: 9, height: 12, top: 3}}
-                      source={require('../../image/makerlocation.png')}
+                      style={{ width: 9, height: 12, top: 3 }}
+                      source={require("../../image/makerlocation.png")}
                     />
                   )}
                 </View>
                 <View
                   style={{
                     flex: 1.4,
-                    flexDirection: 'row',
-                    alignItems: 'center',
+                    flexDirection: "row",
+                    alignItems: "center",
 
-                    alignSelf: 'flex-start',
-                  }}>
+                    alignSelf: "flex-start",
+                  }}
+                >
                   <Text numberOfLines={2} style={Styles.textactivityloca}>
-                    {' '}
-                    {I18n.locale === 'th'
+                    {" "}
+                    {I18n.locale === "th"
                       ? item.activity_list_location_th
                       : item.activity_list_location_en}
                   </Text>
@@ -1239,7 +1261,7 @@ class ViewDevelop extends React.Component {
             </View>
           }
           subtitle={
-            <View style={[Styles.ViewSub10, {marginTop: 15, flex: 1}]}>
+            <View style={[Styles.ViewSub10, { marginTop: 15, flex: 1 }]}>
               {/* {this.props.getStatus1.isResult.status_confirm_identity
                 .status_code != 0 &&
               this.props.getStatus1.isResult.status_confirm_identity
@@ -1255,14 +1277,13 @@ class ViewDevelop extends React.Component {
                           .status_code === 0
                       ) {
                         // alert('กรุณายืนยันตัวตน ')
-                        this.props.navigation.navigate('Identity');
+                        this.props.navigation.navigate("Identity");
                       } else if (
                         this.props.getStatus1.isResult.status_confirm_identity
                           .status_code === 1
                       ) {
-                        alert(I18n.t('alert_Data_verification_progress'));
+                        alert(I18n.t("alert_Data_verification_progress"));
                       } else {
-                       
                         this._CheckRegister({
                           activity_code: item.activity_code,
                           member_cid: this.state.IDcard,
@@ -1274,11 +1295,11 @@ class ViewDevelop extends React.Component {
                           StarD: this.FullDate(item.activity_list_start_date),
                           EndD: this.FullDate(item.activity_list_end_date),
                           name:
-                            I18n.locale === 'th'
+                            I18n.locale === "th"
                               ? item.activity_list_topic_th
                               : item.activity_list_topic_en,
                           location:
-                            I18n.locale === 'th'
+                            I18n.locale === "th"
                               ? item.activity_list_location_th
                               : item.activity_list_topic_en,
                           detail: item.activity_list_desc_th,
@@ -1286,7 +1307,7 @@ class ViewDevelop extends React.Component {
                           register: item.list_register_url,
                           code: item.activity_code,
                           price:
-                            I18n.locale === 'th'
+                            I18n.locale === "th"
                               ? item.activity_price_th
                               : item.activity_price_en,
                           StatusFa: this.state.Selec[item.activity_code],
@@ -1296,20 +1317,20 @@ class ViewDevelop extends React.Component {
                           live: item.status_live,
                           Close: item.active_status,
                           contry_TH:
-                            I18n.locale === 'th'
+                            I18n.locale === "th"
                               ? item.list_country_name_th
                               : item.list_country_name_en,
 
                           contry_img_flag: item.img_flag,
                           endregis: this.FullDate(item.activity_list_end_regis),
                           starretgis: this.FullDate(
-                            item.activity_list_start_regis,
+                            item.activity_list_start_regis
                           ),
                           product_category: item.activity_product_category,
                           daparment_name: item.activity_list_department_name,
                           officer_name: item.activity_list_officer_name,
                           deparment_tel: item.activity_list_department_tel,
-                          imgtype: require('../../image/devlop.png'),
+                          imgtype: require("../../image/devlop.png"),
                         });
                       }
                     }}
@@ -1317,11 +1338,12 @@ class ViewDevelop extends React.Component {
                       item.active_status === true
                         ? Styles.TouchSub2
                         : Styles.TouchSub5
-                    }>
+                    }
+                  >
                     <Text style={Styles.textactivityregister}>
                       {item.active_status === true
-                        ? I18n.t('translate_Apply_activities')
-                        : I18n.t('translate_Applacation')}
+                        ? I18n.t("translate_Apply_activities")
+                        : I18n.t("translate_Applacation")}
                     </Text>
                   </TouchableOpacity>
                 ) : (
@@ -1342,11 +1364,11 @@ class ViewDevelop extends React.Component {
                     StarD: this.FullDate(item.activity_list_start_date),
                     EndD: this.FullDate(item.activity_list_end_date),
                     name:
-                      I18n.locale === 'th'
+                      I18n.locale === "th"
                         ? item.activity_list_topic_th
                         : item.activity_list_topic_en,
                     location:
-                      I18n.locale === 'th'
+                      I18n.locale === "th"
                         ? item.activity_list_location_th
                         : item.activity_list_topic_en,
                     detail: item.activity_list_desc_th,
@@ -1355,14 +1377,14 @@ class ViewDevelop extends React.Component {
                     code: item.activity_code,
                     Close: item.active_status,
                     price:
-                      I18n.locale === 'th'
+                      I18n.locale === "th"
                         ? item.activity_price_th
                         : item.activity_price_en,
                     StatusFa: this.state.Selec[index] === true ? true : false,
                     linklive: item.activity_list_live_url,
                     live: item.status_live,
                     contry_TH:
-                      I18n.locale === 'th'
+                      I18n.locale === "th"
                         ? item.list_country_name_th
                         : item.list_country_name_en,
 
@@ -1378,85 +1400,93 @@ class ViewDevelop extends React.Component {
                   })
                 }
                 //  hitSlop={{top: 20, bottom: 20, left: 50, right: 50,borderWidth:1}}
-                style={Styles.TouchRead}>
+                style={Styles.TouchRead}
+              >
                 <Image
-                  style={{width: 17, height: 13}}
-                  source={require('../../image/readDetail.png')}
+                  style={{ width: 17, height: 13 }}
+                  source={require("../../image/readDetail.png")}
                 />
                 <Text style={Styles.textreaddetail}>
-                  {' '}
-                  {I18n.t('translate_Readmore')}
+                  {" "}
+                  {I18n.t("translate_Readmore")}
                 </Text>
               </TouchableOpacity>
               <TouchableOpacity
                 onPress={() => {
                   this.onShare(item);
                 }}
-                style={{flex: 1, alignItems: 'flex-end'}}>
+                style={{ flex: 1, alignItems: "flex-end" }}
+              >
                 <Image
-                  resizeMode={'contain'}
-                  style={{width: 14, height: 16}}
-                  source={require('../../image/sharelx.png')}
+                  resizeMode={"contain"}
+                  style={{ width: 14, height: 16 }}
+                  source={require("../../image/sharelx.png")}
                 />
               </TouchableOpacity>
 
-              {item.status_live === 'C' && (
+              {item.status_live === "C" && (
                 <TouchableOpacity
-                  onPress={() => Linking.openURL(item.activity_list_live_url)}>
+                  onPress={() => Linking.openURL(item.activity_list_live_url)}
+                >
                   <View
                     style={[
                       Styles.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
-                    ]}>
+                      { right: 10, justifyContent: "center" },
+                    ]}
+                  >
                     <Image
-                      style={{width: 26, height: 15}}
-                      source={require('../../image/liveme.png')}
+                      style={{ width: 26, height: 15 }}
+                      source={require("../../image/liveme.png")}
                     />
-                    <View style={{bottom: 13, right: 22}}>
-                      <Text style={{fontSize: 10, color: '#334c6e'}}>
-                        {I18n.t('translate_Prepare')}
+                    <View style={{ bottom: 13, right: 22 }}>
+                      <Text style={{ fontSize: 10, color: "#334c6e" }}>
+                        {I18n.t("translate_Prepare")}
                       </Text>
                     </View>
                   </View>
                 </TouchableOpacity>
               )}
-              {item.status_live === 'Y' && (
+              {item.status_live === "Y" && (
                 <TouchableOpacity
                   style={{}}
-                  onPress={() => Linking.openURL(item.activity_list_live_url)}>
+                  onPress={() => Linking.openURL(item.activity_list_live_url)}
+                >
                   <View
                     style={[
                       Styles.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
-                    ]}>
+                      { right: 10, justifyContent: "center" },
+                    ]}
+                  >
                     <Image
-                      style={{width: 26, height: 15}}
-                      source={require('../../image/liveme.png')}
+                      style={{ width: 26, height: 15 }}
+                      source={require("../../image/liveme.png")}
                     />
-                    <View style={{bottom: 13, right: 22}}>
-                      <Text style={{fontSize: 10, color: '#ff5e5e'}}>
-                        {I18n.t('translate_OnAir')}
+                    <View style={{ bottom: 13, right: 22 }}>
+                      <Text style={{ fontSize: 10, color: "#ff5e5e" }}>
+                        {I18n.t("translate_OnAir")}
                       </Text>
                     </View>
                   </View>
                 </TouchableOpacity>
               )}
 
-              {item.status_live === 'B' && (
+              {item.status_live === "B" && (
                 <TouchableOpacity
-                  onPress={() => Linking.openURL(item.activity_list_live_url)}>
+                  onPress={() => Linking.openURL(item.activity_list_live_url)}
+                >
                   <View
                     style={[
                       Styles.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
-                    ]}>
+                      { right: 10, justifyContent: "center" },
+                    ]}
+                  >
                     <Image
-                      style={{width: 26, height: 15}}
-                      source={require('../../image/liveme.png')}
+                      style={{ width: 26, height: 15 }}
+                      source={require("../../image/liveme.png")}
                     />
-                    <View style={{bottom: 13, right: 22}}>
-                      <Text style={{fontSize: 10, color: '#b7b7b7'}}>
-                        {I18n.t('translate_returnBack')}
+                    <View style={{ bottom: 13, right: 22 }}>
+                      <Text style={{ fontSize: 10, color: "#b7b7b7" }}>
+                        {I18n.t("translate_returnBack")}
                       </Text>
                     </View>
                   </View>
@@ -1468,7 +1498,7 @@ class ViewDevelop extends React.Component {
       </View>
     );
   };
-  ListreElearing = ({item, index}) => {
+  ListreElearing = ({ item, index }) => {
     if (item.status_basket === true) {
       this.state.Selec2.push(true);
     }
@@ -1477,14 +1507,14 @@ class ViewDevelop extends React.Component {
     }
 
     return (
-      <View style={{backgroundColor: '#f7f9fc'}}>
+      <View style={{ backgroundColor: "#f7f9fc" }}>
         <ListItem
           containerStyle={{
             marginBottom: 8,
             borderRadius: 10,
-            alignSelf: 'center',
+            alignSelf: "center",
             flex: 1,
-            width: '95%',
+            width: "95%",
             // shadowColor: '#f4f6fa ',
             // shadowOffset: {
             //   width: 0,
@@ -1492,28 +1522,28 @@ class ViewDevelop extends React.Component {
             // },=j;
             // shadowOpacity: 0.18,
             // shadowRadius: 1.00,
-            shadowColor: '#000',
+            shadowColor: "#000",
             shadowOffset: {
               width: 0,
               height: 2,
             },
             shadowOpacity: 0.25,
             shadowRadius: 3.84,
-    
+
             elevation: 5,
           }}
           style={{
-            width: '100%',
+            width: "100%",
             height: null,
             flex: 1,
 
-            backgroundColor: '#f4f5f850',
+            backgroundColor: "#f4f5f850",
           }}
           leftAvatar={
-            <View style={[Styles.alignItemsCenter, {flex: 0.4}]}>
-              <View style={{alignItems: 'center'}}>
+            <View style={[Styles.alignItemsCenter, { flex: 0.4 }]}>
+              <View style={{ alignItems: "center" }}>
                 <TouchableOpacity
-                  style={{alignItems: 'center'}}
+                  style={{ alignItems: "center" }}
                   onPress={() =>
                     this.setState({
                       Show: !this.state.Show,
@@ -1523,11 +1553,11 @@ class ViewDevelop extends React.Component {
                       StarD: this.FullDate(item.activity_list_start_date),
                       EndD: this.FullDate(item.activity_list_end_date),
                       name:
-                        I18n.locale === 'th'
+                        I18n.locale === "th"
                           ? item.activity_list_topic_th
                           : item.activity_list_topic_en,
                       location:
-                        I18n.locale === 'th'
+                        I18n.locale === "th"
                           ? item.activity_list_location_th
                           : item.activity_list_topic_en,
                       detail: item.activity_list_desc_th,
@@ -1536,14 +1566,15 @@ class ViewDevelop extends React.Component {
                       code: item.activity_code,
                       Close: item.active_status,
                       price:
-                        I18n.locale === 'th'
+                        I18n.locale === "th"
                           ? item.activity_price_th
                           : item.activity_price_en,
-                      StatusFa: this.state.Selec2[index] === true ? true : false,
+                      StatusFa:
+                        this.state.Selec2[index] === true ? true : false,
                       linklive: item.activity_list_live_url,
                       live: item.status_live,
                       contry_TH:
-                        I18n.locale === 'th'
+                        I18n.locale === "th"
                           ? item.list_country_name_th
                           : item.list_country_name_en,
 
@@ -1557,18 +1588,19 @@ class ViewDevelop extends React.Component {
                       url: item.list_register_url,
                       formTypeActivity: item.formTypeActivity,
                     })
-                  }>
+                  }
+                >
                   {/* <Image
                     source={{uri: item.activity_list_logo_thumb}}
                     style={{width: 60, height: 55, borderRadius: 15}}
                   /> */}
                   <Image
-                    source={require('../../image/Elearing.png')}
-                    style={{width: 55, height: 50, borderRadius: 15}}
+                    source={require("../../image/Elearing.png")}
+                    style={{ width: 55, height: 50, borderRadius: 15 }}
                   />
                   <Text style={Styles.textactivityDate}>
                     {this.Star_Date(item.activity_list_start_date)}
-                    {this.End_Date(item.activity_list_end_date)}{' '}
+                    {this.End_Date(item.activity_list_end_date)}{" "}
                     {this.Yearend(item.activity_list_end_date)}
                   </Text>
                 </TouchableOpacity>
@@ -1576,9 +1608,9 @@ class ViewDevelop extends React.Component {
             </View>
           }
           title={
-            <View style={{flex: 1}}>
-              <View style={{flexDirection: 'row'}}>
-                <View style={{width: '83%'}}>
+            <View style={{ flex: 1 }}>
+              <View style={{ flexDirection: "row" }}>
+                <View style={{ width: "83%" }}>
                   <Text
                     onPress={() =>
                       this.setState({
@@ -1587,11 +1619,11 @@ class ViewDevelop extends React.Component {
                         StarD: this.FullDate(item.activity_list_start_date),
                         EndD: this.FullDate(item.activity_list_end_date),
                         name:
-                          I18n.locale === 'th'
+                          I18n.locale === "th"
                             ? item.activity_list_topic_th
                             : item.activity_list_topic_en,
                         location:
-                          I18n.locale === 'th'
+                          I18n.locale === "th"
                             ? item.activity_list_location_th
                             : item.activity_list_topic_en,
                         detail: item.activity_list_desc_th,
@@ -1600,7 +1632,7 @@ class ViewDevelop extends React.Component {
                         code: item.activity_code,
                         Close: item.active_status,
                         price:
-                          I18n.locale === 'th'
+                          I18n.locale === "th"
                             ? item.activity_price_th
                             : item.activity_price_en,
                         StatusFa:
@@ -1608,14 +1640,14 @@ class ViewDevelop extends React.Component {
                         linklive: item.activity_list_live_url,
                         live: item.status_live,
                         contry_TH:
-                          I18n.locale === 'th'
+                          I18n.locale === "th"
                             ? item.list_country_name_th
                             : item.list_country_name_en,
 
                         contry_img_flag: item.img_flag,
                         endregis: this.FullDate(item.activity_list_end_regis),
                         starretgis: this.FullDate(
-                          item.activity_list_start_regis,
+                          item.activity_list_start_regis
                         ),
                         product_category: item.activity_product_category,
                         daparment_name: item.activity_list_department_name,
@@ -1626,70 +1658,74 @@ class ViewDevelop extends React.Component {
                       })
                     }
                     numberOfLines={2}
-                    style={Styles.textActivityTitl}>
-                    {I18n.locale === 'th'
+                    style={Styles.textActivityTitl}
+                  >
+                    {I18n.locale === "th"
                       ? item.activity_list_topic_th
                       : item.activity_list_topic_en}
                   </Text>
                 </View>
                 <View
                   style={{
-                    width: '30%',
+                    width: "30%",
                     bottom: 10,
-                  }}>
+                  }}
+                >
                   <CheckBox
                     checkedIcon={
                       <Image
-                        style={{width: 25, height: 25, top: -10}}
-                        source={require('../../image/PickerMarket.png')}
+                        style={{ width: 25, height: 25, top: -10 }}
+                        source={require("../../image/PickerMarket.png")}
                       />
                     }
                     uncheckedIcon={
                       <Image
-                        style={{width: 25, height: 25, top: -10}}
-                        source={require('../../image/shoping.png')}
+                        style={{ width: 25, height: 25, top: -10 }}
+                        source={require("../../image/shoping.png")}
                       />
                     }
                     checked={this.state.Selec2[index]}
                     onPress={() => {
                       this.SelecItemStatus2(item);
-                      this.Selecitem2({item: item, index: index});
+                      this.Selecitem2({ item: item, index: index });
                     }}
                   />
                 </View>
               </View>
-              <View style={{flex: 1, flexDirection: 'row'}}>
+              <View style={{ flex: 1, flexDirection: "row" }}>
                 <View
                   style={{
                     flex: 0.1,
-                    flexDirection: 'row',
-                    alignItems: 'center',
+                    flexDirection: "row",
+                    alignItems: "center",
 
-                    alignSelf: 'flex-start',
-                  }}>
-                  {item.activity_list_location_th === 'ออนไลน์' ? (
+                    alignSelf: "flex-start",
+                  }}
+                >
+                  {item.activity_list_location_th === "ออนไลน์" ? (
                     <Image
-                      style={{width: 13, height: 13, top: 3}}
-                      source={require('../../image/WWW.png')}
+                      style={{ width: 13, height: 13, top: 3 }}
+                      source={require("../../image/WWW.png")}
                     />
                   ) : (
                     <Image
-                      style={{width: 9, height: 12, top: 3}}
-                      source={require('../../image/makerlocation.png')}
+                      style={{ width: 9, height: 12, top: 3 }}
+                      source={require("../../image/makerlocation.png")}
                     />
                   )}
                 </View>
                 <View
                   style={{
                     flex: 1.4,
-                    flexDirection: 'row',
-                    alignItems: 'center',
+                    flexDirection: "row",
+                    alignItems: "center",
 
-                    alignSelf: 'flex-start',
-                  }}>
+                    alignSelf: "flex-start",
+                  }}
+                >
                   <Text numberOfLines={2} style={Styles.textactivityloca}>
-                    {' '}
-                    {I18n.locale === 'th'
+                    {" "}
+                    {I18n.locale === "th"
                       ? item.activity_list_location_th
                       : item.activity_list_location_en}
                   </Text>
@@ -1698,15 +1734,14 @@ class ViewDevelop extends React.Component {
             </View>
           }
           subtitle={
-            <View style={[Styles.ViewSub10, {marginTop: 15, flex: 1}]}>
+            <View style={[Styles.ViewSub10, { marginTop: 15, flex: 1 }]}>
               {/* {this.props.getStatus1.isResult.status_confirm_identity
                 .status_code != 0 &&
               this.props.getStatus1.isResult.status_confirm_identity
                 .status_code != 1 ? ( */}
               <View>
                 {this.props.getUser.userDetails.res_result.type != 6 &&
-                this.props.getUser.userDetails.res_result.type != 4 
-                ? (
+                this.props.getUser.userDetails.res_result.type != 4 ? (
                   <TouchableOpacity
                     disabled={item.active_status === false}
                     onPress={() => {
@@ -1715,12 +1750,12 @@ class ViewDevelop extends React.Component {
                           .status_code === 0
                       ) {
                         // alert('กรุณายืนยันตัวตน ')
-                        this.props.navigation.navigate('Identity');
+                        this.props.navigation.navigate("Identity");
                       } else if (
                         this.props.getStatus1.isResult.status_confirm_identity
                           .status_code === 1
                       ) {
-                        alert(I18n.t('alert_Data_verification_progress'));
+                        alert(I18n.t("alert_Data_verification_progress"));
                       } else {
                         this._CheckRegister({
                           activity_code: item.activity_code,
@@ -1733,11 +1768,11 @@ class ViewDevelop extends React.Component {
                           StarD: this.FullDate(item.activity_list_start_date),
                           EndD: this.FullDate(item.activity_list_end_date),
                           name:
-                            I18n.locale === 'th'
+                            I18n.locale === "th"
                               ? item.activity_list_topic_th
                               : item.activity_list_topic_en,
                           location:
-                            I18n.locale === 'th'
+                            I18n.locale === "th"
                               ? item.activity_list_location_th
                               : item.activity_list_topic_en,
                           detail: item.activity_list_desc_th,
@@ -1745,7 +1780,7 @@ class ViewDevelop extends React.Component {
                           register: item.list_register_url,
                           code: item.activity_code,
                           price:
-                            I18n.locale === 'th'
+                            I18n.locale === "th"
                               ? item.activity_price_th
                               : item.activity_price_en,
                           StatusFa: this.state.Selec2[item.activity_code],
@@ -1755,20 +1790,20 @@ class ViewDevelop extends React.Component {
                           live: item.status_live,
                           Close: item.active_status,
                           contry_TH:
-                            I18n.locale === 'th'
+                            I18n.locale === "th"
                               ? item.list_country_name_th
                               : item.list_country_name_en,
 
                           contry_img_flag: item.img_flag,
                           endregis: this.FullDate(item.activity_list_end_regis),
                           starretgis: this.FullDate(
-                            item.activity_list_start_regis,
+                            item.activity_list_start_regis
                           ),
                           product_category: item.activity_product_category,
                           daparment_name: item.activity_list_department_name,
                           officer_name: item.activity_list_officer_name,
                           deparment_tel: item.activity_list_department_tel,
-                          imgtype: require('../../image/Elearing.png'),
+                          imgtype: require("../../image/Elearing.png"),
                           formTypeActivity: item.formTypeActivity,
                         });
                       }
@@ -1777,11 +1812,12 @@ class ViewDevelop extends React.Component {
                       item.active_status === true
                         ? Styles.TouchSub2
                         : Styles.TouchSub5
-                    }>
+                    }
+                  >
                     <Text style={Styles.textactivityregister}>
                       {item.active_status === true
-                        ? I18n.t('translate_Apply_activities')
-                        : I18n.t('translate_Applacation')}
+                        ? I18n.t("translate_Apply_activities")
+                        : I18n.t("translate_Applacation")}
                     </Text>
                   </TouchableOpacity>
                 ) : (
@@ -1802,11 +1838,11 @@ class ViewDevelop extends React.Component {
                     StarD: this.FullDate(item.activity_list_start_date),
                     EndD: this.FullDate(item.activity_list_end_date),
                     name:
-                      I18n.locale === 'th'
+                      I18n.locale === "th"
                         ? item.activity_list_topic_th
                         : item.activity_list_topic_en,
                     location:
-                      I18n.locale === 'th'
+                      I18n.locale === "th"
                         ? item.activity_list_location_th
                         : item.activity_list_topic_en,
                     detail: item.activity_list_desc_th,
@@ -1815,14 +1851,14 @@ class ViewDevelop extends React.Component {
                     code: item.activity_code,
                     Close: item.active_status,
                     price:
-                      I18n.locale === 'th'
+                      I18n.locale === "th"
                         ? item.activity_price_th
                         : item.activity_price_en,
                     StatusFa: this.state.Selec2[index] === true ? true : false,
                     linklive: item.activity_list_live_url,
                     live: item.status_live,
                     contry_TH:
-                      I18n.locale === 'th'
+                      I18n.locale === "th"
                         ? item.list_country_name_th
                         : item.list_country_name_en,
 
@@ -1838,85 +1874,93 @@ class ViewDevelop extends React.Component {
                   })
                 }
                 //  hitSlop={{top: 20, bottom: 20, left: 50, right: 50,borderWidth:1}}
-                style={Styles.TouchRead}>
+                style={Styles.TouchRead}
+              >
                 <Image
-                  style={{width: 17, height: 13}}
-                  source={require('../../image/readDetail.png')}
+                  style={{ width: 17, height: 13 }}
+                  source={require("../../image/readDetail.png")}
                 />
                 <Text style={Styles.textreaddetail}>
-                  {' '}
-                  {I18n.t('translate_Readmore')}
+                  {" "}
+                  {I18n.t("translate_Readmore")}
                 </Text>
               </TouchableOpacity>
               <TouchableOpacity
                 onPress={() => {
                   this.onShare(item);
                 }}
-                style={{flex: 1, alignItems: 'flex-end'}}>
+                style={{ flex: 1, alignItems: "flex-end" }}
+              >
                 <Image
-                  resizeMode={'contain'}
-                  style={{width: 14, height: 16}}
-                  source={require('../../image/sharelx.png')}
+                  resizeMode={"contain"}
+                  style={{ width: 14, height: 16 }}
+                  source={require("../../image/sharelx.png")}
                 />
               </TouchableOpacity>
 
-              {item.status_live === 'C' && (
+              {item.status_live === "C" && (
                 <TouchableOpacity
-                  onPress={() => Linking.openURL(item.activity_list_live_url)}>
+                  onPress={() => Linking.openURL(item.activity_list_live_url)}
+                >
                   <View
                     style={[
                       Styles.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
-                    ]}>
+                      { right: 10, justifyContent: "center" },
+                    ]}
+                  >
                     <Image
-                      style={{width: 26, height: 15}}
-                      source={require('../../image/liveme.png')}
+                      style={{ width: 26, height: 15 }}
+                      source={require("../../image/liveme.png")}
                     />
-                    <View style={{bottom: 13, right: 22}}>
-                      <Text style={{fontSize: 10, color: '#334c6e'}}>
-                        {I18n.t('translate_Prepare')}
+                    <View style={{ bottom: 13, right: 22 }}>
+                      <Text style={{ fontSize: 10, color: "#334c6e" }}>
+                        {I18n.t("translate_Prepare")}
                       </Text>
                     </View>
                   </View>
                 </TouchableOpacity>
               )}
-              {item.status_live === 'Y' && (
+              {item.status_live === "Y" && (
                 <TouchableOpacity
                   style={{}}
-                  onPress={() => Linking.openURL(item.activity_list_live_url)}>
+                  onPress={() => Linking.openURL(item.activity_list_live_url)}
+                >
                   <View
                     style={[
                       Styles.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
-                    ]}>
+                      { right: 10, justifyContent: "center" },
+                    ]}
+                  >
                     <Image
-                      style={{width: 26, height: 15}}
-                      source={require('../../image/liveme.png')}
+                      style={{ width: 26, height: 15 }}
+                      source={require("../../image/liveme.png")}
                     />
-                    <View style={{bottom: 13, right: 22}}>
-                      <Text style={{fontSize: 10, color: '#ff5e5e'}}>
-                        {I18n.t('translate_OnAir')}
+                    <View style={{ bottom: 13, right: 22 }}>
+                      <Text style={{ fontSize: 10, color: "#ff5e5e" }}>
+                        {I18n.t("translate_OnAir")}
                       </Text>
                     </View>
                   </View>
                 </TouchableOpacity>
               )}
 
-              {item.status_live === 'B' && (
+              {item.status_live === "B" && (
                 <TouchableOpacity
-                  onPress={() => Linking.openURL(item.activity_list_live_url)}>
+                  onPress={() => Linking.openURL(item.activity_list_live_url)}
+                >
                   <View
                     style={[
                       Styles.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
-                    ]}>
+                      { right: 10, justifyContent: "center" },
+                    ]}
+                  >
                     <Image
-                      style={{width: 26, height: 15}}
-                      source={require('../../image/liveme.png')}
+                      style={{ width: 26, height: 15 }}
+                      source={require("../../image/liveme.png")}
                     />
-                    <View style={{bottom: 13, right: 22}}>
-                      <Text style={{fontSize: 10, color: '#b7b7b7'}}>
-                        {I18n.t('translate_returnBack')}
+                    <View style={{ bottom: 13, right: 22 }}>
+                      <Text style={{ fontSize: 10, color: "#b7b7b7" }}>
+                        {I18n.t("translate_returnBack")}
                       </Text>
                     </View>
                   </View>
@@ -1936,7 +1980,7 @@ class ViewDevelop extends React.Component {
     this.checkMM();
   }
 
-  handleIndexChange = index => {
+  handleIndexChange = (index) => {
     this.setState({
       ...this.state,
       selectedIndex: index,
@@ -1944,10 +1988,10 @@ class ViewDevelop extends React.Component {
   };
 
   render() {
-    const {AllDevelop, AllDevelopElearning} = this.state;
+    const { AllDevelop, AllDevelopElearning } = this.state;
     console.log(AllDevelop);
     return (
-      <View style={{backgroundColor: '#ffffff', flex: 1}}>
+      <View style={{ backgroundColor: "#ffffff", flex: 1 }}>
         {/* <Headers
           
           navigation={this.props.navigation}
@@ -1963,85 +2007,93 @@ class ViewDevelop extends React.Component {
 
         {this.state.Show === true && (
           <Overlay
-            backdropStyle={{backgroundColor: '#2d6dc480'}}
-            onBackdropPress={() => this.setState({Show: false})}
-            isVisible={this.state.Show}>
+            backdropStyle={{ backgroundColor: "#2d6dc480" }}
+            onBackdropPress={() => this.setState({ Show: false })}
+            isVisible={this.state.Show}
+          >
             <View style={Styles.OverlayHight}>
               <View style={Styles.OverlayView1}>
-                <TouchableOpacity onPress={() => this.setState({Show: false})}>
+                <TouchableOpacity
+                  onPress={() => this.setState({ Show: false })}
+                >
                   <Image
                     style={Styles.ImgClose}
-                    source={require('../../image/closemenu.png')}
+                    source={require("../../image/closemenu.png")}
                   />
                 </TouchableOpacity>
               </View>
               <ScrollView>
                 <View style={Styles.OverlayView2}>
                   <View style={Styles.OverlayView3}>
-                    {this.state.img != '' ? (
+                    {this.state.img != "" ? (
                       <Image
-                        resizeMode={'cover'}
-                        style={{width: 334, height: 216}}
-                        source={{uri: this.state.img}}
+                        resizeMode={"cover"}
+                        style={{ width: 334, height: 216 }}
+                        source={{ uri: this.state.img }}
                       />
                     ) : (
                       <Image
-                        resizeMode={'contain'}
-                        style={{width: '100%', height: 216}}
-                        source={require('../../image/banerDrive.png')}
+                        resizeMode={"contain"}
+                        style={{ width: "100%", height: 216 }}
+                        source={require("../../image/banerDrive.png")}
                       />
                     )}
                   </View>
-                  <View style={{margin: 10}}>
+                  <View style={{ margin: 10 }}>
                     <Text style={Styles.popupTextTitle}>{this.state.name}</Text>
                     <Text style={Styles.opoupTextData1}>
                       {this.state.StarD} - {this.state.EndD}
                     </Text>
                     <Text style={Styles.opoupTextData1}>
-                      {I18n.t('translate_DataRegister')} :{' '}
-                      {this.state.starretgis} - {this.state.endregis}{' '}
+                      {I18n.t("translate_DataRegister")} :{" "}
+                      {this.state.starretgis} - {this.state.endregis}{" "}
                     </Text>
 
                     <View
                       style={{
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                      }}>
-                      <View style={{flex: 1, flexDirection: 'row'}}>
+                        flexDirection: "row",
+                        alignItems: "center",
+                      }}
+                    >
+                      <View style={{ flex: 1, flexDirection: "row" }}>
                         <Image
-                          style={{width: 18, height: 13, top: 4}}
-                          source={{uri: this.state.contry_img_flag}}
+                          style={{ width: 18, height: 13, top: 4 }}
+                          source={{ uri: this.state.contry_img_flag }}
                         />
                         <Text style={Styles.popupTextloca}>
-                          {'  '}
+                          {"  "}
                           {this.state.contry_TH}
                         </Text>
                       </View>
-                      <View style={{flex: 0.3}}>
+                      <View style={{ flex: 0.3 }}>
                         <TouchableOpacity
                           style={{
-                            backgroundColor: '#2d6dc4',
+                            backgroundColor: "#2d6dc4",
 
                             borderRadius: 11,
-                          }}>
-                          <Text style={Styles.popupTextMap}>{I18n.t('transalte_map')}</Text>
+                          }}
+                        >
+                          <Text style={Styles.popupTextMap}>
+                            {I18n.t("transalte_map")}
+                          </Text>
                         </TouchableOpacity>
                       </View>
                     </View>
                     <View
                       style={{
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                      }}>
-                      {this.state.location === 'ออนไลน์' ? (
+                        flexDirection: "row",
+                        alignItems: "center",
+                      }}
+                    >
+                      {this.state.location === "ออนไลน์" ? (
                         <Image
-                          style={{width: 12, height: 12, top: 0}}
-                          source={require('../../image/WWW.png')}
+                          style={{ width: 12, height: 12, top: 0 }}
+                          source={require("../../image/WWW.png")}
                         />
                       ) : (
                         <Image
-                          style={{width: 9, height: 12}}
-                          source={require('../../image/maker2.png')}
+                          style={{ width: 9, height: 12 }}
+                          source={require("../../image/maker2.png")}
                         />
                       )}
                       {/* <Image
@@ -2049,94 +2101,103 @@ class ViewDevelop extends React.Component {
                         source={require('../../image/maker2.png')}
                       /> */}
                       <Text style={Styles.popupTextloca}>
-                        {'  '}
+                        {"  "}
                         {this.state.location}
                       </Text>
                     </View>
-                    <View style={{marginTop: 10}}>
+                    <View style={{ marginTop: 10 }}>
                       <Text style={Styles.opoupTextData1}>
-                        {I18n.t('translate_ActPrice')} : {this.state.price}
+                        {I18n.t("translate_ActPrice")} : {this.state.price}
                       </Text>
                     </View>
-                    <View style={{marginTop: 0}}>
+                    <View style={{ marginTop: 0 }}>
                       <Text style={Styles.opoupTextData1}>
-                        {I18n.t('translate_Num')} : {this.state.partic}{' '}
-                        {I18n.t('translate_case')}
+                        {I18n.t("translate_Num")} : {this.state.partic}{" "}
+                        {I18n.t("translate_case")}
                       </Text>
                     </View>
                     {/*สถานะLive */}
-                    {this.state.live === 'C' && (
+                    {this.state.live === "C" && (
                       <TouchableOpacity
-                        onPress={() => Linking.openURL(this.state.linklive)}>
+                        onPress={() => Linking.openURL(this.state.linklive)}
+                      >
                         <View style={[Styles.ViewSub3]}>
                           <ImageBackground
                             style={Styles.ImgBackgroungSub1}
-                            source={require('../../image/Live.png')}>
+                            source={require("../../image/Live.png")}
+                          >
                             <Text style={Styles.TextSub5}>
-                              {I18n.t('translate_LIVE')}
+                              {I18n.t("translate_LIVE")}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 33}}>
-                            <Text style={{fontSize: 12, color: '#334c6e'}}>
-                              {I18n.t('translate_Prepare')}
+                          <View style={{ bottom: 13, right: 33 }}>
+                            <Text style={{ fontSize: 12, color: "#334c6e" }}>
+                              {I18n.t("translate_Prepare")}
                             </Text>
                           </View>
                         </View>
                       </TouchableOpacity>
                     )}
-                    {this.state.live === 'Y' && (
+                    {this.state.live === "Y" && (
                       <TouchableOpacity
-                        onPress={() => Linking.openURL(this.state.linklive)}>
+                        onPress={() => Linking.openURL(this.state.linklive)}
+                      >
                         <View style={Styles.ViewSub3}>
                           <ImageBackground
                             style={Styles.ImgBackgroungSub1}
-                            source={require('../../image/Live.png')}>
+                            source={require("../../image/Live.png")}
+                          >
                             <Text style={Styles.TextSub5}>
-                              {I18n.t('translate_LIVE')}
+                              {I18n.t("translate_LIVE")}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 31}}>
-                            <Text style={{fontSize: 12, color: '#ff5e5e'}}>
-                              {I18n.t('translate_OnAir')}
+                          <View style={{ bottom: 13, right: 31 }}>
+                            <Text style={{ fontSize: 12, color: "#ff5e5e" }}>
+                              {I18n.t("translate_OnAir")}
                             </Text>
                           </View>
                         </View>
                       </TouchableOpacity>
                     )}
-                    {this.state.live === 'B' && (
+                    {this.state.live === "B" && (
                       <TouchableOpacity
-                        onPress={() => Linking.openURL(this.state.linklive)}>
+                        onPress={() => Linking.openURL(this.state.linklive)}
+                      >
                         <View style={Styles.ViewSub3}>
                           <ImageBackground
                             style={Styles.ImgBackgroungSub1}
-                            source={require('../../image/Live.png')}>
+                            source={require("../../image/Live.png")}
+                          >
                             <Text style={Styles.TextSub5}>
-                              {I18n.t('translate_LIVE')}
+                              {I18n.t("translate_LIVE")}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 31}}>
-                            <Text style={{fontSize: 12, color: '#b7b7b7'}}>
-                              {I18n.t('translate_returnBack')}
+                          <View style={{ bottom: 13, right: 31 }}>
+                            <Text style={{ fontSize: 12, color: "#b7b7b7" }}>
+                              {I18n.t("translate_returnBack")}
                             </Text>
                           </View>
                         </View>
                       </TouchableOpacity>
                     )}
-                    <View style={{margin: 10}}>
+                    <View style={{ margin: 10 }}>
                       <Image
-                        style={{width: 334, height: 1}}
-                        source={require('../../image/line6.png')}
+                        style={{ width: 334, height: 1 }}
+                        source={require("../../image/line6.png")}
                       />
                     </View>
 
                     {this.state.ckhide2 === false ? (
-                      <View style={{flexDirection: 'row', alignSelf: 'center'}}>
+                      <View
+                        style={{ flexDirection: "row", alignSelf: "center" }}
+                      >
                         <Text
                           onPress={() => {
-                            this.setState({ckhide2: true});
+                            this.setState({ ckhide2: true });
                           }}
-                          style={Styles.popupTexthideText}>
-                          {I18n.t('transalte_show_details')}
+                          style={Styles.popupTexthideText}
+                        >
+                          {I18n.t("transalte_show_details")}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -2147,43 +2208,43 @@ class ViewDevelop extends React.Component {
                     ) : (
                       <>
                         <Text style={Styles.popupTextTitledetail}>
-                          {I18n.t('translate_DataShow')} :
+                          {I18n.t("translate_DataShow")} :
                         </Text>
 
                         <Text style={Styles.popupTextdetail}>
-                          {' '}
-                          {this.state.StarD} - {this.state.EndD}{' '}
+                          {" "}
+                          {this.state.StarD} - {this.state.EndD}{" "}
                         </Text>
 
                         <Text style={Styles.popupTextTitledetail}>
-                          {I18n.t('translate_DataRegister')} :{' '}
+                          {I18n.t("translate_DataRegister")} :{" "}
                         </Text>
 
                         <Text style={Styles.popupTextdetail}>
-                          {' '}
-                          {this.state.starretgis} - {this.state.endregis}{' '}
+                          {" "}
+                          {this.state.starretgis} - {this.state.endregis}{" "}
                         </Text>
 
                         <Text style={Styles.popupTextTitledetail}>
-                          {I18n.t('translate_place')} :
+                          {I18n.t("translate_place")} :
                         </Text>
 
                         <Text style={Styles.popupTextdetail}>
-                          {' '}
-                          {this.state.location}{' '}
+                          {" "}
+                          {this.state.location}{" "}
                         </Text>
 
                         {/* thking */}
 
                         <Text style={Styles.popupTextTitledetail}>
-                          {I18n.t('translate_group_product')} :
+                          {I18n.t("translate_group_product")} :
                         </Text>
 
                         {this.state.product_category.map((data, index) => {
                           return (
                             <View>
                               <Text style={Styles.popupTextdetail}>
-                                {' '}
+                                {" "}
                                 {index + 1} {data.name_th}
                               </Text>
                             </View>
@@ -2201,24 +2262,26 @@ class ViewDevelop extends React.Component {
                     })} */}
 
                         <Text style={Styles.popupTextTitledetail}>
-                          {I18n.t('translate_Readmore')} :
+                          {I18n.t("translate_Readmore")} :
                         </Text>
                         <Text style={Styles.popupTextTitledetail}>
-                          {I18n.t('translate_Main')}
+                          {I18n.t("translate_Main")}
                         </Text>
-                        <View style={{width: 321, height: null}}>
+                        <View style={{ width: 321, height: null }}>
                           <Text style={Styles.popupTextdetail}>
                             {this.state.detail}
                           </Text>
                         </View>
                         <View
-                          style={{flexDirection: 'row', alignSelf: 'center'}}>
+                          style={{ flexDirection: "row", alignSelf: "center" }}
+                        >
                           <Text
                             onPress={() => {
-                              this.setState({ckhide2: false});
+                              this.setState({ ckhide2: false });
                             }}
-                            style={Styles.popupTexthideText}>
-                            {I18n.t('transalte_Hide_details')}
+                            style={Styles.popupTexthideText}
+                          >
+                            {I18n.t("transalte_Hide_details")}
                           </Text>
                           <Icon3
                             color="#2d6dc4"
@@ -2228,40 +2291,43 @@ class ViewDevelop extends React.Component {
                         </View>
                       </>
                     )}
-                    <View style={{margin: 10}}>
+                    <View style={{ margin: 10 }}>
                       <Image
-                        style={{width: 334, height: 1}}
-                        source={require('../../image/line6.png')}
+                        style={{ width: 334, height: 1 }}
+                        source={require("../../image/line6.png")}
                       />
                     </View>
-                    <View style={{flex: 1}}>
+                    <View style={{ flex: 1 }}>
                       <Text style={Styles.popupTextdetail}>
-                        {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
+                        {I18n.t("transalte_responsible_agency")} :{" "}
+                        {this.state.daparment_name}
                       </Text>
                       <Text style={Styles.popupTextdetail}>
-                        {I18n.t('transalte_project_staff')} : {this.state.officer_name}
+                        {I18n.t("transalte_project_staff")} :{" "}
+                        {this.state.officer_name}
                       </Text>
-                      <View style={{flexDirection: 'row'}}>
+                      <View style={{ flexDirection: "row" }}>
                         <Image
-                          style={{width: 29, height: 29}}
-                          source={require('../../image/phonelx.png')}
+                          style={{ width: 29, height: 29 }}
+                          source={require("../../image/phonelx.png")}
                         />
 
                         <Text
                           onPress={() => {
                             this.Call(this.state.deparment_tel);
                           }}
-                          style={{color: '#2d6dc4', fontSize: 18, top: 4}}>
-                          {'   '} {this.state.deparment_tel}
+                          style={{ color: "#2d6dc4", fontSize: 18, top: 4 }}
+                        >
+                          {"   "} {this.state.deparment_tel}
                         </Text>
                       </View>
                     </View>
                     <View
                       style={{
                         marginTop: 13,
-
-                        alignItems: 'center',
-                      }}>
+                        alignItems: "center",
+                      }}
+                    >
                       {this.state.StatusFa === false ? (
                         <TouchableOpacity
                           onPress={() => {
@@ -2270,17 +2336,18 @@ class ViewDevelop extends React.Component {
                                 code1: this.state.code,
                                 check: 1,
                               });
-                              this.setState({StatusFa: true});
+                              this.setState({ StatusFa: true });
                             }, 200);
                           }}
-                          style={{flexDirection: 'row'}}>
+                          style={{ flexDirection: "row" }}
+                        >
                           <Image
-                            style={{width: 20, height: 20}}
-                            source={require('../../image/shoping.png')}
+                            style={{ width: 20, height: 20 }}
+                            source={require("../../image/shoping.png")}
                           />
                           <Text style={Styles.popupTextdelect}>
-                            {'  '}
-                            {I18n.t('translate_addFavorites')}
+                            {"  "}
+                            {I18n.t("translate_addFavorites")}
                           </Text>
                         </TouchableOpacity>
                       ) : (
@@ -2291,17 +2358,18 @@ class ViewDevelop extends React.Component {
                                 code1: this.state.code,
                                 check: 1,
                               });
-                              this.setState({StatusFa: false});
+                              this.setState({ StatusFa: false });
                             }, 200);
                           }}
-                          style={{flexDirection: 'row'}}>
+                          style={{ flexDirection: "row" }}
+                        >
                           <Image
-                            style={{width: 20, height: 20}}
-                            source={require('../../image/startoppick.png')}
+                            style={{ width: 20, height: 20 }}
+                            source={require("../../image/startoppick.png")}
                           />
                           <Text style={Styles.popupTextdelect}>
-                            {'  '}
-                            {I18n.t('translate_Delete_basket')}
+                            {"  "}
+                            {I18n.t("translate_Delete_basket")}
                           </Text>
                         </TouchableOpacity>
                       )}
@@ -2326,12 +2394,14 @@ class ViewDevelop extends React.Component {
                                   this.props.getStatus1.isResult
                                     .status_confirm_identity.status_code === 0
                                 ) {
-                                  this.props.navigation.navigate('Identity');
+                                  this.props.navigation.navigate("Identity");
                                 } else if (
                                   this.props.getStatus1.isResult
                                     .status_confirm_identity.status_code === 1
                                 ) {
-                                  alert(I18n.t('alert_Data_verification_progress'));
+                                  alert(
+                                    I18n.t("alert_Data_verification_progress")
+                                  );
                                 } else {
                                   this._CheckRegister({
                                     activity_code: this.state.code,
@@ -2363,17 +2433,18 @@ class ViewDevelop extends React.Component {
                                     EndD_1: this.state.EndD_1,
                                   });
                                 }
-                                this.setState({Show: false});
+                                this.setState({ Show: false });
                               }}
                               style={
                                 this.state.Close
                                   ? Styles.TouchSub1
                                   : Styles.TouchSub6
-                              }>
+                              }
+                            >
                               <Text style={Styles.textactivityregister}>
                                 {this.state.Close
-                                  ? I18n.t('translate_Apply_activities')
-                                  : I18n.t('translate_Applacation')}
+                                  ? I18n.t("translate_Apply_activities")
+                                  : I18n.t("translate_Applacation")}
                               </Text>
                             </TouchableOpacity>
                           ) : (
@@ -2387,11 +2458,12 @@ class ViewDevelop extends React.Component {
                         onPress={() => {
                           this.onShareDetali(this.state.name, this.state.url);
                         }}
-                        style={{alignSelf: 'flex-end', marginTop: -25}}>
+                        style={{ alignSelf: "flex-end", marginTop: -25 }}
+                      >
                         <Image
-                          resizeMode={'contain'}
-                          style={{width: 14, height: 16}}
-                          source={require('../../image/sharelx.png')}
+                          resizeMode={"contain"}
+                          style={{ width: 14, height: 16 }}
+                          source={require("../../image/sharelx.png")}
                         />
                       </TouchableOpacity>
                     </View>
@@ -2401,56 +2473,58 @@ class ViewDevelop extends React.Component {
             </View>
           </Overlay>
         )}
-        <View style={{zIndex: -1, flex: 0.8}}>
+        <View style={{ zIndex: -1, flex: 0.8 }}>
           <SegmentedControlTab
             values={[
-              I18n.t('translate_Title_AllDEV'),
-              I18n.t('translate_Title_Elearning'),
+              I18n.t("translate_Title_AllDEV"),
+              I18n.t("translate_Title_Elearning"),
             ]}
             selectedIndex={this.state.selectedIndex}
             onTabPress={this.handleIndexChange}
           />
 
           {this.state.selectedIndex === 0 && (
-            <View style={{marginTop: 10}}>
-              <View style={{marginHorizontal: 10}}>
+            <View style={{ marginTop: 10 }}>
+              <View style={{ marginHorizontal: 10 }}>
                 <View
                   style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
+                    flexDirection: "row",
+                    alignItems: "center",
                     borderWidth: 1,
                     borderRadius: 18,
 
-                    borderColor: '#dadada',
-                  }}>
+                    borderColor: "#dadada",
+                  }}
+                >
                   <Image
-                    style={{width: 22, height: 22, left: 10, top: 2}}
-                    source={require('../../image/searchbluex.png')}
+                    style={{ width: 22, height: 22, left: 10, top: 2 }}
+                    source={require("../../image/searchbluex.png")}
                   />
 
                   <TextInput
-                    onChangeText={e => {
+                    onChangeText={(e) => {
                       this.SearchSubmit(e);
                     }}
                     placeholderTextColor="#dadada"
                     style={Styles.textsearchView}
-                    placeholder={I18n.t('translate_Seach')}
+                    placeholder={I18n.t("translate_Seach")}
                   />
                 </View>
                 <View
                   style={{
-                    flexDirection: 'row',
+                    flexDirection: "row",
                     marginTop: 10,
-                  }}>
+                  }}
+                >
                   <Popover
                     isVisible={this.state.closePopover}
                     onRequestClose={() => {
-                      this.setState({closePopover: false});
+                      this.setState({ closePopover: false });
                     }}
                     popoverStyle={{
                       flex: 1,
-                      width: '100%',
-                      shadowColor: '#000',
+                      width: "100%",
+                      shadowColor: "#000",
                       shadowOffset: {
                         width: 0,
                         height: 10,
@@ -2460,44 +2534,52 @@ class ViewDevelop extends React.Component {
 
                       elevation: 20,
                     }}
-                    backgroundStyle={{backgroundColor: '#2d6dc4', opacity: 0.6}}
+                    backgroundStyle={{
+                      backgroundColor: "#2d6dc4",
+                      opacity: 0.6,
+                    }}
                     from={
                       <TouchableOpacity
                         onPress={() => {
-                          this.setState({closePopover: true});
+                          this.setState({ closePopover: true });
                         }}
                         style={{
                           flex: 1,
                           marginHorizontal: 10,
                           height: 34,
-                          backgroundColor: '#2d6dc4',
+                          backgroundColor: "#2d6dc4",
 
                           borderRadius: 8,
-                          justifyContent: 'center',
-                        }}>
+                          justifyContent: "center",
+                        }}
+                      >
                         <Text
                           style={{
-                            color: '#FFFFFF',
+                            color: "#FFFFFF",
                             fontSize: 20,
-                            justifyContent: 'center',
-                            textAlign: 'center',
-                          }}>
-                          {I18n.t('transalte_tradeActivities_search_time')}
+                            justifyContent: "center",
+                            textAlign: "center",
+                          }}
+                        >
+                          {I18n.t("transalte_tradeActivities_search_time")}
                         </Text>
                       </TouchableOpacity>
-                    }>
+                    }
+                  >
                     <View
                       style={{
                         flex: 1,
                         borderWidth: 1,
                         height: 100,
-                        borderColor: '#2d6dc4',
-                      }}>
+                        borderColor: "#2d6dc4",
+                      }}
+                    >
                       <View
                         style={{
-                          flexDirection: 'row',
+                          flexDirection: "row",
                           // flex: 1,
-                        }}>
+                        }}
+                      >
                         <View
                           style={{
                             // borderWidth: 1,
@@ -2508,13 +2590,14 @@ class ViewDevelop extends React.Component {
                             borderRadius: 17,
                             // borderColor: 'red',
                             // justifyContent:'center'
-                          }}>
+                          }}
+                        >
                           <RNPickerSelect
                             useNativeAndroidPickerStyle={false}
                             _fixAndroidTouchableBug_={false}
                             style={{
                               inputAndroidContainer: {
-                                width: '100%',
+                                width: "100%",
                               },
                               ...pickerSelectStyles2,
                             }}
@@ -2526,7 +2609,7 @@ class ViewDevelop extends React.Component {
                                 //   I18n.locale === 'th' ? 'โปรดระบุปี' : 'Choose Year',
                               }
                             }
-                            doneText={I18n.locale === 'th' ? ' เลือก' : 'Done'}
+                            doneText={I18n.locale === "th" ? "เลือก" : "Done"}
                             onValueChange={(value, index) => {
                               this.setState({
                                 valueSelectActivity3dev: value,
@@ -2534,67 +2617,75 @@ class ViewDevelop extends React.Component {
                               });
                             }}
                             value={this.state.valueSelectActivity3dev}
-                            items={this.state.countYear.map(object => ({
+                            items={this.state.countYear.map((object) => ({
                               label: object.YearN.toString(),
                               value: object.YearN.toString(),
                               key: object.YearN.toString(),
-                            }))}>
+                            }))}
+                          >
                             <View
                               style={{
-                                flexDirection: 'row',
+                                flexDirection: "row",
                                 borderWidth: 1,
-                                borderColor: '#2d6dc4',
+                                borderColor: "#2d6dc4",
                                 height: 35,
                                 borderRadius: 17,
-                              }}>
+                              }}
+                            >
                               {this.state.valueSelectActivity3dev ===
                               undefined ? (
                                 <View
-                                  style={{flex: 1, justifyContent: 'center'}}>
+                                  style={{ flex: 1, justifyContent: "center" }}
+                                >
                                   {this.state.valueSelectMouthdev > 0 ? (
                                     <Text
                                       style={{
-                                        color: '#2d6dc4',
+                                        color: "#2d6dc4",
                                         fontSize: 20,
-                                        textAlign: 'center',
-                                      }}>
-                                      {'   '}
+                                        textAlign: "center",
+                                      }}
+                                    >
+                                      {"   "}
                                       {this.state.setdefulttear}
                                     </Text>
                                   ) : (
                                     <Text
                                       style={{
-                                        color: '#2d6dc4',
+                                        color: "#2d6dc4",
                                         fontSize: 20,
-                                        textAlign: 'center',
-                                      }}>
+                                        textAlign: "center",
+                                      }}
+                                    >
                                       {/* {I18n.t('translate_chooseyear')} */}
-                                      {'   '}
+                                      {"   "}
                                       {this.state.setdefulttear}
                                     </Text>
                                   )}
                                 </View>
                               ) : (
                                 <View
-                                  style={{flex: 1, justifyContent: 'center'}}>
+                                  style={{ flex: 1, justifyContent: "center" }}
+                                >
                                   <Text
                                     style={{
-                                      color: '#2d6dc4',
+                                      color: "#2d6dc4",
                                       fontSize: 20,
-                                      textAlign: 'center',
-                                    }}>
-                                    {'   '}
+                                      textAlign: "center",
+                                    }}
+                                  >
+                                    {"   "}
                                     {this.state.valueSelectActivity3dev}
                                   </Text>
                                 </View>
                               )}
                               <View
-                                style={{justifyContent: 'center', flex: 0.19}}>
+                                style={{ justifyContent: "center", flex: 0.19 }}
+                              >
                                 <Icon
                                   name="chevron-down"
                                   size={20}
                                   color="#2d6dc4"
-                                  style={{justifyContent: 'center'}}
+                                  style={{ justifyContent: "center" }}
                                 />
                               </View>
                             </View>
@@ -2610,21 +2701,22 @@ class ViewDevelop extends React.Component {
                             marginVertical: 10,
                             borderRadius: 17,
                             // borderColor: 'red',
-                          }}>
+                          }}
+                        >
                           <RNPickerSelect
                             useNativeAndroidPickerStyle={false}
                             _fixAndroidTouchableBug_={false}
                             style={{
                               inputAndroidContainer: {
-                                width: '100%',
+                                width: "100%",
                               },
                               ...pickerSelectStyles2,
                             }}
                             placeholder={{
                               label:
-                                I18n.locale === 'th' ? 'เดือนทั้งหมด' : 'All',
+                                I18n.locale === "th" ? "เดือนทั้งหมด" : "All",
                               value:
-                                I18n.locale === 'th' ? 'เดือนทั้งหมด' : 'All',
+                                I18n.locale === "th" ? "เดือนทั้งหมด" : "All",
                             }}
                             onValueChange={(value, index) =>
                               this.setState({
@@ -2637,86 +2729,93 @@ class ViewDevelop extends React.Component {
                                 ? this.state.valueSelectMMMM
                                 : this.state.valueSelectActivity2dev
                             }
-                            doneText={I18n.locale === 'th' ? 'เลือก' : 'Done'}
+                            doneText={I18n.locale === "th" ? "เลือก" : "Done"}
                             items={
-                              I18n.locale === 'th'
+                              I18n.locale === "th"
                                 ? [
-                                    {label: 'มกราคม', value: 'มกราคม'},
+                                    { label: "มกราคม", value: "มกราคม" },
                                     {
-                                      label: 'กุมภาพันธ์',
-                                      value: 'กุมภาพันธ์',
+                                      label: "กุมภาพันธ์",
+                                      value: "กุมภาพันธ์",
                                     },
-                                    {label: 'มีนาคม', value: 'มีนาคม'},
-                                    {label: 'เมษายน', value: 'เมษายน'},
-                                    {label: 'พฤษาภาคม', value: 'พฤษาภาคม'},
-                                    {label: 'มิถุนายน', value: 'มิถุนายน'},
-                                    {label: 'กรกฎาคม', value: 'กรกฎาคม'},
-                                    {label: 'สิงหาคม', value: 'สิงหาคม'},
-                                    {label: 'กันยายน', value: 'กันยายน'},
-                                    {label: 'ตุลาคม', value: 'ตุลาคม'},
+                                    { label: "มีนาคม", value: "มีนาคม" },
+                                    { label: "เมษายน", value: "เมษายน" },
+                                    { label: "พฤษาภาคม", value: "พฤษาภาคม" },
+                                    { label: "มิถุนายน", value: "มิถุนายน" },
+                                    { label: "กรกฎาคม", value: "กรกฎาคม" },
+                                    { label: "สิงหาคม", value: "สิงหาคม" },
+                                    { label: "กันยายน", value: "กันยายน" },
+                                    { label: "ตุลาคม", value: "ตุลาคม" },
                                     {
-                                      label: 'พฤศจิกายน',
-                                      value: 'พฤศจิกายน',
+                                      label: "พฤศจิกายน",
+                                      value: "พฤศจิกายน",
                                     },
-                                    {label: 'ธันวาคม', value: 'ธันวาคม'},
+                                    { label: "ธันวาคม", value: "ธันวาคม" },
                                   ]
                                 : [
-                                    {label: 'January', value: 'January'},
-                                    {label: 'February', value: 'February'},
-                                    {label: 'Murch', value: 'Murch'},
-                                    {label: 'April', value: 'April'},
-                                    {label: 'May', value: 'May'},
-                                    {label: 'June', value: 'June'},
-                                    {label: 'July', value: 'July'},
-                                    {label: 'August', value: 'August'},
+                                    { label: "January", value: "January" },
+                                    { label: "February", value: "February" },
+                                    { label: "Murch", value: "Murch" },
+                                    { label: "April", value: "April" },
+                                    { label: "May", value: "May" },
+                                    { label: "June", value: "June" },
+                                    { label: "July", value: "July" },
+                                    { label: "August", value: "August" },
                                     {
-                                      label: 'September',
-                                      value: 'September',
+                                      label: "September",
+                                      value: "September",
                                     },
-                                    {label: 'October', value: 'October'},
-                                    {label: 'Noverber', value: 'Noverber'},
-                                    {label: 'December', value: 'December'},
+                                    { label: "October", value: "October" },
+                                    { label: "Noverber", value: "Noverber" },
+                                    { label: "December", value: "December" },
                                   ]
-                            }>
+                            }
+                          >
                             <View
                               style={{
-                                flexDirection: 'row',
+                                flexDirection: "row",
                                 borderWidth: 1,
-                                borderColor: '#2d6dc4',
+                                borderColor: "#2d6dc4",
                                 height: 35,
                                 borderRadius: 17,
-                              }}>
+                              }}
+                            >
                               {this.state.valueSelectActivity2dev ===
                               undefined ? (
                                 <View
-                                  style={{flex: 1, justifyContent: 'center'}}>
+                                  style={{ flex: 1, justifyContent: "center" }}
+                                >
                                   <Text
                                     style={{
-                                      color: '#2d6dc4',
+                                      color: "#2d6dc4",
                                       fontSize: 20,
-                                      textAlign: 'center',
-                                    }}>
+                                      textAlign: "center",
+                                    }}
+                                  >
                                     {/* {I18n.t('translate_choosemouth')} */}
-                                    {'   '}
+                                    {"   "}
                                     {this.state.valueSelectMMMM}
                                   </Text>
                                 </View>
                               ) : (
                                 <View
-                                  style={{flex: 1, justifyContent: 'center'}}>
+                                  style={{ flex: 1, justifyContent: "center" }}
+                                >
                                   <Text
                                     style={{
-                                      color: '#2d6dc4',
+                                      color: "#2d6dc4",
                                       fontSize: 20,
-                                      textAlign: 'center',
-                                    }}>
-                                    {'   '}
+                                      textAlign: "center",
+                                    }}
+                                  >
+                                    {"   "}
                                     {this.state.valueSelectActivity2dev}
                                   </Text>
                                 </View>
                               )}
                               <View
-                                style={{justifyContent: 'center', flex: 0.19}}>
+                                style={{ justifyContent: "center", flex: 0.19 }}
+                              >
                                 <Icon
                                   name="chevron-down"
                                   size={20}
@@ -2742,25 +2841,27 @@ class ViewDevelop extends React.Component {
                             function() {
                               this.offset = 0;
                               this._getAllDevelop();
-                            },
+                            }
                           );
                         }}
                         style={{
-                          backgroundColor: '#2d6dc4',
+                          backgroundColor: "#2d6dc4",
                           marginHorizontal: 10,
 
                           height: 34,
 
                           borderRadius: 17,
-                          justifyContent: 'center',
-                        }}>
+                          justifyContent: "center",
+                        }}
+                      >
                         <Text
                           style={{
-                            color: '#FFFFFF',
+                            color: "#FFFFFF",
                             fontSize: 20,
-                            textAlign: 'center',
-                          }}>
-                          {I18n.t('transalte_ButtonSearch')}
+                            textAlign: "center",
+                          }}
+                        >
+                          {I18n.t("transalte_ButtonSearch")}
                         </Text>
                       </TouchableOpacity>
                     </View>
@@ -2768,24 +2869,26 @@ class ViewDevelop extends React.Component {
 
                   <TouchableOpacity
                     onPress={() => {
-                      this.props.navigation.navigate('SearchAdvancedDevelop');
+                      this.props.navigation.navigate("SearchAdvancedDevelop");
                     }}
                     style={{
                       flex: 1,
                       marginHorizontal: 10,
                       height: 34,
-                      backgroundColor: '#2d6dc4',
+                      backgroundColor: "#2d6dc4",
 
                       borderRadius: 8,
-                      justifyContent: 'center',
-                    }}>
+                      justifyContent: "center",
+                    }}
+                  >
                     <Text
                       style={{
-                        color: '#FFFFFF',
+                        color: "#FFFFFF",
                         fontSize: 20,
-                        textAlign: 'center',
-                      }}>
-                      {I18n.t('translate_searchAdvanced')}
+                        textAlign: "center",
+                      }}
+                    >
+                      {I18n.t("translate_searchAdvanced")}
                     </Text>
                   </TouchableOpacity>
                 </View>
@@ -2797,39 +2900,47 @@ class ViewDevelop extends React.Component {
                     <ActivityIndicator
                       size="small"
                       color="black"
-                      style={{margin: 15}}
+                      style={{ margin: 15 }}
                     />
                   </View>
                 ) : (
-                  <View style={{marginTop:10,backgroundColor:'#f7f9fc',marginBottom:10,}}>
+                  <View
+                    style={{
+                      marginTop: 10,
+                      backgroundColor: "#f7f9fc",
+                      marginBottom: 10,
+                    }}
+                  >
                     {this.state.AllDevelop.length > 0 ? (
-                      
-                        // <ScrollView style={{}}>
-                          <FlatList
-                            // onEndReached={() => this._getAllDevelop()}
-                            // scrollEnabled={false}
-                            contentContainerStyle={[Styles.flastListContainer,{marginTop:10}]}
-                            extraData={this.state}
-                            data={AllDevelop}
-                            onEndReachedThreshold={0.5}
-                            ListFooterComponent={this.renderFooter.bind(this)}
-                            renderItem={this.Listre}
-                            keyExtractor={(item, index) => index}
-                          />
-                        // </ScrollView>
-                     
+                      // <ScrollView style={{}}>
+                      <FlatList
+                        // onEndReached={() => this._getAllDevelop()}
+                        // scrollEnabled={false}
+                        contentContainerStyle={[
+                          Styles.flastListContainer,
+                          { marginTop: 10 },
+                        ]}
+                        extraData={this.state}
+                        data={AllDevelop}
+                        onEndReachedThreshold={0.5}
+                        ListFooterComponent={this.renderFooter.bind(this)}
+                        renderItem={this.Listre}
+                        keyExtractor={(item, index) => index}
+                      />
                     ) : (
+                      // </ScrollView>
+
                       <View style={[Styles.footer]}>
                         {this.state.fetching_from_server ? (
                           <ActivityIndicator
                             color="black"
-                            style={{margin: 15}}
+                            style={{ margin: 15 }}
                           />
                         ) : (
                           <View style={Styles.footerNotdata}>
                             {this.state.AllDevelop.length == 0 ? (
-                              <Text style={{fontSize: 22}}>
-                                {I18n.t('translate_Nodata')}
+                              <Text style={{ fontSize: 22 }}>
+                                {I18n.t("translate_Nodata")}
                               </Text>
                             ) : null}
                           </View>
@@ -2842,45 +2953,47 @@ class ViewDevelop extends React.Component {
             </View>
           )}
           {this.state.selectedIndex === 1 && (
-            <View style={{marginTop: 10}}>
-              <View style={{marginHorizontal: 10}}>
+            <View style={{ marginTop: 10 }}>
+              <View style={{ marginHorizontal: 10 }}>
                 <View
                   style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
+                    flexDirection: "row",
+                    alignItems: "center",
                     borderWidth: 1,
                     borderRadius: 18,
 
-                    borderColor: '#dadada',
-                  }}>
+                    borderColor: "#dadada",
+                  }}
+                >
                   <Image
-                    style={{width: 22, height: 22, left: 10, top: 2}}
-                    source={require('../../image/searchbluex.png')}
+                    style={{ width: 22, height: 22, left: 10, top: 2 }}
+                    source={require("../../image/searchbluex.png")}
                   />
 
                   <TextInput
-                    onChangeText={e => {
+                    onChangeText={(e) => {
                       this.SearchSubmit2(e);
                     }}
                     placeholderTextColor="#dadada"
                     style={Styles.textsearchView}
-                    placeholder={I18n.t('translate_Seach')}
+                    placeholder={I18n.t("translate_Seach")}
                   />
                 </View>
                 <View
                   style={{
-                    flexDirection: 'row',
+                    flexDirection: "row",
                     marginTop: 10,
-                  }}>
+                  }}
+                >
                   <Popover
                     isVisible={this.state.closePopover}
                     onRequestClose={() => {
-                      this.setState({closePopover: false});
+                      this.setState({ closePopover: false });
                     }}
                     popoverStyle={{
                       flex: 1,
-                      width: '100%',
-                      shadowColor: '#000',
+                      width: "100%",
+                      shadowColor: "#000",
                       shadowOffset: {
                         width: 0,
                         height: 10,
@@ -2890,48 +3003,52 @@ class ViewDevelop extends React.Component {
 
                       elevation: 20,
                     }}
-                    backgroundStyle={{backgroundColor: '#2d6dc4', opacity: 0.6}}
-
+                    backgroundStyle={{
+                      backgroundColor: "#2d6dc4",
+                      opacity: 0.6,
+                    }}
                     // ฝฝฝฝฝ
                     from={
                       <TouchableOpacity
                         onPress={() => {
-                          this.setState({closePopover: true});
+                          this.setState({ closePopover: true });
                         }}
                         style={{
                           flex: 1,
                           marginHorizontal: 10,
                           height: 34,
-                          backgroundColor: '#2d6dc4',
+                          backgroundColor: "#2d6dc4",
 
                           borderRadius: 8,
-                          justifyContent: 'center',
-                        }}>
+                          justifyContent: "center",
+                        }}
+                      >
                         <Text
                           style={{
-                            color: '#FFFFFF',
+                            color: "#FFFFFF",
                             fontSize: 20,
-                            textAlign: 'center',
-                          }}>
-                          {I18n.t('transalte_tradeActivities_search_time')}
+                            textAlign: "center",
+                          }}
+                        >
+                          {I18n.t("transalte_tradeActivities_search_time")}
                         </Text>
                       </TouchableOpacity>
-                    }>
-
-
-
+                    }
+                  >
                     <View
                       style={{
                         flex: 1,
                         borderWidth: 1,
                         height: 100,
-                        borderColor: '#2d6dc4',
-                      }}>
+                        borderColor: "#2d6dc4",
+                      }}
+                    >
                       <View
                         style={{
-                          flexDirection: 'row',
+                          flexDirection: "row",
                           // flex: 1,
-                        }}>
+                        }}
+                      >
                         <View
                           style={{
                             borderWidth: 1,
@@ -2940,14 +3057,15 @@ class ViewDevelop extends React.Component {
                             marginHorizontal: 10,
                             marginVertical: 10,
                             borderRadius: 17,
-                            borderColor: '#2d6dc4',
-                          }}>
+                            borderColor: "#2d6dc4",
+                          }}
+                        >
                           <RNPickerSelect
                             useNativeAndroidPickerStyle={false}
                             _fixAndroidTouchableBug_={false}
                             style={{
                               inputAndroidContainer: {
-                                width: '100%',
+                                width: "100%",
                               },
                               ...pickerSelectStyles2,
                             }}
@@ -2965,39 +3083,42 @@ class ViewDevelop extends React.Component {
                                 valueindexdev: index,
                               });
                             }}
-                            doneText={I18n.locale === 'th' ? 'เลือก' : 'Done'}
+                            doneText={I18n.locale === "th" ? "เลือก" : "Done"}
                             value={
                               this.state.valueSelectActivity3dev === undefined
                                 ? this.state.setdefulttear
                                 : this.state.valueSelectActivity3dev
                             }
-                            items={this.state.countYear.map(object => ({
+                            items={this.state.countYear.map((object) => ({
                               label: object.YearN.toString(),
                               value: object.YearN.toString(),
                               key: object.YearN.toString(),
-                            }))}>
-                            <View style={{flexDirection: 'row'}}>
+                            }))}
+                          >
+                            <View style={{ flexDirection: "row" }}>
                               {this.state.valueSelectActivity3dev ===
                               undefined ? (
                                 <>
                                   {this.state.valueSelectMouthdev > 0 ? (
                                     <Text
                                       style={{
-                                        color: '#2d6dc4',
+                                        color: "#2d6dc4",
                                         fontSize: 20,
                                         left: 60,
                                         top: 3.5,
-                                      }}>
+                                      }}
+                                    >
                                       {this.state.setdefulttear}
                                     </Text>
                                   ) : (
                                     <Text
                                       style={{
-                                        color: '#2d6dc4',
+                                        color: "#2d6dc4",
                                         fontSize: 20,
                                         left: 60,
                                         top: 3.5,
-                                      }}>
+                                      }}
+                                    >
                                       {/* {I18n.t('translate_chooseyear')} */}
                                       {this.state.setdefulttear}
                                     </Text>
@@ -3006,21 +3127,22 @@ class ViewDevelop extends React.Component {
                               ) : (
                                 <Text
                                   style={{
-                                    color: '#2d6dc4',
+                                    color: "#2d6dc4",
                                     fontSize: 20,
                                     left: 50,
                                     top: 3.5,
-                                  }}>
+                                  }}
+                                >
                                   {this.state.valueSelectActivity3dev}
                                 </Text>
                               )}
                             </View>
-                            <View style={{flexDirection: 'row-reverse'}}>
+                            <View style={{ flexDirection: "row-reverse" }}>
                               <Icon
                                 name="chevron-down"
                                 size={20}
                                 color="#2d6dc4"
-                                style={{top: -17, left: 8}}
+                                style={{ top: -17, left: 8 }}
                               />
                             </View>
                           </RNPickerSelect>
@@ -3034,22 +3156,23 @@ class ViewDevelop extends React.Component {
                             marginHorizontal: 10,
                             marginVertical: 10,
                             borderRadius: 17,
-                            borderColor: '#2d6dc4',
-                          }}>
+                            borderColor: "#2d6dc4",
+                          }}
+                        >
                           <RNPickerSelect
                             useNativeAndroidPickerStyle={false}
                             _fixAndroidTouchableBug_={false}
                             style={{
                               inputAndroidContainer: {
-                                width: '100%',
+                                width: "100%",
                               },
                               ...pickerSelectStyles2,
                             }}
                             placeholder={{
                               label:
-                                I18n.locale === 'th' ? 'เดือนทั้งหมด' : 'All',
+                                I18n.locale === "th" ? "เดือนทั้งหมด" : "All",
                               value:
-                                I18n.locale === 'th' ? 'เดือนทั้งหมด' : 'All',
+                                I18n.locale === "th" ? "เดือนทั้งหมด" : "All",
                             }}
                             value={
                               this.state.valueSelectActivity2devE === undefined
@@ -3062,78 +3185,81 @@ class ViewDevelop extends React.Component {
                                 valueSelectMouthdevE: index,
                               })
                             }
-                            doneText={I18n.locale === 'th' ? 'เลือก' : 'Done'}
+                            doneText={I18n.locale === "th" ? "เลือก" : "Done"}
                             items={
-                              I18n.locale === 'th'
+                              I18n.locale === "th"
                                 ? [
-                                    {label: 'มกราคม', value: 'มกราคม'},
+                                    { label: "มกราคม", value: "มกราคม" },
                                     {
-                                      label: 'กุมภาพันธ์',
-                                      value: 'กุมภาพันธ์',
+                                      label: "กุมภาพันธ์",
+                                      value: "กุมภาพันธ์",
                                     },
-                                    {label: 'มีนาคม', value: 'มีนาคม'},
-                                    {label: 'เมษายน', value: 'เมษายน'},
-                                    {label: 'พฤษาภาคม', value: 'พฤษาภาคม'},
-                                    {label: 'มิถุนายน', value: 'มิถุนายน'},
-                                    {label: 'กรกฎาคม', value: 'กรกฎาคม'},
-                                    {label: 'สิงหาคม', value: 'สิงหาคม'},
-                                    {label: 'กันยายน', value: 'กันยายน'},
-                                    {label: 'ตุลาคม', value: 'ตุลาคม'},
+                                    { label: "มีนาคม", value: "มีนาคม" },
+                                    { label: "เมษายน", value: "เมษายน" },
+                                    { label: "พฤษาภาคม", value: "พฤษาภาคม" },
+                                    { label: "มิถุนายน", value: "มิถุนายน" },
+                                    { label: "กรกฎาคม", value: "กรกฎาคม" },
+                                    { label: "สิงหาคม", value: "สิงหาคม" },
+                                    { label: "กันยายน", value: "กันยายน" },
+                                    { label: "ตุลาคม", value: "ตุลาคม" },
                                     {
-                                      label: 'พฤศจิกายน',
-                                      value: 'พฤศจิกายน',
+                                      label: "พฤศจิกายน",
+                                      value: "พฤศจิกายน",
                                     },
-                                    {label: 'ธันวาคม', value: 'ธันวาคม'},
+                                    { label: "ธันวาคม", value: "ธันวาคม" },
                                   ]
                                 : [
-                                    {label: 'January', value: 'January'},
-                                    {label: 'February', value: 'February'},
-                                    {label: 'Murch', value: 'Murch'},
-                                    {label: 'April', value: 'April'},
-                                    {label: 'May', value: 'May'},
-                                    {label: 'June', value: 'June'},
-                                    {label: 'July', value: 'July'},
-                                    {label: 'August', value: 'August'},
+                                    { label: "January", value: "January" },
+                                    { label: "February", value: "February" },
+                                    { label: "Murch", value: "Murch" },
+                                    { label: "April", value: "April" },
+                                    { label: "May", value: "May" },
+                                    { label: "June", value: "June" },
+                                    { label: "July", value: "July" },
+                                    { label: "August", value: "August" },
                                     {
-                                      label: 'September',
-                                      value: 'September',
+                                      label: "September",
+                                      value: "September",
                                     },
-                                    {label: 'October', value: 'October'},
-                                    {label: 'Noverber', value: 'Noverber'},
-                                    {label: 'December', value: 'December'},
+                                    { label: "October", value: "October" },
+                                    { label: "Noverber", value: "Noverber" },
+                                    { label: "December", value: "December" },
                                   ]
-                            }>
-                            <View style={{flexDirection: 'row'}}>
+                            }
+                          >
+                            <View style={{ flexDirection: "row" }}>
                               {this.state.valueSelectActivity2devE ===
                               undefined ? (
                                 <Text
                                   style={{
-                                    color: '#2d6dc4',
+                                    color: "#2d6dc4",
                                     fontSize: 20,
                                     left: 50,
                                     top: 3.5,
-                                  }}>
+                                  }}
+                                >
                                   {/* {I18n.t('translate_choosemouth')} */}
                                   {this.state.valueSelectMMMM}
                                 </Text>
                               ) : (
                                 <Text
                                   style={{
-                                    color: '#2d6dc4',
+                                    color: "#2d6dc4",
                                     fontSize: 20,
                                     left: 50,
                                     top: 3.5,
-                                  }}>
+                                  }}
+                                >
                                   {this.state.valueSelectActivity2devE}
                                 </Text>
                               )}
                             </View>
-                            <View style={{flexDirection: 'row-reverse'}}>
+                            <View style={{ flexDirection: "row-reverse" }}>
                               <Icon
                                 name="chevron-down"
                                 size={20}
                                 color="#2d6dc4"
-                                style={{top: -17, left: 8}}
+                                style={{ top: -17, left: 8 }}
                               />
                             </View>
                           </RNPickerSelect>
@@ -3153,25 +3279,27 @@ class ViewDevelop extends React.Component {
                             function() {
                               this.offset = 0;
                               this._getAllDevelopElearning();
-                            },
+                            }
                           );
                         }}
                         style={{
-                          backgroundColor: '#2d6dc4',
+                          backgroundColor: "#2d6dc4",
                           marginHorizontal: 10,
 
                           height: 34,
 
                           borderRadius: 17,
-                          justifyContent: 'center',
-                        }}>
+                          justifyContent: "center",
+                        }}
+                      >
                         <Text
                           style={{
-                            color: '#FFFFFF',
+                            color: "#FFFFFF",
                             fontSize: 20,
-                            textAlign: 'center',
-                          }}>
-                          {I18n.t('transalte_ButtonSearch')}
+                            textAlign: "center",
+                          }}
+                        >
+                          {I18n.t("transalte_ButtonSearch")}
                         </Text>
                       </TouchableOpacity>
                     </View>
@@ -3179,24 +3307,26 @@ class ViewDevelop extends React.Component {
 
                   <TouchableOpacity
                     onPress={() => {
-                      this.props.navigation.navigate('SearchAdvancedDevelop');
+                      this.props.navigation.navigate("SearchAdvancedDevelop");
                     }}
                     style={{
                       flex: 1,
                       marginHorizontal: 10,
                       height: 34,
-                      backgroundColor: '#2d6dc4',
+                      backgroundColor: "#2d6dc4",
 
                       borderRadius: 8,
-                      justifyContent: 'center',
-                    }}>
+                      justifyContent: "center",
+                    }}
+                  >
                     <Text
                       style={{
-                        color: '#FFFFFF',
+                        color: "#FFFFFF",
                         fontSize: 20,
-                        textAlign: 'center',
-                      }}>
-                      {I18n.t('translate_searchAdvanced')}
+                        textAlign: "center",
+                      }}
+                    >
+                      {I18n.t("translate_searchAdvanced")}
                     </Text>
                   </TouchableOpacity>
                 </View>
@@ -3208,37 +3338,39 @@ class ViewDevelop extends React.Component {
                     <ActivityIndicator
                       size="small"
                       color="black"
-                      style={{margin: 15}}
+                      style={{ margin: 15 }}
                     />
                   </View>
                 ) : (
-                  <View style={{backgroundColor:'#f7f9fc',marginBottom:10,}}>
+                  <View
+                    style={{ backgroundColor: "#f7f9fc", marginBottom: 10 }}
+                  >
                     {this.state.AllDevelopElearning.length > 0 ? (
                       // <ScrollView style={{marginTop: 10}}>
-                        <FlatList
-                          // onEndReached={() => this._getAllDevelop()}
-                          // scrollEnabled={false}
-                          contentContainerStyle={[Styles.flastListContainer]}
-                          extraData={this.state}
-                          data={AllDevelopElearning}
-                          onEndReachedThreshold={0.5}
-                          ListFooterComponent={this.renderFooter1.bind(this)}
-                          renderItem={this.ListreElearing}
-                          keyExtractor={(item, index) => index}
-                        />
-                      // </ScrollView>
+                      <FlatList
+                        // onEndReached={() => this._getAllDevelop()}
+                        // scrollEnabled={false}
+                        contentContainerStyle={[Styles.flastListContainer]}
+                        extraData={this.state}
+                        data={AllDevelopElearning}
+                        onEndReachedThreshold={0.5}
+                        ListFooterComponent={this.renderFooter1.bind(this)}
+                        renderItem={this.ListreElearing}
+                        keyExtractor={(item, index) => index}
+                      />
                     ) : (
+                      // </ScrollView>
                       <View style={Styles.footer}>
                         {this.state.fetching_from_server2 ? (
                           <ActivityIndicator
                             color="black"
-                            style={{margin: 15}}
+                            style={{ margin: 15 }}
                           />
                         ) : (
                           <View style={Styles.footerNotdata}>
                             {this.state.AllDevelopElearning.length == 0 ? (
-                              <Text style={{fontSize: 22}}>
-                                {I18n.t('translate_Nodata')}
+                              <Text style={{ fontSize: 22 }}>
+                                {I18n.t("translate_Nodata")}
                               </Text>
                             ) : null}
                           </View>
@@ -3258,31 +3390,31 @@ class ViewDevelop extends React.Component {
 const pickerSelectStyles2 = StyleSheet.create({
   inputIOS: {
     fontSize: 23,
-    color: '#73838f',
+    color: "#73838f",
     paddingHorizontal: 10,
-    justifyContent: 'center',
-    paddingTop: Platform.OS === 'ios' ? 2 : -3,
+    justifyContent: "center",
+    paddingTop: Platform.OS === "ios" ? 2 : -3,
     paddingBottom: 5,
     // borderWidth:1
   },
   inputAndroid: {
     height: 40,
     fontSize: 23,
-    color: '#73838f',
-    fontWeight: 'normal',
-    fontFamily: 'PSL Kittithada Pro',
-    width: '100%',
+    color: "#73838f",
+    fontWeight: "normal",
+    fontFamily: "PSL Kittithada Pro",
+    width: "100%",
     paddingHorizontal: 10,
     paddingVertical: 8,
     paddingRight: 70,
   },
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   dispatch,
 });
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   LoadingCounters: state.globalReducer.LoadingCounters,
   authData: state.authReducer.authData,
   getUser: state.userReducer.getUser,
@@ -3290,5 +3422,5 @@ const mapStateToProps = state => ({
 });
 export default connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(ViewDevelop);

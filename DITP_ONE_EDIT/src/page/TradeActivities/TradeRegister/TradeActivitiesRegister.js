@@ -50,45 +50,45 @@ const IC_ARR_UP = require('../../../image/ArrowUpx.png');
 const dada = [
   {
     id: 1,
-    txt: 'ข้อมูลนิติบุคคล',
+    txt: I18n.t('transalte_Juristic_Person_Information'),
   },
   {
     id: 2,
-    txt: 'ข้อมูลประกอบ',
+    txt: I18n.t('transalte_Accompanying_Information'),
   },
   {
     id: 3,
-    txt: 'ข้อมูลผู้ติดต่อ',
+    txt: I18n.t('transalte_Contact_Information'),
   },
   {
     id: 4,
-    txt: 'สินค้า',
+    txt: I18n.t('transalte_Product_TraedAc'),
   },
   {
     id: 5,
-    txt: 'ค่าใช้จ่าย',
+    txt: I18n.t('transalte_Expenses'),
   },
   {
     id: 6,
-    txt: 'เอกสารแนบ',
+    txt: I18n.t('transalte_Attachment'),
   },
 ];
 const datagoal = [
   {
     id: 1,
-    name: 'ผู้นำเข้า',
+    name: I18n.t('transalte_importer'),
   },
   {
     id: 2,
-    name: 'ผู้แทนจำหน่าย',
+    name: I18n.t('transalte_agent'),
   },
   {
     id: 3,
-    name: 'โรงงาน/ผู้ผลิต',
+    name: I18n.t('transalte_factory_manufacturer'),
   },
   {
     id: 4,
-    name: 'อื่นๆ',
+    name: I18n.t('transalte_Other'),
   },
 ];
 
@@ -126,33 +126,33 @@ class TradeActivitiesRegister extends React.Component {
     this.state = {
       Allprofile: [
         {
-          title: 'ข้อมูลนิติบุคคล',
+          title: I18n.t('transalte_Juristic_Person_Information'),
         },
       ],
       Alldataoperator: [
         {
-          title: 'ข้อมูลประกอบ',
+          title: I18n.t('transalte_Accompanying_Information'),
         },
       ],
       Allcontact: [
         {
-          title: 'ข้อมูลผู้ติดต่อ',
+          title: I18n.t('transalte_Contact_Information'),
         },
       ],
       Alldataproduct: [
         {
-          title: 'สินค้า',
+          title: I18n.t('transalte_Product_TraedAc'),
         },
       ],
 
       Allprice: [
         {
-          title: 'ค่าใช้จ่าย',
+          title: I18n.t('transalte_Expenses'),
         },
       ],
       Allfile: [
         {
-          title: 'เอกสารแนบ',
+          title: I18n.t('transalte_Attachment'),
         },
       ],
       disbleinput: true,
@@ -1515,7 +1515,7 @@ class TradeActivitiesRegister extends React.Component {
 
                               marginHorizontal: 35,
                             }}>
-                            หมายเลขสมาชิกกรม
+                            {I18n.t('transalte_Department_Members')}
                           </Text>
                           <Text
                             style={{
@@ -1555,7 +1555,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                       marginHorizontal: 35,
                                     }}>
-                                    ประเภทสมาชิกกรม
+                                    {I18n.t('transalte_Department_Category')}
                                   </Text>
                                   <Text
                                     style={{
@@ -1593,7 +1593,7 @@ class TradeActivitiesRegister extends React.Component {
 
                               marginHorizontal: 35,
                             }}>
-                            เลขนิติบุคคล (Username)
+                            {I18n.t('transalte_Number_Juristic')}
                           </Text>
                           <Text
                             style={{
@@ -1628,7 +1628,7 @@ class TradeActivitiesRegister extends React.Component {
 
                               marginHorizontal: 35,
                             }}>
-                            บริษัท / กิจการ
+                            {I18n.t('transalte_Company_ฺBusiness')}
                           </Text>
                           <Text
                             style={{
@@ -1693,7 +1693,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                   marginHorizontal: 35,
                                 }}>
-                                ที่อยู่ติดต่อ
+                                {I18n.t('translate_Contactaddress')}
                               </Text>
                               <Text
                                 style={{
@@ -1738,7 +1738,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                   marginHorizontal: 35,
                                 }}>
-                                อีเมล
+                                {I18n.t('translate_email')}
                               </Text>
                               <Text
                                 style={{
@@ -1769,7 +1769,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                     marginHorizontal: 35,
                                   }}>
-                                  หมายเลขโทรศัพท์
+                                  {I18n.t('translate_Phonenumber')}
                                 </Text>
                                 <View
                                   style={{
@@ -1847,7 +1847,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                   marginHorizontal: 15,
                                 }}>
-                                รหัสไปรษณีย์
+                                {I18n.t('postcode_regis')}
                               </Text>
                               <Text
                                 style={{
@@ -1889,7 +1889,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                   marginHorizontal: 15,
                                 }}>
-                                จังหวัด
+                                {I18n.t('pro_userProfile')}
                               </Text>
                               <Text
                                 style={{
@@ -1931,7 +1931,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                   marginHorizontal: 15,
                                 }}>
-                                อำเภอ/เขต
+                              {I18n.t('translate_Edite4')}
                               </Text>
                               <Text
                                 style={{
@@ -1973,7 +1973,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                   marginHorizontal: 15,
                                 }}>
-                                ตำบล/แขวง
+                                {I18n.t('translate_Edite2')}
                               </Text>
                               <Text
                                 style={{
@@ -2015,7 +2015,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                   marginHorizontal: 15,
                                 }}>
-                                ที่อยู่ติดต่อ
+                                {I18n.t('translate_Contactaddress')}
                               </Text>
                               <Text
                                 style={{
@@ -2063,7 +2063,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                   marginHorizontal: 20,
                                 }}>
-                                หมายเลขโทรศัพท์
+                                {I18n.t('translate_Phonenumber')}
                               </Text>
 
                               <ImageBackground
@@ -2144,7 +2144,7 @@ class TradeActivitiesRegister extends React.Component {
                             textAlign: 'center',
                             color: '#FFFFFF',
                           }}>
-                          แก้ไขข้อมูลนิติบุคคล
+                          {I18n.t('transalte_Edit_Juristic_Information')}
                         </Text>
                       </TouchableOpacity>
                     )}
@@ -2173,7 +2173,7 @@ class TradeActivitiesRegister extends React.Component {
                               textAlign: 'center',
                               color: '#FFFFFF',
                             }}>
-                            ต่อไป
+                            {I18n.t('translate_Next')}
                           </Text>
                         </View>
                         <View style={{}}>
@@ -2211,7 +2211,7 @@ class TradeActivitiesRegister extends React.Component {
                               textAlign: 'center',
                               color: '#FFFFFF',
                             }}>
-                            บันทึก
+                            {I18n.t('translate_Save')}
                           </Text>
                         </View>
                       </TouchableOpacity>
@@ -2651,7 +2651,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                     marginTop: 0,
                                   }}>
-                                  กลับ
+                                  {I18n.t('translate_Back')}
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -2679,7 +2679,7 @@ class TradeActivitiesRegister extends React.Component {
                                   textAlign: 'center',
                                   marginTop: 5.5,
                                 }}>
-                                ต่อไป
+                                {I18n.t('translate_Next')}
                               </Text>
                               <Icon
                                 name="chevron-right"
@@ -3349,7 +3349,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                     marginTop: 0,
                                   }}>
-                                  กลับ
+                                  {I18n.t('translate_Back')}
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -3377,7 +3377,7 @@ class TradeActivitiesRegister extends React.Component {
                                   textAlign: 'center',
                                   marginTop: 5.5,
                                 }}>
-                                บันทึก
+                                {I18n.t('translate_Save')}
                               </Text>
                             </TouchableOpacity>
                           </View>
@@ -3582,7 +3582,7 @@ class TradeActivitiesRegister extends React.Component {
                                           fontSize: 22,
                                           textAlign: 'center',
                                         }}>
-                                        กลับ
+                                        {I18n.t('translate_Back')}
                                       </Text>
                                     </View>
                                   </TouchableOpacity>
@@ -3611,7 +3611,7 @@ class TradeActivitiesRegister extends React.Component {
                                           fontSize: 22,
                                           textAlign: 'center',
                                         }}>
-                                        ต่อไป
+                                        {I18n.t('translate_Next')}
                                       </Text>
                                     </View>
                                     <View style={{}}>
@@ -3721,7 +3721,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                               // marginTop: 9.1,
                                             }}>
-                                            กลับ
+                                            {I18n.t('translate_Back')}
                                           </Text>
                                         </View>
                                       </TouchableOpacity>
@@ -3754,7 +3754,7 @@ class TradeActivitiesRegister extends React.Component {
                                             textAlign: 'center',
                                             marginTop: 9.1,
                                           }}>
-                                          ลบผู้เข้าร่วม
+                                          {I18n.locale === 'th' ? 'ลบผู้เข้าร่วม' : 'Delete'} 
                                         </Text>
                                       </TouchableOpacity>
                                       <TouchableOpacity
@@ -3779,7 +3779,7 @@ class TradeActivitiesRegister extends React.Component {
                                             flex: 0.5,
                                             marginTop: 9.1,
                                           }}>
-                                          ต่อไป
+                                          {I18n.t('translate_Next')}
                                         </Text>
                                         <Icon
                                           name="chevron-right"
@@ -3857,7 +3857,7 @@ class TradeActivitiesRegister extends React.Component {
                                               fontSize: 18,
                                               marginTop: 3.5,
                                             }}>
-                                            ลบ
+                                            {I18n.t('transalte_Delete_Code')}
                                           </Text>
                                         </TouchableOpacity>
                                         <TouchableOpacity
@@ -3884,7 +3884,7 @@ class TradeActivitiesRegister extends React.Component {
                                               fontSize: 18,
                                               marginTop: 3.5,
                                             }}>
-                                            ยกเลิก
+                                            {I18n.t('translate_Bt_cancel')}
                                           </Text>
                                         </TouchableOpacity>
                                       </View>
@@ -4006,7 +4006,7 @@ class TradeActivitiesRegister extends React.Component {
                                           fontSize: 22,
                                           textAlign: 'center',
                                         }}>
-                                        กลับ
+                                        {I18n.t('translate_Back')}
                                       </Text>
                                     </View>
                                   </TouchableOpacity>
@@ -4035,7 +4035,7 @@ class TradeActivitiesRegister extends React.Component {
                                           fontSize: 22,
                                           textAlign: 'center',
                                         }}>
-                                        ต่อไป
+                                        {I18n.t('translate_Next')}
                                       </Text>
                                     </View>
                                     <View style={{}}>
@@ -4145,7 +4145,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                               // marginTop: 9.1,
                                             }}>
-                                            กลับ
+                                            {I18n.t('translate_Back')}
                                           </Text>
                                         </View>
                                       </TouchableOpacity>
@@ -4178,7 +4178,7 @@ class TradeActivitiesRegister extends React.Component {
                                             textAlign: 'center',
                                             marginTop: 9.1,
                                           }}>
-                                          ลบเจ้าหน้าที่
+                                          {I18n.locale === 'th' ? 'ลบเจ้าหน้าที่' : 'Delete'}
                                         </Text>
                                       </TouchableOpacity>
                                       <TouchableOpacity
@@ -4203,7 +4203,7 @@ class TradeActivitiesRegister extends React.Component {
                                             flex: 0.5,
                                             marginTop: 9.1,
                                           }}>
-                                          ต่อไป
+                                          {I18n.t('translate_Next')}
                                         </Text>
                                         <Icon
                                           name="chevron-right"
@@ -4281,7 +4281,7 @@ class TradeActivitiesRegister extends React.Component {
                                               fontSize: 18,
                                               marginTop: 3.5,
                                             }}>
-                                            ลบ
+                                            {I18n.t('transalte_delete_product')}
                                           </Text>
                                         </TouchableOpacity>
                                         <TouchableOpacity
@@ -4308,7 +4308,7 @@ class TradeActivitiesRegister extends React.Component {
                                               fontSize: 18,
                                               marginTop: 3.5,
                                             }}>
-                                            ยกเลิก
+                                            {I18n.t('translate_Bt_cancel')}
                                           </Text>
                                         </TouchableOpacity>
                                       </View>
@@ -5254,7 +5254,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                               marginTop: 0,
                                             }}>
-                                            กลับ
+                                            {I18n.t('translate_Back')}
                                           </Text>
                                         </View>
                                       </TouchableOpacity>
@@ -5284,7 +5284,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             textAlign: 'center',
                                           }}>
-                                          บันทึก
+                                          {I18n.t('translate_Save')}
                                         </Text>
                                       </TouchableOpacity>
                                     </View>
@@ -5961,7 +5961,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                               marginTop: 0,
                                             }}>
-                                            กลับ
+                                            {I18n.t('translate_Back')}
                                           </Text>
                                         </View>
                                       </TouchableOpacity>
@@ -5991,7 +5991,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             textAlign: 'center',
                                           }}>
-                                          บันทึก
+                                          {I18n.t('translate_Save')}
                                         </Text>
                                       </TouchableOpacity>
                                     </View>
@@ -6012,7 +6012,7 @@ class TradeActivitiesRegister extends React.Component {
                                     marginHorizontal: 15,
                                     paddingBottom: 10,
                                   }}>
-                                  ข้อมูลเจ้าหน้าที่ร่วมคณะ
+                                  {I18n.t('transalte_Faculty_member_info')}
                                 </Text>
                               </View>
                             </View>
@@ -6052,7 +6052,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                               marginHorizontal: 10,
                                             }}>
-                                            เลขบัตรประจำตัวประชาชน
+                                            {I18n.t('translate_naturalId')}
                                           </Text>
                                           <Text
                                             style={{
@@ -6092,7 +6092,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                               marginHorizontal: 10,
                                             }}>
-                                            คำนำหน้าชื่อ
+                                            {I18n.t('transalte_name_prefix')}
                                           </Text>
                                           <Text
                                             style={{
@@ -6154,7 +6154,7 @@ class TradeActivitiesRegister extends React.Component {
                                                   color: '#c0c0c0',
                                                   fontSize: 24,
                                                 }}>
-                                                เลือกคำนำหน้าชื่อ
+                                                {I18n.t('transalte_select_name_prefix')}
                                               </Text>
                                             </View>
                                             <View
@@ -6432,7 +6432,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             marginHorizontal: 10,
                                           }}>
-                                          ประเทศ
+                                          {I18n.t('translate_country')}
                                         </Text>
                                         <Text
                                           style={{
@@ -6472,7 +6472,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             marginHorizontal: 10,
                                           }}>
-                                          รหัสไปรษณีย์
+                                          {I18n.t('postcode_regis')}
                                         </Text>
                                         <Text
                                           style={{
@@ -6512,7 +6512,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             marginHorizontal: 10,
                                           }}>
-                                          จังหวัด
+                                          {I18n.t('pro_userProfile')}
                                         </Text>
                                         <Text
                                           style={{
@@ -6553,7 +6553,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             marginHorizontal: 10,
                                           }}>
-                                          อำเภอ/เขต
+                                          {I18n.t('translate_Edite4')}
                                         </Text>
                                         <Text
                                           style={{
@@ -6593,7 +6593,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             marginHorizontal: 10,
                                           }}>
-                                          ตำบล/แขวง
+                                          {I18n.t('translate_Edite2')}
                                         </Text>
                                         <Text
                                           style={{
@@ -6633,7 +6633,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             marginHorizontal: 10,
                                           }}>
-                                          ที่อยู่ติดต่อ
+                                          {I18n.t('translate_Contactaddress')}
                                         </Text>
                                         <Text
                                           style={{
@@ -6673,7 +6673,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             marginHorizontal: 10,
                                           }}>
-                                          ที่อยู่ติดต่อ (ภาษาอังกฤษ)
+                                         {I18n.t('transalte_address_eng')}
                                         </Text>
                                       </View>
                                       <ImageBackground
@@ -6706,7 +6706,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             marginHorizontal: 10,
                                           }}>
-                                          อีเมล
+                                          {I18n.t('translate_email')}
                                         </Text>
                                       </View>
 
@@ -6741,7 +6741,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             marginHorizontal: 10,
                                           }}>
-                                          หมายเลขโทรศัพท์
+                                          {I18n.t('translate_Phonenumber')}
                                         </Text>
 
                                         <ImageBackground
@@ -6863,7 +6863,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                             marginTop: 0,
                                           }}>
-                                          กลับ
+                                          {I18n.t('translate_Back')}
                                         </Text>
                                       </View>
                                     </TouchableOpacity>
@@ -6893,7 +6893,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                           textAlign: 'center',
                                         }}>
-                                        บันทึก
+                                        {I18n.t('translate_Save')}
                                       </Text>
                                     </TouchableOpacity>
                                   </View>
@@ -6942,7 +6942,7 @@ class TradeActivitiesRegister extends React.Component {
                                     textAlign: 'center',
                                     marginHorizontal: 35,
                                   }}>
-                                  ไม่มีสินค้า
+                                  {I18n.t('translate_Phonenumber')}
                                 </Text>
                               </View>
                             </View>
@@ -6976,7 +6976,7 @@ class TradeActivitiesRegister extends React.Component {
                                   fontSize: 22,
                                   marginTop: 9.1,
                                 }}>
-                                เพิ่มสินค้า
+                                {I18n.t('transalte_add_product')}
                               </Text>
                             </TouchableOpacity>
                             <View
@@ -7029,7 +7029,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                       marginTop: 0,
                                     }}>
-                                    กลับ
+                                    {I18n.t('translate_Back')}
                                   </Text>
                                 </View>
                               </TouchableOpacity>
@@ -7057,7 +7057,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                     textAlign: 'center',
                                   }}>
-                                  ต่อไป
+                                  {I18n.t('translate_Next')}
                                 </Text>
                                 <Icon
                                   name="chevron-right"
@@ -7114,7 +7114,7 @@ class TradeActivitiesRegister extends React.Component {
                                       fontSize: 22,
                                       marginTop: 9.1,
                                     }}>
-                                    เพิ่มสินค้า
+                                    {I18n.t('transalte_add_product')}
                                   </Text>
                                 </TouchableOpacity>
                                 <View
@@ -7166,7 +7166,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                           // marginTop: 9.1,
                                         }}>
-                                        กลับ
+                                        {I18n.t('translate_Back')}
                                       </Text>
                                     </View>
                                   </TouchableOpacity>
@@ -7199,7 +7199,7 @@ class TradeActivitiesRegister extends React.Component {
                                         textAlign: 'center',
                                         marginTop: 9.1,
                                       }}>
-                                      ลบสินค้า
+                                      {I18n.locale === 'th' ? 'ลบสินค้า' : 'Delete'}
                                     </Text>
                                   </TouchableOpacity>
                                   <TouchableOpacity
@@ -7224,7 +7224,7 @@ class TradeActivitiesRegister extends React.Component {
                                         flex: 0.5,
                                         marginTop: 9.1,
                                       }}>
-                                      ต่อไป
+                                      {I18n.t('translate_Next')}
                                     </Text>
                                     <Icon
                                       name="chevron-right"
@@ -7300,7 +7300,7 @@ class TradeActivitiesRegister extends React.Component {
                                           fontSize: 18,
                                           marginTop: 3.5,
                                         }}>
-                                        ลบสินค้า
+                                        {I18n.locale === 'th' ? 'ลบสินค้า' : 'Delete'}
                                       </Text>
                                     </TouchableOpacity>
                                     <TouchableOpacity
@@ -7325,7 +7325,7 @@ class TradeActivitiesRegister extends React.Component {
                                           fontSize: 18,
                                           marginTop: 3.5,
                                         }}>
-                                        ยกเลิก
+                                        {I18n.t('translate_Bt_cancel')}
                                       </Text>
                                     </TouchableOpacity>
                                   </View>
@@ -7452,7 +7452,7 @@ class TradeActivitiesRegister extends React.Component {
                                           color: '#c0c0c0',
                                           fontSize: 20,
                                         }}>
-                                        เลือกประเภทสินค้า
+                                        {I18n.t('transalte_select_type_product')}
                                       </Text>
                                     ) : (
                                       <Text
@@ -7537,7 +7537,7 @@ class TradeActivitiesRegister extends React.Component {
                               />
                               <RNPickerSelect
                                 placeholder={{
-                                  label: 'เลือกประเภทสินค้าย่อย',
+                                  label: I18n.t('transalte_select_subcategory'),
                                   value: 0,
                                 }}
                                 useNativeAndroidPickerStyle={false}
@@ -7597,7 +7597,7 @@ class TradeActivitiesRegister extends React.Component {
                                           color: '#c0c0c0',
                                           fontSize: 20,
                                         }}>
-                                        เลือกประเภทสินค้าย่อย{' '}
+                                        {I18n.t('transalte_select_subcategory')}
                                       </Text>
                                     ) : (
                                       <Text
@@ -7736,7 +7736,7 @@ class TradeActivitiesRegister extends React.Component {
                                           color: '#c0c0c0',
                                           fontSize: 24,
                                         }}>
-                                        เลือกกลุ่มสินค้า{' '}
+                                        {I18n.t('transalte_select_product_group')}{' '}
                                       </Text>
                                     ) : (
                                       <Text
@@ -8071,7 +8071,7 @@ class TradeActivitiesRegister extends React.Component {
                                       fontSize: 18,
                                       textAlign: 'center',
                                     }}>
-                                    อัพโหลดไฟล์
+                                    {I18n.t('transalte_uploade_file')}
                                   </Text>
                                 </View>
                               </TouchableOpacity>
@@ -8129,7 +8129,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                   marginTop: 0,
                                 }}>
-                                กลับ
+                                {I18n.t('translate_Back')}
                               </Text>
                             </View>
                           </TouchableOpacity>
@@ -8157,7 +8157,7 @@ class TradeActivitiesRegister extends React.Component {
 
                                 textAlign: 'center',
                               }}>
-                              บันทึก
+                              {I18n.t('translate_Save')}
                             </Text>
                           </TouchableOpacity>
                         </View>
@@ -8324,7 +8324,7 @@ class TradeActivitiesRegister extends React.Component {
                           justifyContent: 'center',
                         }}>
                         <Text style={{color: '#FFFF', textAlign: 'center'}}>
-                          อัพโหลดไฟล์
+                          {I18n.t('transalte_uploade_file')}
                         </Text>
                       </TouchableOpacity>
                     </View>
@@ -8595,7 +8595,7 @@ class TradeActivitiesRegister extends React.Component {
 
                               marginTop: 0,
                             }}>
-                            กลับ
+                            {I18n.t('translate_Back')}
                           </Text>
                         </View>
                       </TouchableOpacity>
@@ -8623,7 +8623,7 @@ class TradeActivitiesRegister extends React.Component {
                             textAlign: 'center',
                             marginTop: 5.5,
                           }}>
-                          ต่อไป
+                          {I18n.t('translate_Next')}
                         </Text>
                         <Icon
                           name="chevron-right"
@@ -8774,7 +8774,7 @@ class TradeActivitiesRegister extends React.Component {
                                     fontSize: 18,
                                     textAlign: 'center',
                                   }}>
-                                  อัพโหลดไฟล์
+                                  {I18n.t('transalte_uploade_file')}
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -8879,7 +8879,7 @@ class TradeActivitiesRegister extends React.Component {
                                     fontSize: 18,
                                     textAlign: 'center',
                                   }}>
-                                  อัพโหลดไฟล์
+                                  {I18n.t('transalte_uploade_file')}
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -8985,7 +8985,7 @@ class TradeActivitiesRegister extends React.Component {
                                     fontSize: 18,
                                     textAlign: 'center',
                                   }}>
-                                  อัพโหลดไฟล์
+                                  {I18n.t('transalte_uploade_file')}
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -9134,7 +9134,7 @@ class TradeActivitiesRegister extends React.Component {
                                     fontSize: 18,
                                     textAlign: 'center',
                                   }}>
-                                  อัพโหลดไฟล์
+                                  {I18n.t('transalte_uploade_file')}
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -9231,7 +9231,7 @@ class TradeActivitiesRegister extends React.Component {
                                     fontSize: 18,
                                     textAlign: 'center',
                                   }}>
-                                  อัพโหลดไฟล์
+                                  {I18n.t('transalte_uploade_file')}
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -9240,17 +9240,12 @@ class TradeActivitiesRegister extends React.Component {
                         <View style={{marginHorizontal: 15}}>
                           <View style={{marginHorizontal: 15}}>
                             <Text style={{color: '#86aec8', fontSize: 18}}>
-                              {'  '}กรณีที่บริษัทไม่ได้ทำการผลิตสินค้าเอง
-                              จะต้องมีจดหมายรับรองจากบริษัทที่ผลิตสินค้าให้ว่าได้ทำการผลิตสินค้าให้
-                              พร้อมทั้งแนบสำเนาหนังสือรับรองคุณภาพมาตรฐานสินค้าจากหน่วยงานที่เกี่ยวข้องของบริษัทที่ผลิตสินค้าให้
-                              (ทุกรายการที่บริษัทที่ผลิตสินค้าให้ได้รับการรับรองคุณภาพมาตรฐานสินค้า)
-                              เอกสารทุกฉบับจะต้องมีการเซ็นรับรองสำเนาถูกต้องโดยผู้มีอำนาจลงนามของบริษัทที่ทำการผลิตสินค้าให้
-                              และประทับตราบริษัทที่ทำการผลิตสินค้าให้
+                              {I18n.t('transalte_Condition_details')}
                             </Text>
                           </View>
                           <View style={{marginHorizontal: 15, marginTop: 10}}>
                             <Text style={{color: 'red', fontSize: 18}}>
-                              *โปรดตรวจสอบความถูกต้อง และวันหมดอายุของเอกสาร
+                              *{I18n.t('transalte_total_accuracy_and_document_expiration_date')}
                             </Text>
                           </View>
                         </View>
@@ -9306,7 +9301,7 @@ class TradeActivitiesRegister extends React.Component {
 
                               marginTop: 0,
                             }}>
-                            กลับ
+                            {I18n.t('translate_Back')}
                           </Text>
                         </View>
                       </TouchableOpacity>
@@ -9334,7 +9329,7 @@ class TradeActivitiesRegister extends React.Component {
                             textAlign: 'center',
                             marginTop: 5.5,
                           }}>
-                          ต่อไป
+                          {I18n.t('translate_Next')}
                         </Text>
                         <Icon
                           name="chevron-right"
@@ -9863,7 +9858,7 @@ class TradeActivitiesRegister extends React.Component {
                               color: '#40536d',
                               textAlign: 'center',
                             }}>
-                            ข้าพเจ้ายอมรับเงื่อนไขข้อกำหนดของกรม
+                            {I18n.t('transalte_accept_the_terms')}
                           </Text>
                         </View>
                         <TouchableOpacity onPress={() => {}}>
@@ -9874,7 +9869,7 @@ class TradeActivitiesRegister extends React.Component {
                               textAlign: 'center',
                               textDecorationLine: 'underline',
                             }}>
-                            อ่านเงื่อนไขข้อกำหนดของกรม
+                            {I18n.t('transalte_Read_terms')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -9924,7 +9919,7 @@ class TradeActivitiesRegister extends React.Component {
                           fontSize: 22,
                           color: '#2d6dc4',
                         }}>
-                        กลับ
+                        {I18n.t('translate_Back')}
                       </Text>
                     </View>
                   </TouchableOpacity>
@@ -9951,7 +9946,7 @@ class TradeActivitiesRegister extends React.Component {
                         fontSize: 22,
                         color: '#FFFFFF',
                       }}>
-                      ยืนยันการสมัคร
+                      {I18n.t('transalte_confirmation_apply')}
                     </Text>
                   </TouchableOpacity>
                 </View>

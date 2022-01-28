@@ -796,7 +796,7 @@ class Activities extends React.Component {
                   <View style={{marginTop: 10}}>
                     {this.state.price === '' ? (
                       <Text style={{fontSize: 18, color: '#3a3a3a'}}>
-                        {I18n.t('translate_ActPrice')} : {'ไม่มีค่าใช้จ่าย'}
+                        {I18n.t('translate_ActPrice')} : {I18n.t('transalte_free_of_charge')}
                       </Text>
                     ) : (
                       <Text style={{fontSize: 18, color: '#3a3a3a'}}>
@@ -1052,7 +1052,7 @@ class Activities extends React.Component {
                                                 color: '#2d6dc4',
                                               }}>
                                               {' '}
-                                              รอการชำระเงิน
+                                              {I18n.t('transalte_waiting_payment')}
                                             </Text>
                                             <TouchableOpacity
                                               onPress={() =>
@@ -1091,7 +1091,7 @@ class Activities extends React.Component {
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
-                                              ครบกำหนด
+                                              {I18n.t('transalte_due')}
                                             </Text>
                                           </View>
                                         </View>
@@ -1202,8 +1202,7 @@ class Activities extends React.Component {
                                                 fontSize: 24,
                                                 color: '#2d6dc4',
                                               }}>
-                                              {' '}
-                                              ทำแบบประเมิน
+                                              {I18n.t('translate_assessment')}
                                             </Text>
                                             <TouchableOpacity
                                               onPress={() => {
@@ -1245,7 +1244,7 @@ class Activities extends React.Component {
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
-                                              ครบกำหนด
+                                              {I18n.t('transalte_due')}
                                             </Text>
                                             <Text
                                               style={{
@@ -1254,7 +1253,7 @@ class Activities extends React.Component {
                                                 marginTop: 4,
                                               }}>
                                               {' '}
-                                              *เพื่อใช้ประกอบการพิจารณาคัดเลือกเข้าร่วมกิจกรรมครั้งต่อไป
+                                              *{I18n.t('transalte_considered_selection')}
                                             </Text>
                                           </View>
                                         </View>
@@ -1318,7 +1317,7 @@ class Activities extends React.Component {
                           textAlign: 'center',
                           textDecorationLine: 'underline',
                         }}>
-                        แสดงรายละเอียด
+                        {I18n.t('transalte_show_details')}
                       </Text>
                       <Icon3
                         color="#2d6dc4"
@@ -1400,7 +1399,7 @@ class Activities extends React.Component {
                             textAlign: 'center',
                             textDecorationLine: 'underline',
                           }}>
-                          ซ่อนรายละเอียด
+                          {I18n.t('transalte_Hide_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -1420,12 +1419,12 @@ class Activities extends React.Component {
 
                   <View style={{flex: 1}}>
                     <Text style={{color: '#3a3a3a', fontSize: 18}}>
-                      หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
+                      {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                     </Text>
                     <Text
                       numberOfLines={1}
                       style={{color: '#3a3a3a', fontSize: 18}}>
-                      เจ้าหน้าที่โครงการ : {this.state.officer_name}
+                      {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                     </Text>
                     <View style={{flexDirection: 'row'}}>
                       {this.state.deparment_tel === 'ditp.ciie@gmail.com' ? (
@@ -1742,7 +1741,7 @@ class Activities extends React.Component {
                       marginTop: 10,
                     }}>
                     <Text style={{color: '#FFFFFF', fontSize: 18}}>
-                      {'กรอกใบสมัครต่อ'}
+                      {I18n.t('transalte_Continue')}
                     </Text>
                   </TouchableOpacity>
                 </View>
@@ -1882,7 +1881,7 @@ class Activities extends React.Component {
                   <View style={{marginTop: 10}}>
                     {this.state.price === '' ? (
                       <Text style={{fontSize: 18, color: '#3a3a3a'}}>
-                        {I18n.t('translate_ActPrice')} : {'ไม่มีค่าใช้จ่าย'}
+                        {I18n.t('translate_ActPrice')} : {I18n.t('transalte_free_of_charge')}
                       </Text>
                     ) : (
                       <Text style={{fontSize: 18, color: '#3a3a3a'}}>
@@ -2165,7 +2164,7 @@ class Activities extends React.Component {
                               {index == 1 && (
                                 <>
                                   {data.status_name ===
-                                  'แก้ไขข้อมูล (รอตรวจสอบคุณสมบัติ)' &&  data.status_active === 'Y'   ? 
+                                  I18n.t('transalte_edit_info_waiting_verify_properties') &&  data.status_active === 'Y'   ? 
                                     
                                    (
                                     <View style={{marginBottom: 15}}>
@@ -2216,11 +2215,11 @@ class Activities extends React.Component {
                                               
 
                                                 Alert.alert(
-                                                  'รายละเอียดการแก้ไขใบสมัคร',
+                                                  I18n.t('alert_Application_amendment_details'),
                                                   data.status_name .toString(),
                                                   [
                                                     {
-                                                      text: 'แก้ไขใบสมัคร',
+                                                      text: I18n.t('alert_edit_application'),
                                                        onPress: () =>
                                                        {
                                                         Thiss._CheckRegister({
@@ -2312,7 +2311,7 @@ class Activities extends React.Component {
                                                     color: '#FFF',
                                                     fontSize: 18,
                                                   }}>
-                                                  {'แก้ไขใบสมัคร'}
+                                                  {I18n.t('transalte_edit_application')}
                                                 </Text>
                                               </View>
                                             </TouchableOpacity>
@@ -2422,7 +2421,7 @@ class Activities extends React.Component {
                                                 color: '#2d6dc4',
                                               }}>
                                               {' '}
-                                              รอการชำระเงิน
+                                              {I18n.t('transalte_waiting_payment')}
                                             </Text>
                                             <TouchableOpacity
                                               onPress={() =>
@@ -2461,7 +2460,7 @@ class Activities extends React.Component {
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
-                                              ครบกำหนด
+                                              {I18n.t('transalte_due')}
                                             </Text>
                                           </View>
                                         </View>
@@ -2613,8 +2612,7 @@ class Activities extends React.Component {
                                                 fontSize: 24,
                                                 color: '#2d6dc4',
                                               }}>
-                                              {' '}
-                                              ทำแบบประเมิน
+                                              {I18n.t('translate_assessment')}
                                             </Text>
                                             <TouchableOpacity
                                               onPress={() => {
@@ -2658,7 +2656,7 @@ class Activities extends React.Component {
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
-                                              ครบกำหนด
+                                              {I18n.t('transalte_due')}
                                             </Text>
                                           </View>
                                           <View style={{width: '100%'}}>
@@ -2669,7 +2667,7 @@ class Activities extends React.Component {
                                                 marginTop: 4,
                                               }}>
                                               {' '}
-                                              *เพื่อใช้ประกอบการพิจารณาคัดเลือกเข้าร่วมกิจกรรมครั้งต่อไป
+                                              *{I18n.t('transalte_considered_selection')}
                                             </Text>
                                           </View>
                                         </View>
@@ -2733,7 +2731,7 @@ class Activities extends React.Component {
                           textAlign: 'center',
                           textDecorationLine: 'underline',
                         }}>
-                        แสดงรายละเอียด
+                        {I18n.t('transalte_show_details')}
                       </Text>
                       <Icon3
                         color="#2d6dc4"
@@ -2805,7 +2803,7 @@ class Activities extends React.Component {
                             textAlign: 'center',
                             textDecorationLine: 'underline',
                           }}>
-                          ซ่อนรายละเอียด
+                          {I18n.t('transalte_Hide_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -2825,12 +2823,12 @@ class Activities extends React.Component {
 
                   <View style={{flex: 1}}>
                     <Text style={{color: '#3a3a3a', fontSize: 18}}>
-                      หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
+                      {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                     </Text>
                     <Text
                       numberOfLines={1}
                       style={{color: '#3a3a3a', fontSize: 18}}>
-                      เจ้าหน้าที่โครงการ : {this.state.officer_name}
+                      {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                     </Text>
                     <View style={{flexDirection: 'row'}}>
                       {this.state.deparment_tel === 'ditp.ciie@gmail.com' ? (
@@ -3089,11 +3087,11 @@ class Activities extends React.Component {
 
                                     
                                     Alert.alert(
-                                      'รายละเอียดการแก้ไขใบสมัคร',
+                                      I18n.t('alert_Application_amendment_details'),
                                       status_name .toString(),
                                       [
                                         {
-                                          text: 'แก้ไขใบสมัคร',
+                                          text: I18n.t('alert_edit_application'),
                                            onPress: () =>
                                            {
                                             Thiss._CheckRegister({
@@ -3177,7 +3175,7 @@ class Activities extends React.Component {
                                   }}>
                                   <Text
                                     style={{color: '#FFFFFF', fontSize: 18}}>
-                                    {'ดูรายละเอียด'}
+                                    {I18n.t('transalte_see_details')}
                                   </Text>
                                 </TouchableOpacity>
                               )}
@@ -3238,7 +3236,7 @@ class Activities extends React.Component {
                         marginTop: 10,
                       }}>
                       <Text style={{color: '#FFFFFF', fontSize: 18}}>
-                        {'เรียนต่อ'}
+                        {I18n.t('transalte_learn_more')}
                       </Text>
                     </TouchableOpacity>
                   )}
@@ -3518,7 +3516,7 @@ class Activities extends React.Component {
                   <View style={{marginTop: 10}}>
                     {this.state.price === '' ? (
                       <Text style={{fontSize: 18, color: '#3a3a3a'}}>
-                        {I18n.t('translate_ActPrice')} : {'ไม่มีค่าใช้จ่าย'}
+                        {I18n.t('translate_ActPrice')} : {I18n.t('transalte_free_of_charge')}
                       </Text>
                     ) : (
                       <Text style={{fontSize: 18, color: '#3a3a3a'}}>
@@ -3777,7 +3775,7 @@ class Activities extends React.Component {
                                                 color: '#2d6dc4',
                                               }}>
                                               {' '}
-                                              รอการชำระเงิน
+                                              {I18n.t("transalte_waiting_payment")}
                                             </Text>
                                             <TouchableOpacity
                                               onPress={() =>
@@ -3816,7 +3814,7 @@ class Activities extends React.Component {
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
-                                              ครบกำหนด
+                                              {I18n.t('transalte_due')}
                                             </Text>
                                           </View>
                                         </View>
@@ -4010,8 +4008,7 @@ class Activities extends React.Component {
                                                 fontSize: 24,
                                                 color: '#2d6dc4',
                                               }}>
-                                              {' '}
-                                              ทำแบบประเมิน
+                                              {I18n.t('translate_assessment')}
                                             </Text>
                                             <TouchableOpacity
                                               onPress={() => {
@@ -4055,7 +4052,7 @@ class Activities extends React.Component {
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
-                                              ครบกำหนด
+                                              {I18n.t('transalte_due')}
                                             </Text>
                                           </View>
                                           <View style={{width: '100%'}}>
@@ -4066,7 +4063,7 @@ class Activities extends React.Component {
                                                 marginTop: 4,
                                               }}>
                                               {' '}
-                                              *เพื่อใช้ประกอบการพิจารณาคัดเลือกเข้าร่วมกิจกรรมครั้งต่อไป
+                                              *{I18n.t('transalte_considered_selection')}
                                             </Text>
                                           </View>
                                         </View>
@@ -4130,7 +4127,7 @@ class Activities extends React.Component {
                           textAlign: 'center',
                           textDecorationLine: 'underline',
                         }}>
-                        แสดงรายละเอียด
+                        {I18n.t('transalte_show_details')}
                       </Text>
                       <Icon3
                         color="#2d6dc4"
@@ -4230,7 +4227,7 @@ class Activities extends React.Component {
                             textAlign: 'center',
                             textDecorationLine: 'underline',
                           }}>
-                          ซ่อนรายละเอียด
+                          {I18n.t('transalte_Hide_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -4250,12 +4247,12 @@ class Activities extends React.Component {
 
                   <View style={{flex: 1}}>
                     <Text style={{color: '#3a3a3a', fontSize: 18}}>
-                      หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
+                      {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                     </Text>
                     <Text
                       numberOfLines={1}
                       style={{color: '#3a3a3a', fontSize: 18}}>
-                      เจ้าหน้าที่โครงการ : {this.state.officer_name}
+                      {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                     </Text>
                     <View style={{flexDirection: 'row'}}>
                       {this.state.deparment_tel === 'ditp.ciie@gmail.com' ? (
@@ -4512,7 +4509,7 @@ class Activities extends React.Component {
                     ? Styles.textmeenustory
                     : Styles.textmeenustory2
                 }>
-                {'รอยื่นใบสมัคร'}
+                {I18n.t('transalte_waiting_application')}
               </Text>
             </LinearGradient>
           </TouchableOpacity>

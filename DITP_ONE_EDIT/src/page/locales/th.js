@@ -913,7 +913,8 @@ alert_add_information: 'กรุณาเพิ่มข้อมูลปร�
 alert_succeed: 'สำเร็จ',
 alert_Data_verification_progress: 'กำลังดำเนินการตรวจสอบข้อมูล',
 alert_Share_successfully: 'แชร์สำเร็จ',
-
+alert_Application_amendment_details: 'รายละเอียดการแก้ไขใบสมัคร',
+alert_edit_application: 'แก้ไขใบสมัคร',
 
 
 //Activities.js
@@ -928,6 +929,11 @@ transalte_edit_application: 'แก้ไขใบสมัคร',
 translate_assessment: 'ทำแบบประเมิน',
 transalte_show_details: 'แสดงรายละเอียด',
 transalte_see_details: 'ดูรายละเอียด',
+transalte_waiting_application: 'รอยื่นใบสมัคร',
+transalte_free_of_charge: 'ไม่มีค่าใช้จ่าย',
+transalte_Continue: 'กรอกใบสมัครต่อ',
+transalte_edit_info_waiting_verify_properties: 'แก้ไขข้อมูล (รอตรวจสอบคุณสมบัติ)',
+transalte_learn_more: 'เรียนรู้เพิ่มเติม',
 
 //VieDevelop.js
 transalte_succeed: 'สำเร็จ',

@@ -82,7 +82,7 @@ export default {
   translate_Savechanges: 'Save changes',
   translate_Changepassword: 'Change password',
   translate_History_invo: 'Participation history',
-  translate_Activities_actualize: 'Ongoing activities',
+  translate_Activities_actualize: 'Pending Action',
   translate_subject: 'Title',
   translate_Waitingpayment: 'Payment pending',
   translate_Payment: 'Payment complete',
@@ -107,7 +107,7 @@ export default {
   translate_rejected: 'Rejected',
   translate_contact: 'Contact',
   translate_fiscalyear: 'Fiscal year',
-  translate_Completed_activities: 'Completed activities',
+  translate_Completed_activities: 'Completed',
   translate_History_SMEs_Pro: 'SMEs Pro Active history',
   translate_permissions: 'Use the right',
   translate_Hide: 'Hide',
@@ -926,6 +926,8 @@ export default {
   alert_succeed: 'Succeed',
   alert_Data_verification_progress: 'Data verification is in progress.',
   alert_Share_successfully: 'Share successfully',
+  alert_Application_amendment_details: 'Application Amendment Details',
+  alert_edit_application: 'Edit Application',
 
   //Activities.js
   transalte_waiting_payment: 'Waiting For Payment',
@@ -939,6 +941,11 @@ export default {
   translate_assessment: 'Complete survey',
   transalte_show_details: 'Show Details',
   transalte_see_details: 'See Details',
+  transalte_waiting_application: 'Application',
+  transalte_free_of_charge: 'Free of charge',
+  transalte_Continue: 'Continue Apply',
+  transalte_edit_info_waiting_verify_properties: 'Edit information (waiting to verify properties)',
+  transalte_learn_more: 'Learn more',
 
   //VieDevelop.js
   transalte_succeed: 'Succeed',

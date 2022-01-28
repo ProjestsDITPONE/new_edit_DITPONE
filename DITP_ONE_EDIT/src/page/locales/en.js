@@ -51,6 +51,10 @@ export default {
   translate_Policy: 'Policy',
   translate_RegisterPolicy: 'Policy',
   translate_Canclemember: 'Cancel Membership DITP ONE',
+  transalte_Confirm_Change_Passcode: 'Confirm Passcode Change',
+  transalte_Change_Passcode: 'Change Passcode',
+  transalte_Set_Passcode: 'Complete Passcode',
+  transalte_Delete_Code: 'Delete',
   translate_logout: 'Logout',
   translate_questionnaire: 'Survey',
   translate_CanclememberAg: 'Unregister DITP ONE',
@@ -61,6 +65,9 @@ export default {
   transalte_application_activities: 'Apply Activities',
   transalte_Favorite_activity: 'Favorite Activity',
   transalte_Chat_with_importers: 'Chat importers from thaitradefair.com' ,
+  transalte_enter_new_PIN_code_again: 'Please enter a new PIN code again.',
+  transalte_Invalid_passcode: 'Invalid PIN password',
+  transalte_Verify_Passcode: 'Verify Passcode',
 
   //ProfileActivity ตรวจสอบสถานะ
   translate_ViewProfile: 'ViewProfile',

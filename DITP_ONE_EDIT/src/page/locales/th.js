@@ -865,6 +865,7 @@ transalte_registersme: 'การสมัคร',
 transalte_Plzregister:'ขอรับการสนับสนุนเข้าร่วมกิจกรรม',
 transalte_FfaceIDTouchID:'Face ID/Touch ID',
 transalte_Passcode :'ตั้งค่า Passcode',
+transalte_Verify_Passcode: 'ยืนยัน Passcode',
 transalte_QAQA :' โปรดทำแบบสอบถามเพื่อการแนะนำกิจกรรมที่เหมาะสมให้แก่ท่าน',
 //แจ้งเตือย
 transalte_newsNoti:'ข่าว',
@@ -1056,6 +1057,7 @@ translate_QuesSelec: 'เลือกได้มากกว่า 1 ข้อ'
 transalte_Delete_Code: 'ลบ',
 transalte_Read_terms: 'อ่านเงื่อนไขข้อกำหนดของกรม.',
 transalte_enter_new_PIN_code_again: 'กรุณาใส่รหัส PIN ใหม่อีกครั้ง',
+transalte_Invalid_passcode: 'รหัสผ่าน PIN ไม่ถูกต้อง',
 
 //TradeAcivitiesRegister.js
 transalte_Expenses: 'ค่าใช้จ่าย',

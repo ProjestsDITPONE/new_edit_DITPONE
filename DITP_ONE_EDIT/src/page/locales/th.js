@@ -921,6 +921,7 @@ alert_Data_verification_progress: 'กำลังดำเนินการต
 alert_Share_successfully: 'แชร์สำเร็จ',
 alert_Application_amendment_details: 'รายละเอียดการแก้ไขใบสมัคร',
 alert_edit_application: 'แก้ไขใบสมัคร',
+alert_Please_add_info: 'กรุณาเพิ่มข้อมูประกอบ',
 
 
 //Activities.js
@@ -949,6 +950,7 @@ transalte_tradeActivities_search_time: 'เลือกช่วงเวลา'
 //ViewDevelopTap.js
 transalte_: '',
 transalte_map: 'แผนที่',
+transalte_Other: 'อื่น ๆ',
 
 //DevlopRegister.js
 transalte_company_info: 'ข้อมูลบริษัท',
@@ -965,6 +967,7 @@ transalte_select_district: 'เลือกอำเภอ',
 transalte_select_subdistrict: 'เลือกตำบล',
 transalte_corporate_registration_number: 'เลขทะเบียนนิติบุคคล',
 transalte_company_business_thai: 'บริษัท/กิจการ (ไทย)',
+transalte_company_business_eng: 'บริษัท/กิจการ (อังกฤษ)',
 transalte_address_thai: 'ที่อยู่ติดต่อ (ไทย)',
 transalte_address_eng: 'ที่อยู่ติดต่อ (อังกฤษ)',
 transalte_fax_number: 'เบอร์โทรสาร',
@@ -1078,6 +1081,24 @@ transalte_application_submission_date: 'วันที่ส่งใบสม�
 transalte_Event_date: 'วันที่จัดกิจกรรม',
 transalte_application_status: 'สถานะใบสมัคร',
 
-
+//new
+transalte_personal_info: 'ข้อมูลส่วนตัว',
+transalte_accompanying_info: 'ข้อมูลประกอบ',
+transalte_Participants: 'ผู้เข้าร่วมกิจกรรม',
+transalte_interested_export_market: 'ตลาดส่งออกที่สนใจ',
+transalte_please_select: 'โปรดเลือก',
+transalte_not_product: 'ไม่มีสินค้า',
+transalte_select_product_group: 'เลือกกลุ่มสินค้า',
+transalte_uploade_file: 'อัพโหลดไฟล์',
+transalte_select_type_product: 'เลือกประเภทสินค้า',
+transalte_no_company_information: 'ไม่มีข้อมูลบริษัท',
+transalte_select_country: 'เลือกประเทศ',
+transalte_Add_contact_information: 'เพิ่มข้อมูลผู้ติดต่อ',
+transalte_Add_contact_information_new: 'เพิ่มข้อมูลผู้ติดต่อ (รายใหม่)',
+transalte_delete_product: 'ลบสินค้า',
+transalte_add_product: 'เพิ่มสินค้า',
+transalte_delete_participant: 'ลบผู็เข้าร่วม',
+transalte_confirmation_apply: 'ยืนยันการสมัคร',
+transalte_edit_accompanying_info: 'แก้ไขข้อมูลประกอบ',
 
 };

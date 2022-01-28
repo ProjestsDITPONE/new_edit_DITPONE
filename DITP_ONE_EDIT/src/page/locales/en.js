@@ -165,7 +165,7 @@ export default {
   translate_Readmore_Deve: 'Detail',
   translate_Recommended_course: 'Recommended programmes',
   translate_Title_DevelopScreen: 'All Training',
-  translate_Title_AllDEV:'ฝึกอบรม/สัมมนา',
+  translate_Title_AllDEV:'Training/Seminars',
   translate_Title_Elearning:'E-Learning',
 
   // สถิติการค้าระหว่างประเทศ StatisticsScreen
@@ -939,6 +939,7 @@ export default {
   alert_Share_successfully: 'Share successfully',
   alert_Application_amendment_details: 'Application Amendment Details',
   alert_edit_application: 'Edit Application',
+  alert_Please_add_info: 'Please add information',
 
   //Activities.js
   transalte_waiting_payment: 'Waiting For Payment',
@@ -966,6 +967,8 @@ export default {
   //ViewDevelopTap.js
   transalte_: '',
   transalte_map: 'Map',
+  transalte_Other: 'Other',
+  
 
   //DevlopRegister.js
   transalte_company_info: 'Company Info',
@@ -982,6 +985,7 @@ export default {
   transalte_select_subdistrict: 'Sub-District',
   transalte_corporate_registration_number: 'Corporate Registration Number',
   transalte_company_business_thai: 'company/business (thai)',
+  transalte_company_business_eng: 'company/business (eng))',
   transalte_address_thai: 'Address (thai)',
   transalte_address_eng: 'Address (eng)',
   transalte_fax_number: 'Fax Number',
@@ -990,7 +994,7 @@ export default {
   transalte_Trading_company_between: 'Trading company between...',
   transalte_add_company: 'Increase Company',
 
-  transalte_registerdevlop:'กิจกรรมฝึกอบรมและสัมมนา',
+  transalte_registerdevlop:'Training activities and seminars',
   transalte_ThailandWeek :'Thailand Week',
   transalte_evaluation:'แบบประเมินการฝึกอบรม/สัมมนา',
   transalte_analyze:'วิเคราะห์โอกาสทางการค้า (AI)',
@@ -1016,6 +1020,34 @@ transalte_Trade_show_rights_Virtual: 'Trade show rights\nVirtual',
 transalte_application_submission_date: 'Apply Submission Date',
 transalte_Event_date: 'Event Date',
 transalte_application_status: 'Apply Status',
+
+//new
+transalte_personal_info: 'Personal Info',
+transalte_accompanying_info: 'Accompanying Info',
+transalte_Participants: 'Participants',
+transalte_ButtonSearch: 'Search', 
+transalte_interested_export_market: 'Interested Export Market',
+transalte_please_select: 'Please Select',
+transalte_not_product: 'Not Product',
+transalte_select_product_group: 'Select Product Group',
+transalte_uploade_file: 'Uploade File',
+transalte_select_type_product: 'Select Product Type',
+transalte_no_company_information: 'Not Company Info',
+transalte_select_country: 'Select Country',
+transalte_Add_contact_information: 'Add Contact Info',
+transalte_Add_contact_information_new: 'Add Contact Info (New)',
+transalte_delete_product: 'Delete Product',
+transalte_add_product: 'Add Product',
+transalte_delete_participant: 'Delete Participant',
+transalte_confirmation_apply: 'Confirmation Of Apply',
+transalte_Edit_Juristic_Information: 'Edit Corporate Info',
+transalte_edit_accompanying_info: 'Edit Accompanying Info',
+transalte_Search_contact_history: 'Search history of contact information (existing)',
+transalte_No_participant_information: 'No participant information',
+
+
 };
+
+
 // translate_Checkstatus_title: 'Check status',
 // translate_Checkstatus_subtitle: 'participate',

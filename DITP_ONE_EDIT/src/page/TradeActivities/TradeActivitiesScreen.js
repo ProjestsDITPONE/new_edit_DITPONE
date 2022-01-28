@@ -149,7 +149,7 @@ class TradeActivitiesScreen extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('สำเสร็จ');
+          alert(I18n.t('alert_succeed'));
         } else {
           // shared
           alert(result.activityType);
@@ -193,7 +193,7 @@ class TradeActivitiesScreen extends React.Component {
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('สำเสร็จ');
+          alert(I18n.t('alert_succeed'));
         } else {
           // shared
           alert(result.activityType);
@@ -1519,7 +1519,7 @@ class TradeActivitiesScreen extends React.Component {
                         />
                         <View style={{bottom: 13, right: 28}}>
                           <Text style={{fontSize: 12, color: '#b7b7b7'}}>
-                            ย้อนหลัง
+                            {I18n.t('translate_returnBack')}
                           </Text>
                         </View>
                       </View>
@@ -2114,7 +2114,7 @@ class TradeActivitiesScreen extends React.Component {
                                 );
                               }}
                               style={{flex: 1, justifyContent: 'center'}}>
-                              <Text style={Styles.searchText1}>ค้นหา</Text>
+                              <Text style={Styles.searchText1}>{I18n.locale === 'th' ? 'ค้นหา' : 'Search' }</Text>
                             </TouchableOpacity>
                           </View>
                           <View
@@ -2152,7 +2152,7 @@ class TradeActivitiesScreen extends React.Component {
                               }}
                               style={{flex: 1, justifyContent: 'center'}}>
                               <Text style={Styles.searchText1}>
-                                {'ล้างทั้งหมด'}
+                                {I18n.t('transalte_Bt_clear_all')}
                               </Text>
                             </TouchableOpacity>
                           </View>
@@ -2193,18 +2193,18 @@ class TradeActivitiesScreen extends React.Component {
                                   I18n.locale === 'th' ? 'ความต้องการ' : 'All',
                               }}
                               doneText={
-                                I18n.locale === 'th' ? ' เลือก' : 'Done'
+                                I18n.locale === 'th' ? 'เลือก' : 'Done'
                               }
                               value={
                                 this.state.valueSelectActivity3dev === undefined
-                                  ? 'ความต้องการ'
+                                  ? I18n.t('transalte_Demand')
                                   : this.state.valueSelectActivity3dev
                               }
                               onValueChange={(value, index) => {
                                 this.setState({
                                   valueSelectActivity3dev:
                                     index === 0
-                                      ? 'ความต้องการ'
+                                      ? I18n.t('transalte_Demand')
                                       : this.state.dataproductNeed[index - 1]
                                           .Need,
                                   valueindexdev:
@@ -2252,7 +2252,7 @@ class TradeActivitiesScreen extends React.Component {
                                   {this.state.valueSelectActivity3dev ===
                                   undefined ? (
                                     <Text style={Styles.viewckText}>
-                                      {'   '}ความต้องการ
+                                      {'   '}{I18n.t('transalte_Demand')}
                                     </Text>
                                   ) : (
                                     <Text
@@ -2316,7 +2316,7 @@ class TradeActivitiesScreen extends React.Component {
                                   : this.state.valueSelectActivity1
                               }
                               doneText={
-                                I18n.locale === 'th' ? ' เลือก' : 'Done'
+                                I18n.locale === 'th' ? 'เลือก' : 'Done'
                               }
                               onValueChange={(value, index) => {
                                 // alert(value + ""+index);
@@ -2383,7 +2383,7 @@ class TradeActivitiesScreen extends React.Component {
                                   undefined ? (
                                     <Text style={Styles.viewckText}>
                                       {'   '}
-                                      {'ประเภทกิจกรรม'}
+                                      {I18n.t('translate_ActivityType')}
                                     </Text>
                                   ) : (
                                     <Text
@@ -2487,7 +2487,7 @@ class TradeActivitiesScreen extends React.Component {
                                         Styles.viewckText,
                                         {color: '#4b4b4b'},
                                       ]}>
-                                      {'   '}สินค้า
+                                      {'   '}{I18n.t('transalte_Product_TraedAc')}
                                     </Text>
                                   ) : (
                                     <Text
@@ -2606,7 +2606,7 @@ class TradeActivitiesScreen extends React.Component {
                                   {this.state.textSelectActivity4 ===
                                   undefined ? (
                                     <Text style={Styles.viewckText}>
-                                      {'   '}สถานที่
+                                      {'   '}{I18n.t('transalte_location')}
                                     </Text>
                                   ) : (
                                     <Text
@@ -2656,7 +2656,7 @@ class TradeActivitiesScreen extends React.Component {
                                 backgroundColor: '#FFFF',
                                 justifyContent: 'center',
                               }}>
-                              <Text style={Styles.Notnoline}>Online</Text>
+                              <Text style={Styles.Notnoline}>{I18n.t('translate_Online')}</Text>
                             </TouchableOpacity>
                           ) : (
                             <TouchableOpacity
@@ -2692,7 +2692,7 @@ class TradeActivitiesScreen extends React.Component {
                                   fontFamily: 'Mitr-Regular',
                                   fontSize: 13,
                                 }}>
-                                Online
+                                {I18n.t('translate_Online')}
                               </Text>
                             </TouchableOpacity>
                           )}
@@ -2828,7 +2828,7 @@ class TradeActivitiesScreen extends React.Component {
                               color: '#FFFFFF',
                               fontSize: 18,
                             }}>
-                            แผนที่
+                            {I18n.t('transalte_map')}
                           </Text>
                         </TouchableOpacity>
                       </View>
@@ -2936,7 +2936,7 @@ class TradeActivitiesScreen extends React.Component {
                             textAlign: 'center',
                             textDecorationLine: 'underline',
                           }}>
-                          แสดงรายละเอียด
+                          {I18n.t('transalte_show_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -3012,7 +3012,7 @@ class TradeActivitiesScreen extends React.Component {
                               textAlign: 'center',
                               textDecorationLine: 'underline',
                             }}>
-                            ซ่อนรายละเอียด
+                            {I18n.t('transalte_Hide_details')}
                           </Text>
                           <Icon3
                             color="#2d6dc4"
@@ -3205,7 +3205,7 @@ class TradeActivitiesScreen extends React.Component {
                               }}>
                               {this.state.Close
                                 ? I18n.t('translate_Apply_activities')
-                                : '  ปิดรับสมัครกิจกรรม  '}
+                                : I18n.t('translate_Applacation')}
                             </Text>
                           </TouchableOpacity>
                         ) : (
@@ -3305,7 +3305,7 @@ class TradeActivitiesScreen extends React.Component {
 
                             borderRadius: 11,
                           }}>
-                          <Text style={Styles.popupTextMap}>แผนที่</Text>
+                          <Text style={Styles.popupTextMap}>{I18n.t('transalte_map')}</Text>
                         </TouchableOpacity>
                       </View>
                     </View>
@@ -3407,7 +3407,7 @@ class TradeActivitiesScreen extends React.Component {
                             this.setState({ckhide2: true});
                           }}
                           style={Styles.popupTexthideText}>
-                          แสดงรายละเอียด
+                          {I18n.t('transalte_show_details')}
                         </Text>
                         <Icon3
                           color="#2d6dc4"
@@ -3479,7 +3479,7 @@ class TradeActivitiesScreen extends React.Component {
                               this.setState({ckhide2: false});
                             }}
                             style={Styles.popupTexthideText}>
-                            ซ่อนรายละเอียด
+                            {I18n.t('transalte_Hide_details')}
                           </Text>
                           <Icon3
                             color="#2d6dc4"
@@ -3497,10 +3497,10 @@ class TradeActivitiesScreen extends React.Component {
                     </View>
                     <View style={{flex: 1}}>
                       <Text style={Styles.popupTextdetail}>
-                        หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
+                        {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                       </Text>
                       <Text style={Styles.popupTextdetail}>
-                        เจ้าหน้าที่โครงการ : {this.state.officer_name}
+                        {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                       </Text>
                       <View style={{flexDirection: 'row'}}>
                         <Image
@@ -3618,7 +3618,7 @@ class TradeActivitiesScreen extends React.Component {
                             <Text style={Styles.textactivityregister}>
                               {this.state.Close
                                 ? I18n.t('translate_Apply_activities')
-                                : '  ปิดรับสมัครกิจกรรม  '}
+                                : I18n.t('translate_Applacation')}
                             </Text>
                           </TouchableOpacity>
                         ) : (
@@ -3670,7 +3670,7 @@ class TradeActivitiesScreen extends React.Component {
                       color: '#FFFFFF',
                       fontFamily: 'PSL Kittithada Pro',
                     }}>
-                    ประเทศไทย
+                    {I18n.t('transalte_Thailand')}
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -3690,7 +3690,7 @@ class TradeActivitiesScreen extends React.Component {
                       color: '#FFFFFF',
                       fontFamily: 'PSL Kittithada Pro',
                     }}>
-                    ต่างประเทศ
+                    {I18n.t('transalte_foreign_country')}
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -3733,7 +3733,7 @@ class TradeActivitiesScreen extends React.Component {
             </View>
             <View style={{width: width * 0.8}}>
               <Text style={{color: '#3a3a3a', fontSize: 22}}>
-                รายละเอียด :{' '}
+                {I18n.t('translate_Readmore')} :{' '}
               </Text>
               <Text
                 style={{fontSize: 20, color: '#7d7d7d', marginHorizontal: 10}}>

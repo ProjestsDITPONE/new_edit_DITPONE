@@ -863,9 +863,9 @@ export default {
   translate_ActivityType: 'Choose Activity Type',
 
   // เลือกวันที่
-  translate_chooseday: 'Choose Date',
-  translate_choosemouth: 'Choose Mouth',
-  translate_chooseyear: 'Choose Year',
+  translate_chooseday: 'Date',
+  translate_choosemouth: 'Mouth',
+  translate_chooseyear: 'Year',
 
   //newdate
 

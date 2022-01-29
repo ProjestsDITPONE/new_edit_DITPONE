@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Dimensions, StyleSheet, View, Text, Image } from 'react-native';
 import { Header, Avatar, Badge } from 'react-native-elements';
+import I18n from '../utils/I18n';
 export default class HeaderTopPickdev extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +40,7 @@ export default class HeaderTopPickdev extends Component {
               source={require('../image/nogdoolandev.png')}
             />
             <View style={{ top: 45, right: 30 }}>
-              <Text style={{ fontSize: 12, color: '#135f9b' }}>น้องดูแล</Text>
+              <Text style={{ fontSize: 12, color: '#135f9b' }}>{I18n.t('translate_NongDulea')}</Text>
             </View>
           </View>
           <Image

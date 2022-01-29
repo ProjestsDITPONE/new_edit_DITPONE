@@ -1074,6 +1074,7 @@ transalte_Condition_details: 'In the event that the company does not produce the
 transalte_total_accuracy_and_document_expiration_date: 'Please check the correctness. and the expiration date of the document',
 transalte_accept_the_terms: 'I accept the terms and conditions of the department.',
 transalte_Read_terms: 'Read the terms and conditions of the department..',
+transalte_period_time: 'TIme Period',
 };
 
 

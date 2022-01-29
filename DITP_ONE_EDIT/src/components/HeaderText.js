@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Dimensions, StyleSheet, View, Text, Image } from 'react-native';
 import { Header, Avatar, Badge } from 'react-native-elements';
+import I18n from '../utils/I18n';
 import {ViewScale} from '../config/ViewScale'
 export default class HeaderText extends Component {
   constructor(props) {

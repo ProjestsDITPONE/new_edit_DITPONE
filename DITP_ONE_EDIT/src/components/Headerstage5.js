@@ -114,7 +114,7 @@ export default class Headerstage5 extends Component {
               source={require('../image/HearderTage2.png')}
             />
             <View style={{top: 40, right: Platform.OS === 'android' ? 40 : 40}}>
-              <Text style={{fontSize: 12, color: '#135f9b'}}>น้องดูแล</Text>
+              <Text style={{fontSize: 12, color: '#135f9b'}}>{I18n.t('translate_NongDulea')}</Text>
             </View>
           </View>
         </View>

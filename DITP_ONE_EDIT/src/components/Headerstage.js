@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Dimensions, StyleSheet, View, Text, Image } from 'react-native';
 import { Header, Avatar, Badge } from 'react-native-elements';
+import I18n from '../utils/I18n';
 export default class Headerstage extends Component {
   constructor(props) {
     super(props);
@@ -66,7 +67,7 @@ export default class Headerstage extends Component {
               source={require('../image/HearderTage2.png')}
             />
             <View style={{ top: 45, right: 30 }}>
-              <Text style={{ fontSize: 12, color: '#135f9b' }}>น้องดูแล</Text>
+              <Text style={{ fontSize: 12, color: '#135f9b' }}>{I18n.t('translate_NongDulea')}</Text>
             </View>
           </View>
         </View>

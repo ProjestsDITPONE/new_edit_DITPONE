@@ -96,7 +96,7 @@ const ViewMarketCountry = ({
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('สำเสร็จ');
+          alert(I18n.t('alert_succeed'));
         } else {
           // shared
           alert(result.activityType);
@@ -121,7 +121,7 @@ const ViewMarketCountry = ({
         if (result.activityType) {
           // shared with activity type of result.activityType
           // console.log(result.activityType);
-          alert('สำเสร็จ');
+          alert(I18n.t('alert_succeed'));
         } else {
           // shared
           alert(result.activityType);

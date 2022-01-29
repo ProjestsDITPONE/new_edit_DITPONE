@@ -940,6 +940,7 @@ export default {
   alert_Application_amendment_details: 'Application Amendment Details',
   alert_edit_application: 'Edit Application',
   alert_Please_add_info: 'Please add information',
+  alert_qr_incorrect: 'Qr code Incorrect',
 
   //Activities.js
   transalte_waiting_payment: 'Waiting For Payment',
@@ -1047,6 +1048,7 @@ transalte_No_participant_information: 'No participant information',
 transalte_Find_Advanced_Training: 'Find Advanced Training',
 transalte_Enter_ID_card_number: 'Enter your ID card number',
 transalte_Check_participants: 'Check the participants',
+transalte_search_product: 'Search Product',
 transalte_Bt_sesrch: 'Search',
 transalte_Juristic_Person_Information: 'Juristic Person Information',
 translate_Online: 'Onlie',
@@ -1075,6 +1077,10 @@ transalte_total_accuracy_and_document_expiration_date: 'Please check the correct
 transalte_accept_the_terms: 'I accept the terms and conditions of the department.',
 transalte_Read_terms: 'Read the terms and conditions of the department..',
 transalte_period_time: 'TIme Period',
+transalte_not_registration: 'Not Registration',
+transalte_confirmation_participation: 'Confirmation Of Participation',
+transalte_joined: 'Joined',
+transalte_number_apply: 'Number Of Apply',
 };
 
 

@@ -13,6 +13,7 @@ import {
 import {Avatar, Header} from 'react-native-elements';
 import QRCode from 'react-native-qrcode-generator';
 import QRCodeScanner from 'react-native-qrcode-scanner';
+import I18n from '../../utils/I18n';
 import Icon2 from 'react-native-vector-icons/Entypo';
 import {RNCamera} from 'react-native-camera';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -57,10 +58,10 @@ const Scanact = ({route, navigation, dispatch}) => {
           payload: {Token: Data['Token'], id: id},
         });
       } else {
-        Alert.alert('Qr code ไม่ถูกต้อง');
+        Alert.alert(I18n.t('alert_qr_incorrect'));
       }
     } catch (error) {
-      Alert.alert('Qr code ไม่ถูกต้อง');
+      Alert.alert(I18n.t('alert_qr_incorrect'));
     }
   };
 

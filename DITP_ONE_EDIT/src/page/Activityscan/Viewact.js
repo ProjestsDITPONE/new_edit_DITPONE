@@ -54,9 +54,9 @@ const Viewact = ({ navigation, route }) => {
               </Text>
               <View style={Styles.ViewSub8}>
                 <Text style={Styles.TextSub9}>
-                  เข้าร่วมแล้ว
+                  {I18n.t('transalte_joined')}
                     <Text style={Styles.TextSub10}> {count} </Text>
-                  <Text style={Styles.TextSub9}>ราย</Text>
+                  <Text style={Styles.TextSub9}>{I18n.locale === 'th' ? 'ราย' : 'Income'}</Text>
                 </Text>
               </View>
             </View>
@@ -67,11 +67,11 @@ const Viewact = ({ navigation, route }) => {
               />
             </View>
 
-            <Text style={Styles.TextSub9}>รายละเอียด :</Text>
+            <Text style={Styles.TextSub9}>{I18n.t('translate_Detail')} :</Text>
             <Text style={Styles.TextSub11}>{Detail}</Text>
             <Text style={[Styles.TextSub9, Styles.marginTop10]}>
-              จำนวนที่สมัคร :
-                  <Text style={Styles.TextSub9}> {people} ราย</Text>
+              {I18n.t('transalte_number_apply')} :
+                  <Text style={Styles.TextSub9}> {people} {I18n.locale === 'th' ? 'ราย' : 'Income'}</Text>
             </Text>
 
             {/* <View style={Styles.ViewSub9}>
@@ -112,7 +112,7 @@ const Viewact = ({ navigation, route }) => {
             style={Styles.ImgSub8}
             source={require('../../image/scanact2.png')}
           />
-          <Text style={Styles.textsSub11}> สแกน QR Code</Text>
+          <Text style={Styles.textsSub11}> {I18n.t('translate_ScanQrr')}</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() =>
@@ -123,7 +123,7 @@ const Viewact = ({ navigation, route }) => {
             style={Styles.ImgSub9}
             source={require('../../image/invate.png')}
           />
-          <Text style={Styles.textsSub11}> ผู้เข้าร่วมแล้ว</Text>
+          <Text style={Styles.textsSub11}> {I18n.t('translate_Participants')}</Text>
         </TouchableOpacity>
       </View>
     </View>

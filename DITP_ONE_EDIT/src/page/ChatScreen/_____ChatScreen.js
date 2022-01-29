@@ -945,7 +945,7 @@ class ChatScreen extends Component {
             flex: 1,
             marginBottom: 30,
           }}>
-          <Headerstage nameTab="มีคำถามปรึกษาเรา" />
+          <Headerstage nameTab={I18n.t('transalte_have_questions_consult_us')} />
           <View style={styles.lineChat} />
           <GiftedChat
             ref={c => {

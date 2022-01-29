@@ -19,6 +19,7 @@ import {
 import { getMenuHome, ScoreLogin, getStatus } from '../../actions/data.actions';
 import { connect } from 'react-redux';
 import { getDeepLink } from '../../config/utilities';
+import I18n from '../../utils/I18n';
 import SafeArea from 'react-native-safe-area';
 import EncryptedStorage from 'react-native-encrypted-storage';
 class LoginScreen extends React.Component {
@@ -128,7 +129,7 @@ class LoginScreen extends React.Component {
                   style={Styles.ImgBackground2}
                   resizeMode="contain"
                   source={require('../../image/TouchLogin.png')}>
-                  <Text style={Styles.TextSub1}>เข้าสู่ระบบ / สมัครสมาชิก</Text>
+                  <Text style={Styles.TextSub1}>{I18n.t('transalte_singin_subscribe')}</Text>
                 </ImageBackground>
               </TouchableOpacity>
             </View>
@@ -145,7 +146,7 @@ class LoginScreen extends React.Component {
                 style={Styles.ImgSub2}
                 source={require('../../image/personAdmin.png')}
               />
-              <Text style={Styles.TextSub2}> เจ้าหน้าที่กรม</Text>
+              <Text style={Styles.TextSub2}> {I18n.t('transalte_Department_staff')}</Text>
             </TouchableOpacity>
             <View style={Styles.ViewSub3}>
               <Image

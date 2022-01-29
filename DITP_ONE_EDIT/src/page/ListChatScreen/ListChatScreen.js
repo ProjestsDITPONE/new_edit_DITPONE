@@ -375,7 +375,7 @@ class ListChatScreen extends Component {
                             fontSize: ViewScale(20),
                             marginHorizontal: 9,
                           }}>
-                          {'วันนี้อยากให้น้องใส่ใจ\nช่วยอะไรดีคะ?'}
+                          {I18n.t('translate_DateSaijai')}
                         </Text>
                       </View>
                     </View>
@@ -455,7 +455,7 @@ class ListChatScreen extends Component {
                               marginHorizontal: 9,
                               marginTop: 12,
                             }}>
-                            {'เริ่มสนทนา  '}
+                            {I18n.t('transalte_start_conversation')}
                           </Text>
                         </View>
                       </TouchableOpacity>
@@ -500,7 +500,7 @@ class ListChatScreen extends Component {
                       ? Styles.textmeenustory
                       : Styles.textmeenustory2
                   }>
-                  {'สนทนาอยู่'}
+                  {I18n.t('transalte_chatting')}
                 </Text>
               </LinearGradient>
             </TouchableOpacity>
@@ -560,7 +560,7 @@ class ListChatScreen extends Component {
                       ? Styles.textmeenustory
                       : Styles.textmeenustory2
                   }>
-                  {'เก็บการสนทนา'}
+                  {I18n.t('transalte_keep_conversation')}
                 </Text>
               </LinearGradient>
             </TouchableOpacity>

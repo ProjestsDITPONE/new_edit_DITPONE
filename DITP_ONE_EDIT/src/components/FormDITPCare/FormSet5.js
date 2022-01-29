@@ -78,7 +78,7 @@ const FormSet5 = Passing => {
         items={Passing.typeProduct}
         searchable={true}
         placeholder=""
-        searchablePlaceholder="ค้นหา"
+        searchablePlaceholder={I18n.t('transalte_ButtonSearch')}
         labelStyle={{fontSize: 20}}
         selectedLabelStyle={{left: -40}}
         searchableStyle={{fontSize: 20}}

@@ -39,10 +39,10 @@ export default {
   translate_Default: 'Default',
   translate_naturalId: 'ID Card/Passport',
   translate_EditTouch: 'Edite Profile',
-  translate_good: 'ดีมาก',
-  translate_good2: 'พอใช้',
-  translate_good3: 'ปรับปรุง',
-  translate_goodDetail: 'ระบุรายละเอียด',
+  translate_good: 'Very Good',
+  translate_good2: 'Fair',
+  translate_good3: 'Amend',
+  translate_goodDetail: 'Specify Details',
 
   //Setting
   translate_changelang: 'Change language',
@@ -536,10 +536,11 @@ export default {
   title_noti: 'Notification',
   tab1_noti: 'Notification',
   tab2_noti: 'Message',
+  transalte_Mark_as_unread: 'Mark as unread',
   cre_mess_noti: 'Create new message',
 
-  transalte_noread: 'ยังไม่ได้อ่าน',
-  transalte_readed: 'อ่านแล้ว',
+  transalte_noread: 'Unread',
+  transalte_readed: 'Read',
   /*********************/
 
   /* page 16MessagesNew.html */
@@ -707,10 +708,10 @@ export default {
   translate_Gong: 'Filter',
   translate_SeachEx: 'ค้นหา อาทิเช่น ชื่อบริษัท,เลขนิติบุคคล',
   translate_SeachThai_Eng: 'ค้นหาโดยชื่อภาษาไทย หรือ ภาษาอังกฤษ',
-  translate_AnsSeach: 'ผลการค้นหา',
+  translate_AnsSeach: 'Search results',
 
   //ListChat
-  translate_DateSaijai: 'วันนี้อยากให้น้องใส่ใจช่วยอะไรดีคะ?',
+  translate_DateSaijai: 'Today I want you to pay attention\nWhat should I help you with?',
   translate_waitChat: 'กำลังสนทนา',
   translate_StartChat: '+ เริ่มการสนทนากับน้องใส่ใจ',
   translate_wantDeleteChat: 'ต้องการลบคำปรึกษากับเจ้าหน้าที่',
@@ -737,7 +738,7 @@ export default {
   translate_ConversationEnd: 'Conversation ended',
   translate_Cantats: 'Contacts',
   translate_ConsultUs: 'Consult us',
-  translate_ConversationHistory: 'Conversation history',
+  translate_ConversationHistory: 'History Chat',
   translate_EndConversation: 'End conversation',
   translate_ARUWantConversation: 'Are you sure you want to end conversation?',
   translate_PleaseRate: 'Please rate our consulting service',
@@ -878,10 +879,6 @@ export default {
   translate_ThanksDITP: 'ขอบคุณสำหรับการประเมิน',
 
   //
-
-  transalte_headerOSEC: 'ศึกษาขั้นตอนการส่งออก (OSEC)',
-  transalte_OSECis:
-    'OSEC คือ ศูนย์บริการส่งออกแบบเบ็ดเสร็จ (One Stop Export Service Center)',
   transalte_registersme: 'การสมัคร',
   transalte_Plzregister: 'ขอรับการสนับสนุนเข้าร่วมกิจกรรม',
   transalte_FfaceIDTouchID: 'Face ID/Touch ID',
@@ -939,6 +936,7 @@ export default {
   alert_edit_application: 'Edit Application',
   alert_Please_add_info: 'Please add information',
   alert_qr_incorrect: 'Qr code Incorrect',
+  alert_Invalid_email_password: 'Invalid email or password\nPlease check again.',
 
   //Activities.js
   transalte_waiting_payment: 'Waiting For Payment',
@@ -1080,8 +1078,25 @@ transalte_confirmation_participation: 'Confirmation Of Participation',
 transalte_joined: 'Joined',
 transalte_number_apply: 'Number Of Apply',
 transalte_negative_news: 'Negative News',
+transalte_negative: 'Negative',
+transalte_positive: 'Positive',
 transalte_positive_news: 'Positive News',
 transalte_choose_product: 'Choose Product',
+transalte_chatting: 'Chatting',
+transalte_start_conversation: 'Start Chat',
+transalte_keep_conversation: 'Keep Chat',
+transalte_send: 'Send',
+transalte_system_send_email: 'The system has sent a link to your email, please check.',
+transalte_Email_not_found: 'Email not found, please check again.',
+transalte_sign_in: 'Sing In',
+transalte_forgot_password: 'Forgot Password',
+transalte_Please_email_password: 'Please enter your email to receive your password.',
+transalte_singin_subscribe: 'Sing in / Subscribe',
+transalte_Department_staff: 'Department Staff',
+transalte_Move_all_read: 'Move all to "Read"',
+transalte_have_questions_consult_us: 'Have questions consult us',
+transalte_delete_list: 'Delete list',
+
 };
 
 

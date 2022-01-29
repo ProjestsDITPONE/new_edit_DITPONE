@@ -3217,7 +3217,7 @@ class ViewDevelop extends React.Component {
                         fontSize: 20,
                         textAlign: 'center',
                       }}>
-                      ค้นหา
+                      {I18n.t('transalte_ButtonSearch')}
                     </Text>
                   </TouchableOpacity>
                 </View>

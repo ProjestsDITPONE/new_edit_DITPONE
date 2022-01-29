@@ -246,7 +246,7 @@ class HeadersAndroid extends React.Component {
                   imageStyle={[styles.BGChat]}
                   style={[styles.BGChatSt, {justifyContent: 'center'}]}>
                   <View>
-                    <Text style={styles.TextBGChat}>มีคำถามปรึกษาเรา</Text>
+                    <Text style={styles.TextBGChat}>{I18n.t('transalte_have_questions_consult_us')}</Text>
                   </View>
                 </ImageBackground>
               </TouchableOpacity>

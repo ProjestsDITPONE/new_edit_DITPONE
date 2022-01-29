@@ -514,7 +514,7 @@ class ListChatScreen extends Component {
                       ? Styles.textmeenustory
                       : Styles.textmeenustory2
                   }>
-                  {'สนทนาอยู่'}
+                  {''}
                 </Text>
               </LinearGradient>
             </TouchableOpacity>

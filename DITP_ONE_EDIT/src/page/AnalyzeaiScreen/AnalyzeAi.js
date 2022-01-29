@@ -2176,7 +2176,7 @@ class AnalyzeAi extends React.Component {
                                ? this.state.setdefulttear
                                : this.state.valueSelectYYYY
                            }
-                           doneText={I18n.locale === 'th' ? ' เลือก' : 'Done'}
+                           doneText={I18n.locale === 'th' ? 'เลือก' : 'Done'}
                            onValueChange={(value, index) => {
                              this.setState({
                                valueSelectYYYY: value,
@@ -2202,7 +2202,7 @@ class AnalyzeAi extends React.Component {
                              <View style={Styles.inview2}>
                                <Text style={Styles.inviewtext3}>
                                  {this.state.valueSelectYYYY === undefined
-                                   ? '   ' + 'ปี'
+                                   ? '   ' + I18n.t('translate_chooseyear')
                                    : '   ' + this.state.valueSelectYYYY}
                                </Text>
                              </View>
@@ -2328,7 +2328,7 @@ class AnalyzeAi extends React.Component {
                              <View style={Styles.inview2}>
                                <Text style={Styles.inviewtext3}>
                                  {this.state.valueSelectMouthindex === undefined
-                                   ? '   เดือน'
+                                   ? '   ' + I18n.t('translate_choosemouth')
                                    : '   ' + this.state.valueSelectMMMM}
                                </Text>
                              </View>
@@ -2398,7 +2398,7 @@ class AnalyzeAi extends React.Component {
                              <View style={Styles.inview2}>
                                <Text style={Styles.inviewtext3}>
                                  {this.state.valueSelectDDDD === undefined
-                                   ? '   ' + 'วัน'
+                                   ? '   ' + I18n.t('translate_chooseday')
                                    : '   ' + this.state.valueSelectDDDD}
                                </Text>
                              </View>
@@ -2542,9 +2542,9 @@ class AnalyzeAi extends React.Component {
                    placeholder={I18n.t('translate_SORTBY')}
                    defaultValue={this.setState((this.state.Sort = null))}
                    items={[
-                     {label: 'เชิงลบ', value: 1},
+                     {label: I18n.t('transalte_negative'), value: 1},
                      // {label: I18n.t('translate_Oldest_Date'), value: 2},
-                     {label: ' เชิงบวก ', value: 2},
+                     {label: I18n.t('transalte_positive'), value: 2},
                      // {label: I18n.t('translate_Least_Date'), value: 4},
                    ]}
                    customTickIcon

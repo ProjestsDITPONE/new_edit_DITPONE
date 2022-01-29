@@ -1114,4 +1114,7 @@ transalte_not_registration: 'ไม่มีการลงทะเบียน
 transalte_confirmation_participation: 'ยืนยันการเข้าร่วม',
 transalte_joined: 'เข้าร่วมแล้ว',
 transalte_number_apply: 'จำนวนที่สมัคร',
+transalte_negative_news: 'ข่าวเชิงลบ',
+transalte_positive_news: 'ข่าวเชิงบวก',
+transalte_choose_product: 'เลือกสินค้า',
 };

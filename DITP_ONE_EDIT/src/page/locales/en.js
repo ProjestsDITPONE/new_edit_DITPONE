@@ -279,8 +279,6 @@ export default {
   //International Market Situation and Trends
   transalte_Please_select_market_products_interested:
     'Please select the market and products you are interested in.',
-  transalte_select_country: 'Country',
-  transalte_choose_product: 'Product',
   translate_seach_time: 'Seach',
   translate_seach_continent_country: 'Seach',
   translate_seach_product: 'Seach',
@@ -1081,6 +1079,9 @@ transalte_not_registration: 'Not Registration',
 transalte_confirmation_participation: 'Confirmation Of Participation',
 transalte_joined: 'Joined',
 transalte_number_apply: 'Number Of Apply',
+transalte_negative_news: 'Negative News',
+transalte_positive_news: 'Positive News',
+transalte_choose_product: 'Choose Product',
 };
 
 

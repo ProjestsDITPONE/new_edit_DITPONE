@@ -95,7 +95,7 @@ const DetailScan = ({getUserScan}) => {
                 {getUserScan.isResult.status_ditp.status === 'active ditp' ? (
                   <View style={Styles.ViewSub5}>
                     <Text style={{color: '#ffffff', fontSize: 18}}>
-                      สมาชิก {getUserScan.isResult.status_ditp.nameEn}
+                      {I18n.t('translate_Member')} {getUserScan.isResult.status_ditp.nameEn}
                     </Text>
                   </View>
                 ) : (

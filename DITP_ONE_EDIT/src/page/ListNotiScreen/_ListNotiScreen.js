@@ -913,7 +913,7 @@ class ListNotiScreen extends Component {
                   <View>
                     <Text style={{color: '#20416e', fontSize: 17}}>
                       {' '}
-                      ย้ายทั้งหมดไป "อ่านแล้ว"{' '}
+                      {I18n.t('transalte_Move_all_read')}{' '}
                     </Text>
                   </View>
                 </TouchableOpacity>
@@ -955,7 +955,7 @@ class ListNotiScreen extends Component {
                   <View>
                     <Text style={{color: '#20416e', fontSize: 17}}>
                       {' '}
-                      เลือกรายการ{' '}
+                      {I18n.t('translate_PlaeseChooseIrems')}{' '}
                     </Text>
                   </View>
                 </TouchableOpacity>
@@ -999,7 +999,7 @@ class ListNotiScreen extends Component {
                   <View>
                     <Text style={{color: '#20416e', fontSize: 17}}>
                       {' '}
-                      เลือกรายการ{' '}
+                      {I18n.t('translate_PlaeseChooseIrems')}{' '}
                     </Text>
                   </View>
                 </TouchableOpacity>
@@ -1048,7 +1048,7 @@ class ListNotiScreen extends Component {
                       fontSize: 18,
                       color: '#2d6dc4',
                     }}>
-                    เลือกทั้งหมด
+                    {I18n.locale === 'th' ? 'เลือกทั้งหมด' : 'Select All'}
                   </Text>
                 </TouchableOpacity>
                 {/* </View> */}
@@ -1128,7 +1128,7 @@ class ListNotiScreen extends Component {
                             fontSize: 18,
                             color: '#FFFFFF',
                           }}>
-                          ลบรายการ
+                          {I18n.t('transalte_delete_list')}
                         </Text>
                       </View>
                     </TouchableOpacity>
@@ -1228,7 +1228,7 @@ class ListNotiScreen extends Component {
                       fontSize: 18,
                       color: '#2d6dc4',
                     }}>
-                    เลือกทั้งหมด
+                    {I18n.locale === 'th' ? 'เลือกทั้งหมด' : 'Select All'}
                   </Text>
                 </TouchableOpacity>
                 {/* </View> */}
@@ -1329,7 +1329,7 @@ class ListNotiScreen extends Component {
                             fontSize: 18,
                             color: '#FFFFFF',
                           }}>
-                          ลบรายการ
+                          {I18n.t('transalte_delete_list')}
                         </Text>
                       </View>
                     </TouchableOpacity>

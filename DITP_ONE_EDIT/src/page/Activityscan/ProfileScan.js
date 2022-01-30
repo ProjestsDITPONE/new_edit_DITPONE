@@ -155,7 +155,7 @@ const ProfileScan = ({
               {cid.type === 1 ? (
                 <View>
                   <Text style={{fontSize: 25, color: '#4b4b4b'}}>
-                    เลขนิติบุคคล : {naturalId}
+                    {I18n.t('translate_Juristic_ID')} : {naturalId}
                   </Text>
                 </View>
               ) : (
@@ -168,7 +168,7 @@ const ProfileScan = ({
               {cid.type === 2 ? (
                 <View>
                   <Text style={{fontSize: 25, color: '#4b4b4b'}}>
-                    เลขนิติบุคคล : {naturalId}
+                    {I18n.t('translate_Juristic_ID')} : {naturalId}
                   </Text>
                 </View>
               ) : (
@@ -181,7 +181,7 @@ const ProfileScan = ({
               {cid.type === 1 ? (
                 <View>
                   <Text style={{fontSize: 25, color: '#4b4b4b'}}>
-                    เลขบัตรประชาชน : {cid.sub_member.cid}
+                    {I18n.t('cid_regis')} : {cid.sub_member.cid}
                   </Text>
                 </View>
               ) : (
@@ -194,7 +194,7 @@ const ProfileScan = ({
               {cid.type === 2 ? (
                 <View>
                   <Text style={{fontSize: 25, color: '#4b4b4b'}}>
-                    เลขบัตรประชาชน : {cid.sub_member.cid}
+                    {I18n.t('cid_regis')} : {cid.sub_member.cid}
                   </Text>
                 </View>
               ) : (
@@ -208,7 +208,7 @@ const ProfileScan = ({
               {cid.type === 3 && (
                 <View>
                   <Text style={{fontSize: 25, color: '#4b4b4b'}}>
-                    เลขบัตรประชาชน : {cid.naturalId}
+                    {I18n.t('cid_regis')} : {cid.naturalId}
                   </Text>
                 </View>
               )}
@@ -221,7 +221,7 @@ const ProfileScan = ({
               {cid.type === 4 && (
                 <View>
                   <Text style={{fontSize: 25, color: '#4b4b4b'}}>
-                    เลขบัตรประชาชน : {cid.naturalId}
+                    {I18n.t('cid_regis')} : {cid.naturalId}
                   </Text>
                 </View>
               )}
@@ -238,7 +238,7 @@ const ProfileScan = ({
             <View style={{alignItems: 'center'}}>
               <View style={{marginTop: 40}}>
                 <Text style={{fontSize: 20, color: '#b1b1b1'}}>
-                  ไม่มีการลงทะเบียน
+                  {I18n.t('transalte_not_registration')}
                 </Text>
               </View>
               <View style={{marginTop: 20}}>
@@ -253,7 +253,7 @@ const ProfileScan = ({
                     alignItems: 'center',
                   }}>
                   <Text style={{fontSize: 20, color: '#ffffff'}}>
-                    ลงทะเบียน Walk in
+                    {I18n.locale === 'th' ? 'ลงทะเบียน Walk in' : 'Register Wolk In'}
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -271,7 +271,7 @@ const ProfileScan = ({
                   source={require('../../image/AcceptAct.png')}
                 />
                 <Text style={{fontSize: 20, color: '#029d00'}}>
-                  {'\t'}ลงทะเบียนแล้ว
+                  {'\t'}{I18n.locale === 'th' ? 'ลงทะเบียน Walk in' : 'Register Wolk In'}
                 </Text>
               </View>
               <View style={{marginTop: 20}}>
@@ -286,7 +286,7 @@ const ProfileScan = ({
                     alignItems: 'center',
                   }}>
                   <Text style={{fontSize: 20, color: '#ffffff'}}>
-                    ยืนยันการเข้าร่วม
+                    {I18n.t('transalte_confirmation_participation')}
                   </Text>
                 </TouchableOpacity>
               </View>

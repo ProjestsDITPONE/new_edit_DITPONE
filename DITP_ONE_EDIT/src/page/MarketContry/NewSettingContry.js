@@ -980,7 +980,7 @@ class NewSettingContry extends React.Component {
                       textAlign: 'center',
                       fontSize: 20,
                     }}>
-                    บันทึก
+                    {I18n.t('translate_Bt_save')}
                   </Text>
                 </TouchableOpacity>
               </Overlay>

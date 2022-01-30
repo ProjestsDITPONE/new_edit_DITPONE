@@ -50,6 +50,7 @@ import Icon3 from 'react-native-vector-icons/AntDesign';
 import Icon4 from 'react-native-vector-icons/Feather';
 import {Chip} from 'react-native-paper';
 import Popover from 'react-native-popover-view';
+import { t } from 'i18n-js';
 const window = Dimensions.get('window');
 const {height, width} = Dimensions.get('window');
 var aspectRatio = '40%';
@@ -1610,7 +1611,7 @@ class MarketContry extends React.Component {
                           color: '#FFFFFF',
                           fontSize: 22,
                         }}>
-                        ค้นหา
+                        {I18n.t('transalte_Bt_sesrch')}
                       </Text>
                     </TouchableOpacity>
                   </View>
@@ -1628,7 +1629,7 @@ class MarketContry extends React.Component {
                   }}
                   style={Style.choosecontry}>
                   <View style={Style.Viewin1}>
-                    <Text style={Style.ViewTextin}> ประเทศ</Text>
+                    <Text style={Style.ViewTextin}> {I18n.t('translate_country')}</Text>
                   </View>
                   <View style={Style.Viewin2}>
                     <Icon
@@ -1645,7 +1646,7 @@ class MarketContry extends React.Component {
 
               {/* ค้นหาประเทศ */}
 
-              {this.state.searchproduct === false ? (
+              {/* {this.state.searchproduct === false ? ( */}
                 <View style={{zIndex: -1, flex: 1, paddingHorizontal: 5}}>
                   <TouchableOpacity
                     onPress={() => {
@@ -1657,7 +1658,7 @@ class MarketContry extends React.Component {
                     }}
                     style={Style.chooseproducts}>
                     <View style={Style.Viewin1}>
-                      <Text style={Style.ViewTextin}> สินค้า</Text>
+                      <Text style={Style.ViewTextin}> {I18n.t('translate_Products')}</Text>
                     </View>
                     <View style={Style.Viewin2}>
                       <Icon
@@ -1671,15 +1672,15 @@ class MarketContry extends React.Component {
                     </View>
                   </TouchableOpacity>
                 </View>
-              ) : (
-                <View style={{zIndex: -1, flex: 1, paddingHorizontal: 5}}>
+              {/* ) : ( */}
+                {/* <View style={{zIndex: -1, flex: 1, paddingHorizontal: 5}}>
                   <TouchableOpacity
                     onPress={() => {
                       this.setState({searchproduct: false});
                     }}
                     style={Style.chooseproducts}>
                     <View style={Style.Viewin1}>
-                      <Text style={Style.ViewTextin}> สินค้า</Text>
+                      <Text style={Style.ViewTextin}> {I18n/t('translate_Products')}</Text>
                     </View>
                     <View style={Style.Viewin2}>
                       <Icon
@@ -1692,8 +1693,8 @@ class MarketContry extends React.Component {
                       </Icon>
                     </View>
                   </TouchableOpacity>
-                </View>
-              )}
+                </View> */}
+              {/* )} */}
             </View>
           ) : null}
 
@@ -2349,7 +2350,7 @@ class MarketContry extends React.Component {
                   textAlign: 'center',
                   fontSize: 20,
                 }}>
-                ค้นหาสินค้า
+                {I18n.t('transalte_search_product')}
               </Text>
             </TouchableOpacity>
           </Overlay>

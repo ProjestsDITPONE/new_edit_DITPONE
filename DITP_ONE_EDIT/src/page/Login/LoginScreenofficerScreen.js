@@ -15,6 +15,7 @@ import {
 import { connect } from 'react-redux';
 import { Header, Overlay } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/AntDesign';
+import I18n from '../../utils/I18n';
 import {
   getMenuHome,
   getImg,
@@ -54,14 +55,14 @@ class LoginScreenofficerScreen extends React.Component {
       const response = await this.props.dispatch(SendEmail(payload));
       if (response.res_code === '00') {
         this.setState({ dataSend: response.res_result });
-        Alert.alert('ระบบได้ทำการส่งลิงค์ไปยังอีเมลของคุณกรุณาตรวจสอบ');
+        Alert.alert(I18n.t('transalte_system_send_email'));
         this.setState({ modalVisible: false });
       } else if (response.res_code === '01') {
         this.setState({ dataSend: response.res_result });
-        Alert.alert('กรุณารอสักครู่');
+        Alert.alert(I18n.t('transalte_please_wait_moment'));
         this.setState({ modalVisible: false });
       } else {
-        Alert.alert('ไม่พบอีเมลกรุณาตรวจสอบอีกครั้ง');
+        Alert.alert(I18n.t('transalte_Email_not_found'));
       }
     } catch (error) { }
   };
@@ -88,10 +89,10 @@ class LoginScreenofficerScreen extends React.Component {
         this.props.dispatch(ScoreLogin({ token: res.res_result.token }));
         this.props.dispatch(getimgprofile({ token: res.res_result.token }));
       } else {
-        Alert.alert('อีเมลหรือรหัสผ่านไม่ถูกต้อง\nกรุณาตรวจสอบใหม่อีกครั้ง');
+        Alert.alert(I18n.t('alert_Invalid_email_password'));
       }
     } catch (error) {
-      Alert.alert('อีเมลหรือรหัสผ่านไม่ถูกต้อง\nกรุณาตรวจสอบใหม่อีกครั้ง');
+      Alert.alert(I18n.t('alert_Invalid_email_password'));
     }
   };
 
@@ -125,11 +126,11 @@ class LoginScreenofficerScreen extends React.Component {
               </View>
 
               <View style={[Styles.marginTop10, { alignItems: 'center' }]}>
-                <Text style={Styles.fontSub1}>เข้าสู่ระบบ</Text>
+                <Text style={Styles.fontSub1}>{I18n.t('transalte_sign_in')}</Text>
               </View>
 
               <View style={{ width: '30%', alignItems: 'center' }}>
-                <Text style={Styles.fontSub2}>อีเมล</Text>
+                <Text style={Styles.fontSub2}>{I18n.locale === 'th' ? 'อีเมล' : 'Email'}</Text>
               </View>
               <View style={{ alignItems: 'center' }}>
                 <ImageBackground
@@ -152,13 +153,13 @@ class LoginScreenofficerScreen extends React.Component {
                     onChangeText={text => this.setState({ email: text })}
                     style={Styles.TextInputSub1}
                     placeholderTextColor="#cad8e1"
-                    placeholder="อีเมล"
+                    placeholder={I18n.t('translate_email')}
                   />
                 </ImageBackground>
               </View>
 
               <View style={{ width: '30%', alignItems: 'center', marginTop: 10 }}>
-                <Text style={Styles.fontSub2}>รหัสผ่าน</Text>
+                <Text style={Styles.fontSub2}>{I18n.t('password1_regis')}</Text>
               </View>
               <View style={{ alignItems: 'center' }}>
                 <View style={{ flexDirection: 'row', left: 15 }}>
@@ -182,7 +183,7 @@ class LoginScreenofficerScreen extends React.Component {
                       secureTextEntry={this.state.EyeDi ? true : false}
                       style={Styles.TextInputSub1}
                       placeholderTextColor="#cad8e1"
-                      placeholder="รหัสผ่าน"
+                      placeholder={I18n.t('password1_regis')}
                       onSubmitEditing={() => { this.onLogin() }}
                     />
 
@@ -215,7 +216,7 @@ class LoginScreenofficerScreen extends React.Component {
                 <TouchableOpacity
                   style={{ left: 20 }}
                   onPress={() => this.onOpen()}>
-                  <Text style={Styles.TextSub4}>ลืมรหัสผ่าน?</Text>
+                  <Text style={Styles.TextSub4}>{I18n.t('transalte_forgot_password')}?</Text>
                 </TouchableOpacity>
                 <Overlay
                   isVisible={this.state.modalVisible}
@@ -229,7 +230,7 @@ class LoginScreenofficerScreen extends React.Component {
                         color: '#2d6dc4',
                         alignSelf: 'center',
                       }}>
-                      กรุณากรอกอีเมลเพื่อรับรหัสผ่าน
+                      {I18n.t('transalte_Please_email_password')}
                         </Text>
                     <View style={{ height: 15 }} />
                     <ImageBackground
@@ -250,7 +251,7 @@ class LoginScreenofficerScreen extends React.Component {
                           color: '#000000',
                         }}
                         placeholderTextColor="#cad8e1"
-                        placeholder="อีเมล"
+                        placeholder={I18n.locale === 'th' ? 'อีเมล' : 'Email'}
                       />
                     </ImageBackground>
                     <View style={{ height: 20 }} />
@@ -262,14 +263,14 @@ class LoginScreenofficerScreen extends React.Component {
                         }}
                         style={Styles.PopupSend}>
                         <Text style={{ fontSize: 20, color: '#ffffff' }}>
-                          ส่ง
+                          {I18n.t('transalte_send')}
                             </Text>
                       </TouchableOpacity>
                       <TouchableOpacity
                         onPress={() => this.setState({ modalVisible: false })}
                         style={Styles.PopupCancel}>
                         <Text style={{ fontSize: 20, color: '#2d6dc4' }}>
-                          ยกเลิก
+                          {I18n.t('translate_Bt_cancel')}
                             </Text>
                       </TouchableOpacity>
                     </View>
@@ -296,7 +297,7 @@ class LoginScreenofficerScreen extends React.Component {
             <ImageBackground
               source={require('../../image/LoginOffiecr.png')}
               style={Styles.ImgBackground5}>
-              <Text style={Styles.TextSub5}>เข้าสู่ระบบ</Text>
+              <Text style={Styles.TextSub5}>{I18n.t('transalte_sign_in')}</Text>
             </ImageBackground>
           </TouchableOpacity>
         </View>

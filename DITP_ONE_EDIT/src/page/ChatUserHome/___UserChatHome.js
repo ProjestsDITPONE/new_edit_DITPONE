@@ -211,7 +211,7 @@ class UserChatHome extends Component {
                       ? Styles.textmeenustory
                       : Styles.textmeenustory2
                   }>
-                  {'ยังไม่ได้อ่าน'}
+                  {I18n.t('transalte_noread')}
                 </Text>
               </LinearGradient>
             </TouchableOpacity>
@@ -241,7 +241,7 @@ class UserChatHome extends Component {
                       ? Styles.textmeenustory
                       : Styles.textmeenustory2
                   }>
-                  {'ทั้งหมด'}
+                  {I18n.locale === 'th' ? 'ทั้งหมด' : 'All'}
                 </Text>
               </LinearGradient>
               {/* <View

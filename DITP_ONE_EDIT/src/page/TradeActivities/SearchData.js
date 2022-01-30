@@ -1856,7 +1856,7 @@ class SearchData extends Component {
                                 {this.state.valueSelectActivity3dev ===
                                 undefined ? (
                                   <Text style={Styles2.viewckText}>
-                                    {'   '}
+                                    {I18n.t('transalte_Demand')}
                                   </Text>
                                 ) : (
                                   <Text

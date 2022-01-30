@@ -287,7 +287,7 @@ class UserChatHome extends Component {
               placeholderTextColor="#999999"
               style={Styles.TextInputSearchcss}
               // placeholder={I18n.t('translate_Seach')}
-              placeholder={'คันหา'}
+              placeholder={I18n.locale === 'th' ? 'ค้นหา' : 'Search'}
             />
           </View>
           <View style={Styles.viewtab}>
@@ -311,7 +311,7 @@ class UserChatHome extends Component {
                       ? Styles.textmeenustory
                       : Styles.textmeenustory2
                   }>
-                  {'ยังไม่ได้อ่าน'}
+                  {I18n.t('transalte_noread')}
                 </Text>
               </LinearGradient>
             </TouchableOpacity>
@@ -341,7 +341,7 @@ class UserChatHome extends Component {
                       ? Styles.textmeenustory
                       : Styles.textmeenustory2
                   }>
-                  {'ทั้งหมด'}
+                  {I18n.locale === 'th' ? 'ทั้งหมด' : 'All'}
                 </Text>
               </LinearGradient>
               {/* <View
@@ -555,7 +555,7 @@ class UserChatHome extends Component {
                               </View>
                               <View style={{marginHorizontal: 10}}>
                                 <Text style={{fontSize: 20, color: '#4a4a4a'}}>
-                                  บล็อก
+                                {I18n.locale === 'th' ? 'บล็อก' : 'Blog'}
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -569,7 +569,7 @@ class UserChatHome extends Component {
                               </View>
                               <View style={{marginHorizontal: 10}}>
                                 <Text style={{fontSize: 20, color: '#4a4a4a'}}>
-                                  ทำเครื่องหมายเป็นยังไม่ได้อ่าน
+                                  {I18n.t('transalte_Mark_as_unread')}
                                 </Text>
                               </View>
                             </TouchableOpacity>
@@ -826,7 +826,7 @@ class UserChatHome extends Component {
                             </View>
                             <View style={{marginHorizontal: 10}}>
                               <Text style={{fontSize: 20, color: '#4a4a4a'}}>
-                                บล็อก
+                                {I18n.locale === 'th' ? 'บล็อก' : 'Blog'}
                               </Text>
                             </View>
                           </TouchableOpacity>
@@ -840,7 +840,7 @@ class UserChatHome extends Component {
                             </View>
                             <View style={{marginHorizontal: 10}}>
                               <Text style={{fontSize: 20, color: '#4a4a4a'}}>
-                                ทำเครื่องหมายเป็นยังไม่ได้อ่าน
+                                {I18n.t('transalte_Mark_as_unread')}
                               </Text>
                             </View>
                           </TouchableOpacity>

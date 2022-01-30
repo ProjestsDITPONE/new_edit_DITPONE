@@ -62,7 +62,7 @@ const OsecView = ({navigation, route, dispatch}) => {
       <View style={{flex: 1, zIndex: -1}}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Text style={{fontSize: 20, marginLeft: 10, color: '#163c70'}}>
-            ผลการค้นหา {route.params.TextKey} พบ {DataList.length} รายการ
+            {I18n.t('translate_AnsSeach')} {route.params.TextKey} {I18n.locale === 'th' ? 'พบ' : 'Meet'} {DataList.length} {I18n.locale === 'th' ? 'รายการ' : 'List'}
           </Text>
         </View>
         <FlatList

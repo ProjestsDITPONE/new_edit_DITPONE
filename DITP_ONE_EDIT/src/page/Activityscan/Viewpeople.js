@@ -93,7 +93,7 @@ class Viewpeople extends React.Component {
             </Text>
             {item.status_join_activity === 1 && (
               <View style={{ flexDirection: 'row-reverse', flex: 1 }}>
-                <Text style={{ fontSize: 20, color: '#029d00' }}>ลงทะเบียน</Text>
+                <Text style={{ fontSize: 20, color: '#029d00' }}>{I18n.t('btn_fin_regis')}</Text>
               </View>
             )}
             {item.status_join_activity === 2 && (
@@ -180,7 +180,7 @@ class Viewpeople extends React.Component {
                   this.SearchSubmit(e);
                 }}
                 style={Styles.TextInputSub1}
-                placeholder="ค้นหา"
+                placeholder={I18n.t('transalte_ButtonSearch')}
               />
             </View>
           </View>

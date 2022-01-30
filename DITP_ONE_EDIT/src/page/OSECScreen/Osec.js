@@ -30,7 +30,7 @@ class OSECScreen extends React.Component {
       TextKey: '',
       info: '',
       selec: {
-        title: 'เลือกรายการ',
+        title: I18n.t('translate_PlaeseChooseIrems'),
       },
     };
   }
@@ -140,7 +140,7 @@ class OSECScreen extends React.Component {
                   marginHorizontal: 15,
                 }}>
                 <Text style={{fontSize: 23, color: '#40536d', marginBottom: 6}}>
-                  ค้นหาสินค้า
+                  {I18n.t('transalte_search_product')}
                 </Text>
               </View>
               <View
@@ -186,7 +186,7 @@ class OSECScreen extends React.Component {
                 </View>
               </View>
               <View style={{marginHorizontal: 15, marginBottom: 6}}>
-                <Text style={Style.TextView3}>เลือกหมวดหมู่</Text>
+                <Text style={Style.TextView3}>{I18n.t('translate_Pleaseselectcategory')}</Text>
               </View>
               <View
                 style={[
@@ -208,7 +208,7 @@ class OSECScreen extends React.Component {
                   }}>
                   <RNPickerSelect
                     useNativeAndroidPickerStyle={false}
-                    placeholder={{label: 'เลือกหมวดหมู่', value: null}}
+                    placeholder={{label: I18n.t('translate_Pleaseselectcategory'), value: null}}
                     onValueChange={value => {
                       // console.log(value);
                       this._getlistOSEC(value);
@@ -255,7 +255,7 @@ class OSECScreen extends React.Component {
                 </View>
               </View>
               <View style={{marginHorizontal: 15, marginBottom: 6}}>
-                <Text style={Style.TextView3}>เลือกรายการ</Text>
+                <Text style={Style.TextView3}>{I18n.t('translate_PlaeseChooseIrems')}</Text>
               </View>
               <View
                 style={[
@@ -279,7 +279,7 @@ class OSECScreen extends React.Component {
                     useNativeAndroidPickerStyle={false}
                     // disabled={!this.state.Selecitem2.length > 0}
                     placeholder={{
-                      label: 'เลือกรายการ',
+                      label: I18n.t('translate_PlaeseChooseIrems'),
                       value: null,
                     }}
                     onDonePress={() => {
@@ -371,7 +371,7 @@ class OSECScreen extends React.Component {
                     borderRadius: 22,
                     paddingVertical: 8,
                   }}>
-                  <Text style={{fontSize: 25, color: '#ffffff'}}>ค้นหา</Text>
+                  <Text style={{fontSize: 25, color: '#ffffff'}}>{I18n.t('transalte_ButtonSearch')}</Text>
                 </TouchableOpacity>
               </View>
             )}

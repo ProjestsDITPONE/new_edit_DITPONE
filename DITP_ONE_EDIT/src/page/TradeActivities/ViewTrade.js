@@ -1538,7 +1538,7 @@ class ViewTrade extends React.Component {
                       textAlign:'center'
                      
                     }}>
-                    ช่วงเวลา
+                    {I18n.t('transalte_period_time')}
                   </Text>
                 </View>
                 <View style={{justifyContent:'center',flex:0.2}}>

@@ -418,7 +418,7 @@ class Activityscan extends React.Component {
               />
               <TextInput
                 style={[Styles.TextInputSearch, {flex: 1, paddingRight: 10}]}
-                placeholder="ค้นหา"
+                placeholder={I18n.t('transalte_ButtonSearch')}
                 onSubmitEditing={this.searchSubmit}
                 returnKeyType="done"
               />

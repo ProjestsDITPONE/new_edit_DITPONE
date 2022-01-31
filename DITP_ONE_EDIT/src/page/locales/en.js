@@ -227,6 +227,7 @@ export default {
   translate_DataMarketnews: 'News',
   translate_Mybuy: 'My Buyers',
   translate_Mynetwork: 'My Network',
+  transalte_Add_Network: 'Add Network',
   translate_Note: 'Note',
   translate_Save: 'Save',
   translate_Emptry: 'No List',

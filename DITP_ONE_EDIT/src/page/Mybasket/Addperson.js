@@ -19,6 +19,7 @@ import {
 } from 'react-native';
 import RBSheet from 'react-native-raw-bottom-sheet';
 import {Avatar, ListItem, Overlay} from 'react-native-elements';
+import I18n from '../../utils/I18n';
 import {useIsFocused} from '@react-navigation/native';
 import Styles from './Styles';
 import Style from '../IdentityScreen/Styles';
@@ -113,7 +114,7 @@ const Addperson = ({navigation,dispatch}) => {
                 }}>
                 <Text
                   style={{textAlign: 'center', fontSize: 20, color: '#3986ee'}}>
-                  บุคคลทั่วไป
+                  {I18n.t('transalte_General_Person')}
                 </Text>
               </View>
             </View>
@@ -141,7 +142,7 @@ const Addperson = ({navigation,dispatch}) => {
 
                         marginHorizontal: 10,
                       }}>
-                      คำนำหน้า
+                      {I18n.t('translate_General_title')}
                     </Text>
                   </View>
 
@@ -181,7 +182,7 @@ const Addperson = ({navigation,dispatch}) => {
                       }}>
                       <View style={{flex: 1, justifyContent: 'center'}}>
                         <Text style={{color: '#c0c0c0', fontSize: 24}}>
-                          เลือกคำนำหน้าชื่อ
+                          {I18n.t('transalte_select_name_prefix')}
                         </Text>
                       </View>
                       <View
@@ -209,7 +210,7 @@ const Addperson = ({navigation,dispatch}) => {
 
                         marginHorizontal: 10,
                       }}>
-                      ชื่อ
+                      {I18n.t('transalte_General_firtname')}
                     </Text>
                   </View>
 
@@ -240,7 +241,7 @@ const Addperson = ({navigation,dispatch}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      นามสกุล
+                      {I18n.t('translate_Grneral_lastname')}
                     </Text>
                   </View>
 
@@ -273,7 +274,7 @@ const Addperson = ({navigation,dispatch}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      ชื่อเล่น
+                      {I18n.t('translate_Grneral_nickname')}
                     </Text>
                   </View>
 
@@ -304,7 +305,7 @@ const Addperson = ({navigation,dispatch}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      ตำแหน่ง
+                      {I18n.t('translate_Grneral_position')}
                     </Text>
                   </View>
 
@@ -335,7 +336,7 @@ const Addperson = ({navigation,dispatch}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      อีเมล
+                      {I18n.t('translate_Grneral_email')}
                     </Text>
                   </View>
 
@@ -366,7 +367,7 @@ const Addperson = ({navigation,dispatch}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      หมายเลขโทรศัพท์
+                      {I18n.t('translate_Grneral_tel')}
                     </Text>
                   </View>
 
@@ -397,7 +398,7 @@ const Addperson = ({navigation,dispatch}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      กิจกรรมที่พบหรือหารือ
+                      {I18n.t('translate_Grneral_event')}
                     </Text>
                   </View>
 
@@ -467,7 +468,7 @@ const Addperson = ({navigation,dispatch}) => {
                       fontSize: 25,
                       color: '#FFFFFF',
                     }}>
-                    ยกเลิก
+                    {I18n.t('translate_Bt_cancel')}
                   </Text>
                 </TouchableOpacity>
                 <View style={{width: 5}} />
@@ -485,7 +486,7 @@ const Addperson = ({navigation,dispatch}) => {
                       fontSize: 25,
                       color: '#FFFFFF',
                     }}>
-                    บันทึก
+                    {I18n.t('translate_Bt_save')}
                   </Text>
                 </TouchableOpacity>
               </View>

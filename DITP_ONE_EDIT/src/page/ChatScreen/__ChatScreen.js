@@ -1014,7 +1014,7 @@ class ChatScreen extends Component {
                     <TouchableOpacity
                       onPress={this.onSend}
                       style={styles.viewBTNChat}>
-                      <Text style={styles.textBtnInput}>ส่ง</Text>
+                      <Text style={styles.textBtnInput}>{I18n.locale === 'th' ? 'ส่ง' : 'Send'}</Text>
                     </TouchableOpacity>
                   </View>
                 </View>

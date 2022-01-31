@@ -1135,4 +1135,5 @@ transalte_Department_staff: 'เจ้าหน้าที่กรม',
 transalte_Move_all_read: 'ย้ายทั้งหมดไป "อ่านแล้ว"',
 transalte_have_questions_consult_us: 'มีคำถามปรึกษาเรา',
 transalte_delete_list: 'ลบรายการ',
+transalte_enter_identification_passport_number: 'กรอกเลขประจำตัวประชาชน/เลขพาสปอร์ต',
 };

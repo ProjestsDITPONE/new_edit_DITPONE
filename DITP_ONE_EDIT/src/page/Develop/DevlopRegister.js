@@ -16673,11 +16673,11 @@ class DevlopRegister extends React.Component {
                 <TextInput
                   keyboardType="numeric"
                   style={{
-                    fontSize: 20,
+                    fontSize: 20, 
                     flex: 1,
                     color: "#0D0C0C",
                   }}
-                  placeholder={"กรอกเลขประจำตัวประชาชน/เลขพาสปอร์ต"}
+                  placeholder={I18n.t('transalte_enter_identification_passport_number')}
                   placeholderTextColor={"#999999"}
                   onChangeText={(textnumberid) =>
                     this.setState({ IDnemberCI: textnumberid })

@@ -719,7 +719,7 @@ export default {
   translate_NoHistoryChat: 'ไม่มีประวัติการสนทนา',
   translate_wantDeleteNoti: 'ต้องการลบการแจ้งเตือน',
 
-  translate_Contect1: 'ช่องทางการติดต่อ',
+  translate_Contect1: 'Contact',
 
   // createBY ANUCHIT  New Translation
 

@@ -383,7 +383,7 @@ const Contect = ({navigation, dispatch}) => {
                     marginBottom: 5,
                     marginTop: 5,
                   }}>
-                  ช่องทางการติดต่อ
+                  {I18n.t('translate_Contect1')}
                 </Text>
                 <View style={{flexDirection: 'row'}}>
                   <TouchableOpacity

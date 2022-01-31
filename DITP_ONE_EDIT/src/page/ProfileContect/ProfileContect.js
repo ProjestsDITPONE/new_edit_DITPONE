@@ -258,7 +258,7 @@ const ProfileContect = ({route, navigation, authData, dispatch, getUser}) => {
 
                   marginHorizontal: 35,
                 }}>
-                ชื่อเล่น
+                {I18n.t('translate_Grneral_nickname')}
               </Text>
               <Text
                 style={{
@@ -289,7 +289,7 @@ const ProfileContect = ({route, navigation, authData, dispatch, getUser}) => {
 
                   marginHorizontal: 35,
                 }}>
-                ชื่อนิติบุคคล
+                {I18n.t('translate_Nameentity')}
               </Text>
               <Text
                 style={{
@@ -320,7 +320,7 @@ const ProfileContect = ({route, navigation, authData, dispatch, getUser}) => {
 
                   marginHorizontal: 35,
                 }}>
-                ที่อยู่ติดต่อ
+                {I18n.t('translate_Contactaddress')}
               </Text>
               <Text
                 style={{
@@ -350,7 +350,7 @@ const ProfileContect = ({route, navigation, authData, dispatch, getUser}) => {
 
                   marginHorizontal: 35,
                 }}>
-                คำนำหน้า
+                {I18n.t('translate_Prefix')}
               </Text>
               <Text
                 style={{
@@ -380,7 +380,7 @@ const ProfileContect = ({route, navigation, authData, dispatch, getUser}) => {
 
                   marginHorizontal: 35,
                 }}>
-                ชื่อ
+                {I18n.t('translate_name')}
               </Text>
               <Text
                 style={{
@@ -410,7 +410,7 @@ const ProfileContect = ({route, navigation, authData, dispatch, getUser}) => {
 
                   marginHorizontal: 35,
                 }}>
-                นามสกุล
+                {I18n.t('translate_lname')}
               </Text>
               <Text
                 style={{
@@ -440,7 +440,7 @@ const ProfileContect = ({route, navigation, authData, dispatch, getUser}) => {
 
                   marginHorizontal: 35,
                 }}>
-                ตำแหน่ง
+                {I18n.t('translate_Grneral_position')}
               </Text>
               <Text
                 style={{
@@ -470,7 +470,7 @@ const ProfileContect = ({route, navigation, authData, dispatch, getUser}) => {
 
                   marginHorizontal: 35,
                 }}>
-                อีเมล์
+                {I18n.t('translate_email')}
               </Text>
               <Text
                 style={{
@@ -500,7 +500,7 @@ const ProfileContect = ({route, navigation, authData, dispatch, getUser}) => {
 
                   marginHorizontal: 35,
                 }}>
-                หมายเลขโทรศัพท์
+                {I18n.t('translate_Phonenumber')}
               </Text>
               <View style={{flexDirection: 'row', marginHorizontal: 30}}>
                 <CountryPicker

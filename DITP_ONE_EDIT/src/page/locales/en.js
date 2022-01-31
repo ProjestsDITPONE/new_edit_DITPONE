@@ -191,7 +191,7 @@ export default {
   translate_Million_US_Dollars_new: 'Million US Dollars',
 
   //สถานการณ์และแนวโน้มตลาดในต่างประเทศ MarketContry && SeachMenu(ตัวกรอกแบบละเอียด)
-  translate_HInter: 'International Market Situation and Trends',
+  translate_HInter: 'Market Situation and Trends',
   translate_View: 'View',
   translate_Market_Data: 'Market Report',
   translate_SORTBY: 'SORT BY',
@@ -227,6 +227,7 @@ export default {
   translate_DataMarketnews: 'News',
   translate_Mybuy: 'My Buyers',
   translate_Mynetwork: 'My Network',
+  transalte_Add_Network: 'Add Network',
   translate_Note: 'Note',
   translate_Save: 'Save',
   translate_Emptry: 'No List',
@@ -719,7 +720,7 @@ export default {
   translate_NoHistoryChat: 'ไม่มีประวัติการสนทนา',
   translate_wantDeleteNoti: 'ต้องการลบการแจ้งเตือน',
 
-  translate_Contect1: 'ช่องทางการติดต่อ',
+  translate_Contect1: 'Contact',
 
   // createBY ANUCHIT  New Translation
 
@@ -861,7 +862,7 @@ export default {
   translate_ActivityGroup: 'Activity Group',
   translate_categoryGroup: 'Choose Mani product category',
   translate_Country: 'Choose Country',
-  translate_ActivityType: 'Choose Activity Type',
+  translate_ActivityType: 'Activity Type',
 
   // เลือกวันที่
   translate_chooseday: 'Date',
@@ -1096,6 +1097,7 @@ transalte_Department_staff: 'Department Staff',
 transalte_Move_all_read: 'Move all to "Read"',
 transalte_have_questions_consult_us: 'Have questions consult us',
 transalte_delete_list: 'Delete list',
+transalte_enter_identification_passport_number: 'Identification number/Passport number.',
 
 };
 

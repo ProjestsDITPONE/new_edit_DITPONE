@@ -1250,7 +1250,7 @@ class Activities extends React.Component {
                                               style={{
                                                 fontSize: 14,
                                                 color: '#7d7d7d',
-                                                marginTop: 4,
+                                                marginTop: Platform.OS === 'android' ? 10 : 5,
                                               }}>
                                               {' '}
                                               *{I18n.t('transalte_considered_selection')}
@@ -2611,6 +2611,7 @@ class Activities extends React.Component {
                                               style={{
                                                 fontSize: 24,
                                                 color: '#2d6dc4',
+                                                marginLeft: 5,
                                               }}>
                                               {I18n.t('translate_assessment')}
                                             </Text>
@@ -2653,6 +2654,7 @@ class Activities extends React.Component {
                                             <Text
                                               style={{
                                                 fontSize: 14,
+                                                marginLeft: 3,
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
@@ -2664,7 +2666,7 @@ class Activities extends React.Component {
                                               style={{
                                                 fontSize: 14,
                                                 color: '#7d7d7d',
-                                                marginTop: 4,
+                                                marginTop: Platform.OS === 'android' ? 10 : 5,
                                               }}>
                                               {' '}
                                               *{I18n.t('transalte_considered_selection')}
@@ -4007,6 +4009,7 @@ class Activities extends React.Component {
                                               style={{
                                                 fontSize: 24,
                                                 color: '#2d6dc4',
+                                                marginLeft: 5,
                                               }}>
                                               {I18n.t('translate_assessment')}
                                             </Text>
@@ -4049,6 +4052,7 @@ class Activities extends React.Component {
                                             <Text
                                               style={{
                                                 fontSize: 14,
+                                                marginLeft: 3,
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
@@ -4060,7 +4064,7 @@ class Activities extends React.Component {
                                               style={{
                                                 fontSize: 14,
                                                 color: '#7d7d7d',
-                                                marginTop: 4,
+                                                marginTop: Platform.OS === 'android' ? 10 : 5,
                                               }}>
                                               {' '}
                                               *{I18n.t('transalte_considered_selection')}

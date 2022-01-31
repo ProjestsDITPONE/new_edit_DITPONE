@@ -204,6 +204,7 @@ export default StyleSheet.create({
 
   ScrollTabStyle: {
     backgroundColor: '#FFFFFF',
+    width: '100%'
     // borderWidth:1
   },
 
@@ -212,15 +213,19 @@ export default StyleSheet.create({
     alignContent: 'center',
     justifyContent: 'center',
     fontSize: 16,
+    // backgroundColor: 'red',
+    // width: Platform.OS === 'android' ? 250 : null,
+    // borderWidth: Platform.OS === 'android' ? 1 : null,
+    // paddingHorizontal: Platform.OS === 'android' ? 20 : null,
     fontFamily: 'Mitr-Regular',
 
     // marginTop: 5,
   },
 
   tabunderLine: {
-    width: Platform.OS ==='android' ?25:0,
+    // width: Platform.OS ==='ios' ?25:0,
     height: 3,
-    backgroundColor: '#40536d',
+    backgroundColor: Platform.OS === 'android' ? '#40536d' : null,
     marginLeft: Platform.OS ==='android' ?0:0,
     // borderWidth:1
     

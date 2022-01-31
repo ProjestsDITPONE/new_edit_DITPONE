@@ -19,6 +19,7 @@ import {
 } from 'react-native';
 import RBSheet from 'react-native-raw-bottom-sheet';
 import {Avatar, ListItem, Overlay} from 'react-native-elements';
+import I18n from '../../utils/I18n';
 import {useIsFocused} from '@react-navigation/native';
 import Styles from './Styles';
 import Style from '../IdentityScreen/Styles';
@@ -113,7 +114,7 @@ const AddJuristic = ({navigation}) => {
                 }}>
                 <Text
                   style={{textAlign: 'center', fontSize: 20, color: '#9c7df6'}}>
-                  นิติบุคคล
+                  {I18n.t('transalte_Juristic_Person')}
                 </Text>
               </View>
             </View>
@@ -141,7 +142,7 @@ const AddJuristic = ({navigation}) => {
 
                         marginHorizontal: 10,
                       }}>
-                      ชื่อบริษัท
+                      {I18n.t('translate_Juristic_company_name')}
                     </Text>
                   </View>
 
@@ -173,7 +174,7 @@ const AddJuristic = ({navigation}) => {
 
                         marginHorizontal: 10,
                       }}>
-                      ที่อยู่ติดต่อ
+                      {I18n.t('translate_Contactaddress')}
                     </Text>
                   </View>
 
@@ -296,7 +297,7 @@ const AddJuristic = ({navigation}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      คำนำหน้า
+                      {I18n.t('translate_General_title')}
                     </Text>
                   </View>
 
@@ -311,7 +312,10 @@ const AddJuristic = ({navigation}) => {
                     }}
                   />
                   <RNPickerSelect
-                    placeholder={''}
+                    placeholder={{
+                      label: 'title',
+                      value: null
+                  }}
                     useNativeAndroidPickerStyle={false}
                     _fixAndroidTouchableBug_={true}
                     style={{
@@ -336,7 +340,7 @@ const AddJuristic = ({navigation}) => {
                       }}>
                       <View style={{flex: 1, justifyContent: 'center'}}>
                         <Text style={{color: '#c0c0c0', fontSize: 24}}>
-                          เลือกคำนำหน้าชื่อ
+                          {I18n.t('transalte_select_name_prefix')}
                         </Text>
                       </View>
                       <View
@@ -366,7 +370,7 @@ const AddJuristic = ({navigation}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      ชื่อ
+                      {I18n.t('translate_name')}
                     </Text>
                   </View>
 
@@ -397,7 +401,7 @@ const AddJuristic = ({navigation}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      นานสกุล
+                      {I18n.t('translate_Juristic_lastname')}
                     </Text>
                   </View>
 
@@ -428,7 +432,7 @@ const AddJuristic = ({navigation}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      ชื่อเล่น
+                      {I18n.t('translate_Juristic_nickname')}
                     </Text>
                   </View>
 
@@ -459,7 +463,7 @@ const AddJuristic = ({navigation}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      ตำแหน่ง
+                      {I18n.t('translate_Juristic_position')}
                     </Text>
                   </View>
 
@@ -490,7 +494,7 @@ const AddJuristic = ({navigation}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      อีเมล
+                      {I18n.t('translate_Juristic_email')}
                     </Text>
                   </View>
 
@@ -521,7 +525,7 @@ const AddJuristic = ({navigation}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      โทรศัพท์
+                      {I18n.t('translate_Juristic_tel')}
                     </Text>
                   </View>
 
@@ -552,7 +556,7 @@ const AddJuristic = ({navigation}) => {
                         color: '#163c70',
                         marginHorizontal: 10,
                       }}>
-                      กิจกรรมที่พบหรือหารือ
+                      {I18n.t('translate_Juristic_event')}
                     </Text>
                   </View>
 
@@ -622,7 +626,7 @@ const AddJuristic = ({navigation}) => {
                       fontSize: 25,
                       color: '#FFFFFF',
                     }}>
-                    ยกเลิก
+                    {I18n.t('translate_Bt_cancel')}
                   </Text>
                 </TouchableOpacity>
                 <View style={{width: 5}} />
@@ -640,7 +644,7 @@ const AddJuristic = ({navigation}) => {
                       fontSize: 25,
                       color: '#FFFFFF',
                     }}>
-                    บันทึก
+                    {I18n.t('translate_Bt_save')}
                   </Text>
                 </TouchableOpacity>
               </View>

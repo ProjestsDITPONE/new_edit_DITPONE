@@ -99,7 +99,6 @@ export default {
   translate_Passed_initial: 'ผ่านพิจารณาขั้นต้น',
   translate_lPayment: 'ชำระเงิน',
   translate_Approved: 'อนุมัติเรียบร้อย',
-  translate_assessment: 'ทำแบบประเมิน',
   translate_Contactprojectstaff: 'ติดต่อเจ้าหน้าที่โครงการ',
   translate_Detail: 'รายละเอียด',
   translate_Trainingcourse:
@@ -250,7 +249,8 @@ export default {
   transalte_General_Person: 'บุคคลทั่วไป',
   transalte_Juristic_Person: 'นิติบุคคล',
   transalte_Add_Myname: 'เพิ่มชื่อของฉัน',
-  transalte_Add_my_buyer: 'เพิ่มผูซื้อของฉัน',
+  transalte_Add_Network: 'เพิ่มเครือข่าย',
+  transalte_Add_my_buyer: 'เพิ่มผู้ซื้อของฉัน',
   transalte_trade_situation_news: 'ข่าวสถานการณ์การค้า',
   transalte_published_by: 'เผยแพร่โดย',
   transalte_set_nickname: 'ตั้งชื่อเล่น',
@@ -1135,4 +1135,5 @@ transalte_Department_staff: 'เจ้าหน้าที่กรม',
 transalte_Move_all_read: 'ย้ายทั้งหมดไป "อ่านแล้ว"',
 transalte_have_questions_consult_us: 'มีคำถามปรึกษาเรา',
 transalte_delete_list: 'ลบรายการ',
+transalte_enter_identification_passport_number: 'กรอกเลขประจำตัวประชาชน/เลขพาสปอร์ต',
 };

@@ -191,7 +191,7 @@ export default {
   translate_Million_US_Dollars_new: 'Million US Dollars',
 
   //สถานการณ์และแนวโน้มตลาดในต่างประเทศ MarketContry && SeachMenu(ตัวกรอกแบบละเอียด)
-  translate_HInter: 'International Market Situation and Trends',
+  translate_HInter: 'Market Situation and Trends',
   translate_View: 'View',
   translate_Market_Data: 'Market Report',
   translate_SORTBY: 'SORT BY',
@@ -862,7 +862,7 @@ export default {
   translate_ActivityGroup: 'Activity Group',
   translate_categoryGroup: 'Choose Mani product category',
   translate_Country: 'Choose Country',
-  translate_ActivityType: 'Choose Activity Type',
+  translate_ActivityType: 'Activity Type',
 
   // เลือกวันที่
   translate_chooseday: 'Date',

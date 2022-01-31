@@ -99,7 +99,6 @@ export default {
   translate_Passed_initial: 'ผ่านพิจารณาขั้นต้น',
   translate_lPayment: 'ชำระเงิน',
   translate_Approved: 'อนุมัติเรียบร้อย',
-  translate_assessment: 'ทำแบบประเมิน',
   translate_Contactprojectstaff: 'ติดต่อเจ้าหน้าที่โครงการ',
   translate_Detail: 'รายละเอียด',
   translate_Trainingcourse:

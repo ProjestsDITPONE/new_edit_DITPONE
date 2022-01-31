@@ -492,8 +492,8 @@ class ChatScreen extends Component {
 
         if (response.res_code === '00') {
           Alert.alert(
-            'ขอบคุณสำหรับการประเมิน',
-            '',
+            I18n.locale === 'th' ? 'ขอบคุณสำหรับการประเมิน' : 'Thank you for the evaluation',
+            '', 
             [{text: 'ตกลง', onPress: () => console.log('OK Pressed')}],
             {cancelable: false},
           );
@@ -512,7 +512,7 @@ class ChatScreen extends Component {
       }
     } else {
       Alert.alert(
-        'กรุณาประเมินความพึ่งพอใจ',
+        I18n.locale === 'th' ? 'กรุณาประเมินความพึ่งพอใจ' : 'Please rate your satisfaction.', 
         '',
         [{text: 'ตกลง', onPress: () => console.log('OK Pressed')}],
         {cancelable: false},
@@ -558,7 +558,7 @@ class ChatScreen extends Component {
       }
     } else {
       Alert.alert(
-        'กรุณาประเมินความพึ่งพอใจ',
+        I18n.locale === 'th' ? 'กรุณาประเมินความพึ่งพอใจ' : 'Please rate your satisfaction.', 
         '',
         [{text: 'ตกลง', onPress: () => console.log('OK Pressed')}],
         {cancelable: false},

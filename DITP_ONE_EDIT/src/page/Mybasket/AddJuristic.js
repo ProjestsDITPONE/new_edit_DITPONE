@@ -312,7 +312,10 @@ const AddJuristic = ({navigation}) => {
                     }}
                   />
                   <RNPickerSelect
-                    placeholder={''}
+                    placeholder={{
+                      label: 'title',
+                      value: null
+                  }}
                     useNativeAndroidPickerStyle={false}
                     _fixAndroidTouchableBug_={true}
                     style={{

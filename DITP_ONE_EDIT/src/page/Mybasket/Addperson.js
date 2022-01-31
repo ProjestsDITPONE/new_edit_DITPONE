@@ -32,7 +32,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import RNPickerSelect from 'react-native-picker-select';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 const Addperson = ({navigation,dispatch}) => {
-  const [imguri, setimguri] = useState(null);
+  const [imguri, setimguri] = useState('');
   return (
     <View style={{flex: 1}}>
       <Headers
@@ -157,7 +157,10 @@ const Addperson = ({navigation,dispatch}) => {
                     }}
                   />
                   <RNPickerSelect
-                    placeholder={''}
+                    placeholder={{
+                      label: 'title',
+                      value: null
+                    }}
                     useNativeAndroidPickerStyle={false}
                     _fixAndroidTouchableBug_={true}
                     style={{

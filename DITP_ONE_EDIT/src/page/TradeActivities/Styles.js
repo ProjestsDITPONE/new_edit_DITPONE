@@ -1,4 +1,5 @@
 import {StyleSheet, Dimensions, Platform} from 'react-native';
+import {ViewScale} from '../../config/ViewScale';
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 const width1 = Dimensions.get('screen').width;
@@ -29,13 +30,13 @@ export default StyleSheet.create({
     fontFamily: 'Kittithada Bold 75',
   },
   TextSub2: {
-    fontSize: 14,
+    fontSize: ViewScale(14),
     color: '#40536d',
     fontFamily: 'Mitr-Regular',
   },
   ImgSub1: {
-    width: 69,
-    height: 30,
+    width: ViewScale(69),
+    height: ViewScale(30),
   },
   marginLeft10: {
     marginLeft: 10,
@@ -52,7 +53,7 @@ export default StyleSheet.create({
     height: 25,
   },
   TextSub3: {
-    fontSize: 11,
+    fontSize: ViewScale(12),
     color: '#94adbd',
     fontFamily: 'Pridi-Medium',
   },
@@ -62,14 +63,14 @@ export default StyleSheet.create({
     flexDirection: 'row',
   },
   TextSub4: {
-    fontSize: 14,
+    fontSize: ViewScale(14),
     color: '#4b4b4b',
     fontFamily: 'Mitr-Regular',
   },
   textContry1: {
     color: '#94adbd',
     fontFamily: 'Pridi-Medium',
-    fontSize: 11,
+    fontSize: ViewScale(12),
   },
   ViewSub7: {},
   ViewSub8: {
@@ -77,24 +78,24 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   ImgSub3: {
-    width: 20,
-    height: 13,
+    width: ViewScale(20),
+    height: ViewScale(13),
   },
   ImgBackgroungSub1: {
-    width: 25,
-    height: 15,
+    width: ViewScale(25),
+    height: ViewScale(15),
     alignItems: 'center',
     justifyContent: 'center',
   },
   TextSub5: {
-    fontSize: 14,
+    fontSize: ViewScale(14),
     color: '#FFFFFF',
   },
   ScrollTabStyle: {
     backgroundColor: '#FFFFFF',
   },
   tabbarTextStyle: {
-    fontSize: 23,
+    fontSize: ViewScale(23),
     fontFamily: 'Kittithada Bold 75',
   },
   tabunderLine: {
@@ -120,13 +121,13 @@ export default StyleSheet.create({
     marginRight: 10,
   },
   Image: {
-    width: 20,
-    height: 20,
+    width: ViewScale(20),
+    height: ViewScale(20),
     backgroundColor: 'transparent',
     marginLeft: 10,
   },
   TextInputseach1: {
-    fontSize: 15,
+    fontSize: ViewScale(15),
     color: '#999999',
     marginLeft: 10,
     backgroundColor: 'transparent',
@@ -182,8 +183,8 @@ export default StyleSheet.create({
     top: -55,
   },
   ImgClose: {
-    width: 28,
-    height: 28,
+    width: ViewScale(28),
+    height: ViewScale(28),
   },
   OverlayView2: {
     width: width1 - 50,
@@ -203,8 +204,8 @@ export default StyleSheet.create({
   },
   TouchSub1: {
     marginTop: 10,
-    width: 163,
-    height: 34,
+    width: ViewScale(163),
+    height: ViewScale(34),
     backgroundColor: '#2d6dc4',
     borderRadius: 24.5,
     justifyContent: 'center',
@@ -212,8 +213,8 @@ export default StyleSheet.create({
   },
   TouchSub6: {
     marginTop: 10,
-    width: 163,
-    height: 34,
+    width: ViewScale(163),
+    height: ViewScale(34),
     backgroundColor: '#787878',
     borderRadius: 24.5,
     justifyContent: 'center',
@@ -233,7 +234,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     // width: 130,
-    height: 34,
+    height: ViewScale(34),
     backgroundColor: '#2d6dc4',
     borderRadius: 8,
     margin: 7,
@@ -245,7 +246,7 @@ export default StyleSheet.create({
     alignItems: 'center',
 
     // width: 130,
-    height: 34,
+    height: ViewScale(34),
     backgroundColor: '#787878',
     borderRadius: 8,
     margin: 7,
@@ -545,7 +546,7 @@ export default StyleSheet.create({
   },
   searchText1: {
     color: '#FFFFFF',
-    fontSize: 15,
+    fontSize: ViewScale(15),
     textAlign: 'center',
     fontFamily: 'Mitr-Regular',
   },
@@ -579,10 +580,10 @@ export default StyleSheet.create({
   },
   Notnoline: {
     textAlign: 'center',
-    fontSize: 20,
+    // fontSize: 20,
     color: '#2d6dc4',
     fontFamily: 'Mitr-Regular',
-    fontSize: 13,
+    fontSize: ViewScale(14),
   },
   online: {
     textAlign: 'center',
@@ -593,82 +594,82 @@ export default StyleSheet.create({
   },
   textActivitydate: {
     fontFamily: 'Pridi-Medium',
-    fontSize: 11,
+    fontSize: ViewScale(12),
     color: '#6f819a',
     marginTop: 8,
     textAlign: 'center',
   },
   textActivityTitle: {
-    fontSize: 13,
+    fontSize: ViewScale(14),
     color: '#4b4b4b',
     fontFamily: 'Mitr-Regular',
   },
   textactivityloca: {
     color: '#8b9bb0',
-    fontSize: 10,
+    fontSize: ViewScale(12),
     fontFamily: 'Pridi-Medium',
   },
   textactivityRegiter: {
-    fontSize: 12,
+    fontSize: ViewScale(12),
     color: '#FFFFFF',
     fontFamily: 'Mitr-Regular',
   },
   textactivityread: {
-    fontSize: 10,
+    fontSize: ViewScale(12),
     color: '#7fadec',
     fontFamily: 'Mitr-Regular',
   },
   textlistactivityall: {
-    fontSize: 15,
+    fontSize: ViewScale(14),
     color: '#2d6dc4',
     fontFamily: 'Mitr-Regular',
   },
 
   popupTextTitle: {
-    fontSize: 16,
+    fontSize: ViewScale(20),
     color: '#163c70',
     fontFamily: 'Mitr-Regular',
   },
   opoupTextData1: {
-    fontSize: 13,
+    fontSize: ViewScale(14),
     color: '#3a3a3a',
     fontFamily: 'Pridi-Regular',
   },
   popupTextloca: {
-    fontSize: 13,
+    fontSize: ViewScale(14),
     color: '#3a3a3a',
     fontFamily: 'Pridi-Regular',
   },
   popupTextMap: {
     textAlign: 'center',
     color: '#FFFFFF',
-    fontSize: 13,
+    fontSize: ViewScale(14),
     fontFamily: 'Pridi-Regular',
   },
   popupTexthideText: {
-    fontSize: 13,
+    fontSize: ViewScale(14),
     color: '#2d6dc4',
     textAlign: 'center',
     textDecorationLine: 'underline',
     fontFamily: 'Mitr-Regular',
   },
   popupTextTitledetail: {
-    fontSize: 13,
+    fontSize: ViewScale(14),
     color: '#3a3a3a',
     fontFamily: 'Mitr-Regular',
   },
   popupTextdetail: {
-    fontSize: 13,
+    fontSize: ViewScale(14),
     color: '#7d7d7d',
     fontFamily: 'Pridi-Regular',
   },
   popupTextdelect: {
-    fontSize: 14,
+    fontSize: ViewScale(14),
     color: '#163c70',
     fontFamily: 'Pridi-Regular',
   },
   textactivityregister: {
-    fontSize: 12,
+    fontSize: ViewScale(12),
     color: '#FFFFFF',
     fontFamily: 'Mitr-Regular',
   },
@@ -679,7 +680,7 @@ export default StyleSheet.create({
     marginTop: 4,
   },
   viewckText: {
-    fontSize: 13,
+    fontSize: ViewScale(14),
     color: '#2d6dc4',
     fontFamily: 'Mitr-Regular',
     textAlign: 'center',
@@ -687,7 +688,7 @@ export default StyleSheet.create({
   view1: {
     flexDirection: 'row',
     borderWidth: 1,
-    height: 34,
+    height: ViewScale(34),
     borderColor: '#2d6dc4',
     borderWidth: 1,
     borderRadius: 21.5,

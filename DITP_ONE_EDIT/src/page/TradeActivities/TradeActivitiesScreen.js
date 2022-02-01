@@ -18,6 +18,7 @@ import {
   Dimensions,
   Share,
 } from 'react-native';
+import {ViewScale} from '../../config/ViewScale'
 
 import Headers from '../../components/Headers';
 import Headerstage from '../../components/Headerstage';
@@ -930,7 +931,7 @@ class TradeActivitiesScreen extends React.Component {
                     }>
                     <Image
                       source={{uri: item.activity_list_logo_thumb}}
-                      style={{width: 60, height: 55, borderRadius: 15}}
+                      style={{width: ViewScale(60), height: ViewScale(55), borderRadius: 15}}
                     />
 
                     <Text style={Styles.textActivitydate}>
@@ -1005,13 +1006,13 @@ class TradeActivitiesScreen extends React.Component {
                       <CheckBox
                         checkedIcon={
                           <Image
-                            style={{width: 25, height: 25, top: -10}}
+                            style={{width: ViewScale(25), height: ViewScale(25), top: -10}}
                             source={require('../../image/PickerMarket.png')}
                           />
                         }
                         uncheckedIcon={
                           <Image
-                            style={{width: 25, height: 25, top: -10}}
+                            style={{width: ViewScale(25), height: ViewScale(25), top: -10}}
                             source={require('../../image/shoping.png')}
                           />
                         }
@@ -1024,13 +1025,13 @@ class TradeActivitiesScreen extends React.Component {
                       <CheckBox
                         checkedIcon={
                           <Image
-                            style={{width: 25, height: 25}}
+                            style={{width: ViewScale(25), height: ViewScale(25)}}
                             source={require('../../image/PickerMarket.png')}
                           />
                         }
                         uncheckedIcon={
                           <Image
-                            style={{width: 25, height: 25}}
+                            style={{width: ViewScale(25), height: ViewScale(25)}}
                             source={require('../../image/shoping.png')}
                           />
                         }
@@ -1053,12 +1054,12 @@ class TradeActivitiesScreen extends React.Component {
                     }}>
                     {item.activity_list_location_th === 'ออนไลน์' ? (
                       <Image
-                        style={{width: 13, height: 13, top: 3}}
+                        style={{width: ViewScale(13), height: ViewScale(13), top: 3}}
                         source={require('../../image/WWW.png')}
                       />
                     ) : (
                       <Image
-                        style={{width: 9, height: 12, top: 3}}
+                        style={{width: ViewScale(9), height: ViewScale(12), top: 3}}
                         source={require('../../image/makerlocation.png')}
                       />
                     )}
@@ -1091,8 +1092,8 @@ class TradeActivitiesScreen extends React.Component {
                     }}>
                     <Image
                       style={{
-                        width: 16,
-                        height: 12,
+                        width: ViewScale(16),
+                        height: ViewScale(12),
                         top: 3,
                         borderWidth: 0.4,
                         borderColor: '#4b4b4b',
@@ -1106,7 +1107,6 @@ class TradeActivitiesScreen extends React.Component {
                       flex: 1.4,
                       flexDirection: 'row',
                       alignItems: 'center',
-
                       alignSelf: 'flex-start',
                     }}>
                     <Text numberOfLines={2} style={Styles.textactivityloca}>
@@ -1344,8 +1344,8 @@ class TradeActivitiesScreen extends React.Component {
       <View
         style={{
           backgroundColor: '#FFFFFF',
-          width: 260,
-          height: 140,
+          width: ViewScale(260),
+          height: ViewScale(140),
           borderWidth: 1,
           borderRadius: 8,
           borderColor: '#3986ee',
@@ -1414,7 +1414,7 @@ class TradeActivitiesScreen extends React.Component {
                   marginLeft: 5,
                 }}>
                 <Image
-                  style={{width: 30, height: 30}}
+                  style={{width: ViewScale(30), height: ViewScale(30)}}
                   source={require('../../image/startoppick.png')}
                 />
                 <View style={[Styles.ViewSub3, {flex: 0.9}]}>
@@ -1851,7 +1851,7 @@ class TradeActivitiesScreen extends React.Component {
               leftAvatar={
                 <Image
                   source={{uri: item.img}}
-                  style={{width: 65, height: 55}}
+                  style={{width: ViewScale(65), height: ViewScale(55)}}
                 />
               }
               subtitle={
@@ -1873,7 +1873,7 @@ class TradeActivitiesScreen extends React.Component {
                     }}
                     style={{flex: 0.2, justifyContent: 'center'}}>
                     <Image
-                      style={{width: 20, height: 20}}
+                      style={{width: ViewScale(20), height: ViewScale(20)}}
                       source={require('../../image/infox.png')}
                     />
                   </TouchableOpacity>
@@ -1887,11 +1887,11 @@ class TradeActivitiesScreen extends React.Component {
                       start={{x: 0, y: 0}}
                       end={{x: 1, y: 0}}
                       colors={['#9c7df6', '#3986ee']}
-                      style={{width: 35, height: 35, borderRadius: 17}}>
+                      style={{width: ViewScale(35), height: ViewScale(35), borderRadius: 17}}>
                       <Text
                         style={{
                           color: '#FFFFFF',
-                          fontSize: 20,
+                          fontSize: ViewScale(20),
                           textAlign: 'center',
                           marginTop: 6,
                         }}>
@@ -1997,7 +1997,7 @@ class TradeActivitiesScreen extends React.Component {
                             </Text>
                           </View>
                         </View>
-                        <View style={{width: '100%', flex: 1, bottom: 10}}>
+                        <View style={{width: '100%', flex: 1, bottom: 10,}}>
                           <FlatList
                             extraData={this.state}
                             horizontal={true}
@@ -2015,6 +2015,8 @@ class TradeActivitiesScreen extends React.Component {
                 )}
 
                 <SegmentedControlTab
+                 tabTextStyle={{fontSize: ViewScale(16)}}
+                 activeTabTextStyle={{fontSize : ViewScale(16),}}
                   values={[
                     I18n.t('translate_Recommended_activities'),
                     I18n.t('translate_All_activities'),
@@ -2045,7 +2047,7 @@ class TradeActivitiesScreen extends React.Component {
                               marginTop: 13,
                               // width: '100%',
                               flex: 1,
-                              height: 35,
+                              height: ViewScale(35),
                               backgroundColor: '#FFFFFF',
                               borderColor: '#cacaca',
                               borderWidth: 1,
@@ -2093,7 +2095,7 @@ class TradeActivitiesScreen extends React.Component {
                             style={{
                               flex: 0.4,
                               backgroundColor: '#2d6dc4',
-                              height: 35,
+                              height: ViewScale(35),
                               borderRadius: 16,
                               marginTop: 13,
                               marginHorizontal: 7,
@@ -2121,7 +2123,7 @@ class TradeActivitiesScreen extends React.Component {
                             style={{
                               flex: 0.5,
                               backgroundColor: '#ff5e5e',
-                              height: 35,
+                              height: ViewScale(35),
                               borderRadius: 16,
                               marginTop: 13,
                             }}>
@@ -2168,7 +2170,7 @@ class TradeActivitiesScreen extends React.Component {
                               marginTop: 5,
                               // width: '50%',
                               flex: 1,
-                              height: 34,
+                              height: ViewScale(34),
                               backgroundColor: '#FFFFFF',
 
                               borderRadius: 21.5,
@@ -2281,7 +2283,7 @@ class TradeActivitiesScreen extends React.Component {
                               marginTop: 5,
                               // width: '50%',
                               flex: 1,
-                              height: 34,
+                              height: ViewScale(34),
                               backgroundColor: '#FFFFFF',
                               // borderColor: '#2d6dc4',
                               // borderWidth: 1,
@@ -2416,7 +2418,7 @@ class TradeActivitiesScreen extends React.Component {
                             style={{
                               // width: '50%',
                               flex: 1,
-                              height: 34,
+                              height: ViewScale(34),
                               backgroundColor: '#FFFFFF',
                               // borderColor: '#4b4b4b',
                               // borderWidth: 1,
@@ -2515,7 +2517,7 @@ class TradeActivitiesScreen extends React.Component {
                             style={{
                               // width: '50%',
                               flex: 1,
-                              height: 34,
+                              height: ViewScale(34),
                               backgroundColor: '#FFFFFF',
                               // borderColor: '#2d6dc4',
                               // borderWidth: 1,
@@ -2649,7 +2651,7 @@ class TradeActivitiesScreen extends React.Component {
                               style={{
                                 borderWidth: 1,
                                 borderColor: '#2d6dc4',
-                                height: 34,
+                                height: ViewScale(34),
                                 flex: 1,
                                 borderRadius: 17,
                                 marginHorizontal: 3,
@@ -2677,7 +2679,7 @@ class TradeActivitiesScreen extends React.Component {
                               style={{
                                 borderWidth: 1,
                                 borderColor: '#2d6dc4',
-                                height: 34,
+                                height: ViewScale(34),
                                 flex: 1,
                                 borderRadius: 17,
                                 marginHorizontal: 3,
@@ -2687,10 +2689,9 @@ class TradeActivitiesScreen extends React.Component {
                               <Text
                                 style={{
                                   textAlign: 'center',
-                                  fontSize: 20,
                                   color: '#FFF',
                                   fontFamily: 'Mitr-Regular',
-                                  fontSize: 13,
+                                  fontSize: ViewScale(13),
                                 }}>
                                 {I18n.t('translate_Online')}
                               </Text>
@@ -2777,13 +2778,13 @@ class TradeActivitiesScreen extends React.Component {
                     {this.state.img != '' ? (
                       <Image
                         resizeMode={'contain'}
-                        style={{width: '100%', height: 216}}
+                        style={{width: '100%', height: ViewScale(216)}}
                         source={{uri: this.state.img}}
                       />
                     ) : (
                       <Image
                         resizeMode={'center'}
-                        style={{width: '100%', height: 216}}
+                        style={{width: '100%', height: ViewScale(216)}}
                         source={require('../../image/banerDrive.png')}
                       />
                     )}
@@ -2793,7 +2794,7 @@ class TradeActivitiesScreen extends React.Component {
                     <Text style={Styles.opoupTextData1}>
                       {this.state.StarD} - {this.state.EndD}
                     </Text>
-                    <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                       {I18n.t('translate_DataRegister')} :{' '}
                       {this.state.starretgis} - {this.state.endregis}{' '}
                     </Text>
@@ -2804,10 +2805,10 @@ class TradeActivitiesScreen extends React.Component {
                       }}>
                       <View style={{flex: 1, flexDirection: 'row'}}>
                         <Image
-                          style={{width: 18, height: 13, top: 4}}
+                          style={{width: ViewScale(18), height: ViewScale(13), top: 4}}
                           source={{uri: this.state.contry_img_flag}}
                         />
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {'  '}
                           {this.state.contry_TH}
                         </Text>
@@ -2826,7 +2827,7 @@ class TradeActivitiesScreen extends React.Component {
                             style={{
                               textAlign: 'center',
                               color: '#FFFFFF',
-                              fontSize: 18,
+                              fontSize: ViewScale(18),
                             }}>
                             {I18n.t('transalte_map')}
                           </Text>
@@ -2839,22 +2840,22 @@ class TradeActivitiesScreen extends React.Component {
                         alignItems: 'center',
                       }}>
                       <Image
-                        style={{width: 7, height: 11}}
+                        style={{width: ViewScale(7), height: ViewScale(11)}}
                         source={require('../../image/maker2.png')}
                       />
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {'  '}
                         {this.state.location}
                       </Text>
                     </View>
 
                     <View style={{marginTop: 10}}>
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_ActPrice')} : {this.state.price}
                       </Text>
                     </View>
                     <View style={{marginTop: 0}}>
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_Num')} : {this.state.partic}{' '}
                         {I18n.t('translate_case')}
                       </Text>
@@ -2872,7 +2873,7 @@ class TradeActivitiesScreen extends React.Component {
                             </Text>
                           </ImageBackground>
                           <View style={{bottom: 13, right: 33}}>
-                            <Text style={{fontSize: 12, color: '#334c6e'}}>
+                            <Text style={{fontSize: ViewScale(12), color: '#334c6e'}}>
                               {I18n.t('translate_Prepare')}
                             </Text>
                           </View>
@@ -2891,7 +2892,7 @@ class TradeActivitiesScreen extends React.Component {
                             </Text>
                           </ImageBackground>
                           <View style={{bottom: 13, right: 31}}>
-                            <Text style={{fontSize: 12, color: '#ff5e5e'}}>
+                            <Text style={{fontSize: ViewScale(12), color: '#ff5e5e'}}>
                               {I18n.t('translate_OnAir')}
                             </Text>
                           </View>
@@ -2910,7 +2911,7 @@ class TradeActivitiesScreen extends React.Component {
                             </Text>
                           </ImageBackground>
                           <View style={{bottom: 13, right: 31}}>
-                            <Text style={{fontSize: 12, color: '#b7b7b7'}}>
+                            <Text style={{fontSize: ViewScale(12), color: '#b7b7b7'}}>
                               {I18n.t('translate_returnBack')}
                             </Text>
                           </View>
@@ -2919,7 +2920,7 @@ class TradeActivitiesScreen extends React.Component {
                     )}
                     <View style={{margin: 10}}>
                       <Image
-                        style={{width: 334, height: 1}}
+                        style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
                       />
                     </View>
@@ -2931,7 +2932,7 @@ class TradeActivitiesScreen extends React.Component {
                             this.setState({ckhide: true});
                           }}
                           style={{
-                            fontSize: 18,
+                            fontSize: ViewScale(18),
                             color: '#2d6dc4',
                             textAlign: 'center',
                             textDecorationLine: 'underline',
@@ -2946,57 +2947,57 @@ class TradeActivitiesScreen extends React.Component {
                       </View>
                     ) : (
                       <>
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {I18n.t('translate_DataShow')} :
                         </Text>
 
-                        <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                           {' '}
                           {this.state.StarD} - {this.state.EndD}{' '}
                         </Text>
 
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {I18n.t('translate_DataRegister')} :{' '}
                         </Text>
 
-                        <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                           {' '}
                           {this.state.starretgis} - {this.state.endregis}{' '}
                         </Text>
 
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {I18n.t('translate_place')} :
                         </Text>
 
-                        <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                           {' '}
                           {this.state.location}{' '}
                         </Text>
 
                         {/* thking */}
 
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {I18n.t('translate_group_product')} :
                         </Text>
 
                         {this.state.product_category.map((data, index) => {
                           return (
                             <View>
-                              <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                              <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                                 {' '}
                                 {index + 1} {data.name_th}
                               </Text>
                             </View>
                           );
                         })}
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {I18n.t('translate_Readmore')} :
                         </Text>
-                        <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                           {I18n.t('translate_Main')}
                         </Text>
                         <View style={{width: 321, height: null}}>
-                          <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                          <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                             {this.state.detail}
                           </Text>
                         </View>
@@ -3007,7 +3008,7 @@ class TradeActivitiesScreen extends React.Component {
                               this.setState({ckhide: false});
                             }}
                             style={{
-                              fontSize: 18,
+                              fontSize: ViewScale(18),
                               color: '#2d6dc4',
                               textAlign: 'center',
                               textDecorationLine: 'underline',
@@ -3025,22 +3026,22 @@ class TradeActivitiesScreen extends React.Component {
 
                     <View style={{margin: 10}}>
                       <Image
-                        style={{width: 334, height: 1}}
+                        style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
                       />
                     </View>
 
                     <View style={{flex: 1}}>
-                      <Text style={{color: '#3a3a3a', fontSize: 18}}>
-                        หน่วยงานอบรมรับผิดชอบ : {this.state.daparment_name}
+                      <Text style={{color: '#3a3a3a', fontSize: ViewScale(18)}}>
+                        {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                       </Text>
-                      <Text style={{color: '#3a3a3a', fontSize: 18}}>
-                        เจ้าหน้าที่โครงการ :{' '}
+                      <Text style={{color: '#3a3a3a', fontSize: ViewScale(18)}}>
+                        {I18n.t('transalte_project_staff')} :{' '}
                         {this.officer_name(this.state.officer_name)}
                       </Text>
                       <View style={{flexDirection: 'row'}}>
                         <Image
-                          style={{width: 29, height: 29}}
+                          style={{width: ViewScale(29), height: ViewScale(29)}}
                           source={require('../../image/phonelx.png')}
                         />
 
@@ -3048,7 +3049,7 @@ class TradeActivitiesScreen extends React.Component {
                           onPress={() => {
                             this.Call(this.state.deparment_tel);
                           }}
-                          style={{color: '#2d6dc4', fontSize: 18, top: 4}}>
+                          style={{color: '#2d6dc4', fontSize: ViewScale(18), top: ViewScale(4)}}>
                           {'   '} {this.state.deparment_tel}
                         </Text>
                       </View>
@@ -3073,11 +3074,11 @@ class TradeActivitiesScreen extends React.Component {
                               }}
                               style={{flexDirection: 'row'}}>
                               <Image
-                                style={{width: 20, height: 20}}
+                                style={{width: ViewScale(20), height: ViewScale(20)}}
                                 source={require('../../image/shoping.png')}
                               />
 
-                              <Text style={{fontSize: 20, color: '#163c70'}}>
+                              <Text style={{fontSize: ViewScale(20), color: '#163c70'}}>
                                 {'  '}
                                 {I18n.t('translate_addFavorites')}
                               </Text>
@@ -3093,7 +3094,7 @@ class TradeActivitiesScreen extends React.Component {
                               }}
                               style={{flexDirection: 'row'}}>
                               <Image
-                                style={{width: 20, height: 20}}
+                                style={{width: ViewScale(20), height: ViewScale(20)}}
                                 source={require('../../image/startoppick.png')}
                               />
 
@@ -3115,11 +3116,11 @@ class TradeActivitiesScreen extends React.Component {
                               style={{flexDirection: 'row'}}>
                               {console.log(this.state.status_bas)}
                               <Image
-                                style={{width: 20, height: 20}}
+                                style={{width: ViewScale(20), height: ViewScale(20)}}
                                 source={require('../../image/shoping.png')}
                               />
 
-                              <Text style={{fontSize: 16, color: '#163c70'}}>
+                              <Text style={{fontSize: ViewScale(16), color: '#163c70'}}>
                                 {'  '}
                                 {I18n.t('translate_addFavorites')}
                               </Text>
@@ -3133,11 +3134,11 @@ class TradeActivitiesScreen extends React.Component {
                               }}
                               style={{flexDirection: 'row'}}>
                               <Image
-                                style={{width: 20, height: 20}}
+                                style={{width: ViewScale(20), height: ViewScale(20)}}
                                 source={require('../../image/PickerMarket.png')}
                               />
 
-                              <Text style={{fontSize: 16, color: '#163c70'}}>
+                              <Text style={{fontSize: ViewScale(16), color: '#163c70'}}>
                                 {'  '}
                                 {I18n.t('translate_Delete_basket')}
                               </Text>
@@ -3199,7 +3200,7 @@ class TradeActivitiesScreen extends React.Component {
                             }>
                             <Text
                               style={{
-                                fontSize: 19,
+                                fontSize: ViewScale(19),
                                 color: '#FFFFFF',
                                 fontFamily: 'Kittithada Bold 75',
                               }}>
@@ -3220,7 +3221,7 @@ class TradeActivitiesScreen extends React.Component {
                         style={{alignSelf: 'flex-end', marginTop: -25}}>
                         <Image
                           resizeMode={'contain'}
-                          style={{width: 14, height: 16}}
+                          style={{width: ViewScale(14), height: ViewScale(16)}}
                           source={require('../../image/sharelx.png')}
                         />
                         {/* <Icon3
@@ -3261,14 +3262,14 @@ class TradeActivitiesScreen extends React.Component {
                     {this.state.img != '' ? (
                       <Image
                         resizeMode={'contain'}
-                        style={{width: '100%', height: 216}}
+                        style={{width: '100%', height: ViewScale(216)}}
                         source={{uri: this.state.img}}
                       />
                     ) : (
                       <View style={{alignItems: 'center'}}>
                         <Image
                           resizeMode={'contain'}
-                          style={{width: '50%', height: 216}}
+                          style={{width: '50%', height: ViewScale(216)}}
                           source={require('../../image/banerDrive.png')}
                         />
                       </View>
@@ -3290,7 +3291,7 @@ class TradeActivitiesScreen extends React.Component {
                       }}>
                       <View style={{flex: 1, flexDirection: 'row'}}>
                         <Image
-                          style={{width: 18, height: 13, top: 4}}
+                          style={{width: ViewScale(18), height: ViewScale(13), top: ViewScale(4)}}
                           source={{uri: this.state.contry_img_flag}}
                         />
                         <Text style={Styles.popupTextloca}>
@@ -3315,7 +3316,7 @@ class TradeActivitiesScreen extends React.Component {
                         alignItems: 'center',
                       }}>
                       <Image
-                        style={{width: 7, height: 11}}
+                        style={{width: ViewScale(7), height: ViewScale(11)}}
                         source={require('../../image/maker2.png')}
                       />
                       <Text style={Styles.popupTextloca}>
@@ -3348,7 +3349,7 @@ class TradeActivitiesScreen extends React.Component {
                             </Text>
                           </ImageBackground>
                           <View style={{bottom: 13, right: 33}}>
-                            <Text style={{fontSize: 12, color: '#334c6e'}}>
+                            <Text style={{fontSize: ViewScale(12), color: '#334c6e'}}>
                               {I18n.t('translate_Prepare')}
                             </Text>
                           </View>
@@ -3367,7 +3368,7 @@ class TradeActivitiesScreen extends React.Component {
                             </Text>
                           </ImageBackground>
                           <View style={{bottom: 13, right: 31}}>
-                            <Text style={{fontSize: 12, color: '#ff5e5e'}}>
+                            <Text style={{fontSize: ViewScale(12), color: '#ff5e5e'}}>
                               {I18n.t('translate_OnAir')}
                             </Text>
                           </View>
@@ -3386,7 +3387,7 @@ class TradeActivitiesScreen extends React.Component {
                             </Text>
                           </ImageBackground>
                           <View style={{bottom: 13, right: 31}}>
-                            <Text style={{fontSize: 12, color: '#b7b7b7'}}>
+                            <Text style={{fontSize: ViewScale(12), color: '#b7b7b7'}}>
                               {I18n.t('translate_returnBack')}
                             </Text>
                           </View>
@@ -3395,7 +3396,7 @@ class TradeActivitiesScreen extends React.Component {
                     )}
                     <View style={{margin: 10}}>
                       <Image
-                        style={{width: 334, height: 1}}
+                        style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
                       />
                     </View>
@@ -3467,7 +3468,7 @@ class TradeActivitiesScreen extends React.Component {
                         <Text style={Styles.popupTextTitledetail}>
                           {I18n.t('translate_Main')}
                         </Text>
-                        <View style={{width: 321, height: null}}>
+                        <View style={{width: ViewScale(321), height: null}}>
                           <Text style={Styles.popupTextdetail}>
                             {this.state.detail}
                           </Text>
@@ -3491,7 +3492,7 @@ class TradeActivitiesScreen extends React.Component {
                     )}
                     <View style={{margin: 10}}>
                       <Image
-                        style={{width: 334, height: 1}}
+                        style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
                       />
                     </View>
@@ -3504,7 +3505,7 @@ class TradeActivitiesScreen extends React.Component {
                       </Text>
                       <View style={{flexDirection: 'row'}}>
                         <Image
-                          style={{width: 29, height: 29}}
+                          style={{width: ViewScale(29), height: ViewScale(29)}}
                           source={require('../../image/phonelx.png')}
                         />
 
@@ -3512,7 +3513,7 @@ class TradeActivitiesScreen extends React.Component {
                           onPress={() => {
                             this.Call(this.state.deparment_tel);
                           }}
-                          style={{color: '#2d6dc4', fontSize: 18, top: 4}}>
+                          style={{color: '#2d6dc4', fontSize: ViewScale(18), top: ViewScale(4)}}>
                           {'   '} {this.state.deparment_tel}
                         </Text>
                       </View>
@@ -3533,7 +3534,7 @@ class TradeActivitiesScreen extends React.Component {
                           }}
                           style={{flexDirection: 'row'}}>
                           <Image
-                            style={{width: 20, height: 20}}
+                            style={{width: ViewScale(20), height: ViewScale(20)}}
                             source={require('../../image/startoppick.png')}
                           />
 
@@ -3553,7 +3554,7 @@ class TradeActivitiesScreen extends React.Component {
                           }}
                           style={{flexDirection: 'row'}}>
                           <Image
-                            style={{width: 20, height: 20}}
+                            style={{width: ViewScale(20), height: ViewScale(20)}}
                             source={require('../../image/startoppick.png')}
                           />
 
@@ -3658,7 +3659,7 @@ class TradeActivitiesScreen extends React.Component {
                 <TouchableOpacity
                   style={{
                     backgroundColor: '#2d6dc4',
-                    height: 40,
+                    height: ViewScale(40),
                     width: width * 0.7,
                     borderRadius: 20,
                     justifyContent: 'center',
@@ -3666,7 +3667,7 @@ class TradeActivitiesScreen extends React.Component {
                   <Text
                     style={{
                       textAlign: 'center',
-                      fontSize: 22,
+                      fontSize: ViewScale(20),
                       color: '#FFFFFF',
                       fontFamily: 'PSL Kittithada Pro',
                     }}>
@@ -3686,7 +3687,7 @@ class TradeActivitiesScreen extends React.Component {
                   <Text
                     style={{
                       textAlign: 'center',
-                      fontSize: 22,
+                      fontSize: ViewScale(20),
                       color: '#FFFFFF',
                       fontFamily: 'PSL Kittithada Pro',
                     }}>
@@ -3714,12 +3715,12 @@ class TradeActivitiesScreen extends React.Component {
               }}>
               <View style={{paddingBottom: 10}}>
                 <Image
-                  style={{width: 78, height: 60}}
+                  style={{width: ViewScale(78), height: ViewScale(60)}}
                   source={{uri: this.state.imgmenu}}
                 />
               </View>
               <View style={{paddingBottom: 10}}>
-                <Text style={{fontSize: 22, color: '#2d6dc4'}}>
+                <Text style={{fontSize: ViewScale(20), color: '#2d6dc4'}}>
                   {this.state.namemenu}
                 </Text>
               </View>
@@ -3732,7 +3733,7 @@ class TradeActivitiesScreen extends React.Component {
               />
             </View>
             <View style={{width: width * 0.8}}>
-              <Text style={{color: '#3a3a3a', fontSize: 22}}>
+              <Text style={{color: '#3a3a3a', fontSize: ViewScale(20)}}>
                 {I18n.t('translate_Readmore')} :{' '}
               </Text>
               <Text

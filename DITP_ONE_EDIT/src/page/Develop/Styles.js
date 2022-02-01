@@ -1,8 +1,10 @@
 import {StyleSheet, Dimensions, Platform} from 'react-native';
+import { ViewScale } from '../../config/ViewScale';
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 const width1 = Dimensions.get('screen').width;
 const height1 = Dimensions.get('screen').height;
+
 var aspectRatio = '60%';
 if (height / width > 1.6) {
   //iphone
@@ -30,13 +32,13 @@ export default StyleSheet.create({
     fontFamily: 'Kittithada Bold 75',
   },
   TextSub2: {
-    fontSize: 14,
+    fontSize: ViewScale(14),
     color: '#40536d',
     fontFamily: 'Mitr-Regular',
   },
   ImgSub1: {
-    width: 69,
-    height: 30,
+    width: ViewScale(69),
+    height: ViewScale(30),
   },
   marginLeft10: {
     // marginLeft: 10,
@@ -57,7 +59,7 @@ export default StyleSheet.create({
     height: 25,
   },
   TextSub3: {
-    fontSize: 11,
+    fontSize: ViewScale(12),
     color: '#94adbd',
     fontFamily: 'Mitr-Regular',
   },
@@ -67,7 +69,7 @@ export default StyleSheet.create({
     height: null,
   },
   TextSub4: {
-    fontSize: 12,
+    fontSize: ViewScale(12),
     color: '#4b4b4b',
     fontFamily: 'Mitr-Regular',
   },
@@ -84,8 +86,8 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   ImgSub3: {
-    width: 20,
-    height: 13,
+    width: ViewScale(20),
+    height: ViewScale(13),
   },
   ImgBackgroungSub1: {
     width: 25,
@@ -452,35 +454,35 @@ export default StyleSheet.create({
     fontFamily: 'Mitr-Regular',
   },
   textactivityDate: {
-    fontSize: 11,
+    fontSize: ViewScale(12),
     color: '#6f819a',
     marginTop: 8,
     textAlign: 'center',
     fontFamily: 'Pridi-Medium',
   },
   textActivityTitl: {
-    fontSize: 13,
+    fontSize:  ViewScale(14),
     color: '#4b4b4b',
     fontFamily: 'Mitr-Regular',
   },
   textactivityloca: {
-    fontSize: 10,
+    fontSize: ViewScale(12),
     color: '#6f819a',
     fontFamily: 'Pridi-Medium',
   },
   textactivityregister: {
-    fontSize: 12,
+    fontSize: ViewScale(14),
     color: '#FFFFFF',
     fontFamily: 'Mitr-Regular',
   },
   textreaddetail: {
-    fontSize: 10,
+    fontSize: ViewScale(12),
     color: '#7fadec',
     fontFamily: 'Mitr-Regular',
   },
   textsearchView: {
     flex: 1,
-    fontSize: 14,
+    fontSize: ViewScale(14),
     color: '#999999',
     marginLeft: 10,
     backgroundColor: 'transparent',

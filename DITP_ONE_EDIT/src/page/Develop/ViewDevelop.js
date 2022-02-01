@@ -38,6 +38,7 @@ import Icon3 from "react-native-vector-icons/MaterialIcons";
 import RNPickerSelect from "react-native-picker-select";
 import SegmentedControlTab from "react-native-segmented-control-tabedit";
 import { height } from "../Typeappeal/Styles";
+import {ViewScale} from '../../config/ViewScale';
 var date = new Date();
 var mm = date.getMonth();
 var YYDF1 = mm + 1;
@@ -1036,8 +1037,8 @@ class ViewDevelop extends React.Component {
       <View style={{ backgroundColor: "#f7f9fc" }}>
         <ListItem
           containerStyle={{
-            marginBottom: 8,
-            borderRadius: 10,
+            marginBottom:ViewScale(8),
+            borderRadius: ViewScale(10),
             alignSelf: "center",
             flex: 1,
             width: "95%",
@@ -1121,7 +1122,7 @@ class ViewDevelop extends React.Component {
                   /> */}
                   <Image
                     source={require("../../image/devlop.png")}
-                    style={{ width: 55, height: 50, borderRadius: 15 }}
+                    style={{ width:ViewScale(55), height:ViewScale(50), borderRadius: ViewScale(15) }}
                   />
                   <Text style={Styles.textactivityDate}>
                     {this.Star_Date(item.activity_list_start_date)}
@@ -1194,7 +1195,7 @@ class ViewDevelop extends React.Component {
                 </View>
                 <View
                   style={{
-                    width: "30%",
+                    width: "100%",
                     bottom: 10,
                   }}
                 >
@@ -1219,24 +1220,23 @@ class ViewDevelop extends React.Component {
                   />
                 </View>
               </View>
-              <View style={{ flex: 1, flexDirection: "row" }}>
+              <View style={{ flex: 1, flexDirection: "row", marginTop: 5,}}>
                 <View
                   style={{
                     flex: 0.1,
                     flexDirection: "row",
                     alignItems: "center",
-
                     alignSelf: "flex-start",
                   }}
                 >
                   {item.activity_list_location_th === "ออนไลน์" ? (
                     <Image
-                      style={{ width: 13, height: 13, top: 3 }}
+                      style={{ width: ViewScale(13), height: ViewScale(14), top: ViewScale(3) }}
                       source={require("../../image/WWW.png")}
                     />
                   ) : (
                     <Image
-                      style={{ width: 9, height: 12, top: 3 }}
+                      style={{ width: ViewScale(13), height: ViewScale(14), top: ViewScale(3) }}
                       source={require("../../image/makerlocation.png")}
                     />
                   )}
@@ -1246,7 +1246,6 @@ class ViewDevelop extends React.Component {
                     flex: 1.4,
                     flexDirection: "row",
                     alignItems: "center",
-
                     alignSelf: "flex-start",
                   }}
                 >
@@ -1403,7 +1402,7 @@ class ViewDevelop extends React.Component {
                 style={Styles.TouchRead}
               >
                 <Image
-                  style={{ width: 17, height: 13 }}
+                  style={{ width: ViewScale(17), height: ViewScale(13) }}
                   source={require("../../image/readDetail.png")}
                 />
                 <Text style={Styles.textreaddetail}>
@@ -1989,7 +1988,7 @@ class ViewDevelop extends React.Component {
 
   render() {
     const { AllDevelop, AllDevelopElearning } = this.state;
-    console.log(AllDevelop);
+    // console.log(AllDevelop);
     return (
       <View style={{ backgroundColor: "#ffffff", flex: 1 }}>
         {/* <Headers
@@ -2014,6 +2013,7 @@ class ViewDevelop extends React.Component {
             <View style={Styles.OverlayHight}>
               <View style={Styles.OverlayView1}>
                 <TouchableOpacity
+                // style={{backgroundColor: 'red'}}
                   onPress={() => this.setState({ Show: false })}
                 >
                   <Image
@@ -2028,13 +2028,13 @@ class ViewDevelop extends React.Component {
                     {this.state.img != "" ? (
                       <Image
                         resizeMode={"cover"}
-                        style={{ width: 334, height: 216 }}
+                        style={{ width: ViewScale(334), height: ViewScale(216) }}
                         source={{ uri: this.state.img }}
                       />
                     ) : (
                       <Image
                         resizeMode={"contain"}
-                        style={{ width: "100%", height: 216 }}
+                        style={{ width: "100%", height: ViewScale(216) }}
                         source={require("../../image/banerDrive.png")}
                       />
                     )}
@@ -2473,8 +2473,10 @@ class ViewDevelop extends React.Component {
             </View>
           </Overlay>
         )}
-        <View style={{ zIndex: -1, flex: 0.8 }}>
+        <View style={{ zIndex: -1, flex: 0.8 , }}>
           <SegmentedControlTab
+          tabTextStyle={{fontSize: ViewScale(16)}}
+          activeTabTextStyle={{fontSize : ViewScale(16),}}
             values={[
               I18n.t("translate_Title_AllDEV"),
               I18n.t("translate_Title_Elearning"),
@@ -2484,20 +2486,20 @@ class ViewDevelop extends React.Component {
           />
 
           {this.state.selectedIndex === 0 && (
-            <View style={{ marginTop: 10 }}>
-              <View style={{ marginHorizontal: 10 }}>
+            <View style={{ marginTop: ViewScale(10) }}>
+              <View style={{ marginHorizontal: ViewScale(10) }}>
                 <View
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
-                    borderWidth: 1,
-                    borderRadius: 18,
+                    borderWidth: ViewScale(1),
+                    borderRadius: ViewScale(18),
 
                     borderColor: "#dadada",
                   }}
                 >
                   <Image
-                    style={{ width: 22, height: 22, left: 10, top: 2 }}
+                    style={{ width: ViewScale(22), height: ViewScale(22), left: ViewScale(10), top: ViewScale(2) }}
                     source={require("../../image/searchbluex.png")}
                   />
 
@@ -2546,7 +2548,7 @@ class ViewDevelop extends React.Component {
                         style={{
                           flex: 1,
                           marginHorizontal: 10,
-                          height: 34,
+                          height: ViewScale(34),
                           backgroundColor: "#2d6dc4",
 
                           borderRadius: 8,
@@ -2556,7 +2558,7 @@ class ViewDevelop extends React.Component {
                         <Text
                           style={{
                             color: "#FFFFFF",
-                            fontSize: 20,
+                            fontSize: ViewScale(21),
                             justifyContent: "center",
                             textAlign: "center",
                           }}
@@ -2588,6 +2590,7 @@ class ViewDevelop extends React.Component {
                             marginHorizontal: 10,
                             marginVertical: 10,
                             borderRadius: 17,
+                            // backgroundColor: 'red',
                             // borderColor: 'red',
                             // justifyContent:'center'
                           }}
@@ -2641,7 +2644,7 @@ class ViewDevelop extends React.Component {
                                     <Text
                                       style={{
                                         color: "#2d6dc4",
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         textAlign: "center",
                                       }}
                                     >
@@ -2652,7 +2655,7 @@ class ViewDevelop extends React.Component {
                                     <Text
                                       style={{
                                         color: "#2d6dc4",
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         textAlign: "center",
                                       }}
                                     >
@@ -2788,7 +2791,7 @@ class ViewDevelop extends React.Component {
                                   <Text
                                     style={{
                                       color: "#2d6dc4",
-                                      fontSize: 20,
+                                      fontSize: ViewScale(20),
                                       textAlign: "center",
                                     }}
                                   >
@@ -2804,7 +2807,7 @@ class ViewDevelop extends React.Component {
                                   <Text
                                     style={{
                                       color: "#2d6dc4",
-                                      fontSize: 20,
+                                      fontSize: ViewScale(20),
                                       textAlign: "center",
                                     }}
                                   >
@@ -2857,7 +2860,7 @@ class ViewDevelop extends React.Component {
                         <Text
                           style={{
                             color: "#FFFFFF",
-                            fontSize: 20,
+                            fontSize: ViewScale(20),
                             textAlign: "center",
                           }}
                         >
@@ -2874,9 +2877,8 @@ class ViewDevelop extends React.Component {
                     style={{
                       flex: 1,
                       marginHorizontal: 10,
-                      height: 34,
+                      height: ViewScale(34),
                       backgroundColor: "#2d6dc4",
-
                       borderRadius: 8,
                       justifyContent: "center",
                     }}
@@ -2884,7 +2886,7 @@ class ViewDevelop extends React.Component {
                     <Text
                       style={{
                         color: "#FFFFFF",
-                        fontSize: 20,
+                        fontSize: ViewScale(21),
                         textAlign: "center",
                       }}
                     >
@@ -2966,7 +2968,7 @@ class ViewDevelop extends React.Component {
                   }}
                 >
                   <Image
-                    style={{ width: 22, height: 22, left: 10, top: 2 }}
+                    style={{ width: ViewScale(22), height: ViewScale(22), left: 10, top: 2 }}
                     source={require("../../image/searchbluex.png")}
                   />
 
@@ -3016,7 +3018,7 @@ class ViewDevelop extends React.Component {
                         style={{
                           flex: 1,
                           marginHorizontal: 10,
-                          height: 34,
+                          height: ViewScale(34),
                           backgroundColor: "#2d6dc4",
 
                           borderRadius: 8,
@@ -3026,7 +3028,7 @@ class ViewDevelop extends React.Component {
                         <Text
                           style={{
                             color: "#FFFFFF",
-                            fontSize: 20,
+                            fontSize: ViewScale(21),
                             textAlign: "center",
                           }}
                         >
@@ -3312,7 +3314,7 @@ class ViewDevelop extends React.Component {
                     style={{
                       flex: 1,
                       marginHorizontal: 10,
-                      height: 34,
+                      height: ViewScale(34),
                       backgroundColor: "#2d6dc4",
 
                       borderRadius: 8,
@@ -3322,7 +3324,7 @@ class ViewDevelop extends React.Component {
                     <Text
                       style={{
                         color: "#FFFFFF",
-                        fontSize: 20,
+                        fontSize: ViewScale(21),
                         textAlign: "center",
                       }}
                     >

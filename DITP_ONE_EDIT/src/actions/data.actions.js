@@ -3757,4 +3757,67 @@ export const sendAddpersonCorparate = payload => {
   };
 };
 
+export const Addperson = payload => {
+  return async dispatch => {
+    // console.log('token',payload.token)
+    console.log('payload.token');
+
+    dispatch({
+      type: 'INCREMENT',
+      score: 1,
+    });
+    const response = await fetchApi(
+      '/add_member_nomal',
+      'POST',
+      payload.result,
+      'DITPONE',
+      payload.token,
+    );
+
+    setTimeout(() => {
+      dispatch({
+        type: 'DECREMENT',
+        score: 1,
+      });
+    }, 500);
+    // console.log("/business_type");
+    if ((response.res_code = '00')) {
+      console.log('response',response);
+      return response;
+    }
+  };
+};
+
+export const Addjuristic = payload => {
+  return async dispatch => {
+    console.log('token',payload.token)
+    console.log('payload.token');
+
+    dispatch({
+      type: 'INCREMENT',
+      score: 1,
+    });
+    const response = await fetchApi(
+      '/add_member_niti',
+      'POST',
+      payload.result,
+      'DITPONE',
+      payload.token,
+    );
+
+    setTimeout(() => {
+      dispatch({
+        type: 'DECREMENT',
+        score: 1,
+      });
+    }, 500);
+    // console.log("/business_type");
+    if ((response.res_code = '00')) {
+      console.log(response);
+      return response;
+    }
+  };
+};
+
+
 

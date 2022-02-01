@@ -182,7 +182,7 @@ export default {
   translate_Grand_total: 'Grand total',
   translate_Grand_total_import: 'Grand total import',
   translate_Million_US_Dollars: 'Million US Dollars',
-  translate_Million_US_Dollars: 'Million Thai Baht',
+  translate_Million_TH_Dollars: 'Million Thai Baht',
   translate_Ranking: 'Ranking',
   translate_Market_of_Thai: 'Export Market of Thailand',
   translate_Product_of_Thai: 'Export Product of Thailand',
@@ -658,7 +658,7 @@ export default {
   DeleteNontiAll: 'ลบการแจ้งเตือน',
 
   //แจ้งยกเลิกสมาชิก
-  translate_ReportUn: 'แจ้งการยกเลิกเป็นสมาชิก',
+  translate_ReportUn: 'Notification of cancellation of membership',
   translate_nameUn: 'Name',
   translate_lnameUn: 'Last Name',
   translate_PhoneUn: 'PhoneNumer',

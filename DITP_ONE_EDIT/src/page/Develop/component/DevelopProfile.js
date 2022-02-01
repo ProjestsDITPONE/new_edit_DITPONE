@@ -49,38 +49,38 @@ const width = Dimensions.get('window').width;
 const dadamenu3 = [
   {
     id: 1,
-    txt: 'ข้อมูลส่วนตัว',
+    txt: I18n.t('transalte_personal_info'),
   },
   {
     id: 2,
-    txt: 'ข้อมูลประกอบ',
+    txt: I18n.t('transalte_accompanying_info'),
   },
   {
     id: 3,
-    txt: 'สินค้า',
+    txt: I18n.t('translate_Products'),
   },
   {
     id: 4,
-    txt: 'ข้อมูลบริษัท',
-    txt2: 'ผู้เข้าร่วมกิจกรรม',
+    txt: I18n.t('transalte_company_info'),
+    txt2: I18n.t('transalte_Participants'),
   },
 ];
 const dadamenu1 = [
   {
     id: 1,
-    txt: 'ข้อมูลส่วนตัว',
+    txt: I18n.t('transalte_personal_info'),
   },
   {
     id: 2,
-    txt: 'ข้อมูลประกอบ',
+    txt: I18n.t('transalte_accompanying_info'),
   },
   {
     id: 3,
-    txt: 'สินค้า',
+    txt: I18n.t('translate_Products'),
   },
   {
     id: 4,
-    txt: 'ผู้เข้าร่วมกิจกรรม',
+    txt: I18n.t('transalte_Participants'),
   },
 ];
 const data2 = [
@@ -121,33 +121,33 @@ class DevelopProfile extends React.Component {
     this.state = {
       Allcontents: [
         {
-          title: 'ข้อมูลส่วนตัว',
+          title: I18n.t('transalte_personal_info'),
         },
       ],
       Allcontents1: [
         {
-          title: 'ข้อมูลนิติบุคคล',
+          title: I18n.t('transalte_Juristic_Person_Information'),
         },
       ],
 
       Alldataoperator: [
         {
-          title: 'ข้อมูลประกอบ',
+          title: I18n.t('transalte_Accompanying_Information'),
         },
       ],
       Alldataproduct: [
         {
-          title: 'สินค้า',
+          title: I18n.t('translate_Products'),
         },
       ],
       Alldatacompany: [
         {
-          title: 'ข้อมูลบริษัท',
+          title: I18n.t('transalte_company_info'),
         },
       ],
       Alldatanumber: [
         {
-          title: 'ผู้เข้าร่วมกิจกรรม',
+          title: I18n.t('transalte_Participants'),
         },
       ],
       ///////เก็บข้อมูลข้อทมูลประกอบ
@@ -615,7 +615,7 @@ class DevelopProfile extends React.Component {
 
                           marginHorizontal: 35,
                         }}>
-                        เลขบัตรประชาชน (Username)
+                        {I18n.t('cid_regis')} (Username)
                       </Text>
                       <Text
                         style={{
@@ -711,7 +711,7 @@ class DevelopProfile extends React.Component {
 
                             marginHorizontal: 35,
                           }}>
-                          ที่อยู่ติดต่อ
+                          {I18n.t('address_regis')}
                         </Text>
                         <Text
                           style={{
@@ -750,7 +750,7 @@ class DevelopProfile extends React.Component {
                                 color: '#163c70',
                                 marginHorizontal: 35,
                               }}>
-                              รหัสไปรษณีย์
+                              {I18n.t('postcode_regis')}
                             </Text>
                             <Text
                               style={{
@@ -804,7 +804,7 @@ class DevelopProfile extends React.Component {
 
                                 marginHorizontal: 35,
                               }}>
-                              จังหวัด
+                              {I18n.t('pro_userProfile')}
                             </Text>
                             <Text
                               style={{
@@ -858,7 +858,7 @@ class DevelopProfile extends React.Component {
 
                                 marginHorizontal: 35,
                               }}>
-                              อำเภอ/เขต
+                              {I18n.t('translate_Edite4')}
                             </Text>
                             <Text
                               style={{
@@ -910,7 +910,7 @@ class DevelopProfile extends React.Component {
 
                                 marginHorizontal: 35,
                               }}>
-                              ตำบล/แขวง
+                              {I18n.t('translate_Edite2')}
                             </Text>
                             <Text
                               style={{
@@ -963,7 +963,7 @@ class DevelopProfile extends React.Component {
 
                                 marginHorizontal: 35,
                               }}>
-                              ที่อยู่ติดต่อ
+                              {I18n.t('translate_Contactaddress')}
                             </Text>
                             <Text
                               style={{
@@ -1015,7 +1015,7 @@ class DevelopProfile extends React.Component {
 
                                 marginHorizontal: 35,
                               }}>
-                              อีเมล
+                                {I18n.t('translate_email')}
                             </Text>
                             <Text
                               style={{
@@ -1066,7 +1066,7 @@ class DevelopProfile extends React.Component {
 
                                 marginHorizontal: 35,
                               }}>
-                              หมายเลขโทรศัพท์
+                              {I18n.t('translate_Phonenumber')}
                             </Text>
                             <ImageBackground
                               source={require('../../../image/inputedittext.png')}
@@ -1147,7 +1147,7 @@ class DevelopProfile extends React.Component {
 
                             marginHorizontal: 35,
                           }}>
-                          อีเมล
+                          {I18n.t('translate_email')}
                         </Text>
 
                         <Text
@@ -1182,7 +1182,7 @@ class DevelopProfile extends React.Component {
 
                               marginHorizontal: 35,
                             }}>
-                            หมายเลขโทรศัพท์
+                            {I18n.t('translate_Phonenumber')}
                           </Text>
                           <View
                             style={{
@@ -1259,7 +1259,7 @@ class DevelopProfile extends React.Component {
                         textAlign: 'center',
                         color: '#FFFFFF',
                       }}>
-                      แก้ไขข้อมูลนิติบุคคล
+                      {I18n.t('transalte_Edit_Juristic_Information')}
                     </Text>
                   </TouchableOpacity>
                 )}
@@ -1288,7 +1288,7 @@ class DevelopProfile extends React.Component {
                           textAlign: 'center',
                           color: '#FFFFFF',
                         }}>
-                        ต่อไป
+                        {I18n.t('translate_Next')}
                       </Text>
                     </View>
                     <View style={{}}>
@@ -1329,7 +1329,7 @@ class DevelopProfile extends React.Component {
                           textAlign: 'center',
                           color: '#FFFFFF',
                         }}>
-                        บันทึก
+                        {I18n.t('translate_Save')}
                       </Text>
                     </View>
                   </TouchableOpacity>
@@ -1360,7 +1360,7 @@ class DevelopProfile extends React.Component {
 
                           marginHorizontal: 35,
                         }}>
-                        หมายเลขสมาชิกกรม
+                        {I18n.t('transalte_Department_Members')}
                       </Text>
                       <Text
                         style={{
@@ -1400,7 +1400,7 @@ class DevelopProfile extends React.Component {
 
                                   marginHorizontal: 35,
                                 }}>
-                                ประเภทสมาชิกกรม
+                                {I18n.t('transalte_Department_Category')}
                               </Text>
                               <Text
                                 style={{
@@ -1438,7 +1438,7 @@ class DevelopProfile extends React.Component {
 
                           marginHorizontal: 35,
                         }}>
-                        เลขนิติบุคคล (Username)
+                       {I18n.t('transalte_Number_Juristic')}
                       </Text>
                       <Text
                         style={{
@@ -1473,7 +1473,7 @@ class DevelopProfile extends React.Component {
 
                           marginHorizontal: 35,
                         }}>
-                        บริษัท / กิจการ
+                        {I18n.t('transalte_Company_ฺBusiness')}
                       </Text>
                       <Text
                         style={{
@@ -1538,7 +1538,7 @@ class DevelopProfile extends React.Component {
 
                               marginHorizontal: 35,
                             }}>
-                            ที่อยู่ติดต่อ
+                            {I18n.t('translate_Contactaddress')}
                           </Text>
                           <Text
                             style={{
@@ -1583,7 +1583,7 @@ class DevelopProfile extends React.Component {
 
                               marginHorizontal: 35,
                             }}>
-                            อีเมล
+                            {I18n.t('translate_email')}
                           </Text>
                           <Text
                             style={{
@@ -1614,7 +1614,7 @@ class DevelopProfile extends React.Component {
 
                                 marginHorizontal: 35,
                               }}>
-                              หมายเลขโทรศัพท์
+                              {I18n.t('translate_Phonenumber')}
                             </Text>
                             <View
                               style={{
@@ -1692,7 +1692,7 @@ class DevelopProfile extends React.Component {
 
                               marginHorizontal: 15,
                             }}>
-                            รหัสไปรษณีย์
+                            {I18n.t('postcode_regis')}
                           </Text>
                           <Text
                             style={{
@@ -1734,7 +1734,7 @@ class DevelopProfile extends React.Component {
 
                               marginHorizontal: 15,
                             }}>
-                            จังหวัด
+                            {I18n.t('pro_userProfile')}
                           </Text>
                           <Text
                             style={{
@@ -1776,7 +1776,7 @@ class DevelopProfile extends React.Component {
 
                               marginHorizontal: 15,
                             }}>
-                            อำเภอ/เขต
+                            {I18n.t('translate_Edite4')}
                           </Text>
                           <Text
                             style={{
@@ -1818,7 +1818,7 @@ class DevelopProfile extends React.Component {
 
                               marginHorizontal: 15,
                             }}>
-                            ตำบล/แขวง
+                           {I18n.t('translate_Edite2')}
                           </Text>
                           <Text
                             style={{
@@ -1860,7 +1860,7 @@ class DevelopProfile extends React.Component {
 
                               marginHorizontal: 15,
                             }}>
-                            ที่อยู่ติดต่อ
+                            {I18n.t('translate_Contactaddress')}
                           </Text>
                           <Text
                             style={{
@@ -1908,7 +1908,7 @@ class DevelopProfile extends React.Component {
 
                               marginHorizontal: 20,
                             }}>
-                            หมายเลขโทรศัพท์
+                            {I18n.t('translate_Phonenumber')}
                           </Text>
 
                           <ImageBackground
@@ -1988,7 +1988,7 @@ class DevelopProfile extends React.Component {
                         textAlign: 'center',
                         color: '#FFFFFF',
                       }}>
-                      แก้ไขข้อมูลนิติบุคคล
+                      {I18n.t('transalte_Edit_Juristic_Information')}
                     </Text>
                   </TouchableOpacity>
                 )}
@@ -2017,7 +2017,7 @@ class DevelopProfile extends React.Component {
                           textAlign: 'center',
                           color: '#FFFFFF',
                         }}>
-                        ต่อไป
+                        {I18n.t('translate_Next')}
                       </Text>
                     </View>
                     <View style={{}}>
@@ -2055,7 +2055,7 @@ class DevelopProfile extends React.Component {
                           textAlign: 'center',
                           color: '#FFFFFF',
                         }}>
-                        บันทึก
+                        {I18n.t('translate_Save')}
                       </Text>
                     </View>
                   </TouchableOpacity>

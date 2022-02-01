@@ -134,7 +134,6 @@ export default {
   //TradeActivitiesScreen (กิจกรรมส่งเสริมการค้าระหว่างประเทศ) &&ViewTrade
   translate_Toppick: 'TOP Pick',
   translate_By: 'by',
-  translate_Toppickanddoolan:'น้องดูแลเลือกให้ Top Pick',
   translate_Recommended_activities: 'เปิดรับสมัครอยู่',
   translate_Nodata: 'ไม่มีข้อมูล',
   translate_All_activities: 'กิจกรรมทั้งหมด',

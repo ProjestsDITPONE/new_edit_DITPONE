@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Dimensions, StyleSheet, View, Text, Image } from 'react-native';
 import { Header, Avatar, Badge } from 'react-native-elements';
+import {ViewScale} from '../config/ViewScale';
 import I18n from '../utils/I18n';
 export default class HeaderTopPickdev extends Component {
   constructor(props) {
@@ -40,7 +41,7 @@ export default class HeaderTopPickdev extends Component {
               source={require('../image/nogdoolandev.png')}
             />
             <View style={{ top: 45, right: 30 }}>
-              <Text style={{ fontSize: 12, color: '#135f9b' }}>{I18n.t('translate_NongDulea')}</Text>
+              <Text style={{ fontSize: ViewScale(14), color: '#135f9b' }}>{I18n.t('translate_NongDulea')}</Text>
             </View>
           </View>
           <Image
@@ -92,7 +93,7 @@ export default class HeaderTopPickdev extends Component {
       <Text
         numberOfLines={1}
         style={{
-          fontSize: 14,
+          fontSize: ViewScale(14),
           color: '#20416e',
           fontFamily: 'Mitr-Regular',
          

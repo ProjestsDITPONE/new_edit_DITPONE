@@ -15,6 +15,7 @@ import SegmentedControlTab from 'react-native-segmented-control-tab';
 import SegmentedControlTab2 from '../../lib_edit/react-native-segmented-control-tabstatics';
 import Style from './Styles';
 import DataStatic from '../../Data/DataStatics';
+import { ViewScale } from '../../config/ViewScale';
 import I18n from '../../utils/I18n';
 import {getStatistics} from '../../actions/data.actions';
 import {connect} from 'react-redux';
@@ -174,7 +175,7 @@ class StatisticsScreen extends React.Component {
           <View
             style={{
               justifyContent: 'center',
-              marginTop: 8,
+              marginTop: ViewScale(8),
               flexDirection: 'row',
             }}>
             {/* ใส่สามเหลี่ยมตรงงรน่ี */}
@@ -191,12 +192,12 @@ class StatisticsScreen extends React.Component {
                 });
               }}
               style={{flex: 1, flexDirection: 'row'}}>
-              <Text style={{fontSize: 18, color: '#014886', marginLeft: 5}}>
+              <Text style={{fontSize: ViewScale(18), color: '#014886', marginLeft: ViewScale(5)}}>
                 {index + 1}
               </Text>
               {/* {this.state.typeSelect=== 1 &&( */}
               <FastImage
-                style={{width: 26, height: 18, left: 5}}
+                style={{width: ViewScale(26), height: ViewScale(18), left: ViewScale(5)}}
                 source={
                   item.flag_url === 'http://one.ditp.go.th/Flags/none@1x.png'
                     ? {uri: ''}
@@ -213,16 +214,16 @@ class StatisticsScreen extends React.Component {
                   numberOfLines={2}
                   style={{
                     flex: 0.8,
-                    fontSize: 18,
+                    fontSize: ViewScale(18),
                     color: '#014886',
-                    left: -11,
+                    left: ViewScale(-11),
                   }}>
                   {I18n.locale === 'th' ? item.title : item.titleEng}
                 </Text>
               ) : (
                 <Text
                   numberOfLines={2}
-                  style={{fontSize: 18, color: '#014886'}}>
+                  style={{fontSize: ViewScale(18), color: '#014886'}}>
                   {'   '}
                   {I18n.locale === 'th' ? item.title : item.titleEng}
                 </Text>
@@ -232,7 +233,7 @@ class StatisticsScreen extends React.Component {
                 <View />
               ) : (
                 <Image
-                  style={{width: 10, height: 8, top: 10, marginLeft: 5}}
+                  style={{width: ViewScale(10), height: ViewScale(8), top: ViewScale(10), marginLeft: ViewScale(5)}}
                   source={require('../../image/shape.png')}
                 />
               )}
@@ -241,7 +242,7 @@ class StatisticsScreen extends React.Component {
             {index === 0 && (
               <TouchableOpacity
                 style={{flex: 0.4, flexDirection: 'row', alignItems: 'center'}}>
-                <Text style={{fontSize: 18, color: '#014886'}}>
+                <Text style={{fontSize: ViewScale(18), color: '#014886'}}>
                   % Chg {this.state.type}{' '}
                   {this.state.dataStatistics &&
                     this.state.yearSelect === 1 &&
@@ -266,7 +267,7 @@ class StatisticsScreen extends React.Component {
                       ')'}
                 </Text>
                 <Image
-                  style={{width: 10, height: 8, top: 10, marginLeft: 5}}
+                  style={{width: ViewScale(10), height: ViewScale(8), top: ViewScale(10), marginLeft: 5}}
                   source={require('../../image/shape.png')}
                 />
               </TouchableOpacity>
@@ -274,7 +275,7 @@ class StatisticsScreen extends React.Component {
           </View>
         </View>
 
-        <View style={[Style.ViewSub9, {height: 28}]}>
+        <View style={[Style.ViewSub9, {height: ViewScale(28)}]}>
           {/* ปีที่1 */}
           {this.state.yearSelect === 1 && (
             <>
@@ -283,7 +284,7 @@ class StatisticsScreen extends React.Component {
                   Style.ViewSub12,
                   {alignItems: 'center', justifyContent: 'center'},
                 ]}>
-                <Text style={{fontSize: 18, color: '#73838f'}}>
+                <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                   {item.year1_value}
                 </Text>
               </View>
@@ -292,7 +293,7 @@ class StatisticsScreen extends React.Component {
                   Style.ViewSub12,
                   {alignItems: 'center', justifyContent: 'center'},
                 ]}>
-                <Text style={{fontSize: 18, color: '#73838f'}}>
+                <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                   {item.year2_value}
                 </Text>
               </View>
@@ -320,12 +321,12 @@ class StatisticsScreen extends React.Component {
                       }}>
                       <View style={{width: '25%'}}>
                         <Image
-                          style={{width: 10, height: 5}}
+                          style={{width: ViewScale(10), height: ViewScale(5)}}
                           source={require('../../image/arrowdropupstatic.png')}
                         />
                       </View>
                       <View style={{width: '100%', alignItems: 'center'}}>
-                        <Text style={{fontSize: 18, color: '#42a300'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#42a300'}}>
                           {item.year1_change}
                         </Text>
                       </View>
@@ -360,12 +361,12 @@ class StatisticsScreen extends React.Component {
                       }}>
                       <View style={{width: '25%'}}>
                         <Image
-                          style={{width: 10, height: 5}}
+                          style={{width: ViewScale(10), height: ViewScale(5)}}
                           source={require('../../image/arrowdownRed.png')}
                         />
                       </View>
                       <View style={{width: '100%', alignItems: 'center'}}>
-                        <Text style={{fontSize: 18, color: '#d0021b'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#d0021b'}}>
                           {item.year1_change}
                         </Text>
                       </View>
@@ -387,7 +388,7 @@ class StatisticsScreen extends React.Component {
                   Style.ViewSub12,
                   {alignItems: 'center', justifyContent: 'center'},
                 ]}>
-                <Text style={{fontSize: 18, color: '#73838f'}}>
+                <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                   {item.year3_value}
                 </Text>
               </View>
@@ -396,7 +397,7 @@ class StatisticsScreen extends React.Component {
                   Style.ViewSub12,
                   {alignItems: 'center', justifyContent: 'center'},
                 ]}>
-                <Text style={{fontSize: 18, color: '#73838f'}}>
+                <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                   {item.year4_value}
                 </Text>
               </View>
@@ -424,12 +425,12 @@ class StatisticsScreen extends React.Component {
                       }}>
                       <View style={{width: '25%'}}>
                         <Image
-                          style={{width: 10, height: 5}}
+                          style={{width: ViewScale(10), height: ViewScale(5)}}
                           source={require('../../image/arrowdropupstatic.png')}
                         />
                       </View>
                       <View style={{width: '100%', alignItems: 'center'}}>
-                        <Text style={{fontSize: 18, color: '#42a300'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#42a300'}}>
                           {item.year3_change}
                         </Text>
                       </View>
@@ -464,12 +465,12 @@ class StatisticsScreen extends React.Component {
                       }}>
                       <View style={{width: '25%'}}>
                         <Image
-                          style={{width: 10, height: 5}}
+                          style={{width: ViewScale(10), height: ViewScale(5)}}
                           source={require('../../image/arrowdownRed.png')}
                         />
                       </View>
                       <View style={{width: '100%', alignItems: 'center'}}>
-                        <Text style={{fontSize: 18, color: '#d0021b'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#d0021b'}}>
                           {item.year3_change}
                         </Text>
                       </View>
@@ -489,7 +490,7 @@ class StatisticsScreen extends React.Component {
                   Style.ViewSub12,
                   {alignItems: 'center', justifyContent: 'center'},
                 ]}>
-                <Text style={{fontSize: 18, color: '#73838f'}}>
+                <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                   {item.year4_value}
                 </Text>
               </View>
@@ -498,7 +499,7 @@ class StatisticsScreen extends React.Component {
                   Style.ViewSub12,
                   {alignItems: 'center', justifyContent: 'center'},
                 ]}>
-                <Text style={{fontSize: 18, color: '#73838f'}}>
+                <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                   {item.year5_value}
                 </Text>
               </View>
@@ -526,12 +527,12 @@ class StatisticsScreen extends React.Component {
                       }}>
                       <View style={{width: '25%'}}>
                         <Image
-                          style={{width: 10, height: 5}}
+                          style={{width: ViewScale(10), height: ViewScale(5)}}
                           source={require('../../image/arrowdropupstatic.png')}
                         />
                       </View>
                       <View style={{width: '65%', alignItems: 'center'}}>
-                        <Text style={{fontSize: 18, color: '#42a300'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#42a300'}}>
                           {item.year4_change}
                         </Text>
                       </View>
@@ -566,12 +567,12 @@ class StatisticsScreen extends React.Component {
                       }}>
                       <View style={{width: '25%'}}>
                         <Image
-                          style={{width: 10, height: 5}}
+                          style={{width: ViewScale(10), height: ViewScale(5)}}
                           source={require('../../image/arrowdownRed.png')}
                         />
                       </View>
                       <View style={{width: '65%', alignItems: 'center'}}>
-                        <Text style={{fontSize: 18, color: '#d0021b'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#d0021b'}}>
                           {item.year4_change}
                         </Text>
                       </View>
@@ -598,18 +599,18 @@ class StatisticsScreen extends React.Component {
           backScreen={abc}
         />
 
-        <View style={{marginTop: Platform.OS === 'android' && 90}} />
+        <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
         <Headerstage nameTab={I18n.t('translate_StatisticsH')} />
         <ScrollView style={{zIndex: -1}}>
           <View
             style={{
-              marginHorizontal: 10,
+              marginHorizontal: ViewScale(10),
             }}>
-            <View style={{paddingLeft: 15, flexDirection: 'row', flex: 1}}>
+            <View style={{paddingLeft: ViewScale(15), flexDirection: 'row', flex: 1}}>
               <View style={{flex: 1}}>
                 <Text
                   style={{
-                    fontSize: 24,
+                    fontSize: ViewScale(24),
                     color: '#2d6dc4',
                     fontFamily: 'PSL Kittithada Pro',
                   }}>
@@ -620,7 +621,7 @@ class StatisticsScreen extends React.Component {
                 {this.state.typeMoneySelect === 1 && (
                   <Text
                     style={{
-                      fontSize: 19,
+                      fontSize: ViewScale(18),
                       color: '#2d6dc4',
                       fontFamily: 'PSL Kittithada Pro',
                       textAlign: 'right',
@@ -631,7 +632,7 @@ class StatisticsScreen extends React.Component {
                 {this.state.typeMoneySelect === 2 && (
                   <Text
                     style={{
-                      fontSize: 19,
+                      fontSize: ViewScale(18),
                       color: '#2d6dc4',
                       fontFamily: 'PSL Kittithada Pro',
                       textAlign: 'right',
@@ -649,14 +650,14 @@ class StatisticsScreen extends React.Component {
                     (Style.TextSelec,
                     {
                       inputAndroid: {
-                        fontSize: 18,
+                        fontSize: ViewScale(18),
                         fontWeight: 'bold',
                         // backgroundColor: "#eee",
-                        paddingHorizontal: 10,
-                        paddingVertical: 8,
+                        paddingHorizontal: ViewScale(10),
+                        paddingVertical: ViewScale(8),
                         borderWidth: 0.5,
                         borderColor: 'transparent',
-                        borderRadius: 8,
+                        borderRadius: ViewScale(8),
                         color: 'black',
                         // borderWidth:1
 
@@ -691,9 +692,9 @@ class StatisticsScreen extends React.Component {
                     return (
                       <Icon
                         name="caretdown"
-                        size={15}
+                        size={ViewScale(15)}
                         color="#014886"
-                        style={{top: 8, right: 10}}
+                        style={{top: ViewScale(8), right: ViewScale(10)}}
                       />
                     );
                   }}
@@ -703,7 +704,7 @@ class StatisticsScreen extends React.Component {
 
             <View style={[Style.ViewTab]}>
               <SegmentedControlTab
-                tabsContainerStyle={{borderRadius: 8, height: 40}}
+                tabsContainerStyle={{borderRadius: ViewScale(8), height: ViewScale(40)}}
                 tabStyle={Style.TabStyle}
                 tabTextStyle={Style.TabText}
                 firstTabStyle={Style.fistTabStyle}
@@ -723,8 +724,8 @@ class StatisticsScreen extends React.Component {
                   <View
                     style={{
                       width: '100%',
-                      height: 10,
-                      borderRadius: 18,
+                      height: ViewScale(10),
+                      borderRadius: ViewScale(18),
                       borderColor: 'transparent',
                       borderWidth: 1,
                       justifyContent: 'center',
@@ -733,11 +734,11 @@ class StatisticsScreen extends React.Component {
                     }}
                   />
                 </View>
-                <View style={[Style.ViewSub4, {marginHorizontal: 10}]}>
+                <View style={[Style.ViewSub4, {marginHorizontal: ViewScale(10)}]}>
                   <View style={Style.flexDirectionRow}>
                     {this.state.yearSelect === 2 && (
                       <TouchableOpacity
-                        style={{width: 50}}
+                        style={{width: ViewScale(50)}}
                         onPress={() => {
                           this.clickarrow(1);
                           // alert('kkkk');
@@ -754,7 +755,7 @@ class StatisticsScreen extends React.Component {
                               ? this.state.dataStatistics.header.year1
                               : ''}
                             {'\n'}
-                            <Text style={{left: 19}}>{'   - '}</Text>
+                            <Text style={{left: ViewScale(19)}}>{'   - '}</Text>
                             {'\n'}
                             {this.state.dataStatistics
                               ? this.state.dataStatistics.header.year1 - 1
@@ -765,7 +766,7 @@ class StatisticsScreen extends React.Component {
                     )}
                     {this.state.yearSelect === 3 ? (
                       <TouchableOpacity
-                        style={{width: 50}}
+                        style={{width: ViewScale(50)}}
                         onPress={() => {
                           this.clickarrow(2);
                           // alert('2');
@@ -782,7 +783,7 @@ class StatisticsScreen extends React.Component {
                               ? this.state.dataStatistics.header.year3
                               : ''}
                             {'\n'}
-                            <Text style={{left: 19}}>{'  - '}</Text>
+                            <Text style={{left: ViewScale(19)}}>{'  - '}</Text>
                             {'\n'}
                             {this.state.dataStatistics
                               ? this.state.dataStatistics.header.year4
@@ -791,7 +792,7 @@ class StatisticsScreen extends React.Component {
                         </View>
                       </TouchableOpacity>
                     ) : (
-                      <TouchableOpacity style={{width: 50}} />
+                      <TouchableOpacity style={{width: ViewScale(50)}} />
                     )}
 
                     {/* แสดงตรงกลาง */}
@@ -838,7 +839,7 @@ class StatisticsScreen extends React.Component {
 
                     {this.state.yearSelect === 1 ? (
                       <TouchableOpacity
-                        style={{width: 50}}
+                        style={{width: ViewScale(50)}}
                         onPress={() => {
                           this.clickarrow(2);
                           // alert('23');
@@ -855,7 +856,7 @@ class StatisticsScreen extends React.Component {
                               ? this.state.dataStatistics.header.year3
                               : ''}
                             {'\n'}
-                            <Text style={{left: 19}}>{'  - '}</Text>
+                            <Text style={{left: ViewScale(19)}}>{'  - '}</Text>
                             {'\n'}
                             {this.state.dataStatistics
                               ? this.state.dataStatistics.header.year4
@@ -864,11 +865,11 @@ class StatisticsScreen extends React.Component {
                         </View>
                       </TouchableOpacity>
                     ) : (
-                      <TouchableOpacity style={{width: 50}} />
+                      <TouchableOpacity style={{width: ViewScale(50)}} />
                     )}
                     {this.state.yearSelect === 2 && (
                       <TouchableOpacity
-                        style={{width: 50}}
+                        style={{width: ViewScale(50)}}
                         onPress={() => {
                           this.clickarrow(3);
                         }}>
@@ -884,7 +885,7 @@ class StatisticsScreen extends React.Component {
                               ? this.state.dataStatistics.header.year4
                               : ''}
                             {'\n'}
-                            <Text style={{left: 19}}>{'  - '}</Text>
+                            <Text style={{left: ViewScale(19)}}>{'  - '}</Text>
                             {'\n'}
                             {this.state.dataStatistics
                               ? this.state.dataStatistics.header.year5
@@ -921,7 +922,7 @@ class StatisticsScreen extends React.Component {
                   style={{
                     // justifyContent: 'center',
                     width: '100%',
-                    height: 37,
+                    height: ViewScale(37),
                     backgroundColor: '#2d6dc4',
                     flexDirection:'row'
                   }}>
@@ -947,7 +948,7 @@ class StatisticsScreen extends React.Component {
                   </View>
                 </View>
                 <View
-                  style={[{width: '100%', flexDirection: 'row', height: 35}]}>
+                  style={[{width: '100%', flexDirection: 'row', height: ViewScale(35)}]}>
                   <View
                     style={[
                       Style.ViewSub10,
@@ -955,7 +956,7 @@ class StatisticsScreen extends React.Component {
                     ]}>
                     <Text
                       numberOfLines={1}
-                      style={{fontSize: 18, color: '#014886'}}>
+                      style={{fontSize: ViewScale(18), color: '#014886'}}>
                       {this.state.dataStatistics &&
                         this.state.yearSelect === 1 &&
                         this.state.dataStatistics.header.year1}
@@ -984,7 +985,7 @@ class StatisticsScreen extends React.Component {
                     ]}>
                     <Text
                       numberOfLines={1}
-                      style={{fontSize: 18, color: '#014886'}}>
+                      style={{fontSize: ViewScale(18), color: '#014886'}}>
                       {this.state.dataStatistics &&
                         this.state.yearSelect === 1 &&
                         this.state.dataStatistics.header.year2}
@@ -1017,7 +1018,7 @@ class StatisticsScreen extends React.Component {
                         // padding: 10
                       },
                     ]}>
-                    <Text style={{fontSize: 18, color: '#014886'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#014886'}}>
                       % Chg{' '}
                       {this.state.dataStatistics &&
                         this.state.yearSelect === 1 &&
@@ -1055,9 +1056,9 @@ class StatisticsScreen extends React.Component {
                     </Text>
                   </View>
                 </View>
-                <View style={[Style.ViewSub9, {height: 30}]}>
+                <View style={[Style.ViewSub9, {height: ViewScale(30)}]}>
                   <View style={[Style.ViewSub12]}>
-                    <Text style={{fontSize: 18, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                       {this.state.dataStatistics
                         ? this.state.dataStatistics['footer']['total-all'][
                             this.state.Y1
@@ -1070,7 +1071,7 @@ class StatisticsScreen extends React.Component {
                       Style.ViewSub12,
                       {alignItems: 'center', justifyContent: 'center'},
                     ]}>
-                    <Text style={{fontSize: 18, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                       {this.state.dataStatistics
                         ? this.state.dataStatistics['footer']['total-all'][
                             this.state.Y2
@@ -1111,12 +1112,12 @@ class StatisticsScreen extends React.Component {
                               this.state.YCH1
                             ] > 0 ? (
                               <Image
-                                style={{width: 10, height: 5}}
+                                style={{width: ViewScale(10), height: ViewScale(5)}}
                                 source={require('../../image/arrowup.png')}
                               />
                             ) : (
                               <Image
-                                style={{width: 10, height: 5}}
+                                style={{width: ViewScale(10), height: ViewScale(5)}}
                                 source={require('../../image/arrowdownRed.png')}
                               />
                             )}
@@ -1130,7 +1131,7 @@ class StatisticsScreen extends React.Component {
                             ] > 0 ? (
                               <Text
                                 numberOfLines={1}
-                                style={{fontSize: 18, color: '#FFFFFF'}}>
+                                style={{fontSize: ViewScale(18), color: '#FFFFFF'}}>
                                 {'  '}
                                 {this.state.dataStatistics
                                   ? this.state.dataStatistics['footer'][
@@ -1142,7 +1143,7 @@ class StatisticsScreen extends React.Component {
                             ) : (
                               <Text
                                 numberOfLines={1}
-                                style={{fontSize: 18, color: '#d0021b'}}>
+                                style={{fontSize: ViewScale(18), color: '#d0021b'}}>
                                 {'  '}
                                 {this.state.dataStatistics
                                   ? this.state.dataStatistics['footer'][
@@ -1159,9 +1160,9 @@ class StatisticsScreen extends React.Component {
                   </View>
                 </View>
 
-                <View style={[Style.ViewTab, {marginTop: 15}]}>
+                <View style={[Style.ViewTab, {marginTop: ViewScale(15)}]}>
                   <SegmentedControlTab2
-                    tabsContainerStyle={{borderRadius: 1, height: 40}}
+                    tabsContainerStyle={{borderRadius: 1, height: ViewScale(40)}}
                     tabStyle={Style.TabStyle}
                     tabTextStyle={Style.TabText}
                     firstTabStyle={Style.fistTabStyle}
@@ -1187,7 +1188,7 @@ class StatisticsScreen extends React.Component {
                   style={{
                     // justifyContent: 'center',
                     width: '100%',
-                    height: 37,
+                    height: ViewScale(37),
                     backgroundColor: '#568ae0',
                     flexDirection:'row'
                   }}>
@@ -1223,7 +1224,7 @@ class StatisticsScreen extends React.Component {
                   renderItem={this.ListRanking}
                   initialNumToRender={2}
                 />
-                <View style={{marginBottom: 10}}>
+                <View style={{marginBottom: ViewScale(10)}}>
                   {this.state.itemsCount === 5 && (
                     <TouchableOpacity
                       onPress={() => {
@@ -1231,15 +1232,15 @@ class StatisticsScreen extends React.Component {
                       }}
                       style={{
                         width: '100%',
-                        height: 38,
+                        height: ViewScale(38),
                         backgroundColor: '#ffffff',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        borderWidth: 3,
-                        borderTopWidth: 5,
+                        borderWidth: ViewScale(3),
+                        borderTopWidth: ViewScale(5),
                         borderColor: '#e1e7eb30',
                       }}>
-                      <Text style={{fontSize: 18, color: '#3b4254'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3b4254'}}>
                         {I18n.t('translate_See_more')}
                       </Text>
                     </TouchableOpacity>
@@ -1264,9 +1265,9 @@ class StatisticsScreen extends React.Component {
                   </View>
                 </View>
 
-                <View style={[Style.ViewSub9, {height: 35}]}>
+                <View style={[Style.ViewSub9, {height: ViewScale(35)}]}>
                   <View style={[Style.ViewSub12]}>
-                    <Text style={{fontSize: 18, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                       {this.state.dataStatistics
                         ? this.state.dataStatistics['footer']['total-top'][
                             this.state.Y1
@@ -1279,7 +1280,7 @@ class StatisticsScreen extends React.Component {
                       Style.ViewSub12,
                       {alignItems: 'center', justifyContent: 'center'},
                     ]}>
-                    <Text style={{fontSize: 18, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                       {this.state.dataStatistics
                         ? this.state.dataStatistics['footer']['total-top'][
                             this.state.Y2
@@ -1320,12 +1321,12 @@ class StatisticsScreen extends React.Component {
                               this.state.YCH1
                             ] > '0' ? (
                               <Image
-                                style={{width: 10, height: 5}}
+                                style={{width: ViewScale(10), height: ViewScale(5)}}
                                 source={require('../../image/arrowup.png')}
                               />
                             ) : (
                               <Image
-                                style={{width: 10, height: 5}}
+                                style={{width: ViewScale(10), height: ViewScale(5)}}
                                 source={require('../../image/arrowdownRed.png')}
                               />
                             )}
@@ -1339,7 +1340,7 @@ class StatisticsScreen extends React.Component {
                             ] > '0' ? (
                               <Text
                                 numberOfLines={1}
-                                style={{fontSize: 18, color: '#FFFFFF'}}>
+                                style={{fontSize: ViewScale(18), color: '#FFFFFF'}}>
                                 {'  '}
                                 {this.state.dataStatistics
                                   ? this.state.dataStatistics['footer'][
@@ -1350,7 +1351,7 @@ class StatisticsScreen extends React.Component {
                             ) : (
                               <Text
                                 numberOfLines={1}
-                                style={{fontSize: 18, color: '#d0021b'}}>
+                                style={{fontSize: ViewScale(18), color: '#d0021b'}}>
                                 {'  '}
                                 {this.state.dataStatistics
                                   ? this.state.dataStatistics['footer'][
@@ -1367,7 +1368,7 @@ class StatisticsScreen extends React.Component {
                 </View>
 
                 {/*  รวมทั้งหมด */}
-                <View style={[Style.ViewSub7, {marginTop: -2}]}>
+                <View style={[Style.ViewSub7, {marginTop: ViewScale(-2)}]}>
                   <Text style={Style.TextSub4}>
                     {'  '}
                     {I18n.locale === 'th' ? 'สินค้าอื่น ๆ' : 'total other'}
@@ -1381,9 +1382,9 @@ class StatisticsScreen extends React.Component {
                   </View>
                 </View>
 
-                <View style={[Style.ViewSub9, {height: 30, marginBottom: 20}]}>
+                <View style={[Style.ViewSub9, {height: ViewScale(30), marginBottom: ViewScale(20)}]}>
                   <View style={[Style.ViewSub12]}>
-                    <Text style={{fontSize: 18, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                       {this.state.dataStatistics
                         ? this.state.dataStatistics['footer']['total-other'][
                             this.state.Y1
@@ -1396,7 +1397,7 @@ class StatisticsScreen extends React.Component {
                       Style.ViewSub12,
                       {alignItems: 'center', justifyContent: 'center'},
                     ]}>
-                    <Text style={{fontSize: 18, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                       {this.state.dataStatistics
                         ? this.state.dataStatistics['footer']['total-other'][
                             this.state.Y2
@@ -1437,12 +1438,12 @@ class StatisticsScreen extends React.Component {
                               this.state.YCH1
                             ] > '0' ? (
                               <Image
-                                style={{width: 10, height: 5}}
+                                style={{width: ViewScale(10), height: ViewScale(5)}}
                                 source={require('../../image/arrowup.png')}
                               />
                             ) : (
                               <Image
-                                style={{width: 10, height: 5}}
+                                style={{width: ViewScale(10), height: ViewScale(5)}}
                                 source={require('../../image/arrowdownRed.png')}
                               />
                             )}
@@ -1456,7 +1457,7 @@ class StatisticsScreen extends React.Component {
                             ] > '0' ? (
                               <Text
                                 numberOfLines={1}
-                                style={{fontSize: 18, color: '#FFFFFF'}}>
+                                style={{fontSize: ViewScale(18), color: '#FFFFFF'}}>
                                 {'  '}
                                 {this.state.dataStatistics
                                   ? this.state.dataStatistics['footer'][
@@ -1467,7 +1468,7 @@ class StatisticsScreen extends React.Component {
                             ) : (
                               <Text
                                 numberOfLines={1}
-                                style={{fontSize: 18, color: '#d0021b'}}>
+                                style={{fontSize: ViewScale(18), color: '#d0021b'}}>
                                 {'  '}
                                 {this.state.dataStatistics
                                   ? this.state.dataStatistics['footer'][
@@ -1502,24 +1503,24 @@ export default connect(
 
 const pickerSelectStyles = StyleSheet.create({
   inputIOS: {
-    fontSize: 18,
+    fontSize: ViewScale(18),
     color: '#014886',
-    paddingRight: 30,
+    paddingRight: ViewScale(30),
     width: '100%',
-    marginBottom: 5,
+    marginBottom: ViewScale(5),
     // paddingHorizontal: 10,
   },
   inputAndroid: {
-    height: 40,
+    height: ViewScale(40),
     width: '100%',
-    fontSize: 18,
+    fontSize: ViewScale(18),
     color: '#73838f',
     fontWeight: 'normal',
     fontFamily: 'PSL Kittithada Pro',
     paddingHorizontal: 0,
-    paddingVertical: 8,
-    paddingRight: 45,
-    bottom: 2,
+    paddingVertical: ViewScale(8),
+    paddingRight: ViewScale(45),
+    bottom: ViewScale(2),
   },
 });
 

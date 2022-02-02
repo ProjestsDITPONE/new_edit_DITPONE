@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Dimensions, StyleSheet, View, Text, Image } from 'react-native';
 import { Header, Avatar, Badge } from 'react-native-elements';
+import { ViewScale } from '../config/ViewScale';
 import I18n from '../utils/I18n';
 export default class Headerstage extends Component {
   constructor(props) {
@@ -20,17 +21,17 @@ export default class Headerstage extends Component {
     return (
       <View
         style={{
-          marginTop: 5,
-          marginBottom: 10,
+          marginTop: ViewScale(5),
+          marginBottom: ViewScale(10),
           flexDirection: 'row-reverse',
-          left: 50,
+          left: ViewScale(50),
           zIndex: -1,
         }}>
         <View style={{ flexDirection: 'row' }}>
           <View
             style={{
               backgroundColor: '#f4f5f8',
-              margin: 10,
+              margin: ViewScale(10),
               width: null,
               height: null,
               flexDirection: 'row',
@@ -43,31 +44,31 @@ export default class Headerstage extends Component {
               shadowOpacity: 0.15,
               shadowColor: '#FFFFFF',
               alignSelf: 'center',
-              paddingHorizontal: 10
+              paddingHorizontal: ViewScale(10),
             }}>
             {this.nameTab(this.state.nameTab)}
           </View>
-          <View style={{ flexDirection: 'row', left: -25, zIndex: -1 }}>
+          <View style={{ flexDirection: 'row', left: ViewScale(-25), zIndex: -1 }}>
             <Image
               style={{
-                width: 28,
-                height: 33,
-                top: 7,
+                width: ViewScale(28),
+                height: ViewScale(33),
+                top: ViewScale(7),
                 zIndex: 9999,
               }}
               source={require('../image/tagname.png')}
             />
             <Image
               style={{
-                width: 33,
-                height: 33,
+                width: ViewScale(33),
+                height: ViewScale(33),
                 backgroundColor: 'transparent',
-                top: 10,
+                top: ViewScale(10),
               }}
               source={require('../image/HearderTage2.png')}
             />
-            <View style={{ top: 45, right: 30 }}>
-              <Text style={{ fontSize: 12, color: '#135f9b' }}>{I18n.t('translate_NongDulea')}</Text>
+            <View style={{ top: ViewScale(45), right: ViewScale(30) }}>
+              <Text style={{ fontSize: ViewScale(12), color: '#135f9b' }}>{I18n.t('translate_NongDulea')}</Text>
             </View>
           </View>
         </View>
@@ -79,11 +80,11 @@ export default class Headerstage extends Component {
       <Text
         numberOfLines={1}
         style={{
-          fontSize: 15,
+          fontSize: ViewScale(14),
           color: '#20416e',
           fontFamily: 'Mitr-Regular',
           
-          height:28.9
+          height:ViewScale(28.9)
         }}>
         {' '}
         {this.props.nameTab}{' '}
@@ -94,14 +95,14 @@ export default class Headerstage extends Component {
     return (
       <View
         style={{
-          width: 103,
-          height: 20,
+          width: ViewScale(103),
+          height: ViewScale(20),
           backgroundColor: '#2d6dc480',
           borderRadius: 11.5,
           alignItems: 'center',
-          left: 5,
+          left: ViewScale(5),
         }}>
-        <Text style={{ fontSize: 15, color: '#FFFFFF' }}>
+        <Text style={{ fontSize: ViewScale(15), color: '#FFFFFF' }}>
           {this.props.nameTab2}
         </Text>
       </View>

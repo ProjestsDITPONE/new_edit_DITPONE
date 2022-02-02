@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Dimensions, StyleSheet, View, Text, Image } from 'react-native';
 import I18n from '../utils/I18n';
+import {ViewScale} from '../config/ViewScale';
 import { Header, Avatar, Badge } from 'react-native-elements';
 export default class HeaderTopPick extends Component {
   constructor(props) {
@@ -32,22 +33,22 @@ export default class HeaderTopPick extends Component {
           
             <Image
               style={{
-                width: 33,
-                height: 33,
+                width: ViewScale(33),
+                height: ViewScale(33),
                 backgroundColor: 'transparent',
                 top: 10,
               }}
               source={require('../image/doolan1.png')}
             />
-            <View style={{ top: 45, right: 30 }}>
-              <Text style={{ fontSize: 12, color: '#135f9b' }}>{I18n.t('translate_NongDulea')}</Text>
+            <View style={{ top: 45, right: ViewScale(30) }}>
+              <Text style={{fontSize: ViewScale(14), color: '#135f9b' }}>{I18n.t('translate_NongDulea')}</Text>
             </View>
           </View>
           <Image
               style={{
-                  right:22,
-                width: 24,
-                height: 32,
+                right: ViewScale(22),
+                width: ViewScale(24),
+                height: ViewScale(32),
                 top: 7,
                 zIndex: 9999,
                 
@@ -60,7 +61,7 @@ export default class HeaderTopPick extends Component {
             />
            <View
             style={{
-                right:36,
+                right: ViewScale(36),
               backgroundColor: '#f4f5f8',
               margin: 10,
               width: null,
@@ -78,7 +79,7 @@ export default class HeaderTopPick extends Component {
               paddingHorizontal: 1,
               
             }}>
-                <Text  style={{fontSize:24}}> {this.nameTab(this.state.nameTab)} </Text>
+                <Text  style={{fontSize:ViewScale(24)}}> {this.nameTab(this.state.nameTab)} </Text>
            
           </View>
         </View>
@@ -91,7 +92,7 @@ export default class HeaderTopPick extends Component {
       <Text
         numberOfLines={1}
         style={{
-          fontSize: 14,
+          fontSize: ViewScale(14),
           color: '#20416e',
           fontFamily: 'Mitr-Regular',
         }}>

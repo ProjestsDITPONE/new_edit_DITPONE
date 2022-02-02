@@ -258,10 +258,10 @@ export default StyleSheet.create({
     height: ViewScale(150),
   },
   OverlayHight: {
-    height: height * ViewScale(0.78),
+    height: height * 0.78,
   },
   OverlayHight1: {
-    height: height * ViewScale(0.12),
+    height: height * 0.12,
   },
   themeoverlay: {
     borderWidth: 2,

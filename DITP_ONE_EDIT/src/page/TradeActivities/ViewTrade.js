@@ -32,7 +32,7 @@ import FastImage from 'react-native-fast-image';
 import {getDeepLinkAct} from '../../config/utilities';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon1 from 'react-native-vector-icons/AntDesign';
-
+import { ViewScale } from '../../config/ViewScale';
 import RBSheet from 'react-native-raw-bottom-sheet';
 import Moment from 'moment';
 import MonthSelectorCalendar from 'react-native-month-selector';
@@ -760,7 +760,7 @@ class ViewTrade extends React.Component {
       <View style={{backgroundColor: '#FFF'}}>
         <ListItem
           containerStyle={{
-            marginBottom: 8,
+            marginBottom: ViewScale(8),
             borderRadius: 10,
             alignSelf: 'center',
             flex: 1,
@@ -831,7 +831,7 @@ class ViewTrade extends React.Component {
                   style={{alignItems: 'center'}}>
                   <Image
                     source={{uri: item.activity_list_logo_thumb}}
-                    style={{width: 60, height: 55, borderRadius: 15}}
+                    style={{width: ViewScale(60), height: ViewScale(55), borderRadius: 15}}
                   />
 
                   <Text style={Styles.textActivitydate}>
@@ -906,18 +906,18 @@ class ViewTrade extends React.Component {
                 <View
                   style={{
                     width: '30%',
-                    bottom: 10,
+                    bottom: ViewScale(10),
                   }}>
                   <CheckBox
                     checkedIcon={
                       <Image
-                        style={{width: 25, height: 25}}
+                        style={{width: ViewScale(25), height: ViewScale(25)}}
                         source={require('../../image/PickerMarket.png')}
                       />
                     }
                     uncheckedIcon={
                       <Image
-                        style={{width: 25, height: 25}}
+                        style={{width: ViewScale(25), height: ViewScale(25)}}
                         source={require('../../image/shoping.png')}
                       />
                     }
@@ -929,26 +929,23 @@ class ViewTrade extends React.Component {
                 </View>
               </View>
               <View style={{flex: 1}}>
-               
-
-                <View style={{flex: 1, flexDirection: 'row', marginBottom: 10}}>
+                <View style={{flex: 1, flexDirection: 'row', marginBottom: ViewScale(10)}}>
                   <View
                     style={{
                       flex: 0.1,
                       flexDirection: 'row',
                       alignItems: 'center',
-
                       alignSelf: 'flex-start',
                     }}>
                     {item.activity_list_location_th === 'ออนไลน์' ||
                     item.status_online_regis === 'Y' ? (
                       <Image
-                        style={{width: 13, height: 13, top: 3}}
+                        style={{width: ViewScale(13), height: ViewScale(15), top: ViewScale(3)}}
                         source={require('../../image/WWW.png')}
                       />
                     ) : (
                       <Image
-                        style={{width: 9, height: 12, top: 3}}
+                        style={{width: ViewScale(13), height: ViewScale(15), top: ViewScale(3)}}
                         source={require('../../image/makerlocation.png')}
                       />
                     )}
@@ -1023,9 +1020,9 @@ class ViewTrade extends React.Component {
                 <View style={{flex: 1, flexDirection: 'row',}}>
                 <Image
                       style={{
-                        width: 16,
-                        height: 12,
-                        top: 1,
+                        width: ViewScale(16),
+                        height: ViewScale(12),
+                        top: ViewScale(1),
                         borderWidth: 0.4,
                         borderColor: '#4b4b4b',
                       }}
@@ -1058,7 +1055,7 @@ class ViewTrade extends React.Component {
             </View>
           }
           subtitle={
-            <View style={[Styles.ViewSub10, {marginTop: 15, flex: 1}]}>
+            <View style={[Styles.ViewSub10, {marginTop: ViewScale(15), flex: 1}]}>
               <View>
                 {this.props.getUser.userDetails.res_result.type != 6 &&
                 this.props.getUser.userDetails.res_result.type != 4 &&
@@ -1145,7 +1142,7 @@ class ViewTrade extends React.Component {
                 }
                 style={Styles.TouchRead}>
                 <Image
-                  style={{width: 17, height: 13}}
+                  style={{width: ViewScale(17), height: ViewScale(13)}}
                   source={require('../../image/readDetail.png')}
                 />
                 <Text style={Styles.textactivityread}>
@@ -1162,7 +1159,7 @@ class ViewTrade extends React.Component {
                 style={{flex: 1, alignItems: 'flex-end',}}>
                 <Image
                   resizeMode={'contain'}
-                  style={{width: 14, height: 16}}
+                  style={{width: ViewScale(14), height: ViewScale(16)}}
                   source={require('../../image/sharelx.png')}
                 />
               </TouchableOpacity>
@@ -1173,14 +1170,14 @@ class ViewTrade extends React.Component {
                   <View
                     style={[
                       Styles.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
+                      {right: ViewScale(10), justifyContent: 'center'},
                     ]}>
                     <Image
-                      style={{width: 26, height: 15}}
+                      style={{width: ViewScale(26), height: ViewScale(15)}}
                       source={require('../../image/liveme.png')}
                     />
-                    <View style={{bottom: 13, right: 22}}>
-                      <Text style={{fontSize: 10, color: '#334c6e'}}>
+                    <View style={{bottom: ViewScale(13), right: ViewScale(22)}}>
+                      <Text style={{fontSize: ViewScale(10), color: '#334c6e'}}>
                         {I18n.t('translate_Prepare')}
                       </Text>
                     </View>
@@ -1194,14 +1191,14 @@ class ViewTrade extends React.Component {
                   <View
                     style={[
                       Styles.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
+                      {right: ViewScale(10), justifyContent: 'center'},
                     ]}>
                     <Image
-                      style={{width: 26, height: 15}}
+                      style={{width: ViewScale(26), height: ViewScale(15)}}
                       source={require('../../image/liveme.png')}
                     />
-                    <View style={{bottom: 13, right: 22}}>
-                      <Text style={{fontSize: 10, color: '#ff5e5e'}}>
+                    <View style={{bottom: ViewScale(13), right: ViewScale(22)}}>
+                      <Text style={{fontSize: ViewScale(10), color: '#ff5e5e'}}>
                         {I18n.t('translate_OnAir')}
                       </Text>
                     </View>
@@ -1215,14 +1212,14 @@ class ViewTrade extends React.Component {
                   <View
                     style={[
                       Styles.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
+                      {right: ViewScale(10), justifyContent: 'center'},
                     ]}>
                     <Image
-                      style={{width: 26, height: 15}}
+                      style={{width: ViewScale(26), height: ViewScale(15)}}
                       source={require('../../image/liveme.png')}
                     />
-                    <View style={{bottom: 13, right: 22}}>
-                      <Text style={{fontSize: 10, color: '#b7b7b7'}}>
+                    <View style={{bottom: ViewScale(13), right: ViewScale(22)}}>
+                      <Text style={{fontSize: ViewScale(10), color: '#b7b7b7'}}>
                         {I18n.t('translate_returnBack')}
                       </Text>
                     </View>
@@ -1491,7 +1488,7 @@ class ViewTrade extends React.Component {
         <View
           style={{
             flexDirection: 'row',
-            marginTop: 10,
+            marginTop: ViewScale(10),
             backgroundColor: '#FFF',
           }}>
           <Popover
@@ -1523,8 +1520,8 @@ class ViewTrade extends React.Component {
                 }}
                 style={{
                   flex: 1,
-                  marginHorizontal: 10,
-                  height: 34,
+                  marginHorizontal: ViewScale(10),
+                  height: ViewScale(34),
                   backgroundColor: '#2d6dc4',
 
                   borderRadius: 8,
@@ -1534,7 +1531,7 @@ class ViewTrade extends React.Component {
                   <Text
                     style={{
                       color: '#FFFFFF',
-                      fontSize: 20,
+                      fontSize: ViewScale(21),
                       textAlign:'center'
                      
                     }}>
@@ -1544,7 +1541,7 @@ class ViewTrade extends React.Component {
                 <View style={{justifyContent:'center',flex:0.2}}>
                   <Icon
                     name="chevron-down"
-                    size={20}
+                    size={ViewScale(20)}
                     color="#FFFFFF"
                     style={{}}
                   />
@@ -1555,7 +1552,8 @@ class ViewTrade extends React.Component {
               style={{
                 flex: 1,
                 borderWidth: 1,
-                height: 100,
+                justifyContent: 'center',
+                height: ViewScale(110),
                 borderColor: '#2d6dc4',
               }}>
               <View
@@ -1568,7 +1566,7 @@ class ViewTrade extends React.Component {
                     marginTop: 10,
                     // width: '50%',
                     flex: 1,
-                    height: 34,
+                    height: ViewScale(34),
                     backgroundColor: '#FFFFFF',
                     // borderColor: '#2d6dc4',
                     // borderWidth: 1,
@@ -1636,7 +1634,7 @@ class ViewTrade extends React.Component {
                       <View style={Styles.view3icon}>
                         <Icon
                           name="chevron-down"
-                          size={20}
+                          size={ViewScale(20)}
                           color="#2d6dc4"
                           style={{}}
                         />
@@ -1747,7 +1745,7 @@ class ViewTrade extends React.Component {
                       <View style={Styles.view3icon}>
                         <Icon
                           name="chevron-down"
-                          size={20}
+                          size={ViewScale(20)}
                           color="#2d6dc4"
                           style={{}}
                         />
@@ -1774,9 +1772,9 @@ class ViewTrade extends React.Component {
                 }}
                 style={{
                   backgroundColor: '#2d6dc4',
-                  marginHorizontal: 10,
+                  marginHorizontal: ViewScale(10),
 
-                  height: 34,
+                  height: ViewScale(34),
 
                   borderRadius: 17,
                   justifyContent: 'center',
@@ -1784,7 +1782,7 @@ class ViewTrade extends React.Component {
                 <Text
                   style={{
                     color: '#FFFFFF',
-                    fontSize: 20,
+                    fontSize: ViewScale(21),
                     textAlign: 'center',
                   }}>
                   {I18n.t('transalte_Bt_sesrch')}
@@ -1799,8 +1797,8 @@ class ViewTrade extends React.Component {
             }}
             style={{
               flex: 1,
-              marginHorizontal: 10,
-              height: 34,
+              marginHorizontal: ViewScale(10),
+              height: ViewScale(34),
 
               borderRadius: 8,
               backgroundColor: '#2d6dc4',
@@ -1809,7 +1807,7 @@ class ViewTrade extends React.Component {
             <Text
               style={{
                 color: '#FFFFFF',
-                fontSize: 20,
+                fontSize: ViewScale(21),
                 textAlign: 'center',
                 
               }}>
@@ -1824,7 +1822,7 @@ class ViewTrade extends React.Component {
             <View
               style={{
                 flexDirection: 'row',
-                marginBottom: 2,
+                marginBottom: ViewScale(2),
               }}>
               <View style={Styles.GrouopViewSearchAD2}>
                 <RNPickerSelect
@@ -2066,20 +2064,20 @@ class ViewTrade extends React.Component {
                     {this.state.banner != '' ? (
                       <FastImage
                         resizeMode={'contain'}
-                        style={{width: '100%', height: 216}}
+                        style={{width: '100%', height: ViewScale(216)}}
                         source={{uri: this.state.banner}}
                       />
                     ) : (
                       <View style={{alignItems: 'center'}}>
                         <Image
                           resizeMode={'contain'}
-                          style={{width: '50%', height: 216}}
+                          style={{width: '50%', height: ViewScale(216)}}
                           source={require('../../image/banerDrive.png')}
                         />
                       </View>
                     )}
                   </View>
-                  <View style={{margin: 10}}>
+                  <View style={{margin: ViewScale(10)}}>
                     <Text style={Styles.popupTextTitle}>
                       {this.state.title} 
 
@@ -2099,7 +2097,7 @@ class ViewTrade extends React.Component {
                       }}>
                       <View style={{flex: 1, flexDirection: 'row'}}>
                         <Image
-                          style={{width: 18, height: 13, top: 4}}
+                          style={{width: ViewScale(18), height: ViewScale(13), top: ViewScale(4)}}
                           source={{uri: this.state.contry_img_flag}}
                         />
                         <Text style={Styles.popupTextloca}>
@@ -2114,7 +2112,6 @@ class ViewTrade extends React.Component {
                           }}
                           style={{
                             backgroundColor: '#2d6dc4',
-
                             borderRadius: 11,
                           }}>
                           <Text style={Styles.popupTextMap}>{I18n.t('transalte_map')}</Text>
@@ -2124,7 +2121,7 @@ class ViewTrade extends React.Component {
                     <View style={{flexDirection: 'row', alignItems: 'center'}}>
                       
                       <Image
-                        style={{width: 7, height: 11}}
+                        style={{width: ViewScale(7), height: ViewScale(11)}}
                         source={require('../../image/maker2.png')}
                       />
                       <Text numberOfLines={1} style={Styles.popupTextloca}>
@@ -2133,7 +2130,7 @@ class ViewTrade extends React.Component {
                       </Text>
                     </View>
 
-                    <View style={{marginTop: 10}}>
+                    <View style={{marginTop: ViewScale(10)}}>
                       <Text style={Styles.opoupTextData1}>
                         {I18n.t('translate_ActPrice')} : {this.state.price}
                       </Text>
@@ -2157,8 +2154,8 @@ class ViewTrade extends React.Component {
                                 {I18n.t('translate_LIVE')}
                               </Text>
                             </ImageBackground>
-                            <View style={{bottom: 13, right: 33}}>
-                              <Text style={{fontSize: 12, color: '#334c6e'}}>
+                            <View style={{bottom: (13), right: (33)}}>
+                              <Text style={{fontSize: (12), color: '#334c6e'}}>
                                 {I18n.t('translate_Prepare')}
                               </Text>
                             </View>
@@ -2176,8 +2173,8 @@ class ViewTrade extends React.Component {
                                 {I18n.t('translate_LIVE')}
                               </Text>
                             </ImageBackground>
-                            <View style={{bottom: 13, right: 31}}>
-                              <Text style={{fontSize: 12, color: '#ff5e5e'}}>
+                            <View style={{bottom: (13), right: (31)}}>
+                              <Text style={{fontSize: (12), color: '#ff5e5e'}}>
                                 {I18n.t('translate_OnAir')}
                               </Text>
                             </View>
@@ -2195,8 +2192,8 @@ class ViewTrade extends React.Component {
                                 {I18n.t('translate_LIVE')}
                               </Text>
                             </ImageBackground>
-                            <View style={{bottom: 13, right: 31}}>
-                              <Text style={{fontSize: 12, color: '#b7b7b7'}}>
+                            <View style={{bottom: (13), right: (31)}}>
+                              <Text style={{fontSize: (12), color: '#b7b7b7'}}>
                                 {I18n.t('translate_Backward')}
                               </Text>
                             </View>
@@ -2205,9 +2202,9 @@ class ViewTrade extends React.Component {
                       )}
                     </View>
 
-                    <View style={{margin: 10}}>
+                    <View style={{margin: (10)}}>
                       <Image
-                        style={{width: 334, height: 1}}
+                        style={{width: (334), height: (1)}}
                         source={require('../../image/line6.png')}
                       />
                     </View>
@@ -2223,7 +2220,7 @@ class ViewTrade extends React.Component {
                         <Icon3
                           color="#2d6dc4"
                           name="keyboard-arrow-down"
-                          size={20}
+                          size={ViewScale(20)}
                         />
                       </View>
                     ) : (
@@ -2277,7 +2274,7 @@ class ViewTrade extends React.Component {
                           {I18n.t('translate_Main')} :
                         </Text>
 
-                        <View style={{width: 319, height: null}}>
+                        <View style={{width: ViewScale(319), height: null}}>
                           <Text style={Styles.popupTextdetail}>
                             {this.state.detail}
                           </Text>
@@ -2300,9 +2297,9 @@ class ViewTrade extends React.Component {
                       </>
                     )}
 
-                    <View style={{margin: 10}}>
+                    <View style={{margin: ViewScale(10)}}>
                       <Image
-                        style={{width: 334, height: 1}}
+                        style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
                       />
                     </View>
@@ -2317,7 +2314,7 @@ class ViewTrade extends React.Component {
                       </Text>
                       <View style={{flexDirection: 'row'}}>
                         <Image
-                          style={{width: 29, height: 29}}
+                          style={{width: ViewScale(29), height: ViewScale(29)}}
                           source={require('../../image/phonelx.png')}
                         />
 
@@ -2342,7 +2339,7 @@ class ViewTrade extends React.Component {
                           }}
                           style={{flexDirection: 'row'}}>
                           <Image
-                            style={{width: 20, height: 20}}
+                            style={{width: ViewScale(20), height: ViewScale(20)}}
                             source={require('../../image/shoping.png')}
                           />
                           <Text style={Styles.popupTextdelect}>
@@ -2360,7 +2357,7 @@ class ViewTrade extends React.Component {
                           }}
                           style={{flexDirection: 'row'}}>
                           <Image
-                            style={{width: 20, height: 20}}
+                            style={{width: ViewScale(20), height: ViewScale(20)}}
                             source={require('../../image/startoppick.png')}
                           />
                           <Text style={Styles.popupTextdelect}>
@@ -2454,10 +2451,10 @@ class ViewTrade extends React.Component {
 
 
                       }}
-                      style={{alignSelf: 'flex-end', marginTop: -25}}>
+                      style={{alignSelf: 'flex-end', marginTop: ViewScale(-25)}}>
                       <Image
                         resizeMode={'contain'}
-                        style={{width: 14, height: 16}}
+                        style={{width: ViewScale(14), height: ViewScale(16)}}
                         source={require('../../image/sharelx.png')}
                       />
                     </TouchableOpacity>
@@ -2491,7 +2488,7 @@ class ViewTrade extends React.Component {
             ]}
             isVisible={this.state.open_selectyaer}
             onBackdropPress={() => this.setState({open_selectyaer: false})}>
-            <View style={[Styles.OverlayHight1, {marginHorizontal: 30}]}>
+            <View style={[Styles.OverlayHight1, {marginHorizontal: ViewScale(30)}]}>
               <View style={Styles.OverlayView2}>
                 <View
                   style={{
@@ -2500,7 +2497,7 @@ class ViewTrade extends React.Component {
                   }}>
                   <View
                     style={{
-                      marginTop: 10,
+                      marginTop: ViewScale(10),
                       // width: '50%',
                       flex: 1,
                       height: 34,
@@ -2508,9 +2505,9 @@ class ViewTrade extends React.Component {
                       borderColor: '#FFFFFF',
                       borderWidth: 1,
                       borderRadius: 21.5,
-                      marginHorizontal: 10,
+                      marginHorizontal: ViewScale(10),
                       // flexDirection: 'row',
-                      marginBottom: 4,
+                      marginBottom: ViewScale(4),
                     }}>
                     <RNPickerSelect
                       disabled={this.state.checkRNPickerstate}
@@ -2618,17 +2615,17 @@ class ViewTrade extends React.Component {
                   </View>
                   <View
                     style={{
-                      marginTop: 10,
+                      marginTop: ViewScale(10),
                       // width: '50%',
                       flex: 1,
-                      height: 34,
+                      height: ViewScale(34),
                       backgroundColor: '#FFFFFF',
                       borderColor: '#FFFFFF',
                       borderWidth: 1,
                       borderRadius: 21.5,
-                      marginHorizontal: 10,
+                      marginHorizontal: ViewScale(10),
                       // flexDirection: 'row',
-                      marginBottom: 4,
+                      marginBottom: ViewScale(4),
                     }}>
                     <RNPickerSelect
                       useNativeAndroidPickerStyle={false}
@@ -2739,11 +2736,11 @@ class ViewTrade extends React.Component {
                 style={{
                   borderWidth: 1,
                   borderColor: '#FFFFFF',
-                  top: 15,
+                  top: ViewScale(15),
                   borderRadius: 17,
-                  height: 34,
+                  height: ViewScale(34),
                   justifyContent: 'center',
-                  marginHorizontal: 10,
+                  marginHorizontal: ViewScale(10),
                 }}>
                 <TouchableOpacity
                   onPress={() =>
@@ -2768,7 +2765,7 @@ class ViewTrade extends React.Component {
                     style={{
                       textAlign: 'center',
                       color: '#FFFFFF',
-                      fontSize: 25,
+                      fontSize: ViewScale(24),
                     }}>
                     {I18n.t('transalte_Bt_sesrch')}
                   </Text>

@@ -179,15 +179,15 @@ export default StyleSheet.create({
     backgroundColor: 'transparent',
     position: 'absolute',
     padding: 15,
-    right: -20,
-    top: -55,
+    right: ViewScale(-20),
+    top: ViewScale(-55),
   },
   ImgClose: {
     width: ViewScale(28),
     height: ViewScale(28),
   },
   OverlayView2: {
-    width: width1 - 50,
+    width: width1 -50,
     height: null,
   },
 
@@ -379,7 +379,7 @@ export default StyleSheet.create({
     opacity: Platform.OS === 'android' ? 0.5 : 0.8,
   },
   ViewSub18: {
-    marginTop: 13,
+    marginTop: ViewScale(13),
     alignItems: 'center',
   },
   TextSub10: {
@@ -424,24 +424,24 @@ export default StyleSheet.create({
     margin: 4,
   },
   imageArrowGroup: {
-    width: 15,
-    height: 12,
-    bottom: 30,
+    width: ViewScale(15),
+    height: ViewScale(12),
+    bottom: ViewScale(30),
     right: Platform.OS === 'ios' ? -10 : -10,
     top: Platform.OS === 'ios' ? 12 : 10,
   },
-  TextGroup2: {
-    right: Platform.OS === 'ios' ? 5 : 5,
-    width: '100%',
-    color: '#73838f',
-    fontSize: 19,
-    top: Platform.OS === 'ios' ? -15 : -15,
-    padding: Platform.OS === 'ios' ? 13 : 15,
-    flexShrink: 1,
-    flexWrap: 'wrap',
+  // TextGroup2: {
+  //   right: Platform.OS === 'ios' ? 5 : 5,
+  //   width: '100%',
+  //   color: '#73838f',
+  //   fontSize: 19,
+  //   top: Platform.OS === 'ios' ? -15 : -15,
+  //   padding: Platform.OS === 'ios' ? 13 : 15,
+  //   flexShrink: 1,
+  //   flexWrap: 'wrap',
 
-    // backgroundColor:'red'
-  },
+  //   // backgroundColor:'red'
+  // },
   TextGroup22: {
     right: Platform.OS === 'ios' ? 5 : 5,
     width: '100%',
@@ -481,7 +481,7 @@ export default StyleSheet.create({
     marginTop: 10,
     // width: '50%',
     flex: 1,
-    height: 30,
+    height: ViewScale(30),
     backgroundColor: '#FFFFFF',
     borderColor: '#cacaca',
     borderWidth: 1,
@@ -536,7 +536,7 @@ export default StyleSheet.create({
     right: Platform.OS === 'ios' ? 5 : 5,
     width: '100%',
     color: '#999999',
-    fontSize: 20,
+    fontSize: ViewScale(21),
     top: Platform.OS === 'ios' ? -16 : -15,
     padding: Platform.OS === 'ios' ? 13 : 15,
     flexShrink: 1,
@@ -596,7 +596,7 @@ export default StyleSheet.create({
     fontFamily: 'Pridi-Medium',
     fontSize: ViewScale(12),
     color: '#6f819a',
-    marginTop: 8,
+    marginTop: ViewScale(8),
     textAlign: 'center',
   },
   textActivityTitle: {
@@ -674,10 +674,10 @@ export default StyleSheet.create({
     fontFamily: 'Mitr-Regular',
   },
   popuptextnumber: {
-    fontSize: 13,
+    fontSize: ViewScale(14),
     color: '#163c70',
     fontFamily: 'Pridi-Regular',
-    marginTop: 4,
+    marginTop: ViewScale(4),
   },
   viewckText: {
     fontSize: ViewScale(14),

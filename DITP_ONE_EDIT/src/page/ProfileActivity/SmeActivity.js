@@ -24,6 +24,7 @@ import ScrollableTabView, {
   ScrollableTabBar,
 } from '../../lib_edit/react-native-scrollable-tab-view';
 import SegmentedControlTab from 'react-native-segmented-control-tab';
+import { ViewScale } from '../../config/ViewScale';
 import TabBar from 'react-native-underline-tabbar';
 import LinearGradient from 'react-native-linear-gradient';
 const height = Dimensions.get('window').height;
@@ -35,7 +36,7 @@ const Page = ({label, text = ''}) => (
       alignItems: 'center',
       backgroundColor: '#F5FCFF',
     }}>
-    <Text style={{fontSize: 20, textAlign: 'center'}}>{label}</Text>
+    <Text style={{fontSize: ViewScale(20), textAlign: 'center'}}>{label}</Text>
     <Text style={Styles.instructions}>{text}</Text>
   </View>
 );
@@ -47,9 +48,9 @@ const Tab = ({tab, page, isTabActive, onPressHandler, onTabLayout, Styles}) => {
     // marginLeft:Platform.OS==='ios'? 10:10
   };
   const containerStyle = {
-    paddingHorizontal: 20,
-    paddingVertical: 5,
-    borderRadius: 25,
+    paddingHorizontal: ViewScale(20),
+    paddingVertical: ViewScale(5),
+    borderRadius: ViewScale(25),
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: Styles.backgroundColor,
@@ -59,15 +60,15 @@ const Tab = ({tab, page, isTabActive, onPressHandler, onTabLayout, Styles}) => {
   const textStyle = {
     color: '#FFF',
     fontWeight: '800',
-    fontSize: 20,
+    fontSize: ViewScale(20),
     textAlign: 'center',
   };
   const iconStyle = {
     tintColor: Styles.textColor,
     resizeMode: 'contain',
-    width: 80,
-    height: 22,
-    marginLeft: 10,
+    width: ViewScale(80),
+    height: ViewScale(22),
+    marginLeft: ViewScale(10),
   };
   return (
     <TouchableOpacity
@@ -272,17 +273,17 @@ class SmeAct extends React.Component {
                 <View style={Styles.OverlayView2}>
                   <View style={Styles.OverlayView3}>
                     <Image
-                      style={{width: 155, height: 118}}
+                      style={{width: ViewScale(155), height: ViewScale(118)}}
                       source={require('../../image/SMEsIMG.png')}
                     />
                   </View>
                   <View
                     style={{
                       flexDirection: 'row',
-                      marginLeft: 20,
-                      marginTop: 15,
+                      marginLeft: ViewScale(20),
+                      marginTop: ViewScale(15),
                     }}>
-                    <Text style={{fontSize: 25, color: '#163c70'}}>
+                    <Text style={{fontSize: ViewScale(25), color: '#163c70'}}>
                       {this.state.nameAct}
                     </Text>
                   </View>
@@ -290,12 +291,12 @@ class SmeAct extends React.Component {
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_continent')} {'\t\t'}
                     </Text>
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {this.state.location}
                     </Text>
                   </View>
@@ -303,25 +304,25 @@ class SmeAct extends React.Component {
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_country')} {'\t\t'}
                     </Text>
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {this.state.Country}
                     </Text>
                   </View>
                   <View
                     style={{
                       flexDirection: 'row',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_goods')} {'\t\t'}
                     </Text>
                     <View style={{height: null}}>
-                      <Text style={{fontSize: 20, color: '#73838f'}}>
+                      <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                         :{' '}
                         {this.state.Product.map(function name(data) {
                           return data.name_th;
@@ -333,18 +334,18 @@ class SmeAct extends React.Component {
                     style={{
                       flexDirection: 'row',
 
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_Detail')}
                       {'\t'}
                     </Text>
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {I18n.t('translate_Requesting_support')}
                     </Text>
                   </View>
 
-                  <View style={{marginTop: 20}}>
+                  <View style={{marginTop: ViewScale(20)}}>
                     {this.state.Status.map(function status(data, index) {
                       const Check = Color => {
                         var color = null;
@@ -360,15 +361,15 @@ class SmeAct extends React.Component {
                       };
 
                       return (
-                        <View style={{marginTop: -20}}>
-                          <View style={[Styles.OverlayView6, {bottom: -10}]}>
+                        <View style={{marginTop: ViewScale(-20)}}>
+                          <View style={[Styles.OverlayView6, {bottom: (-10)}]}>
                             <View
                               style={{
-                                width: 10,
-                                height: 10,
+                                width: ViewScale(10),
+                                height: ViewScale(10),
                                 borderWidth: 1,
                                 backgroundColor: Check(data.status_color),
-                                borderRadius: 30,
+                                borderRadius: ViewScale(30),
                                 borderColor: 'transparent',
                               }}
                             />
@@ -382,10 +383,10 @@ class SmeAct extends React.Component {
                             </Text>
                             <View
                               style={{
-                                flex: Platform.OS === 'android' ? 0.9 : 1,
+                                flex: Platform.OS === 'android' ? ViewScale(0.9) : ViewScale(1),
                                 flexDirection: 'row-reverse',
                               }}>
-                              <Text style={{fontSize: 16, color: '#73838f'}}>
+                              <Text style={{fontSize: ViewScale(16), color: '#73838f'}}>
                                 {' '}
                                 {data.status_date != ''
                                   ? data.status_date
@@ -472,7 +473,7 @@ class SmeAct extends React.Component {
               <View style={[Styles.flexDirectionRow, {width: '80%'}]}>
                 <Text
                   numberOfLines={2}
-                  style={[Styles.titleListHis, {lineHeight: 30}]}>
+                  style={[Styles.titleListHis, {lineHeight: ViewScale(30)}]}>
                   {item.activity_name_th}
                 </Text>
               </View>
@@ -482,7 +483,7 @@ class SmeAct extends React.Component {
               <View>
                 {/*อนุมัติเรียบร้อย */}
 
-                <Text style={{fontSize: 16, color: '#73838f', left: 20}}>
+                <Text style={{fontSize: ViewScale(16), color: '#73838f', left: ViewScale(20)}}>
                   {I18n.t('translate_Requesting_support')}
                 </Text>
 
@@ -509,19 +510,19 @@ class SmeAct extends React.Component {
                         }
                       };
                       return (
-                        <View style={[Styles.ViewSubList2, {left: 20}]}>
+                        <View style={[Styles.ViewSubList2, {left: ViewScale(20)}]}>
                           <View
                             style={{
-                              width: 10,
-                              height: 10,
+                              width: ViewScale(10),
+                              height: ViewScale(10),
                               borderWidth: 1,
                               backgroundColor: Check(status_color),
-                              borderRadius: 30,
+                              borderRadius: ViewScale(30),
                               borderColor: 'transparent',
                             }}
                           />
                           <Text
-                            style={{fontSize: 16, color: Check(status_color)}}>
+                            style={{fontSize: ViewScale(16), color: Check(status_color)}}>
                             {' '}
                             {status_name}
                           </Text>
@@ -559,17 +560,17 @@ class SmeAct extends React.Component {
                 <View style={Styles.OverlayView2}>
                   <View style={Styles.OverlayView3}>
                     <Image
-                      style={{width: 155, height: 118}}
+                      style={{width: ViewScale(155), height: ViewScale(118)}}
                       source={require('../../image/SMEsIMG.png')}
                     />
                   </View>
                   <View
                     style={{
                       flexDirection: 'row',
-                      marginLeft: 20,
-                      marginTop: 15,
+                      marginLeft: ViewScale(20),
+                      marginTop: ViewScale(15),
                     }}>
-                    <Text style={{fontSize: 25, color: '#163c70'}}>
+                    <Text style={{fontSize: ViewScale(25), color: '#163c70'}}>
                       {this.state.nameAct}
                     </Text>
                   </View>
@@ -577,12 +578,12 @@ class SmeAct extends React.Component {
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_continent')} {'\t\t'}
                     </Text>
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {this.state.location}
                     </Text>
                   </View>
@@ -590,25 +591,25 @@ class SmeAct extends React.Component {
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_country')} {'\t\t'}
                     </Text>
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {this.state.Country}
                     </Text>
                   </View>
                   <View
                     style={{
                       flexDirection: 'row',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_goods')} {'\t\t'}
                     </Text>
                     <View style={{height: null}}>
-                      <Text style={{fontSize: 20, color: '#73838f'}}>
+                      <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                         :{' '}
                         {this.state.Product.map(function name(data) {
                           return data.name_th;
@@ -620,18 +621,18 @@ class SmeAct extends React.Component {
                     style={{
                       flexDirection: 'row',
 
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_Detail')}
                       {'\t'}
                     </Text>
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {I18n.t('translate_Requesting_support')}
                     </Text>
                   </View>
 
-                  <View style={{marginTop: 20}}>
+                  <View style={{marginTop: ViewScale(20)}}>
                     {this.state.Status.map(function status(data, index) {
                       const Check = Color => {
                         var color = null;
@@ -647,15 +648,15 @@ class SmeAct extends React.Component {
                       };
 
                       return (
-                        <View style={{marginTop: -20}}>
-                          <View style={[Styles.OverlayView6, {bottom: -10}]}>
+                        <View style={{marginTop: ViewScale(-20)}}>
+                          <View style={[Styles.OverlayView6, {bottom: ViewScale(-10)}]}>
                             <View
                               style={{
-                                width: 10,
-                                height: 10,
+                                width: ViewScale(10),
+                                height: ViewScale(10),
                                 borderWidth: 1,
                                 backgroundColor: Check(data.status_color),
-                                borderRadius: 30,
+                                borderRadius: ViewScale(30),
                                 borderColor: 'transparent',
                               }}
                             />
@@ -669,10 +670,10 @@ class SmeAct extends React.Component {
                             </Text>
                             <View
                               style={{
-                                flex: Platform.OS === 'android' ? 0.9 : 1,
+                                flex: Platform.OS === 'android' ? ViewScale(0.9) : ViewScale(1),
                                 flexDirection: 'row-reverse',
                               }}>
-                              <Text style={{fontSize: 16, color: '#73838f'}}>
+                              <Text style={{fontSize: ViewScale(16), color: '#73838f'}}>
                                 {' '}
                                 {data.status_date != ''
                                   ? data.status_date
@@ -730,7 +731,7 @@ class SmeAct extends React.Component {
             height: null,
             backgroundColor: '#FFFFFF',
 
-            borderWidth: 3,
+            borderWidth: ViewScale(3),
             borderColor: '#f4f5f8',
           }}
           rightSubtitle={
@@ -749,7 +750,7 @@ class SmeAct extends React.Component {
             <View style={(Styles.flexDirectionRow, {width: '80%'})}>
               <Text
                 numberOfLines={2}
-                style={[Styles.titleListHis, {lineHeight: 20}]}>
+                style={[Styles.titleListHis, {lineHeight: ViewScale(20)}]}>
                 {item.activity_name_th}
               </Text>
             </View>
@@ -759,12 +760,12 @@ class SmeAct extends React.Component {
             <View>
               {/*อนุมัติเรียบร้อย */}
 
-              <Text style={{fontSize: 16, color: '#73838f', left: 20}}>
+              <Text style={{fontSize: ViewScale(16), color: '#73838f', left: ViewScale(20)}}>
                 {I18n.t('translate_Join')} {item.register_date}
               </Text>
 
               <View>
-                <View style={[Styles.ViewSubList2, {left: 20}]}>
+                <View style={[Styles.ViewSubList2, {left: ViewScale(20)}]}>
                   <Image
                     style={Styles.ImgListwating}
                     source={require('../../image/End.png')}
@@ -797,7 +798,7 @@ class SmeAct extends React.Component {
         <View
           style={[
             Styles.flexDirectionRow,
-            {marginTop: 15, marginHorizontal: 10},
+            {marginTop: ViewScale(15), marginHorizontal: ViewScale(10)},
           ]}>
           <View style={[Styles.ViewSub37, {flex: 1}]}>
             <Text style={[Styles.TextHearderSub1]}>
@@ -806,7 +807,7 @@ class SmeAct extends React.Component {
           </View>
           <View style={[Styles.ViewSub37, {flex: 0.3}]}>
             <Image
-              style={{width: 59, height: 45}}
+              style={{width: ViewScale(59), height: ViewScale(45)}}
               source={require('../../image/SMESprox.png')}
             />
           </View>
@@ -817,10 +818,10 @@ class SmeAct extends React.Component {
             style={{
               flexDirection: 'row',
               // alignSelf: 'center',
-              marginTop: 10,
+              marginTop: ViewScale(10),
               // width: '100%',
 
-              marginHorizontal: 8,
+              marginHorizontal: ViewScale(8),
               // flex:1
               justifyContent: 'space-between',
               // justifyContent:'center'
@@ -853,17 +854,17 @@ class SmeAct extends React.Component {
                 end={{x: 0, y: 0}}
                 colors={['#3eafca', '#3eafca']}
                 style={{
-                  height: 90,
-                  borderRadius: 8,
+                  height: ViewScale(90),
+                  borderRadius: ViewScale(8),
                   justifyContent: 'center',
                 }}>
                 <Text
                   style={{
                     fontFamily: 'Kittithada Bold 75',
                     color: '#FFFFFF',
-                    fontSize: 16,
+                    fontSize: ViewScale(16),
                     textAlign: 'center',
-                    marginTop: 10,
+                    marginTop: ViewScale(10),
                   }}>
                   {I18n.t('translate_RightsTotrade')}
                   {'\n'}
@@ -872,10 +873,10 @@ class SmeAct extends React.Component {
                 <Text
                   style={{
                     fontFamily: 'Kittithada Bold 75',
-                    fontSize: 40,
+                    fontSize: ViewScale(40),
                     textAlign: 'center',
                     color: '#FFFFFF',
-                    marginTop: -15,
+                    marginTop: ViewScale(-15),
                   }}>
                   {this.props.SmeAuth[0].QuotaUse}/
                   {this.props.SmeAuth[0].QuotaAll}
@@ -884,7 +885,7 @@ class SmeAct extends React.Component {
             </TouchableOpacity>
 
             <TouchableOpacity
-              style={{justifyContent: 'center', flex: 1, paddingHorizontal: 5}}
+              style={{justifyContent: 'center', flex: 1, paddingHorizontal: ViewScale(5)}}
               onPress={() => {
 
                 this.props.navigation.navigate('SemsBusiness',{
@@ -904,17 +905,17 @@ class SmeAct extends React.Component {
                 end={{x: 0, y: 0}}
                 colors={['#42a5ef', '#42a5ef']}
                 style={{
-                  height: 90,
-                  borderRadius: 8,
+                  height: ViewScale(90),
+                  borderRadius: ViewScale(8),
                   justifyContent: 'center',
                 }}>
                 <Text
                   style={{
                     fontFamily: 'Kittithada Bold 75',
-                    fontSize: 16,
+                    fontSize: ViewScale(16),
                     textAlign: 'center',
                     color: '#FFFFFF',
-                    marginTop: 10,
+                    marginTop: ViewScale(10),
                   }}>
                   {I18n.t('translate_RightsToTrades')}
                   {'\n'}
@@ -922,10 +923,10 @@ class SmeAct extends React.Component {
                 <Text
                   style={{
                     fontFamily: 'Kittithada Bold 75',
-                    fontSize: 40,
+                    fontSize: ViewScale(40),
                     textAlign: 'center',
                     color: '#FFFFFF',
-                    marginTop: -15,
+                    marginTop: ViewScale(-15),
                   }}>
                   {this.props.SmeAuth[1].QuotaUse}/
                   {this.props.SmeAuth[1].QuotaAll}
@@ -933,7 +934,7 @@ class SmeAct extends React.Component {
               </LinearGradient>
             </TouchableOpacity>
             <TouchableOpacity
-              style={{justifyContent: 'center', flex: 1, paddingHorizontal: 5}}
+              style={{justifyContent: 'center', flex: 1, paddingHorizontal: ViewScale(5)}}
               onPress={() => {
                 this.setState({checkColor: true, typehis: 2});
 
@@ -948,27 +949,27 @@ class SmeAct extends React.Component {
                 end={{x: 0, y: 0}}
                 colors={['#2c84df', '#2c84df']}
                 style={{
-                  height: 90,
-                  borderRadius: 8,
+                  height: ViewScale(90),
+                  borderRadius: ViewScale(8),
                   justifyContent: 'center',
                 }}>
                 <Text
                   style={{
                     fontFamily: 'Kittithada Bold 75',
-                    fontSize: 16,
+                    fontSize: ViewScale(16),
                     textAlign: 'center',
                     color: '#FFFFFF',
-                    marginTop: 10,
+                    marginTop: ViewScale(10),
                   }}>
                   {I18n.t('transalte_Trade_show_rights_Virtual')}
                 </Text>
                 <Text
                   style={{
                     fontFamily: 'Kittithada Bold 75',
-                    fontSize: 40,
+                    fontSize: ViewScale(40),
                     textAlign: 'center',
                     color: '#FFFFFF',
-                    marginTop: -10,
+                    marginTop: ViewScale(-10),
                   }}>
                   {this.props.SmeAuth[1].QuotaUse}/
                   {this.props.SmeAuth[1].QuotaAll}
@@ -1027,7 +1028,7 @@ class SmeAct extends React.Component {
                 )}
               </View>
             ) : (
-              <View style={{marginBottom: 10}} />
+              <View style={{marginBottom: ViewScale(10)}} />
               // <View style={{alignItems: 'center'}}>
               //   {/* //b */}
               //   <Text style={{fontSize: 25}}>
@@ -1045,7 +1046,7 @@ class SmeAct extends React.Component {
         {this.state.heightTab2 == 1 && (
           <View>
             <View style={Styles.ViewSub19}>
-              <Text style={{fontSize: 18, color: '#73838f'}}>
+              <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                 {I18n.t('translate_fiscalyear')} :
               </Text>
             </View>
@@ -1060,18 +1061,18 @@ class SmeAct extends React.Component {
                   activeTabStyle={Styles.tabactive}
                   tabTextStyle={Styles.tabtext2}
                   firstTabStyle={{
-                    borderTopLeftRadius: 8,
-                    borderBottomLeftRadius: 8,
-                    borderTopRightRadius: 8,
-                    borderBottomRightRadius: 8,
-                    marginRight: 2,
+                    borderTopLeftRadius: ViewScale(8),
+                    borderBottomLeftRadius: ViewScale(8),
+                    borderTopRightRadius: ViewScale(8),
+                    borderBottomRightRadius: ViewScale(8),
+                    marginRight: ViewScale(2),
                   }}
                   lastTabStyle={{
-                    borderTopLeftRadius: 8,
-                    borderBottomLeftRadius: 8,
-                    borderTopRightRadius: 8,
-                    borderBottomRightRadius: 8,
-                    marginRight: 2,
+                    borderTopLeftRadius: ViewScale(8),
+                    borderBottomLeftRadius: ViewScale(8),
+                    borderTopRightRadius: ViewScale(8),
+                    borderBottomRightRadius: ViewScale(8),
+                    marginRight: ViewScale(2),
                   }}
                   tabStyle={Styles.tabStyle2}
                   tabsContainerStyle={Styles.tabContainer2}
@@ -1093,7 +1094,7 @@ class SmeAct extends React.Component {
                       alignSelf: 'center',
                     }}>
                     <Image
-                      style={{width: 11, height: 7, bottom: 2}}
+                      style={{width: ViewScale(11), height: ViewScale(7), bottom: ViewScale(2)}}
                       source={require('../../image/DropDown.png')}
                     />
                   </View>
@@ -1140,9 +1141,9 @@ class SmeAct extends React.Component {
                       <View
                         style={{
                           alignItems: 'center',
-                          marginBottom: 20,
+                          marginBottom: ViewScale(20),
                         }}>
-                        <Text style={{fontSize: 22}}>
+                        <Text style={{fontSize: ViewScale(22)}}>
                           {I18n.t('translate_NoHistory')}
                         </Text>
                         <View style={{alignItems: 'center'}}>
@@ -1163,9 +1164,9 @@ class SmeAct extends React.Component {
                   <View style={[Styles.ViewSub9]}>
                     <Image
                       style={{
-                        width: 11,
-                        height: 7,
-                        bottom: Platform.OS === 'android' ? 1 : 1,
+                        width: ViewScale(11),
+                        height: ViewScale(7),
+                        bottom: Platform.OS === 'android' ? ViewScale(1) : ViewScale(1),
                       }}
                       source={require('../../image/DropDown.png')}
                     />
@@ -1213,9 +1214,9 @@ class SmeAct extends React.Component {
                       <View
                         style={{
                           alignItems: 'center',
-                          marginBottom: 20,
+                          marginBottom: ViewScale(20),
                         }}>
-                        <Text style={{fontSize: 22}}>
+                        <Text style={{fontSize: ViewScale(22)}}>
                           {I18n.t('translate_NoHistory')}
                         </Text>
                         <View style={{alignItems: 'center'}}>
@@ -1239,7 +1240,7 @@ class SmeAct extends React.Component {
                       width: '79%',
                     }}>
                     <Image
-                      style={{width: 11, height: 7, bottom: 2}}
+                      style={{width: ViewScale(11), height: ViewScale(7), bottom: ViewScale(2)}}
                       source={require('../../image/DropDown.png')}
                     />
                   </View>
@@ -1287,9 +1288,9 @@ class SmeAct extends React.Component {
                       <View
                         style={{
                           alignItems: 'center',
-                          marginBottom: 20,
+                          marginBottom: ViewScale(20),
                         }}>
-                        <Text style={{fontSize: 22}}>
+                        <Text style={{fontSize: ViewScale(22)}}>
                           {I18n.t('translate_NoHistory')}
                         </Text>
                         <View style={{alignItems: 'center'}}>

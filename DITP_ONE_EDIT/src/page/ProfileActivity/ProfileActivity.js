@@ -23,7 +23,7 @@ import {useIsFocused} from '@react-navigation/native';
 import Styles from './Styles';
 import Style from '../IdentityScreen/Styles';
 import Icon from 'react-native-vector-icons/Feather';
-// import SegmentedControlTab from 'react-native-segmented-control-tab';
+import { ViewScale } from '../../config/ViewScale';
 
 // import ScrollableTabView, {
 //   ScrollableTabBar,
@@ -1299,7 +1299,7 @@ const ProfileActivity = ({
   const Bar = () => {
     if (page === 1) {
       return (
-        <View style={{flex: 1, left: 48, top: 10, marginBottom: 10}}>
+        <View style={{flex: 1, left: ViewScale(48), top: ViewScale(10), marginBottom: ViewScale(10)}}>
           {ViewProfile === true && (
             <Overlay
               overlayStyle={{
@@ -1321,7 +1321,7 @@ const ProfileActivity = ({
                       }, 200);
                     }}>
                     <Image
-                      style={{width: 20, height: 20}}
+                      style={{width: ViewScale(20), height: ViewScale(20)}}
                       source={require('../../image/CloseCamra.png')}
                     />
                   </TouchableOpacity>
@@ -1352,7 +1352,7 @@ const ProfileActivity = ({
             </Overlay>
           )}
           <View style={{bottom: bottom}}>
-            <View style={{padding: 10}}>
+            <View style={{padding: ViewScale(10)}}>
               <TouchableOpacity
                 // style={{marginBottom: 10}}
                 onPress={() => {
@@ -1362,7 +1362,7 @@ const ProfileActivity = ({
                 }}>
                 <View style={Style.ViewSub13}>
                   <Image
-                    style={{width: 14, height: 17}}
+                    style={{width: ViewScale(14), height: ViewScale(17)}}
                     source={require('../../image/ViewProfile1.png')}
                   />
                   <Text style={Style.TextSub8}>
@@ -1393,7 +1393,7 @@ const ProfileActivity = ({
                 </View>
               </TouchableOpacity>
             </View> */}
-            <View style={{padding: 10}}>
+            <View style={{padding: ViewScale(10)}}>
               <TouchableOpacity
                 onPress={() => {
                   imageGalleryLaunch();
@@ -1432,7 +1432,7 @@ const ProfileActivity = ({
         navigation={navigation}
         backScreen={false}
       />
-      <View style={{marginTop: Platform.OS === 'android' && 90}} />
+      <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
       <RBSheet
         ref={ref => {
           setRBsheet1(ref);
@@ -1446,18 +1446,18 @@ const ProfileActivity = ({
           },
           draggableIcon: {
             backgroundColor: '#f1f1f1',
-            width: 66,
-            height: 8,
+            width: ViewScale(66),
+            height: ViewScale(8),
           },
           container: {
-            borderTopLeftRadius: 10,
-            borderTopRightRadius: 10,
+            borderTopLeftRadius: ViewScale(10),
+            borderTopRightRadius: ViewScale(10),
           },
         }}>
         {Bar()}
       </RBSheet>
       <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : 20}
+        behavior={Platform.OS === 'ios' ? 'padding' : ViewScale(20)}
         style={{flex: 1, zIndex: -1}}>
         <ScrollView style={{zIndex: -1}}>
           <View style={Styles.ViewSub1}>
@@ -1467,7 +1467,7 @@ const ProfileActivity = ({
               source={require('../../image/BGlogoProfile.png')}>
               <Avatar
                 containerStyle={Styles.AvatarContainer}
-                size={100}
+                size={ViewScale(100)}
                 overlayContainerStyle={{borderWidth: 2, borderColor: '#FFFFFF'}}
                 rounded
                 source={{uri: url}}
@@ -1482,14 +1482,14 @@ const ProfileActivity = ({
                     RBsheet1.open();
                   }, 200);
                 }}
-                size={35}
+                size={ViewScale(35)}
                 rounded
                 overlayContainerStyle={Styles.overlayContainer}
                 icon={{
                   name: 'photo-camera',
                   type: 'material',
                   color: '#2a9df0',
-                  size: 19,
+                  size: ViewScale(19),
                 }}
               />
             </View>
@@ -1522,17 +1522,17 @@ const ProfileActivity = ({
                             colors={['#59a6e4', '#2d6dc4']}
                             style={{
                               flexWrap: 'wrap',
-                              height: 20,
-                              paddingHorizontal: 10,
-                              borderRadius: 8,
-                              marginHorizontal: 3,
+                              height: ViewScale(20),
+                              paddingHorizontal: ViewScale(10),
+                              borderRadius: ViewScale(8),
+                              marginHorizontal: ViewScale(3),
                             }}>
                             <Text
                               style={{
-                                fontSize: 20,
+                                fontSize: ViewScale(20),
                                 color: '#FFFFFF',
                                 textAlign: 'center',
-                                marginTop: -2,
+                                marginTop: ViewScale(-2),
                               }}>
                               {getStatus.isResult.status_ditp.nameEn}
                              
@@ -1544,16 +1544,16 @@ const ProfileActivity = ({
                             end={{x: 0, y: 1}}
                             colors={['#59a6e4', '#2d6dc4']}
                             style={{
-                              width: 25,
-                              height: 20,
-                              borderRadius: 8,
+                              width: ViewScale(25),
+                              height: ViewScale(20),
+                              borderRadius: ViewScale(8),
                               alignItems: 'center',
                             }}>
                             <Image
                               style={{
-                                width: 15,
-                                height: 13,
-                                marginTop: 4,
+                                width: ViewScale(15),
+                                height: ViewScale(13),
+                                marginTop: ViewScale(4),
                               }}
                               source={require('../../image/logoMM.png')}
                             />
@@ -1570,17 +1570,17 @@ const ProfileActivity = ({
                             colors={['#fc9898', '#f86c6b']}
                             style={{
                               flexWrap: 'wrap',
-                              height: 20,
-                              paddingHorizontal: 10,
-                              borderRadius: 8,
-                              marginHorizontal: 3,
+                              height: ViewScale(20),
+                              paddingHorizontal: ViewScale(10),
+                              borderRadius: ViewScale(8),
+                              marginHorizontal: ViewScale(3),
                             }}>
                             <Text
                               style={{
-                                fontSize: 20,
+                                fontSize: ViewScale(20),
                                 color: '#FFFFFF',
                                 textAlign: 'center',
-                                marginTop: -2,
+                                marginTop: ViewScale(-2),
                               }}>
                               {I18n.t('transalte_Not_Apply_Department')}
                             </Text>
@@ -1617,7 +1617,7 @@ const ProfileActivity = ({
                         </Text>
                       </TouchableOpacity>
                     </View>
-                    <View style={{bottom: 10}}>
+                    <View style={{bottom: ViewScale(10)}}>
                       {getUser.userDetails.res_result.type === 1 && (
                         <View style={Styles.ViewSub31}>
                           <Text style={Styles.textAlert}>
@@ -1676,6 +1676,8 @@ const ProfileActivity = ({
             <View>
               <View style={Styles.ViewSub8}>
                 <SegmentedControlTab
+                tabTextStyle={{fontSize: ViewScale(18)}}
+                activeTabTextStyle={{fontSize : ViewScale(18),}}
                   selectedIndex={SelecIndex}
                   values={[
                     I18n.t('translate_Memberinformation'),
@@ -1691,12 +1693,12 @@ const ProfileActivity = ({
                       onBackdropPress={() => setAcceptEdit(false)}
                       backdropStyle={Styles.backdrop}
                       isVisible>
-                      <View style={{height: 240, width: width * 0.8}}>
+                      <View style={{height: ViewScale(240), width: width * 0.8}}>
                         <View
                           style={{
                             flexDirection: 'row-reverse',
-                            bottom: 35,
-                            left: 10,
+                            bottom: ViewScale(35),
+                            left: ViewScale(10),
                           }}>
                           <TouchableOpacity
                             onPress={() => {
@@ -1705,7 +1707,7 @@ const ProfileActivity = ({
                               }, 200);
                             }}>
                             <Image
-                              style={{width: 20, height: 20}}
+                              style={{width: ViewScale(20), height: ViewScale(20)}}
                               source={require('../../image/ClosePro.png')}
                             />
                           </TouchableOpacity>
@@ -1716,13 +1718,13 @@ const ProfileActivity = ({
                             style={{width: 70, height: 70}}
                             source={require('../../image/alert.png')}
                           /> */}
-                          <Icon name="alert-circle" size={65} color="#f86767" />
-                          <View style={{marginTop: 10}}>
+                          <Icon name="alert-circle" size={ViewScale(65)} color="#f86767" />
+                          <View style={{marginTop: ViewScale(10)}}>
                             <Text
                               style={{
                                 color: '#f86c6b',
                                 textAlign: 'center',
-                                fontSize: 16,
+                                fontSize: ViewScale(16),
                                 fontFamily: 'Mitr-Regular',
                               }}>
                               {I18n.t('translate_EditProfile')}
@@ -1734,7 +1736,7 @@ const ProfileActivity = ({
                             flexDirection: 'row',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            marginTop: 25,
+                            marginTop: ViewScale(25),
                           }}>
                         
                           <TouchableOpacity
@@ -1744,15 +1746,15 @@ const ProfileActivity = ({
                               }, 200)
                             }
                             style={{
-                              width: 129,
-                              height: 39,
-                              borderRadius: 21.5,
+                              width: ViewScale(129),
+                              height: ViewScale(39),
+                              borderRadius: ViewScale(21.5),
                               backgroundColor: '#f86c6b',
                               alignItems: 'center',
                               justifyContent: 'center',
-                              marginRight: 10,
+                              marginRight: ViewScale(10),
                             }}>
-                            <Text style={{fontSize: 20, color: '#ffffff'}}>
+                            <Text style={{fontSize: ViewScale(20), color: '#ffffff'}}>
                               {I18n.t('translate_Cancel')}
                             </Text>
                           </TouchableOpacity>
@@ -1767,15 +1769,15 @@ const ProfileActivity = ({
                               }, 200)
                             }
                             style={{
-                              width: 129,
-                              height: 39,
-                              borderRadius: 21.5,
+                              width: ViewScale(129),
+                              height: ViewScale(39),
+                              borderRadius: ViewScale(21.5),
                               backgroundColor: '#2d6dc4',
                               alignItems: 'center',
                               justifyContent: 'center',
                              
                             }}>
-                            <Text style={{fontSize: 20, color: '#ffffff'}}>
+                            <Text style={{fontSize: ViewScale(20), color: '#ffffff'}}>
                               {I18n.t('translate_Accept')}
                             </Text>
                           </TouchableOpacity>
@@ -1789,12 +1791,12 @@ const ProfileActivity = ({
                       onBackdropPress={() => setSaveEdit(false)}
                       backdropStyle={Styles.backdrop}
                       isVisible>
-                      <View style={{height: 240, width: width * 0.8}}>
+                      <View style={{height: ViewScale(240), width: width * 0.8}}>
                         <View
                           style={{
                             flexDirection: 'row-reverse',
-                            bottom: 35,
-                            left: 10,
+                            bottom: ViewScale(35),
+                            left: ViewScale(10),
                           }}>
                           <TouchableOpacity
                             onPress={() => {
@@ -1804,7 +1806,7 @@ const ProfileActivity = ({
                               }, 200);
                             }}>
                             <Image
-                              style={{width: 20, height: 20}}
+                              style={{width: ViewScale(20), height: ViewScale(20)}}
                               source={require('../../image/ClosePro.png')}
                             />
                           </TouchableOpacity>
@@ -1812,13 +1814,13 @@ const ProfileActivity = ({
 
                         <View style={{alignItems: 'center'}}>
                           <Image
-                            style={{width: 70, height: 70}}
+                            style={{width: ViewScale(70), height: ViewScale(70)}}
                             source={require('../../image/alert.png')}
                           />
-                          <View style={{marginTop: 15}}>
+                          <View style={{marginTop: ViewScale(15)}}>
                             <Text
                               style={{
-                                fontSize: 24,
+                                fontSize: ViewScale(24),
                                 color: '#e82d2d',
                                 textAlign: 'center',
                               }}>
@@ -1831,7 +1833,7 @@ const ProfileActivity = ({
                             flexDirection: 'row',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            marginTop: 25,
+                            marginTop: ViewScale(25),
                           }}>
                           <TouchableOpacity
                             onPress={() =>
@@ -1845,15 +1847,15 @@ const ProfileActivity = ({
                               }, 200)
                             }
                             style={{
-                              width: 129,
-                              height: 39,
-                              borderRadius: 21.5,
+                              width: ViewScale(129),
+                              height: ViewScale(39),
+                              borderRadius: ViewScale(21.5),
                               backgroundColor: '#2d6dc4',
                               alignItems: 'center',
                               justifyContent: 'center',
-                              marginRight: 10,
+                              marginRight: ViewScale(10),
                             }}>
-                            <Text style={{fontSize: 20, color: '#ffffff'}}>
+                            <Text style={{fontSize: ViewScale(20), color: '#ffffff'}}>
                               {I18n.t('translate_Accept')}
                             </Text>
                           </TouchableOpacity>
@@ -1864,14 +1866,14 @@ const ProfileActivity = ({
                               }, 200)
                             }
                             style={{
-                              width: 129,
-                              height: 39,
-                              borderRadius: 21.5,
+                              width: ViewScale(129),
+                              height: ViewScale(39),
+                              borderRadius: ViewScale(21.5),
                               backgroundColor: '#e82d2d',
                               alignItems: 'center',
                               justifyContent: 'center',
                             }}>
-                            <Text style={{fontSize: 20, color: '#ffffff'}}>
+                            <Text style={{fontSize: ViewScale(20), color: '#ffffff'}}>
                               {I18n.t('translate_Cancel')}
                             </Text>
                           </TouchableOpacity>
@@ -1896,8 +1898,8 @@ const ProfileActivity = ({
                         <View
                           style={{
                             width: '80%',
-                            marginTop: 10,
-                            marginBottom: 10,
+                            marginTop: ViewScale(10),
+                            marginBottom: ViewScale(10),
                           }}>
                           <View style={[Styles.ViewSub24]}>
                             <View>
@@ -1943,7 +1945,7 @@ const ProfileActivity = ({
 
                           {getUser.userDetails.res_result.naturalId !=
                             undefined && (
-                            <Text style={[Styles.TextSub3, {marginBottom: 10}]}>
+                            <Text style={[Styles.TextSub3, {marginBottom: ViewScale(10)}]}>
                               {getUser.userDetails.res_result.type === 2 ||
                               getUser.userDetails.res_result.type === 4
                                 ? getUser.userDetails.res_result.naturalId
@@ -1968,7 +1970,7 @@ const ProfileActivity = ({
 
                       {getUser.userDetails.res_result.type === 1 && (
                         <View>
-                          <View style={[{left: 0, marginTop: -5}]}>
+                          <View style={[{left: 0, marginTop: ViewScale(-5)}]}>
                             <ImageBackground
                               resizeMode="cover"
                               imageStyle={Styles.ImageBackgroundEdite}
@@ -1983,8 +1985,8 @@ const ProfileActivity = ({
                               <View
                                 style={{
                                   width: '80%',
-                                  marginTop: 10,
-                                  marginBottom: 10,
+                                  marginTop: ViewScale(10),
+                                  marginBottom: ViewScale(10),
                                 }}>
                                 <Text style={Styles.TextSub1}>
                                   {I18n.t('translate_Nameentity')}
@@ -2022,8 +2024,8 @@ const ProfileActivity = ({
                             <View
                               style={{
                                 width: '80%',
-                                marginTop: 10,
-                                marginBottom: 10,
+                                marginTop: ViewScale(10),
+                                marginBottom: ViewScale(10),
                               }}>
                               <Text style={Styles.TextSub1}>
                                 {I18n.t('translate_Corporate')}
@@ -2058,7 +2060,7 @@ const ProfileActivity = ({
                       )}
                       {getUser.userDetails.res_result.type === 2 && (
                         <View>
-                          <View style={[{left: 0, marginTop: -5}]}>
+                          <View style={[{left: 0, marginTop: ViewScale(-5)}]}>
                             <ImageBackground
                               resizeMode="cover"
                               imageStyle={Styles.ImageBackgroundEdite}
@@ -2069,8 +2071,8 @@ const ProfileActivity = ({
                               <View
                                 style={{
                                   width: '80%',
-                                  marginTop: 10,
-                                  marginBottom: 10,
+                                  marginTop: ViewScale(10),
+                                  marginBottom: ViewScale(10),
                                 }}>
                                 <Text style={Styles.TextSub1}>
                                   {I18n.t('translate_Nameentity')}
@@ -2099,7 +2101,7 @@ const ProfileActivity = ({
                                 alignItems: 'center',
                               }}
                               source={require('../../image/group-2-copy-251.png')}>
-                              <View style={{width: '80%', marginTop: 10}}>
+                              <View style={{width: '80%', marginTop: ViewScale(10)}}>
                                 <Text style={[Styles.TextSub1, {left: 0}]}>
                                   {I18n.t('translate_Corporate')}
                                 </Text>
@@ -2143,7 +2145,7 @@ const ProfileActivity = ({
                                 getUser.userDetails.res_result.type != 4
                                   ? 10
                                   : 10,
-                              marginBottom: 10,
+                              marginBottom: ViewScale(10),
                             }}>
                             {getUser.userDetails.res_result.type != 2 ? (
                               <Text style={Styles.TextSub1}>
@@ -2171,8 +2173,8 @@ const ProfileActivity = ({
                                   <View
                                     style={{
                                       right: 0,
-                                      bottom: 10,
-                                      marginTop: 10,
+                                      bottom: ViewScale(10),
+                                      marginTop: ViewScale(10),
                                     }}>
                                     <View style={{width: '80%'}}>
                                       <Text style={Styles.fileText}>
@@ -2182,11 +2184,11 @@ const ProfileActivity = ({
                                     <ImageBackground
                                       source={require('../../image/TextinputContect.png')}
                                       resizeMode={'stretch'}
-                                      imageStyle={{width: '100%', height: 32}}
-                                      style={{height: 32}}>
+                                      imageStyle={{width: '100%', height: ViewScale(32)}}
+                                      style={{height: ViewScale(32)}}>
                                       <View
                                         style={{
-                                          left: 5,
+                                          left: ViewScale(5),
 
                                           justifyContent: 'center',
                                           width: '90%',
@@ -2195,8 +2197,8 @@ const ProfileActivity = ({
                                           maxLength={15}
                                           style={{
                                             height:
-                                              Platform.OS === 'ios' ? 32 : 42,
-                                            fontSize: 23,
+                                              Platform.OS === 'ios' ? ViewScale(32) : ViewScale(42),
+                                            fontSize: ViewScale(23),
                                             color: '#73838f',
                                             fontWeight: 'normal',
                                             fontFamily: 'PSL Kittithada Pro',
@@ -2231,15 +2233,15 @@ const ProfileActivity = ({
                                         resizeMode={'stretch'}
                                         style={{
                                           width: '60%',
-                                          height: 32,
+                                          height: ViewScale(32),
                                         }}
                                         imageStyle={{
                                           width: '90%',
-                                          height: 32,
+                                          height: ViewScale(32),
                                         }}>
                                         <View
                                           style={{
-                                            left: 5,
+                                            left: ViewScale(5),
                                             justifyContent: 'center',
                                             width: '80%',
                                           }}>
@@ -2247,8 +2249,8 @@ const ProfileActivity = ({
                                             maxLength={15}
                                             style={{
                                               height:
-                                                Platform.OS === 'ios' ? 32 : 42,
-                                              fontSize: 23,
+                                                Platform.OS === 'ios' ? ViewScale(32) : ViewScale(42),
+                                              fontSize: ViewScale(23),
                                               color: '#73838f',
                                               fontWeight: 'normal',
                                               fontFamily: 'PSL Kittithada Pro',
@@ -2266,27 +2268,27 @@ const ProfileActivity = ({
                                         resizeMode={'stretch'}
                                         style={{
                                           width: '60%',
-                                          height: 32,
+                                          height: ViewScale(32),
                                         }}
                                         imageStyle={{
                                           width: '90%',
-                                          height: 32,
+                                          height: ViewScale(32),
                                         }}>
                                         <View
                                           style={{
-                                            left: 5,
+                                            left: ViewScale(5),
                                             justifyContent: 'center',
                                             width: '80%',
                                           }}>
                                           <TextInput
                                             maxLength={15}
                                             style={{
-                                              fontSize: 23,
+                                              fontSize: ViewScale(23),
                                               color: '#73838f',
                                               fontWeight: 'normal',
                                               fontFamily: 'PSL Kittithada Pro',
                                               height:
-                                                Platform.OS === 'ios' ? 32 : 42,
+                                                Platform.OS === 'ios' ? ViewScale(32) : ViewScale(42),
                                             }}
                                             value={contactdistrict}
                                             onChangeText={text =>
@@ -2299,7 +2301,7 @@ const ProfileActivity = ({
                                     <View
                                       style={{
                                         flexDirection: 'row',
-                                        marginTop: 3,
+                                        marginTop: ViewScale(3),
                                       }}>
                                       <Text
                                         style={[
@@ -2320,27 +2322,27 @@ const ProfileActivity = ({
                                         resizeMode={'stretch'}
                                         style={{
                                           width: '60%',
-                                          height: 32,
+                                          height: ViewScale(32),
                                         }}
                                         imageStyle={{
                                           width: '90%',
-                                          height: 32,
+                                          height: ViewScale(32),
                                         }}>
                                         <View
                                           style={{
-                                            left: 5,
+                                            left: ViewScale(5),
                                             justifyContent: 'center',
                                             width: '80%',
                                           }}>
                                           <TextInput
                                             maxLength={15}
                                             style={{
-                                              fontSize: 23,
+                                              fontSize: ViewScale(23),
                                               color: '#73838f',
                                               fontWeight: 'normal',
                                               fontFamily: 'PSL Kittithada Pro',
                                               height:
-                                                Platform.OS === 'ios' ? 32 : 42,
+                                                Platform.OS === 'ios' ? ViewScale(32) : ViewScale(42),
                                             }}
                                             value={contactprovince}
                                             onChangeText={text =>
@@ -2355,27 +2357,27 @@ const ProfileActivity = ({
                                         resizeMode={'stretch'}
                                         style={{
                                           width: '60%',
-                                          height: 32,
+                                          height: ViewScale(32),
                                         }}
                                         imageStyle={{
                                           width: '90%',
-                                          height: 32,
+                                          height: ViewScale(32),
                                         }}>
                                         <View
                                           style={{
-                                            left: 5,
+                                            left: ViewScale(5),
                                             justifyContent: 'center',
                                             width: '80%',
                                           }}>
                                           <TextInput
                                             maxLength={15}
                                             style={{
-                                              fontSize: 23,
+                                              fontSize: ViewScale(23),
                                               color: '#73838f',
                                               fontWeight: 'normal',
                                               fontFamily: 'PSL Kittithada Pro',
                                               height:
-                                                Platform.OS === 'ios' ? 32 : 42,
+                                                Platform.OS === 'ios' ? ViewScale(32) : ViewScale(42),
                                             }}
                                             value={contactpostcode}
                                             onChangeText={text =>
@@ -2392,7 +2394,7 @@ const ProfileActivity = ({
                           </View>
 
                           {getUser.userDetails.res_result.type === 3 && (
-                            <View style={{width: '80%', bottom: 10}}>
+                            <View style={{width: '80%', bottom: ViewScale(10)}}>
                               {Editdata === true ? (
                                 <View>
                                   <Text style={Styles.TextSub3}>
@@ -2407,7 +2409,7 @@ const ProfileActivity = ({
                                 </View>
                               ) : (
                                 <View
-                                  style={{right: 0, bottom: 10, marginTop: 10}}>
+                                  style={{right: 0, bottom: ViewScale(10), marginTop: ViewScale(10)}}>
                                   <View style={{width: '80%'}}>
                                     <Text style={Styles.fileText}>
                                       {I18n.t('translate_Edite1')}
@@ -2415,7 +2417,7 @@ const ProfileActivity = ({
                                   </View>
                                   <ImageBackground
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     source={require('../../image/TextinputContect.png')}
                                     style={{}}>
                                     <View
@@ -2426,12 +2428,12 @@ const ProfileActivity = ({
                                       <TextInput
                                         maxLength={15}
                                         style={{
-                                          fontSize: 23,
-                                          left: 4,
+                                          fontSize: ViewScale(23),
+                                          left: ViewScale(4),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
-                                          top: Platform.OS === 'ios' ? 0 : -8,
+                                          top: Platform.OS === 'ios' ? ViewScale(0) : ViewScale(-8),
                                         }}
                                         value={address}
                                         onChangeText={text => setaddress(text)}
@@ -2455,28 +2457,28 @@ const ProfileActivity = ({
                                   <View style={Styles.ViewSub26}>
                                     <ImageBackground
                                       resizeMode={'stretch'}
-                                      imageStyle={{width: '90%', height: 30}}
+                                      imageStyle={{width: '90%', height: ViewScale(30)}}
                                       source={require('../../image/TextinputPro2.png')}
                                       style={{
                                         width: '60%',
-                                        height: 30,
+                                        height: ViewScale(30),
                                       }}>
                                       <View
                                         style={{
-                                          left: 5,
+                                          left: ViewScale(5),
                                           justifyContent: 'center',
                                           width: '80%',
                                         }}>
                                         <TextInput
                                           maxLength={15}
                                           style={{
-                                            fontSize: 23,
+                                            fontSize: ViewScale(23),
                                             color: '#73838f',
                                             fontWeight: 'normal',
                                             fontFamily: 'PSL Kittithada Pro',
-                                            top: Platform.OS === 'ios' ? 0 : -2,
+                                            top: Platform.OS === 'ios' ? ViewScale(0) : ViewScale(-2),
                                             height:
-                                              Platform.OS === 'ios' ? 35 : 45,
+                                              Platform.OS === 'ios' ? ViewScale(35) : ViewScale(45),
                                           }}
                                           value={subdistrict}
                                           onChangeText={text =>
@@ -2488,25 +2490,25 @@ const ProfileActivity = ({
 
                                     <ImageBackground
                                       resizeMode={'stretch'}
-                                      imageStyle={{width: '90%', height: 30}}
+                                      imageStyle={{width: '90%', height: ViewScale(30)}}
                                       source={require('../../image/TextinputPro2.png')}
                                       style={{
                                         width: '60%',
-                                        height: 30,
+                                        height: ViewScale(30),
                                       }}>
                                       <View
                                         style={{
-                                          left: 5,
+                                          left: ViewScale(5),
                                           justifyContent: 'center',
                                           width: '80%',
                                         }}>
                                         <TextInput
                                           maxLength={15}
                                           style={{
-                                            top: Platform.OS === 'ios' ? 0 : -2,
+                                            top: Platform.OS === 'ios' ? ViewScale(0) : ViewScale(-2),
                                             height:
-                                              Platform.OS === 'ios' ? 35 : 45,
-                                            fontSize: 23,
+                                              Platform.OS === 'ios' ? ViewScale(35) : ViewScale(45),
+                                            fontSize: ViewScale(23),
                                             color: '#73838f',
                                             fontWeight: 'normal',
                                             fontFamily: 'PSL Kittithada Pro',
@@ -2522,7 +2524,7 @@ const ProfileActivity = ({
                                   <View
                                     style={{
                                       flexDirection: 'row',
-                                      marginTop: 3,
+                                      marginTop: ViewScale(3),
                                     }}>
                                     <Text
                                       style={[Styles.fileText, {width: '50%'}]}>
@@ -2538,28 +2540,28 @@ const ProfileActivity = ({
                                     <ImageBackground
                                       source={require('../../image/TextinputPro2.png')}
                                       resizeMode={'stretch'}
-                                      imageStyle={{width: '90%', height: 30}}
+                                      imageStyle={{width: '90%', height: ViewScale(30)}}
                                       style={{
                                         width: '60%',
-                                        height: 30,
+                                        height: ViewScale(30),
                                       }}>
                                       <View
                                         style={{
-                                          left: 5,
+                                          left: ViewScale(5),
                                           justifyContent: 'center',
-                                          top: -2,
+                                          top: ViewScale(-2),
                                           width: '80%',
                                         }}>
                                         <TextInput
                                           maxLength={15}
                                           style={{
-                                            fontSize: 23,
+                                            fontSize: ViewScale(23),
                                             color: '#73838f',
                                             fontWeight: 'normal',
                                             fontFamily: 'PSL Kittithada Pro',
-                                            top: Platform.OS === 'ios' ? 0 : -2,
+                                            top: Platform.OS === 'ios' ? ViewScale(0) : ViewScale(-2),
                                             height:
-                                              Platform.OS === 'ios' ? 40 : 45,
+                                              Platform.OS === 'ios' ? ViewScale(40) : ViewScale(45),
                                           }}
                                           value={province}
                                           onChangeText={text =>
@@ -2574,30 +2576,30 @@ const ProfileActivity = ({
                                       resizeMode={'stretch'}
                                       imageStyle={{
                                         width: '90%',
-                                        height: 30,
+                                        height: ViewScale(30),
                                       }}
                                       style={{
                                         width: '60%',
-                                        height: 30,
+                                        height: ViewScale(30),
                                       }}>
                                       <View style={{flex: 1}}>
                                         <View
                                           style={{
-                                            left: 5,
+                                            left: ViewScale(5),
                                             justifyContent: 'center',
                                             width: '80%',
                                           }}>
                                           <TextInput
                                             maxLength={15}
                                             style={{
-                                              fontSize: 23,
+                                              fontSize: ViewScale(23),
                                               color: '#73838f',
                                               fontWeight: 'normal',
                                               fontFamily: 'PSL Kittithada Pro',
                                               top:
-                                                Platform.OS === 'ios' ? 0 : -2,
+                                                Platform.OS === 'ios' ? 0 : ViewScale(-2),
                                               height:
-                                                Platform.OS === 'ios' ? 35 : 45,
+                                                Platform.OS === 'ios' ? ViewScale(35) : ViewScale(45),
                                             }}
                                             value={postcode}
                                             onChangeText={text =>
@@ -2621,13 +2623,13 @@ const ProfileActivity = ({
                                     flexDirection: 'column',
                                   }}>
                                   <Text
-                                    style={[Styles.TextSub3, {marginTop: -10}]}>
+                                    style={[Styles.TextSub3, {marginTop: ViewScale(-10)}]}>
                                     {address4}
                                   </Text>
                                   <View
                                     style={[
                                       Styles.ViewSub26,
-                                      {marginTop: 0, marginBottom: 8},
+                                      {marginTop: 0, marginBottom: ViewScale(8)},
                                     ]}>
                                     <Text style={Styles.TextSub3}>
                                       {country4}
@@ -2639,21 +2641,21 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 32}}
+                                    imageStyle={{width: '100%', height: ViewScale(32)}}
                                     style={{}}>
                                     <View
                                       style={{
-                                        height: 32,
-                                        marginTop: 2,
-                                        marginLeft: 6,
+                                        height: ViewScale(32),
+                                        marginTop: ViewScale(2),
+                                        marginLeft: ViewScale(6),
                                         width: '80%',
                                       }}>
                                       <TextInput
                                         maxLength={15}
                                         style={{
                                           height:
-                                            Platform.OS === 'ios' ? 32 : 40,
-                                          fontSize: 23,
+                                            Platform.OS === 'ios' ? ViewScale(32) : ViewScale(40),
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
@@ -2666,26 +2668,26 @@ const ProfileActivity = ({
                                   <View
                                     style={{
                                       width: '100%',
-                                      marginTop: 10,
-                                      marginBottom: 10,
+                                      marginTop: ViewScale(10),
+                                      marginBottom: ViewScale(10),
                                     }}>
                                     <ImageBackground
                                       source={require('../../image/TextinputContect.png')}
                                       resizeMode={'stretch'}
-                                      imageStyle={{width: '100%', height: 32}}
+                                      imageStyle={{width: '100%', height: ViewScale(32)}}
                                       style={{}}>
                                       <View
                                         style={{
-                                          marginTop: 2,
-                                          marginLeft: 6,
+                                          marginTop: ViewScale(2),
+                                          marginLeft: ViewScale(6),
                                           width: '80%',
-                                          height: 32,
+                                          height: ViewScale(32),
                                         }}>
                                         <TextInput
                                           style={{
                                             height:
-                                              Platform.OS === 'ios' ? 32 : 40,
-                                            fontSize: 23,
+                                              Platform.OS === 'ios' ? ViewScale(32) : ViewScale(40),
+                                            fontSize: ViewScale(23),
                                             color: '#73838f',
                                             fontWeight: 'normal',
                                             fontFamily: 'PSL Kittithada Pro',
@@ -2715,7 +2717,7 @@ const ProfileActivity = ({
                           style={{alignItems: 'center'}}>
                           <View
                             style={{
-                              marginTop: 0.5,
+                              marginTop: ViewScale(0.5),
                               borderBottomWidth: 1,
                               width: '89%',
                               borderBottomColor: '#cccccc40',
@@ -2727,11 +2729,11 @@ const ProfileActivity = ({
                               shadowOpacity: 0.9,
                             }}
                           />
-                          <View style={{width: '80%', marginTop: 10}}>
+                          <View style={{width: '80%', marginTop: ViewScale(10)}}>
                             <View>
                               <View
                                 style={{
-                                  marginTop: Platform.OS === 'android' ? 5 : 0,
+                                  marginTop: Platform.OS === 'android' ? ViewScale(5) : 0,
                                 }}>
                                 <Text style={Styles.TextSub1}>
                                   {I18n.t('translate_Prefix')}
@@ -2748,7 +2750,7 @@ const ProfileActivity = ({
                                   ) : (
                                     <ImageBackground
                                       resizeMode={'stretch'}
-                                      imageStyle={{width: '100%', height: 30}}
+                                      imageStyle={{width: '100%', height: ViewScale(30)}}
                                       source={require('../../image/TextinputContect.png')}
                                       style={{zIndex: 1}}>
                                       <RNPickerSelect
@@ -2776,12 +2778,12 @@ const ProfileActivity = ({
                                         }}>
                                         <Image
                                           style={{
-                                            width: 12,
-                                            height: 7,
-                                            bottom: 30,
-                                            right: -10,
+                                            width: ViewScale(12),
+                                            height: ViewScale(7),
+                                            bottom: ViewScale(30),
+                                            right: ViewScale(-10),
                                             top:
-                                              Platform.OS === 'ios' ? -16 : -30,
+                                              Platform.OS === 'ios' ? ViewScale(-16) : ViewScale(-30),
                                           }}
                                           source={require('../../image/arrowtitle.png')}
                                         />
@@ -2806,7 +2808,7 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     style={{}}>
                                     <RNPickerSelect
                                       useNativeAndroidPickerStyle={false}
@@ -2828,12 +2830,12 @@ const ProfileActivity = ({
                                       }}>
                                       <Image
                                         style={{
-                                          width: 12,
-                                          height: 7,
-                                          bottom: 30,
-                                          right: -10,
+                                          width: ViewScale(12),
+                                          height: ViewScale(7),
+                                          bottom: ViewScale(30),
+                                          right: ViewScale(-10),
                                           top:
-                                            Platform.OS === 'ios' ? -22 : -30,
+                                            Platform.OS === 'ios' ? ViewScale(-22) : ViewScale(-30),
                                         }}
                                         source={require('../../image/arrowtitle.png')}
                                       />
@@ -2853,7 +2855,7 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     style={{}}>
                                     <RNPickerSelect
                                       useNativeAndroidPickerStyle={false}
@@ -2875,12 +2877,12 @@ const ProfileActivity = ({
                                       }}>
                                       <Image
                                         style={{
-                                          width: 12,
-                                          height: 7,
-                                          bottom: 30,
-                                          right: -10,
+                                          width: ViewScale(12),
+                                          height: ViewScale(7),
+                                          bottom: ViewScale(30),
+                                          right: ViewScale(-10),
                                           top:
-                                            Platform.OS === 'ios' ? -15 : -28,
+                                            Platform.OS === 'ios' ? ViewScale(-15) : ViewScale(-28),
                                         }}
                                         source={require('../../image/arrowtitle.png')}
                                       />
@@ -2901,13 +2903,13 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     resizeMode={'stretch'}
                                     source={require('../../image/TextinputContect.png')}
-                                    imageStyle={{width: '100%', height: 32}}
+                                    imageStyle={{width: '100%', height: ViewScale(32)}}
                                     style={{}}>
                                     <View
                                       style={{
                                         marginTop: 0,
-                                        marginLeft: 4,
-                                        height: 32,
+                                        marginLeft: ViewScale(4),
+                                        height: ViewScale(32),
                                       }}>
                                       <RNPickerSelect
                                         mode="dropdown"
@@ -2932,12 +2934,12 @@ const ProfileActivity = ({
                                         }}>
                                         <Image
                                           style={{
-                                            width: 12,
-                                            height: 7,
+                                            width: ViewScale(12),
+                                            height: ViewScale(7),
 
-                                            right: -10,
+                                            right: ViewScale(-10),
                                             top:
-                                              Platform.OS === 'ios' ? -19 : -30,
+                                              Platform.OS === 'ios' ? ViewScale(-19) : ViewScale(-30),
                                           }}
                                           source={require('../../image/arrowtitle.png')}
                                         />
@@ -2948,7 +2950,7 @@ const ProfileActivity = ({
                               </View>
                             )}
                           </View>
-                          <View style={{width: '80%', marginTop: 5, bottom: 4}}>
+                          <View style={{width: '80%', marginTop: ViewScale(5), bottom: ViewScale(4)}}>
                             <View style={{left: 0}}>
                               <Text style={Styles.TextSub1}>
                                 {I18n.t('translate_name')}
@@ -2965,23 +2967,23 @@ const ProfileActivity = ({
                                     <ImageBackground
                                       source={require('../../image/TextinputContect.png')}
                                       resizeMode={'stretch'}
-                                      imageStyle={{width: '100%', height: 30}}
+                                      imageStyle={{width: '100%', height: ViewScale(30)}}
                                       style={{}}>
                                       <View
                                         style={{
-                                          top: -2,
-                                          marginLeft: 4,
+                                          top: ViewScale(-2),
+                                          marginLeft: ViewScale(4),
                                           width: '80%',
                                         }}>
                                         <TextInput
                                           defaultValue={name}
                                           style={{
-                                            fontSize: 23,
+                                            fontSize: ViewScale(23),
                                             color: '#73838f',
                                             fontWeight: 'normal',
                                             fontFamily: 'PSL Kittithada Pro',
                                             height:
-                                              Platform.OS === 'ios' ? 35 : 42,
+                                              Platform.OS === 'ios' ? ViewScale(35) : ViewScale(42),
                                           }}
                                           // value={name}
                                           onChangeText={text => setname(text)}
@@ -3008,17 +3010,17 @@ const ProfileActivity = ({
                                     style={{}}>
                                     <View
                                       style={{
-                                        marginLeft: 4,
+                                        marginLeft: ViewScale(4),
                                         width: '80%',
                                       }}>
                                       <TextInput
                                         style={{
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
                                           height:
-                                            Platform.OS === 'ios' ? 32 : 33,
+                                            Platform.OS === 'ios' ? ViewScale(32) : ViewScale(33),
                                           padding:
                                             Platform.OS === 'android'
                                               ? 3
@@ -3049,24 +3051,24 @@ const ProfileActivity = ({
                                     imageStyle={{width: '100%'}}
                                     style={{
                                       width: '100%',
-                                      height: 35,
+                                      height: ViewScale(35),
                                     }}>
                                     <View
                                       style={{
-                                        marginLeft: 4,
+                                        marginLeft: ViewScale(4),
                                         width: '80%',
 
-                                        top: Platform.OS === 'ios' ? 0 : -3,
+                                        top: Platform.OS === 'ios' ? ViewScale(0) : ViewScale(-3),
                                       }}>
                                       <TextInput
                                         style={{
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
 
                                           height:
-                                            Platform.OS === 'ios' ? 35 : 45,
+                                            Platform.OS === 'ios' ? ViewScale(35) : ViewScale(45),
                                         }}
                                         value={name}
                                         onChangeText={text => setname(text)}
@@ -3088,17 +3090,17 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     style={{}}>
-                                    <View style={{marginTop: 2, marginLeft: 4}}>
+                                    <View style={{marginTop: ViewScale(2), marginLeft: ViewScale(4)}}>
                                       <TextInput
                                         style={{
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
                                           height:
-                                            Platform.OS === 'ios' ? 32 : 40,
+                                            Platform.OS === 'ios' ? ViewScale(32) : ViewScale(40),
                                         }}
                                         value={nameEN}
                                         onChangeText={text => setnameEN(text)}
@@ -3117,7 +3119,7 @@ const ProfileActivity = ({
                               {getUser.userDetails.res_result.type === 1 && (
                                 <View>
                                   {Editdata === true ? (
-                                    <View style={{left: 0, marginBottom: 10}}>
+                                    <View style={{left: 0, marginBottom: ViewScale(10)}}>
                                       <Text style={Styles.TextSub3}>
                                         {lname}
                                       </Text>
@@ -3126,23 +3128,23 @@ const ProfileActivity = ({
                                     <ImageBackground
                                       source={require('../../image/TextinputContect.png')}
                                       resizeMode={'stretch'}
-                                      imageStyle={{width: '100%', height: 30}}
+                                      imageStyle={{width: '100%', height: ViewScale(30)}}
                                       style={{}}>
                                       <View
                                         style={{
-                                          marginLeft: 4,
+                                          marginLeft: ViewScale(4),
                                           width: '80%',
                                           marginTop:
-                                            Platform.OS === 'ios' ? -2 : 0,
+                                            Platform.OS === 'ios' ? ViewScale(-2) : ViewScale(0),
                                         }}>
                                         <TextInput
                                           style={{
-                                            fontSize: 23,
+                                            fontSize: ViewScale(23),
                                             color: '#73838f',
                                             fontWeight: 'normal',
                                             fontFamily: 'PSL Kittithada Pro',
                                             height:
-                                              Platform.OS === 'ios' ? 35 : 42,
+                                              Platform.OS === 'ios' ? ViewScale(35) : ViewScale(42),
                                           }}
                                           defaultValue={lname}
                                           onChangeText={text => {
@@ -3160,7 +3162,7 @@ const ProfileActivity = ({
                             {getUser.userDetails.res_result.type === 2 && (
                               <View
                                 style={{
-                                  height: Platform.OS === 'ios' ? 35 : 60,
+                                  height: Platform.OS === 'ios' ? ViewScale(35) : ViewScale(60),
                                 }}>
                                 {Editdata === true ? (
                                   <View style={{left: 0}}>
@@ -3176,18 +3178,18 @@ const ProfileActivity = ({
                                     style={{}}>
                                     <View
                                       style={{
-                                        marginLeft: 4,
+                                        marginLeft: ViewScale(4),
                                         width: '80%',
                                       }}>
                                       <TextInput
                                         style={{
                                           height:
-                                            Platform.OS === 'ios' ? 32 : 33,
+                                            Platform.OS === 'ios' ? ViewScale(32) : ViewScale(33),
                                           padding:
                                             Platform.OS === 'android'
                                               ? 3
                                               : null,
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
@@ -3203,7 +3205,7 @@ const ProfileActivity = ({
                             {getUser.userDetails.res_result.type === 3 && (
                               <View
                                 style={{
-                                  height: Platform.OS === 'ios' ? 35 : 60,
+                                  height: Platform.OS === 'ios' ? ViewScale(35) : ViewScale(60),
                                 }}>
                                 {Editdata === true ? (
                                   <View style={{left: 0}}>
@@ -3217,9 +3219,9 @@ const ProfileActivity = ({
                                     style={{}}>
                                     <View
                                       style={{
-                                        marginLeft: 4,
+                                        marginLeft: ViewScale(4),
                                         width: '80%',
-                                        height: Platform.OS === 'ios' ? 30 : 35,
+                                        height: Platform.OS === 'ios' ? ViewScale(30) : ViewScale(35),
                                       }}>
                                       <TextInput
                                         style={{
@@ -3228,9 +3230,9 @@ const ProfileActivity = ({
                                               ? 5
                                               : null,
                                           marginTop:
-                                            Platform.OS === 'ios' ? 6 : 0,
+                                            Platform.OS === 'ios' ? ViewScale(6) : ViewScale(0),
                                           // marginTop:Platform.OS === 'ios' ? -4 : 15,
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
@@ -3247,10 +3249,10 @@ const ProfileActivity = ({
                             {getUser.userDetails.res_result.type === 4 && (
                               <View
                                 style={{
-                                  height: Platform.OS === 'ios' ? 30 : 55,
+                                  height: Platform.OS === 'ios' ? ViewScale(30) : ViewScale(55),
                                 }}>
                                 {Editdata === true ? (
-                                  <View style={{left: 0, marginBottom: 10}}>
+                                  <View style={{left: 0, marginBottom: ViewScale(10)}}>
                                     <Text style={Styles.TextSub3}>
                                       {lnameEN}
                                     </Text>
@@ -3263,17 +3265,17 @@ const ProfileActivity = ({
                                     style={{}}>
                                     <View
                                       style={{
-                                        marginLeft: 4,
+                                        marginLeft: ViewScale(4),
                                       }}>
                                       <TextInput
                                         style={{
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
-                                          height: 35,
+                                          height: ViewScale(35),
                                           padding:
-                                            Platform.OS === 'ios' ? 0 : 5,
+                                            Platform.OS === 'ios' ? 0 : ViewScale(5),
                                         }}
                                         value={lnameEN}
                                         onChangeText={text => setlnameEN(text)}
@@ -3286,7 +3288,7 @@ const ProfileActivity = ({
                           </View>
                           <View
                             style={{
-                              marginTop: Editdata === true ? 0 : 10,
+                              marginTop: Editdata === true ? 0 : ViewScale(10),
                               borderBottomWidth: 1,
                               width: '89%',
                               borderBottomColor: '#cccccc40',
@@ -3317,8 +3319,8 @@ const ProfileActivity = ({
                             <View
                               style={{
                                 width: '80%',
-                                marginTop: 10,
-                                marginBottom: 10,
+                                marginTop: ViewScale(10),
+                                marginBottom: ViewScale(10),
                               }}>
                               <Text style={Styles.TextSub1}>
                                 {I18n.t('translate_Idcard')}
@@ -3334,18 +3336,18 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     style={{}}>
                                     <View
                                       style={{
-                                        marginTop: 0,
-                                        marginLeft: 4,
+                                        marginTop: ViewScale(0),
+                                        marginLeft: ViewScale(4),
                                       }}>
                                       <TextInput
                                         style={{
                                           height:
-                                            Platform.OS === 'ios' ? 35 : 42,
-                                          fontSize: 23,
+                                            Platform.OS === 'ios' ? ViewScale(35) : ViewScale(42),
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
@@ -3391,9 +3393,9 @@ const ProfileActivity = ({
                           <View
                             style={{
                               left: 0,
-                              marginTop: 10,
+                              marginTop: ViewScale(10),
                               width: '80%',
-                              marginBottom: 10,
+                              marginBottom: ViewScale(10),
                             }}>
                             <Text style={Styles.TextSub1}>
                               {I18n.t('translate_email')}
@@ -3408,21 +3410,21 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     style={{}}>
                                     <View
                                       style={{
-                                        marginLeft: 4,
-                                        bottom: 5,
+                                        marginLeft: ViewScale(4),
+                                        bottom: ViewScale(5),
                                       }}>
                                       <TextInput
                                         style={{
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
                                           height:
-                                            Platform.OS === 'ios' ? 35 : 42,
+                                            Platform.OS === 'ios' ? ViewScale(35) : ViewScale(42),
                                         }}
                                         value={email}
                                         onChangeText={text => setemail(text)}
@@ -3444,22 +3446,22 @@ const ProfileActivity = ({
                                     resizeMode={'stretch'}
                                     style={{
                                       width: '100%',
-                                      height: 30,
+                                      height: ViewScale(30),
                                     }}>
                                     <View
                                       style={{
-                                        marginTop: 2,
-                                        marginLeft: 4,
-                                        bottom: 5,
+                                        marginTop: ViewScale(2),
+                                        marginLeft: ViewScale(4),
+                                        bottom: ViewScale(5),
                                       }}>
                                       <TextInput
                                         style={{
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
                                           height:
-                                            Platform.OS === 'ios' ? 32 : 40,
+                                            Platform.OS === 'ios' ? ViewScale(32) : ViewScale(40),
                                         }}
                                         value={email}
                                         onChangeText={text => setemail(text)}
@@ -3480,22 +3482,22 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     style={{}}>
                                     <View
                                       style={{
-                                        marginTop: 2,
-                                        marginLeft: 4,
-                                        bottom: 5,
+                                        marginTop: ViewScale(2),
+                                        marginLeft: ViewScale(4),
+                                        bottom: ViewScale(5),
                                       }}>
                                       <TextInput
                                         style={{
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
                                           height:
-                                            Platform.OS === 'ios' ? 35 : 40,
+                                            Platform.OS === 'ios' ? ViewScale(35) : ViewScale(40),
                                         }}
                                         value={email}
                                         onChangeText={text => setemail(text)}
@@ -3515,22 +3517,22 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     style={{}}>
                                     <View
                                       style={{
-                                        marginTop: 2,
-                                        marginLeft: 4,
-                                        bottom: 5,
+                                        marginTop: ViewScale(2),
+                                        marginLeft: ViewScale(4),
+                                        bottom: ViewScale(5),
                                       }}>
                                       <TextInput
                                         style={{
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
                                           height:
-                                            Platform.OS === 'ios' ? 35 : 40,
+                                            Platform.OS === 'ios' ? ViewScale(35) : ViewScale(40),
                                         }}
                                         keyboardType="email-address"
                                         value={email}
@@ -3548,7 +3550,7 @@ const ProfileActivity = ({
                               left: 0,
                               width: '80%',
                               marginTop: 0,
-                              marginBottom: 10,
+                              marginBottom: ViewScale(10),
                             }}>
                             <Text style={Styles.TextSub1}>
                               {I18n.t('translate_Phonenumber')}
@@ -3577,11 +3579,11 @@ const ProfileActivity = ({
                                     />
                                     <Image
                                       style={{
-                                        width: 12,
-                                        height: 7,
+                                        width: ViewScale(12),
+                                        height: ViewScale(7),
 
-                                        right: 3,
-                                        top: Platform.OS === 'ios' ? 1 : 3,
+                                        right: ViewScale(3),
+                                        top: Platform.OS === 'ios' ? ViewScale(1) : ViewScale(3),
                                       }}
                                       source={require('../../image/arrowtitle.png')}
                                     />
@@ -3594,7 +3596,7 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     style={{
                                       flexDirection: 'row',
                                       alignItems: 'center',
@@ -3602,9 +3604,9 @@ const ProfileActivity = ({
                                     <View style={{bottom: 0}}>
                                       <CountryPicker
                                         containerButtonStyle={{
-                                          bottom: 4,
-                                          marginTop: 4,
-                                          marginLeft: 5,
+                                          bottom: ViewScale(4),
+                                          marginTop: ViewScale(4),
+                                          marginLeft: ViewScale(5),
                                         }}
                                         countryCode={countryCode}
                                         withFlag={true}
@@ -3618,25 +3620,25 @@ const ProfileActivity = ({
                                       />
                                       <Image
                                         style={{
-                                          width: 12,
-                                          height: 7,
+                                          width: ViewScale(12),
+                                          height: ViewScale(7),
 
-                                          left: 37,
+                                          left: ViewScale(37),
                                           top:
-                                            Platform.OS === 'ios' ? -23 : -19,
+                                            Platform.OS === 'ios' ? ViewScale(-23) : ViewScale(-19),
                                         }}
                                         source={require('../../image/arrowtitle.png')}
                                       />
                                     </View>
                                     <View
                                       style={{
-                                        marginTop: -12,
-                                        marginLeft: 14,
+                                        marginTop: ViewScale(-12),
+                                        marginLeft: ViewScale(14),
                                         flex: 1,
                                       }}>
                                       <TextInput
                                         style={{
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
@@ -3660,7 +3662,7 @@ const ProfileActivity = ({
                                     }}>
                                     <CountryPicker
                                       close={true}
-                                      containerButtonStyle={{bottom: 0}}
+                                      containerButtonStyle={{bottom: ViewScale(0)}}
                                       countryCode={countryCode}
                                       withFlag={true}
                                       withFilter={true}
@@ -3673,11 +3675,11 @@ const ProfileActivity = ({
                                     />
                                     <Image
                                       style={{
-                                        width: 12,
-                                        height: 7,
-                                        bottom: 0,
+                                        width: ViewScale(12),
+                                        height: ViewScale(7),
+                                        bottom: ViewScale(0),
 
-                                        right: 3,
+                                        right: ViewScale(3),
                                         top: Platform.OS === 'ios' ? 1 : 1,
                                       }}
                                       source={require('../../image/arrowtitle.png')}
@@ -3691,18 +3693,18 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     style={{
                                       // width: 355,
                                       // height: 30,
                                       flexDirection: 'row',
                                       alignItems: 'center',
                                     }}>
-                                    <View style={{bottom: 0}}>
+                                    <View style={{bottom: ViewScale(0)}}>
                                       <CountryPicker
                                         containerButtonStyle={{
-                                          bottom: 0,
-                                          marginLeft: 10,
+                                          bottom: ViewScale(0),
+                                          marginLeft: ViewScale(10),
                                         }}
                                         countryCode={countryCode}
                                         withFlag={true}
@@ -3716,30 +3718,30 @@ const ProfileActivity = ({
                                       />
                                       <Image
                                         style={{
-                                          width: 12,
-                                          height: 7,
-                                          bottom: 0,
+                                          width: ViewScale(12),
+                                          height: ViewScale(7),
+                                          bottom: ViewScale(0),
 
-                                          left: 43,
+                                          left: ViewScale(43),
                                           top:
-                                            Platform.OS === 'ios' ? -19 : -15,
+                                            Platform.OS === 'ios' ? ViewScale(-19) : ViewScale(-15),
                                         }}
                                         source={require('../../image/arrowtitle.png')}
                                       />
                                     </View>
                                     <View
                                       style={{
-                                        marginTop: 2,
-                                        marginLeft: 10,
-                                        bottom: 5,
+                                        marginTop: ViewScale(2),
+                                        marginLeft: ViewScale(10),
+                                        bottom: ViewScale(5),
                                       }}>
                                       <TextInput
                                         style={{
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
-                                          padding: 5,
+                                          padding: ViewScale(5),
                                         }}
                                         value={phoneN}
                                         keyboardType={'phone-pad'}
@@ -3761,7 +3763,7 @@ const ProfileActivity = ({
                                     }}>
                                     <CountryPicker
                                       close={true}
-                                      containerButtonStyle={{bottom: 0}}
+                                      containerButtonStyle={{bottom: ViewScale(0)}}
                                       countryCode={countryCode}
                                       withFlag={true}
                                       withFilter={true}
@@ -3774,12 +3776,12 @@ const ProfileActivity = ({
                                     />
                                     <Image
                                       style={{
-                                        width: 12,
-                                        height: 7,
-                                        bottom: 0,
+                                        width: ViewScale(12),
+                                        height: ViewScale(7),
+                                        bottom: ViewScale(0),
 
-                                        right: 3,
-                                        top: Platform.OS === 'ios' ? 1 : -5,
+                                        right: ViewScale(3),
+                                        top: Platform.OS === 'ios' ? ViewScale(1) : ViewScale(-5),
                                       }}
                                       source={require('../../image/arrowtitle.png')}
                                     />
@@ -3792,13 +3794,13 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     style={{
                                       flexDirection: 'row',
                                       alignItems: 'center',
                                     }}>
                                     <CountryPicker
-                                      containerButtonStyle={{bottom: 5}}
+                                      containerButtonStyle={{bottom: ViewScale(5)}}
                                       countryCode={countryCode}
                                       withFlag={true}
                                       withFilter={true}
@@ -3811,29 +3813,29 @@ const ProfileActivity = ({
                                     />
                                     <Image
                                       style={{
-                                        width: 12,
-                                        height: 7,
-                                        bottom: 0,
+                                        width: ViewScale(12),
+                                        height: ViewScale(7),
+                                        bottom: ViewScale(0),
 
-                                        right: 3,
-                                        top: Platform.OS === 'ios' ? -5 : -5,
+                                        right: ViewScale(3),
+                                        top: Platform.OS === 'ios' ? ViewScale(-5) : ViewScale(-5),
                                       }}
                                       source={require('../../image/arrowtitle.png')}
                                     />
 
                                     <View
                                       style={{
-                                        marginTop: 2,
-                                        marginLeft: 4,
-                                        bottom: 5,
+                                        marginTop: ViewScale(2),
+                                        marginLeft: ViewScale(4),
+                                        bottom: ViewScale(5),
                                       }}>
                                       <TextInput
                                         style={{
-                                          fontSize: 23,
+                                          fontSize: ViewScale(23),
                                           color: '#73838f',
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
-                                          padding: 5,
+                                          padding: ViewScale(5),
                                         }}
                                         keyboardType={'phone-pad'}
                                         value={phoneN}
@@ -3868,12 +3870,12 @@ const ProfileActivity = ({
                                     />
                                     <Image
                                       style={{
-                                        width: 12,
-                                        height: 7,
-                                        bottom: 0,
+                                        width: ViewScale(12),
+                                        height: ViewScale(7),
+                                        bottom: ViewScale(0),
 
-                                        right: 3,
-                                        top: Platform.OS === 'ios' ? 1 : 1,
+                                        right: ViewScale(3),
+                                        top: Platform.OS === 'ios' ? ViewScale(1) : ViewScale(1),
                                       }}
                                       source={require('../../image/arrowtitle.png')}
                                     />
@@ -3887,7 +3889,7 @@ const ProfileActivity = ({
                                   <ImageBackground
                                     source={require('../../image/TextinputContect.png')}
                                     resizeMode={'stretch'}
-                                    imageStyle={{width: '100%', height: 30}}
+                                    imageStyle={{width: '100%', height: ViewScale(30)}}
                                     style={{
                                       // width: 355,
                                       // height: 30,
@@ -3911,14 +3913,14 @@ const ProfileActivity = ({
                                     />
                                     <Image
                                       style={{
-                                        width: 10,
-                                        height: 7,
+                                        width: ViewScale(10),
+                                        height: ViewScale(7),
 
-                                        top: Platform.OS === 'ios' ? 1 : -2,
+                                        top: Platform.OS === 'ios' ? ViewScale(1) : ViewScale(-2),
                                       }}
                                       source={require('../../image/arrowtitle.png')}
                                     />
-                                    <View style={{marginLeft: 10}}>
+                                    <View style={{marginLeft: ViewScale(10)}}>
                                       <TextInput
                                         style={{
                                           // marginTop: Platform.OS === 'ios' ? 1 : -1,
@@ -3927,9 +3929,9 @@ const ProfileActivity = ({
                                           fontWeight: 'normal',
                                           fontFamily: 'PSL Kittithada Pro',
                                           height:
-                                            Platform.OS === 'ios' ? 32 : 35,
+                                            Platform.OS === 'ios' ? ViewScale(32) : ViewScale(35),
                                           padding:
-                                            Platform.OS === 'android' ? 5 : 0,
+                                            Platform.OS === 'android' ? ViewScale(5) : ViewScale(0),
                                         }}
                                         keyboardType={'phone-pad'}
                                         value={phoneN}
@@ -3973,7 +3975,7 @@ const ProfileActivity = ({
                               {dataAwardType.length === 0 ? (
                                 <View>
                                   <Text
-                                    style={{fontSize: 24, color: '#cad8e1'}}>
+                                    style={{fontSize: ViewScale(24), color: '#cad8e1'}}>
                                     {I18n.t('translate_NotAwards')}
                                   </Text>
                                 </View>
@@ -4006,13 +4008,13 @@ const ProfileActivity = ({
                       </View>
                     </View>
                   </View>
-                  <View style={{marginBottom: 20, marginTop: 20, width: '90%'}}>
+                  <View style={{marginBottom: ViewScale(20), marginTop: ViewScale(20), width: '90%'}}>
                     {Editdata === false && (
                       <TouchableOpacity
                         onPress={() => {
                           setAcceptEdit(true);
                         }}
-                        style={[Styles.TocuhSub3, {marginBottom: 10}]}>
+                        style={[Styles.TocuhSub3, {marginBottom: ViewScale(10)}]}>
                         <Text style={Styles.TextSub2}>
                           {I18n.t('translate_Savechanges')}
                         </Text>
@@ -4058,14 +4060,14 @@ const ProfileActivity = ({
 
               {SelecIndex === 1 && (
                 <View style={{}}>
-                  <View style={[Styles.flexDirectionRow, {marginBottom: 10}]}>
-                    <View style={{marginHorizontal: 8}}>
+                  <View style={[Styles.flexDirectionRow, {marginBottom: ViewScale(10)}]}>
+                    <View style={{marginHorizontal: ViewScale(8)}}>
                       <View style={[Styles.ViewSub37]}>
                         <Text
                           style={{
                             color: '#2d6dc4',
                             textAlign:'center',
-                            fontSize: 16,
+                            fontSize: ViewScale(16),
                             fontFamily: 'Mitr-Regular',
                           }}>
                           {I18n.t('translate_Depart_Act1')}
@@ -4073,19 +4075,19 @@ const ProfileActivity = ({
                       </View>
                     </View>
                   </View>
-                  <View style={[Styles.flexDirectionRow, {marginBottom: 10}]}>
+                  <View style={[Styles.flexDirectionRow, {marginBottom: ViewScale(10)}]}>
                     <View
                       style={[
                         Styles.ViewSub37,
-                        {flex: 1, marginHorizontal: 8},
+                        {flex: 1, marginHorizontal: ViewScale(8)},
                       ]}>
                       <Text style={[Styles.TextHearderSub1]}>
-                        {I18n.locale === 'th' ? 'กิจกกรมกรม' : 'Activities'}
+                        {I18n.locale === 'th' ? 'กิจกรรมกรม' : 'Activities'}
                       </Text>
                     </View>
                     <View style={[Styles.ViewSub37, {flex: 0.3}]}>
                       <Image
-                        style={{width: 60, height: 25}}
+                        style={{width: ViewScale(60), height: ViewScale(25)}}
                         source={require('../../image/CLDITP.png')}
                       />
                     </View>
@@ -4102,7 +4104,7 @@ const ProfileActivity = ({
               <View style={{alignItems: 'center'}}>
                 <View
                   style={{
-                    marginTop: 0.5,
+                    marginTop: ViewScale(0.5),
                     borderBottomWidth: 1,
                     width: '89%',
                     borderBottomColor: '#cccccc40',
@@ -4120,7 +4122,7 @@ const ProfileActivity = ({
                 source={require('../../image/editbackground5.png')}
                 imageStyle={Styles.ImageBackgroundEdite}
                 style={{alignItems: 'center'}}>
-                <View style={{width: '80%', marginTop: 10}}>
+                <View style={{width: '80%', marginTop: ViewScale(10)}}>
                   <Text style={Styles.TextSub1}>
                     {I18n.t('translate_Prefix')}
                   </Text>
@@ -4141,7 +4143,7 @@ const ProfileActivity = ({
                     </View>
                   </View>
                 </View>
-                <View style={{width: '80%', marginBottom: 10}}>
+                <View style={{width: '80%', marginBottom: ViewScale(10)}}>
                   <Text style={Styles.TextSub1}>
                     {I18n.t('translate_lname')}
                   </Text>
@@ -4155,7 +4157,7 @@ const ProfileActivity = ({
                 </View>
                 <View
                   style={{
-                    marginTop: 0.5,
+                    marginTop: ViewScale(0.5),
                     borderBottomWidth: 1,
                     width: '89%',
                     borderBottomColor: '#cccccc40',
@@ -4180,8 +4182,8 @@ const ProfileActivity = ({
                 <View
                   style={{
                     width: '80%',
-                    marginTop: 10,
-                    marginBottom: 10,
+                    marginTop: ViewScale(10),
+                    marginBottom: ViewScale(10),
                   }}>
                   <Text style={Styles.TextSub1}>
                     {I18n.t('translate_Idcard')}
@@ -4202,7 +4204,7 @@ const ProfileActivity = ({
                 }}
                 style={{alignItems: 'center'}}
                 source={require('../../image/editbackground7.png')}>
-                <View style={{left: 0, marginTop: 10, width: '80%'}}>
+                <View style={{left: 0, marginTop: ViewScale(10), width: '80%'}}>
                   <Text style={Styles.TextSub1}>
                     {I18n.t('translate_email')}
                   </Text>
@@ -4212,7 +4214,7 @@ const ProfileActivity = ({
                     {getUser.userDetails.res_result.email}
                   </Text>
                 </View>
-                <View style={{left: 0, width: '80%', marginTop: 10}}>
+                <View style={{left: 0, width: '80%', marginTop: ViewScale(10)}}>
                   <Text style={Styles.TextSub1}>
                     {I18n.t('translate_Phonenumber')}
                   </Text>
@@ -4229,13 +4231,13 @@ const ProfileActivity = ({
                     }}>
                     <View>
                       <Image
-                        style={{width: 20, height: 13}}
+                        style={{width: ViewScale(20), height: ViewScale(13)}}
                         source={require('../../image/thai.png')}
                       />
                     </View>
-                    <View style={{marginLeft: 5}}>
+                    <View style={{marginLeft: ViewScale(5)}}>
                       <Image
-                        style={{width: 7, height: 4}}
+                        style={{width: ViewScale(7), height: ViewScale(4)}}
                         source={require('../../image/arrowdrop.png')}
                       />
                     </View>
@@ -4247,7 +4249,7 @@ const ProfileActivity = ({
                 </View>
                 <View
                   style={{
-                    marginTop: 0.5,
+                    marginTop: ViewScale(0.5),
                     borderBottomWidth: 1,
                     width: '89%',
                     borderBottomColor: '#cccccc40',
@@ -4278,24 +4280,24 @@ const mapStateToProps = state => ({
 
 const pickerSelectStyles2 = StyleSheet.create({
   inputIOS: {
-    fontSize: 23,
+    fontSize: ViewScale(23),
     color: '#73838f',
-    paddingHorizontal: 10,
+    paddingHorizontal: ViewScale(10),
     justifyContent: 'center',
 
-    paddingTop: Platform.OS === 'ios' ? 2 : -3,
+    paddingTop: Platform.OS === 'ios' ? ViewScale(2) : ViewScale(-3),
     paddingBottom: 5,
   },
   inputAndroid: {
-    height: 40,
-    fontSize: 23,
+    height: ViewScale(40),
+    fontSize: ViewScale(23),
     color: '#73838f',
     fontWeight: 'normal',
     fontFamily: 'PSL Kittithada Pro',
     width: '100%',
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    paddingRight: 70,
+    paddingHorizontal: ViewScale(10),
+    paddingVertical: ViewScale(8),
+    paddingRight: ViewScale(70),
   },
 });
 

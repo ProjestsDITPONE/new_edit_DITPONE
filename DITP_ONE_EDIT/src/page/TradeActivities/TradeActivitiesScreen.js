@@ -2015,8 +2015,8 @@ class TradeActivitiesScreen extends React.Component {
                 )}
 
                 <SegmentedControlTab
-                 tabTextStyle={{fontSize: ViewScale(16)}}
-                 activeTabTextStyle={{fontSize : ViewScale(16),}}
+                 tabTextStyle={{fontSize: ViewScale(18)}}
+                 activeTabTextStyle={{fontSize : ViewScale(18),}}
                   values={[
                     I18n.t('translate_Recommended_activities'),
                     I18n.t('translate_All_activities'),

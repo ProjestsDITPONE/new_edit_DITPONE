@@ -22,6 +22,7 @@ import Headers from '../../components/Headers';
 import RNPickerSelect from 'react-native-picker-select';
 import Headerstage from '../../components/Headerstage';
 import I18n from '../../utils/I18n';
+import { ViewScale } from '../../config/ViewScale';
 import {
   ListItem,
   Overlay,
@@ -711,14 +712,14 @@ class SearchData extends Component {
       <View
         style={[
           Styles2.footer,
-          {marginTop: this.state.Recommend.length == 0 ? height * 0.15 : 0},
+          {marginTop: this.state.Recommend.length == 0 ? height * ViewScale(0.15) : ViewScale(0)},
         ]}>
         {this.state.fetching_from_server ? (
-          <ActivityIndicator color="black" style={{margin: 15}} />
+          <ActivityIndicator color="black" style={{margin: ViewScale(15)}} />
         ) : (
           <View>
             {this.state.Recommend.length == 0 ? (
-              <Text style={{fontSize: 22}}>{I18n.t('translate_Nodata')}</Text>
+              <Text style={{fontSize: ViewScale(21)}}>{I18n.t('translate_Nodata')}</Text>
             ) : null}
           </View>
         )}
@@ -890,8 +891,8 @@ class SearchData extends Component {
       <View style={{backgroundColor: '#f7f9fc'}}>
         <ListItem
           containerStyle={{
-            marginBottom: 8,
-            borderRadius: 10,
+            marginBottom: ViewScale(8),
+            borderRadius: ViewScale(10),
             alignSelf: 'center',
             flex: 1,
             width: '95%',
@@ -959,14 +960,14 @@ class SearchData extends Component {
                   }>
                   <Image
                     source={{uri: item.activity_list_logo_thumb}}
-                    style={{width: 60, height: 55, borderRadius: 15}}
+                    style={{width: ViewScale(60), height: ViewScale(55), borderRadius: ViewScale(15)}}
                   />
 
                   <Text
                     style={{
-                      fontSize: 15,
+                      fontSize: ViewScale(15),
                       color: '#6f819a',
-                      marginTop: 8,
+                      marginTop: ViewScale(8),
                       textAlign: 'center',
                     }}>
                     {this.Star_Date(item.activity_list_start_date)}
@@ -1026,7 +1027,7 @@ class SearchData extends Component {
                     }
                     numberOfLines={2}
                     style={{
-                      fontSize: 19,
+                      fontSize: ViewScale(18),
                       color: '#4b4b4b',
                       fontFamily: 'Kittithada Bold 75',
                     }}>
@@ -1038,19 +1039,19 @@ class SearchData extends Component {
                 <View
                   style={{
                     width: '30%',
-                    bottom: 10,
+                    bottom: ViewScale(10),
                   }}>
                   {this.state.CheckRecom.length > 0 ? (
                     <CheckBox
                       checkedIcon={
                         <Image
-                          style={{width: 25, height: 25}}
+                          style={{width: ViewScale(25), height: ViewScale(25)}}
                           source={require('../../image/PickerMarket.png')}
                         />
                       }
                       uncheckedIcon={
                         <Image
-                          style={{width: 25, height: 25}}
+                          style={{width: ViewScale(25), height: ViewScale(25)}}
                           source={require('../../image/shoping.png')}
                         />
                       }
@@ -1063,13 +1064,13 @@ class SearchData extends Component {
                     <CheckBox
                       checkedIcon={
                         <Image
-                          style={{width: 25, height: 25}}
+                          style={{width: ViewScale(25), height: ViewScale(25)}}
                           source={require('../../image/PickerMarket.png')}
                         />
                       }
                       uncheckedIcon={
                         <Image
-                          style={{width: 25, height: 25}}
+                          style={{width: ViewScale(25), height: ViewScale(25)}}
                           source={require('../../image/shoping.png')}
                         />
                       }
@@ -1081,22 +1082,22 @@ class SearchData extends Component {
                   )}
                 </View>
               </View>
-              <View style={{flex: 1, marginBottom: 10}}>
+              <View style={{flex: 1, marginBottom: ViewScale(10)}}>
                 <View style={Styles2.ViewImgList}>
                   {item.activity_list_location_th === 'ออนไลน์' ? (
                     <Image
-                      style={{width: 13, height: 13, top: 0}}
+                      style={{width: ViewScale(13), height: ViewScale(13), top: ViewScale(0)}}
                       source={require('../../image/WWW.png')}
                     />
                   ) : (
                     <Image
-                      style={{width: 9, height: 12, top: 0}}
+                      style={{width: ViewScale(9), height: ViewScale(12), top: ViewScale(0)}}
                       source={require('../../image/makerlocation.png')}
                     />
                   )}
                   <Text
                     numberOfLines={2}
-                    style={{color: '#8b9bb0', fontSize: 16}}>
+                    style={{color: '#8b9bb0', fontSize: ViewScale(16)}}>
                     {' '}
                     {item.activity_list_location_th}
                   </Text>
@@ -1113,9 +1114,9 @@ class SearchData extends Component {
                   }}>
                   <Image
                     style={{
-                      width: 16,
-                      height: 12,
-                      top: 3,
+                      width: ViewScale(16),
+                      height: ViewScale(12),
+                      top: ViewScale(3),
                       borderWidth: 0.4,
                       borderColor: '#4b4b4b',
                     }}
@@ -1142,7 +1143,7 @@ class SearchData extends Component {
             </View>
           }
           subtitle={
-            <View style={[Styles2.ViewSub10, {marginTop: 15, flex: 1}]}>
+            <View style={[Styles2.ViewSub10, {marginTop: ViewScale(15), flex: 1}]}>
               <View>
                 {this.props.getUser.userDetails.res_result.type != 6 &&
                 this.props.getUser.userDetails.res_result.type != 4 &&
@@ -1159,7 +1160,7 @@ class SearchData extends Component {
                     }>
                     <Text
                       style={{
-                        fontSize: 17,
+                        fontSize: ViewScale(16),
                         color: '#FFFFFF',
                         fontFamily: 'PSL Kittithada Pro',
                       }}>
@@ -1216,12 +1217,12 @@ class SearchData extends Component {
                 }
                 style={Styles2.TouchRead}>
                 <Image
-                  style={{width: 17, height: 13}}
+                  style={{width: ViewScale(17), height: ViewScale(13)}}
                   source={require('../../image/readDetail.png')}
                 />
                 <Text
                   style={{
-                    fontSize: 15,
+                    fontSize: ViewScale(14),
                     color: '#7fadec',
                     fontFamily: 'PSL Kittithada Pro',
                   }}>
@@ -1237,7 +1238,7 @@ class SearchData extends Component {
                 style={{flex: 1, alignItems: 'flex-end'}}>
                 <Image
                   resizeMode={'contain'}
-                  style={{width: 17.3, height: 22}}
+                  style={{width: ViewScale(17.3), height: ViewScale(22)}}
                   source={require('../../image/sharelx.png')}
                 />
               </TouchableOpacity>
@@ -1248,13 +1249,13 @@ class SearchData extends Component {
                   <View
                     style={[
                       Styles2.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
+                      {right: ViewScale(10), justifyContent: 'center'},
                     ]}>
                     <Image
-                      style={{width: 26, height: 15}}
+                      style={{width: ViewScale(26), height: ViewScale(15)}}
                       source={require('../../image/liveme.png')}
                     />
-                    <View style={{bottom: 13, right: 22}}>
+                    <View style={{bottom: ViewScale(13), right: ViewScale(22)}}>
                       <Text style={{fontSize: 10, color: '#334c6e'}}>
                         {I18n.t('translate_Prepare')}
                       </Text>
@@ -1269,14 +1270,14 @@ class SearchData extends Component {
                   <View
                     style={[
                       Styles2.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
+                      {right: ViewScale(10), justifyContent: 'center'},
                     ]}>
                     <Image
-                      style={{width: 26, height: 15}}
+                      style={{width: ViewScale(26), height: ViewScale(15)}}
                       source={require('../../image/liveme.png')}
                     />
-                    <View style={{bottom: 13, right: 22}}>
-                      <Text style={{fontSize: 10, color: '#ff5e5e'}}>
+                    <View style={{bottom: ViewScale(13), right: ViewScale(22)}}>
+                      <Text style={{fontSize: ViewScale(12), color: '#ff5e5e'}}>
                         {I18n.t('translate_OnAir')}
                       </Text>
                     </View>
@@ -1290,14 +1291,14 @@ class SearchData extends Component {
                   <View
                     style={[
                       Styles2.ViewSub3,
-                      {right: 10, justifyContent: 'center'},
+                      {right: ViewScale(10), justifyContent: 'center'},
                     ]}>
                     <Image
-                      style={{width: 26, height: 15}}
+                      style={{width: ViewScale(26), height: ViewScale(15)}}
                       source={require('../../image/liveme.png')}
                     />
-                    <View style={{bottom: 13, right: 22}}>
-                      <Text style={{fontSize: 10, color: '#b7b7b7'}}>
+                    <View style={{bottom: ViewScale(13), right: ViewScale(22)}}>
+                      <Text style={{fontSize: ViewScale(10), color: '#b7b7b7'}}>
                         {I18n.t('translate_returnBack')}
                       </Text>
                     </View>
@@ -1319,17 +1320,17 @@ class SearchData extends Component {
         style={{
           flex: 1,
         }}>
-        <View style={{flex: 0.8, marginBottom: 20}}>
+        <View style={{flex: 0.8, marginBottom: ViewScale(20)}}>
           <MonthSelectorCalendar
-            containerStyle={{bottom: 20}}
+            containerStyle={{bottom: ViewScale(20)}}
             maxDate={Moment('01-01-3000', 'DD-MM-YYYY')}
             minDate={Moment('01-01-2000', 'DD-MM-YYYY')}
-            prevIcon={<Icon1 name="left" size={20} />}
-            nextIcon={<Icon1 name="right" size={20} />}
+            prevIcon={<Icon1 name="left" size={ViewScale(20)} />}
+            nextIcon={<Icon1 name="right" size={ViewScale(20)} />}
             localeLanguage="en"
-            yearTextStyle={{color: '#000', fontSize: 20}}
-            selectedMonthTextStyle={{color: '#FFF', fontSize: 20}}
-            monthTextStyle={{color: '#000', fontSize: 20}}
+            yearTextStyle={{color: '#000', fontSize: ViewScale(20)}}
+            selectedMonthTextStyle={{color: '#FFF', fontSize: ViewScale(20)}}
+            monthTextStyle={{color: '#000', fontSize: ViewScale(20)}}
             selectedBackgroundColor={'#2d6dc4'}
             selectedDate={this.state.month}
             onMonthTapped={date => {
@@ -1379,8 +1380,8 @@ class SearchData extends Component {
             justifyContent: 'center',
             alignItems: 'center',
             alignSelf: 'center',
-            marginTop: 20,
-            borderRadius: 50,
+            marginTop: ViewScale(20),
+            borderRadius: ViewScale(50),
             backgroundColor: '#2d6dc4',
           }}
           onPress={async () => {
@@ -1393,7 +1394,7 @@ class SearchData extends Component {
           <Text
             style={{
               color: '#fff',
-              fontSize: 25,
+              fontSize: ViewScale(24),
             }}>
             {I18n.t('translate_Accept')}
           </Text>
@@ -1406,8 +1407,8 @@ class SearchData extends Component {
             justifyContent: 'center',
             alignItems: 'center',
             alignSelf: 'center',
-            marginTop: 10,
-            borderRadius: 50,
+            marginTop: ViewScale(10),
+            borderRadius: ViewScale(50),
             backgroundColor: '#96b3cb',
           }}
           onPress={async () => {
@@ -1430,7 +1431,7 @@ class SearchData extends Component {
           <Text
             style={{
               color: '#fff',
-              fontSize: 25,
+              fontSize: ViewScale(24),
             }}>
             {I18n.t('translate_Clean')}
           </Text>
@@ -1443,16 +1444,16 @@ class SearchData extends Component {
             justifyContent: 'center',
             alignItems: 'center',
             alignSelf: 'center',
-            marginBottom: 20,
-            marginTop: 10,
-            borderRadius: 50,
+            marginBottom: ViewScale(20),
+            marginTop: ViewScale(10),
+            borderRadius: ViewScale(50),
             backgroundColor: '#f96145',
           }}
           onPress={() => this.RBSheet.close()}>
           <Text
             style={{
               color: '#fff',
-              fontSize: 25,
+              fontSize: ViewScale(25),
             }}>
             {I18n.t('translate_Cancel')}
           </Text>
@@ -1471,7 +1472,7 @@ class SearchData extends Component {
           navigation={this.props.navigation}
           backScreen={false}
         />
-        <View style={{marginTop: Platform.OS === 'android' && 90}} />
+        <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
         <Headerstage nameTab={I18n.t('translate_HearSearch')} />
         {/* <View style={{alignItems: 'center'}} /> */}
         <RBSheet
@@ -1497,7 +1498,7 @@ class SearchData extends Component {
           {this.BarCalendar()}
         </RBSheet>
         <KeyboardAvoidingView
-          behavior={Platform.OS === 'ios' ? 'padding' : 20}
+          behavior={Platform.OS === 'ios' ? 'padding' : ViewScale(20)}
           style={{flex: 1, zIndex: -1}}>
           <ScrollView style={{zIndex: -1}}>
             <View style={{width: '100%', zIndex: -1}}>
@@ -1505,19 +1506,19 @@ class SearchData extends Component {
                 <View
                   style={{
                     flexDirection: 'row',
-                    marginBottom: -10,
+                    marginBottom: ViewScale(-10),
                     flex: 1,
-                    marginHorizontal: 10,
+                    marginHorizontal: ViewScale(10),
                   }}>
                   <View
                     style={{
-                      marginTop: 5,
+                      marginTop: ViewScale(5),
                       width: '100%',
-                      height: 35,
+                      height: ViewScale(35),
                       backgroundColor: '#FFFFFF',
                       borderColor: '#999999',
                       borderWidth: 1,
-                      borderRadius: 21.5,
+                      borderRadius: ViewScale(21.5),
 
                       flexDirection: 'row',
                       alignItems: 'center',
@@ -1542,12 +1543,12 @@ class SearchData extends Component {
                     style={[
                       {
                         width: '15%',
-                        height: 34,
+                        height: ViewScale(34),
                         backgroundColor: '#FFFFFF',
                         // borderColor: this.state.month === undefined ? '#cacaca' : '#2d6dc4',
                         borderWidth: 1,
-                        borderRadius: 21.5,
-                        marginLeft: 5,
+                        borderRadius: ViewScale(21.5),
+                        marginLeft: ViewScale(5),
                         backgroundColor: '#FFF',
                         borderColor: '#FFF',
                         justifyContent: 'center',
@@ -1558,23 +1559,23 @@ class SearchData extends Component {
 
                 {this.state.checkfilter1 === true ? (
                   <View>
-                    <View style={{top: 10}}>
+                    <View style={{top: ViewScale(10)}}>
                       <View
                         style={{
                           flexDirection: 'row',
-                          marginTop: 10,
-                          marginHorizontal: 10,
+                          marginTop: ViewScale(10),
+                          marginHorizontal: ViewScale(10),
                         }}>
                         <View
                           style={{
                             // width: '50%',
                             flex: 1,
-                            height: 34,
+                            height: ViewScale(34),
                             backgroundColor: '#FFFFFF',
                             // borderColor: '#4b4b4b',
                             // borderWidth: 1,
-                            borderRadius: 17,
-                            marginHorizontal: 3,
+                            borderRadius: ViewScale(17),
+                            marginHorizontal: ViewScale(3),
                             justifyContent: 'center',
                             // flexDirection: 'row',
                           }}>
@@ -1649,7 +1650,7 @@ class SearchData extends Component {
                               <View style={[Styles2.view3icon, {flex: 0.3}]}>
                                 <Icon
                                   name="chevron-down"
-                                  size={20}
+                                  size={ViewScale(20)}
                                   color="#4b4b4b"
                                   // color="#2d6dc4"
                                   style={{}}
@@ -1662,12 +1663,12 @@ class SearchData extends Component {
                           style={{
                             // width: '50%',
                             flex: 1,
-                            height: 34,
+                            height: ViewScale(34),
                             backgroundColor: '#FFFFFF',
                             // borderColor: '#2d6dc4',
                             // borderWidth: 1,
-                            borderRadius: 17,
-                            marginHorizontal: 3,
+                            borderRadius: ViewScale(17),
+                            marginHorizontal: ViewScale(3),
                             justifyContent: 'center',
                             // flexDirection: 'row',
                           }}>
@@ -1737,7 +1738,7 @@ class SearchData extends Component {
                               <View style={[Styles2.view3icon, {flex: 0.3}]}>
                                 <Icon
                                   name="chevron-down"
-                                  size={20}
+                                  size={ViewScale(20)}
                                   color="#2d6dc4"
                                   style={{}}
                                 />
@@ -1757,17 +1758,17 @@ class SearchData extends Component {
                             style={{
                               borderWidth: 1,
                               borderColor: '#2d6dc4',
-                              height: 34,
+                              height: ViewScale(34),
                               flex: 1,
-                              borderRadius: 17,
-                              marginHorizontal: 3,
+                              borderRadius: ViewScale(17),
+                              marginHorizontal: ViewScale(3),
                               backgroundColor: '#FFFF',
                               justifyContent: 'center',
                             }}>
                             <Text
                               style={{
                                 textAlign: 'center',
-                                fontSize: 20,
+                                fontSize: ViewScale(20),
                                 color: '#2d6dc4',
                               }}>
                               {I18n.t('translate_Online')}
@@ -1784,17 +1785,17 @@ class SearchData extends Component {
                             style={{
                               borderWidth: 1,
                               borderColor: '#2d6dc4',
-                              height: 34,
+                              height: ViewScale(34),
                               flex: 1,
-                              borderRadius: 17,
-                              marginHorizontal: 3,
+                              borderRadius: ViewScale(17),
+                              marginHorizontal: ViewScale(3),
                               backgroundColor: '#2d6dc4',
                               justifyContent: 'center',
                             }}>
                             <Text
                               style={{
                                 textAlign: 'center',
-                                fontSize: 20,
+                                fontSize: ViewScale(20),
                                 color: '#FFFFFF',
                               }}>
                               {I18n.t('translate_Online')}
@@ -1806,22 +1807,22 @@ class SearchData extends Component {
                       <View
                         style={{
                           flexDirection: 'row',
-                          marginHorizontal: 10,
-                          marginBottom: 2,
+                          marginHorizontal: ViewScale(10),
+                          marginBottom: ViewScale(2),
                         }}>
                         <View
                           style={{
-                            marginTop: 10,
+                            marginTop: ViewScale(10),
                             // width: '50%',
                             flex: 1,
-                            height: 34,
+                            height: ViewScale(34),
                             backgroundColor: '#FFFFFF',
                             // borderColor: '#2d6dc4',
                             // borderWidth: 1,
-                            borderRadius: 21.5,
-                            marginHorizontal: 4,
+                            borderRadius: ViewScale(21.5),
+                            marginHorizontal: ViewScale(4),
                             // flexDirection: 'row',
-                            marginBottom: 4,
+                            marginBottom: ViewScale(4),
                           }}>
                           <RNPickerSelect
                             disabled={this.state.checkRNPickerstate}
@@ -1871,7 +1872,7 @@ class SearchData extends Component {
                               <View style={[Styles2.view3icon, {flex: 0.2}]}>
                                 <Icon
                                   name="chevron-down"
-                                  size={20}
+                                  size={ViewScale(20)}
                                   color="#2d6dc4"
                                   style={{}}
                                 />
@@ -1882,17 +1883,17 @@ class SearchData extends Component {
 
                         <View
                           style={{
-                            marginTop: 10,
+                            marginTop: ViewScale(10),
                             // width: '50%',
                             flex: 1,
-                            height: 34,
+                            height: ViewScale(34),
                             backgroundColor: '#FFFFFF',
                             // borderColor: '#2d6dc4',
                             // borderWidth: 1,
-                            borderRadius: 21.5,
-                            marginHorizontal: 4,
+                            borderRadius: ViewScale(21.5),
+                            marginHorizontal: ViewScale(4),
                             // flexDirection: 'row',
-                            marginBottom: 4,
+                            marginBottom: ViewScale(4),
                           }}>
                           <RNPickerSelect
                             disabled={this.state.checkRNPickerstate}
@@ -1975,7 +1976,7 @@ class SearchData extends Component {
                               <View style={[Styles2.view3icon, {flex: 0.2}]}>
                                 <Icon
                                   name="chevron-down"
-                                  size={20}
+                                  size={ViewScale(20)}
                                   color="#2d6dc4"
                                   style={{}}
                                 />
@@ -1989,23 +1990,23 @@ class SearchData extends Component {
                         style={{
                           flexDirection: 'row',
 
-                          marginHorizontal: 10,
+                          marginHorizontal: ViewScale(10),
                           flex: 1,
                         }}>
                         <View
                           style={{
-                            marginTop: 4,
-                            height: 34,
+                            marginTop: ViewScale(4),
+                            height: ViewScale(34),
                             backgroundColor: '#FFFFFF',
                             borderColor: '#cacaca',
                             // borderWidth: 1,
-                            borderRadius: 21.5,
+                            borderRadius: ViewScale(21.5),
                             // borderColor: '#2d6dc4',
                             // flexDirection: 'row',
-                            marginBottom: 4,
+                            marginBottom:ViewScale(4),
                             justifyContent: 'center',
                             flex: 1,
-                            marginHorizontal: 4,
+                            marginHorizontal: ViewScale(4),
                           }}>
                           <RNPickerSelect
                             useNativeAndroidPickerStyle={false}
@@ -2066,7 +2067,7 @@ class SearchData extends Component {
                               <View style={[Styles2.view3icon, {flex: 0.2}]}>
                                 <Icon
                                   name="chevron-down"
-                                  size={20}
+                                  size={ViewScale(20)}
                                   color="#2d6dc4"
                                   style={{}}
                                 />
@@ -2076,20 +2077,20 @@ class SearchData extends Component {
                         </View>
                         <View
                           style={{
-                            marginTop: 4,
+                            marginTop: ViewScale(4),
 
-                            height: 34,
+                            height: ViewScale(34),
                             backgroundColor: '#FFFFFF',
                             borderColor: '#cacaca',
                             // borderWidth: 1,
-                            borderRadius: 21.5,
+                            borderRadius: ViewScale(21.5),
                             // borderColor: '#2d6dc4',
                             // flexDirection: 'row',
-                            marginBottom: 4,
+                            marginBottom: ViewScale(4),
                             justifyContent: 'center',
 
                             flex: 1,
-                            marginHorizontal: 4,
+                            marginHorizontal: ViewScale(4),
                           }}>
                           <RNPickerSelect
                             useNativeAndroidPickerStyle={false}
@@ -2181,7 +2182,7 @@ class SearchData extends Component {
                               <View style={[Styles2.view3icon, {flex: 0.2}]}>
                                 <Icon
                                   name="chevron-down"
-                                  size={20}
+                                  size={ViewScale(20)}
                                   color="#2d6dc4"
                                   style={{}}
                                 />
@@ -2195,13 +2196,13 @@ class SearchData extends Component {
                     <View
                       style={{
                         flexDirection: 'row',
-                        marginTop: 4,
-                        marginBottom: 2,
+                        marginTop: ViewScale(4),
+                        marginBottom: ViewScale(2),
                         // borderWidth:1,
-                        marginHorizontal: 10,
+                        marginHorizontal: ViewScale(10),
                         flex: 1,
                       }}>
-                      <View style={{flex: 1, marginHorizontal: 4}}>
+                      <View style={{flex: 1, marginHorizontal: ViewScale(4)}}>
                         <TouchableOpacity
                           onPress={() => {
                             this.setState(
@@ -2221,24 +2222,24 @@ class SearchData extends Component {
                           style={{
                             backgroundColor: '#2d6dc4',
 
-                            marginTop: 13,
-                            height: 34,
+                            marginTop: ViewScale(13),
+                            height: ViewScale(34),
                             flex: 1,
 
-                            borderRadius: 17,
+                            borderRadius: ViewScale(17),
                             justifyContent: 'center',
                           }}>
                           <Text
                             style={{
                               color: '#FFFFFF',
-                              fontSize: 20,
+                              fontSize: ViewScale(20),
                               textAlign: 'center',
                             }}>
                             {I18n.t('transalte_ButtonSearch')}
                           </Text>
                         </TouchableOpacity>
                       </View>
-                      <View style={{flex: 1, marginHorizontal: 4}}>
+                      <View style={{flex: 1, marginHorizontal: ViewScale(4)}}>
                         <TouchableOpacity
                           onPress={() => {
                             this.setState(
@@ -2276,16 +2277,16 @@ class SearchData extends Component {
                           style={{
                             backgroundColor: '#f96145',
 
-                            marginTop: 13,
-                            height: 34,
+                            marginTop: ViewScale(13),
+                            height: ViewScale(34),
                             flex: 1,
-                            borderRadius: 17,
+                            borderRadius: ViewScale(17),
                             justifyContent: 'center',
                           }}>
                           <Text
                             style={{
                               color: '#FFFFFF',
-                              fontSize: 20,
+                              fontSize: ViewScale(20),
                               textAlign: 'center',
                             }}>
                             {I18n.t('transalte_Bt_clear_all')}
@@ -2297,7 +2298,7 @@ class SearchData extends Component {
                 ) : (
                   <View />
                 )}
-                <View style={{alignItems: 'center', padding: 8, top: -12}} />
+                <View style={{alignItems: 'center', padding: ViewScale(8), top: ViewScale(-12)}} />
               </View>
               <ScrollView>
                 <FlatList
@@ -2325,12 +2326,12 @@ class SearchData extends Component {
             backdropStyle={{
               backgroundColor:
                 Platform.OS === 'android' ? '#2d6dc4' : '#2d6dc4',
-              opacity: Platform.OS === 'android' ? 0.8 : 0.8,
+              opacity: Platform.OS === 'android' ? ViewScale(0.8) : ViewScale(0.8),
             }}
             onBackdropPress={() => this.setState({Show: false})}
             isVisible>
             <View style={Styles2.OverlayHight}>
-              <View style={[Styles2.OverlayView1, {marginTop: -10}]}>
+              <View style={[Styles2.OverlayView1, {marginTop: ViewScale(-10)}]}>
                 <TouchableOpacity onPress={() => this.setState({Show: false})}>
                   <Image
                     style={Styles2.ImgClose}
@@ -2344,30 +2345,30 @@ class SearchData extends Component {
                     {this.state.img != '' ? (
                       <Image
                         resizeMode={'contain'}
-                        style={{width: '100%', height: 216}}
+                        style={{width: '100%', height: ViewScale(216)}}
                         source={{uri: this.state.img}}
                       />
                     ) : (
                       <Image
                         resizeMode={'center'}
-                        style={{width: '100%', height: 216}}
+                        style={{width: '100%', height: ViewScale(216)}}
                         source={require('../../image/banerDrive.png')}
                       />
                     )}
                   </View>
-                  <View style={{margin: 10}}>
+                  <View style={{margin: ViewScale(10)}}>
                     <Text
                       style={{
-                        fontSize: 25,
+                        fontSize: ViewScale(25),
                         color: '#163c70',
                         fontFamily: 'Kittithada Bold 75',
                       }}>
                       {this.state.name}
                     </Text>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {this.state.StarD} - {this.state.EndD}
                     </Text>
-                    <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                       {I18n.t('translate_DataRegister')} :{' '}
                       {this.state.starretgis} - {this.state.endregis}{' '}
                     </Text>
@@ -2378,10 +2379,10 @@ class SearchData extends Component {
                       }}>
                       <View style={{flex: 1, flexDirection: 'row'}}>
                         <Image
-                          style={{width: 18, height: 13, top: 4}}
+                          style={{width: ViewScale(18), height: ViewScale(13), top: ViewScale(4)}}
                           source={{uri: this.state.contry_img_flag}}
                         />
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {'  '}
                           {this.state.contry_TH}
                         </Text>
@@ -2391,13 +2392,13 @@ class SearchData extends Component {
                           style={{
                             backgroundColor: '#2d6dc4',
 
-                            borderRadius: 11,
+                            borderRadius: ViewScale(11),
                           }}>
                           <Text
                             style={{
                               textAlign: 'center',
                               color: '#FFFFFF',
-                              fontSize: 18,
+                              fontSize: ViewScale(18),
                             }}>
                             {I18n.t('transalte_map')}
                           </Text>
@@ -2410,22 +2411,22 @@ class SearchData extends Component {
                         alignItems: 'center',
                       }}>
                       <Image
-                        style={{width: 7, height: 11}}
+                        style={{width: ViewScale(7), height: ViewScale(11)}}
                         source={require('../../image/maker2.png')}
                       />
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {'  '}
                         {this.state.location}
                       </Text>
                     </View>
 
-                    <View style={{marginTop: 10}}>
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                    <View style={{marginTop: ViewScale(10)}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_ActPrice')} : {this.state.price}
                       </Text>
                     </View>
-                    <View style={{marginTop: 0}}>
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                    <View style={{marginTop: ViewScale(0)}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_Num')} : {this.state.partic}{' '}
                         {I18n.t('translate_case')}
                       </Text>
@@ -2442,8 +2443,8 @@ class SearchData extends Component {
                               {I18n.t('translate_LIVE')}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 33}}>
-                            <Text style={{fontSize: 12, color: '#334c6e'}}>
+                          <View style={{bottom: ViewScale(13), right: ViewScale(33)}}>
+                            <Text style={{fontSize: ViewScale(12), color: '#334c6e'}}>
                               {I18n.t('translate_Prepare')}
                             </Text>
                           </View>
@@ -2461,8 +2462,8 @@ class SearchData extends Component {
                               {I18n.t('translate_LIVE')}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 31}}>
-                            <Text style={{fontSize: 12, color: '#ff5e5e'}}>
+                          <View style={{bottom: ViewScale(13), right: ViewScale(31)}}>
+                            <Text style={{fontSize: ViewScale(12), color: '#ff5e5e'}}>
                               {I18n.t('translate_OnAir')}
                             </Text>
                           </View>
@@ -2480,17 +2481,17 @@ class SearchData extends Component {
                               {I18n.t('translate_LIVE')}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 31}}>
-                            <Text style={{fontSize: 12, color: '#b7b7b7'}}>
+                          <View style={{bottom: ViewScale(13), right: ViewScale(31)}}>
+                            <Text style={{fontSize: ViewScale(12), color: '#b7b7b7'}}>
                               {I18n.t('translate_returnBack')}
                             </Text>
                           </View>
                         </View>
                       </TouchableOpacity>
                     )}
-                    <View style={{margin: 10}}>
+                    <View style={{margin: ViewScale(10)}}>
                       <Image
-                        style={{width: 334, height: 1}}
+                        style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
                       />
                     </View>
@@ -2502,7 +2503,7 @@ class SearchData extends Component {
                             this.setState({ckhide: true});
                           }}
                           style={{
-                            fontSize: 18,
+                            fontSize: ViewScale(18),
                             color: '#2d6dc4',
                             textAlign: 'center',
                             textDecorationLine: 'underline',
@@ -2512,41 +2513,41 @@ class SearchData extends Component {
                         <Icon3
                           color="#2d6dc4"
                           name="keyboard-arrow-down"
-                          size={20}
+                          size={ViewScale(20)}
                         />
                       </View>
                     ) : (
                       <>
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {I18n.t('translate_DataShow')} :
                         </Text>
 
-                        <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                           {' '}
                           {this.state.StarD} - {this.state.EndD}{' '}
                         </Text>
 
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {I18n.t('translate_DataRegister')} :{' '}
                         </Text>
 
-                        <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                           {' '}
                           {this.state.starretgis} - {this.state.endregis}{' '}
                         </Text>
 
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {I18n.t('translate_place')} :
                         </Text>
 
-                        <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                           {' '}
                           {this.state.location}{' '}
                         </Text>
 
                         {/* thking */}
 
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {I18n.t('translate_group_product')} :
                         </Text>
 
@@ -2560,14 +2561,14 @@ class SearchData extends Component {
                             </View>
                           );
                         })} */}
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {I18n.t('translate_Readmore')} :
                         </Text>
-                        <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                           {I18n.t('translate_Main')}
                         </Text>
-                        <View style={{width: 321, height: null}}>
-                          <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                        <View style={{width: ViewScale(321), height: null}}>
+                          <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                             {this.state.detail}
                           </Text>
                         </View>
@@ -2578,7 +2579,7 @@ class SearchData extends Component {
                               this.setState({ckhide: false});
                             }}
                             style={{
-                              fontSize: 18,
+                              fontSize: ViewScale(18),
                               color: '#2d6dc4',
                               textAlign: 'center',
                               textDecorationLine: 'underline',
@@ -2588,29 +2589,29 @@ class SearchData extends Component {
                           <Icon3
                             color="#2d6dc4"
                             name="keyboard-arrow-up"
-                            size={20}
+                            size={ViewScale(20)}
                           />
                         </View>
                       </>
                     )}
 
-                    <View style={{margin: 10}}>
+                    <View style={{margin: ViewScale(10)}}>
                       <Image
-                        style={{width: 334, height: 1}}
+                        style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
                       />
                     </View>
 
                     <View style={{flex: 1}}>
-                      <Text style={{color: '#3a3a3a', fontSize: 18}}>
+                      <Text style={{color: '#3a3a3a', fontSize: ViewScale(18)}}>
                         {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                       </Text>
-                      <Text style={{color: '#3a3a3a', fontSize: 18}}>
+                      <Text style={{color: '#3a3a3a', fontSize: ViewScale(18)}}>
                         {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                       </Text>
                       <View style={{flexDirection: 'row'}}>
                         <Image
-                          style={{width: 29, height: 29}}
+                          style={{width:ViewScale(29), height: ViewScale(29)}}
                           source={require('../../image/phonelx.png')}
                         />
 
@@ -2618,7 +2619,7 @@ class SearchData extends Component {
                           onPress={() => {
                             this.Call(this.state.deparment_tel);
                           }}
-                          style={{color: '#2d6dc4', fontSize: 18, top: 4}}>
+                          style={{color: '#2d6dc4', fontSize: ViewScale(18), top: ViewScale(4)}}>
                           {'   '} {this.state.deparment_tel}
                         </Text>
                       </View>
@@ -2626,7 +2627,7 @@ class SearchData extends Component {
 
                     <View
                       style={{
-                        marginTop: 13,
+                        marginTop: ViewScale(13),
 
                         alignItems: 'center',
                       }}>
@@ -2642,11 +2643,11 @@ class SearchData extends Component {
                               }}
                               style={{flexDirection: 'row'}}>
                               <Image
-                                style={{width: 20, height: 20}}
+                                style={{width: ViewScale(20), height: ViewScale(20)}}
                                 source={require('../../image/shoping.png')}
                               />
 
-                              <Text style={{fontSize: 20, color: '#163c70'}}>
+                              <Text style={{fontSize: ViewScale(20), color: '#163c70'}}>
                                 {'  '}
                                 {I18n.t('translate_addFavorites')}
                               </Text>
@@ -2662,11 +2663,11 @@ class SearchData extends Component {
                               }}
                               style={{flexDirection: 'row'}}>
                               <Image
-                                style={{width: 20, height: 20}}
+                                style={{width: ViewScale(20), height: ViewScale(20)}}
                                 source={require('../../image/startoppick.png')}
                               />
 
-                              <Text style={{fontSize: 20, color: '#163c70'}}>
+                              <Text style={{fontSize: ViewScale(20), color: '#163c70'}}>
                                 {'  '}
                                 {I18n.t('translate_Delete_basket')}
                               </Text>
@@ -2684,11 +2685,11 @@ class SearchData extends Component {
                               style={{flexDirection: 'row'}}>
                               {console.log(this.state.status_bas)}
                               <Image
-                                style={{width: 20, height: 20}}
+                                style={{width: ViewScale(20), height: ViewScale(20)}}
                                 source={require('../../image/shoping.png')}
                               />
 
-                              <Text style={{fontSize: 16, color: '#163c70'}}>
+                              <Text style={{fontSize: ViewScale(16), color: '#163c70'}}>
                                 {'  '}
                                 {I18n.t('translate_addFavorites')}
                               </Text>
@@ -2702,11 +2703,11 @@ class SearchData extends Component {
                               }}
                               style={{flexDirection: 'row'}}>
                               <Image
-                                style={{width: 20, height: 20}}
+                                style={{width: ViewScale(20), height: ViewScale(20)}}
                                 source={require('../../image/PickerMarket.png')}
                               />
 
-                              <Text style={{fontSize: 16, color: '#163c70'}}>
+                              <Text style={{fontSize: ViewScale(16), color: '#163c70'}}>
                                 {'  '}
                                 {I18n.t('translate_Delete_basket')}
                               </Text>
@@ -2768,7 +2769,7 @@ class SearchData extends Component {
                             }>
                             <Text
                               style={{
-                                fontSize: 19,
+                                fontSize: ViewScale(18),
                                 color: '#FFFFFF',
                                 fontFamily: 'Kittithada Bold 75',
                               }}>
@@ -2786,10 +2787,10 @@ class SearchData extends Component {
                         onPress={() => {
                           this.onShareDatali(this.state.name, this.state.url);
                         }}
-                        style={{alignSelf: 'flex-end', marginTop: -25}}>
+                        style={{alignSelf: 'flex-end', marginTop: ViewScale(-25)}}>
                         <Image
                           resizeMode={'contain'}
-                          style={{width: 17, height: 22}}
+                          style={{width: ViewScale(17), height: ViewScale(22)}}
                           source={require('../../image/sharelx.png')}
                         />
                       </TouchableOpacity>
@@ -2809,22 +2810,22 @@ class SearchData extends Component {
             backdropStyle={{
               backgroundColor:
                 Platform.OS === 'android' ? '#2d6dc4' : '#2d6dc4',
-              opacity: Platform.OS === 'android' ? 0.8 : 0.8,
+              opacity: Platform.OS === 'android' ? ViewScale(0.8) : ViewScale(0.8),
             }}>
-            <View style={{width: width, paddingBottom: 15, marginTop: 15}}>
+            <View style={{width: width, paddingBottom: ViewScale(15), marginTop: ViewScale(15)}}>
               <View style={{alignSelf: 'center'}}>
                 <TouchableOpacity
                   style={{
                     backgroundColor: '#2d6dc4',
-                    height: 40,
-                    width: width * 0.7,
-                    borderRadius: 20,
+                    height: ViewScale(40),
+                    width: width * ViewScale(0.7),
+                    borderRadius: ViewScale(20),
                     justifyContent: 'center',
                   }}>
                   <Text
                     style={{
                       textAlign: 'center',
-                      fontSize: 22,
+                      fontSize: ViewScale(22),
                       color: '#FFFFFF',
                       fontFamily: 'PSL Kittithada Pro',
                     }}>
@@ -2832,13 +2833,13 @@ class SearchData extends Component {
                   </Text>
                 </TouchableOpacity>
               </View>
-              <View style={{alignSelf: 'center', marginTop: 15}}>
+              <View style={{alignSelf: 'center', marginTop: ViewScale(15)}}>
                 <TouchableOpacity
                   style={{
                     backgroundColor: '#568ae0',
-                    height: 40,
-                    width: width * 0.7,
-                    borderRadius: 20,
+                    height: ViewScale(40),
+                    width: width * ViewScale(0.7),
+                    borderRadius: ViewScale(20),
                     justifyContent: 'center',
                   }}>
                   <RNPickerSelect
@@ -2896,7 +2897,7 @@ class SearchData extends Component {
                         {this.state.textSelectActivity4 === null ? (
                           <Text
                             style={{
-                              fontSize: 22,
+                              fontSize: ViewScale(22),
                               color: '#FFFFFF',
                               fontFamily: 'PSL Kittithada Pro',
                             }}>
@@ -2906,7 +2907,7 @@ class SearchData extends Component {
                           <Text
                             style={{
                               textAlign: 'center',
-                              fontSize: 22,
+                              fontSize: ViewScale(22),
                               color: '#FFFFFF',
                               fontFamily: 'PSL Kittithada Pro',
                             }}>
@@ -2927,23 +2928,23 @@ class SearchData extends Component {
 }
 const pickerSelectStyles2 = StyleSheet.create({
   inputIOS: {
-    fontSize: 23,
+    fontSize: ViewScale(24),
     color: '#73838f',
-    paddingHorizontal: 10,
+    paddingHorizontal: ViewScale(10),
     justifyContent: 'center',
     paddingTop: Platform.OS === 'ios' ? 2 : -3,
-    paddingBottom: 5,
+    paddingBottom: ViewScale(5),
   },
   inputAndroid: {
-    height: 40,
-    fontSize: 23,
+    height: ViewScale(40),
+    fontSize: ViewScale(23),
     color: '#73838f',
     fontWeight: 'normal',
     fontFamily: 'PSL Kittithada Pro',
     width: '100%',
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    paddingRight: 70,
+    paddingHorizontal: ViewScale(10),
+    paddingVertical: ViewScale(8),
+    paddingRight: ViewScale(70),
   },
 });
 const mapStateToProps = state => ({

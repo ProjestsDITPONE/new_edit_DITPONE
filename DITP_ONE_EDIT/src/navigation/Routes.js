@@ -12,8 +12,7 @@ import {
 } from 'react-native';
 
 import Styles from '../page/Login/Styles';
-
-import {ViewScale} from '../config/ViewScale';
+import { ViewScale } from '../config/ViewScale';
 
 import {connect} from 'react-redux';
 import {NavigationContainer} from '@react-navigation/native';
@@ -510,22 +509,22 @@ const Routes = ({
             headerTitle: 'QR Code',
             headerTitleStyle: {
               // fontWeight: 'bold',
-              fontSize: 25,
+              fontSize: ViewScale(25),
               fontFamily: 'Kittithada Bold 75',
               fontWeight: 'normal',
             },
 
             headerBackImage: () => (
-              <View style={{padding: 20, paddingLeft: 10}}>
+              <View style={{padding: ViewScale(20), paddingLeft: ViewScale(10)}}>
                 <Image
-                  style={{width: 10, height: 15}}
+                  style={{width: ViewScale(10), height: ViewScale(15)}}
                   source={require('../image/arrow-left-qr.png')}
                 />
               </View>
             ),
             headerTitleAlign: 'center',
             headerBackTitleVisible: false,
-            headerLeftContainerStyle: {left: 12},
+            headerLeftContainerStyle: {left: ViewScale(12)},
           }}
         />
         {/* <AllQR.Screen name="Qrcode" component={ViewAct} /> */}
@@ -542,22 +541,22 @@ const Routes = ({
             headerTitle: 'QR Code',
             headerTitleStyle: {
               // fontWeight: 'bold',
-              fontSize: 25,
+              fontSize: ViewScale(25),
               fontFamily: 'Kittithada Bold 75',
               fontWeight: 'normal',
             },
 
             headerBackImage: () => (
-              <View style={{padding: 20, paddingLeft: 10}}>
+              <View style={{padding: ViewScale(20), paddingLeft: ViewScale(10)}}>
                 <Image
-                  style={{width: 10, height: 15}}
+                  style={{width: ViewScale(10), height: ViewScale(15)}}
                   source={require('../image/arrow-left-qr.png')}
                 />
               </View>
             ),
             headerTitleAlign: 'center',
             headerBackTitleVisible: false,
-            headerLeftContainerStyle: {left: 12},
+            headerLeftContainerStyle: {left: ViewScale(12)},
           }}
         />
         {/* <AllQR.Screen name="Qrcode" component={ViewAct} /> */}
@@ -576,15 +575,15 @@ const Routes = ({
             headerTransparent: false,
             headerTitle: '',
             headerBackImage: () => (
-              <View style={{padding: 10}}>
+              <View style={{padding: ViewScale(10)}}>
                 <Image
-                  style={{width: 15, height: 15}}
+                  style={{width: ViewScale(15), height: ViewScale(15)}}
                   source={require('../image/close.png')}
                 />
               </View>
             ),
             headerBackTitleVisible: false,
-            headerLeftContainerStyle: {left: 12},
+            headerLeftContainerStyle: {left: ViewScale(12)},
           }}
         />
         {/* <AllQR.Screen name="Qrcode" component={ViewAct} /> */}
@@ -603,7 +602,7 @@ const Routes = ({
             alignContent: 'center',
             top: 2,
           },
-          labelStyle: {fontSize: 25},
+          labelStyle: {fontSize: ViewScale(25)},
           activeTintColor: '#2d6dc4',
           inactiveTintColor: '#bfced7',
           showIcon: true,
@@ -637,7 +636,7 @@ const Routes = ({
       <DrawerStack.Navigator
         keyboardDismissMode={'none'}
         drawerStyle={{
-          width: 321,
+          width: ViewScale(321),
         }}
         overlayColor="#2d6dc490"
         drawerPosition="right"
@@ -661,7 +660,7 @@ const Routes = ({
     return (
       <DrawerStack.Navigator
         drawerStyle={{
-          width: 321,
+          width: ViewScale(321),
         }}
         overlayColor="#2d6dc490"
         drawerPosition="right"
@@ -686,9 +685,9 @@ const Routes = ({
             flexDirection: 'row',
             alignItems: 'center',
             alignContent: 'center',
-            top: 2,
+            top: ViewScale(2),
           },
-          labelStyle: {fontSize: 25},
+          labelStyle: {fontSize: ViewScale(25)},
           activeTintColor: '#2d6dc4',
           inactiveTintColor: '#bfced7',
           showIcon: true,
@@ -704,14 +703,14 @@ const Routes = ({
             // tabBarLabel: 'สแกน QR',
             tabBarLabel: ({focused}) => (
               <Text
-                style={{fontSize: 23, color: focused ? '#2d6dc4' : '#bfced7'}}>
+                style={{fontSize: ViewScale(23), color: focused ? '#2d6dc4' : '#bfced7'}}>
                 {' '}
                 {I18n.t('translate_Scan')}
               </Text>
             ),
             tabBarIcon: ({tintColor, focused}) => (
               <Image
-                style={{width: 22, height: 22}}
+                style={{width: ViewScale(22), height: ViewScale(22)}}
                 source={
                   focused
                     ? require('../image/scanA.png')
@@ -728,14 +727,14 @@ const Routes = ({
             // tabBarLabel: 'QR ของฉัน',
             tabBarLabel: ({focused}) => (
               <Text
-                style={{fontSize: 23, color: focused ? '#2d6dc4' : '#bfced7'}}>
+                style={{fontSize: ViewScale(23), color: focused ? '#2d6dc4' : '#bfced7'}}>
                 {' '}
                 {I18n.t('translate_MyQrcode')}
               </Text>
             ),
             tabBarIcon: ({tintColor, focused}) => (
               <Image
-                style={{width: 22, height: 22}}
+                style={{width: ViewScale(22), height: ViewScale(22)}}
                 source={
                   focused
                     ? require('../image/QrcodeA.png')
@@ -758,9 +757,9 @@ const Routes = ({
             flexDirection: 'row',
             alignItems: 'center',
             alignContent: 'center',
-            top: 2,
+            top: ViewScale(2),
           },
-          labelStyle: {fontSize: 25},
+          labelStyle: {fontSize: ViewScale(25)},
           activeTintColor: '#2d6dc4',
           inactiveTintColor: '#bfced7',
           showIcon: true,
@@ -776,14 +775,14 @@ const Routes = ({
             // tabBarLabel: 'สแกน QR',
             tabBarLabel: ({focused}) => (
               <Text
-                style={{fontSize: 23, color: focused ? '#2d6dc4' : '#bfced7'}}>
+                style={{fontSize: ViewScale(23), color: focused ? '#2d6dc4' : '#bfced7'}}>
                 {' '}
                 {I18n.t('translate_Scan')}
               </Text>
             ),
             tabBarIcon: ({tintColor, focused}) => (
               <Image
-                style={{width: 22, height: 22}}
+                style={{width: ViewScale(22), height: ViewScale(22)}}
                 source={
                   focused
                     ? require('../image/scanA.png')
@@ -800,14 +799,14 @@ const Routes = ({
             // tabBarLabel: 'QR ของฉัน',
             tabBarLabel: ({focused}) => (
               <Text
-                style={{fontSize: 23, color: focused ? '#2d6dc4' : '#bfced7'}}>
+                style={{fontSize: ViewScale(23), color: focused ? '#2d6dc4' : '#bfced7'}}>
                 {' '}
                 {I18n.t('translate_MyQrcode')}
               </Text>
             ),
             tabBarIcon: ({tintColor, focused}) => (
               <Image
-                style={{width: 22, height: 22}}
+                style={{width: ViewScale(22), height: ViewScale(22)}}
                 source={
                   focused
                     ? require('../image/QrcodeA.png')
@@ -1059,10 +1058,10 @@ const Routes = ({
           inactiveTintColor: '#96b3cb',
           style: {
             height: '9%',
-            paddingTop: Platform.OS == 'android' ? 10 : 8,
-            paddingBottom: Platform.OS == 'android' ? 5 : bottom,
+            paddingTop: Platform.OS == 'android' ? ViewScale(10) : ViewScale(8),
+            paddingBottom: Platform.OS == 'android' ? ViewScale(5) : bottom,
             shadowColor: '#ccc',
-            shadowOffset: {height: 10, width: 0},
+            shadowOffset: {height: ViewScale(10), width: 0},
             elevation: 20,
             borderTopWidth: 2,
             borderTopColor: '#00000009',
@@ -1071,7 +1070,7 @@ const Routes = ({
             paddingRight: aspectRatio == 1 ? '5%' : 0,
           },
 
-          labelStyle: {fontSize: 12},
+          labelStyle: {fontSize: ViewScale(12)},
         }}>
         <Tab.Screen
           name="Home1"
@@ -1081,7 +1080,7 @@ const Routes = ({
               <View
                 style={{
                   alignItems: 'center',
-                  bottom: 10,
+                  bottom: ViewScale(10),
                   marginTop: Platform.isPad && 50,
                 }}>
                 {navigationRef.current && (
@@ -1125,7 +1124,7 @@ const Routes = ({
                     {navigationRef.current.getCurrentRoute().name ===
                     'ListNotiScreen' ? (
                       <Image
-                        style={{width: 21, height: 21, bottom: 6}}
+                        style={{width: ViewScale(21), height: ViewScale(21), bottom: ViewScale(6)}}
                         source={require('../image/homehoven.png')}
                       />
                     ) : (
@@ -1263,7 +1262,7 @@ const Routes = ({
                     <View
                       style={{
                         alignItems: 'center',
-                        bottom: 10,
+                        bottom: ViewScale(10),
                         marginTop: Platform.isPad && 50,
                       }}>
                       <Text
@@ -1405,19 +1404,19 @@ const Routes = ({
                     <View
                       style={{
                         alignItems: 'center',
-                        bottom: 11,
+                        bottom: ViewScale(11),
                         marginTop: Platform.isPad && 50,
                       }}>
                       <Text
                         style={
                           focused
                             ? {
-                                fontSize: 12.5,
+                                fontSize: ViewScale(12.5),
                                 color: '#2d6dc4',
                                 fontFamily: 'Mitr-Medium',
                               }
                             : {
-                                fontSize: 12.5,
+                                fontSize: ViewScale(12.5),
                                 color: '#96b3cb',
                                 fontFamily: 'Mitr-Medium',
                               }
@@ -1669,14 +1668,14 @@ const Routes = ({
           borderRadius={10}
           isVisible={CheckStaus}
           overlayBackgroundColor="white">
-          <View style={{width: 300, height: 140}}>
+          <View style={{width: ViewScale(300), height: ViewScale(140)}}>
             <Text
               style={{
                 alignSelf: 'center',
                 width: '90%',
-                fontSize: 22,
+                fontSize: ViewScale(22),
                 textAlign: 'center',
-                marginTop: 15,
+                marginTop: ViewScale(15),
               }}>
               {text}
             </Text>
@@ -1684,15 +1683,15 @@ const Routes = ({
               onPress={() => Linking.openURL(Url)}
               style={{
                 width: '90%',
-                height: 40,
+                height: ViewScale(40),
                 backgroundColor: '#2d6dc4',
                 alignItems: 'center',
                 justifyContent: 'center',
                 alignSelf: 'center',
-                borderRadius: 40,
-                marginTop: 20,
+                borderRadius: ViewScale(40),
+                marginTop: ViewScale(20),
               }}>
-              <Text style={{fontSize: 18, color: '#ffffff'}}>ตกลง</Text>
+              <Text style={{fontSize: ViewScale(18), color: '#ffffff'}}>ตกลง</Text>
             </TouchableOpacity>
           </View>
         </Overlay>

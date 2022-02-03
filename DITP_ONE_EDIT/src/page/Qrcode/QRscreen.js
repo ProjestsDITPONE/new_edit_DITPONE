@@ -13,6 +13,7 @@ import Icon from 'react-native-vector-icons/Feather';
 import {Avatar, Header} from 'react-native-elements';
 import {SendMemberBuy} from '../../actions/auth.actions';
 import {getInfoQrcode, SETID} from '../../actions/data.actions';
+import { ViewScale } from '../../config/ViewScale';
 
 const QRscreen = ({navigation, route, dispatch, authData, getUser}) => {
   const [Info, setInfo] = useState();
@@ -118,9 +119,9 @@ const QRscreen = ({navigation, route, dispatch, authData, getUser}) => {
         }}
         leftComponent={
           <TouchableOpacity
-            style={{padding: 10}}
+            style={{padding: ViewScale(10)}}
             onPress={() => navigation.navigate('Home')}>
-            <Icon name="x" size={30} />
+            <Icon name="x" size={ViewScale(30)} />
           </TouchableOpacity>
         }
       />
@@ -136,11 +137,11 @@ const QRscreen = ({navigation, route, dispatch, authData, getUser}) => {
         {Info != undefined ? (
           <Avatar
             containerStyle={{
-              bottom: 50,
-              borderWidth: 7,
+              bottom: ViewScale(50),
+              borderWidth: ViewScale(7),
               borderColor: '#2d6dc4',
             }}
-            size={120}
+            size={ViewScale(120)}
             rounded
             source={{
               uri:
@@ -153,18 +154,18 @@ const QRscreen = ({navigation, route, dispatch, authData, getUser}) => {
           <View />
         )}
         {Info != undefined ? (
-          <View style={{bottom: 30, alignItems: 'center'}}>
+          <View style={{bottom: ViewScale(30), alignItems: 'center'}}>
             {Info[0].type != '2' || Info[0].type != '4' ? (
               <View style={{alignItems: 'center'}}>
                 <View>
-                  <Text style={{fontSize: 24, color: '#163c70'}}>
+                  <Text style={{fontSize: ViewScale(24), color: '#163c70'}}>
                     {Info[0].title_th}
                     {Info[0].name_th} {Info[0].lastname_th}
                   </Text>
                 </View>
                 <View>
                   {Info[0].company_name_th != '' && (
-                    <Text style={{fontSize: 25, color: '#4b4b4b'}}>
+                    <Text style={{fontSize: ViewScale(25), color: '#4b4b4b'}}>
                       {Info[0].company_name_th}
                     </Text>
                   )}
@@ -174,7 +175,7 @@ const QRscreen = ({navigation, route, dispatch, authData, getUser}) => {
                   {Info[0].type === '1' && (
                     <View>
                       {Info[0].naturalId != undefined && (
-                        <Text style={{fontSize: 25, color: '#4b4b4b'}}>
+                        <Text style={{fontSize: ViewScale(25), color: '#4b4b4b'}}>
                           {Info[0].naturalId}
                         </Text>
                       )}
@@ -184,7 +185,7 @@ const QRscreen = ({navigation, route, dispatch, authData, getUser}) => {
 
                 <View>
                   {Info[0].tel != undefined && (
-                    <Text style={{fontSize: 25, color: '#4b4b4b'}}>
+                    <Text style={{fontSize: ViewScale(25), color: '#4b4b4b'}}>
                       {Info[0].tel}
                     </Text>
                   )}
@@ -193,17 +194,17 @@ const QRscreen = ({navigation, route, dispatch, authData, getUser}) => {
                 {Info[0].type === 1 || Info[0].type === 2 ? (
                   <View
                     style={{
-                      marginTop: 10,
+                      marginTop: ViewScale(10),
                       backgroundColor: '#013984',
-                      width: 150,
-                      borderRadius: 15,
-                      height: 26,
+                      width: ViewScale(150),
+                      borderRadius: ViewScale(15),
+                      height: ViewScale(26),
                     }}>
                     <Text
                       style={{
                         color: '#fff',
                         textAlign: 'center',
-                        fontSize: 22,
+                        fontSize: ViewScale(22),
                       }}>
                       {Info[0].type === 1 ? 'นิติบุคคล' : 'นิติบุคคลต่างชาติ'}
                     </Text>
@@ -212,17 +213,17 @@ const QRscreen = ({navigation, route, dispatch, authData, getUser}) => {
                 ) : (
                   <View
                     style={{
-                      marginTop: 10,
+                      marginTop: ViewScale(10),
                       backgroundColor: '#BD280D',
-                      width: 150,
-                      borderRadius: 15,
-                      height: 26,
+                      width: ViewScale(150),
+                      borderRadius: ViewScale(15),
+                      height: ViewScale(26),
                     }}>
                     <Text
                       style={{
                         color: '#fff',
                         textAlign: 'center',
-                        fontSize: 22,
+                        fontSize: ViewScale(22),
                       }}>
                       {Info[0].type === 3
                         ? 'บุคคลทั่วไป'
@@ -233,29 +234,29 @@ const QRscreen = ({navigation, route, dispatch, authData, getUser}) => {
               </View>
             ) : (
               <View style={{alignItems: 'center'}}>
-                <Text style={{fontSize: 24, color: '#163c70'}}>
+                <Text style={{fontSize: ViewScale(24), color: '#163c70'}}>
                   {Info[0].title_en}
                   {Info[0].name_en} {Info[0].lastname_en}
                 </Text>
 
                 {Info[0].company_name_th != undefined && (
-                  <Text style={{fontSize: 25, color: '#4b4b4b'}}>
+                  <Text style={{fontSize: ViewScale(25), color: '#4b4b4b'}}>
                     {Info[0].company_name_en}
                   </Text>
                 )}
                 {Info[0].naturalId != undefined && (
-                  <Text style={{fontSize: 25, color: '#4b4b4b'}}>
+                  <Text style={{fontSize: ViewScale(25), color: '#4b4b4b'}}>
                     {Info[0].naturalId}
                   </Text>
                 )}
                 {Info[0].tel != undefined && (
-                  <Text style={{fontSize: 25, color: '#4b4b4b'}}>
+                  <Text style={{fontSize: ViewScale(25), color: '#4b4b4b'}}>
                     {Info[0].tel}
                   </Text>
                 )}
               </View>
             )}
-            <View style={{marginTop: 10}} />
+            <View style={{marginTop: ViewScale(10)}} />
           </View>
         ) : (
           <View />
@@ -273,16 +274,16 @@ const QRscreen = ({navigation, route, dispatch, authData, getUser}) => {
               // console.log(Info[0].type )
             }
             style={{
-              width: 141,
-              height: 34,
+              width: ViewScale(141),
+              height: ViewScale(34),
               backgroundColor: '#2d6dc4',
               alignSelf: 'center',
-              marginRight: 10,
-              borderRadius: 24.5,
+              marginRight: ViewScale(10),
+              borderRadius: ViewScale(24.5),
               justifyContent: 'center',
               alignItems: 'center',
             }}>
-            <Text style={{fontSize: 20, color: '#ffffff'}}>ผู้ซื้อของฉัน</Text>
+            <Text style={{fontSize: ViewScale(20), color: '#ffffff'}}>ผู้ซื้อของฉัน</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() =>
@@ -293,14 +294,14 @@ const QRscreen = ({navigation, route, dispatch, authData, getUser}) => {
               })
             }
             style={{
-              width: 141,
-              height: 34,
+              width: ViewScale(141),
+              height: ViewScale(34),
               backgroundColor: '#f96145',
-              borderRadius: 24.5,
+              borderRadius: ViewScale(24.5),
               justifyContent: 'center',
               alignItems: 'center',
             }}>
-            <Text style={{fontSize: 20, color: '#ffffff'}}>เครือข่าย</Text>
+            <Text style={{fontSize: ViewScale(20), color: '#ffffff'}}>เครือข่าย</Text>
           </TouchableOpacity>
         </View>
       </SafeAreaView>

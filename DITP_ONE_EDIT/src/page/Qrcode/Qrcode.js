@@ -17,6 +17,7 @@ import QRCode from 'react-native-qrcode-generator';
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import {RNCamera} from 'react-native-camera';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {ViewScale} from '../../config/ViewScale';
 import ScrollableTabView, {
   DefaultTabBar,
 } from 'react-native-scrollable-tab-view';
@@ -145,7 +146,7 @@ const Qrcode = ({navigation}) => {
             }}>
             <Image
               resizeMode={'stretch'}
-              style={{width:302,height:302}}
+              style={{width:ViewScale(302),height:ViewScale(302)}}
               source={require('../../image/qrcodeimg.png')}
             />
           </View>

@@ -15,6 +15,7 @@ import {getTokenQr} from '../../actions/data.actions';
 import I18n from '../../utils/I18n';
 import Icon3 from 'react-native-vector-icons/AntDesign';
 import {connect} from 'react-redux';
+import { ViewScale } from '../../config/ViewScale';
 const Scanqr = ({
   getUser,
   getImg,
@@ -54,7 +55,7 @@ const Scanqr = ({
               backgroundColor: 'traparent',
               alignItems: 'center',
               justifyContent: 'center',
-              marginTop: 60,
+              marginTop: ViewScale(60),
             }}
             tabLabel="QR ของฉัน">
             {getUser.userDetails.res_result.type === 6 && (
@@ -66,8 +67,8 @@ const Scanqr = ({
                   alignItems: 'center',
                 }}>
                 <Avatar
-                  containerStyle={{bottom: 50}}
-                  size={101}
+                  containerStyle={{bottom: ViewScale(50)}}
+                  size={ViewScale(101)}
                   source={{
                     uri: getImg.isSuccess
                       ? getImg.img
@@ -75,19 +76,19 @@ const Scanqr = ({
                   }}
                   rounded
                 />
-                <View style={{bottom: 30, alignItems: 'center'}}>
-                  <Text style={{fontSize: 24, color: '#163c70'}}>
+                <View style={{bottom: ViewScale(30), alignItems: 'center'}}>
+                  <Text style={{fontSize: ViewScale(24), color: '#163c70'}}>
                     {getUser.userDetails.res_result.title_th +
                       ' ' +
                       getUser.userDetails.res_result.name_th +
                       ' ' +
                       getUser.userDetails.res_result.lastname_th}
                   </Text>
-                  <Text style={{fontSize: 22, color: '#4b4b4b'}}>
+                  <Text style={{fontSize: ViewScale(22), color: '#4b4b4b'}}>
                     {getUser.userDetails.res_result.agency}
                   </Text>
 
-                  <View style={{marginTop: 10}}>
+                  <View style={{marginTop: ViewScale(10)}}>
                     <QRCode
                       value={
                         'http://one.ditp.go.th/qr/' +
@@ -108,7 +109,7 @@ const Scanqr = ({
                         //   ' ' +
                         //   getUser.userDetails.res_result.lastname_th,
                       }
-                      size={270}
+                      size={ViewScale(270)}
                       bgColor="black"
                       fgColor="white"
                     />
@@ -124,7 +125,7 @@ const Scanqr = ({
                   backgroundColor: '#FFFFFF',
                   alignItems: 'center',
                   
-                  borderRadius: 8,
+                  borderRadius: ViewScale(8),
                   shadowColor: "#000",
                   shadowOffset: {
                     width: 0,
@@ -136,8 +137,8 @@ const Scanqr = ({
                   elevation: 4,
                 }}>
                 <Avatar
-                  containerStyle={{bottom: 50}}
-                  size={101}
+                  containerStyle={{bottom: ViewScale(50)}}
+                  size={ViewScale(101)}
                   source={{
                     uri: getImg.isSuccess
                       ? getImg.img
@@ -145,15 +146,15 @@ const Scanqr = ({
                   }}
                   rounded
                 />
-                <View style={{bottom: 30, alignItems: 'center'}}>
-                  <Text style={{fontSize: 24, color: '#163c70'}}>
+                <View style={{bottom: ViewScale(30), alignItems: 'center'}}>
+                  <Text style={{fontSize: ViewScale(24), color: '#163c70'}}>
                     {getUser.userDetails.res_result.sub_member.titleTh +
                       ' ' +
                       getUser.userDetails.res_result.sub_member.nameTh +
                       ' ' +
                       getUser.userDetails.res_result.sub_member.lastnameTh}
                   </Text>
-                  <Text style={{fontSize: 22, color: '#4b4b4b'}}>
+                  <Text style={{fontSize: ViewScale(22), color: '#4b4b4b'}}>
                     บริษัท{'  '}
                     {getUser.userDetails.res_result.company.nameTh} 
                   
@@ -164,7 +165,7 @@ const Scanqr = ({
                   {/* <Text style={{fontSize: 22, color: '#4b4b4b'}}>
                     {Phonenumber(getUser.userDetails.res_result.sub_member.tel)}
                   </Text> */}
-                  <View style={{marginTop: 10}}>
+                  <View style={{marginTop: ViewScale(10)}}>
                     <QRCode
                       value={
                         'http://one.ditp.go.th/qr/' +
@@ -187,7 +188,7 @@ const Scanqr = ({
                         //   ' ' +
                         //   getUser.userDetails.res_result.sub_member.lastnameEn,
                       }
-                      size={270}
+                      size={ViewScale(270)}
                       bgColor="black"
                       fgColor="white"
                     />
@@ -204,8 +205,8 @@ const Scanqr = ({
                   alignItems: 'center',
                 }}>
                 <Avatar
-                  containerStyle={{bottom: 50}}
-                  size={101}
+                  containerStyle={{bottom: ViewScale(50)}}
+                  size={ViewScale(101)}
                   source={{
                     uri: getImg.isSuccess
                       ? getImg.img
@@ -213,8 +214,8 @@ const Scanqr = ({
                   }}
                   rounded
                 />
-                <View style={{bottom: 30, alignItems: 'center'}}>
-                  <Text style={{fontSize: 24, color: '#163c70'}}>
+                <View style={{bottom: ViewScale(30), alignItems: 'center'}}>
+                  <Text style={{fontSize: ViewScale(24), color: '#163c70'}}>
                     {getUser.userDetails.res_result.sub_member.titleEn +
                       ' ' +
                       getUser.userDetails.res_result.sub_member.nameEn +
@@ -222,11 +223,11 @@ const Scanqr = ({
                       getUser.userDetails.res_result.sub_member.lastnameEn}
                   </Text>
 
-                  <Text style={{fontSize: 22, color: '#4b4b4b'}}>
+                  <Text style={{fontSize: ViewScale(22), color: '#4b4b4b'}}>
                     {getUser.userDetails.res_result.agency}
                   </Text>
 
-                  <View style={{marginTop: 10}}>
+                  <View style={{marginTop: ViewScale(10)}}>
                     <QRCode
                       value={
                         'http://one.ditp.go.th/qr/' +
@@ -250,7 +251,7 @@ const Scanqr = ({
                         //   ' ' +
                         //   getUser.userDetails.res_result.sub_member.lastnameEn,
                       }
-                      size={270}
+                      size={ViewScale(270)}
                       bgColor="black"
                       fgColor="white"
                     />
@@ -267,8 +268,8 @@ const Scanqr = ({
                   alignItems: 'center',
                 }}>
                 <Avatar
-                  containerStyle={{bottom: 50}}
-                  size={101}
+                  containerStyle={{bottom: ViewScale(50)}}
+                  size={ViewScale(101)}
                   source={{
                     uri: getImg.isSuccess
                       ? getImg.img
@@ -276,8 +277,8 @@ const Scanqr = ({
                   }}
                   rounded
                 />
-                <View style={{bottom: 30, alignItems: 'center'}}>
-                  <Text style={{fontSize: 24, color: '#163c70'}}>
+                <View style={{bottom: ViewScale(30), alignItems: 'center'}}>
+                  <Text style={{fontSize: ViewScale(24), color: '#163c70'}}>
                     {getUser.userDetails.res_result.member.titleEn +
                       ' ' +
                       getUser.userDetails.res_result.member.nameEn +
@@ -288,7 +289,7 @@ const Scanqr = ({
                   {/* <Text style={{fontSize: 22, color: '#4b4b4b'}}>
                   {getUser.userDetails.res_result.agency}
                 </Text> */}
-                  <View style={{marginTop: 10}}>
+                  <View style={{marginTop: ViewScale(10)}}>
                     <QRCode
                       value={
                         'http://one.ditp.go.th/qr/' +
@@ -312,7 +313,7 @@ const Scanqr = ({
                         //   ' ' +
                         //   getUser.userDetails.res_result.member.lastnameEn,
                       }
-                      size={270}
+                      size={ViewScale(270)}
                       bgColor="black"
                       fgColor="white"
                     />
@@ -329,8 +330,8 @@ const Scanqr = ({
                   alignItems: 'center',
                 }}>
                 <Avatar
-                  containerStyle={{bottom: 50}}
-                  size={101}
+                  containerStyle={{bottom: ViewScale(50)}}
+                  size={ViewScale(101)}
                   source={{
                     uri: getImg.isSuccess
                       ? getImg.img
@@ -338,8 +339,8 @@ const Scanqr = ({
                   }}
                   rounded
                 />
-                <View style={{bottom: 30, alignItems: 'center'}}>
-                  <Text style={{fontSize: 24, color: '#163c70'}}>
+                <View style={{bottom: ViewScale(30), alignItems: 'center'}}>
+                  <Text style={{fontSize: ViewScale(24), color: '#163c70'}}>
                     {getUser.userDetails.res_result.member.titleTh +
                       ' ' +
                       getUser.userDetails.res_result.member.nameTh +
@@ -352,7 +353,7 @@ const Scanqr = ({
                     {Phonenumber(getUser.userDetails.res_result.member.tel)}
                   </Text> */}
 
-                  <View style={{marginTop: 10}}>
+                  <View style={{marginTop: ViewScale(10)}}>
                     <QRCode
                       value={
                         'http://one.ditp.go.th/qr/' +
@@ -379,7 +380,7 @@ const Scanqr = ({
                         //   ' ' +
                         //   getUser.userDetails.res_result.member.lastnameTh,
                       }
-                      size={270}
+                      size={ViewScale(270)}
                       bgColor="black"
                       fgColor="white"
                     />
@@ -391,14 +392,14 @@ const Scanqr = ({
           <View
                 style={{
 
-                  marginBottom:15,
+                  marginBottom:ViewScale(15),
                   flex:1,
-                  height:44,
+                  height:ViewScale(44),
                   backgroundColor: '#FFFFFF',
                   alignItems: 'center',
-                  marginHorizontal:20,
-                  marginTop:15,
-                  borderRadius: 8,
+                  marginHorizontal:ViewScale(20),
+                  marginTop:ViewScale(15),
+                  borderRadius: ViewScale(8),
                   shadowColor: "#000",
                   shadowOffset: {
                     width: 0,
@@ -411,8 +412,8 @@ const Scanqr = ({
                   flexDirection:'row'
                 
                 }}>
-                  <Icon3 name='infocirlce' style={{color:'#2d6dc4',marginHorizontal:10}} />
-                  <Text style={{color:'#40536d',fontSize:16}}>QR Code สำหรับสแกนเข้าร่วมกิจกรรม หรือเพิ่มเพื่อน</Text>
+                  <Icon3 name='infocirlce' style={{color:'#2d6dc4',marginHorizontal:ViewScale(10)}} />
+                  <Text style={{color:'#40536d',fontSize:ViewScale(20)}}>QR Code สำหรับสแกนเข้าร่วมกิจกรรม หรือเพิ่มเพื่อน</Text>
                   </View>
         </ScrollView>
       </View>

@@ -20,6 +20,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Overlay} from 'react-native-elements';
 import {SendCancelmember} from '../../actions/auth.actions';
 import {connect} from 'react-redux';
+import { ViewScale } from '../../config/ViewScale';
 import I18n from '../../utils/I18n';
 class Unsubscribe extends React.Component {
   constructor() {
@@ -99,9 +100,9 @@ class Unsubscribe extends React.Component {
           navigation={this.props.navigation}
           backScreen={false}
         />
-        <View style={{marginTop: Platform.OS === 'android' && 90}} />
+        <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
         <KeyboardAvoidingView
-          behavior={Platform.OS === 'ios' ? 'padding' : 20}
+          behavior={Platform.OS === 'ios' ? 'padding' : ViewScale(20)}
           style={{flex: 1, zIndex: -1}}>
           <ScrollView>
             {this.state.PopAccept === true && (
@@ -124,7 +125,7 @@ class Unsubscribe extends React.Component {
                     this.setState({PopAccept: false});
                   }}
                   cancle={() => this.setState({PopAccept: false})}
-                  Icon={<Icon name="alert-circle" size={100} color="#e82d2d" />}
+                  Icon={<Icon name="alert-circle" size={ViewScale(100)} color="#e82d2d" />}
                 />
               </Overlay>
             )}
@@ -132,7 +133,7 @@ class Unsubscribe extends React.Component {
               accessible={false}
               onPress={Keyboard.dismiss}>
               <View style={{flex: 1}}>
-                <View style={[Styles.margin10, {marginTop: 20}]}>
+                <View style={[Styles.margin10, {marginTop: ViewScale(20)}]}>
                   <Text style={Styles.TextSub2}>
                     {I18n.t('translate_ReportUn')}
                   </Text>

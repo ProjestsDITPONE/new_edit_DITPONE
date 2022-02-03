@@ -13,6 +13,7 @@ import {
 import Headers from '../../components/Headers';
 import RNPickerSelect from '../../lib_edit/react-native-picker-select';
 import Icon from 'react-native-vector-icons/Entypo';
+import { ViewScale } from '../../config/ViewScale';
 import Style from './Styles';
 import {connect} from 'react-redux';
 import {getProductOSEC, getlistOSEC} from '../../actions/data.actions';
@@ -112,23 +113,23 @@ class OSECScreen extends React.Component {
           backScreen={false}
           ArrowColor={false}
         />
-        <View style={{marginTop: Platform.OS === 'android' && 90}} />
+        <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
         {/* <View style={Style.View2}> */}
         <Headerstage nameTab={I18n.t('transalte_headerOSEC')} />
         <ScrollView style={{flex: 2}}>
           <View
             style={{
               backgroundColor: '#FFFFFF',
-              borderRadius: 8,
+              borderRadius: ViewScale(8),
 
-              marginHorizontal: 10,
-              top: 5,
+              marginHorizontal: ViewScale(10),
+              top: ViewScale(5),
             }}>
             <View style={[Style.View3, {}]}>
               {/* <View style={Style.View4}>
                 <Text style={Style.TextView1}>ขั้นตอนการส่งออก</Text>
               </View> */}
-              <View style={[Style.View5, {marginBottom: 20}]}>
+              <View style={[Style.View5, {marginBottom: ViewScale(20)}]}>
                 {/* <View style={Style.ViewH}> */}
                 <Text style={Style.TextView2}>
                   {I18n.t('translate_RegulationsAndProduct')}
@@ -137,25 +138,25 @@ class OSECScreen extends React.Component {
               </View>
               <View
                 style={{
-                  marginHorizontal: 15,
+                  marginHorizontal: ViewScale(15),
                 }}>
-                <Text style={{fontSize: 23, color: '#40536d', marginBottom: 6}}>
+                <Text style={{fontSize: ViewScale(23), color: '#40536d', marginBottom: ViewScale(6)}}>
                   {I18n.t('transalte_search_product')}
                 </Text>
               </View>
               <View
                 style={{
                   alignItems: 'center',
-                  marginHorizontal: 15,
-                  marginBottom: 15,
+                  marginHorizontal: ViewScale(15),
+                  marginBottom: ViewScale(15),
                 }}>
                 <View style={Style.View9}>
                   {Platform.OS === 'ios' ? (
                     <TextInput
                       value={this.state.TextKey}
                       style={{
-                        fontSize: 20,
-                        paddingLeft: 10,
+                        fontSize: ViewScale(20),
+                        paddingLeft: ViewScale(10),
                         color: '#000',
 
                         // fontFamily: 'PSL Kittithada Pro',
@@ -170,8 +171,8 @@ class OSECScreen extends React.Component {
                     <TextInput
                       value={this.state.TextKey}
                       style={{
-                        fontSize: 20,
-                        paddingLeft: 10,
+                        fontSize: ViewScale(20),
+                        paddingLeft: ViewScale(10),
 
                         color: '#000',
                         fontWeight: 'normal',
@@ -185,23 +186,23 @@ class OSECScreen extends React.Component {
                   )}
                 </View>
               </View>
-              <View style={{marginHorizontal: 15, marginBottom: 6}}>
+              <View style={{marginHorizontal: ViewScale(15), marginBottom: ViewScale(6)}}>
                 <Text style={Style.TextView3}>{I18n.t('translate_Pleaseselectcategory')}</Text>
               </View>
               <View
                 style={[
                   Style.ViewalignItem,
-                  {marginHorizontal: 15, marginBottom: 15},
+                  {marginHorizontal: ViewScale(15), marginBottom: ViewScale(15)},
                 ]}>
                 <View
                   style={{
                     // width: Dimensions.get('window').width * 0.9,
                     width: '100%',
-                    height: Platform.OS === 'ios' ? 33 : 44,
+                    height: Platform.OS === 'ios' ? ViewScale(33) : ViewScale(44),
                     alignSelf: 'center',
                     justifyContent: 'center',
                     alignContent: 'center',
-                    borderRadius: 18,
+                    borderRadius: ViewScale(18),
                     borderWidth: 1,
                     borderColor: '#2d6dc4',
                     backgroundColor: '#fff',
@@ -218,24 +219,24 @@ class OSECScreen extends React.Component {
                     // textInputProps={{style: Style.TextRN}}
                     style={{
                       inputAndroid: {
-                        fontSize: 23,
+                        fontSize: ViewScale(23),
                         color: '#ddddd',
                         // paddingRight: 30,
                         fontWeight: 'normal',
                         fontFamily: 'PSL Kittithada Pro',
-                        padding: 5,
-                        paddingRight: 10,
+                        padding: ViewScale(5),
+                        paddingRight: ViewScale(10),
                         width: '120%',
                       },
                       inputIOS: {
-                        fontSize: 23,
+                        fontSize: ViewScale(23),
                         color: '#ddddd',
                         // paddingRight: 1-,
                         width: '100%',
-                        left: 10,
+                        left: ViewScale(10),
                       },
                       placeholder: {
-                        fontSize: 23,
+                        fontSize: ViewScale(23),
                         color: '#2d6dc4',
                         // fontWeight: 'normal',
                         // fontFamily: 'PSL Kittithada Pro',
@@ -243,10 +244,10 @@ class OSECScreen extends React.Component {
                     }}
                     items={this.state.Selecitem1}
                     Icon={() => (
-                      <View style={{top: 3, right: 5}}>
+                      <View style={{top: ViewScale(3), right: ViewScale(5)}}>
                         <Icon
                           name="chevron-small-down"
-                          size={20}
+                          size={ViewScale(20)}
                           color="#4b4b4b"
                         />
                       </View>
@@ -254,22 +255,22 @@ class OSECScreen extends React.Component {
                   />
                 </View>
               </View>
-              <View style={{marginHorizontal: 15, marginBottom: 6}}>
+              <View style={{marginHorizontal: ViewScale(15), marginBottom: ViewScale(6)}}>
                 <Text style={Style.TextView3}>{I18n.t('translate_PlaeseChooseIrems')}</Text>
               </View>
               <View
                 style={[
                   Style.ViewalignItem,
-                  {marginHorizontal: 15, marginBottom: 40},
+                  {marginHorizontal: ViewScale(15), marginBottom: ViewScale(40)},
                 ]}>
                 <View
                   style={{
                     width: '100%',
-                    height: Platform.OS === 'ios' ? 33 : 44,
+                    height: Platform.OS === 'ios' ? ViewScale(33) : ViewScale(44),
                     alignSelf: 'center',
                     justifyContent: 'center',
                     alignContent: 'center',
-                    borderRadius: 18,
+                    borderRadius: ViewScale(18),
                     borderWidth: 1,
                     borderColor: '#2d6dc4',
                     backgroundColor: '#fff',
@@ -291,12 +292,12 @@ class OSECScreen extends React.Component {
                     }}
                     style={{
                       inputAndroid: {
-                        fontSize: 22,
+                        fontSize: ViewScale(22),
                         color: '#ddddd',
                         // paddingRight: 30,
                         fontWeight: 'normal',
                         fontFamily: 'PSL Kittithada Pro',
-                        padding: 2,
+                        padding: ViewScale(2),
                         // justifyContent: 'center',
                         // textAlign: 'center',
                         // width: '90%',
@@ -304,14 +305,14 @@ class OSECScreen extends React.Component {
                         // textAlign: 'center',
                       },
                       inputIOS: {
-                        fontSize: 23,
+                        fontSize: ViewScale(23),
                         color: '#ddddd',
-                        paddingRight: 30,
+                        paddingRight: ViewScale(30),
                         width: '100%',
-                        left: 10,
+                        left: ViewScale(10),
                       },
                       placeholder: {
-                        fontSize: 23,
+                        fontSize: ViewScale(23),
                         color: '#2d6dc4',
                         // fontWeight: 'normal',
                         // fontFamily: 'PSL Kittithada Pro',
@@ -333,10 +334,10 @@ class OSECScreen extends React.Component {
                     }}
                     items={this.state.Selecitem2}
                     Icon={() => (
-                      <View style={{top: 3, right: 5}}>
+                      <View style={{top: ViewScale(3), right: ViewScale(5)}}>
                         <Icon
                           name="chevron-small-down"
-                          size={20}
+                          size={ViewScale(20)}
                           color="#4b4b4b"
                         />
                       </View>
@@ -350,7 +351,7 @@ class OSECScreen extends React.Component {
               <View
                 style={{
                   alignItems: 'center',
-                  marginBottom: 25,
+                  marginBottom: ViewScale(25),
                 }}>
                 <TouchableOpacity
                   onPress={() => {
@@ -368,21 +369,21 @@ class OSECScreen extends React.Component {
                     width: '80%',
 
                     alignItems: 'center',
-                    borderRadius: 22,
-                    paddingVertical: 8,
+                    borderRadius: ViewScale(22),
+                    paddingVertical: ViewScale(8),
                   }}>
-                  <Text style={{fontSize: 25, color: '#ffffff'}}>{I18n.t('transalte_ButtonSearch')}</Text>
+                  <Text style={{fontSize: ViewScale(25), color: '#ffffff'}}>{I18n.t('transalte_ButtonSearch')}</Text>
                 </TouchableOpacity>
               </View>
             )}
           </View>
-          <View style={{marginHorizontal: 15, top: 10, marginBottom: 15}}>
+          <View style={{marginHorizontal: ViewScale(15), top: ViewScale(10), marginBottom: ViewScale(15)}}>
             <Text
               style={{
                 fontWeight: '400',
                 color: '#40536d',
                 textAlign: 'center',
-                fontSize: 16,
+                fontSize: ViewScale(16),
                 fontStyle: 'italic',
               }}>
               {I18n.t('transalte_OSECis')}

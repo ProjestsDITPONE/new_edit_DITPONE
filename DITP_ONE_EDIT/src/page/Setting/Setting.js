@@ -22,6 +22,7 @@ import {Overlay} from 'react-native-elements';
 import Popup from '../../components/Popup';
 import I18n from '../../utils/I18n';
 import {CommonActions, useFocusEffect} from '@react-navigation/native';
+import { ViewScale } from '../../config/ViewScale';
 import Icon from 'react-native-vector-icons/Feather';
 import {
   logoutUser,
@@ -209,7 +210,7 @@ const Setting = ({
         <View
           style={[
             Styles.ViewSub1,
-            {marginTop: Platform.OS === 'android' ? 120 : 40},
+            {marginTop: Platform.OS === 'android' ? ViewScale(120) : ViewScale(40)},
           ]}>
           <View style={Styles.ViewSub2}>
             <View style={Styles.ViewSub3}>
@@ -245,7 +246,7 @@ const Setting = ({
                   <TouchableOpacity
                     disabled={language.language != 'EN'}
                     // disabled={language.language === 'TH'}
-                    style={{marginHorizontal: 5}}
+                    style={{marginHorizontal: ViewScale(5)}}
                     onPress={() => {
                       changelanguage('TH');
                       AsyncStorage.setItem('language', 'TH');
@@ -274,9 +275,9 @@ const Setting = ({
             <View style={Styles.ViewSub6}>
               <Image
                 style={{
-                  height: 2,
+                  height: ViewScale(2),
                   width: '90%',
-                  top: 10,
+                  top: ViewScale(10),
                 }}
                 source={require('../../image/linesetting.png')}
               />
@@ -295,7 +296,7 @@ const Setting = ({
                   </Text>
                   <View style={Styles.ViewSub4}>
                     <Image
-                      style={{width: 8, height: 13}}
+                      style={{width: ViewScale(8), height: ViewScale(13)}}
                       source={require('../../image/Arrowright.png')}
                     />
                   </View>
@@ -344,9 +345,9 @@ const Setting = ({
             <View style={Styles.ViewSub6}>
               <Image
                 style={{
-                  height: 2,
+                  height: ViewScale(2),
                   width: '90%',
-                  top: 10,
+                  top: ViewScale(10),
                 }}
                 source={require('../../image/linesetting.png')}
               />
@@ -362,7 +363,7 @@ const Setting = ({
                       </Text>
                       <View style={Styles.ViewSub4}>
                         <Image
-                          style={{width: 8, height: 13}}
+                          style={{width: ViewScale(8), height: ViewScale(13)}}
                           source={require('../../image/Arrowright.png')}
                         />
                       </View>
@@ -372,9 +373,9 @@ const Setting = ({
                 <View style={Styles.ViewSub6}>
                   <Image
                     style={{
-                      height: 2,
+                      height: ViewScale(2),
                       width: '90%',
-                      top: 10,
+                      top: ViewScale(10),
                     }}
                     source={require('../../image/linesetting.png')}
                   />
@@ -426,9 +427,9 @@ const Setting = ({
                 <View style={Styles.ViewSub6}>
                   <Image
                     style={{
-                      height: 2,
+                      height: ViewScale(2),
                       width: '90%',
-                      top: 10,
+                      top: ViewScale(10),
                     }}
                     source={require('../../image/linesetting.png')}
                   />
@@ -444,7 +445,7 @@ const Setting = ({
                       </Text>
                       <View style={Styles.ViewSub4}>
                         <Image
-                          style={{width: 8, height: 13}}
+                          style={{width: ViewScale(8), height: ViewScale(13)}}
                           source={require('../../image/Arrowright.png')}
                         />
                       </View>
@@ -454,9 +455,9 @@ const Setting = ({
                 <View style={Styles.ViewSub6}>
                   <Image
                     style={{
-                      height: 2,
+                      height: ViewScale(2),
                       width: '90%',
-                      top: 10,
+                      top: ViewScale(10),
                     }}
                     source={require('../../image/linesetting.png')}
                   />
@@ -470,7 +471,7 @@ const Setting = ({
                       </Text>
                       <View style={Styles.ViewSub4}>
                         <Image
-                          style={{width: 8, height: 13}}
+                          style={{width: ViewScale(8), height: ViewScale(13)}}
                           source={require('../../image/Arrowright.png')}
                         />
                       </View>
@@ -480,9 +481,9 @@ const Setting = ({
                 <View style={Styles.ViewSub6}>
                   <Image
                     style={{
-                      height: 2,
+                      height: ViewScale(2),
                       width: '90%',
-                      top: 10,
+                      top: ViewScale(10),
                     }}
                     source={require('../../image/linesetting.png')}
                   />
@@ -501,7 +502,7 @@ const Setting = ({
                           </Text>
                           <View style={Styles.ViewSub4}>
                             <Image
-                              style={{width: 8, height: 13}}
+                              style={{width: ViewScale(8), height: ViewScale(13)}}
                               source={require('../../image/Arrowright.png')}
                             />
                           </View>
@@ -520,7 +521,7 @@ const Setting = ({
                           </Text>
                           <View style={Styles.ViewSub4}>
                             <Image
-                              style={{width: 8, height: 13}}
+                              style={{width: ViewScale(8), height: ViewScale(13)}}
                               source={require('../../image/Arrowright.png')}
                             />
                           </View>
@@ -531,9 +532,9 @@ const Setting = ({
                   <View style={Styles.ViewSub6}>
                     <Image
                       style={{
-                        height: 2,
+                        height: ViewScale(2),
                         width: '90%',
-                        top: 15,
+                        top: ViewScale(15),
                       }}
                       source={require('../../image/linesetting.png')}
                     />
@@ -545,7 +546,7 @@ const Setting = ({
                       <Text style={Styles.TextSub1}>Version 20220127</Text>
                       <View style={Styles.ViewSub4}>
                         <Image
-                          style={{width: 8, height: 13}}
+                          style={{width: ViewScale(8), height: ViewScale(13)}}
                           source={require('../../image/Arrowright.png')}
                         />
                       </View>
@@ -555,9 +556,9 @@ const Setting = ({
                 <View style={Styles.ViewSub6}>
                   <Image
                     style={{
-                      height: 2,
+                      height: ViewScale(2),
                       width: '90%',
-                      top: 10,
+                      top: ViewScale(10),
                     }}
                     source={require('../../image/linesetting.png')}
                   />
@@ -584,7 +585,7 @@ const Setting = ({
                     setPopAccept(false);
                   }}
                   cancle={() => setPopAccept(false)}
-                  Icon={<Icon name="alert-circle" size={80} color="#f86767" />}
+                  Icon={<Icon name="alert-circle" size={ViewScale(80)} color="#f86767" />}
                 />
               </Overlay>
             )}
@@ -609,7 +610,7 @@ const Setting = ({
                     setPopCancel(false);
                   }}
                   cancle={() => setPopCancel(false)}
-                  Icon={<Icon name="alert-circle" size={80} color="#f86767" />}
+                  Icon={<Icon name="alert-circle" size={ViewScale(80)} color="#f86767" />}
                 />
               </Overlay>
             )}
@@ -640,19 +641,19 @@ const Setting = ({
                   flexDirection: 'row',
                   margin: 0,
                   alignItems: 'center',
-                  marginBottom: 20,
+                  marginBottom: ViewScale(20),
                   borderWidth: 1,
                   borderColor: '#f86767',
-                  borderRadius: 21,
-                  paddingHorizontal: 10,
+                  borderRadius: ViewScale(21),
+                  paddingHorizontal: ViewScale(10),
                 }}>
                 <Image
-                  style={{width: 15, height: 15}}
+                  style={{width: ViewScale(15), height: ViewScale(15)}}
                   source={require('../../image/logout3.png')}
                 />
                 <Text
                   style={{
-                    fontSize: 16,
+                    fontSize: ViewScale(16),
                     color: '#f86767',
                     fontFamily: 'Mitr-Regular',
                   }}>
@@ -662,13 +663,13 @@ const Setting = ({
               </TouchableOpacity>
             </View>
           </View>
-          <View style={{marginTop: 10, marginBottom: 0}}>
+          <View style={{marginTop: ViewScale(10), marginBottom: ViewScale(0)}}>
             {getUser.userDetails.res_result.type != 6 && (
               <View>
                 <Text
                   style={{
                     color: '#2d6dc4',
-                    fontSize: 13,
+                    fontSize: ViewScale(13),
                     fontFamily: 'Pridi-Medium',
                   }}>
                   {I18n.t('transalte_QAQA')}
@@ -685,12 +686,12 @@ const Setting = ({
                   borderWidth: 2,
                   borderColor: '#2d6dc4',
                   backgroundColor: '#2d6dc4',
-                  borderRadius: 21.5,
+                  borderRadius: ViewScale(21.5),
                   justifyContent: 'center',
                   alignItems: 'center',
                   flexDirection: 'row',
-                  paddingHorizontal: 10,
-                  marginBottom: 30
+                  paddingHorizontal: ViewScale(10),
+                  marginBottom: ViewScale(30)
                 }}>
                 <Image
                   style={Styles.Imgsub2}
@@ -698,7 +699,7 @@ const Setting = ({
                 />
                 <Text
                   style={{
-                    fontSize: 16,
+                    fontSize: ViewScale(16),
                     color: '#FFFFFF',
                     fontFamily: 'Mitr-Regular',
                   }}>

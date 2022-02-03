@@ -25,6 +25,7 @@ import {connect} from 'react-redux';
 import ScrollableTabView, {
   ScrollableTabBar,
 } from '../../lib_edit/react-native-scrollable-tab-view';
+import { ViewScale } from '../../config/ViewScale';
 import SegmentedControlTab from 'react-native-segmented-control-tab';
 import TabBar from 'react-native-underline-tabbar';
 import LinearGradient from 'react-native-linear-gradient';
@@ -38,21 +39,21 @@ const Page = ({label, text = ''}) => (
       alignItems: 'center',
       backgroundColor: '#F5FCFF',
     }}>
-    <Text style={{fontSize: 20, textAlign: 'center'}}>{label}</Text>
+    <Text style={{fontSize: ViewScale(20), textAlign: 'center'}}>{label}</Text>
     <Text style={Styles.instructions}>{text}</Text>
   </View>
 );
 const Tab = ({tab, page, isTabActive, onPressHandler, onTabLayout, Styles}) => {
   const {label, icon} = tab;
   const style = {
-    marginHorizontal: 15,
-    paddingVertical: 5,
+    marginHorizontal: ViewScale(15),
+    paddingVertical: ViewScale(5),
     // marginLeft:Platform.OS==='ios'? 10:10
   };
   const containerStyle = {
-    paddingHorizontal: 20,
-    paddingVertical: 5,
-    borderRadius: 25,
+    paddingHorizontal: ViewScale(20),
+    paddingVertical: ViewScale(5),
+    borderRadius: ViewScale(25),
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: Styles.backgroundColor,
@@ -62,15 +63,15 @@ const Tab = ({tab, page, isTabActive, onPressHandler, onTabLayout, Styles}) => {
   const textStyle = {
     color: '#FFF',
     fontWeight: '800',
-    fontSize: 20,
+    fontSize: ViewScale(20),
     textAlign: 'center',
   };
   const iconStyle = {
     tintColor: Styles.textColor,
     resizeMode: 'contain',
-    width: 80,
-    height: 22,
-    marginLeft: 10,
+    width: ViewScale(80),
+    height: ViewScale(22),
+    marginLeft: ViewScale(10),
   };
   return (
     <TouchableOpacity
@@ -288,17 +289,17 @@ class SmesActivityShowBusiness extends React.Component {
                 <View style={Styles.OverlayView2}>
                   <View style={Styles.OverlayView3}>
                     <Image
-                      style={{width: 155, height: 118}}
+                      style={{width: ViewScale(155), height: ViewScale(118)}}
                       source={require('../../image/SMEsIMG.png')}
                     />
                   </View>
                   <View
                     style={{
                       flexDirection: 'row',
-                      marginLeft: 20,
-                      marginTop: 15,
+                      marginLeft: ViewScale(20),
+                      marginTop: ViewScale(15),
                     }}>
-                    <Text style={{fontSize: 25, color: '#163c70'}}>
+                    <Text style={{fontSize: ViewScale(25), color: '#163c70'}}>
                       {this.state.nameAct}
                     </Text>
                   </View>
@@ -306,12 +307,12 @@ class SmesActivityShowBusiness extends React.Component {
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_continent')} {'\t\t'}
                     </Text>
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {this.state.location}
                     </Text>
                   </View>
@@ -319,25 +320,25 @@ class SmesActivityShowBusiness extends React.Component {
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_country')} {'\t\t'}
                     </Text>
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {this.state.Country}
                     </Text>
                   </View>
                   <View
                     style={{
                       flexDirection: 'row',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_goods')} {'\t\t'}
                     </Text>
                     <View style={{height: null}}>
-                      <Text style={{fontSize: 20, color: '#73838f'}}>
+                      <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                         :{' '}
                         {this.state.Product.map(function name(data) {
                           return data.name_th;
@@ -349,18 +350,18 @@ class SmesActivityShowBusiness extends React.Component {
                     style={{
                       flexDirection: 'row',
 
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_Detail')}
                       {'\t'}
                     </Text>
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {I18n.t('translate_Requesting_support')}
                     </Text>
                   </View>
 
-                  <View style={{marginTop: 20}}>
+                  <View style={{marginTop: ViewScale(20)}}>
                     {this.state.Status.map(function status(data, index) {
                       const Check = Color => {
                         var color = null;
@@ -376,15 +377,15 @@ class SmesActivityShowBusiness extends React.Component {
                       };
 
                       return (
-                        <View style={{marginTop: -20}}>
-                          <View style={[Styles.OverlayView6, {bottom: -10}]}>
+                        <View style={{marginTop: ViewScale(-20)}}>
+                          <View style={[Styles.OverlayView6, {bottom: ViewScale(-10)}]}>
                             <View
                               style={{
-                                width: 10,
-                                height: 10,
+                                width: ViewScale(10),
+                                height: ViewScale(10),
                                 borderWidth: 1,
                                 backgroundColor: Check(data.status_color),
-                                borderRadius: 30,
+                                borderRadius: ViewScale(30),
                                 borderColor: 'transparent',
                               }}
                             />
@@ -398,10 +399,10 @@ class SmesActivityShowBusiness extends React.Component {
                             </Text>
                             <View
                               style={{
-                                flex: Platform.OS === 'android' ? 0.9 : 1,
+                                flex: Platform.OS === 'android' ? ViewScale(0.9) : ViewScale(1),
                                 flexDirection: 'row-reverse',
                               }}>
-                              <Text style={{fontSize: 16, color: '#73838f'}}>
+                              <Text style={{fontSize: ViewScale(16), color: '#73838f'}}>
                                 {' '}
                                 {data.status_date != ''
                                   ? data.status_date
@@ -488,7 +489,7 @@ class SmesActivityShowBusiness extends React.Component {
               <View style={[Styles.flexDirectionRow, {width: '80%'}]}>
                 <Text
                   numberOfLines={2}
-                  style={[Styles.titleListHis, {lineHeight: 30}]}>
+                  style={[Styles.titleListHis, {lineHeight: ViewScale(30)}]}>
                   {item.activity_name_th}
                 </Text>
               </View>
@@ -498,7 +499,7 @@ class SmesActivityShowBusiness extends React.Component {
               <View>
                 {/*อนุมัติเรียบร้อย */}
 
-                <Text style={{fontSize: 16, color: '#73838f', left: 20}}>
+                <Text style={{fontSize: 16, color: '#73838f', left: ViewScale(20)}}>
                   {I18n.t('translate_Requesting_support')}
                 </Text>
 
@@ -525,19 +526,19 @@ class SmesActivityShowBusiness extends React.Component {
                         }
                       };
                       return (
-                        <View style={[Styles.ViewSubList2, {left: 20}]}>
+                        <View style={[Styles.ViewSubList2, {left: ViewScale(20)}]}>
                           <View
                             style={{
-                              width: 10,
-                              height: 10,
+                              width: ViewScale(10),
+                              height: ViewScale9,
                               borderWidth: 1,
                               backgroundColor: Check(status_color),
-                              borderRadius: 30,
+                              borderRadius: ViewScale(30),
                               borderColor: 'transparent',
                             }}
                           />
                           <Text
-                            style={{fontSize: 16, color: Check(status_color)}}>
+                            style={{fontSize: ViewScale(16), color: Check(status_color)}}>
                             {' '}
                             {status_name}
                           </Text>
@@ -591,17 +592,17 @@ class SmesActivityShowBusiness extends React.Component {
                 <View style={Styles.OverlayView2}>
                   <View style={Styles.OverlayView3}>
                     <Image
-                      style={{width: 155, height: 118}}
+                      style={{width: ViewScale(155), height: ViewScale(118)}}
                       source={require('../../image/SMEsIMG.png')}
                     />
                   </View>
                   <View
                     style={{
                       flexDirection: 'row',
-                      marginLeft: 20,
-                      marginTop: 15,
+                      marginLeft: ViewScale(20),
+                      marginTop: ViewScale(15),
                     }}>
-                    <Text style={{fontSize: 25, color: '#163c70'}}>
+                    <Text style={{fontSize: ViewScale(25), color: '#163c70'}}>
                       {this.state.nameAct}
                     </Text>
                   </View>
@@ -609,17 +610,17 @@ class SmesActivityShowBusiness extends React.Component {
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_continent')} {'\t\t'}
                     </Text>
                     {I18n.locale === 'th' ?(
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       :  {this.state.CountryTH}
                     </Text>
                     ):(
-                      <Text style={{fontSize: 20, color: '#73838f'}}>
+                      <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       :  {this.state.CountryEN}
                     </Text>
                     )}
@@ -628,17 +629,17 @@ class SmesActivityShowBusiness extends React.Component {
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_country')} {'\t\t'}
                     </Text>
                     {I18n.locale === 'th' ? ( 
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {this.state.locationTH}
                     </Text>
                     ): ( 
-                      <Text style={{fontSize: 20, color: '#73838f'}}>
+                      <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {this.state.locationEN}
                     </Text>
                     )}
@@ -646,21 +647,21 @@ class SmesActivityShowBusiness extends React.Component {
                   <View
                     style={{
                       flexDirection: 'row',
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_goods')} {'\t\t'}
                     </Text>
                     <View style={{height: null}}>
                       {this.state.Product != ''  ? (
-                      <Text style={{fontSize: 20, color: '#73838f'}}>
+                      <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                         :{' '}
                         {this.state.Product.map(function name(data) {
                           return data.name_th;
                         })}
                       </Text>
                       ):(
-                        <Text style={{fontSize: 20, color: '#73838f'}}>
+                        <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                         :{' - '}
                         
                       </Text>
@@ -673,25 +674,25 @@ class SmesActivityShowBusiness extends React.Component {
                     style={{
                       flexDirection: 'row',
 
-                      marginLeft: 20,
+                      marginLeft: ViewScale(20),
                     }}>
-                    <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                       {I18n.t('translate_Detail')}
                       {'\t'}
                     </Text>
-                    <Text style={{fontSize: 20, color: '#73838f'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#73838f'}}>
                       : {I18n.t('translate_Requesting_support')}
                     </Text>
                   </View>
 
-                  <View style={{margin: 10}}>
+                  <View style={{margin: ViewScale(10)}}>
                     <Image
-                      style={{width: 334, height: 1}}
+                      style={{width: ViewScale(334), height: ViewScale(1)}}
                       source={require('../../image/line6.png')}
                     />
                   </View>
 
-                  <View style={{marginTop: 30}}>
+                  <View style={{marginTop: ViewScale(30)}}>
                     {this.state.Status.map(function status(data, index) {
                       // const Check = Color => {
                       //   var color = null;
@@ -707,81 +708,81 @@ class SmesActivityShowBusiness extends React.Component {
                       // };
 
                       return (
-                        <View style={{marginTop: -20, marginHorizontal: 40}}>
+                        <View style={{marginTop: ViewScale(-20), marginHorizontal: ViewScale(40)}}>
                           {index == 0 && (
-                            <View style={{marginBottom: 15}}>
+                            <View style={{marginBottom: ViewScale(15)}}>
                               <View style={{flexDirection: 'row'}}>
                                 <Image
-                                  style={{width: 12, height: 12, marginTop: 5}}
+                                  style={{width: ViewScale(12), height: ViewScale(12), marginTop: ViewScale(5)}}
                                   source={require('../../image/pontone1.png')}
                                 />
 
-                                <Text style={{fontSize: 18, color: '#2d6dc4'}}>
+                                <Text style={{fontSize: ViewScale(18), color: '#2d6dc4'}}>
                                   {' '}
                                   {data.status_name}
                                 </Text>
                               </View>
                               <Image
                                 style={{
-                                  width: 2,
-                                  height: 17,
-                                  marginLeft: 4.5,
-                                  marginTop: -3,
+                                  width: ViewScale(2),
+                                  height: ViewScale(17),
+                                  marginLeft: ViewScale(4.5),
+                                  marginTop: ViewScale(-3),
                                 }}
                                 source={require('../../image/linepont1.png')}
                               />
                             </View>
                           )}
                           {index == 1 && (
-                            <View style={{marginBottom: 15, marginTop: 3}}>
+                            <View style={{marginBottom: ViewScale(15), marginTop: ViewScale(3)}}>
                               <View style={{flexDirection: 'row'}}>
                                 <Image
-                                  style={{width: 12, height: 12, marginTop: 5}}
+                                  style={{width: ViewScale(12), height: ViewScale(12), marginTop: ViewScale(5)}}
                                   source={require('../../image/point2.png')}
                                 />
 
-                                <Text style={{fontSize: 18, color: '#2d6dc4'}}>
+                                <Text style={{fontSize: ViewScale(18), color: '#2d6dc4'}}>
                                   {' '}
                                   {data.status_name}
                                 </Text>
                               </View>
                               <Image
                                 style={{
-                                  width: 2,
-                                  height: 17,
-                                  marginLeft: 4.5,
-                                  marginTop: -3,
+                                  width: ViewScale(2),
+                                  height: ViewScale(17),
+                                  marginLeft: ViewScale(4.5),
+                                  marginTop: ViewScale(-3),
                                 }}
                                 source={require('../../image/linepoint2.png')}
                               />
                             </View>
                           )}
                           {index == 2 && (
-                            <View style={{marginBottom: 15, marginTop: 3}}>
+                            <View style={{marginBottom: ViewScale(15), marginTop: ViewScale(3)}}>
                               <View style={{flexDirection: 'row'}}>
                                 <Image
-                                  style={{width: 12, height: 12, marginTop: 5}}
+                                  style={{width: ViewScale(12), height: ViewScale(12), marginTop: ViewScale(5)}}
                                   source={require('../../image/point3.png')}
                                 />
 
-                                <Text style={{fontSize: 18, color: '#2d6dc4'}}>
+                                <Text style={{fontSize: ViewScale(18), color: '#2d6dc4'}}>
                                   {' '}
                                   {data.status_name}
                                 </Text>
                               </View>
                               <Image
                                 style={{
-                                  width: 2,
-                                  height: 30,
-                                  marginLeft: 4.5,
-                                  marginTop: -3,
+                                  width: ViewScale(2),
+                                  height: ViewScale(30),
+                                  marginLeft: ViewScale(4.5),
+                                  marginTop: ViewScale(-3),
                                 }}
                                 source={require('../../image/linepoint3.png')}
                               />
                             </View>
                           )}
                           {index == 3 && (
-                            <View style={{marginBottom: 15, marginTop: 3}}>
+                            <View style={{marginBottom: ViewScale(15), marginTop: ViewScale(3)}}>
                               <View style={{flexDirection: 'row'}}>
                                 {/* <Image
                                   style={{width: 12, height: 12, marginTop: 5}}
@@ -789,30 +790,30 @@ class SmesActivityShowBusiness extends React.Component {
                                 /> */}
                                 <View
                                   style={{
-                                    width: 12,
-                                    height: 12,
-                                    marginTop: 5,
+                                    width: ViewScale(12),
+                                    height: ViewScale(12),
+                                    marginTop: ViewScale(5),
                                     backgroundColor: '#FFFFFF',
                                     borderWidth: 1,
                                     borderColor: '#5dbde6',
-                                    borderRadius: 8,
+                                    borderRadius: ViewScale(8),
                                   }}
                                 />
 
                                 <TouchableOpacity
                                   style={{
-                                    width: 135,
-                                    height: 50,
+                                    width: ViewScale(135),
+                                    height: ViewScale(50),
                                     borderColor: '#5dbde6',
                                     borderWidth: 1,
-                                    borderRadius: 8,
+                                    borderRadius: ViewScale(8),
                                     justifyContent: 'center',
-                                    marginHorizontal: 15,
-                                    marginTop: -10,
+                                    marginHorizontal: ViewScale(15),
+                                    marginTop: ViewScale(-10),
                                   }}>
                                   <Text
                                     style={{
-                                      fontSize: 25,
+                                      fontSize: ViewScale(25),
                                       color: '#2d6dc4',
                                       textAlign: 'center',
                                     }}>
@@ -861,19 +862,19 @@ class SmesActivityShowBusiness extends React.Component {
           containerStyle={{
             width: '100%',
             height: null,
-            borderWidth: 3,
+            borderWidth: ViewScale(3),
             borderColor: '#f4f5f8',
           }}
           rightSubtitle={
             <View>
               <View>
               <Text
-                  style={{alignSelf: 'center', color: '#73838f', fontSize: 16}}>
+                  style={{alignSelf: 'center', color: '#73838f', fontSize: ViewScale(16)}}>
                   {I18n.t('transalte_application_submission_date')}
                  
                 </Text>
                 <Text
-                  style={{alignSelf: 'center', color: '#73838f', fontSize: 16}}>
+                  style={{alignSelf: 'center', color: '#73838f', fontSize: ViewScale(16)}}>
                 
                   {this.Showdate(item.register_date)}
                 </Text>
@@ -890,7 +891,7 @@ class SmesActivityShowBusiness extends React.Component {
             <View style={(Styles.flexDirectionRow, {width: '80%'})}>
               <Text
                 numberOfLines={2}
-                style={[Styles.titleListHis, {lineHeight: 20}]}>
+                style={[Styles.titleListHis, {lineHeight: ViewScale(20)}]}>
                 {item.activity_name_th}
               </Text>
             </View>
@@ -900,21 +901,21 @@ class SmesActivityShowBusiness extends React.Component {
             <View>
               {/*อนุมัติเรียบร้อย */}
               <View style={{flexDirection: 'row'}}>
-                <Text style={{fontSize: 18, color: '#73838f', left: 20}}>
+                <Text style={{fontSize: ViewScale(18), color: '#73838f', left: ViewScale(20)}}>
                   {I18n.t('translate_country')} :
                 </Text>
 
-                <Text style={{fontSize: 18, color: '#163c70', left: 20}}>
+                <Text style={{fontSize: ViewScale(18), color: '#163c70', left: ViewScale(20)}}>
                   {' '}
                   {item.country_name_th} 
                 </Text>
               </View>
               <View style={{flexDirection: 'row'}}>
-                <Text style={{fontSize: 18, color: '#73838f', left: 20}}>
+                <Text style={{fontSize: ViewScale(18), color: '#73838f', left: ViewScale(20)}}>
                   {I18n.t('transalte_Event_date')} :
                 </Text>
 
-                <Text style={{fontSize: 18, color: '#163c70', left: 20}}>
+                <Text style={{fontSize: ViewScale(18), color: '#163c70', left: ViewScale(20)}}>
                   {' '}
                   {this.Showdate(item.activity_start_date)}
                   {' - '}
@@ -923,7 +924,7 @@ class SmesActivityShowBusiness extends React.Component {
               </View>
 
               <View>
-                <View style={[Styles.ViewSubList2, {left: 20}]}>
+                <View style={[Styles.ViewSubList2, {left: ViewScale(20)}]}>
                   <Image
                     style={Styles.ImgListwating}
                     source={require('../../image/End.png')}
@@ -965,7 +966,7 @@ class SmesActivityShowBusiness extends React.Component {
         />
         <View
           style={{
-            marginTop: Platform.OS === 'android' && 90,
+            marginTop: Platform.OS === 'android' && ViewScale(90),
           }}
         />
         <Headerstage5
@@ -1027,7 +1028,7 @@ class SmesActivityShowBusiness extends React.Component {
                   ? ['#5dbde6', '#1d61bd']
                   : ['#FFFFFF', '#FFFFFF']
               }
-              style={{height: 42, justifyContent: 'center'}}>
+              style={{height: ViewScale(42), justifyContent: 'center'}}>
               <Text
                 style={
                   this.state.heightTab2 == 1
@@ -1051,7 +1052,7 @@ class SmesActivityShowBusiness extends React.Component {
                   ? ['#5dbde6', '#1d61bd']
                   : ['#FFFFFF', '#FFFFFF']
               }
-              style={{height: 42, justifyContent: 'center'}}>
+              style={{height: ViewScale(42), justifyContent: 'center'}}>
               <Text
                 style={
                   this.state.heightTab2 == 2
@@ -1103,7 +1104,7 @@ class SmesActivityShowBusiness extends React.Component {
                 // <View style={{marginBottom:10}}> </View>
                 <View style={{alignItems: 'center',marginTop:height*0.3}}>
                   {/* //b */}
-                  <Text style={{fontSize: 22}}>
+                  <Text style={{fontSize: ViewScale(22)}}>
                     {I18n.t('translate_NoHistory')}
                   </Text>
                   {/* <View style={{alignItems: 'center'}}>
@@ -1155,7 +1156,7 @@ class SmesActivityShowBusiness extends React.Component {
                 // <View style={{marginBottom:10}}> </View>
                 <View style={{alignItems: 'center',marginTop:height*0.3}}>
                   {/* //b */}
-                  <Text style={{fontSize: 22}}>
+                  <Text style={{fontSize: ViewScale(22)}}>
                     {I18n.t('translate_NoHistory')}
                   </Text>
                   {/* <View style={{alignItems: 'center'}}>
@@ -1170,7 +1171,7 @@ class SmesActivityShowBusiness extends React.Component {
         </View>
         <View>
           {this.state.heightTab2 == 2 && (
-            <View style={{marginTop: 10}}>
+            <View style={{marginTop: ViewScale(10)}}>
               {/* <View style={{}}>
                <Text style={{fontSize: 18, color: '#73838f'}}>
                  {I18n.t('translate_fiscalyear')} :
@@ -1187,28 +1188,28 @@ class SmesActivityShowBusiness extends React.Component {
                     activeTabStyle={Styles.tabactive}
                     tabTextStyle={Styles.tabtext2}
                     firstTabStyle={{
-                      borderTopLeftRadius: 8,
-                      borderBottomLeftRadius: 8,
-                      borderTopRightRadius: 8,
-                      borderBottomRightRadius: 8,
-                      marginRight: 2,
+                      borderTopLeftRadius: ViewScale(8),
+                      borderBottomLeftRadius: ViewScale(8),
+                      borderTopRightRadius: ViewScale(8),
+                      borderBottomRightRadius: ViewScale(8),
+                      marginRight: ViewScale(2),
                     }}
                     lastTabStyle={{
-                      borderTopLeftRadius: 8,
-                      borderBottomLeftRadius: 8,
-                      borderTopRightRadius: 8,
-                      borderBottomRightRadius: 8,
-                      marginRight: 2,
+                      borderTopLeftRadius: ViewScale(8),
+                      borderBottomLeftRadius: ViewScale(8),
+                      borderTopRightRadius: ViewScale(8),
+                      borderBottomRightRadius: ViewScale(8),
+                      marginRight: ViewScale(2),
                     }}
                     tabStyle={{
                       borderColor: '#FFFFFF',
                       width: '50%',
-                      height: 31,
+                      height: ViewScale(31),
                       backgroundColor: '#d8d8d8',
                       paddingVertical: 1,
                       justifyContent: 'center',
-                      borderRadius: 8,
-                      padding: 20,
+                      borderRadius: ViewScale(8),
+                      padding: ViewScale(20),
                     }}
                     tabsContainerStyle={Styles.tabContainer2}
                     selectedIndex={this.state.SelecIndexYear1}
@@ -1230,7 +1231,7 @@ class SmesActivityShowBusiness extends React.Component {
                         
                       }}>
                       <Image
-                        style={{width: 11, height: 7, bottom: 2}}
+                        style={{width: ViewScale(11), height: ViewScale(7), bottom: ViewScale((2))}}
                         source={require('../../image/DropDown.png')}
                       />
                     </View>
@@ -1275,7 +1276,7 @@ class SmesActivityShowBusiness extends React.Component {
                         </View>
                       ) : (
                         <View style={{alignItems: 'center',marginTop:height*0.3}}>
-                          <Text style={{fontSize: 22}}>
+                          <Text style={{fontSize: ViewScale(22)}}>
                             {I18n.t('translate_NoHistory')}
                           </Text>
                           {/* <View style={{alignItems: 'center'}}>
@@ -1296,8 +1297,8 @@ class SmesActivityShowBusiness extends React.Component {
                     <View style={{ width: '78%',alignItems:'center'}}>
                       <Image
                         style={{
-                          width: 11,
-                          height: 7,
+                          width: ViewScale(11),
+                          height: ViewScale(7),
                           bottom: Platform.OS === 'android' ? 1 : 1,
                         }}
                         source={require('../../image/DropDown.png')}
@@ -1344,7 +1345,7 @@ class SmesActivityShowBusiness extends React.Component {
                         </View>
                       ) : (
                         <View style={{alignItems: 'center',marginTop:height*0.3}}>
-                          <Text style={{fontSize: 22}}>
+                          <Text style={{fontSize: ViewScale(22)}}>
                             {I18n.t('translate_NoHistory')}
                           </Text>
                           {/* <View style={{alignItems: 'center'}}>
@@ -1369,7 +1370,7 @@ class SmesActivityShowBusiness extends React.Component {
                        
                       }}>
                       <Image
-                        style={{width: 11, height: 7, bottom: 2}}
+                        style={{width: ViewScale(11), height: ViewScale(7), bottom: ViewScale(2)}}
                         source={require('../../image/DropDown.png')}
                       />
                     </View>
@@ -1416,7 +1417,7 @@ class SmesActivityShowBusiness extends React.Component {
                         </View>
                       ) : (
                         <View style={{alignItems: 'center',marginTop:height*0.3}}>
-                          <Text style={{fontSize: 22}}>
+                          <Text style={{fontSize: ViewScale(22)}}>
                             {I18n.t('translate_NoHistory')}
                           </Text>
                           {/* <View style={{alignItems: 'center'}}>
@@ -1440,7 +1441,7 @@ class SmesActivityShowBusiness extends React.Component {
                     
                       }}>
                       <Image
-                        style={{width: 11, height: 7, bottom: 2}}
+                        style={{width: ViewScale(11), height: ViewScale(7), bottom: ViewScale(2)}}
                         source={require('../../image/DropDown.png')}
                       />
                     </View>
@@ -1487,7 +1488,7 @@ class SmesActivityShowBusiness extends React.Component {
                         </View>
                       ) : (
                         <View style={{alignItems: 'center',marginTop:height*0.3}}>
-                          <Text style={{fontSize: 22}}>
+                          <Text style={{fontSize: ViewScale(22)}}>
                             {I18n.t('translate_NoHistory')}
                           </Text>
                           {/* <View style={{alignItems: 'center'}}>

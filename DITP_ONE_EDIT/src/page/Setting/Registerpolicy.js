@@ -12,6 +12,7 @@ import HTML from 'react-native-render-html';
 import {connect} from 'react-redux';
 import I18n from '../../utils/I18n';
 import Icon from 'react-native-vector-icons/AntDesign';
+import { ViewScale } from '../../config/ViewScale';
 import Style from '../../page/Setting/Styles';
 const Registerpolicy = ({dispatch, navigation}) => {
   const [Policy_th, setPolicy] = useState();
@@ -42,7 +43,7 @@ const Registerpolicy = ({dispatch, navigation}) => {
           <View style={{alignSelf: 'center'}}>
             <Text
               style={{
-                fontSize: 25,
+                fontSize: ViewScale(25),
                 color: '#000000',
                 fontFamily: 'Kittithada Bold 75',
               }}>
@@ -54,13 +55,13 @@ const Registerpolicy = ({dispatch, navigation}) => {
           <TouchableOpacity
             style={{padding: 0}}
             onPress={() => navigation.goBack()}>
-            <Icon name="left" size={20} />
+            <Icon name="left" size={ViewScale(20)} />
           </TouchableOpacity>
         }
         backgroundColor="transparent"
       />
       <ScrollView>
-        <View style={{width: '85%', alignSelf: 'center', marginBottom: 30}}>
+        <View style={{width: '85%', alignSelf: 'center', marginBottom: ViewScale(30)}}>
           <HTML
             containerStyle={Style.color}
             baseFontStyle={Style.fontSize}

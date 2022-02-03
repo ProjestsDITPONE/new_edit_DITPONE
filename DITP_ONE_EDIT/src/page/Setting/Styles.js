@@ -1,4 +1,5 @@
 import {StyleSheet, Dimensions, Platform} from 'react-native';
+import { ViewScale } from '../../config/ViewScale';
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 export default StyleSheet.create({
@@ -17,9 +18,9 @@ export default StyleSheet.create({
     backgroundColor: '#FFFFFF',
   },
   ViewSub3: {
-    marginTop: 20,
+    marginTop: ViewScale(20),
     alignSelf: 'center',
-    padding: 10,
+    padding: ViewScale(10),
   },
   ViewSub10: {
     flexDirection: 'row',
@@ -27,7 +28,7 @@ export default StyleSheet.create({
     width: '95%',
   },
   TextSub1: {
-    fontSize: 16,
+    fontSize: ViewScale(16),
     color: '#4b4b4b',
     fontFamily: 'Mitr-Regular',
   },
@@ -36,7 +37,7 @@ export default StyleSheet.create({
     flex: 0.95,
   },
   ViewSub5: {
-    marginTop: 35,
+    marginTop: ViewScale(35),
     flexDirection: 'row',
     alignItems: 'center',
     // marginLeft: 10,
@@ -44,8 +45,8 @@ export default StyleSheet.create({
     alignSelf: 'center',
   },
   Imgsub1: {
-    width: 25,
-    height: 25,
+    width: ViewScale(25),
+    height: ViewScale(25),
   },
   ViewSub6: {
     alignContent: 'center',
@@ -55,55 +56,55 @@ export default StyleSheet.create({
   //Unsubscribe
   SafeArea2: {
     height: '100%',
-    padding: 10,
+    padding: ViewScale(10),
     backgroundColor: '#FFFFFF',
   },
   margin10: {
-    marginLeft: 10,
+    marginLeft: ViewScale(10),
   },
   margin15: {
-    marginTop: 15,
+    marginTop: ViewScale(15),
   },
   marginTop20: {
-    marginTop: 20,
+    marginTop: ViewScale(20),
   },
   TextSub2: {
-    fontSize: 25,
+    fontSize: ViewScale(25),
     color: '#40536d',
   },
   TextSub3: {
-    fontSize: 20,
+    fontSize: ViewScale(20),
     color: '#40536d',
   },
   TextSub4: {
-    fontSize: 25,
+    fontSize: ViewScale(25),
     color: '#FFFFFF',
   },
   alignItemsCenter: {
     // alignItems: 'center',
   },
   ViewSub7: {
-    marginTop: 5,
+    marginTop: ViewScale(5),
     width: '100%',
-    height: 42,
+    height: ViewScale(42),
     backgroundColor: '#FFFFFF',
     borderColor: '#cacaca',
     borderWidth: 1,
-    borderRadius: 21.5,
+    borderRadius: ViewScale(21.5),
     justifyContent: 'center',
   },
   ViewSub8: {
-    marginTop: 5,
+    marginTop: ViewScale(5),
     width: '100%',
-    height: 190,
+    height: ViewScale(190),
     backgroundColor: '#FFFFFF',
     borderColor: '#cacaca',
     borderWidth: 1,
-    borderRadius: 5,
+    borderRadius: ViewScale(5),
   },
   ViewSub9: {
-    marginTop: Platform.OS === 'android' ? 20 : 10,
-    marginBottom: Platform.OS === 'android' ? 10 : 20,
+    marginTop: Platform.OS === 'android' ? ViewScale(20) : ViewScale(10),
+    marginBottom: Platform.OS === 'android' ? ViewScale(10) : ViewScale(20),
     alignContent: 'center',
     alignItems: 'center',
     // flexDirection: 'column-reverse',
@@ -111,54 +112,54 @@ export default StyleSheet.create({
     // flex: 1,
   },
   TextinputSub1: {
-    fontSize: 20,
+    fontSize: ViewScale(20),
     color: '#4d4d4d',
-    marginLeft: 20,
+    marginLeft: ViewScale(20),
     fontWeight: 'normal',
     fontFamily: 'PSL Kittithada Pro',
     padding: 0,
   },
   TextinputSub2: {
-    fontSize: 20,
+    fontSize: ViewScale(20),
     color: '#4d4d4d',
-    marginLeft: 20,
-    marginTop: 10,
+    marginLeft: ViewScale(20),
+    marginTop: ViewScale(10),
   },
   TouchSub1: {
     width: '100%',
-    height: 48,
+    height: ViewScale(48),
     backgroundColor: '#2d6dc4',
-    borderRadius: 21.5,
+    borderRadius: ViewScale(21.5),
     alignItems: 'center',
     justifyContent: 'center',
   },
   TouchSub5: {
     width: '90%',
-    height: 48,
+    height: ViewScale(48),
     backgroundColor: '#dadada',
-    borderRadius: 21.5,
+    borderRadius: ViewScale(21.5),
     alignItems: 'center',
     justifyContent: 'center',
   },
   paddingTop20: {
-    paddingTop: 20,
+    paddingTop: ViewScale(20),
   },
   TouchSub2: {
-    width: 150,
-    height: 35,
+    width: ViewScale(150),
+    height: ViewScale(35),
     borderWidth: 2,
     borderColor: '#2d6dc4',
-    borderRadius: 21.5,
+    borderRadius: ViewScale(21.5),
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
   },
   Imgsub2: {
-    width: 17,
-    height: 16,
+    width: ViewScale(17),
+    height: ViewScale(16),
   },
   TextSub5: {
-    fontSize: 24,
+    fontSize: ViewScale(24),
     color: '#2d6dc4',
     fontFamily: 'Kittithada Bold 75',
   },
@@ -167,7 +168,7 @@ export default StyleSheet.create({
     color: '#000000',
   },
   fontSize: {
-    fontSize: 21,
+    fontSize: ViewScale(21),
     // fontWeight: 'normal',
     // fontFamily: 'Kittithada Bold 75',
     fontFamily: 'Kittithada Bold 75',

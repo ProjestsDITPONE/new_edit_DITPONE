@@ -25,6 +25,7 @@ import {connect} from 'react-redux';
 import RNFetchBlob from 'rn-fetch-blob';
 import Styles from './Styles';
 import LinearGradient from 'react-native-linear-gradient';
+import { ViewScale } from '../../config/ViewScale';
 import {color} from 'react-native-reanimated';
 
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
@@ -80,8 +81,8 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
     const options1 = {
       quality: 1,
       base64: true,
-      width: 800,
-      height: 600,
+      width: ViewScale(800),
+      height: ViewScale(600),
     };
     const data = await Camera.takePictureAsync(options);
     const data1 = await Camera.takePictureAsync(options1);
@@ -242,8 +243,8 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                 <View
                   style={{
                     flex: 0.4,
-                    marginLeft: 10,
-                    marginTop: 20,
+                    marginLeft: ViewScale(10),
+                    marginTop: ViewScale(20),
                     zIndex: -1,
                   }}>
                   <TouchableOpacity
@@ -255,7 +256,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                       }, 200);
                     }}>
                     <Image
-                      style={{width: 20, height: 20}}
+                      style={{width: ViewScale(20), height: ViewScale(20)}}
                       source={require('../../image/CloseCamra.png')}
                     />
                   </TouchableOpacity>
@@ -272,7 +273,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                         width: '99%',
                         height: '44%',
                         overflow: 'hidden',
-                        borderRadius: 8,
+                        borderRadius: ViewScale(8),
                       }}
                       autoFocus={RNCamera.Constants.AutoFocus.on}
                       type={RNCamera.Constants.Type.back}
@@ -305,7 +306,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                         alignItems: 'center',
                         justifyContent: 'center',
                       }}>
-                      <Text style={{fontSize: 25, color: '#ffffff'}}>
+                      <Text style={{fontSize: ViewScale(25), color: '#ffffff'}}>
                         {I18n.t('translate_takeId')}
                       </Text>
                       <TouchableOpacity
@@ -316,7 +317,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                         }}
                         style={Styles.capture}>
                         <Image
-                          style={{width: 80, height: 80}}
+                          style={{width: ViewScale(80), height: ViewScale(80)}}
                           source={require('../../image/TouchPhoto.png')}
                         />
                       </TouchableOpacity>
@@ -334,7 +335,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                       }}>
                       <ImageBackground
                         imageStyle={{
-                          borderWidth: 2,
+                          borderWidth: ViewScale(2),
                           borderColor: '#ffffff',
                           width: '100%',
                           height: '75%',
@@ -360,15 +361,15 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                           style={{
                             backgroundColor: '#000000',
 
-                            marginRight: 10,
-                            borderRadius: 10,
+                            marginRight: ViewScale(10),
+                            borderRadius: ViewScale(10),
                             width: '30%',
-                            paddingVertical: 10,
-                            paddingHorizontal: 15,
+                            paddingVertical: ViewScale(10),
+                            paddingHorizontal: ViewScale(15),
                           }}>
                           <Text
                             style={{
-                              fontSize: 25,
+                              fontSize: ViewScale(25),
                               color: '#ffffff',
                               textAlign: 'center',
                             }}>
@@ -381,14 +382,14 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                           }}
                           style={{
                             backgroundColor: '#000000',
-                            borderRadius: 10,
+                            borderRadius: ViewScale(10),
                             width: '30%',
-                            paddingVertical: 10,
-                            paddingHorizontal: 15,
+                            paddingVertical: ViewScale(10),
+                            paddingHorizontal: ViewScale(15),
                           }}>
                           <Text
                             style={{
-                              fontSize: 25,
+                              fontSize: ViewScale(25),
                               color: '#ffffff',
                               textAlign: 'center',
                             }}>
@@ -454,7 +455,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                 isVisible
                 backdropStyle={{backgroundColor: '#2d6dc4'}}>
                 <SafeAreaView style={{flex: 1}}>
-                  <View style={{flex: 0.08, marginLeft: 10, marginTop: 20}}>
+                  <View style={{flex: 0.08, marginLeft: ViewScale(10), marginTop: ViewScale(20)}}>
                     <TouchableOpacity
                       onPress={() => {
                         setTimeout(() => {
@@ -463,14 +464,14 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                         }, 200);
                       }}>
                       <Image
-                        style={{width: 20, height: 20}}
+                        style={{width: ViewScale(20), height: ViewScale(20)}}
                         source={require('../../image/CloseCamra.png')}
                       />
                     </TouchableOpacity>
                   </View>
                   {Img2 === null && (
                     <View style={Styles.container}>
-                      <View style={{overflow: 'hidden', borderRadius: 145}}>
+                      <View style={{overflow: 'hidden', borderRadius: ViewScale(145)}}>
                         <RNCamera
                           captureAudio={false}
                           detectedImageInEvent={true}
@@ -499,13 +500,13 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                       </View>
                       <View
                         style={{
-                          width: 195,
+                          width: ViewScale(195),
                           height: null,
                           alignItems: 'center',
-                          paddingTop: 60,
+                          paddingTop: ViewScale(60),
                           
                         }}>
-                        <Text style={{fontSize: 25, color: '#ffffff'}}>
+                        <Text style={{fontSize: ViewScale(25), color: '#ffffff'}}>
                           {I18n.t('translate_rejectEyeglass')}
                         </Text>
                         {/* <Text style={{fontSize: 25, color: '#ffffff'}}>
@@ -526,7 +527,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                           }}
                           style={Styles.capture}>
                           <Image
-                            style={{width: 80, height: 80}}
+                            style={{width: ViewScale(80), height: ViewScale(80)}}
                             source={require('../../image/TouchPhoto.png')}
                           />
                         </TouchableOpacity>
@@ -539,7 +540,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                         <View
                           style={{
                             overflow: 'hidden',
-                            borderRadius: 145,
+                            borderRadius: ViewScale(145),
                           }}>
                           <ImageBackground
                             source={{uri: url2}}
@@ -548,7 +549,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                               height: width * 1,
 
                               overflow: 'hidden',
-                              borderRadius: 145,
+                              borderRadius: ViewScale(145),
                             }}
                           />
                         </View>
@@ -567,15 +568,15 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                             style={{
                               backgroundColor: '#000000',
 
-                              marginRight: 10,
-                              borderRadius: 10,
+                              marginRight: ViewScale(10),
+                              borderRadius: ViewScale(10),
                               width: '30%',
-                              paddingVertical: 10,
-                              paddingHorizontal: 15,
+                              paddingVertical: ViewScale(10),
+                              paddingHorizontal: ViewScale(15),
                             }}>
                             <Text
                               style={{
-                                fontSize: 25,
+                                fontSize: ViewScale(25),
                                 color: '#ffffff',
                                 textAlign: 'center',
                               }}>
@@ -588,14 +589,14 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                             }}
                             style={{
                               backgroundColor: '#000000',
-                              borderRadius: 10,
+                              borderRadius: ViewScale(10),
                               width: '30%',
-                              paddingVertical: 10,
-                              paddingHorizontal: 15,
+                              paddingVertical: ViewScale(10),
+                              paddingHorizontal: ViewScale(15),
                             }}>
                             <Text
                               style={{
-                                fontSize: 25,
+                                fontSize: ViewScale(25),
                                 color: '#ffffff',
                                 textAlign: 'center',
                               }}>
@@ -653,7 +654,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
     <View style={Styles.ViewSub1}>
       <Headers badgeNumber="2" navigation={navigation} backScreen={false} />
 
-      <View style={{marginTop: Platform.OS === 'android' && 90}} />
+      <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
       <Headerstage nameTab={I18n.t('translate_Confirm_identity')} />
 
       <ScrollView style={{zIndex: -1}}>
@@ -661,24 +662,24 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
           {Accept === true && (
             <>
               <Overlay
-                overlayStyle={[Styles.bottom45, {borderRadius: 8}]}
+                overlayStyle={[Styles.bottom45, {borderRadius: ViewScale(8)}]}
                 isVisible
                 backdropStyle={{
                   backgroundColor:
                     Platform.OS === 'android' ? '#2d6dc460' : '#2d6dc4',
-                  opacity: Platform.OS === 'android' ? 0.5 : 0.8,
+                  opacity: Platform.OS === 'android' ? ViewScale(0.5) : ViewScale(0.8),
 
                   flex: 1,
                 }}>
                 <View
                   style={{
                     backgroundColor: '#FFFFFF',
-                    top: -39,
-                    borderRadius: 20,
-                    height: 25,
-                    width: 25,
+                    top: ViewScale(-39),
+                    borderRadius: ViewScale(20),
+                    height: ViewScale(25),
+                    width: ViewScale(25),
                     alignSelf: 'flex-end',
-                    left: 10,
+                    left: ViewScale(10),
                   }}>
                   <TouchableOpacity
                    onPress={()=>{
@@ -688,13 +689,13 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                    }}
                   >
                     <Icon
-                      size={17}
+                      size={ViewScale(17)}
                       name="close"
-                      style={{alignSelf: 'center', top: 5}}
+                      style={{alignSelf: 'center', top: ViewScale(5)}}
                     />
                   </TouchableOpacity>
                 </View>
-                <View style={{padding: 20}}>
+                <View style={{padding: ViewScale(20)}}>
                   {/* <View style={Styles.flexDirectionRow}>
                   <TouchableOpacity
                     onPress={() =>
@@ -735,7 +736,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
 
                     <Text
                       style={{
-                        fontSize: 18,
+                        fontSize: ViewScale(18),
                         color: '#686868',
                         textAlign: 'center',
                       }}>
@@ -750,19 +751,19 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                       }, 200)
                     }
                     style={{
-                      height: 34,
+                      height: ViewScale(34),
                       backgroundColor: '#2d6dc4',
-                      borderRadius: 24.5,
+                      borderRadius: ViewScale(24.5),
                       alignItems: 'center',
                       justifyContent: 'center',
 
-                      marginTop: 25,
+                      marginTop: ViewScale(25),
                     }}>
                     <Text style={Styles.TextSub11}>
                       {I18n.t('translate_Aceept')}
                     </Text>
                   </TouchableOpacity>
-                  <View style={{flexDirection: 'row', marginTop: 25}}>
+                  <View style={{flexDirection: 'row', marginTop: ViewScale(25)}}>
                     <TouchableOpacity
                       onPress={() =>
                         setTimeout(() => {
@@ -772,7 +773,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                       }
                       style={[Styles.ViewSub19, {}]}>
                       <Image
-                        style={{width: 45, height: 45, right: 10}}
+                        style={{width: ViewScale(45), height: ViewScale(45), right: ViewScale(10)}}
                         source={require('../../image/nogsaix.png')}
                       />
                       <Text style={[Styles.TextSub11, {textAlign: 'left'}]}>
@@ -792,9 +793,9 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                         style={[
                           Styles.TextSub11,
                           {
-                            padding: 5,
+                            padding: ViewScale(5),
                             textAlign: 'center',
-                            left: 8,
+                            left: ViewScale(8),
                           },
                         ]}>
                         {/* {I18n.t('translate_Aceept')} */}
@@ -803,20 +804,20 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                       <View
                         style={{
                           backgroundColor: '#FFFFFF',
-                          borderWidth: 1.5,
+                          borderWidth: ViewScale(1.5),
                           borderColor: '#499cc3',
-                          borderRadius: 30,
-                          height: 44,
-                          width: 44,
-                          left: 5,
+                          borderRadius: ViewScale(30),
+                          height: ViewScale(44),
+                          width: ViewScale(44),
+                          left: ViewScale(5),
                         }}>
                         <Icon
                           style={{
-                            top: 7,
+                            top: ViewScale(7),
                             justifyContent: 'center',
                             alignSelf: 'center',
                           }}
-                          size={30}
+                          size={ViewScale(30)}
                           name="call"
                           color="#499cc3"
                         />
@@ -846,12 +847,12 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                 },
                 draggableIcon: {
                   backgroundColor: '#f1f1f1',
-                  width: 66,
-                  height: 8,
+                  width: ViewScale(66),
+                  height: ViewScale(8),
                 },
                 container: {
-                  borderTopLeftRadius: 10,
-                  borderTopRightRadius: 10,
+                  borderTopLeftRadius: ViewScale(10),
+                  borderTopRightRadius: ViewScale(10),
                 },
               }}>
               {Bar()}
@@ -863,10 +864,10 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
           <View style={{flex: 1}}>
             <LinearGradient
               style={{
-                height: 220,
+                height: ViewScale(220),
 
-                marginHorizontal: 10,
-                borderRadius: 8,
+                marginHorizontal: ViewScale(10),
+                borderRadius: ViewScale(8),
               }}
               start={{x: 0, y: 0}}
               end={{x: 0.8, y: 0}}
@@ -876,8 +877,8 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                   Styles.TextSub1,
                   {
                     textAlign: 'center',
-                    top: 9,
-                    fontSize: 25,
+                    top: ViewScale(9),
+                    fontSize: ViewScale(25),
                     fontFamily: 'PSL Kittithada Pro',
                   },
                 ]}>
@@ -888,8 +889,8 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                   Styles.TextSub1,
                   {
                     textAlign: 'center',
-                    top: 9,
-                    fontSize: 15,
+                    top: ViewScale(9),
+                    fontSize: ViewScale(15),
                     fontFamily: 'PSL Kittithada Pro',
                   },
                 ]}>
@@ -897,20 +898,20 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
               </Text>
               <View
                 style={{
-                  marginHorizontal: 50,
-                  borderRadius: 80,
+                  marginHorizontal: ViewScale(50),
+                  borderRadius: ViewScale(80),
                   backgroundColor: '#FFFFFF',
 
-                  height: 110,
-                  top: 45,
+                  height: ViewScale(110),
+                  top: ViewScale(45),
                 }}>
                 <ImageBackground
                   style={{
                     flex: 1,
-                    width: 90,
-                    height: 140,
+                    width: ViewScale(90),
+                    height: ViewScale(140),
                     alignSelf: 'center',
-                    top: -30,
+                    top: ViewScale(-30),
                   }}
                   source={require('../../image/PPER.png')}
                 />
@@ -920,8 +921,8 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
           <View style={Styles.alignSelfCenter}>
             {/* <Text style={Styles.TextSub2}>{I18n.t('translate_typeFile')}</Text> */}
           </View>
-          <View style={{flex: 1, marginHorizontal: 10}}>
-            <Text style={{color: '#163c70', fontSize: 24}}>
+          <View style={{flex: 1, marginHorizontal: ViewScale(10)}}>
+            <Text style={{color: '#163c70', fontSize: ViewScale(24)}}>
               บัตรประจำตัวประชาชน/Passport 
             </Text>
           </View>
@@ -1014,13 +1015,13 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
             <View
               style={[
                 Styles.ViewSub8,
-                {flex: 1, marginHorizontal: 10, height: 130},
+                {flex: 1, marginHorizontal: ViewScale(10), height: ViewScale(130)},
               ]}>
               {Img === null && (
                 <View style={{alignItems: 'center'}}>
                   <Image
                     resizeMode="contain"
-                    style={{width: 155, height: 122, top: 4}}
+                    style={{width: ViewScale(155), height: ViewScale(122), top: ViewScale(4)}}
                     source={require('../../image/passportsample.png')}
                   />
                 </View>
@@ -1029,7 +1030,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                 <View style={{alignItems: 'center', justifyContent: 'center'}}>
                   <Image
                     resizeMode={'contain'}
-                    style={{width: 200, height: 120, top: 8}}
+                    style={{width: ViewScale(200), height: ViewScale(120), top: ViewScale(8)}}
                     source={{uri: url}}
                   />
                   <View
@@ -1065,7 +1066,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                   </TouchableOpacity>
                 </View> */}
             </View>
-            <View style={{flex: 0.5, marginHorizontal: 8}}>
+            <View style={{flex: 0.5, marginHorizontal: ViewScale(8)}}>
               {/* <TouchableOpacity
                     disabled={Img != null}
                     onPress={() => {
@@ -1090,12 +1091,12 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                     }, 200);
                   }}>
                   <LinearGradient
-                    style={{height: 130, borderRadius: 8}}
+                    style={{height: ViewScale(130), borderRadius: ViewScale(8)}}
                     start={{x: 0.1, y: 1}}
                     end={{x: 0.7, y: 0.3}}
                     colors={['#3986ee', '#9c7df6']}>
-                    <View style={{flex: 0.8, alignSelf: 'center', top: 30}}>
-                      <Icon name="add-a-photo" size={65} color="#ffffff" />
+                    <View style={{flex: 0.8, alignSelf: 'center', top: ViewScale(30)}}>
+                      <Icon name="add-a-photo" size={ViewScale(65)} color="#ffffff" />
                     </View>
                   </LinearGradient>
                 </TouchableOpacity>
@@ -1111,12 +1112,12 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                     }, 200);
                   }}>
                 <LinearGradient
-                    style={{height: 130, borderRadius: 8}}
+                    style={{height: ViewScale(130), borderRadius: ViewScale(8)}}
                     start={{x: 0.1, y: 1}}
                     end={{x: 0.7, y: 0.3}}
                     colors={['#3986ee', '#9c7df6']}>
-                    <View style={{flex: 0.8, alignSelf: 'center', top: 30}}>
-                      <Icon name="add-a-photo" size={65} color="#ffffff" />
+                    <View style={{flex: 0.8, alignSelf: 'center', top: ViewScale(30)}}>
+                      <Icon name="add-a-photo" size={ViewScale(65)} color="#ffffff" />
                     </View>
                   </LinearGradient>
                 </TouchableOpacity>
@@ -1127,19 +1128,19 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
           {/*ขั้นที่1 */}
 
           {/*ขั้นที่2 */}
-          <View style={{flex: 1, marginHorizontal: 10, top: 10}}>
-            <Text style={{color: '#163c70', fontSize: 24}}>
+          <View style={{flex: 1, marginHorizontal: ViewScale(10), top: ViewScale(10)}}>
+            <Text style={{color: '#163c70', fontSize: ViewScale(24)}}>
               รูปหน้าตรงคู่บัตรประจำตัวประชาชน / Passport 
             </Text>
           </View>
-          <View style={{flexDirection: 'row', top: 10}}>
-            <View style={[Styles.ViewSub8, {flex: 1, marginHorizontal: 10}]}>
+          <View style={{flexDirection: 'row', top: ViewScale(10)}}>
+            <View style={[Styles.ViewSub8, {flex: 1, marginHorizontal: ViewScale(10)}]}>
               {Img2 === null && (
-                <View style={{alignItems: 'center', marginBottom: 5}}>
+                <View style={{alignItems: 'center', marginBottom: ViewScale(5)}}>
                   <Image
                     // style={Styles.ImageSub3}
                     resizeMode={'contain'}
-                    style={{width: 200, height: 110, top: 8}}
+                    style={{width: ViewScale(200), height: ViewScale(110), top: ViewScale(8)}}
                     source={require('../../image/PPER.png')}
                   />
                 </View>
@@ -1150,7 +1151,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                     // resizeMode="cover"
                     // style={Styles.ImageSub7}
                     resizeMode={'contain'}
-                    style={{width: 200, height: 120, top: 8}}
+                    style={{width: ViewScale(200), height: ViewScale(120), top: ViewScale(8)}}
                     source={{uri: url2}}
                   />
                   {/* <View style={Styles.ViewSub14}>
@@ -1167,7 +1168,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                 </View>
               )}
             </View>
-            <View style={{flex: 0.5, marginHorizontal: 8}}>
+            <View style={{flex: 0.5, marginHorizontal: ViewScale(8)}}>
               {/* <View style={{alignItems: 'center', marginTop: 10}}>
                     <TouchableOpacity
                       disabled={Img2 != null}
@@ -1194,12 +1195,12 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                     }, 200);
                   }}>
                   <LinearGradient
-                    style={{height: 130, borderRadius: 8}}
+                    style={{height: ViewScale(130), borderRadius: ViewScale(8)}}
                     start={{x: 0.1, y: 1}}
                     end={{x: 0.7, y: 0.3}}
                     colors={['#3986ee', '#9c7df6']}>
-                    <View style={{flex: 0.8, alignSelf: 'center', top: 30}}>
-                      <Icon name="add-a-photo" size={65} color="#ffffff" />
+                    <View style={{flex: 0.8, alignSelf: 'center', top: ViewScale(30)}}>
+                      <Icon name="add-a-photo" size={ViewScale(65)} color="#ffffff" />
                     </View>
                   </LinearGradient>
                 </TouchableOpacity>
@@ -1215,12 +1216,12 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
                     }, 200);
                   }}>
                 <LinearGradient
-                    style={{height: 130, borderRadius: 8}}
+                    style={{height: ViewScale(130), borderRadius: ViewScale(8)}}
                     start={{x: 0.1, y: 1}}
                     end={{x: 0.7, y: 0.3}}
                     colors={['#3986ee', '#9c7df6']}>
-                    <View style={{flex: 0.8, alignSelf: 'center', top: 30}}>
-                      <Icon name="add-a-photo" size={65} color="#ffffff" />
+                    <View style={{flex: 0.8, alignSelf: 'center', top: ViewScale(30)}}>
+                      <Icon name="add-a-photo" size={ViewScale(65)} color="#ffffff" />
                     </View>
                   </LinearGradient>
                 </TouchableOpacity>
@@ -1242,7 +1243,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
             </View>
           )} */}
           {/* {Swich === 2 && ( */}
-          <View style={{alignItems: 'center', marginTop: 25}}>
+          <View style={{alignItems: 'center', marginTop: ViewScale(25)}}>
             <TouchableOpacity
               disabled={Img === null || Img2 === null ? true : false}
               onPress={() => {
@@ -1262,7 +1263,7 @@ const IdentityScreen = ({navigation, authData, dispatch}) => {
           </View>
           {/* )} */}
         </View>
-        <View style={{alignItems: 'center', marginTop: 25}} />
+        <View style={{alignItems: 'center', marginTop: ViewScale(25)}} />
       </ScrollView>
     </View>
   );

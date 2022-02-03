@@ -1,4 +1,5 @@
 import {StyleSheet, Dimensions, Platform} from 'react-native';
+import { ViewScale } from '../../config/ViewScale';
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 const width1 = Dimensions.get('screen').width;
@@ -18,21 +19,21 @@ export default StyleSheet.create({
   },
   Container: {
     width: '75%',
-    height: 70,
+    height: ViewScale(70),
   },
   ContainerAndroid: {
     width: '85%',
-    height: 70,
+    height: ViewScale(70),
   },
   backgroundColor: {
     backgroundColor: '#f4f5f8',
   },
   fontSelec: {
-    fontSize: 15,
+    fontSize: ViewScale(15),
     color: '#2d6dc4',
   },
   fontSelecP: {
-    fontSize: 15,
+    fontSize: ViewScale(15),
     color: '#40536d',
     // textAlign: 'center',
     // left: Dimensions.get('window').width < 400 ? '-50%' : 0,
@@ -40,7 +41,7 @@ export default StyleSheet.create({
   StyeSelec: {
     backgroundColor: null,
     borderColor: 'transparent',
-    paddingVertical: 10,
+    paddingVertical: ViewScale(10),
   },
   ArrowStyle: {
     backgroundColor: 'transparent',
@@ -56,7 +57,7 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 30,
+    marginTop: ViewScale(30),
     zIndex: 0,
   },
   ViewFlatList1: {
@@ -69,39 +70,39 @@ export default StyleSheet.create({
   ViewFlatList2: {
     borderBottomColor: '#c1d0dc',
     borderBottomWidth: 1,
-    width: 380,
+    width: ViewScale(380),
     alignContent: 'center',
     height: null,
   },
   ViewFlatList3: {
     flex: 1.3,
     height: null,
-    marginLeft: 10,
+    marginLeft: ViewScale(10),
   },
   ViewFlatList4: {
-    marginTop: 9,
+    marginTop: ViewScale(9),
     // marginBottom: 13,
     flexDirection: 'row',
   },
   fontFlatList: {
-    fontSize: 24,
+    fontSize: ViewScale(24),
     color: '#014886',
     fontWeight: 'normal',
     fontFamily: 'Kittithada Bold 75',
   },
   fontFlatListIos: {
-    fontSize: 23,
+    fontSize: ViewScale(23),
     color: '#014886',
     fontFamily: 'Kittithada Bold 75',
   },
   fontFlatList2: {
-    fontSize: 18,
+    fontSize: ViewScale(18),
     color: '#73838f',
     flex: 0.9,
     fontFamily: 'Kittithada Bold 75',
   },
   fontFlatList3: {
-    fontSize: 18,
+    fontSize: ViewScale(18),
     color: '#73838f',
   },
   ViewFlatList5: {
@@ -116,7 +117,7 @@ export default StyleSheet.create({
   animatedBox: {
     flex: 1,
     backgroundColor: '#38C8EC',
-    padding: 10,
+    padding: ViewScale(10),
   },
   body: {
     flex: 1,
@@ -138,9 +139,9 @@ export default StyleSheet.create({
     flex: 1,
   },
   TextHear: {
-    fontSize: 28,
+    fontSize: ViewScale(28),
     color: '#2d6dc4',
-    left: 15,
+    left: ViewScale(15),
   },
   flexDirection: {
     flexDirection: 'row-reverse',
@@ -152,15 +153,15 @@ export default StyleSheet.create({
   TouchSearch: {
     flexDirection: 'row',
     alignSelf: 'center',
-    marginLeft: 10,
+    marginLeft: ViewScale(10),
   },
   fontSearch: {
-    fontSize: 15,
+    fontSize: ViewScale(15),
     color: '#40536d',
   },
   ViewImgSearch: {
     alignSelf: 'center',
-    marginLeft: 5,
+    marginLeft: ViewScale(5),
   },
   ViewTab: {
     width: '95%',
@@ -172,13 +173,13 @@ export default StyleSheet.create({
     width: null,
     height: null,
     // borderColor: 'transparent',
-    borderTopRightRadius: 13,
-    borderTopLeftRadius: 13,
+    borderTopRightRadius: ViewScale(13),
+    borderTopLeftRadius: ViewScale(13),
     borderRightWidth: 1,
     borderLeftWidth: 1,
     borderWidth: 2,
     borderColor: '#ebf3f7',
-    paddingVertical: 3,
+    paddingVertical: ViewScale(3),
     // borderTopLeftRadius:10,
     // borderTopRightRadius:10
     // borderWidth:1
@@ -195,11 +196,11 @@ export default StyleSheet.create({
   },
   TabText: {
     color: '#73838f',
-    fontSize: 20,
+    fontSize: ViewScale(20),
     fontFamily: 'PSL Kittithada Pro',
     textAlign: 'center',
-    lineHeight: 23,
-    marginTop: 4,
+    lineHeight: ViewScale(23),
+    marginTop: ViewScale(4),
   },
   fistTabStyle: {
     // borderTopRightRadius: 13,
@@ -223,27 +224,27 @@ export default StyleSheet.create({
     backgroundColor: '#2d6dc4',
   },
   Tabcontainer: {
-    width: 381,
+    width: ViewScale(381),
     height: null,
     alignSelf: 'center',
     justifyContent: 'center',
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
-    borderRadius: 10,
+    borderRadius: ViewScale(10),
   },
   ViewTab2: {
     justifyContent: 'center',
     // borderColor: '#f4f5f8',
     // borderTopWidth: 14,
     flexDirection: 'row',
-    elevation: 10,
+    elevation: ViewScale(10),
     // width: null,
     // height: 50,
-    marginBottom: 20,
+    marginBottom: ViewScale(20),
     marginTop: 0,
   },
   Tabcontainer2: {
-    width: 381,
+    width: ViewScale(381),
     height: '100%',
     alignSelf: 'center',
     justifyContent: 'center',
@@ -254,9 +255,9 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     alignItems: 'center',
-    width: 384,
-    height: 50,
-    borderWidth: 10,
+    width: ViewScale(384),
+    height: ViewScale(50),
+    borderWidth: ViewScale(10),
     borderColor: '#f4f5f850',
   },
 
@@ -267,12 +268,12 @@ export default StyleSheet.create({
   },
   textHearder: {
     color: '#20416e',
-    fontSize: 25,
+    fontSize: ViewScale(25),
     // fontWeight: 'bold',
   },
   ViewTabClose: {
     alignSelf: 'center',
-    marginLeft: 5,
+    marginLeft: ViewScale(5),
   },
   containerSearch: {
     backgroundColor: '#f4f5f8',
@@ -285,20 +286,20 @@ export default StyleSheet.create({
     shadowOpacity: 0.4,
   },
   ViewSubSearch1: {
-    marginTop: 20,
-    paddingHorizontal: 15,
+    marginTop: ViewScale(20),
+    paddingHorizontal: ViewScale(15),
     // marginLeft: 20,
     flex: 1,
   },
   textYear: {
-    fontSize: 24,
+    fontSize: ViewScale(24),
     // fontWeight: 'bold',
     color: '#20416e',
   },
   ViewSearYear: {
-    borderRadius: 18,
-    width: 288,
-    height: 33,
+    borderRadius: ViewScale(18),
+    width: ViewScale(288),
+    height: ViewScale(33),
     borderWidth: 1,
     borderColor: '#dadada',
     flexDirection: 'row',
@@ -306,9 +307,9 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   ViewSearYear2: {
-    borderRadius: 18,
-    width: 288,
-    height: 33,
+    borderRadius: ViewScale(18),
+    width: ViewScale(288),
+    height: ViewScale(33),
     borderWidth: 1,
     borderColor: '#2d6dc4',
     flexDirection: 'row',
@@ -316,39 +317,39 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   ViewIconYear: {
-    marginLeft: 10,
-    marginTop: 5,
-    marginRight: 5,
+    marginLeft: ViewScale(10),
+    marginTop: ViewScale(5),
+    marginRight: ViewScale(5),
   },
   textInputYear: {
-    fontSize: 22,
+    fontSize: ViewScale(22),
     color: '#dadada',
   },
   textInputYear2: {
-    fontSize: 22,
+    fontSize: ViewScale(22),
     color: '#3c3c3c',
   },
   ViewLine: {
-    paddingTop: 20,
+    paddingTop: ViewScale(20),
   },
   ViewCountry: {
-    paddingTop: 10,
+    paddingTop: ViewScale(10),
   },
   TextCountry: {
-    fontSize: 23,
+    fontSize: ViewScale(23),
     // fontWeight: 'bold',
     color: '#20416e',
     textAlign: 'left',
   },
   TextProducts: {
-    fontSize: 24,
+    fontSize: ViewScale(24),
     // fontWeight: 'bold',
     color: '#20416e',
   },
   ViewSubSearch2: {
-    borderRadius: 18,
-    width: 288,
-    height: 33,
+    borderRadius: ViewScale(18),
+    width: ViewScale(288),
+    height: ViewScale(33),
     borderWidth: 1,
     borderColor: '#2d6dc4',
     flexDirection: 'row',
@@ -356,9 +357,9 @@ export default StyleSheet.create({
     alignSelf: 'center',
   },
   ViewSubSearch8: {
-    borderRadius: 18,
-    width: 288,
-    height: 33,
+    borderRadius: ViewScale(18),
+    width: ViewScale(288),
+    height: ViewScale(33),
     borderWidth: 1,
     borderColor: '#dadada',
     flexDirection: 'row',
@@ -366,9 +367,9 @@ export default StyleSheet.create({
     alignSelf: 'center',
   },
   ViewSubSearch22: {
-    borderRadius: 18,
-    width: 300,
-    height: 33,
+    borderRadius: ViewScale(18),
+    width: ViewScale(300),
+    height: ViewScale(33),
     borderWidth: 1,
     borderColor: '#2d6dc4',
     flexDirection: 'row',
@@ -377,9 +378,9 @@ export default StyleSheet.create({
   },
 
   ViewSubSearch88: {
-    borderRadius: 18,
-    width: 300,
-    height: 33,
+    borderRadius: ViewScale(18),
+    width: '100%',
+    height: ViewScale(33),
     borderWidth: 1,
     borderColor: '#dadada',
     flexDirection: 'row',
@@ -388,8 +389,8 @@ export default StyleSheet.create({
   },
 
   ViewSubSearch3: {
-    marginTop: 5,
-    marginLeft: 10,
+    marginTop: ViewScale(5),
+    marginLeft: ViewScale(10),
     backgroundColor: 'transparent',
   },
   ViewSubSearch4: {
@@ -403,51 +404,51 @@ export default StyleSheet.create({
     // marginLeft: -20,
   },
   TouchDelete: {
-    width: 70,
-    height: 34,
-    borderRadius: 24.5,
+    width: ViewScale(70),
+    height: ViewScale(34),
+    borderRadius: ViewScale(24.5),
     // backgroundColor: '#f96145',
     alignItems: 'center',
     justifyContent: 'center',
     margin: 0,
   },
   TouchAccept: {
-    width: 70,
-    height: 34,
-    borderRadius: 24.5,
+    width: ViewScale(70),
+    height: ViewScale(34),
+    borderRadius: ViewScale(24.5),
     // backgroundColor: '#2d6dc4',
     alignItems: 'center',
     justifyContent: 'center',
-    margin: 10,
+    margin: ViewScale(10),
   },
   TextTouchDelete: {
     color: '#FFFFFF',
-    fontSize: 18,
+    fontSize: ViewScale(18),
   },
   TextTouchAccept: {
     color: '#FFFFFF',
-    fontSize: 18,
+    fontSize: ViewScale(18),
   },
   containerCheck: {
     backgroundColor: '#f4f5f8',
     borderColor: '#f4f5f8',
   },
   textCheck: {
-    fontSize: 16,
+    fontSize: ViewScale(16),
     color: '#20416e',
   },
   ImageSeach: {
-    width: 24,
-    height: 24,
+    width: ViewScale(24),
+    height: ViewScale(24),
     backgroundColor: 'transparent',
-    marginLeft: 10,
-    top: 3,
+    marginLeft: ViewScale(10),
+    top: ViewScale(3),
   },
   TextInputSeach: {
     width: '100%',
-    fontSize: 20,
+    fontSize: ViewScale(20),
     color: '#000000',
-    marginLeft: 10,
+    marginLeft: ViewScale(10),
     padding: 0,
     backgroundColor: 'transparent',
     top: Platform.OS === 'android' ? 1 : 0,
@@ -464,50 +465,50 @@ export default StyleSheet.create({
   },
   ViewSeachF: {
     width: '90%',
-    height: 33,
-    borderRadius: 18,
+    height: ViewScale(33),
+    borderRadius: ViewScale(18),
     borderWidth: 1,
     borderColor: '#dadada',
     flexDirection: 'row',
     alignItems: 'center',
     // backgroundColor: 'transparent',
-    marginHorizontal: 20,
+    marginHorizontal: ViewScale(20),
 
     // top:15
   },
 
   ViewSeach: {
     width: '90%',
-    height: 33,
-    borderRadius: 18,
+    height: ViewScale(33),
+    borderRadius: ViewScale(18),
     borderWidth: 1,
     borderColor: '#dadada',
     flexDirection: 'row',
     alignItems: 'center',
     // backgroundColor: 'transparent',
-    marginHorizontal: 20,
-    marginBottom: 10,
+    marginHorizontal: ViewScale(20),
+    marginBottom: ViewScale(10),
     // top:15
   },
   ViewSeachcontry: {
     width: '90%',
-    height: 33,
-    borderRadius: 18,
+    height: ViewScale(33),
+    borderRadius: ViewScale(18),
     borderWidth: 1,
     borderColor: '#dadada',
     flexDirection: 'row',
     alignItems: 'center',
     // backgroundColor: 'transparent',
-    marginHorizontal: 20,
+    marginHorizontal: ViewScale(20),
 
     backgroundColor: '#FFFFFF',
   },
   separator: {
-    height: 0.5,
+    height: ViewScale(0.5),
     backgroundColor: 'rgba(0,0,0,0.4)',
   },
   footer: {
-    padding: 10,
+    padding: ViewScale(10),
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
@@ -528,7 +529,7 @@ export default StyleSheet.create({
     // borderRadius: 3.84,
     // elevation: 5,
     width: '100%',
-    height: 42,
+    height: ViewScale(42),
   },
   tabContainer: {
     // shadowColor: '#000',
@@ -544,13 +545,13 @@ export default StyleSheet.create({
     height: null,
   },
   OverlayHight1: {
-    height: 100,
+    height: ViewScale(100),
   },
   OverlayHight2: {
-    height: 100,
+    height: ViewScale(100),
   },
   OverlayHight3: {
-    height: 120,
+    height: ViewScale(120),
   },
   OverlayView2: {
     width: width1 - 50,
@@ -561,8 +562,8 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderColor: '#2d6dc4',
     backgroundColor: '#2d6dc4',
-    borderRadius: 8,
-    height: 35,
+    borderRadius: ViewScale(8),
+    height: ViewScale(35),
   },
 
   choosetime1: {
@@ -572,10 +573,10 @@ export default StyleSheet.create({
     borderWidth: 0.5,
     borderColor: '#FFFFFF',
     backgroundColor: '#FFFFFF',
-    height: 35,
-    paddingHorizontal: 10,
-    marginHorizontal: 3,
-    borderRadius: 17,
+    height: ViewScale(35),
+    paddingHorizontal: ViewScale(10),
+    marginHorizontal: ViewScale(3),
+    borderRadius: ViewScale(17),
     borderColor: '#2d6dc4',
     borderWidth: 1,
   },
@@ -584,23 +585,23 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderColor: '#04a68a',
     backgroundColor: '#04a68a',
-    borderRadius: 8,
-    height: 35,
+    borderRadius: ViewScale(8),
+    height: ViewScale(35),
   },  
   chooseproducts: {
     flexDirection: 'row',
     borderWidth: 1,
     borderColor: '#568ae0',
     backgroundColor: '#568ae0',
-    borderRadius: 8,
-    height: 35,
+    borderRadius: ViewScale(8),
+    height: ViewScale(35),
   },  
 
   Viewin1: {justifyContent: 'center', flex: 1},
   Viewin2:{justifyContent: 'center',flex:0.2},
   ViewTextin:{
     color: '#FFFFFF',
-    fontSize: 20,
+    fontSize: ViewScale(20),
     textAlign: 'center',
   }
 });

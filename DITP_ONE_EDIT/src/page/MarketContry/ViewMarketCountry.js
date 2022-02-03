@@ -18,6 +18,7 @@ import Style from './Style';
 import {UpdateViewMore} from '../../actions/data.actions';
 import {getInfo} from '../../actions/auth.actions';
 import I18n from '../../utils/I18n';
+import { ViewScale } from '../../config/ViewScale';
 import Styles from '../TradeActivities/Styles';
 import {Value} from 'react-native-reanimated';
 import {Alert} from 'react-native';
@@ -142,7 +143,7 @@ const ViewMarketCountry = ({
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-        <ActivityIndicator size="large" color="black" style={{margin: 15}} />
+        <ActivityIndicator size="large" color="black" style={{margin: ViewScale(15)}} />
       </View>
     );
   };
@@ -150,12 +151,12 @@ const ViewMarketCountry = ({
   return (
     <View style={{flex: 1, backgroundColor: '#ffffff'}}>
       <Headers badgeNumber="2" navigation={navigation} backScreen={false} />
-      <View style={{marginTop: Platform.OS === 'android' && 90, zIndex: -1}} />
-      <View style={[Style.ViewFlatList1, {marginTop: 20, zIndex: -1}]}>
+      <View style={{marginTop: Platform.OS === 'android' && ViewScale(90), zIndex: -1}} />
+      <View style={[Style.ViewFlatList1, {marginTop: ViewScale(20), zIndex: -1}]}>
         <View style={Style.ViewFlatList4}>
           <View style={Style.marginLeft10}>
             <Image
-              style={{width: 33, height: 24, top: 6}}
+              style={{width: ViewScale(33), height: ViewScale(24), top: ViewScale(6)}}
               source={{uri: image}}
             />
           </View>
@@ -169,10 +170,10 @@ const ViewMarketCountry = ({
               </Text>
           
               <View style={{flexDirection:'row',flex:0.55}}>
-                <View style={{marginHorizontal:10}}> 
+                <View style={{marginHorizontal:ViewScale(10)}}> 
               <TouchableOpacity disabled onPress={() => console.log('VIEW')}>
                   <Image
-                    style={{width: 21, height: 13,marginTop:Platform.OS==='ios'?5:3}}
+                    style={{width: ViewScale(21), height: ViewScale(13),marginTop:Platform.OS==='ios'?5:3}}
                     source={require('../../image/ViewEye.png')}
                   />
                 </TouchableOpacity>
@@ -198,10 +199,10 @@ const ViewMarketCountry = ({
                      
                       // alert(JSON.stringify(urinews))
                     }}
-                    style={{ marginHorizontal:10,}}>
+                    style={{ marginHorizontal:ViewScale(10),}}>
                     <Image
                       resizeMode={'contain'}
-                      style={{width: 14, height: 16}}
+                      style={{width: ViewScale(14), height: ViewScale(16)}}
                       source={require('../../image/sharelx.png')}
                     />
                   </TouchableOpacity>

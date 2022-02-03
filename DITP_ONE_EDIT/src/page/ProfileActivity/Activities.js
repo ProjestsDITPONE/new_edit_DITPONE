@@ -18,6 +18,7 @@ import {ListItem, Overlay} from 'react-native-elements';
 import {getActivity, CheckRegisterActivity} from '../../actions/data.actions';
 import {connect} from 'react-redux';
 import SegmentedControlTab from 'react-native-segmented-control-tab';
+import {ViewScale} from '../../config/ViewScale'
 import ScrollableTabView, {
   ScrollableTabBar,
 } from '../../lib_edit/react-native-scrollable-tab-view';
@@ -652,7 +653,7 @@ class Activities extends React.Component {
         style={{backgroundColor: '#fbfbfd', marginTop: index === 0 ? 10 : 0,
         
         
-        marginBottom: 8,
+        marginBottom: ViewScale(8),
         borderRadius: 10,
         alignSelf: 'center',
         flex: 1,
@@ -705,7 +706,7 @@ class Activities extends React.Component {
                       ) : (
                         <Image
                           resizeMode={'center'}
-                          style={{width: 360, height: 216}}
+                          style={{width: ViewScale(360), height: ViewScale(216)}}
                           source={require('../../image/banerDrive.png')}
                         />
                       )}
@@ -778,42 +779,42 @@ class Activities extends React.Component {
                     }}>
                     {this.state.location === 'ออนไลน์' ? (
                       <Image
-                        style={{width: 15, height: 15, marginTop: 2}}
+                        style={{width: ViewScale(15), height: ViewScale(15), marginTop: ViewScale(2)}}
                         source={require('../../image/WWW.png')}
                       />
                     ) : (
                       <Image
-                        style={{width: 12, height: 15}}
+                        style={{width: ViewScale(12), height: ViewScale(15)}}
                         source={require('../../image/maker2.png')}
                       />
                     )}
-                    <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                       {'  '}
                       {this.state.location}
                     </Text>
                   </TouchableOpacity>
 
-                  <View style={{marginTop: 10}}>
+                  <View style={{marginTop: ViewScale(10)}}>
                     {this.state.price === '' ? (
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_ActPrice')} : {I18n.t('transalte_free_of_charge')}
                       </Text>
                     ) : (
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_ActPrice')} : {this.state.price}
                       </Text>
                     )}
                   </View>
                   <View style={{marginTop: 0}}>
-                    <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                       {I18n.t('translate_Num')} : {this.state.participate}{' '}
                       {I18n.t('translate_case')}
                     </Text>
                   </View>
 
-                  <View style={{margin: 10}}>
+                  <View style={{margin: ViewScale(10)}}>
                     <Image
-                      style={{width: 334, height: 1}}
+                      style={{width: ViewScale(334), height: ViewScale(1)}}
                       source={require('../../image/line6.png')}
                     />
                   </View>
@@ -930,28 +931,28 @@ class Activities extends React.Component {
                         }
                       };
                       return (
-                        <View style={{marginTop: -20}}>
-                          <View style={[Styles.OverlayView6, {bottom: -10}]}>
+                        <View style={{marginTop: ViewScale(-20)}}>
+                          <View style={[Styles.OverlayView6, {bottom: ViewScale(-10)}]}>
                             <View style={Styles.ViewSub30}>
                               {index == 0 && (
                                 <View style={{}}>
                                   <View style={{flexDirection: 'row'}}>
                                     <View
                                       style={{
-                                        width: 12,
-                                        height: 12,
-                                        marginTop: 5,
+                                        width: ViewScale(12),
+                                        height: ViewScale(12),
+                                        marginTop: ViewScale(5),
                                         backgroundColor: Check(
                                           data.status_color,
                                         ),
                                         borderWidth: 1,
                                         borderColor: Check(data.status_color),
-                                        borderRadius: 8,
+                                        borderRadius: ViewScale(8),
                                       }}
                                     />
                                     <Text
                                       style={{
-                                        fontSize: 18,
+                                        fontSize: ViewScale(18),
                                         color: Check(data.status_color),
                                       }}>
                                       {' '}
@@ -961,37 +962,37 @@ class Activities extends React.Component {
 
                                   <View
                                     style={{
-                                      width: 2,
-                                      height: 20,
-                                      marginLeft: 4.5,
-                                      marginTop: -3,
+                                      width: ViewScale(2),
+                                      height: ViewScale(20),
+                                      marginLeft: ViewScale(4.5),
+                                      marginTop: ViewScale(-3),
                                       backgroundColor: Check(data.status_color),
                                       borderWidth: 1,
                                       borderColor: Check(data.status_color),
-                                      borderRadius: 8,
+                                      borderRadius: ViewScale(8),
                                     }}
                                   />
                                 </View>
                               )}
                               {index == 1 && (
-                                <View style={{marginBottom: 15, marginTop: 3}}>
+                                <View style={{marginBottom: ViewScale(15), marginTop: ViewScale(3)}}>
                                   <View style={{flexDirection: 'row'}}>
                                     <View
                                       style={{
-                                        width: 12,
-                                        height: 12,
-                                        marginTop: 5,
+                                        width: ViewScale(12),
+                                        height: ViewScale(12),
+                                        marginTop: ViewScale(5),
                                         backgroundColor: Check(
                                           data.status_color,
                                         ),
                                         borderWidth: 1,
                                         borderColor: Check(data.status_color),
-                                        borderRadius: 8,
+                                        borderRadius: ViewScale(8),
                                       }}
                                     />
                                     <Text
                                       style={{
-                                        fontSize: 18,
+                                        fontSize: ViewScale(18),
                                         color: Check(data.status_color),
                                       }}>
                                       {' '}
@@ -1001,31 +1002,31 @@ class Activities extends React.Component {
 
                                   <View
                                     style={{
-                                      width: 2,
-                                      height: 20,
-                                      marginLeft: 4.5,
-                                      marginTop: -3,
+                                      width: ViewScale(2),
+                                      height: ViewScale(20),
+                                      marginLeft: ViewScale(4.5),
+                                      marginTop: ViewScale(-3),
                                       backgroundColor: Check(data.status_color),
                                       borderWidth: 1,
                                       borderColor: Check(data.status_color),
-                                      borderRadius: 8,
+                                      borderRadius: ViewScale(8),
                                     }}
                                   />
                                 </View>
                               )}
                               {index == 2 && (
-                                <View style={{marginTop: -10}}>
+                                <View style={{marginTop: ViewScale(-10)}}>
                                   {data.status_url != '' ? (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View
                                         style={{
                                           flexDirection: 'row',
                                         }}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -1033,22 +1034,22 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
                                         <View
                                           style={{
                                             borderWidth: 1,
-                                            marginHorizontal: 15,
+                                            marginHorizontal: ViewScale(15),
                                             borderColor: '#1d61bd',
-                                            borderRadius: 8,
-                                            width: 250,
-                                            height: 70,
+                                            borderRadius: ViewScale(8),
+                                            width: ViewScale(250),
+                                            height: ViewScale(70),
                                           }}>
                                           <View style={{flexDirection: 'row'}}>
                                             <Text
                                               style={{
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 color: '#2d6dc4',
                                               }}>
                                               {' '}
@@ -1062,12 +1063,12 @@ class Activities extends React.Component {
                                                 })
                                               }
                                               style={{
-                                                height: 34,
-                                                width: 112,
+                                                height: ViewScale(34),
+                                                width: ViewScale(112),
                                                 backgroundColor: '#1d61bd',
-                                                borderRadius: 8,
-                                                marginTop: 18,
-                                                right: 9,
+                                                borderRadius: ViewScale(8),
+                                                marginTop: ViewScale(18),
+                                                right: ViewScale(9),
                                                 position: 'absolute',
                                                 justifyContent: 'center',
                                               }}>
@@ -1076,7 +1077,7 @@ class Activities extends React.Component {
                                                   style={{
                                                     textAlign: 'center',
                                                     color: '#FFF',
-                                                    fontSize: 18,
+                                                    fontSize: ViewScale(18),
                                                   }}>
                                                   {' '}
                                                   {I18n.t('translate_lPayment')}
@@ -1087,7 +1088,7 @@ class Activities extends React.Component {
                                           <View>
                                             <Text
                                               style={{
-                                                fontSize: 14,
+                                                fontSize: ViewScale(14),
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
@@ -1098,27 +1099,27 @@ class Activities extends React.Component {
                                       </View>
                                       <View
                                         style={{
-                                          width: 2,
-                                          height: 80,
-                                          marginLeft: 4.5,
-                                          marginTop: -50,
+                                          width: ViewScale(2),
+                                          height: ViewScale(80),
+                                          marginLeft: ViewScale(4.5),
+                                          marginTop: ViewScale(-50),
                                           backgroundColor: Check(
                                             data.status_color,
                                           ),
                                           borderWidth: 1,
                                           borderColor: Check(data.status_color),
-                                          borderRadius: 8,
+                                          borderRadius: ViewScale(8),
                                         }}
                                       />
                                     </View>
                                   ) : (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View style={{flexDirection: 'row'}}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -1126,13 +1127,13 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
 
                                         <Text
                                           style={{
-                                            fontSize: 18,
+                                            fontSize: ViewScale(18),
                                             color: Check(data.status_color),
                                           }}>
                                           {' '}
@@ -1141,16 +1142,16 @@ class Activities extends React.Component {
                                       </View>
                                       <View
                                         style={{
-                                          width: 2,
-                                          height: 20,
-                                          marginLeft: 4.5,
-                                          marginTop: -3,
+                                          width: ViewScale(2),
+                                          height: ViewScale(20),
+                                          marginLeft: ViewScale(4.5),
+                                          marginTop: ViewScale(-3),
                                           backgroundColor: Check(
                                             data.status_color,
                                           ),
                                           borderWidth: 1,
                                           borderColor: Check(data.status_color),
-                                          borderRadius: 8,
+                                          borderRadius: ViewScale(8),
                                         }}
                                       />
                                     </View>
@@ -1163,18 +1164,18 @@ class Activities extends React.Component {
                                 </View>
                               )}
                               {index == 4 && (
-                                <View style={{marginTop: -10}}>
+                                <View style={{marginTop: ViewScale(-10)}}>
                                   {data.status_url != '' ? (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View
                                         style={{
                                           flexDirection: 'row',
                                         }}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -1182,24 +1183,24 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
                                         <View
                                           style={{
                                             borderWidth: 1,
-                                            marginHorizontal: 15,
+                                            marginHorizontal: ViewScale(15),
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
-                                            width: 250,
-                                            height: 70,
+                                            borderRadius: ViewScale(8),
+                                            width: ViewScale(250),
+                                            height: ViewScale(70),
                                           }}>
                                           <View style={{flexDirection: 'row'}}>
                                             <Text
                                               style={{
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 color: '#2d6dc4',
                                               }}>
                                               {I18n.t('translate_assessment')}
@@ -1213,14 +1214,14 @@ class Activities extends React.Component {
                                                 });
                                               }}
                                               style={{
-                                                height: 34,
-                                                width: 112,
+                                                height: ViewScale(34),
+                                                width: ViewScale(112),
                                                 backgroundColor: Check(
                                                   data.status_color,
                                                 ),
-                                                borderRadius: 8,
-                                                marginTop: 18,
-                                                right: 9,
+                                                borderRadius: ViewScale(8),
+                                                marginTop: ViewScale(18),
+                                                right: ViewScale(9),
                                                 position: 'absolute',
                                                 justifyContent: 'center',
                                               }}>
@@ -1228,7 +1229,7 @@ class Activities extends React.Component {
                                                 style={{
                                                   textAlign: 'center',
                                                   color: '#FFF',
-                                                  fontSize: 18,
+                                                  fontSize: ViewScale(18),
                                                 }}>
                                                 {' '}
                                                 {I18n.t(
@@ -1240,7 +1241,7 @@ class Activities extends React.Component {
                                           <View>
                                             <Text
                                               style={{
-                                                fontSize: 14,
+                                                fontSize: ViewScale(14),
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
@@ -1248,7 +1249,7 @@ class Activities extends React.Component {
                                             </Text>
                                             <Text
                                               style={{
-                                                fontSize: 14,
+                                                fontSize: ViewScale(14),
                                                 color: '#7d7d7d',
                                                 marginTop: Platform.OS === 'android' ? 10 : 5,
                                               }}>
@@ -1260,13 +1261,13 @@ class Activities extends React.Component {
                                       </View>
                                     </View>
                                   ) : (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View style={{flexDirection: 'row'}}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -1274,13 +1275,13 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
 
                                         <Text
                                           style={{
-                                            fontSize: 18,
+                                            fontSize: ViewScale(18),
                                             color: Check(data.status_color),
                                           }}>
                                           {' '}
@@ -1312,7 +1313,7 @@ class Activities extends React.Component {
                           this.setState({ckhide: true});
                         }}
                         style={{
-                          fontSize: 18,
+                          fontSize: ViewScale(18),
                           color: '#2d6dc4',
                           textAlign: 'center',
                           textDecorationLine: 'underline',
@@ -1322,12 +1323,12 @@ class Activities extends React.Component {
                       <Icon3
                         color="#2d6dc4"
                         name="keyboard-arrow-down"
-                        size={20}
+                        size={ViewScale(20)}
                       />
                     </View>
                   ) : (
                     <>
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_place')} :
                       </Text>
 
@@ -1346,16 +1347,16 @@ class Activities extends React.Component {
                         }}>
                         {this.state.location === 'ออนไลน์' ? (
                           <Image
-                            style={{width: 15, height: 15, marginTop: 2}}
+                            style={{width: ViewScale(15), height: ViewScale(15), marginTop: ViewScale(2)}}
                             source={require('../../image/WWW.png')}
                           />
                         ) : (
                           <Image
-                            style={{width: 12, height: 15}}
+                            style={{width: ViewScale(12), height: ViewScale(15)}}
                             source={require('../../image/maker2.png')}
                           />
                         )}
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {'  '}
                           {this.state.location}
                         </Text>
@@ -1377,14 +1378,14 @@ class Activities extends React.Component {
                             </View>
                           );
                         })} */}
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_Readmore')} :
                       </Text>
-                      <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                         {I18n.t('translate_Main')}
                       </Text>
-                      <View style={{width: 321, height: null}}>
-                        <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                      <View style={{width: ViewScale(321), height: null}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                           {this.state.detail}
                         </Text>
                       </View>
@@ -1394,7 +1395,7 @@ class Activities extends React.Component {
                             this.setState({ckhide: false});
                           }}
                           style={{
-                            fontSize: 18,
+                            fontSize: ViewScale(18),
                             color: '#2d6dc4',
                             textAlign: 'center',
                             textDecorationLine: 'underline',
@@ -1404,42 +1405,42 @@ class Activities extends React.Component {
                         <Icon3
                           color="#2d6dc4"
                           name="keyboard-arrow-up"
-                          size={20}
+                          size={ViewScale(20)}
                         />
                       </View>
                     </>
                   )}
 
-                  <View style={{margin: 10}}>
+                  <View style={{margin: ViewScale(10)}}>
                     <Image
-                      style={{width: 334, height: 1}}
+                      style={{width: ViewScale(334), height: ViewScale(1)}}
                       source={require('../../image/line6.png')}
                     />
                   </View>
 
                   <View style={{flex: 1}}>
-                    <Text style={{color: '#3a3a3a', fontSize: 18}}>
+                    <Text style={{color: '#3a3a3a', fontSize: ViewScale(18)}}>
                       {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                     </Text>
                     <Text
                       numberOfLines={1}
-                      style={{color: '#3a3a3a', fontSize: 18}}>
+                      style={{color: '#3a3a3a', fontSize: ViewScale(18)}}>
                       {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                     </Text>
                     <View style={{flexDirection: 'row'}}>
                       {this.state.deparment_tel === 'ditp.ciie@gmail.com' ? (
                         <Image
-                          style={{width: 29, height: 29}}
+                          style={{width: ViewScale(29), height: ViewScale(29)}}
                           source={require('../../image/emailx.png')}
                         />
                       ) : (
                         <Image
-                          style={{width: 29, height: 29}}
+                          style={{width: ViewScale(29), height: ViewScale(29)}}
                           source={require('../../image/phonelx.png')}
                         />
                       )}
                       {this.state.deparment_tel === 'ditp.ciie@gmail.com' ? (
-                        <Text style={{color: '#2d6dc4', fontSize: 18, top: 4}}>
+                        <Text style={{color: '#2d6dc4', fontSize: ViewScale(18), top: ViewScale(4)}}>
                           {'   '} {this.state.deparment_tel}
                         </Text>
                       ) : (
@@ -1447,7 +1448,7 @@ class Activities extends React.Component {
                           onPress={() => {
                             this.Call(this.state.deparment_tel);
                           }}
-                          style={{color: '#2d6dc4', fontSize: 18, top: 4}}>
+                          style={{color: '#2d6dc4', fontSize: ViewScale(18), top: ViewScale(4)}}>
                           {'   '} {this.state.deparment_tel}
                         </Text>
                       )}
@@ -1462,7 +1463,7 @@ class Activities extends React.Component {
         <View
           style={{
             backgroundColor: '#FFFFFF',
-            marginHorizontal: 10,
+            marginHorizontal: ViewScale(10),
             // marginBottom: 1,
           }}>
           <TouchableOpacity
@@ -1515,14 +1516,14 @@ class Activities extends React.Component {
                   {item.activity_list_location_th === 'ออนไลน์' ? (
                     <Image
                       source={require('../../image/Elearing.png')}
-                      style={{width: 55, height: 50, borderRadius: 15}}
+                      style={{width: ViewScale(55), height: ViewScale(50), borderRadius: ViewScale(15)}}
                     />
                   ) : (
                     <>
                       {item.formTypeActivity === 1 ? (
                         <Image
                           source={require('../../image/devlop.png')}
-                          style={{width: 55, height: 50, borderRadius: 15}}
+                          style={{width: ViewScale(55), height: ViewScale(50), borderRadius: ViewScale(15)}}
                         />
                       ) : (
                         <Image
@@ -1535,7 +1536,7 @@ class Activities extends React.Component {
                           }}
                           style={
                             item.activity_list_logo_thumb === ''
-                              ? {width: 60, height: 56, borderRadius: 10}
+                              ? {width: ViewScale(60), height: ViewScale(56), borderRadius: ViewScale(10)}
                               : Styles.ImgList
                           }
                         />
@@ -1545,10 +1546,10 @@ class Activities extends React.Component {
                 </>
               }
               title={
-                <View style={{width: '80%', marginTop: 10}}>
+                <View style={{width: '80%', marginTop: ViewScale(10)}}>
                   <Text
                     numberOfLines={2}
-                    style={[Styles.titleList, {lineHeight: 18}]}>
+                    style={[Styles.titleList, {lineHeight: ViewScale(18)}]}>
                     {item.activity_name_th}
                   </Text>
                   <View>
@@ -1557,7 +1558,7 @@ class Activities extends React.Component {
                       <Text
                         style={{
                           color: '#8b9bb0',
-                          fontSize: Platform.OS === 'android' ? 12 : 18,
+                          fontSize: Platform.OS === 'android' ? ViewScale(12) : ViewScale(18),
                         }}>
                         {' '}
                         {this.formatdate(item.regis_date)}
@@ -1596,18 +1597,18 @@ class Activities extends React.Component {
                                 ]}>
                                 <View
                                   style={{
-                                    width: 10,
-                                    height: 10,
+                                    width: ViewScale(10),
+                                    height: ViewScale(10),
                                     borderWidth: 1,
                                     backgroundColor: Check(status_color),
-                                    borderRadius: 30,
+                                    borderRadius: ViewScale(30),
                                     borderColor: 'transparent',
                                   }}
                                 />
                                 <Text
                                   numberOfLines={1}
                                   style={{
-                                    fontSize: 16,
+                                    fontSize: ViewScale(16),
                                     color: Check(status_color),
                                   }}>
                                   {' '}
@@ -1626,22 +1627,22 @@ class Activities extends React.Component {
                                   style={{
                                     justifyContent: 'center',
                                     alignItems: 'center',
-                                    borderRadius: 8,
+                                    borderRadius: ViewScale(8),
                                     flexDirection: 'row',
-                                    width: 112,
-                                    height: 34,
+                                    width: ViewScale(112),
+                                    height: ViewScale(34),
                                     backgroundColor: Check(status_color),
                                   }}>
                                   <Icon
                                     name="credit-card"
-                                    size={18}
+                                    size={ViewScale(18)}
                                     style={{
                                       color: '#FFFFFF',
-                                      marginHorizontal: 5,
+                                      marginHorizontal: ViewScale(5),
                                     }}
                                   />
                                   <Text
-                                    style={{color: '#FFFFFF', fontSize: 18}}>
+                                    style={{color: '#FFFFFF', fontSize: ViewScale(18)}}>
                                     {status_name}
                                   </Text>
                                 </TouchableOpacity>
@@ -1658,22 +1659,22 @@ class Activities extends React.Component {
                                   style={{
                                     justifyContent: 'center',
                                     alignItems: 'center',
-                                    borderRadius: 8,
+                                    borderRadius: ViewScale(8),
                                     flexDirection: 'row',
-                                    width: 112,
-                                    height: 34,
+                                    width: ViewScale(112),
+                                    height: ViewScale(34),
                                     backgroundColor: Check(status_color),
                                   }}>
                                   <Icon
                                     name="clipboard"
-                                    size={18}
+                                    size={ViewScale(18)}
                                     style={{
                                       color: '#FFFFFF',
-                                      marginHorizontal: 5,
+                                      marginHorizontal: ViewScale(5),
                                     }}
                                   />
                                   <Text
-                                    style={{color: '#FFFFFF', fontSize: 18}}>
+                                    style={{color: '#FFFFFF', fontSize: ViewScale(18)}}>
                                     {status_name}
                                   </Text>
                                 </TouchableOpacity>
@@ -1733,14 +1734,14 @@ class Activities extends React.Component {
                     style={{
                       justifyContent: 'center',
                       alignItems: 'center',
-                      borderRadius: 8,
+                      borderRadius: ViewScale(8),
                       flexDirection: 'row',
-                      width: 112,
-                      height: 32,
+                      width: ViewScale(112),
+                      height: ViewScale(32),
                       backgroundColor: '#2d6dc4',
-                      marginTop: 10,
+                      marginTop: ViewScale(10),
                     }}>
-                    <Text style={{color: '#FFFFFF', fontSize: 18}}>
+                    <Text style={{color: '#FFFFFF', fontSize: ViewScale(18)}}>
                       {I18n.t('transalte_Continue')}
                     </Text>
                   </TouchableOpacity>
@@ -1763,8 +1764,8 @@ class Activities extends React.Component {
     return (
       <View
         style={{backgroundColor: '#fbfbfd', marginTop: index === 0 ? 10 : 0,
-        marginBottom: 8,
-        borderRadius: 10,
+        marginBottom: ViewScale(8),
+        borderRadius: ViewScale(10),
         alignSelf: 'center',
         flex: 1,
         width: '95%',
@@ -1814,7 +1815,7 @@ class Activities extends React.Component {
                       ) : (
                         <Image
                           resizeMode={'center'}
-                          style={{width: 360, height: 216}}
+                          style={{width: ViewScale(360), height: ViewScale(216)}}
                           source={require('../../image/banerDrive.png')}
                         />
                       )}
@@ -1838,10 +1839,10 @@ class Activities extends React.Component {
                     }}>
                     <View style={{flex: 1, flexDirection: 'row'}}>
                       <Image
-                        style={{width: 18, height: 13, top: 4}}
+                        style={{width: ViewScale(18), height: ViewScale(13), top: ViewScale(4)}}
                         source={{uri: this.state.contry_img_flag}}
                       />
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {'  '}
                         {this.state.contry_TH}
                       </Text>
@@ -1862,43 +1863,43 @@ class Activities extends React.Component {
                     }}>
                     {this.state.location === 'ออนไลน์' ? (
                       <Image
-                        style={{width: 15, height: 15, marginTop: 2}}
+                        style={{width: ViewScale(15), height: ViewScale(15), marginTop: ViewScale(2)}}
                         source={require('../../image/WWW.png')}
                       />
                     ) : (
                       <Image
-                        style={{width: 12, height: 15}}
+                        style={{width: ViewScale(12), height: ViewScale(15)}}
                         source={require('../../image/maker2.png')}
                       />
                     )}
 
-                    <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                       {'  '}
                       {this.state.location}
                     </Text>
                   </TouchableOpacity>
 
-                  <View style={{marginTop: 10}}>
+                  <View style={{marginTop: ViewScale(10)}}>
                     {this.state.price === '' ? (
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_ActPrice')} : {I18n.t('transalte_free_of_charge')}
                       </Text>
                     ) : (
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_ActPrice')} : {this.state.price}
                       </Text>
                     )}
                   </View>
                   <View style={{marginTop: 0}}>
-                    <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                       {I18n.t('translate_Num')} : {this.state.participate}{' '}
                       {I18n.t('translate_case')}
                     </Text>
                   </View>
 
-                  <View style={{margin: 10}}>
+                  <View style={{margin: ViewScale(10)}}>
                     <Image
-                      style={{width: 334, height: 1}}
+                      style={{width: ViewScale(334), height: ViewScale(1)}}
                       source={require('../../image/line6.png')}
                     />
                   </View>
@@ -2118,28 +2119,28 @@ class Activities extends React.Component {
                       };
 
                       return (
-                        <View style={{marginTop: -20}}>
-                          <View style={[Styles.OverlayView6, {bottom: -10}]}>
+                        <View style={{marginTop: ViewScale(-20)}}>
+                          <View style={[Styles.OverlayView6, {bottom: ViewScale(-10)}]}>
                             <View style={Styles.ViewSub30}>
                               {index == 0 && (
                                 <View style={{}}>
                                   <View style={{flexDirection: 'row'}}>
                                     <View
                                       style={{
-                                        width: 12,
-                                        height: 12,
-                                        marginTop: 5,
+                                        width: ViewScale(12),
+                                        height: ViewScale(12),
+                                        marginTop: ViewScale(5),
                                         backgroundColor: Check(
                                           data.status_color,
                                         ),
                                         borderWidth: 1,
                                         borderColor: Check(data.status_color),
-                                        borderRadius: 8,
+                                        borderRadius: ViewScale(8),
                                       }}
                                     />
                                     <Text
                                       style={{
-                                        fontSize: 18,
+                                        fontSize: ViewScale(18),
                                         color: Check(data.status_color),
                                       }}>
                                       {' '}
@@ -2149,14 +2150,14 @@ class Activities extends React.Component {
 
                                   <View
                                     style={{
-                                      width: 2,
-                                      height: 20,
-                                      marginLeft: 4.5,
-                                      marginTop: -3,
+                                      width: ViewScale(2),
+                                      height: ViewScale(20),
+                                      marginLeft: ViewScale(4.5),
+                                      marginTop: ViewScale(-3),
                                       backgroundColor: Check(data.status_color),
                                       borderWidth: 1,
                                       borderColor: Check(data.status_color),
-                                      borderRadius: 8,
+                                      borderRadius: ViewScale(8),
                                     }}
                                   />
                                 </View>
@@ -2167,16 +2168,16 @@ class Activities extends React.Component {
                                   I18n.t('transalte_edit_info_waiting_verify_properties') &&  data.status_active === 'Y'   ? 
                                     
                                    (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View
                                         style={{
                                           flexDirection: 'row',
                                         }}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -2184,25 +2185,25 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
                                         <View
                                           style={{
                                             borderWidth: 1,
-                                            marginHorizontal: 15,
+                                            marginHorizontal: ViewScale(15),
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
-                                            width: 250,
-                                            height: 75,
+                                            borderRadius: ViewScale(8),
+                                            width: ViewScale(250),
+                                            height: ViewScale(75),
                                           }}>
                                           <View style={{}}>
                                             <Text
                                               style={{
-                                                fontSize: 20,
-                                                marginBottom: 4,
+                                                fontSize: ViewScale(20),
+                                                marginBottom: ViewScale(4),
                                                 color: Check(data.status_color),
                                               }}>
                                               {' '}
@@ -2292,13 +2293,13 @@ class Activities extends React.Component {
                                                 );
                                               }}
                                               style={{
-                                                height: 34,
-                                                width: 112,
+                                                height: ViewScale(34),
+                                                width: ViewScale(112),
                                                 backgroundColor: Check(
                                                   data.status_color,
                                                 ),
-                                                borderRadius: 8,
-                                                marginHorizontal: 15,
+                                                borderRadius: ViewScale(8),
+                                                marginHorizontal: ViewScale(15),
                                                 //  borderWidth:1,
                                                 //  ma
 
@@ -2309,7 +2310,7 @@ class Activities extends React.Component {
                                                   style={{
                                                     textAlign: 'center',
                                                     color: '#FFF',
-                                                    fontSize: 18,
+                                                    fontSize: ViewScale(18),
                                                   }}>
                                                   {I18n.t('transalte_edit_application')}
                                                 </Text>
@@ -2320,28 +2321,28 @@ class Activities extends React.Component {
                                       </View>
                                       <View
                                         style={{
-                                          width: 2,
-                                          height: 80,
-                                          marginLeft: 4.5,
-                                          marginTop: -56,
+                                          width: ViewScale(2),
+                                          height: ViewScale(80),
+                                          marginLeft: ViewScale(4.5),
+                                          marginTop: ViewScale(-56),
                                           backgroundColor: Check(
                                             data.status_color,
                                           ),
                                           borderWidth: 1,
                                           borderColor: Check(data.status_color),
-                                          borderRadius: 8,
+                                          borderRadius: ViewScale(8),
                                         }}
                                       />
                                     </View>
                                   ):(
                                     <View
-                                      style={{marginBottom: 15, marginTop: 3}}>
+                                      style={{marginBottom: ViewScale(15), marginTop: ViewScale(3)}}>
                                       <View style={{flexDirection: 'row'}}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -2349,12 +2350,12 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
                                         <Text
                                           style={{
-                                            fontSize: 18,
+                                            fontSize: ViewScale(18),
                                             color: Check(data.status_color),
                                           }}>
                                           {' '}
@@ -2364,16 +2365,16 @@ class Activities extends React.Component {
 
                                       <View
                                         style={{
-                                          width: 2,
-                                          height: 20,
-                                          marginLeft: 4.5,
-                                          marginTop: -3,
+                                          width: ViewScale(2),
+                                          height: ViewScale(20),
+                                          marginLeft: ViewScale(4.5),
+                                          marginTop: ViewScale(-3),
                                           backgroundColor: Check(
                                             data.status_color,
                                           ),
                                           borderWidth: 1,
                                           borderColor: Check(data.status_color),
-                                          borderRadius: 8,
+                                          borderRadius: ViewScale(8),
                                         }}
                                       />
                                     </View>
@@ -2383,18 +2384,18 @@ class Activities extends React.Component {
                                 </>
                               )}
                               {index == 2 && (
-                                <View style={{marginTop: -10}}>
+                                <View style={{marginTop: ViewScale(-10)}}>
                                   {data.status_url != '' ? (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View
                                         style={{
                                           flexDirection: 'row',
                                         }}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -2402,22 +2403,22 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
                                         <View
                                           style={{
-                                            borderWidth: 1,
-                                            marginHorizontal: 15,
+                                            borderWidth: ViewScale(1),
+                                            marginHorizontal: ViewScale(15),
                                             borderColor: '#1d61bd',
-                                            borderRadius: 8,
-                                            width: 250,
-                                            height: 70,
+                                            borderRadius: ViewScale(8),
+                                            width: ViewScale(250),
+                                            height: ViewScale(70),
                                           }}>
                                           <View style={{flexDirection: 'row'}}>
                                             <Text
                                               style={{
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 color: '#2d6dc4',
                                               }}>
                                               {' '}
@@ -2431,12 +2432,12 @@ class Activities extends React.Component {
                                                 })
                                               }
                                               style={{
-                                                height: 34,
-                                                width: 112,
+                                                height: ViewScale(34),
+                                                width: ViewScale(112),
                                                 backgroundColor: '#1d61bd',
-                                                borderRadius: 8,
-                                                marginTop: 18,
-                                                right: 9,
+                                                borderRadius: ViewScale(8),
+                                                marginTop: ViewScale(18),
+                                                right: ViewScale(9),
                                                 position: 'absolute',
                                                 justifyContent: 'center',
                                               }}>
@@ -2445,7 +2446,7 @@ class Activities extends React.Component {
                                                   style={{
                                                     textAlign: 'center',
                                                     color: '#FFF',
-                                                    fontSize: 18,
+                                                    fontSize: ViewScale(18),
                                                   }}>
                                                   {' '}
                                                   {I18n.t('translate_lPayment')}
@@ -2456,7 +2457,7 @@ class Activities extends React.Component {
                                           <View>
                                             <Text
                                               style={{
-                                                fontSize: 14,
+                                                fontSize: ViewScale(14),
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
@@ -2467,27 +2468,27 @@ class Activities extends React.Component {
                                       </View>
                                       <View
                                         style={{
-                                          width: 2,
-                                          height: 80,
-                                          marginLeft: 4.5,
-                                          marginTop: -50,
+                                          width: ViewScale(2),
+                                          height: ViewScale(80),
+                                          marginLeft: ViewScale(4.5),
+                                          marginTop: ViewScale(-50),
                                           backgroundColor: Check(
                                             data.status_color,
                                           ),
                                           borderWidth: 1,
                                           borderColor: Check(data.status_color),
-                                          borderRadius: 8,
+                                          borderRadius: ViewScale(8),
                                         }}
                                       />
                                     </View>
                                   ) : (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View style={{flexDirection: 'row'}}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -2495,13 +2496,13 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
 
                                         <Text
                                           style={{
-                                            fontSize: 18,
+                                            fontSize: ViewScale(18),
                                             color: Check(data.status_color),
                                           }}>
                                           {' '}
@@ -2510,16 +2511,16 @@ class Activities extends React.Component {
                                       </View>
                                       <View
                                         style={{
-                                          width: 2,
-                                          height: 20,
-                                          marginLeft: 4.5,
-                                          marginTop: -3,
+                                          width: ViewScale(2),
+                                          height: ViewScale(20),
+                                          marginLeft: ViewScale(4.5),
+                                          marginTop: ViewScale(-3),
                                           backgroundColor: Check(
                                             data.status_color,
                                           ),
                                           borderWidth: 1,
                                           borderColor: Check(data.status_color),
-                                          borderRadius: 8,
+                                          borderRadius: ViewScale(8),
                                         }}
                                       />
                                     </View>
@@ -2533,25 +2534,25 @@ class Activities extends React.Component {
                               )}
                               {index == 4 && (
                                 <View
-                                  style={{marginBottom: 15, marginTop: -10}}>
+                                  style={{marginBottom: ViewScale(15), marginTop: ViewScale(-10)}}>
                                   <View style={{flexDirection: 'row'}}>
                                     <View
                                       style={{
-                                        width: 12,
-                                        height: 12,
-                                        marginTop: 5,
+                                        width: ViewScale(12),
+                                        height: ViewScale(12),
+                                        marginTop: ViewScale(5),
                                         backgroundColor: Check(
                                           data.status_color,
                                         ),
                                         borderWidth: 1,
                                         borderColor: Check(data.status_color),
-                                        borderRadius: 8,
+                                        borderRadius: ViewScale(8),
                                       }}
                                     />
 
                                     <Text
                                       style={{
-                                        fontSize: 18,
+                                        fontSize: ViewScale(18),
                                         color: Check(data.status_color),
                                       }}>
                                       {' '}
@@ -2560,31 +2561,31 @@ class Activities extends React.Component {
                                   </View>
                                   <View
                                     style={{
-                                      width: 2,
-                                      height: 20,
-                                      marginLeft: 4.5,
-                                      marginTop: -3,
+                                      width: ViewScale(2),
+                                      height: ViewScale(20),
+                                      marginLeft: ViewScale(4.5),
+                                      marginTop: ViewScale(-3),
                                       backgroundColor: Check(data.status_color),
                                       borderWidth: 1,
                                       borderColor: Check(data.status_color),
-                                      borderRadius: 8,
+                                      borderRadius: ViewScale(8),
                                     }}
                                   />
                                 </View>
                               )}
                               {index == 5 && (
-                                <View style={{marginTop: -10}}>
+                                <View style={{marginTop: ViewScale(-10)}}>
                                   {data.status_url != '' ? (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View
                                         style={{
                                           flexDirection: 'row',
                                         }}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -2592,26 +2593,26 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
                                         <View
                                           style={{
                                             borderWidth: 1,
-                                            marginHorizontal: 15,
+                                            marginHorizontal: ViewScale(15),
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
-                                            width: 250,
-                                            height: 70,
+                                            borderRadius: ViewScale(8),
+                                            width: ViewScale(250),
+                                            height: ViewScale(70),
                                           }}>
                                           <View style={{flexDirection: 'row'}}>
                                             <Text
                                               style={{
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 color: '#2d6dc4',
-                                                marginLeft: 5,
+                                                marginLeft: ViewScale(5),
                                               }}>
                                               {I18n.t('translate_assessment')}
                                             </Text>
@@ -2624,14 +2625,14 @@ class Activities extends React.Component {
                                                 });
                                               }}
                                               style={{
-                                                height: 34,
-                                                width: 112,
+                                                height: ViewScale(34),
+                                                width: ViewScale(112),
                                                 backgroundColor: Check(
                                                   data.status_color,
                                                 ),
-                                                borderRadius: 8,
-                                                marginTop: 18,
-                                                right: 9,
+                                                borderRadius: ViewScale(8),
+                                                marginTop: ViewScale(18),
+                                                right: ViewScale(9),
                                                 position: 'absolute',
                                                 justifyContent: 'center',
                                               }}>
@@ -2640,7 +2641,7 @@ class Activities extends React.Component {
                                                   style={{
                                                     textAlign: 'center',
                                                     color: '#FFF',
-                                                    fontSize: 18,
+                                                    fontSize: ViewScale(18),
                                                   }}>
                                                   {' '}
                                                   {I18n.t(
@@ -2653,8 +2654,8 @@ class Activities extends React.Component {
                                           <View style={{width: '30%'}}>
                                             <Text
                                               style={{
-                                                fontSize: 14,
-                                                marginLeft: 3,
+                                                fontSize: ViewScale(14),
+                                                marginLeft: ViewScale(3),
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
@@ -2664,7 +2665,7 @@ class Activities extends React.Component {
                                           <View style={{width: '100%'}}>
                                             <Text
                                               style={{
-                                                fontSize: 14,
+                                                fontSize: ViewScale(14),
                                                 color: '#7d7d7d',
                                                 marginTop: Platform.OS === 'android' ? 10 : 5,
                                               }}>
@@ -2676,13 +2677,13 @@ class Activities extends React.Component {
                                       </View>
                                     </View>
                                   ) : (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View style={{flexDirection: 'row'}}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -2690,13 +2691,13 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
 
                                         <Text
                                           style={{
-                                            fontSize: 18,
+                                            fontSize: ViewScale(18),
                                             color: Check(data.status_color),
                                           }}>
                                           {' '}
@@ -2728,7 +2729,7 @@ class Activities extends React.Component {
                           this.setState({ckhide: true});
                         }}
                         style={{
-                          fontSize: 18,
+                          fontSize: ViewScale(18),
                           color: '#2d6dc4',
                           textAlign: 'center',
                           textDecorationLine: 'underline',
@@ -2738,12 +2739,12 @@ class Activities extends React.Component {
                       <Icon3
                         color="#2d6dc4"
                         name="keyboard-arrow-down"
-                        size={20}
+                        size={ViewScale(20)}
                       />
                     </View>
                   ) : (
                     <>
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_place')} :
                       </Text>
 
@@ -2762,16 +2763,16 @@ class Activities extends React.Component {
                         }}>
                         {this.state.location === 'ออนไลน์' ? (
                           <Image
-                            style={{width: 15, height: 15, marginTop: 2}}
+                            style={{width: ViewScale(15), height: ViewScale(15), marginTop: ViewScale(2)}}
                             source={require('../../image/WWW.png')}
                           />
                         ) : (
                           <Image
-                            style={{width: 12, height: 15}}
+                            style={{width: ViewScale(12), height: ViewScale(15)}}
                             source={require('../../image/maker2.png')}
                           />
                         )}
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {'  '}
                           {this.state.location}
                         </Text>
@@ -2779,18 +2780,18 @@ class Activities extends React.Component {
 
                       {/* thking */}
 
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_group_product')} :
                       </Text>
 
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_Readmore')} :
                       </Text>
-                      <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                         {I18n.t('translate_Main')}
                       </Text>
-                      <View style={{width: 321, height: null}}>
-                        <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                      <View style={{width: ViewScale(321), height: null}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                           {this.state.detail}
                         </Text>
                       </View>
@@ -2800,7 +2801,7 @@ class Activities extends React.Component {
                             this.setState({ckhide: false});
                           }}
                           style={{
-                            fontSize: 18,
+                            fontSize: ViewScale(18),
                             color: '#2d6dc4',
                             textAlign: 'center',
                             textDecorationLine: 'underline',
@@ -2810,37 +2811,37 @@ class Activities extends React.Component {
                         <Icon3
                           color="#2d6dc4"
                           name="keyboard-arrow-up"
-                          size={20}
+                          size={ViewScale(20)}
                         />
                       </View>
                     </>
                   )}
 
-                  <View style={{margin: 10}}>
+                  <View style={{margin: ViewScale(10)}}>
                     <Image
-                      style={{width: 334, height: 1}}
+                      style={{width: ViewScale(334), height: ViewScale(1)}}
                       source={require('../../image/line6.png')}
                     />
                   </View>
 
                   <View style={{flex: 1}}>
-                    <Text style={{color: '#3a3a3a', fontSize: 18}}>
+                    <Text style={{color: '#3a3a3a', fontSize: ViewScale(18)}}>
                       {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                     </Text>
                     <Text
                       numberOfLines={1}
-                      style={{color: '#3a3a3a', fontSize: 18}}>
+                      style={{color: '#3a3a3a', fontSize: ViewScale(18)}}>
                       {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                     </Text>
                     <View style={{flexDirection: 'row'}}>
                       {this.state.deparment_tel === 'ditp.ciie@gmail.com' ? (
                         <Image
-                          style={{width: 29, height: 29}}
+                          style={{width: ViewScale(29), height: ViewScale(29)}}
                           source={require('../../image/emailx.png')}
                         />
                       ) : (
                         <Image
-                          style={{width: 29, height: 29}}
+                          style={{width: ViewScale(29), height: ViewScale(29)}}
                           source={require('../../image/phonelx.png')}
                         />
                       )}
@@ -2853,7 +2854,7 @@ class Activities extends React.Component {
                           onPress={() => {
                             this.Call(this.state.deparment_tel);
                           }}
-                          style={{color: '#2d6dc4', fontSize: 18, top: 4}}>
+                          style={{color: '#2d6dc4', fontSize: ViewScale(18), top: ViewScale(4)}}>
                           {'   '} {this.state.deparment_tel}
                         </Text>
                       )}
@@ -2871,8 +2872,8 @@ class Activities extends React.Component {
         <View
           style={{
             backgroundColor: '',
-            marginHorizontal: 10,
-            marginTop: -10,
+            marginHorizontal: ViewScale(10),
+            marginTop: ViewScale(-10),
             // marginBottom: 1,
           }}>
           <TouchableOpacity
@@ -2925,14 +2926,14 @@ class Activities extends React.Component {
                   {item.activity_list_location_th === 'ออนไลน์' ? (
                     <Image
                       source={require('../../image/Elearing.png')}
-                      style={{width: 55, height: 50, borderRadius: 15}}
+                      style={{width: ViewScale(55), height: ViewScale(50), borderRadius: ViewScale(15)}}
                     />
                   ) : (
                     <>
                     {item.formTypeActivity === 1 ? (
                       <Image
                         source={require('../../image/devlop.png')}
-                        style={{width: 55, height: 50, borderRadius: 15}}
+                        style={{width: ViewScale(55), height: ViewScale(50), borderRadius: ViewScale(15)}}
                       />
                     ) : (
                       <Image
@@ -2945,7 +2946,7 @@ class Activities extends React.Component {
                         }}
                         style={
                           item.activity_list_logo_thumb === ''
-                            ? {width: 60, height: 56, borderRadius: 10}
+                            ? {width: ViewScale(60), height: ViewScale(56), borderRadius: ViewScale(10)}
                             : Styles.ImgList
                         }
                       />
@@ -2955,10 +2956,10 @@ class Activities extends React.Component {
                 </View>
               }
               title={
-                <View style={{width: '80%', marginTop: 10}}>
+                <View style={{width: '80%', marginTop: ViewScale(10)}}>
                   <Text
                     numberOfLines={2}
-                    style={[Styles.titleList, {lineHeight: 18}]}>
+                    style={[Styles.titleList, {lineHeight: ViewScale(18)}]}>
                     {item.activity_name_th}
                   </Text>
                   <View>
@@ -2967,7 +2968,7 @@ class Activities extends React.Component {
                       <Text
                         style={{
                           color: '#8b9bb0',
-                          fontSize: Platform.OS === 'android' ? 12 : 18,
+                          fontSize: Platform.OS === 'android' ? ViewScale(12) : ViewScale(18),
                         }}>
                         {' '}
                         {this.formatdate(item.regis_date)}
@@ -3027,11 +3028,11 @@ class Activities extends React.Component {
                                 ]}>
                                 <View
                                   style={{
-                                    width: 10,
-                                    height: 10,
+                                    width: ViewScale(10),
+                                    height: ViewScale(10),
                                     borderWidth: 1,
                                     backgroundColor:status_name === 'ทำแบบประเมิน'? '#FFF': Check(status_color),
-                                    borderRadius: 30,
+                                    borderRadius: ViewScale(30),
                                     borderColor: 'transparent',
                                   }}
                                 />
@@ -3039,7 +3040,7 @@ class Activities extends React.Component {
                                 <Text
                                   numberOfLines={1}
                                   style={{
-                                    fontSize: 16,
+                                    fontSize: ViewScale(16),
                                     color: Check(status_color),
                                   }}>
                                   {' '}
@@ -3060,22 +3061,22 @@ class Activities extends React.Component {
                                   style={{
                                     justifyContent: 'center',
                                     alignItems: 'center',
-                                    borderRadius: 8,
+                                    borderRadius: ViewScale(8),
                                     flexDirection: 'row',
-                                    width: 112,
-                                    height: 34,
+                                    width: ViewScale(112),
+                                    height: ViewScale(34),
                                     backgroundColor: Check(status_color),
                                   }}>
                                   <Icon
                                     name="credit-card"
-                                    size={18}
+                                    size={ViewScale(18)}
                                     style={{
                                       color: '#FFFFFF',
-                                      marginHorizontal: 5,
+                                      marginHorizontal: ViewScale(5),
                                     }}
                                   />
                                   <Text
-                                    style={{color: '#FFFFFF', fontSize: 18}}>
+                                    style={{color: '#FFFFFF', fontSize: ViewScale(18)}}>
                                     {status_name}
                                   </Text>
                                 </TouchableOpacity>
@@ -3169,14 +3170,14 @@ class Activities extends React.Component {
                                   style={{
                                     justifyContent: 'center',
                                     alignItems: 'center',
-                                    borderRadius: 8,
+                                    borderRadius: ViewScale(8),
                                     flexDirection: 'row',
-                                    width: 112,
-                                    height: 34,
+                                    width: ViewScale(112),
+                                    height: ViewScale(34),
                                     backgroundColor: Check(status_color),
                                   }}>
                                   <Text
-                                    style={{color: '#FFFFFF', fontSize: 18}}>
+                                    style={{color: '#FFFFFF', fontSize: ViewScale(18)}}>
                                     {I18n.t('transalte_see_details')}
                                   </Text>
                                 </TouchableOpacity>
@@ -3193,22 +3194,22 @@ class Activities extends React.Component {
                                   style={{
                                     justifyContent: 'center',
                                     alignItems: 'center',
-                                    borderRadius: 8,
+                                    borderRadius: ViewScale(8),
                                     flexDirection: 'row',
-                                    width: 112,
-                                    height: 34,
+                                    width: ViewScale(112),
+                                    height: ViewScale(34),
                                     backgroundColor: Check(status_color),
                                   }}>
                                   <Icon
                                     name="clipboard"
-                                    size={18}
+                                    size={ViewScale(18)}
                                     style={{
                                       color: '#FFFFFF',
-                                      marginHorizontal: 5,
+                                      marginHorizontal: ViewScale(5),
                                     }}
                                   />
                                   <Text
-                                    style={{color: '#FFFFFF', fontSize: 18}}>
+                                    style={{color: '#FFFFFF', fontSize: ViewScale(18)}}>
                                     {status_name}
                                   </Text>
                                 </TouchableOpacity>
@@ -3230,14 +3231,14 @@ class Activities extends React.Component {
                       style={{
                         justifyContent: 'center',
                         alignItems: 'center',
-                        borderRadius: 8,
+                        borderRadius: ViewScale(8),
                         flexDirection: 'row',
-                        width: 112,
-                        height: 32,
+                        width: ViewScale(112),
+                        height: ViewScale(32),
                         backgroundColor: '#04a68a',
-                        marginTop: 10,
+                        marginTop: ViewScale(10),
                       }}>
-                      <Text style={{color: '#FFFFFF', fontSize: 18}}>
+                      <Text style={{color: '#FFFFFF', fontSize: ViewScale(18)}}>
                         {I18n.t('transalte_learn_more')}
                       </Text>
                     </TouchableOpacity>
@@ -3427,7 +3428,7 @@ class Activities extends React.Component {
                       ) : (
                         <Image
                           resizeMode={'center'}
-                          style={{width: 360, height: 216}}
+                          style={{width: ViewScale(360), height: ViewScale(216)}}
                           source={require('../../image/banerDrive.png')}
                         />
                       )}
@@ -3456,10 +3457,10 @@ class Activities extends React.Component {
                     }}>
                     <View style={{flex: 1, flexDirection: 'row'}}>
                       <Image
-                        style={{width: 18, height: 13, top: 4}}
+                        style={{width: ViewScale(18), height: ViewScale(13), top: ViewScale(4)}}
                         source={{uri: this.state.contry_img_flag}}
                       />
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {'  '}
                         {this.state.contry_TH}
                       </Text>
@@ -3500,42 +3501,42 @@ class Activities extends React.Component {
                     }}>
                     {this.state.location === 'ออนไลน์' ? (
                       <Image
-                        style={{width: 15, height: 15, marginTop: 2}}
+                        style={{width: ViewScale(15), height: ViewScale(15), marginTop: ViewScale(2)}}
                         source={require('../../image/WWW.png')}
                       />
                     ) : (
                       <Image
-                        style={{width: 12, height: 15}}
+                        style={{width: ViewScale(12), height: ViewScale(15)}}
                         source={require('../../image/maker2.png')}
                       />
                     )}
-                    <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                       {'  '}
                       {this.state.location}
                     </Text>
                   </TouchableOpacity>
 
-                  <View style={{marginTop: 10}}>
+                  <View style={{marginTop: ViewScale(10)}}>
                     {this.state.price === '' ? (
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_ActPrice')} : {I18n.t('transalte_free_of_charge')}
                       </Text>
                     ) : (
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_ActPrice')} : {this.state.price}
                       </Text>
                     )}
                   </View>
                   <View style={{marginTop: 0}}>
-                    <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                    <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                       {I18n.t('translate_Num')} : {this.state.participate}{' '}
                       {I18n.t('translate_case')}
                     </Text>
                   </View>
 
-                  <View style={{margin: 10}}>
+                  <View style={{margin: ViewScale(10)}}>
                     <Image
-                      style={{width: 334, height: 1}}
+                      style={{width: ViewScale(334), height: ViewScale(1)}}
                       source={require('../../image/line6.png')}
                     />
                   </View>
@@ -3655,28 +3656,28 @@ class Activities extends React.Component {
                       };
 
                       return (
-                        <View style={{marginTop: -20}}>
-                          <View style={[Styles.OverlayView6, {bottom: -10}]}>
+                        <View style={{marginTop: ViewScale(-20)}}>
+                          <View style={[Styles.OverlayView6, {bottom: ViewScale(-10)}]}>
                             <View style={Styles.ViewSub30}>
                               {index == 0 && (
                                 <View style={{}}>
                                   <View style={{flexDirection: 'row'}}>
                                     <View
                                       style={{
-                                        width: 12,
-                                        height: 12,
-                                        marginTop: 5,
+                                        width: ViewScale(12),
+                                        height: ViewScale(12),
+                                        marginTop: ViewScale(5),
                                         backgroundColor: Check(
                                           data.status_color,
                                         ),
                                         borderWidth: 1,
                                         borderColor: Check(data.status_color),
-                                        borderRadius: 8,
+                                        borderRadius: ViewScale(8),
                                       }}
                                     />
                                     <Text
                                       style={{
-                                        fontSize: 18,
+                                        fontSize: ViewScale(18),
                                         color: Check(data.status_color),
                                       }}>
                                       {' '}
@@ -3686,37 +3687,37 @@ class Activities extends React.Component {
 
                                   <View
                                     style={{
-                                      width: 2,
-                                      height: 20,
-                                      marginLeft: 4.5,
-                                      marginTop: -3,
+                                      width: ViewScale(2),
+                                      height: ViewScale(20),
+                                      marginLeft: ViewScale(4.5),
+                                      marginTop: ViewScale(-3),
                                       backgroundColor: Check(data.status_color),
                                       borderWidth: 1,
                                       borderColor: Check(data.status_color),
-                                      borderRadius: 8,
+                                      borderRadius: ViewScale(8),
                                     }}
                                   />
                                 </View>
                               )}
                               {index == 1 && (
-                                <View style={{marginBottom: 15, marginTop: 3}}>
+                                <View style={{marginBottom: ViewScale(15), marginTop: ViewScale(3)}}>
                                   <View style={{flexDirection: 'row'}}>
                                     <View
                                       style={{
-                                        width: 12,
-                                        height: 12,
-                                        marginTop: 5,
+                                        width: ViewScale(12),
+                                        height: ViewScale(12),
+                                        marginTop: ViewScale(5),
                                         backgroundColor: Check(
                                           data.status_color,
                                         ),
                                         borderWidth: 1,
                                         borderColor: Check(data.status_color),
-                                        borderRadius: 8,
+                                        borderRadius: ViewScale(8),
                                       }}
                                     />
                                     <Text
                                       style={{
-                                        fontSize: 18,
+                                        fontSize: ViewScale(18),
                                         color: Check(data.status_color),
                                       }}>
                                       {' '}
@@ -3726,31 +3727,31 @@ class Activities extends React.Component {
 
                                   <View
                                     style={{
-                                      width: 2,
-                                      height: 20,
-                                      marginLeft: 4.5,
-                                      marginTop: -3,
+                                      width: ViewScale(2),
+                                      height: ViewScale(20),
+                                      marginLeft: ViewScale(4.5),
+                                      marginTop: ViewScale(-3),
                                       backgroundColor: Check(data.status_color),
                                       borderWidth: 1,
                                       borderColor: Check(data.status_color),
-                                      borderRadius: 8,
+                                      borderRadius: ViewScale(8),
                                     }}
                                   />
                                 </View>
                               )}
                               {index == 2 && (
-                                <View style={{marginTop: -10}}>
+                                <View style={{marginTop: ViewScale(-10)}}>
                                   {data.status_url != '' ? (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View
                                         style={{
                                           flexDirection: 'row',
                                         }}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -3758,22 +3759,22 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
                                         <View
                                           style={{
                                             borderWidth: 1,
-                                            marginHorizontal: 15,
+                                            marginHorizontal: ViewScale(15),
                                             borderColor: '#1d61bd',
                                             borderRadius: 8,
-                                            width: 250,
-                                            height: 70,
+                                            width: ViewScale(250),
+                                            height: ViewScale(70),
                                           }}>
                                           <View style={{flexDirection: 'row'}}>
                                             <Text
                                               style={{
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 color: '#2d6dc4',
                                               }}>
                                               {' '}
@@ -3787,12 +3788,12 @@ class Activities extends React.Component {
                                                 })
                                               }
                                               style={{
-                                                height: 34,
-                                                width: 112,
+                                                height: ViewScale(34),
+                                                width: ViewScale(112),
                                                 backgroundColor: '#1d61bd',
-                                                borderRadius: 8,
-                                                marginTop: 18,
-                                                right: 9,
+                                                borderRadius: ViewScale(8),
+                                                marginTop: ViewScale(18),
+                                                right: ViewScale(9),
                                                 position: 'absolute',
                                                 justifyContent: 'center',
                                               }}>
@@ -3801,7 +3802,7 @@ class Activities extends React.Component {
                                                   style={{
                                                     textAlign: 'center',
                                                     color: '#FFF',
-                                                    fontSize: 18,
+                                                    fontSize: ViewScale(18),
                                                   }}>
                                                   {' '}
                                                   {I18n.t('translate_lPayment')}
@@ -3812,7 +3813,7 @@ class Activities extends React.Component {
                                           <View>
                                             <Text
                                               style={{
-                                                fontSize: 14,
+                                                fontSize: ViewScale(14),
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
@@ -3823,27 +3824,27 @@ class Activities extends React.Component {
                                       </View>
                                       <View
                                         style={{
-                                          width: 2,
-                                          height: 80,
-                                          marginLeft: 4.5,
-                                          marginTop: -50,
+                                          width: ViewScale(2),
+                                          height: ViewScale(80),
+                                          marginLeft: ViewScale(4.5),
+                                          marginTop: ViewScale(-50),
                                           backgroundColor: Check(
                                             data.status_color,
                                           ),
                                           borderWidth: 1,
                                           borderColor: Check(data.status_color),
-                                          borderRadius: 8,
+                                          borderRadius: ViewScale(8),
                                         }}
                                       />
                                     </View>
                                   ) : (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View style={{flexDirection: 'row'}}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -3851,13 +3852,13 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
 
                                         <Text
                                           style={{
-                                            fontSize: 18,
+                                            fontSize: ViewScale(18),
                                             color: Check(data.status_color),
                                           }}>
                                           {' '}
@@ -3866,16 +3867,16 @@ class Activities extends React.Component {
                                       </View>
                                       <View
                                         style={{
-                                          width: 2,
-                                          height: 20,
-                                          marginLeft: 4.5,
-                                          marginTop: -3,
+                                          width: ViewScale(2),
+                                          height: ViewScale(20),
+                                          marginLeft: ViewScale(4.5),
+                                          marginTop: ViewScale(-3),
                                           backgroundColor: Check(
                                             data.status_color,
                                           ),
                                           borderWidth: 1,
                                           borderColor: Check(data.status_color),
-                                          borderRadius: 8,
+                                          borderRadius: ViewScale(8),
                                         }}
                                       />
                                     </View>
@@ -3932,21 +3933,21 @@ class Activities extends React.Component {
                                   <View style={{flexDirection: 'row'}}>
                                     <View
                                       style={{
-                                        width: 12,
-                                        height: 12,
+                                        width: ViewScale(12),
+                                        height: ViewScale(12),
                                         marginTop: 0,
                                         backgroundColor: Check(
                                           data.status_color,
                                         ),
                                         borderWidth: 1,
                                         borderColor: Check(data.status_color),
-                                        borderRadius: 8,
+                                        borderRadius: ViewScale(8),
                                       }}
                                     />
                                     <Text
                                       style={{
-                                        marginTop: -5,
-                                        fontSize: 18,
+                                        marginTop: ViewScale(-5),
+                                        fontSize: ViewScale(18),
                                         color: Check(data.status_color),
                                       }}>
                                       {' '}
@@ -3956,33 +3957,33 @@ class Activities extends React.Component {
 
                                   <View
                                     style={{
-                                      marginBottom: 6,
-                                      width: 2,
-                                      height: 28,
-                                      marginLeft: 4.5,
-                                      marginTop: -8,
+                                      marginBottom: ViewScale(6),
+                                      width: ViewScale(2),
+                                      height: ViewScale(28),
+                                      marginLeft: ViewScale(4.5),
+                                      marginTop: ViewScale(-8),
                                       backgroundColor: Check(data.status_color),
                                       borderWidth: 1,
                                       borderColor: Check(data.status_color),
-                                      borderRadius: 8,
+                                      borderRadius: ViewScale(8),
                                     }}
                                   />
                                 </View>
                               )}
 
                               {index == 5 && (
-                                <View style={{marginTop: -10}}>
+                                <View style={{marginTop: ViewScale(-10)}}>
                                   {data.status_url != '' ? (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View
                                         style={{
                                           flexDirection: 'row',
                                         }}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -3990,26 +3991,26 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
                                         <View
                                           style={{
                                             borderWidth: 1,
-                                            marginHorizontal: 15,
+                                            marginHorizontal: ViewScale(15),
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
-                                            width: 250,
-                                            height: 70,
+                                            borderRadius: ViewScale(8),
+                                            width: ViewScale(250),
+                                            height: ViewScale(70),
                                           }}>
                                           <View style={{flexDirection: 'row'}}>
                                             <Text
                                               style={{
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 color: '#2d6dc4',
-                                                marginLeft: 5,
+                                                marginLeft: ViewScale(5),
                                               }}>
                                               {I18n.t('translate_assessment')}
                                             </Text>
@@ -4022,14 +4023,14 @@ class Activities extends React.Component {
                                                 });
                                               }}
                                               style={{
-                                                height: 34,
-                                                width: 112,
+                                                height: ViewScale(34),
+                                                width: ViewScale(112),
                                                 backgroundColor: Check(
                                                   data.status_color,
                                                 ),
-                                                borderRadius: 8,
-                                                marginTop: 18,
-                                                right: 9,
+                                                borderRadius: ViewScale(8),
+                                                marginTop: ViewScale(18),
+                                                right: ViewScale(9),
                                                 position: 'absolute',
                                                 justifyContent: 'center',
                                               }}>
@@ -4038,7 +4039,7 @@ class Activities extends React.Component {
                                                   style={{
                                                     textAlign: 'center',
                                                     color: '#FFF',
-                                                    fontSize: 18,
+                                                    fontSize: ViewScale(18),
                                                   }}>
                                                   {' '}
                                                   {I18n.t(
@@ -4051,8 +4052,8 @@ class Activities extends React.Component {
                                           <View style={{width: '30%'}}>
                                             <Text
                                               style={{
-                                                fontSize: 14,
-                                                marginLeft: 3,
+                                                fontSize: ViewScale(14),
+                                                marginLeft: ViewScale(3),
                                                 color: '#e82d2d',
                                               }}>
                                               {' '}
@@ -4062,7 +4063,7 @@ class Activities extends React.Component {
                                           <View style={{width: '100%'}}>
                                             <Text
                                               style={{
-                                                fontSize: 14,
+                                                fontSize: ViewScale(14),
                                                 color: '#7d7d7d',
                                                 marginTop: Platform.OS === 'android' ? 10 : 5,
                                               }}>
@@ -4074,13 +4075,13 @@ class Activities extends React.Component {
                                       </View>
                                     </View>
                                   ) : (
-                                    <View style={{marginBottom: 15}}>
+                                    <View style={{marginBottom: ViewScale(15)}}>
                                       <View style={{flexDirection: 'row'}}>
                                         <View
                                           style={{
-                                            width: 12,
-                                            height: 12,
-                                            marginTop: 5,
+                                            width: ViewScale(12),
+                                            height: ViewScale(12),
+                                            marginTop: ViewScale(5),
                                             backgroundColor: Check(
                                               data.status_color,
                                             ),
@@ -4088,13 +4089,13 @@ class Activities extends React.Component {
                                             borderColor: Check(
                                               data.status_color,
                                             ),
-                                            borderRadius: 8,
+                                            borderRadius: ViewScale(8),
                                           }}
                                         />
 
                                         <Text
                                           style={{
-                                            fontSize: 18,
+                                            fontSize: ViewScale(18),
                                             color: Check(data.status_color),
                                           }}>
                                           {' '}
@@ -4126,7 +4127,7 @@ class Activities extends React.Component {
                           this.setState({ckhide: true});
                         }}
                         style={{
-                          fontSize: 18,
+                          fontSize: ViewScale(18),
                           color: '#2d6dc4',
                           textAlign: 'center',
                           textDecorationLine: 'underline',
@@ -4136,7 +4137,7 @@ class Activities extends React.Component {
                       <Icon3
                         color="#2d6dc4"
                         name="keyboard-arrow-down"
-                        size={20}
+                        size={ViewScale(20)}
                       />
                     </View>
                   ) : (
@@ -4159,7 +4160,7 @@ class Activities extends React.Component {
                           {this.state.starretgis} - {this.state.endregis}{' '}
                         </Text> */}
 
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_place')} :
                       </Text>
 
@@ -4178,16 +4179,16 @@ class Activities extends React.Component {
                         }}>
                         {this.state.location === 'ออนไลน์' ? (
                           <Image
-                            style={{width: 15, height: 15, marginTop: 2}}
+                            style={{width: ViewScale(15), height: ViewScale(15), marginTop: ViewScale(2)}}
                             source={require('../../image/WWW.png')}
                           />
                         ) : (
                           <Image
-                            style={{width: 12, height: 15}}
+                            style={{width: ViewScale(12), height: ViewScale(15)}}
                             source={require('../../image/maker2.png')}
                           />
                         )}
-                        <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                           {'  '}
                           {this.state.location}
                         </Text>
@@ -4195,7 +4196,7 @@ class Activities extends React.Component {
 
                       {/* thking */}
 
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_group_product')} :
                       </Text>
 
@@ -4209,14 +4210,14 @@ class Activities extends React.Component {
                             </View>
                           );
                         })} */}
-                      <Text style={{fontSize: 18, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_Readmore')} :
                       </Text>
-                      <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                      <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                         {I18n.t('translate_Main')}
                       </Text>
-                      <View style={{width: 321, height: null}}>
-                        <Text style={{fontSize: 18, color: '#7d7d7d'}}>
+                      <View style={{width: ViewScale(321), height: null}}>
+                        <Text style={{fontSize: ViewScale(18), color: '#7d7d7d'}}>
                           {this.state.detail}
                         </Text>
                       </View>
@@ -4226,7 +4227,7 @@ class Activities extends React.Component {
                             this.setState({ckhide: false});
                           }}
                           style={{
-                            fontSize: 18,
+                            fontSize: ViewScale(18),
                             color: '#2d6dc4',
                             textAlign: 'center',
                             textDecorationLine: 'underline',
@@ -4236,42 +4237,42 @@ class Activities extends React.Component {
                         <Icon3
                           color="#2d6dc4"
                           name="keyboard-arrow-up"
-                          size={20}
+                          size={ViewScale(20)}
                         />
                       </View>
                     </>
                   )}
 
-                  <View style={{margin: 10}}>
+                  <View style={{margin: ViewScale(10)}}>
                     <Image
-                      style={{width: 334, height: 1}}
+                      style={{width: ViewScale(334), height: ViewScale(1)}}
                       source={require('../../image/line6.png')}
                     />
                   </View>
 
                   <View style={{flex: 1}}>
-                    <Text style={{color: '#3a3a3a', fontSize: 18}}>
+                    <Text style={{color: '#3a3a3a', fontSize: ViewScale(18)}}>
                       {I18n.t('transalte_responsible_agency')} : {this.state.daparment_name}
                     </Text>
                     <Text
                       numberOfLines={1}
-                      style={{color: '#3a3a3a', fontSize: 18}}>
+                      style={{color: '#3a3a3a', fontSize: ViewScale(18)}}>
                       {I18n.t('transalte_project_staff')} : {this.state.officer_name}
                     </Text>
                     <View style={{flexDirection: 'row'}}>
                       {this.state.deparment_tel === 'ditp.ciie@gmail.com' ? (
                         <Image
-                          style={{width: 29, height: 29}}
+                          style={{width: ViewScale(29), height: ViewScale(29)}}
                           source={require('../../image/emailx.png')}
                         />
                       ) : (
                         <Image
-                          style={{width: 29, height: 29}}
+                          style={{width: ViewScale(29), height: ViewScale(29)}}
                           source={require('../../image/phonelx.png')}
                         />
                       )}
                       {this.state.deparment_tel === 'ditp.ciie@gmail.com' ? (
-                        <Text style={{color: '#2d6dc4', fontSize: 18, top: 4}}>
+                        <Text style={{color: '#2d6dc4', fontSize: ViewScale(18), top: ViewScale(4)}}>
                           {'   '} {this.state.deparment_tel}
                         </Text>
                       ) : (
@@ -4279,7 +4280,7 @@ class Activities extends React.Component {
                           onPress={() => {
                             this.Call(this.state.deparment_tel);
                           }}
-                          style={{color: '#2d6dc4', fontSize: 18, top: 4}}>
+                          style={{color: '#2d6dc4', fontSize: ViewScale(18), top: ViewScale(4)}}>
                           {'   '} {this.state.deparment_tel}
                         </Text>
                       )}
@@ -4291,7 +4292,7 @@ class Activities extends React.Component {
           </Overlay>
         )}
 
-        <View style={{backgroundColor: '#fbfbfd', marginTop: 5}}>
+        <View style={{backgroundColor: '#fbfbfd', marginTop: ViewScale(5)}}>
           <TouchableOpacity
             onPress={() => {
               //   this.setState({Detailact: true});
@@ -4362,8 +4363,8 @@ class Activities extends React.Component {
             <ListItem
               style={{
                 backgroundColor: 'red',
-                marginHorizontal: 10,
-                marginBottom: 5,
+                marginHorizontal: ViewScale(10),
+                marginBottom: ViewScale(5),
               }}
               containerStyle={{}}
               leftAvatar={
@@ -4377,16 +4378,16 @@ class Activities extends React.Component {
                   }}
                   style={
                     item.activity_list_logo_thumb === ''
-                      ? {width: 60, height: 56, borderRadius: 10}
+                      ? {width: ViewScale(60), height: ViewScale(56), borderRadius: ViewScale(10)}
                       : Styles.ImgList
                   }
                 />
               }
               title={
-                <View style={{width: '80%', marginTop: 10}}>
+                <View style={{width: '80%', marginTop: ViewScale(10)}}>
                   <Text
                     numberOfLines={2}
-                    style={[Styles.titleList, {lineHeight: 20}]}>
+                    style={[Styles.titleList, {lineHeight: ViewScale(20)}]}>
                     {item.activity_name_th}
                   </Text>
                   <View>
@@ -4395,7 +4396,7 @@ class Activities extends React.Component {
                       <Text
                         style={{
                           color: '#4b4b4b',
-                          fontSize: Platform.OS === 'android' ? 12 : 18,
+                          fontSize: Platform.OS === 'android' ? ViewScale(12) : ViewScale(18),
                         }}>
                         {' '}
                         {this.formatdate(item.regis_date)}
@@ -4406,18 +4407,18 @@ class Activities extends React.Component {
                         style={[Styles.ViewSubList2, {width: '100%', left: 0}]}>
                         <View
                           style={{
-                            width: 10,
-                            height: 10,
+                            width: ViewScale(10),
+                            height: ViewScale(10),
                             borderWidth: 1,
                             backgroundColor: '#cad8e1',
-                            borderRadius: 30,
+                            borderRadius: ViewScale(30),
                             borderColor: 'transparent',
                           }}
                         />
                         <Text
                           numberOfLines={1}
                           style={{
-                            fontSize: 16,
+                            fontSize: ViewScale(16),
 
                             color: '#cad8e1',
                           }}>
@@ -4506,7 +4507,7 @@ class Activities extends React.Component {
                   ? ['#5dbde6', '#1d61bd']
                   : ['#FFFFFF', '#FFFFFF']
               }
-              style={{height: 42, justifyContent: 'center'}}>
+              style={{height: ViewScale(42), justifyContent: 'center'}}>
               <Text
                 style={
                   this.state.heightTab == 0
@@ -4530,7 +4531,7 @@ class Activities extends React.Component {
                   ? ['#5dbde6', '#1d61bd']
                   : ['#FFFFFF', '#FFFFFF']
               }
-              style={{height: 42, justifyContent: 'center'}}>
+              style={{height: ViewScale(42), justifyContent: 'center'}}>
               <Text
                 style={
                   this.state.heightTab == 1
@@ -4554,7 +4555,7 @@ class Activities extends React.Component {
                   ? ['#5dbde6', '#1d61bd']
                   : ['#FFFFFF', '#FFFFFF']
               }
-              style={{height: 42, justifyContent: 'center'}}>
+              style={{height: ViewScale(42), justifyContent: 'center'}}>
               <Text
                 style={
                   this.state.heightTab == 2
@@ -4585,12 +4586,12 @@ class Activities extends React.Component {
                   <TouchableOpacity
                     style={{
                       flex: 1,
-                      height: 33,
+                      height: ViewScale(33),
                       justifyContent: 'center',
 
-                      marginBottom: 10,
+                      marginBottom: ViewScale(10),
                       backgroundColor: '#FFFFFF',
-                      marginTop: 10,
+                      marginTop: ViewScale(10),
                     }}
                     onPress={() => {
                       // alert(this.state.ActivityAccept.length)
@@ -4619,7 +4620,7 @@ class Activities extends React.Component {
             ) : (
               // </View>
               <View style={{alignItems: 'center'}}>
-                <Text style={{fontSize: 22}}>
+                <Text style={{fontSize: ViewScale(22)}}>
                   {I18n.t('translate_NoHistory')}
                 </Text>
                 <View style={{alignItems: 'center'}}>
@@ -4649,12 +4650,12 @@ class Activities extends React.Component {
                     <TouchableOpacity
                       style={{
                         flex: 1,
-                        height: 33,
+                        height: ViewScale(33),
                         justifyContent: 'center',
 
-                        marginBottom: 10,
+                        marginBottom: ViewScale(10),
                         backgroundColor: '#FFFFFF',
-                        marginTop: 10,
+                        marginTop: ViewScale(10),
                       }}
                       onPress={() => {
                         this.state.ActivityAccept.length === this.state.Page
@@ -4682,7 +4683,7 @@ class Activities extends React.Component {
             ) : (
               // </View>
               <View style={{alignItems: 'center'}}>
-                <Text style={{fontSize: 22}}>
+                <Text style={{fontSize: ViewScale(22)}}>
                   {I18n.t('translate_NoHistory')}
                 </Text>
                 <View style={{alignItems: 'center'}}>
@@ -4698,7 +4699,7 @@ class Activities extends React.Component {
         {this.state.heightTab == 2 && (
           <View>
             <View style={Styles.ViewSub19}>
-              <Text style={{fontSize: 18, color: '#73838f'}}>
+              <Text style={{fontSize: ViewScale(18), color: '#73838f'}}>
                 {I18n.t('translate_fiscalyear')} :
               </Text>
             </View>
@@ -4713,18 +4714,18 @@ class Activities extends React.Component {
                   activeTabStyle={Styles.tabactive}
                   tabTextStyle={Styles.tabtext2}
                   firstTabStyle={{
-                    borderTopLeftRadius: 8,
-                    borderBottomLeftRadius: 8,
-                    borderTopRightRadius: 8,
-                    borderBottomRightRadius: 8,
-                    marginRight: 2,
+                    borderTopLeftRadius: ViewScale(8),
+                    borderBottomLeftRadius: ViewScale(8),
+                    borderTopRightRadius: ViewScale(8),
+                    borderBottomRightRadius: ViewScale(8),
+                    marginRight: ViewScale(2),
                   }}
                   lastTabStyle={{
-                    borderTopLeftRadius: 8,
-                    borderBottomLeftRadius: 8,
-                    borderTopRightRadius: 8,
-                    borderBottomRightRadius: 8,
-                    marginRight: 2,
+                    borderTopLeftRadius: ViewScale(8),
+                    borderBottomLeftRadius: ViewScale(8),
+                    borderTopRightRadius: ViewScale(8),
+                    borderBottomRightRadius: ViewScale(8),
+                    marginRight: ViewScale(2),
                   }}
                   tabStyle={Styles.tabStyle2}
                   tabsContainerStyle={Styles.tabContainer2}
@@ -4745,7 +4746,7 @@ class Activities extends React.Component {
                       alignSelf: 'center',
                     }}>
                     <Image
-                      style={{width: 11, height: 7, bottom: 2}}
+                      style={{width: ViewScale(11), height: ViewScale(7), bottom: ViewScale(2)}}
                       source={require('../../image/DropDown.png')}
                     />
                   </View>
@@ -4766,12 +4767,12 @@ class Activities extends React.Component {
                           // style={Styles.Touchhide}
                           style={{
                             flex: 1,
-                            height: 33,
+                            height: ViewScale(33),
                             justifyContent: 'center',
 
-                            marginBottom: 10,
+                            marginBottom: ViewScale(10),
                             backgroundColor: '#FFFFFF',
-                            marginTop: 10,
+                            marginTop: ViewScale(10),
                           }}
                           onPress={() => {
                             this.state.ActivityYear[this.state.year4].length ===
@@ -4803,9 +4804,9 @@ class Activities extends React.Component {
                     <View
                       style={{
                         alignItems: 'center',
-                        marginBottom: 20,
+                        marginBottom: ViewScale(20),
                       }}>
-                      <Text style={{fontSize: 22}}>
+                      <Text style={{fontSize: ViewScale(22)}}>
                         {I18n.t('translate_NoHistory')}
                       </Text>
                       <View style={{alignItems: 'center'}}>
@@ -4826,7 +4827,7 @@ class Activities extends React.Component {
                       alignSelf: 'center',
                     }}>
                     <Image
-                      style={{width: 11, height: 7, bottom: 2}}
+                      style={{width: ViewScale(11), height: ViewScale(7), bottom: ViewScale(2)}}
                       source={require('../../image/DropDown.png')}
                     />
                   </View>
@@ -4847,12 +4848,12 @@ class Activities extends React.Component {
                           // style={Styles.Touchhide}
                           style={{
                             flex: 1,
-                            height: 33,
+                            height: ViewScale(33),
                             justifyContent: 'center',
 
-                            marginBottom: 10,
+                            marginBottom: ViewScale(10),
                             backgroundColor: '#FFFFFF',
-                            marginTop: 10,
+                            marginTop: ViewScale(10),
                           }}
                           onPress={() => {
                             this.state.ActivityYear[this.state.year3].length ===
@@ -4884,9 +4885,9 @@ class Activities extends React.Component {
                     <View
                       style={{
                         alignItems: 'center',
-                        marginBottom: 20,
+                        marginBottom: ViewScale(20),
                       }}>
-                      <Text style={{fontSize: 22}}>
+                      <Text style={{fontSize: ViewScale(22)}}>
                         {I18n.t('translate_NoHistory')}
                       </Text>
                       <View style={{alignItems: 'center'}}>
@@ -4907,7 +4908,7 @@ class Activities extends React.Component {
                       width: '79%',
                     }}>
                     <Image
-                      style={{width: 11, height: 7, bottom: 2}}
+                      style={{width: ViewScale(11), height: ViewScale(7), bottom: ViewScale(2)}}
                       source={require('../../image/DropDown.png')}
                     />
                   </View>
@@ -4928,12 +4929,12 @@ class Activities extends React.Component {
                           // style={Styles.Touchhide}
                           style={{
                             flex: 1,
-                            height: 33,
+                            height: ViewScale(33),
                             justifyContent: 'center',
 
-                            marginBottom: 10,
+                            marginBottom: ViewScale(10),
                             backgroundColor: '#FFFFFF',
-                            marginTop: 10,
+                            marginTop: ViewScale(10),
                           }}
                           onPress={() => {
                             this.state.ActivityYear[this.state.year2].length ===
@@ -4965,9 +4966,9 @@ class Activities extends React.Component {
                     <View
                       style={{
                         alignItems: 'center',
-                        marginBottom: 20,
+                        marginBottom: ViewScale(20),
                       }}>
-                      <Text style={{fontSize: 22}}>
+                      <Text style={{fontSize: ViewScale(22)}}>
                         {I18n.t('translate_NoHistory')}
                       </Text>
                       <View style={{alignItems: 'center'}}>

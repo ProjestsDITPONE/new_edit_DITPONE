@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Platform,
 } from 'react-native';
+import { ViewScale } from '../../config/ViewScale';
 import Headers from '../../components/Headers';
 
 const ChangeScreen = ({navigation}) => {
@@ -15,15 +16,15 @@ const ChangeScreen = ({navigation}) => {
   return (
     <View style={{flex: 1, backgroundColor: '#ffffff'}}>
       <Headers badgeNumber="2" navigation={navigation} backScreen={false} />
-      <View style={{marginTop: Platform.OS === 'android' && 90}} />
-      <View style={{marginTop: 20, zIndex: -1}}>
-        <Text style={{fontSize: 28, color: '#40536d'}}>{I18n.t('translate_Changepassword')}</Text>
-        <View style={{marginLeft: 5, marginTop: 10}}>
+      <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
+      <View style={{marginTop: ViewScale(20), zIndex: -1}}>
+        <Text style={{fontSize: ViewScale(28), color: '#40536d'}}>{I18n.t('translate_Changepassword')}</Text>
+        <View style={{marginLeft: ViewScale(5), marginTop: ViewScale(10)}}>
           <ImageBackground
             source={require('../../image/textbox.png')}
             style={{
-              width: 354,
-              height: 48,
+              width: ViewScale(354),
+              height: ViewScale(48),
               alignSelf: 'center',
               justifyContent: 'center',
             }}>
@@ -32,7 +33,7 @@ const ChangeScreen = ({navigation}) => {
               value={Newpassword}
               onChangeText={text => setNewpassword(text)}
               secureTextEntry={true}
-              style={{fontSize: 26, left: 30}}
+              style={{fontSize: ViewScale(26), left: ViewScale(30)}}
               placeholder={I18n.t('transalte_new_pass')}
               placeholderTextColor="#cad8e1"
             />
@@ -40,38 +41,38 @@ const ChangeScreen = ({navigation}) => {
           <ImageBackground
             source={require('../../image/textbox.png')}
             style={{
-              width: 354,
-              height: 48,
+              width: ViewScale(354),
+              height: ViewScale(48),
               alignSelf: 'center',
               justifyContent: 'center',
-              marginTop: 20,
+              marginTop: ViewScale(20),
             }}>
             <TextInput
               value={confirmpassword}
               maxLength={10}
               onChangeText={text => setconfirmpassword(text)}
               secureTextEntry={true}
-              style={{fontSize: 26, left: 30}}
+              style={{fontSize: ViewScale(26), left: ViewScale(30)}}
               placeholder={I18n.t('password2_regis')}
               placeholderTextColor="#cad8e1"
             />
           </ImageBackground>
           <View
             style={{
-              top: 40,
+              top: ViewScale(40),
               justifyContent: 'center',
               alignItems: 'center',
             }}>
             <TouchableOpacity
               style={{
-                width: 354,
-                height: 48,
+                width: ViewScale(354),
+                height: ViewScale(48),
                 backgroundColor: '#2d6dc4',
                 justifyContent: 'center',
                 alignItems: 'center',
-                borderRadius: 21.5,
+                borderRadius: ViewScale(21.5),
               }}>
-              <Text style={{fontSize: 27, color: '#ffffff'}}>{I18n.t('btn_accept2_complaint')}</Text>
+              <Text style={{fontSize: ViewScale(27), color: '#ffffff'}}>{I18n.t('btn_accept2_complaint')}</Text>
             </TouchableOpacity>
           </View>
         </View>

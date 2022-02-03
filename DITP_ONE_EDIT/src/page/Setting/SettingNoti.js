@@ -13,6 +13,7 @@ import Headers from '../../components/Headers';
 import HeaderText from '../../components/HeaderText';
 import ToggleSwitch from 'toggle-switch-react-native';
 import I18n from '../../utils/I18n';
+import { ViewScale } from '../../config/ViewScale';
 
 const SettingNoti = ({navigation}) => {
   const [nontinews, setnontinews] = useState(false);
@@ -26,11 +27,11 @@ const SettingNoti = ({navigation}) => {
   return (
     <View style={{flex: 1, backgroundColor: 'transparent'}}>
       <Headers badgeNumber="2" navigation={navigation} backScreen={false} />
-      <View style={{marginTop: Platform.OS === 'android' && 90}} />
-      <View style={{marginTop: 20, zIndex: -1, marginBottom: 20}}>
+      <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
+      <View style={{marginTop: ViewScale(20), zIndex: -1, marginBottom: ViewScale(20)}}>
         <Text
           style={{
-            fontSize: 25,
+            fontSize: ViewScale(25),
             color: '#20416e',
             textAlign: 'center',
             fontFamily: 'Kittithada Bold 75',
@@ -45,13 +46,13 @@ const SettingNoti = ({navigation}) => {
             height: null,
             backgroundColor: '#FFFFFF',
             alignItems: 'center',
-            marginHorizontal: 20,
-            borderRadius: 8,
+            marginHorizontal: ViewScale(20),
+            borderRadius: ViewScale(8),
           }}>
           <View
             style={{
               alignSelf: 'center',
-              padding: 10,
+              padding: ViewScale(10),
             }}>
             <View
               style={{
@@ -61,7 +62,7 @@ const SettingNoti = ({navigation}) => {
               }}>
               <Text
                 style={{
-                  fontSize: 23,
+                  fontSize: ViewScale(23),
                   color: '#4b4b4b',
                   fontFamily: 'Kittithada Bold 75',
                 }}>
@@ -104,11 +105,11 @@ const SettingNoti = ({navigation}) => {
               style={{
                 alignContent: 'center',
                 alignItems: 'center',
-                marginTop: 15,
+                marginTop: ViewScale(15),
               }}>
               <Image
                 style={{
-                  height: 2,
+                  height:ViewScale(2),
                   width: '100%',
                 }}
                 source={require('../../image/linesetting.png')}
@@ -118,7 +119,7 @@ const SettingNoti = ({navigation}) => {
           <View
             style={{
               alignSelf: 'center',
-              padding: 10,
+              padding: ViewScale(10),
             }}>
             <View
               style={{
@@ -128,7 +129,7 @@ const SettingNoti = ({navigation}) => {
               }}>
               <Text
                 style={{
-                  fontSize: 23,
+                  fontSize: ViewScale(23),
                   color: '#4b4b4b',
                   fontFamily: 'Kittithada Bold 75',
                 }}>
@@ -171,11 +172,11 @@ const SettingNoti = ({navigation}) => {
               style={{
                 alignContent: 'center',
                 alignItems: 'center',
-                marginTop: 15,
+                marginTop: ViewScale(15),
               }}>
               <Image
                 style={{
-                  height: 2,
+                  height: ViewScale(2),
                   width: '100%',
                 }}
                 source={require('../../image/linesetting.png')}
@@ -187,7 +188,7 @@ const SettingNoti = ({navigation}) => {
           <View
             style={{
               alignSelf: 'center',
-              padding: 10,
+              padding: ViewScale(10),
             }}>
             <View
               style={{
@@ -197,7 +198,7 @@ const SettingNoti = ({navigation}) => {
               }}>
               <Text
                 style={{
-                  fontSize: 23,
+                  fontSize: ViewScale(23),
                   color: '#4b4b4b',
                   fontFamily: 'Kittithada Bold 75',
                 }}>
@@ -240,11 +241,11 @@ const SettingNoti = ({navigation}) => {
               style={{
                 alignContent: 'center',
                 alignItems: 'center',
-                marginTop: 15,
+                marginTop: ViewScale(15),
               }}>
               <Image
                 style={{
-                  height: 2,
+                  height: ViewScale(2),
                   width: '100%',
                 }}
                 source={require('../../image/linesetting.png')}
@@ -258,7 +259,7 @@ const SettingNoti = ({navigation}) => {
           <View
             style={{
               alignSelf: 'center',
-              padding: 10,
+              padding: ViewScale(10),
             }}>
             <View
               style={{
@@ -268,7 +269,7 @@ const SettingNoti = ({navigation}) => {
               }}>
               <Text
                 style={{
-                  fontSize: 23,
+                  fontSize: ViewScale(23),
                   color: '#4b4b4b',
                   fontFamily: 'Kittithada Bold 75',
                 }}>
@@ -311,11 +312,11 @@ const SettingNoti = ({navigation}) => {
               style={{
                 alignContent: 'center',
                 alignItems: 'center',
-                marginTop: 15,
+                marginTop: ViewScale(15),
               }}>
               <Image
                 style={{
-                  height: 2,
+                  height: ViewScale(2),
                   width: '100%',
                 }}
                 source={require('../../image/linesetting.png')}
@@ -330,7 +331,7 @@ const SettingNoti = ({navigation}) => {
           <View
             style={{
               alignSelf: 'center',
-              padding: 10,
+              padding: ViewScale(10),
             }}>
             <View
               style={{
@@ -340,7 +341,7 @@ const SettingNoti = ({navigation}) => {
               }}>
               <Text
                 style={{
-                  fontSize: 22,
+                  fontSize: ViewScale(22),
                   color: '#4b4b4b',
                   fontFamily: 'Kittithada Bold 75',
                 }}>
@@ -383,11 +384,11 @@ const SettingNoti = ({navigation}) => {
               style={{
                 alignContent: 'center',
                 alignItems: 'center',
-                marginTop: 15,
+                marginTop: ViewScale(15),
               }}>
               <Image
                 style={{
-                  height: 2,
+                  height: ViewScale(2),
                   width: '100%',
                 }}
                 source={require('../../image/linesetting.png')}
@@ -397,7 +398,7 @@ const SettingNoti = ({navigation}) => {
           <View
             style={{
               alignSelf: 'center',
-              padding: 10,
+              padding: ViewScale(10),
             }}>
             <View
               style={{
@@ -407,7 +408,7 @@ const SettingNoti = ({navigation}) => {
               }}>
               <Text
                 style={{
-                  fontSize: 23,
+                  fontSize: ViewScale(23),
                   color: '#4b4b4b',
                   fontFamily: 'Kittithada Bold 75',
                 }}>
@@ -450,11 +451,11 @@ const SettingNoti = ({navigation}) => {
               style={{
                 alignContent: 'center',
                 alignItems: 'center',
-                marginTop: 15,
+                marginTop: ViewScale(15),
               }}>
               <Image
                 style={{
-                  height: 2,
+                  height: ViewScale(2),
                   width: '100%',
                 }}
                 source={require('../../image/linesetting.png')}
@@ -466,7 +467,7 @@ const SettingNoti = ({navigation}) => {
           <View
             style={{
               alignSelf: 'center',
-              padding: 10,
+              padding: ViewScale(10),
             }}>
             <View
               style={{
@@ -476,7 +477,7 @@ const SettingNoti = ({navigation}) => {
               }}>
               <Text
                 style={{
-                  fontSize: 23,
+                  fontSize: ViewScale(23),
                   color: '#4b4b4b',
                   fontFamily: 'Kittithada Bold 75',
                 }}>
@@ -519,11 +520,11 @@ const SettingNoti = ({navigation}) => {
               style={{
                 alignContent: 'center',
                 alignItems: 'center',
-                marginTop: 15,
+                marginTop: ViewScale(15),
               }}>
               <Image
                 style={{
-                  height: 2,
+                  height: ViewScale(2),
                   width: '100%',
                 }}
                 source={require('../../image/linesetting.png')}
@@ -533,7 +534,7 @@ const SettingNoti = ({navigation}) => {
           <View
             style={{
               alignSelf: 'center',
-              padding: 10,
+              padding: ViewScale(10),
             }}>
             <View
               style={{
@@ -543,7 +544,7 @@ const SettingNoti = ({navigation}) => {
               }}>
               <Text
                 style={{
-                  fontSize: 23,
+                  fontSize: ViewScale(23),
                   color: '#4b4b4b',
                   fontFamily: 'Kittithada Bold 75',
                 }}>
@@ -586,11 +587,11 @@ const SettingNoti = ({navigation}) => {
               style={{
                 alignContent: 'center',
                 alignItems: 'center',
-                marginTop: 15,
+                marginTop: ViewScale(15),
               }}>
               <Image
                 style={{
-                  height: 2,
+                  height: ViewScale(2),
                   width: '100%',
                 }}
                 source={require('../../image/linesetting.png')}

@@ -1008,7 +1008,7 @@ const styles = StyleSheet.create({
   BGHeader: {
     height: aspectRatio == 2 ? ViewScale(62) : ViewScale(75),
     width: '100%',
-    // marginTop: ViewScale(23),
+    marginTop: Platform.OS === 'ios' ? ViewScale(23) : ViewScale(10),
   },
   BGHeaderSt: {height: ViewScale(120), width: '100%'},
   HeaderCenterIcon: {

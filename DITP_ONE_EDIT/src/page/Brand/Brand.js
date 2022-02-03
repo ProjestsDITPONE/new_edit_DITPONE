@@ -20,6 +20,7 @@ import {CheckBox, Overlay} from 'react-native-elements';
 // import DataBrand from './DataBrand';
 import I18n from '../../utils/I18n';
 import Style from './Style';
+import { ViewScale } from '../../config/ViewScale';
 import {master_award, Cheackmaster_award} from '../../actions/data.actions';
 import {connect} from 'react-redux';
 import InAppBrowser from 'react-native-inappbrowser-reborn';
@@ -119,10 +120,10 @@ class Brand extends React.Component {
       <View>
         <ListItem
           containerStyle={{
-            marginTop: 2,
-            marginHorizontal: 10,
-            borderRadius: 8,
-            marginBottom: 2,
+            marginTop: ViewScale(2),
+            marginHorizontal: ViewScale(10),
+            borderRadius: ViewScale(8),
+            marginBottom: ViewScale(2),
             shadowColor: '#000',
             shadowOffset: {
               width: 0,
@@ -135,8 +136,8 @@ class Brand extends React.Component {
           }}
           leftAvatar={
             <View
-              style={{marginRight: 25, backgroundColor: '#FFFFFF', flex: 0.3}}>
-              <Image style={{width: 85, height: 55}} source={{uri: item.img}} />
+              style={{marginRight: ViewScale(25), backgroundColor: '#FFFFFF', flex: 0.3}}>
+              <Image style={{width: ViewScale(90), height: ViewScale(60)}} source={{uri: item.img}} />
             </View>
           }
           title={
@@ -144,7 +145,7 @@ class Brand extends React.Component {
               style={{
                 width: '100%',
 
-                marginTop: -4,
+                marginTop: ViewScale(-4),
               }}>
               <Text numberOfLines={2} style={[Style.Textname]}>
                 {item.title}
@@ -152,12 +153,12 @@ class Brand extends React.Component {
               <View style={{flexDirection: 'row'}}>
                 <Image
                   resizeMode={'contain'}
-                  style={{width: 13, height: 13}}
+                  style={{width: ViewScale(13), height: ViewScale(13)}}
                   source={require('../../image/cupbrandx.png')}
                 />
                 <Text
                   numberOfLines={2}
-                  style={{color: '#8b9bb0', marginHorizontal: 10}}>
+                  style={{color: '#8b9bb0', marginHorizontal: ViewScale(10), fontSize: ViewScale(16)}}>
                   {I18n.t('transalte_getbrand')} {'(' + item.count + ')'}
                 </Text>
               </View>
@@ -168,7 +169,7 @@ class Brand extends React.Component {
               onPress={() => this.selecitem({item: item, index: index})}
               style={item.count >= 1 ? Style.TouchStyle : Style.TouchStyle1}>
               {item.count >= 1 ? (
-                <Text style={Style.TouchText}>{'ตรวจสอบ'}</Text>
+                <Text style={Style.TouchText}>{I18n.locale === 'th' ? 'ตรวจสอบ' : 'Examine'}</Text>
               ) : (
                 <Text style={Style.TouchText2}>
                   {I18n.t('translate_ApplyAward')}
@@ -186,20 +187,20 @@ class Brand extends React.Component {
     // console.log(this.state.selectedItems);
     return (
       <View>
-        <Text style={{color:'#163c70',fontSize:22}}>
+        <Text style={{color:'#163c70',fontSize:ViewScale(22)}}>
          {''}
         </Text>
-        <Text style={{color:'#163c70',fontSize:22}}>
+        <Text style={{color:'#163c70',fontSize:ViewScale(22)}}>
         ชื่อบริษัท : {I18n.locale === 'th'? item.company_name_th: item.company_name_en}
         </Text>
        
-        <Text style={{color:'#163c70',fontSize:22}}>
+        <Text style={{color:'#163c70',fontSize:ViewScale(22)}}>
         วันที่สมัคร : { item.register_date}
         </Text>
-        <Text style={{color:'#163c70',fontSize:22}}>
+        <Text style={{color:'#163c70',fontSize:ViewScale(22)}}>
         วันหมดอายุ : { item.expired_date}
         </Text>
-        <Text style={{color:'#163c70',fontSize:22}}>
+        <Text style={{color:'#163c70',fontSize:ViewScale(22)}}>
          สถานะ { item.status}
         </Text>
       
@@ -215,8 +216,8 @@ class Brand extends React.Component {
           backScreen={false}
         />
 
-        <View style={{marginTop: Platform.OS === 'android' && 90}} />
-        <Headerstage nameTab="สมัครกิจกรรมเพิ่มมูลค่า/ตรวจสอบตราสัญลักษณ์" />
+        <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
+        <Headerstage nameTab={I18n.t('transalte_value_added_activities_badge')} />
         <View style={{zIndex: -1, flex: 1}}>
           <FlatList
             // numColumns={2}
@@ -238,7 +239,7 @@ class Brand extends React.Component {
               top: height * 0.045,
               height: height * 0.5,
               width: width * 0.8,
-              borderRadius: 8,
+              borderRadius: ViewScale(8),
             }}
             isVisible={this.state.popup}
             onBackdropPress={() => this.setState({popup: false})}>
@@ -247,7 +248,7 @@ class Brand extends React.Component {
                 flexDirection: 'row',
                 borderWidth: 1,
                 borderColor: '#FFF',
-                borderRadius: 18,
+                borderRadius: ViewScale(18),
                 backgroundColor: '#FFFFFF',
               }}>
               <FlatList

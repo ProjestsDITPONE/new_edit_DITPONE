@@ -1,4 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
+import { ViewScale } from '../../config/ViewScale';
 export default StyleSheet.create({
   SafeArea: {
     flex: 1,
@@ -8,17 +9,17 @@ export default StyleSheet.create({
   },
 
   ViewFlat1: {
-    width: 168,
+    width: ViewScale(168),
     flexDirection: 'column',
-    marginTop: 10,
+    marginTop: ViewScale(10),
     alignItems: 'center',
     backgroundColor: '#f4f5f8',
-    margin: 5,
+    margin: ViewScale(5),
   },
 
   ViewFlat2: {
-    width: 168,
-    height: 202,
+    width: ViewScale(168),
+    height: ViewScale(202),
     borderColor: 'transparent',
     borderWidth: 0,
   },
@@ -39,15 +40,15 @@ export default StyleSheet.create({
     // height: null,
   },
   ViewFlat5: {
-    width: 168,
-    height: 202,
+    width: ViewScale(168),
+    height: ViewScale(202),
     borderColor: '#f4f5f8',
-    borderWidth: 5,
+    borderWidth: ViewScale(5),
     backgroundColor: '#FFFFFF',
   },
   ViewFlat6: {
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: ViewScale(10),
     flex: 1,
     backgroundColor: '#FFFFFF',
     justifyContent: 'center',
@@ -60,12 +61,12 @@ export default StyleSheet.create({
     backgroundColor: '#FFFFFF',
   },
   Textname: {
-    fontSize: 19,
+    fontSize: ViewScale(24),
     color: '#40536d',
     fontFamily: 'Kittithada Bold 75',
   },
   Textname2: {
-    fontSize: 22,
+    fontSize: ViewScale(22),
     color: '#40536d',
   },
   ViewTouch: {
@@ -76,44 +77,44 @@ export default StyleSheet.create({
   TouchStyle: {
     // color: '#73838f',
     width:'100%',
-    height: 34,
+    height: ViewScale(34),
     justifyContent: 'center',
     alignItems: 'center',
     // paddingHorizontal: 10,
-    borderRadius: 18,
+    borderRadius: ViewScale(18),
     backgroundColor:'#2d6dc4',
   
   },
   TouchStyle1: {
     // color: '#73838f',
     width:'100%',
-    height: 34,
+    height: ViewScale(34),
     justifyContent: 'center',
     alignItems: 'center',
     // paddingHorizontal: 10,
-    borderRadius: 18,
+    borderRadius: ViewScale(18),
     backgroundColor:'#FFF',
   
   },
   ViewImg: {
-    marginTop: 10,
-    height: 37,
+    marginTop: ViewScale(10),
+    height: ViewScale(37),
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'transparent',
     flexDirection: 'row',
   },
   TouchText: {
-    fontSize: 20,
+    fontSize: ViewScale(20),
     color: '#FFFFFF',
   },
   TouchText2: {
-    fontSize: 20,
+    fontSize: ViewScale(24),
     color: '#2d6dc4',
   },
-  ImgCup: {width: 13, height: 13, marginRight: 5},
+  ImgCup: {width: ViewScale(13), height: ViewScale(13), marginRight: ViewScale(5)},
   fontCup: {
-    fontSize: 20,
+    fontSize: ViewScale(20),
     color: '#73838f',
   },
 });

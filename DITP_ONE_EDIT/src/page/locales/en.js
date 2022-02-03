@@ -1098,7 +1098,7 @@ transalte_Move_all_read: 'Move all to "Read"',
 transalte_have_questions_consult_us: 'Have questions consult us',
 transalte_delete_list: 'Delete list',
 transalte_enter_identification_passport_number: 'Identification number/Passport number.',
-
+transalte_value_added_activities_badge: 'Apply for a value-added activity/Check the logo',
 };
 
 

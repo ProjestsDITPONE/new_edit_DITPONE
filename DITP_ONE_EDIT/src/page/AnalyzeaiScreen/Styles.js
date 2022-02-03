@@ -1,4 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
+import { ViewScale } from '../../config/ViewScale';
 const height = Dimensions.get('window').height;
 const width = Dimensions.get('window').width;
 
@@ -10,15 +11,15 @@ export default StyleSheet.create({
   view: {
     flex: 1,
   },
-  Imagelogo: {width: 236, height: 175, alignSelf: 'center'},
+  Imagelogo: {width: ViewScale(236), height: ViewScale(175), alignSelf: 'center'},
   backgroundStar: {
     width: '100%',
-    height: 145,
+    height: ViewScale(145),
     flexDirection: 'column-reverse',
     justifyContent: 'flex-end',
     alignSelf: 'center',
     position: 'absolute',
-    bottom: -30,
+    bottom: ViewScale(-30),
   },
   viewsubText: {
     alignSelf: 'center',
@@ -26,14 +27,14 @@ export default StyleSheet.create({
     alignContent: 'center',
   },
   fontsub: {
-    fontSize: 20,
-    paddingTop: 10,
+    fontSize: ViewScale(20),
+    paddingTop: ViewScale(10),
     color: '#FFFFFF',
   },
   TextInputseach1: {
-    fontSize: 14,
+    fontSize: ViewScale(14),
     color: '#999999',
-    marginLeft: 10,
+    marginLeft: ViewScale(10),
     backgroundColor: 'transparent',
     padding: 0,
     fontFamily: 'Mitr-Regular',
@@ -42,45 +43,45 @@ export default StyleSheet.create({
     marginTop: 0,
     flexDirection: 'row',
     alignItems: 'center',
-    marginHorizontal: 10,
+    marginHorizontal: ViewScale(10),
   },
   Image: {
-    width: 22,
-    height: 22,
+    width: ViewScale((22)),
+    height: ViewScale(22),
     backgroundColor: 'transparent',
     // marginLeft: 10,
-    marginTop: 5,
+    marginTop: ViewScale(5),
   },
   StyeSelec: {
     backgroundColor: null,
     borderColor: 'transparent',
-    paddingVertical: 10,
+    paddingVertical: ViewScale(10),
   },
   backgroundColor: {
     backgroundColor: '#f4f5f8',
   },
   fontSelec: {
-    fontSize: 17,
+    fontSize: ViewScale(17),
     color: '#2d6dc4',
   },
   fontSelecP: {
-    fontSize: 17,
+    fontSize: ViewScale(17),
     color: '#40536d',
     // textAlign: 'center',
     // left: Dimensions.get('window').width < 400 ? '-50%' : 0,
   },
   ArrowStyle: {
     backgroundColor: 'transparent',
-    fontSize:17,
+    fontSize:ViewScale(17),
   
 
   },
   separator: {
-    height: 0.5,
+    height: ViewScale(0.5),
     backgroundColor: 'rgba(0,0,0,0.4)',
   },
   textActivityTitl: {
-    fontSize: 12,
+    fontSize: ViewScale(12),
     color: '#4b4b4b',
     fontFamily: 'Mitr-Medium',
   },
@@ -92,19 +93,19 @@ export default StyleSheet.create({
     // bottom: 10,
   },
   textreaddetail: {
-    fontSize: 10,
+    fontSize: ViewScale(12),
     color: '#7fadec',
     fontFamily: 'Mitr-Regular',
-    marginTop: -2,
+    marginTop: ViewScale(-2),
   },
   fromTouchableOpacity: {
     flex: 0.5,
-    marginHorizontal: 10,
-    height: 34,
+    marginHorizontal: ViewScale(10),
+    height: ViewScale(34),
     backgroundColor: '#2d6dc4',
     // flexDirection: 'row',
     justifyContent: 'center',
-    borderRadius: 8,
+    borderRadius: ViewScale(8),
     // borderWidth:1
   },
   view1: {
@@ -117,7 +118,7 @@ export default StyleSheet.create({
   },
   viewtext3: {
     color: '#FFFFFF',
-    fontSize: 20,
+    fontSize: ViewScale(20),
     textAlign: 'center',
   },
   viewivon4: {
@@ -128,8 +129,8 @@ export default StyleSheet.create({
   inview1: {
     flexDirection: 'row',
     borderWidth: 1,
-    height: 35,
-    borderRadius: 17,
+    height: ViewScale(35),
+    borderRadius: ViewScale(17),
     borderColor: '#2d6dc4',
   },
   inview2: {
@@ -138,7 +139,7 @@ export default StyleSheet.create({
   },
   inviewtext3: {
     color: '#2d6dc4',
-    fontSize: 20,
+    fontSize: ViewScale(20),
     textAlign: 'center',
   },
   inviewicon4: {
@@ -146,7 +147,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   footer: {
-    padding: 10,
+    padding: ViewScale(10),
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',

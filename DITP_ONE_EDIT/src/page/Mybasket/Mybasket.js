@@ -42,6 +42,7 @@ import InAppBrowser from 'react-native-inappbrowser-reborn';
 import {getDeepLinkAct} from '../../config/utilities';
 import CountryPicker from '../../lib_edit/react-native-country-picker-modal';
 import Icon6 from 'react-native-vector-icons/MaterialIcons';
+import { ViewScale } from '../../config/ViewScale';
 import {height} from '../Typeappeal/Styles';
 
 class Mybasket extends React.Component {
@@ -1078,8 +1079,8 @@ class Mybasket extends React.Component {
         {this.state.delete === false ? (
           <ListItem
             containerStyle={{
-              marginBottom: 8,
-              borderRadius: 10,
+              marginBottom: ViewScale(8),
+              borderRadius: ViewScale(10),
               alignSelf: 'center',
               flex: 1,
               width: '95%',
@@ -1106,7 +1107,7 @@ class Mybasket extends React.Component {
                   <TouchableOpacity style={{alignItems: 'center'}}>
                     <Image
                       source={{uri: item.activity_list_logo_thumb}}
-                      style={{width: 60, height: 55, borderRadius: 15}}
+                      style={{width: ViewScale(60), height: ViewScale(55), borderRadius: ViewScale(15)}}
                     />
                     <Text style={Styles.textActivitydate}>
                       {this.Star_Date(item.activity_list_start_date)}
@@ -1145,12 +1146,12 @@ class Mybasket extends React.Component {
                     }}>
                     {item.activity_list_location_th === 'ออนไลน์' ? (
                       <Image
-                        style={{width: 13, height: 13, top: 3}}
+                        style={{width: ViewScale(13), height: ViewScale(13), top: ViewScale(3)}}
                         source={require('../../image/WWW.png')}
                       />
                     ) : (
                       <Image
-                        style={{width: 9, height: 12, top: 3}}
+                        style={{width: ViewScale(9), height: ViewScale(12), top: ViewScale(3)}}
                         source={require('../../image/makerlocation.png')}
                       />
                     )}
@@ -1330,7 +1331,7 @@ class Mybasket extends React.Component {
                     }
                     style={Styles.TouchRead}>
                     <Image
-                      style={{width: 17, height: 13}}
+                      style={{width: ViewScale(17), height: ViewScale(13)}}
                       source={require('../../image/readDetail.png')}
                     />
                     <Text numberOfLines={1} style={Styles.textactivityread}>
@@ -1347,7 +1348,7 @@ class Mybasket extends React.Component {
                   style={{flex: 0.5, alignItems: 'flex-end'}}>
                   <Image
                     resizeMode={'contain'}
-                    style={{width: 14, height: 16}}
+                    style={{width: ViewScale(15), height: ViewScale(16)}}
                     source={require('../../image/sharelx.png')}
                   />
                 </TouchableOpacity>
@@ -1357,8 +1358,8 @@ class Mybasket extends React.Component {
         ) : (
           <ListItem
             containerStyle={{
-              marginBottom: 8,
-              borderRadius: 10,
+              marginBottom: ViewScale(8),
+              borderRadius: ViewScale(10),
               alignSelf: 'center',
               flex: 1,
               width: '95%',
@@ -1385,7 +1386,7 @@ class Mybasket extends React.Component {
                   <TouchableOpacity style={{alignItems: 'center'}}>
                     <Image
                       source={{uri: item.activity_list_logo_thumb}}
-                      style={{width: 60, height: 55, borderRadius: 15}}
+                      style={{width: ViewScale(60), height: ViewScale(55), borderRadius: ViewScale(15)}}
                     />
                     <Text style={Styles.textActivitydate}>
                       {this.Star_Date(item.activity_list_start_date)}
@@ -1409,12 +1410,12 @@ class Mybasket extends React.Component {
                   <View
                     style={{
                       width: '30%',
-                      bottom: 10,
+                      bottom: ViewScale(10),
                     }}>
                     <CheckBox
                       checkedIcon={
                         <Image
-                          style={{width: 21, height: 21, top: -10}}
+                          style={{width: ViewScale(21), height: ViewScale(21), top: ViewScale(-10)}}
                           source={require('../../image/rrr.png')}
                         />
                       }
@@ -1423,11 +1424,11 @@ class Mybasket extends React.Component {
                           style={{
                             backgroundColor: '#FFFFFF',
                             borderWidth: 1,
-                            width: 21,
-                            height: 21,
-                            borderRadius: 2.7,
+                            width: ViewScale(21),
+                            height: ViewScale(21),
+                            borderRadius: ViewScale(2.7),
                             borderColor: '#c0c0c0',
-                            top: -10,
+                            top: ViewScale(-10),
                           }}
                         />
                       }
@@ -1454,12 +1455,12 @@ class Mybasket extends React.Component {
                     }}>
                     {item.activity_list_location_th === 'ออนไลน์' ? (
                       <Image
-                        style={{width: 13, height: 13, top: 3}}
+                        style={{width: ViewScale(13), height: ViewScale(13), top: ViewScale(3)}}
                         source={require('../../image/WWW.png')}
                       />
                     ) : (
                       <Image
-                        style={{width: 9, height: 12, top: 3}}
+                        style={{width: ViewScale(9), height: ViewScale(12), top: ViewScale(3)}}
                         source={require('../../image/makerlocation.png')}
                       />
                     )}
@@ -1574,7 +1575,7 @@ class Mybasket extends React.Component {
                     }
                     style={Styles.TouchRead}>
                     <Image
-                      style={{width: 17, height: 13}}
+                      style={{width: ViewScale(17), height: ViewScale(13)}}
                       source={require('../../image/readDetail.png')}
                     />
                     <Text numberOfLines={1} style={Styles.textactivityread}>
@@ -1590,7 +1591,7 @@ class Mybasket extends React.Component {
                   style={{flex: 0.5, alignItems: 'flex-end'}}>
                   <Image
                     resizeMode={'contain'}
-                    style={{width: 14, height: 16}}
+                    style={{width: ViewScale(15), height: ViewScale(16)}}
                     source={require('../../image/sharelx.png')}
                   />
                 </TouchableOpacity>
@@ -1610,7 +1611,7 @@ class Mybasket extends React.Component {
           <ListItem
             containerStyle={{
               marginBottom: 8,
-              borderRadius: 10,
+              borderRadius: ViewScale(10),
               alignSelf: 'center',
               flex: 1,
               width: '95%',
@@ -1635,12 +1636,12 @@ class Mybasket extends React.Component {
                     {item.activity_list_location_th === 'ออนไลน์' ? (
                       <Image
                         source={require('../../image/Elearing.png')}
-                        style={{width: 55, height: 50, borderRadius: 15}}
+                        style={{width: ViewScale(55), height: ViewScale(50), borderRadius: ViewScale(15)}}
                       />
                     ) : (
                       <Image
                         source={require('../../image/devlop.png')}
-                        style={{width: 55, height: 50, borderRadius: 15}}
+                        style={{width: ViewScale(55), height: ViewScale(50), borderRadius: ViewScale(15)}}
                       />
                     )}
 
@@ -1660,7 +1661,7 @@ class Mybasket extends React.Component {
                     <Text
                       numberOfLines={2}
                       style={{
-                        fontSize: 19,
+                        fontSize: ViewScale(19),
                         color: '#4b4b4b',
                         fontFamily: 'Kittithada Bold 75',
                       }}>
@@ -1687,12 +1688,12 @@ class Mybasket extends React.Component {
                     }}>
                     {item.activity_list_location_th === 'ออนไลน์' ? (
                       <Image
-                        style={{width: 13, height: 13, top: 3}}
+                        style={{width: ViewScale(13), height: ViewScale(13), top: ViewScale(3)}}
                         source={require('../../image/WWW.png')}
                       />
                     ) : (
                       <Image
-                        style={{width: 9, height: 12, top: 3}}
+                        style={{width: ViewScale(9), height: ViewScale(12), top: ViewScale(3)}}
                         source={require('../../image/makerlocation.png')}
                       />
                     )}
@@ -1862,7 +1863,7 @@ class Mybasket extends React.Component {
                     }
                     style={Styles.TouchRead}>
                     <Image
-                      style={{width: 17, height: 13}}
+                      style={{width: ViewScale(17), height: ViewScale(13)}}
                       source={require('../../image/readDetail.png')}
                     />
                     <Text numberOfLines={1} style={Styles.textactivityread}>
@@ -1887,7 +1888,7 @@ class Mybasket extends React.Component {
                   style={{flex: 0.5, alignItems: 'flex-end'}}>
                   <Image
                     resizeMode={'contain'}
-                    style={{width: 14, height: 16}}
+                    style={{width: ViewScale(15), height: ViewScale(16)}}
                     source={require('../../image/sharelx.png')}
                   />
                 </TouchableOpacity>
@@ -1897,8 +1898,8 @@ class Mybasket extends React.Component {
         ) : (
           <ListItem
             containerStyle={{
-              marginBottom: 8,
-              borderRadius: 10,
+              marginBottom: ViewScale(8),
+              borderRadius: ViewScale(10),
               alignSelf: 'center',
               flex: 1,
               width: '95%',
@@ -1923,12 +1924,12 @@ class Mybasket extends React.Component {
                     {item.activity_list_location_th === 'ออนไลน์' ? (
                       <Image
                         source={require('../../image/Elearing.png')}
-                        style={{width: 55, height: 50, borderRadius: 15}}
+                        style={{width: ViewScale(55), height: ViewScale(50), borderRadius: ViewScale(15)}}
                       />
                     ) : (
                       <Image
                         source={require('../../image/devlop.png')}
-                        style={{width: 55, height: 50, borderRadius: 15}}
+                        style={{width: ViewScale(55), height: ViewScale(50), borderRadius: ViewScale(15)}}
                       />
                     )}
                     <Text style={Styles.textActivitydate}>
@@ -1947,7 +1948,7 @@ class Mybasket extends React.Component {
                     <Text
                       numberOfLines={2}
                       style={{
-                        fontSize: 19,
+                        fontSize: ViewScale(19),
                         color: '#4b4b4b',
                         fontFamily: 'Kittithada Bold 75',
                       }}>
@@ -1959,12 +1960,12 @@ class Mybasket extends React.Component {
                   <View
                     style={{
                       width: '30%',
-                      bottom: 10,
+                      bottom: ViewScale(10),
                     }}>
                     <CheckBox
                       checkedIcon={
                         <Image
-                          style={{width: 21, height: 21, top: -10}}
+                          style={{width: ViewScale(21), height: ViewScale(21), top: ViewScale(-10)}}
                           source={require('../../image/rrr.png')}
                         />
                       }
@@ -1973,11 +1974,11 @@ class Mybasket extends React.Component {
                           style={{
                             backgroundColor: '#FFFFFF',
                             borderWidth: 1,
-                            width: 21,
-                            height: 21,
-                            borderRadius: 2.7,
+                            width: ViewScale(21),
+                            height: ViewScale(21),
+                            borderRadius: ViewScale(2.7),
                             borderColor: '#c0c0c0',
-                            top: -10,
+                            top: ViewScale(-10),
                           }}
                         />
                       }
@@ -2004,12 +2005,12 @@ class Mybasket extends React.Component {
                     }}>
                     {item.activity_list_location_th === 'ออนไลน์' ? (
                       <Image
-                        style={{width: 13, height: 13, top: 3}}
+                        style={{width: ViewScale(13), height: ViewScale(13), top: ViewScale(3)}}
                         source={require('../../image/WWW.png')}
                       />
                     ) : (
                       <Image
-                        style={{width: 9, height: 12, top: 3}}
+                        style={{width: ViewScale(9), height: ViewScale(12), top: ViewScale(3)}}
                         source={require('../../image/makerlocation.png')}
                       />
                     )}
@@ -2024,7 +2025,7 @@ class Mybasket extends React.Component {
                     }}>
                     <Text
                       numberOfLines={2}
-                      style={{fontSize: 15.5, color: '#6f819a'}}>
+                      style={{fontSize: ViewScale(15.5), color: '#6f819a'}}>
                       {'  '}
                       {I18n.locale === 'th'
                         ? item.activity_list_location_th
@@ -2173,7 +2174,7 @@ class Mybasket extends React.Component {
                   }
                   style={Styles.TouchRead}>
                   <Image
-                    style={{width: 17, height: 13}}
+                    style={{width: ViewScale(17), height: ViewScale(13)}}
                     source={require('../../image/readDetail.png')}
                   />
                   <Text numberOfLines={1} style={Styles.TextRead}>
@@ -2186,10 +2187,10 @@ class Mybasket extends React.Component {
                   onPress={() => {
                     this.onShare(item);
                   }}
-                  style={{flex: 1, marginHorizontal: 8}}>
+                  style={{flex: 1, marginHorizontal: ViewScale(8)}}>
                   <Image
                     resizeMode={'contain'}
-                    style={{width: 14, height: 16}}
+                    style={{width: ViewScale(15), height: ViewScale(16)}}
                     source={require('../../image/sharelx.png')}
                   />
                 </TouchableOpacity>
@@ -2225,8 +2226,8 @@ class Mybasket extends React.Component {
               // onPress={() => Linking.openURL(item.link_shered)}
               // containerStyle={Styles.ContainerList4}
               containerStyle={{
-                marginBottom: 8,
-                borderRadius: 10,
+                marginBottom: ViewScale(8),
+                borderRadius: ViewScale(10),
                 alignSelf: 'center',
                 flex: 1,
                 width: '95%',
@@ -2268,10 +2269,10 @@ class Mybasket extends React.Component {
                     alignItems: 'center',
                     justifyContent: 'flex-start',
 
-                    marginTop: -25,
+                    marginTop: ViewScale(-25),
                   }}>
                   <Image
-                    style={{width: 33, height: 24}}
+                    style={{width: ViewScale(33), height: ViewScale(24)}}
                     source={{uri: item.flag_url}}
                   />
                 </View>
@@ -2285,10 +2286,10 @@ class Mybasket extends React.Component {
                       - {item.country_name}
                     </Text>
                   </View>
-                  <View style={[Styles.ViewSubtitle3, {right: 10}]}>
+                  <View style={[Styles.ViewSubtitle3, {right: ViewScale(10)}]}>
                     <TouchableOpacity style={Styles.TouchSutitle}>
                       <Image
-                        style={{width: 21, height: 13}}
+                        style={{width: ViewScale(21), height: ViewScale(13)}}
                         source={require('../../image/eyeviewx.png')}
                       />
                       <Text style={Styles.fontSubtitle}>
@@ -2303,10 +2304,10 @@ class Mybasket extends React.Component {
 
                       // alert(JSON.stringify(item))
                     }}
-                    style={{alignSelf: 'flex-end', marginTop: -25, flex: 0.1}}>
+                    style={{alignSelf: 'flex-end', marginTop: ViewScale(-25), flex: 0.1}}>
                     <Image
                       resizeMode={'contain'}
-                      style={{width: 14, height: 16}}
+                      style={{width: ViewScale(15), height: ViewScale(16)}}
                       source={require('../../image/sharelx.png')}
                     />
                   </TouchableOpacity>
@@ -2318,8 +2319,8 @@ class Mybasket extends React.Component {
           <ListItem
             // containerStyle={Styles.ContainerList2}
             containerStyle={{
-              marginBottom: 8,
-              borderRadius: 10,
+              marginBottom: ViewScale(8),
+              borderRadius: ViewScale(10),
               alignSelf: 'center',
               flex: 1,
               width: '95%',
@@ -2346,11 +2347,11 @@ class Mybasket extends React.Component {
                     </Text>
                   </View>
                   <View
-                    style={{flex: 1, flexDirection: 'row-reverse', bottom: 10}}>
+                    style={{flex: 1, flexDirection: 'row-reverse', bottom: ViewScale(10)}}>
                     <CheckBox
                       checkedIcon={
                         <Image
-                          style={{width: 21, height: 21, top: -10}}
+                          style={{width: ViewScale(21), height: ViewScale(21), top: ViewScale(-10)}}
                           source={require('../../image/rrr.png')}
                         />
                       }
@@ -2359,11 +2360,11 @@ class Mybasket extends React.Component {
                           style={{
                             backgroundColor: '#FFFFFF',
                             borderWidth: 1,
-                            width: 21,
-                            height: 21,
-                            borderRadius: 2.7,
+                            width: ViewScale(21),
+                            height: ViewScale(21),
+                            borderRadius: ViewScale(2.7),
                             borderColor: '#c0c0c0',
-                            top: -10,
+                            top: ViewScale(-10),
                           }}
                         />
                       }
@@ -2381,10 +2382,10 @@ class Mybasket extends React.Component {
                 style={{
                   alignItems: 'center',
                   justifyContent: 'flex-start',
-                  bottom: 12,
+                  bottom: ViewScale(12),
                 }}>
                 <Image
-                  style={{width: 33, height: 24}}
+                  style={{width: ViewScale(33), height: ViewScale(24)}}
                   source={{uri: item.flag_url}}
                 />
               </View>
@@ -2398,10 +2399,10 @@ class Mybasket extends React.Component {
                     - {item.country_name}
                   </Text>
                 </View>
-                <View style={[Styles.ViewSubtitle3, {right: 10}]}>
+                <View style={[Styles.ViewSubtitle3, {right: ViewScale(10)}]}>
                   <TouchableOpacity style={Styles.TouchSutitle}>
                     <Image
-                      style={{width: 21, height: 13}}
+                      style={{width: ViewScale(21), height: ViewScale(13)}}
                       source={require('../../image/eyeviewx.png')}
                     />
                     <Text style={Styles.fontSubtitle}>
@@ -2414,10 +2415,10 @@ class Mybasket extends React.Component {
                   onPress={() => {
                     this.onShare(item);
                   }}
-                  style={{alignSelf: 'flex-end', marginTop: -25, flex: 0.1}}>
+                  style={{alignSelf: 'flex-end', marginTop: ViewScale(-25), flex: 0.1}}>
                   <Image
                     resizeMode={'contain'}
-                    style={{width: 14, height: 16}}
+                    style={{width: ViewScale(15), height: ViewScale(16)}}
                     source={require('../../image/sharelx.png')}
                   />
                 </TouchableOpacity>
@@ -2440,8 +2441,8 @@ class Mybasket extends React.Component {
               // onPress={() => Linking.openLinknewsAI(item.link_shered)}
               // containerStyle={Styles.ContainerList4}
               containerStyle={{
-                marginBottom: 8,
-                borderRadius: 10,
+                marginBottom: ViewScale(8),
+                borderRadius: ViewScale(10),
                 alignSelf: 'center',
                 flex: 1,
                 width: '95%',
@@ -2488,24 +2489,24 @@ class Mybasket extends React.Component {
                     {item.image_url != null ? (
                       <Image
                         source={{uri: item.image_url}}
-                        style={{width: 70, height: 68, borderRadius: 2}}
+                        style={{width: ViewScale(70), height: ViewScale(68), borderRadius: ViewScale(2)}}
                       />
                     ) : (
                       <Image
-                        style={{width: 70, height: 68, borderRadius: 2}}
+                        style={{width: ViewScale(70), height: ViewScale(68), borderRadius: ViewScale(2)}}
                         source={require('../../image/imgnull.png')}
                       />
                     )}
                   </TouchableOpacity>
                   <View>
-                    <Text style={{color: '#6f819a', fontSize: 14}}>
+                    <Text style={{color: '#6f819a', fontSize: ViewScale(14)}}>
                       {item.published_date}
                     </Text>
                   </View>
                   {item.sentiment_id == '0' && (
                     <View>
                       <Image
-                        style={{width: 68, height: 34, top: 10}}
+                        style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                         source={require('../../image/+0.png')}
                       />
                     </View>
@@ -2513,7 +2514,7 @@ class Mybasket extends React.Component {
                   {item.sentiment_id == '1' && (
                     <View>
                       <Image
-                        style={{width: 68, height: 34, top: 10}}
+                        style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                         source={require('../../image/+2.png')}
                       />
                     </View>
@@ -2521,7 +2522,7 @@ class Mybasket extends React.Component {
                   {item.sentiment_id == '2' && (
                     <View>
                       <Image
-                        style={{width: 68, height: 34, top: 10}}
+                        style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                         source={require('../../image/+2.png')}
                       />
                     </View>
@@ -2529,7 +2530,7 @@ class Mybasket extends React.Component {
                   {item.sentiment_id == '3' && (
                     <View>
                       <Image
-                        style={{width: 68, height: 34, top: 10}}
+                        style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                         source={require('../../image/+3.png')}
                       />
                     </View>
@@ -2537,7 +2538,7 @@ class Mybasket extends React.Component {
                   {item.sentiment_id == '-3' && (
                     <View>
                       <Image
-                        style={{width: 68, height: 34, top: 10}}
+                        style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                         source={require('../../image/-3.png')}
                       />
                     </View>
@@ -2545,7 +2546,7 @@ class Mybasket extends React.Component {
                   {item.sentiment_id == '-2' && (
                     <View>
                       <Image
-                        style={{width: 68, height: 34, top: 10}}
+                        style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                         source={require('../../image/-2.png')}
                       />
                     </View>
@@ -2553,7 +2554,7 @@ class Mybasket extends React.Component {
                   {item.sentiment_id == '-1' && (
                     <View>
                       <Image
-                        style={{width: 68, height: 34, top: 10}}
+                        style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                         source={require('../../image/-1.png')}
                       />
                     </View>
@@ -2608,7 +2609,7 @@ class Mybasket extends React.Component {
                       alignItems: 'center',
                     }}>
                     <View style={Styles.ViewSub10AI}>
-                      <Text style={{color: '#8b9bb0', fontSize: 14}}>
+                      <Text style={{color: '#8b9bb0', fontSize: ViewScale(14)}}>
                         {I18n.t('transalte_published_by')} - {item.publisher}
                       </Text>
                     </View>
@@ -2620,24 +2621,24 @@ class Mybasket extends React.Component {
                       alignContent: 'center',
                       alignItems: 'center',
                     }}>
-                    <View style={[Styles.ViewSub10AI, {marginHorizontal: 2}]}>
+                    <View style={[Styles.ViewSub10AI, {marginHorizontal: ViewScale(2)}]}>
                       {item.img != 'http://one.ditp.go.th/Flags/.png' ? (
                         <Image
                           source={{uri: item.img}}
-                          style={{width: 16, height: 12, top: 0}}
+                          style={{width: ViewScale(16), height: ViewScale(12), top: 0}}
                         />
                       ) : (
                         <Image
-                          style={{width: 9, height: 12, top: 0}}
+                          style={{width: ViewScale(9), height: ViewScale(12), top: 0}}
                           source={require('../../image/makerlocation.png')}
                         />
                       )}
                     </View>
-                    <View style={[Styles.ViewSub10AI, {marginHorizontal: 2}]}>
+                    <View style={[Styles.ViewSub10AI, {marginHorizontal: ViewScale(2)}]}>
                       <Text
                         style={{
                           color: '#6f819a',
-                          fontSize: 14,
+                          fontSize: ViewScale(14),
                           letterSpacing: 1,
                         }}>
                         {item.countries_iso_3}
@@ -2651,13 +2652,13 @@ class Mybasket extends React.Component {
                       alignContent: 'center',
                       alignItems: 'center',
                     }}>
-                    <View style={[Styles.ViewSub10AI, {marginHorizontal: 2}]}>
+                    <View style={[Styles.ViewSub10AI, {marginHorizontal: ViewScale(2)}]}>
                       <Text
                         onPress={() => {
                           this.openLinknewsAI(item.url);
                         }}
                         numberOfLines={3}
-                        style={{color: '#6f819a', fontSize: 14}}>
+                        style={{color: '#6f819a', fontSize: ViewScale(14)}}>
                         {item.description === null
                           ? item.content
                           : item.description}
@@ -2671,7 +2672,7 @@ class Mybasket extends React.Component {
                       alignContent: 'center',
                       alignItems: 'center',
 
-                      marginTop: 10,
+                      marginTop: ViewScale(10),
                     }}>
                     <TouchableOpacity
                       onPress={() => {
@@ -2679,7 +2680,7 @@ class Mybasket extends React.Component {
                       }}
                       style={{flexDirection: 'row', flex: 0.5}}>
                       <Image
-                        style={{width: 17, height: 13}}
+                        style={{width: ViewScale(17), height: ViewScale(13)}}
                         source={require('../../image/readDetail.png')}
                       />
                       <Text style={Styles.textreaddetail}>
@@ -2699,7 +2700,7 @@ class Mybasket extends React.Component {
                       style={{flex: 0.2, alignItems: 'flex-end'}}>
                       <Image
                         resizeMode={'contain'}
-                        style={{width: 14, height: 16}}
+                        style={{width: ViewScale(15), height: ViewScale(16)}}
                         source={require('../../image/sharelx.png')}
                       />
                     </TouchableOpacity>
@@ -2714,8 +2715,8 @@ class Mybasket extends React.Component {
             // onPress={() => Linking.openURL(item.link_shered)}
             // containerStyle={Styles.ContainerList4}
             containerStyle={{
-              marginBottom: 8,
-              borderRadius: 10,
+              marginBottom: ViewScale(8),
+              borderRadius: ViewScale(10),
               alignSelf: 'center',
               flex: 1,
               width: '95%',
@@ -2755,28 +2756,28 @@ class Mybasket extends React.Component {
                   onPress={() => {
                     this.openLinknewsAI(item.url);
                   }}
-                  style={{alignItems: 'center', marginBottom: 8}}>
+                  style={{alignItems: 'center', marginBottom: ViewScale(8)}}>
                   {item.image_url != null ? (
                     <Image
                       source={{uri: item.image_url}}
-                      style={{width: 70, height: 68, borderRadius: 2}}
+                      style={{width: ViewScale(70), height: ViewScale(68), borderRadius: ViewScale(2)}}
                     />
                   ) : (
                     <Image
-                      style={{width: 70, height: 68, borderRadius: 2}}
+                      style={{width: ViewScale(70), height: ViewScale(68), borderRadius: ViewScale(2)}}
                       source={require('../../image/imgnull.png')}
                     />
                   )}
                 </TouchableOpacity>
                 <View>
-                  <Text style={{color: '#6f819a', fontSize: 14}}>
+                  <Text style={{color: '#6f819a', fontSize: ViewScale(14)}}>
                     {item.published_date}
                   </Text>
                 </View>
                 {item.sentiment_id == '0' && (
                   <View>
                     <Image
-                      style={{width: 68, height: 34, top: 10}}
+                      style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                       source={require('../../image/+0.png')}
                     />
                   </View>
@@ -2784,7 +2785,7 @@ class Mybasket extends React.Component {
                 {item.sentiment_id == '1' && (
                   <View>
                     <Image
-                      style={{width: 68, height: 34, top: 10}}
+                      style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                       source={require('../../image/+2.png')}
                     />
                   </View>
@@ -2792,7 +2793,7 @@ class Mybasket extends React.Component {
                 {item.sentiment_id == '2' && (
                   <View>
                     <Image
-                      style={{width: 68, height: 34, top: 10}}
+                      style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                       source={require('../../image/+2.png')}
                     />
                   </View>
@@ -2800,7 +2801,7 @@ class Mybasket extends React.Component {
                 {item.sentiment_id == '3' && (
                   <View>
                     <Image
-                      style={{width: 68, height: 34, top: 10}}
+                      style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                       source={require('../../image/+3.png')}
                     />
                   </View>
@@ -2808,7 +2809,7 @@ class Mybasket extends React.Component {
                 {item.sentiment_id == '-3' && (
                   <View>
                     <Image
-                      style={{width: 68, height: 34, top: 10}}
+                      style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                       source={require('../../image/-3.png')}
                     />
                   </View>
@@ -2816,7 +2817,7 @@ class Mybasket extends React.Component {
                 {item.sentiment_id == '-2' && (
                   <View>
                     <Image
-                      style={{width: 68, height: 34, top: 10}}
+                      style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                       source={require('../../image/-2.png')}
                     />
                   </View>
@@ -2824,7 +2825,7 @@ class Mybasket extends React.Component {
                 {item.sentiment_id == '-1' && (
                   <View>
                     <Image
-                      style={{width: 68, height: 34, top: 10}}
+                      style={{width: ViewScale(68), height: ViewScale(34), top: ViewScale(10)}}
                       source={require('../../image/-1.png')}
                     />
                   </View>
@@ -2845,11 +2846,11 @@ class Mybasket extends React.Component {
                     </Text>
                   </View>
                   <View
-                    style={{flex: 1, flexDirection: 'row-reverse', bottom: 10}}>
+                    style={{flex: 1, flexDirection: 'row-reverse', bottom: ViewScale(10)}}>
                     <CheckBox
                       checkedIcon={
                         <Image
-                          style={{width: 21, height: 21, top: -10}}
+                          style={{width: ViewScale(21), height: ViewScale(21), top: ViewScale(-10)}}
                           source={require('../../image/rrr.png')}
                         />
                       }
@@ -2858,11 +2859,11 @@ class Mybasket extends React.Component {
                           style={{
                             backgroundColor: '#FFFFFF',
                             borderWidth: 1,
-                            width: 21,
-                            height: 21,
-                            borderRadius: 2.7,
+                            width: ViewScale(21),
+                            height: ViewScale(21),
+                            borderRadius: ViewScale(2.7),
                             borderColor: '#c0c0c0',
-                            top: -10,
+                            top: ViewScale(-10),
                           }}
                         />
                       }
@@ -2885,7 +2886,7 @@ class Mybasket extends React.Component {
                     alignItems: 'center',
                   }}>
                   <View style={Styles.ViewSub10AI}>
-                    <Text style={{color: '#8b9bb0', fontSize: 14}}>
+                    <Text style={{color: '#8b9bb0', fontSize: ViewScale(14)}}>
                       {I18n.t('transalte_published_by')} - {item.publisher}
                     </Text>
                   </View>
@@ -2901,20 +2902,20 @@ class Mybasket extends React.Component {
                     {item.img != 'http://one.ditp.go.th/Flags/.png' ? (
                       <Image
                         source={{uri: item.img}}
-                        style={{width: 16, height: 12, top: 0}}
+                        style={{width: ViewScale(16), height: ViewScale(12), top: 0}}
                       />
                     ) : (
                       <Image
-                        style={{width: 9, height: 12, top: 0}}
+                        style={{width: ViewScale(9), height: ViewScale(12), top: 0}}
                         source={require('../../image/makerlocation.png')}
                       />
                     )}
                   </View>
-                  <View style={[Styles.ViewSub10AI, {marginHorizontal: 2}]}>
+                  <View style={[Styles.ViewSub10AI, {marginHorizontal: ViewScale(2)}]}>
                     <Text
                       style={{
                         color: '#6f819a',
-                        fontSize: 14,
+                        fontSize: ViewScale(14),
                         letterSpacing: 1,
                       }}>
                       {item.countries_iso_3}
@@ -2928,13 +2929,13 @@ class Mybasket extends React.Component {
                     alignContent: 'center',
                     alignItems: 'center',
                   }}>
-                  <View style={[Styles.ViewSub10AI, {marginHorizontal: 2}]}>
+                  <View style={[Styles.ViewSub10AI, {marginHorizontal: ViewScale(2)}]}>
                     <Text
                       onPress={() => {
                         this.openLinknewsAI(item.url);
                       }}
                       numberOfLines={3}
-                      style={{color: '#6f819a', fontSize: 14}}>
+                      style={{color: '#6f819a', fontSize: ViewScale(14)}}>
                       {item.description === null
                         ? item.content
                         : item.description}
@@ -2948,7 +2949,7 @@ class Mybasket extends React.Component {
                     alignContent: 'center',
                     alignItems: 'center',
 
-                    marginTop: 10,
+                    marginTop: ViewScale(10),
                   }}>
                   <TouchableOpacity
                     onPress={() => {
@@ -2956,7 +2957,7 @@ class Mybasket extends React.Component {
                     }}
                     style={{flexDirection: 'row', flex: 0.5}}>
                     <Image
-                      style={{width: 17, height: 13}}
+                      style={{width: ViewScale(17), height: ViewScale(13)}}
                       source={require('../../image/readDetail.png')}
                     />
                     <Text style={Styles.textreaddetail}>
@@ -2976,7 +2977,7 @@ class Mybasket extends React.Component {
                     style={{flex: 0.2, alignItems: 'flex-end'}}>
                     <Image
                       resizeMode={'contain'}
-                      style={{width: 14, height: 16}}
+                      style={{width: ViewScale(15), height: ViewScale(16)}}
                       source={require('../../image/sharelx.png')}
                     />
                   </TouchableOpacity>
@@ -3031,7 +3032,7 @@ class Mybasket extends React.Component {
                 <View style={Styles.ViewOverlay3}>
                   <TouchableOpacity
                     onPress={() => this.setState({noteOver: false})}>
-                    <Icon name="x" size={16} style={Styles.Iconoverlay} />
+                    <Icon name="x" size={ViewScale(16)} style={Styles.Iconoverlay} />
                   </TouchableOpacity>
                 </View>
 
@@ -3086,7 +3087,7 @@ class Mybasket extends React.Component {
                 <View style={Styles.ViewOverlay3}>
                   <TouchableOpacity
                     onPress={() => this.setState({editNickname: false})}>
-                    <Icon name="x" size={16} style={Styles.Iconoverlay} />
+                    <Icon name="x" size={ViewScale(16)} style={Styles.Iconoverlay} />
                   </TouchableOpacity>
                 </View>
                 <Text style={Styles.TextOverlay}>{I18n.t('transalte_set_nickname')}</Text>
@@ -3193,7 +3194,7 @@ class Mybasket extends React.Component {
                       <Text
                         numberOfLines={1}
                         style={{
-                          fontSize: 21,
+                          fontSize: ViewScale(21),
                           color: '#163c70',
                           fontFamily: 'Kittithada Bold 75',
                         }}>
@@ -3206,7 +3207,7 @@ class Mybasket extends React.Component {
                     )}
                   </View>
                   <View style={{flex: 0.3}}>
-                    <Text style={{fontSize: 14, color: '#a4a2a2'}}>
+                    <Text style={{fontSize: ViewScale(14), color: '#a4a2a2'}}>
                       {this.timeOut(item.created_at)}
                     </Text>
                   </View>
@@ -3222,12 +3223,12 @@ class Mybasket extends React.Component {
                         alignItems: 'center',
                         width: '100%',
                       }}>
-                      <Text style={{fontSize: 20, color: '#4b4b4b'}}>
+                      <Text style={{fontSize: ViewScale(20), color: '#4b4b4b'}}>
                         {item.nick_namne === ''
                           ? 'คุณ' + item.name_th + ' ' + item.lastname_th
                           : item.nick_namne}
                       </Text>
-                      <View style={{marginLeft: 10}}>
+                      <View style={{marginLeft: ViewScale(10)}}>
                         <TouchableOpacity
                           onPress={() => {
                             this.setState({
@@ -3244,7 +3245,7 @@ class Mybasket extends React.Component {
                             this.setState({membertype: item.member_type});
                           }}>
                           <Image
-                            style={{width: 14, height: 15}}
+                            style={{width: ViewScale(14), height: ViewScale(15)}}
                             source={require('../../image/editBasketCon.png')}
                           />
                         </TouchableOpacity>
@@ -3270,7 +3271,7 @@ class Mybasket extends React.Component {
                     style={{
                       flexDirection: 'row-reverse',
                       flex: 1,
-                      padding: 10,
+                      padding: ViewScale(10),
                     }}>
                     <TouchableOpacity
                       onPress={() => {
@@ -3288,18 +3289,18 @@ class Mybasket extends React.Component {
                         this.setState({membertype: item.member_type});
                       }}>
                       <Image
-                        style={{width: 21, height: 21}}
+                        style={{width: ViewScale(21), height: ViewScale(21)}}
                         source={require('../../image/note.png')}
                       />
                     </TouchableOpacity>
 
-                    <Text style={{fontSize: 14, color: '#2d6dc4'}}>
+                    <Text style={{fontSize: ViewScale(14), color: '#2d6dc4'}}>
                       {item.note}{' '}
                     </Text>
                   </View>
                 </View>
               }
-              subtitleStyle={{fontSize: 20, color: '#4b4b4b', marginTop: 10}}
+              subtitleStyle={{fontSize: ViewScale(20), color: '#4b4b4b', marginTop: ViewScale(10)}}
             />
           ) : (
             <ListItem
@@ -3316,7 +3317,7 @@ class Mybasket extends React.Component {
                     {item.company_name_th ? (
                       <Text
                         style={{
-                          fontSize: 21,
+                          fontSize: ViewScale(21),
                           color: '#163c70',
                           fontFamily: 'Kittithada Bold 75',
                         }}>
@@ -3331,7 +3332,7 @@ class Mybasket extends React.Component {
                       {this.timeOut(item.created_at)}
                     </Text>
                   </View>
-                  <View style={{flex: 0.1, marginRight: 10}}>
+                  <View style={{flex: 0.1, marginRight: ViewScale(10)}}>
                     <CheckBox
                       containerStyle={{
                         flexDirection: 'row-reverse',
@@ -3351,7 +3352,7 @@ class Mybasket extends React.Component {
                       // }
                       checkedIcon={
                         <Image
-                          style={{width: 21, height: 21, top: -10}}
+                          style={{width: ViewScale(21), height: ViewScale(21), top: ViewScale(-10)}}
                           source={require('../../image/rrr.png')}
                         />
                       }
@@ -3360,11 +3361,11 @@ class Mybasket extends React.Component {
                           style={{
                             backgroundColor: '#FFFFFF',
                             borderWidth: 1,
-                            width: 21,
-                            height: 21,
-                            borderRadius: 2.7,
+                            width: ViewScale(21),
+                            height: ViewScale(21),
+                            borderRadius: ViewScale(2.7),
                             borderColor: '#c0c0c0',
-                            top: -10,
+                            top: ViewScale(-10),
                           }}
                         />
                       }
@@ -3391,7 +3392,7 @@ class Mybasket extends React.Component {
                       )}
                     </View> */}
 
-                    <Text style={{fontSize: 20, color: '#4b4b4b'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#4b4b4b'}}>
                       {'คุณ'}
                       {item.name_th} {item.lastname_th}
                     </Text>
@@ -3412,11 +3413,11 @@ class Mybasket extends React.Component {
                         this.setState({membertype: item.member_type});
                       }}>
                       <Image
-                        style={{width: 18, height: 18}}
+                        style={{width: ViewScale(18), height: ViewScale(18)}}
                         source={require('../../image/note.png')}
                       />
                     </TouchableOpacity>
-                    <Text style={{fontSize: 14, color: '#2d6dc4'}}>
+                    <Text style={{fontSize: ViewScale(14), color: '#2d6dc4'}}>
                       {item.note}{' '}
                     </Text>
                   </View>
@@ -3447,7 +3448,7 @@ class Mybasket extends React.Component {
                 <View style={Styles.ViewOverlay3}>
                   <TouchableOpacity
                     onPress={() => this.setState({noteOver: false})}>
-                    <Icon name="x" size={16} style={Styles.Iconoverlay} />
+                    <Icon name="x" size={ViewScale(16)} style={Styles.Iconoverlay} />
                   </TouchableOpacity>
                 </View>
 
@@ -3503,7 +3504,7 @@ class Mybasket extends React.Component {
                 <View style={Styles.ViewOverlay3}>
                   <TouchableOpacity
                     onPress={() => this.setState({editNickname: false})}>
-                    <Icon name="x" size={16} style={Styles.Iconoverlay} />
+                    <Icon name="x" size={ViewScale(16)} style={Styles.Iconoverlay} />
                   </TouchableOpacity>
                 </View>
                 <Text style={Styles.TextOverlay}>{I18n.t('transalte_set_nickname')}</Text>
@@ -3626,7 +3627,7 @@ class Mybasket extends React.Component {
                       <Text
                         numberOfLines={1}
                         style={{
-                          fontSize: 21,
+                          fontSize: ViewScale(21),
                           color: '#163c70',
                           fontFamily: 'Kittithada Bold 75',
                         }}>
@@ -3639,7 +3640,7 @@ class Mybasket extends React.Component {
                     )}
                   </View>
                   <View style={{flex: 0.3}}>
-                    <Text style={{fontSize: 14, color: '#a4a2a2'}}>
+                    <Text style={{fontSize: ViewScale(14), color: '#a4a2a2'}}>
                       {this.timeOut(item.created_at)}
                     </Text>
                   </View>
@@ -3651,12 +3652,12 @@ class Mybasket extends React.Component {
 
                   <View>
                     <View style={{flex: 0.5, flexDirection: 'row'}}>
-                      <Text style={{fontSize: 20, color: '#4b4b4b'}}>
+                      <Text style={{fontSize: ViewScale(20), color: '#4b4b4b'}}>
                         {item.nick_namne === ''
                           ? 'คุณ' + item.name_th + ' ' + item.lastname_th
                           : item.nick_namne}
                       </Text>
-                      <View style={{marginLeft: 10}}>
+                      <View style={{marginLeft: ViewScale(10)}}>
                         <TouchableOpacity
                           onPress={() => {
                             this.setState({
@@ -3673,7 +3674,7 @@ class Mybasket extends React.Component {
                             this.setState({membertype: item.member_type});
                           }}>
                           <Image
-                            style={{width: 14, height: 15}}
+                            style={{width: ViewScale(14), height: ViewScale(15)}}
                             source={require('../../image/editBasketCon.png')}
                           />
                         </TouchableOpacity>
@@ -3699,7 +3700,7 @@ class Mybasket extends React.Component {
                     style={{
                       flexDirection: 'row-reverse',
                       flex: 1,
-                      padding: 10,
+                      padding: ViewScale(10),
                     }}>
                     <TouchableOpacity
                       onPress={() => {
@@ -3717,18 +3718,18 @@ class Mybasket extends React.Component {
                         this.setState({membertype: item.member_type});
                       }}>
                       <Image
-                        style={{width: 21, height: 21}}
+                        style={{width: ViewScale(21), height: ViewScale(21)}}
                         source={require('../../image/note.png')}
                       />
                     </TouchableOpacity>
 
-                    <Text style={{fontSize: 14, color: '#2d6dc4'}}>
+                    <Text style={{fontSize: ViewScale(14), color: '#2d6dc4'}}>
                       {item.note}{' '}
                     </Text>
                   </View>
                 </View>
               }
-              subtitleStyle={{fontSize: 20, color: '#4b4b4b', marginTop: 10}}
+              subtitleStyle={{fontSize: ViewScale(20), color: '#4b4b4b', marginTop: 10}}
             />
           ) : (
             <ListItem
@@ -3742,7 +3743,7 @@ class Mybasket extends React.Component {
                     {item.company_name_th ? (
                       <Text
                         style={{
-                          fontSize: 21,
+                          fontSize: ViewScale(21),
                           color: '#163c70',
                           fontFamily: 'Kittithada Bold 75',
                         }}>
@@ -3756,11 +3757,11 @@ class Mybasket extends React.Component {
                   </View>
 
                   <View style={{flexDirection: 'row-reverse'}}>
-                    <Text style={{fontSize: 14, color: '#a4a2a2'}}>
+                    <Text style={{fontSize: ViewScale(14), color: '#a4a2a2'}}>
                       {this.timeOut(item.created_at)}
                     </Text>
                   </View>
-                  <View style={{flex: 0.1, marginRight: 10}}>
+                  <View style={{flex: 0.1, marginRight: ViewScale(10)}}>
                     <CheckBox
                       containerStyle={{
                         flexDirection: 'row-reverse',
@@ -3780,7 +3781,7 @@ class Mybasket extends React.Component {
                       // }
                       checkedIcon={
                         <Image
-                          style={{width: 21, height: 21, top: -10}}
+                          style={{width: ViewScale(21), height: ViewScale(21), top: ViewScale(-10)}}
                           source={require('../../image/rrr.png')}
                         />
                       }
@@ -3789,11 +3790,11 @@ class Mybasket extends React.Component {
                           style={{
                             backgroundColor: '#FFFFFF',
                             borderWidth: 1,
-                            width: 21,
-                            height: 21,
-                            borderRadius: 2.7,
+                            width: ViewScale(21),
+                            height: ViewScale(21),
+                            borderRadius: ViewScale(2.7),
                             borderColor: '#c0c0c0',
-                            top: -10,
+                            top: ViewScale(-10),
                           }}
                         />
                       }
@@ -3808,7 +3809,7 @@ class Mybasket extends React.Component {
               subtitle={
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                   <View>
-                    <Text style={{fontSize: 20, color: '#4b4b4b'}}>
+                    <Text style={{fontSize: ViewScale(20), color: '#4b4b4b'}}>
                       {'คุณ'}
                       {item.name_th} {item.lastname_th}
                     </Text>
@@ -3840,11 +3841,11 @@ class Mybasket extends React.Component {
                         });
                       }}>
                       <Image
-                        style={{width: 21, height: 21}}
+                        style={{width: ViewScale(21), height: ViewScale(21)}}
                         source={require('../../image/note.png')}
                       />
                     </TouchableOpacity>
-                    <Text style={{fontSize: 14, color: '#2d6dc4'}}>
+                    <Text style={{fontSize: ViewScale(14), color: '#2d6dc4'}}>
                       {item.note}{' '}
                     </Text>
                   </View>
@@ -3884,7 +3885,7 @@ class Mybasket extends React.Component {
               backdropStyle={{
                 backgroundColor:
                   Platform.OS === 'android' ? '#2d6dc460' : '#2d6dc4',
-                opacity: Platform.OS === 'android' ? 0.5 : 0.8,
+                opacity: Platform.OS === 'android' ? ViewScale(0.5) : ViewScale(0.8),
               }}
               isVisible={this.state.Show}
               onBackdropPress={() => this.setState({Show: false})}>
@@ -3904,22 +3905,22 @@ class Mybasket extends React.Component {
                       {this.state.banner != '' ? (
                         <FastImage
                           resizeMode={'contain'}
-                          style={{width: '100%', height: 216}}
+                          style={{width: '100%', height: ViewScale(216)}}
                           source={{uri: this.state.banner}}
                         />
                       ) : (
                         <Image
                           resizeMode={'contain'}
-                          style={{width: '100%', height: 216}}
+                          style={{width: '100%', height: ViewScale(216)}}
                           source={require('../../image/banerDrive.png')}
                         />
                       )}
                     </View>
-                    <View style={{margin: 10}}>
-                      <Text style={{fontSize: 25, color: '#163c70'}}>
+                    <View style={{margin: ViewScale(10)}}>
+                      <Text style={{fontSize: ViewScale(25), color: '#163c70'}}>
                         {this.state.title}
                       </Text>
-                      <Text style={{fontSize: 20, color: '#3a3a3a'}}>
+                      <Text style={{fontSize: ViewScale(20), color: '#3a3a3a'}}>
                         {this.FullDate(this.state.Stardate)} -{' '}
                         {this.FullDate(this.state.Enddate)}
                       </Text>
@@ -3944,7 +3945,7 @@ class Mybasket extends React.Component {
                         }}>
                         <View style={{flex: 1, flexDirection: 'row'}}>
                           <Image
-                            style={{width: 18, height: 13, top: 4}}
+                            style={{width: ViewScale(18), height: ViewScale(13), top: ViewScale(4)}}
                             source={{uri: this.state.contry_img_flag}}
                           />
                           <Text style={Styles.popupTextloca}>
@@ -3957,7 +3958,7 @@ class Mybasket extends React.Component {
                             style={{
                               backgroundColor: '#2d6dc4',
 
-                              borderRadius: 11,
+                              borderRadius: ViewScale(11),
                             }}>
                             <Text style={Styles.popupTextMap}>{I18n.t('transalte_map')}</Text>
                           </TouchableOpacity>
@@ -3970,12 +3971,12 @@ class Mybasket extends React.Component {
                         }}>
                         {this.state.location === 'ออนไลน์' ? (
                           <Image
-                            style={{width: 13, height: 13, top: 3}}
+                            style={{width: ViewScale(13), height: ViewScale(13), top: ViewScale(3)}}
                             source={require('../../image/WWW.png')}
                           />
                         ) : (
                           <Image
-                            style={{width: 9, height: 12, top: 3}}
+                            style={{width: ViewScale(9), height: ViewScale(12), top: ViewScale(3)}}
                             source={require('../../image/makerlocation.png')}
                           />
                         )}
@@ -3984,7 +3985,7 @@ class Mybasket extends React.Component {
                           {this.state.location}
                         </Text>
                       </View>
-                      <View style={{marginTop: 10}}>
+                      <View style={{marginTop: ViewScale(10)}}>
                         <Text style={Styles.opoupTextData1}>
                           {I18n.t('translate_ActPrice')} : {this.state.price}
                         </Text>
@@ -3995,9 +3996,9 @@ class Mybasket extends React.Component {
                           {I18n.t('translate_case')}
                         </Text>
                       </View>
-                      <View style={{margin: 10}}>
+                      <View style={{margin: ViewScale(10)}}>
                         <Image
-                          style={{width: 334, height: 1}}
+                          style={{width: ViewScale(334), height: ViewScale(1)}}
                           source={require('../../image/line6.png')}
                         />
                       </View>
@@ -4015,7 +4016,7 @@ class Mybasket extends React.Component {
                           <Icon6
                             color="#2d6dc4"
                             name="keyboard-arrow-down"
-                            size={20}
+                            size={ViewScale(20)}
                           />
                         </View>
                       ) : (
@@ -4068,7 +4069,7 @@ class Mybasket extends React.Component {
                           </Text>
                           {/* thking */}
 
-                          <View style={{width: 321, height: null}}>
+                          <View style={{width: ViewScale(321), height: null}}>
                             <Text style={Styles.popupTextdetail}>
                               {this.state.detail}
                             </Text>
@@ -4085,15 +4086,15 @@ class Mybasket extends React.Component {
                             <Icon6
                               color="#2d6dc4"
                               name="keyboard-arrow-up"
-                              size={20}
+                              size={ViewScale(20)}
                             />
                           </View>
                         </>
                       )}
 
-                      <View style={{margin: 10}}>
+                      <View style={{margin: ViewScale(10)}}>
                         <Image
-                          style={{width: 334, height: 1}}
+                          style={{width: ViewScale(334), height: ViewScale(1)}}
                           source={require('../../image/line6.png')}
                         />
                       </View>
@@ -4107,7 +4108,7 @@ class Mybasket extends React.Component {
                         </Text>
                         <View style={{flexDirection: 'row'}}>
                           <Image
-                            style={{width: 29, height: 29}}
+                            style={{width: ViewScale(29), height: ViewScale(29)}}
                             source={require('../../image/phonelx.png')}
                           />
 
@@ -4115,7 +4116,7 @@ class Mybasket extends React.Component {
                             onPress={() => {
                               this.Call(this.state.deparment_tel);
                             }}
-                            style={{color: '#2d6dc4', fontSize: 18, top: 4}}>
+                            style={{color: '#2d6dc4', fontSize: ViewScale(18), top: ViewScale(4)}}>
                             {'   '} {this.state.deparment_tel}
                           </Text>
                         </View>
@@ -4124,7 +4125,7 @@ class Mybasket extends React.Component {
                       6 ? null : (
                         <View
                           style={{
-                            marginTop: 13,
+                            marginTop: ViewScale(13),
                             alignItems: 'center',
                           }}>
                           {this.props.getStatus1.isResult
@@ -4262,9 +4263,9 @@ class Mybasket extends React.Component {
                 <View style={{width: '100%'}}>
                   <View
                     style={{
-                      marginTop: 10,
-                      marginBottom: 10,
-                      marginHorizontal: 15,
+                      marginTop: ViewScale(10),
+                      marginBottom: ViewScale(10),
+                      marginHorizontal: ViewScale(15),
                       flexDirection: 'row',
                     }}>
                     <View
@@ -4293,15 +4294,15 @@ class Mybasket extends React.Component {
                                 backgroundColor: '#f86767',
 
                                 justifyContent: 'center',
-                                height: 25,
-                                width: 25,
-                                borderRadius: 35,
+                                height: ViewScale(25),
+                                width: ViewScale(25),
+                                borderRadius: ViewScale(35),
 
                                 alignItems: 'center',
                               }}>
                               <Icon3
                                 name="delete"
-                                size={16}
+                                size={ViewScale(16)}
                                 style={{color: '#FFFFFF'}}
                               />
                             </TouchableOpacity>
@@ -4317,20 +4318,20 @@ class Mybasket extends React.Component {
                     <View
                       style={{
                         width: '90%',
-                        height: 30,
+                        height: ViewScale(30),
                         backgroundColor: '#FFFFFF',
                         borderColor: '#cacaca',
                         borderWidth: 1,
-                        borderRadius: 21.5,
+                        borderRadius: ViewScale(21.5),
                         flexDirection: 'row',
                         alignItems: 'center',
                       }}>
                       <Image
                         style={{
-                          width: 19,
-                          height: 19,
-                          marginHorizontal: 10,
-                          marginTop: 4,
+                          width: ViewScale(19),
+                          height: ViewScale(19),
+                          marginHorizontal: ViewScale(10),
+                          marginTop: ViewScale(4),
                         }}
                         source={require('../../image/searchblue.png')}
                       />
@@ -4357,7 +4358,7 @@ class Mybasket extends React.Component {
                           // marginTop: 5,
                           backgroundColor: '#f4f5f805',
                           borderColor: '#f4f5f880',
-                          borderWidth: 8,
+                          borderWidth: ViewScale(8),
                         }}
                         style={Styles.flastListtab1}
                         data={this.state.DataType}
@@ -4390,9 +4391,9 @@ class Mybasket extends React.Component {
                 <View style={{width: '100%'}}>
                   <View
                     style={{
-                      marginTop: 10,
-                      marginBottom: 10,
-                      marginHorizontal: 15,
+                      marginTop: ViewScale(10),
+                      marginBottom: ViewScale(10),
+                      marginHorizontal: ViewScale(15),
                       flexDirection: 'row',
                     }}>
                     <View
@@ -4422,15 +4423,15 @@ class Mybasket extends React.Component {
                                 backgroundColor: '#f86767',
 
                                 justifyContent: 'center',
-                                height: 25,
-                                width: 25,
-                                borderRadius: 35,
+                                height: ViewScale(25),
+                                width: ViewScale(25),
+                                borderRadius: ViewScale(35),
 
                                 alignItems: 'center',
                               }}>
                               <Icon3
                                 name="delete"
-                                size={16}
+                                size={ViewScale(16)}
                                 style={{color: '#FFFFFF'}}
                               />
                             </TouchableOpacity>
@@ -4467,10 +4468,10 @@ class Mybasket extends React.Component {
                       <FlatList
                         scrollEnabled={false}
                         contentContainerStyle={{
-                          marginTop: 5,
+                          marginTop: ViewScale(5),
                           backgroundColor: '#f4f5f805',
                           borderColor: '#f4f5f880',
-                          borderWidth: 8,
+                          borderWidth: ViewScale(8),
                         }}
                         style={Styles.flastListtab1}
                         data={this.state.DataType}
@@ -4533,7 +4534,7 @@ class Mybasket extends React.Component {
                                   style={Styles.viewdelete1}>
                                   <Icon3
                                     name="delete"
-                                    size={16}
+                                    size={ViewScale(16)}
                                     style={{color: '#FFFFFF'}}
                                   />
                                 </TouchableOpacity>
@@ -4596,7 +4597,7 @@ class Mybasket extends React.Component {
                                   style={Styles.viewdelete1}>
                                   <Icon3
                                     name="delete"
-                                    size={16}
+                                    size={ViewScale(16)}
                                     style={{color: '#FFFFFF'}}
                                   />
                                 </TouchableOpacity>
@@ -4611,10 +4612,10 @@ class Mybasket extends React.Component {
                         <View style={Styles.viewtabsearch2}>
                           <Image
                             style={{
-                              width: 19,
-                              height: 19,
-                              marginHorizontal: 10,
-                              marginTop: 4,
+                              width: ViewScale(19),
+                              height: ViewScale(19),
+                              marginHorizontal: ViewScale(10),
+                              marginTop: ViewScale(4),
                             }}
                             source={require('../../image/searchblue.png')}
                           />
@@ -4637,8 +4638,8 @@ class Mybasket extends React.Component {
 
               <View
                 style={{
-                  marginHorizontal: 15,
-                  marginTop: 8,
+                  marginHorizontal: ViewScale(15),
+                  marginTop: ViewScale(8),
                   // marginBottom: 8,
 
                   flexDirection: 'row',
@@ -4694,7 +4695,7 @@ class Mybasket extends React.Component {
                             marginTop: 5,
                             backgroundColor: '#f4f5f805',
                             borderColor: '#f4f5f880',
-                            borderWidth: 8,
+                            borderWidth: ViewScale(8),
                           }}
                           style={{}}
                           data={this.state.DataType}
@@ -4731,7 +4732,7 @@ class Mybasket extends React.Component {
                             marginTop: 5,
                             backgroundColor: '#f4f5f805',
                             borderColor: '#f4f5f880',
-                            borderWidth: 8,
+                            borderWidth: ViewScale(8),
                           }}
                           style={{}}
                           data={this.state.DataTypeAI}
@@ -4762,16 +4763,16 @@ class Mybasket extends React.Component {
             <View tabLabel={I18n.t('translate_Mybuy')} style={Styles.ViewTab1}>
               <View
                 style={{
-                  marginBottom: 10,
+                  marginBottom: ViewScale(10),
 
                   flexDirection: 'row',
                 }}>
                 <View style={{flex: 0.9}}>
                   <Text
                     style={{
-                      fontSize: 21,
+                      fontSize: ViewScale(21),
                       color: '#2d6dc4',
-                      left: 20,
+                      left: ViewScale(20),
                       fontFamily: 'Kittithada Bold 75',
                     }}>
                     {I18n.t('translate_All')}{' '}
@@ -4799,15 +4800,15 @@ class Mybasket extends React.Component {
                             backgroundColor: '#f86767',
 
                             justifyContent: 'center',
-                            height: 25,
-                            width: 25,
-                            borderRadius: 35,
+                            height: ViewScale(25),
+                            width: ViewScale(25),
+                            borderRadius: ViewScale(35),
 
                             alignItems: 'center',
                           }}>
                           <Icon3
                             name="delete"
-                            size={16}
+                            size={ViewScale(16)}
                             style={{color: '#FFFFFF'}}
                           />
                         </TouchableOpacity>
@@ -4829,20 +4830,20 @@ class Mybasket extends React.Component {
                     <View
                       style={{
                         width: '90%',
-                        height: 30,
+                        height: ViewScale(30),
                         backgroundColor: '#FFFFFF',
                         borderColor: '#cacaca',
                         borderWidth: 1,
-                        borderRadius: 21.5,
+                        borderRadius: ViewScale(21.5),
                         flexDirection: 'row',
                         alignItems: 'center',
                       }}>
                       <Image
                         style={{
-                          width: 19,
-                          height: 19,
-                          marginHorizontal: 10,
-                          marginTop: 4,
+                          width: ViewScale(19),
+                          height: ViewScale(19),
+                          marginHorizontal: ViewScale(10),
+                          marginTop: ViewScale(4),
                         }}
                         source={require('../../image/searchblue.png')}
                       />
@@ -4861,7 +4862,7 @@ class Mybasket extends React.Component {
                     style={{
                       flexDirection: 'row',
                       width: '100%',
-                      marginTop: 10,
+                      marginTop: ViewScale(10),
                       alignContent: 'center',
                     }}>
                     {/* <Text>555555</Text> */}
@@ -4873,23 +4874,23 @@ class Mybasket extends React.Component {
                         flex: 0.8,
 
                         backgroundColor: '#2d6dc4',
-                        height: 34,
+                        height: ViewScale(34),
                         justifyContent: 'center',
-                        marginHorizontal: 10,
-                        borderRadius: 8,
+                        marginHorizontal: ViewScale(10),
+                        borderRadius: ViewScale(8),
                         flexDirection: 'row',
                       }}>
                       <Image
-                        style={{width: 19, height: 19, top: 7}}
+                        style={{width: ViewScale(19), height: ViewScale(19), top: ViewScale(7)}}
                         source={require('../../image/addmybasket.png')}
                       />
                       <Text
                         style={{
                           color: '#FFFFFF',
-                          fontSize: 20,
+                          fontSize: ViewScale(20),
                           textAlign: 'center',
                           justifyContent: 'center',
-                          marginTop: 4,
+                          marginTop: ViewScale(4),
                         }}>
                         {' '}
                         {I18n.t('translate_Bt_Add_Manually')}
@@ -4903,21 +4904,21 @@ class Mybasket extends React.Component {
                         flex: 0.8,
                         flexDirection: 'row',
                         backgroundColor: '#04a68a',
-                        height: 34,
+                        height: ViewScale(34),
                         justifyContent: 'center',
-                        marginHorizontal: 10,
-                        borderRadius: 8,
+                        marginHorizontal: ViewScale(10),
+                        borderRadius: ViewScale(8),
                       }}>
                       <Image
-                        style={{width: 19, height: 19, top: 7}}
+                        style={{width: ViewScale(19), height: ViewScale(19), top: ViewScale(7)}}
                         source={require('../../image/QRcodemybasket.png')}
                       />
                       <Text
                         style={{
                           color: '#FFFFFF',
-                          fontSize: 20,
+                          fontSize: ViewScale(20),
                           textAlign: 'center',
-                          marginTop: 4,
+                          marginTop: ViewScale(4),
                         }}>
                         {' '}
                         {I18n.t('translate_Bt_Add_QRcode')}
@@ -4939,7 +4940,7 @@ class Mybasket extends React.Component {
                         Styles.OverlayView2,
                         {backgroundColor: '#FFFFFF', borderRadius: 8},
                       ]}>
-                      <View style={[Styles.OverlayView1, {marginTop: -45}]}>
+                      <View style={[Styles.OverlayView1, {marginTop: ViewScale(-45)}]}>
                         <TouchableOpacity
                           onPress={() =>
                             this.setState({Show: false, PopAccept2: false})
@@ -4952,40 +4953,40 @@ class Mybasket extends React.Component {
                       </View>
                       <View
                         style={{
-                          marginTop: -10,
+                          marginTop: ViewScale(-10),
                           alignContent: 'center',
                           alignItems: 'center',
-                          marginTop: 4,
+                          marginTop: ViewScale(4),
                         }}>
-                        <Text style={{color: '#20416e', fontSize: 24}}>
+                        <Text style={{color: '#20416e', fontSize: ViewScale(24)}}>
                           {''}
                         </Text>
                       </View>
                       <View
                         style={{
-                          marginTop: -10,
+                          marginTop: ViewScale(-10),
                           alignContent: 'center',
                           alignItems: 'center',
-                          marginTop: 4,
+                          marginTop: ViewScale(4),
                         }}>
-                        <Text style={{color: '#2d6dc4', fontSize: 24}}>
+                        <Text style={{color: '#2d6dc4', fontSize: ViewScale(24)}}>
                           {I18n.t('transalte_add_my_buyer')}
                         </Text>
                       </View>
                       <View
                         style={{
-                          marginTop: -10,
+                          marginTop: ViewScale(-10),
                           alignContent: 'center',
                           alignItems: 'center',
                         }}>
-                        <Text style={{color: '#20416e', fontSize: 24}}> </Text>
+                        <Text style={{color: '#20416e', fontSize: ViewScale(24)}}> </Text>
                       </View>
                       <View
                         style={{
-                          marginTop: -10,
+                          marginTop: ViewScale(-10),
                           alignContent: 'center',
                           alignItems: 'center',
-                          marginTop: 4,
+                          marginTop: ViewScale(4),
 
                           width: '100%',
                         }}>
@@ -4996,16 +4997,16 @@ class Mybasket extends React.Component {
                           }}
                           style={{
                             backgroundColor: '#3986ee',
-                            height: 48,
+                            height: ViewScale(48),
 
                             justifyContent: 'center',
                             width: '80%',
-                            borderRadius: 21.5,
-                            marginBottom: 15,
+                            borderRadius: ViewScale(21.5),
+                            marginBottom: ViewScale(15),
                           }}>
                           <Text
                             style={{
-                              fontSize: 24,
+                              fontSize: ViewScale(24),
                               color: '#FFFFFF',
                               textAlign: 'center',
                             }}>
@@ -5019,15 +5020,15 @@ class Mybasket extends React.Component {
                           }}
                           style={{
                             backgroundColor: '#9c7df6',
-                            height: 48,
+                            height: ViewScale(48),
 
                             justifyContent: 'center',
                             width: '80%',
-                            borderRadius: 21.5,
+                            borderRadius: ViewScale(21.5),
                           }}>
                           <Text
                             style={{
-                              fontSize: 24,
+                              fontSize: ViewScale(24),
                               color: '#FFFFFF',
                               textAlign: 'center',
                             }}>
@@ -5037,19 +5038,19 @@ class Mybasket extends React.Component {
                       </View>
                       <View
                         style={{
-                          marginTop: -5,
+                          marginTop: ViewScale(-5),
                           alignContent: 'center',
                           alignItems: 'center',
                         }}>
-                        <Text style={{color: '#20416e', fontSize: 24}}> </Text>
+                        <Text style={{color: '#20416e', fontSize: ViewScale(24)}}> </Text>
                       </View>
                       <View
                         style={{
-                          marginTop: -14,
+                          marginTop: ViewScale(-14),
                           alignContent: 'center',
                           alignItems: 'center',
                         }}>
-                        <Text style={{color: '#20416e', fontSize: 24}}> </Text>
+                        <Text style={{color: '#20416e', fontSize: ViewScale(24)}}> </Text>
                       </View>
                     </View>
                   </Overlay>
@@ -5069,7 +5070,7 @@ class Mybasket extends React.Component {
                           // marginTop: 5,
                           backgroundColor: '#f4f5f805',
                           borderColor: '#f4f5f880',
-                          borderWidth: 8,
+                          borderWidth: ViewScale(8),
                         }}
                         style={{}}
                         data={this.state.DataType}
@@ -5096,18 +5097,18 @@ class Mybasket extends React.Component {
               style={Styles.ViewTab1}>
               <View
                 style={{
-                  marginTop: 10,
-                  marginBottom: 10,
-                  marginHorizontal: 15,
+                  marginTop: ViewScale(10),
+                  marginBottom: ViewScale(10),
+                  marginHorizontal: ViewScale(15),
 
                   flexDirection: 'row',
                 }}>
-                <View style={{marginBottom: 10, flex: 1}}>
+                <View style={{marginBottom: ViewScale(10), flex: 1}}>
                   <Text
                     style={{
-                      fontSize: 21,
+                      fontSize: ViewScale(21),
                       color: '#2d6dc4',
-                      left: 20,
+                      left: ViewScale(20),
                       fontFamily: 'Kittithada Bold 75',
                     }}>
                     {I18n.t('translate_All')} {this.state.DataType.length}{' '}
@@ -5134,15 +5135,15 @@ class Mybasket extends React.Component {
                             backgroundColor: '#f86767',
 
                             justifyContent: 'center',
-                            height: 25,
-                            width: 25,
-                            borderRadius: 35,
+                            height: ViewScale(25),
+                            width: ViewScale(25),
+                            borderRadius: ViewScale(35),
 
                             alignItems: 'center',
                           }}>
                           <Icon3
                             name="delete"
-                            size={16}
+                            size={ViewScale(16)}
                             style={{color: '#FFFFFF'}}
                           />
                         </TouchableOpacity>
@@ -5160,20 +5161,20 @@ class Mybasket extends React.Component {
                     <View
                       style={{
                         width: '90%',
-                        height: 30,
+                        height: ViewScale(30),
                         backgroundColor: '#FFFFFF',
                         borderColor: '#cacaca',
                         borderWidth: 1,
-                        borderRadius: 21.5,
+                        borderRadius: ViewScale(21.5),
                         flexDirection: 'row',
                         alignItems: 'center',
                       }}>
                       <Image
                         style={{
-                          width: 19,
-                          height: 19,
-                          marginHorizontal: 10,
-                          marginTop: 4,
+                          width: ViewScale(19),
+                          height: ViewScale(19),
+                          marginHorizontal: ViewScale(10),
+                          marginTop: ViewScale(4),
                         }}
                         source={require('../../image/searchblue.png')}
                       />
@@ -5191,7 +5192,7 @@ class Mybasket extends React.Component {
                       style={{
                         flexDirection: 'row',
                         width: '100%',
-                        marginTop: 10,
+                        marginTop: ViewScale(10),
                         alignContent: 'center',
                       }}>
                       {/* <Text>555555</Text> */}
@@ -5203,23 +5204,23 @@ class Mybasket extends React.Component {
                           flex: 0.8,
 
                           backgroundColor: '#2d6dc4',
-                          height: 34,
+                          height: ViewScale(34),
                           justifyContent: 'center',
-                          marginHorizontal: 10,
-                          borderRadius: 8,
+                          marginHorizontal: ViewScale(10),
+                          borderRadius: ViewScale(8),
                           flexDirection: 'row',
                         }}>
                         <Image
-                          style={{width: 19, height: 19, top: 7}}
+                          style={{width: ViewScale(19), height: ViewScale(19), top: ViewScale(7)}}
                           source={require('../../image/addmybasket.png')}
                         />
                         <Text
                           style={{
                             color: '#FFFFFF',
-                            fontSize: 20,
+                            fontSize: ViewScale(20),
                             textAlign: 'center',
                             justifyContent: 'center',
-                            marginTop: 4,
+                            marginTop: ViewScale(4),
                           }}>
                           {' '}
                           {I18n.t('translate_Bt_Add_Manually')}
@@ -5233,21 +5234,21 @@ class Mybasket extends React.Component {
                           flex: 0.8,
                           flexDirection: 'row',
                           backgroundColor: '#04a68a',
-                          height: 34,
+                          height: ViewScale(34),
                           justifyContent: 'center',
-                          marginHorizontal: 10,
-                          borderRadius: 8,
+                          marginHorizontal: ViewScale(10),
+                          borderRadius: ViewScale(8),
                         }}>
                         <Image
-                          style={{width: 19, height: 19, top: 7}}
+                          style={{width: ViewScale(19), height: ViewScale(19), top: ViewScale(7)}}
                           source={require('../../image/QRcodemybasket.png')}
                         />
                         <Text
                           style={{
                             color: '#FFFFFF',
-                            fontSize: 20,
+                            fontSize: ViewScale(20),
                             textAlign: 'center',
-                            marginTop: 4,
+                            marginTop: ViewScale(4),
                           }}>
                           {' '}
                           {I18n.t('translate_Bt_Add_QRcode')}
@@ -5264,13 +5265,13 @@ class Mybasket extends React.Component {
                         Platform.OS === 'android' ? '#2d6dc420' : '#2d6dc480',
                       borderColor: 'transparent',
                     }}
-                    overlayStyle={[Styles.Overlay, {borderRadius: 5}]}>
+                    overlayStyle={[Styles.Overlay, {borderRadius: ViewScale(5)}]}>
                     <View
                       style={[
                         Styles.OverlayView2,
-                        {backgroundColor: '#FFFFFF', borderRadius: 8},
+                        {backgroundColor: '#FFFFFF', borderRadius: ViewScale(8)},
                       ]}>
-                      <View style={[Styles.OverlayView1, {marginTop: -30}]}>
+                      <View style={[Styles.OverlayView1, {marginTop: ViewScale(-30)}]}>
                         <TouchableOpacity
                           onPress={() =>
                             this.setState({Show: false, PopAccept2: false})
@@ -5283,56 +5284,56 @@ class Mybasket extends React.Component {
                       </View>
                       <View
                         style={{
-                          marginTop: -10,
+                          marginTop: ViewScale(-10),
                           alignContent: 'center',
                           alignItems: 'center',
-                          marginTop: 4,
+                          marginTop: ViewScale(4),
                         }}>
-                        <Text style={{color: '#20416e', fontSize: 24}}>
+                        <Text style={{color: '#20416e', fontSize: ViewScale(24)}}>
                           {''}
                         </Text>
                       </View>
                       <View
                         style={{
-                          marginTop: -10,
+                          marginTop: ViewScale(-10),
                           alignContent: 'center',
                           alignItems: 'center',
-                          marginTop: 4,
+                          marginTop: ViewScale(4),
                         }}>
-                        <Text style={{color: '#2d6dc4', fontSize: 24}}>
+                        <Text style={{color: '#2d6dc4', fontSize: ViewScale(24)}}>
                           {I18n.t('transalte_Add_Network')}
                         </Text>
                       </View>
                       <View
                         style={{
-                          marginTop: -10,
+                          marginTop: ViewScale(-10),
                           alignContent: 'center',
                           alignItems: 'center',
                         }}>
-                        <Text style={{color: '#20416e', fontSize: 24}}> </Text>
+                        <Text style={{color: '#20416e', fontSize: ViewScale(24)}}> </Text>
                       </View>
                       <View
                         style={{
-                          marginTop: -10,
+                          marginTop: ViewScale(-10),
                           alignContent: 'center',
                           alignItems: 'center',
-                          marginTop: 4,
+                          marginTop: ViewScale(4),
 
                           width: '100%',
                         }}>
                         <TouchableOpacity
                           style={{
                             backgroundColor: '#3986ee',
-                            height: 48,
+                            height: ViewScale(48),
 
                             justifyContent: 'center',
                             width: '80%',
-                            borderRadius: 21.5,
-                            marginBottom: 15,
+                            borderRadius: ViewScale(21.5),
+                            marginBottom: ViewScale(15),
                           }}>
                           <Text
                             style={{
-                              fontSize: 24,
+                              fontSize: ViewScale(24),
                               color: '#FFFFFF',
                               textAlign: 'center',
                             }}>
@@ -5342,15 +5343,15 @@ class Mybasket extends React.Component {
                         <TouchableOpacity
                           style={{
                             backgroundColor: '#9c7df6',
-                            height: 48,
+                            height: ViewScale(48),
 
                             justifyContent: 'center',
                             width: '80%',
-                            borderRadius: 21.5,
+                            borderRadius: ViewScale(21.5),
                           }}>
                           <Text
                             style={{
-                              fontSize: 24,
+                              fontSize: ViewScale(24),
                               color: '#FFFFFF',
                               textAlign: 'center',
                             }}>
@@ -5360,19 +5361,19 @@ class Mybasket extends React.Component {
                       </View>
                       <View
                         style={{
-                          marginTop: -5,
+                          marginTop: ViewScale(-5),
                           alignContent: 'center',
                           alignItems: 'center',
                         }}>
-                        <Text style={{color: '#20416e', fontSize: 24}}> </Text>
+                        <Text style={{color: '#20416e', fontSize: ViewScale(24)}}> </Text>
                       </View>
                       <View
                         style={{
-                          marginTop: -14,
+                          marginTop: ViewScale(-14),
                           alignContent: 'center',
                           alignItems: 'center',
                         }}>
-                        <Text style={{color: '#20416e', fontSize: 24}}> </Text>
+                        <Text style={{color: '#20416e', fontSize: ViewScale(24)}}> </Text>
                       </View>
                     </View>
                   </Overlay>
@@ -5389,10 +5390,10 @@ class Mybasket extends React.Component {
                         renderItem={this.ListContactNet}
                         keyExtractor={(item, index) => index}
                         contentContainerStyle={{
-                          marginTop: 5,
+                          marginTop: ViewScale(5),
                           backgroundColor: '#f4f5f805',
                           borderColor: '#f4f5f880',
-                          borderWidth: 8,
+                          borderWidth: ViewScale(8),
                         }}
                         style={Styles.flastListtab1}
                         data={this.state.DataType}
@@ -5422,7 +5423,7 @@ class Mybasket extends React.Component {
             {this.state.Menu === 1 && (
               <View>
                 {this.state.delete == false ? (
-                  <View style={[Styles.ViewTouchFlat1, {marginBottom: 10}]}>
+                  <View style={[Styles.ViewTouchFlat1, {marginBottom: ViewScale(10)}]}>
                     {this.state.DataType != undefined ? (
                       <View
                         style={{
@@ -5483,7 +5484,7 @@ class Mybasket extends React.Component {
                       }}
                       containerStyle={Styles.CheckAllContainer}
                       title={
-                        <View style={{left: 10}}>
+                        <View style={{left: ViewScale(10)}}>
                           <Text style={Styles.textStyleCheck}>
                             {I18n.t('translate_Allpick')}
                           </Text>
@@ -5531,7 +5532,7 @@ class Mybasket extends React.Component {
             {this.state.Menu === 2 && (
               <View>
                 {this.state.delete == false ? (
-                  <View style={[Styles.ViewTouchFlat1, {marginBottom: 10}]}>
+                  <View style={[Styles.ViewTouchFlat1, {marginBottom: ViewScale(10)}]}>
                     {this.state.DataType != undefined ? (
                       <View>
                         {/* {this.state.DataType.length > 0 ? (
@@ -5588,7 +5589,7 @@ class Mybasket extends React.Component {
                       }}
                       containerStyle={Styles.CheckAllContainer}
                       title={
-                        <View style={{left: 10}}>
+                        <View style={{left: ViewScale(10)}}>
                           <Text style={Styles.textStyleCheck}>
                             {I18n.t('translate_Allpick')}
                           </Text>
@@ -5674,7 +5675,7 @@ class Mybasket extends React.Component {
                     }}
                     containerStyle={Styles.CheckAllContainer}
                     title={
-                      <View style={{left: 10}}>
+                      <View style={{left: ViewScale(10)}}>
                         <Text style={Styles.textStyleCheck}>
                           {I18n.t('translate_Allpick')}
                         </Text>
@@ -5757,7 +5758,7 @@ class Mybasket extends React.Component {
                     }}
                     containerStyle={Styles.CheckAllContainer}
                     title={
-                      <View style={{left: 10}}>
+                      <View style={{left: ViewScale(10)}}>
                         <Text style={Styles.textStyleCheck}>
                           {I18n.t('translate_Allpick')}
                         </Text>
@@ -5812,7 +5813,7 @@ class Mybasket extends React.Component {
           {this.state.Menu === 4 && (
             <View>
               {this.state.delete == false ? (
-                <View style={[Styles.ViewTouchFlat1, {marginBottom: 10}]}>
+                <View style={[Styles.ViewTouchFlat1, {marginBottom: ViewScale(10)}]}>
                   {this.state.DataType != undefined ? (
                     <View>
                       {/* {this.state.DataType.length > 0 ? (
@@ -5873,7 +5874,7 @@ class Mybasket extends React.Component {
                     }}
                     containerStyle={Styles.CheckAllContainer}
                     title={
-                      <View style={{left: 10}}>
+                      <View style={{left: ViewScale(10)}}>
                         <Text style={Styles.textStyleCheck}>
                           {I18n.t('translate_Allpick')}
                         </Text>
@@ -5918,7 +5919,7 @@ class Mybasket extends React.Component {
           {this.state.Menu === 5 && (
             <View>
               {this.state.delete == false ? (
-                <View style={[Styles.ViewTouchFlat1, {marginBottom: 10}]}>
+                <View style={[Styles.ViewTouchFlat1, {marginBottom: ViewScale(10)}]}>
                   {this.state.DataType != undefined ? (
                     <View>
                       {/* {this.state.DataType.length > 0 ? (
@@ -5979,7 +5980,7 @@ class Mybasket extends React.Component {
                     }}
                     containerStyle={Styles.CheckAllContainer}
                     title={
-                      <View style={{left: 10}}>
+                      <View style={{left: ViewScale(10)}}>
                         <Text style={Styles.textStyleCheck}>
                           {I18n.t('translate_Allpick')}{' '}
                         </Text>
@@ -6031,7 +6032,7 @@ class Mybasket extends React.Component {
                   Platform.OS === 'android' ? '#2d6dc420' : '#2d6dc480',
                 borderColor: 'transparent',
               }}
-              overlayStyle={[Styles.Overlay, {borderRadius: 5}]}>
+              overlayStyle={[Styles.Overlay, {borderRadius: ViewScale(5)}]}>
               <Popup
                 text={I18n.t('translate_ConFavorite')}
                 accept={() => {

@@ -1,4 +1,5 @@
 import {StyleSheet, Dimensions, Platform} from 'react-native';
+import { ViewScale } from '../../config/ViewScale';
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 
@@ -14,41 +15,41 @@ export default StyleSheet.create({
     // width: '100%',
     // flex:1,
    
-    marginHorizontal:10,
+    marginHorizontal:ViewScale(10),
     // height:'100%',
     backgroundColor:'#FFFFFF',
-    borderRadius:8
+    borderRadius:ViewScale(8),
   },
   View4: {
     width: '50%',
     alignItems: 'center',
   },
   TextView1: {
-    fontSize: 30,
+    fontSize: ViewScale(30),
     color: '#40536d',
   },
   View5: {
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: ViewScale(10),
   },
   ViewH: {
     backgroundColor: '#fff',
     width: Dimensions.get('window').width * 0.9,
     alignItems: 'center',
-    padding: 10,
-    borderRadius: 8,
+    padding: ViewScale(10),
+    borderRadius: ViewScale(8),
   },
   TextView2: {
-    fontSize: 23,
+    fontSize: ViewScale(23),
     color: '#163c70',
   },
   View6: {
     width: '40%',
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: ViewScale(10),
   },
   TextView3: {
-    fontSize: 23,
+    fontSize: ViewScale(23),
     color: '#163c70',
   },
   ViewalignItem: {
@@ -56,8 +57,8 @@ export default StyleSheet.create({
   },
   View7: {
     width: '90%',
-    height: 40,
-    borderRadius: 18,
+    height: ViewScale(40),
+    borderRadius: ViewScale(18),
     borderColor: '#d6d6d6',
     borderWidth: 1,
     // justifyContent: 'center',
@@ -67,18 +68,18 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
   },
   ViewRN: {
-    fontSize: 20,
+    fontSize: ViewScale(20),
     color: '#4b4b4b',
-    marginLeft: 10,
+    marginLeft: ViewScale(10),
     width: '80%',
     padding: 0,
     fontWeight: 'normal',
     fontFamily: 'PSL Kittithada Pro',
   },
   TextRN: {
-    fontSize: 23,
+    fontSize: ViewScale(23),
     color: '#4b4b4b',
-    marginLeft: 10,
+    marginLeft: ViewScale(10),
     width: '80%',
     padding: 0,
     fontWeight: 'normal',
@@ -87,9 +88,9 @@ export default StyleSheet.create({
 
   View9: {
     width: '100%',
-    height: Platform.OS ==='ios'?33:44,
+    height: Platform.OS ==='ios'?ViewScale(33):ViewScale(44),
     
-    borderRadius: 18,
+    borderRadius: ViewScale(18),
     borderColor: '#d6d6d6',
     borderWidth: 1,
     justifyContent: 'center',

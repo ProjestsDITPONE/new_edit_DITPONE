@@ -36,7 +36,7 @@ import DropdownMenu from 'react-native-dropdown-menu';
 import {SearchableSectionList2} from '../../lib_edit/react-native-searchable-list/src';
 import Icon3 from 'react-native-vector-icons/AntDesign';
 import Icon4 from 'react-native-vector-icons/Feather';
-
+import { ViewScale } from '../../config/ViewScale';
 import MonthSelectorCalendar from 'react-native-month-selector';
 import Icon1 from 'react-native-vector-icons/AntDesign';
 import {Chip} from 'react-native-paper';
@@ -356,13 +356,13 @@ class SearchMenu extends React.Component {
             minDate={maxDate}
             maxDate={minDate}
             previousTitle="<"
-            previousTitleStyle={{color: '#9b9b9b', fontSize: 20}}
+            previousTitleStyle={{color: '#9b9b9b', fontSize: ViewScale(20)}}
             nextTitle=">"
-            nextTitleStyle={{color: '#9b9b9b', fontSize: 20}}
+            nextTitleStyle={{color: '#9b9b9b', fontSize: ViewScale(20)}}
             selectedDayColor={'#2d6dc4'}
             selectedDayTextColor={'#fff'}
             selectedStartDate={this.state.selecStartDate}
-            textStyle={{color: '#000', fontSize: 20}}
+            textStyle={{color: '#000', fontSize: ViewScale(20)}}
             onDateChange={value => {
               setTimeout(() => {
                 this.setState({selecStartDate: value});
@@ -375,7 +375,7 @@ class SearchMenu extends React.Component {
             width: '80%',
             flex: 0.1,
             justifyContent: 'center',
-            marginTop: 20,
+            marginTop: ViewScale(20),
           }}>
           <TouchableOpacity
             style={{
@@ -385,7 +385,7 @@ class SearchMenu extends React.Component {
               width: '80%',
 
               alignSelf: 'center',
-              borderRadius: 50,
+              borderRadius: ViewScale(50),
               alignItems: 'center',
             }}
             onPress={async () => {
@@ -399,7 +399,7 @@ class SearchMenu extends React.Component {
                 this.RBSheet.close();
               }, 100);
             }}>
-            <Text style={{color: '#FFFFFF', fontSize: 25}}>
+            <Text style={{color: '#FFFFFF', fontSize: ViewScale(25)}}>
               {I18n.t('translate_Accept')}
             </Text>
           </TouchableOpacity>
@@ -410,8 +410,8 @@ class SearchMenu extends React.Component {
             flex: 0.1,
             justifyContent: 'center',
             alignItems: 'center',
-            marginBottom: 20,
-            marginTop: 10,
+            marginBottom: ViewScale(20),
+            marginTop: ViewScale(10),
           }}>
           <TouchableOpacity
             style={{
@@ -419,12 +419,12 @@ class SearchMenu extends React.Component {
               height: '100%',
               width: '80%',
               alignSelf: 'center',
-              borderRadius: 50,
+              borderRadius: ViewScale(50),
               alignItems: 'center',
               justifyContent: 'center',
             }}
             onPress={() => this.RBSheet.close()}>
-            <Text style={{color: '#FFFFFF', fontSize: 25}}>
+            <Text style={{color: '#FFFFFF', fontSize: ViewScale(25)}}>
               {I18n.t('translate_Cancel')}
             </Text>
           </TouchableOpacity>
@@ -436,17 +436,17 @@ class SearchMenu extends React.Component {
   BarCalendarMY = () => {
     return (
       <View style={{flex: 1}}>
-        <View style={{flex: 0.8, marginBottom: 20}}>
+        <View style={{flex: 0.8, marginBottom: ViewScale(20)}}>
           <MonthSelectorCalendar
-            containerStyle={{bottom: 20}}
+            containerStyle={{bottom: ViewScale(20)}}
             maxDate={Moment('01-01-3000', 'DD-MM-YYYY')}
             minDate={Moment('01-01-2000', 'DD-MM-YYYY')}
-            prevIcon={<Icon1 name="left" size={20} />}
-            nextIcon={<Icon1 name="right" size={20} />}
+            prevIcon={<Icon1 name="left" size={ViewScale(20)} />}
+            nextIcon={<Icon1 name="right" size={ViewScale(20)} />}
             localeLanguage="en"
-            yearTextStyle={{color: '#000', fontSize: 20}}
-            selectedMonthTextStyle={{color: '#FFF', fontSize: 20}}
-            monthTextStyle={{color: '#000', fontSize: 20}}
+            yearTextStyle={{color: '#000', fontSize: ViewScale(20)}}
+            selectedMonthTextStyle={{color: '#FFF', fontSize: ViewScale(20)}}
+            monthTextStyle={{color: '#000', fontSize: ViewScale(20)}}
             selectedBackgroundColor={'#2d6dc4'}
             selectedDate={this.state.month}
             onMonthTapped={value => {
@@ -497,8 +497,8 @@ class SearchMenu extends React.Component {
             justifyContent: 'center',
             alignItems: 'center',
             alignSelf: 'center',
-            marginTop: 20,
-            borderRadius: 50,
+            marginTop: ViewScale(20),
+            borderRadius: ViewScale(50),
             backgroundColor: '#2d6dc4',
           }}
           onPress={async () => {
@@ -515,7 +515,7 @@ class SearchMenu extends React.Component {
           <Text
             style={{
               color: '#fff',
-              fontSize: 25,
+              fontSize: ViewScale(25),
             }}>
             {I18n.t('translate_Accept')}
           </Text>
@@ -528,16 +528,16 @@ class SearchMenu extends React.Component {
             justifyContent: 'center',
             alignItems: 'center',
             alignSelf: 'center',
-            marginBottom: 20,
-            marginTop: 10,
-            borderRadius: 50,
+            marginBottom: ViewScale(20),
+            marginTop: ViewScale(10),
+            borderRadius: ViewScale(50),
             backgroundColor: '#f96145',
           }}
           onPress={() => this.RBSheet.close()}>
           <Text
             style={{
               color: '#fff',
-              fontSize: 25,
+              fontSize: ViewScale(25),
             }}>
             {I18n.t('translate_Cancel')}
           </Text>
@@ -571,7 +571,7 @@ class SearchMenu extends React.Component {
               }}>
               <View style={Style.ViewTabClose}>
                 <Image
-                  style={{width: 15, height: 13}}
+                  style={{width: ViewScale(15), height: ViewScale(13)}}
                   source={require('../../image/TapSearcOne.png')}
                 />
               </View>
@@ -653,14 +653,14 @@ class SearchMenu extends React.Component {
 
             {/*Seach */}
             <View style={Style.ViewCountry}>
-              <View style={{marginBottom: -10}}>
+              <View style={{marginBottom: ViewScale(-10)}}>
                 <Text style={Style.TextCountry}>
                   {I18n.t('translate_COUNTRY')}
                 </Text>
               </View>
               <View
                 style={{
-                  marginBottom: 15,
+                  marginBottom: ViewScale(15),
                 }}>
                 <Text>{''}</Text>
               </View>
@@ -715,7 +715,7 @@ class SearchMenu extends React.Component {
                 }>
                 <View style={Style.ViewSubSearch3}>
                   <Image
-                    style={{width: 15, height: 15}}
+                    style={{width: ViewScale(15), height: ViewScale(15)}}
                     source={
                       this.arrayholder === null
                         ? require('../../image/searchtabtab.png')
@@ -726,7 +726,7 @@ class SearchMenu extends React.Component {
 
                 <View
                   style={{
-                    marginLeft: 10,
+                    marginLeft: ViewScale(10),
                     width: '77%',
                   }}>
                   <View style={{flexDirection: 'row'}}>
@@ -734,7 +734,7 @@ class SearchMenu extends React.Component {
                       autoCorrect={true}
                       defaultValue={this.state.Coutryname}
                       style={{
-                        fontSize: 22,
+                        fontSize: ViewScale(22),
                         padding: 0,
                         width: '100%',
                         color: '#000000',
@@ -781,21 +781,21 @@ class SearchMenu extends React.Component {
                         {
                           flexDirection: 'row',
                           backgroundColor: '#96b3cb20',
-                          marginTop: 10,
-                          borderTopLeftRadius: 10,
-                          borderTopRightRadius: 10,
+                          marginTop: ViewScale(10),
+                          borderTopLeftRadius: ViewScale(10),
+                          borderTopRightRadius: ViewScale(10),
                         },
                         this.state.togleUser[title.id] && {
-                          borderBottomRightRadius: 10,
-                          borderBottomLeftRadius: 10,
+                          borderBottomRightRadius: ViewScale(10),
+                          borderBottomLeftRadius: ViewScale(10),
                         },
                       ]}>
                       <CheckBox
                         title={
                           <Text
                             style={{
-                              marginLeft: 10,
-                              fontSize: 22,
+                              marginLeft: ViewScale(10),
+                              fontSize: ViewScale(22),
                               color: '#20416e',
                               width: '100%',
                             }}>
@@ -808,13 +808,13 @@ class SearchMenu extends React.Component {
                         }}
                         checkedIcon={
                           <Image
-                            style={{width: 15, height: 15}}
+                            style={{width: ViewScale(15), height: ViewScale(15)}}
                             source={require('../../image/checkNotiTrue.png')}
                           />
                         }
                         uncheckedIcon={
                           <Image
-                            style={{width: 15, height: 15}}
+                            style={{width: ViewScale(15), height: ViewScale(15)}}
                             source={require('../../image/checkNotiFalse.png')}
                           />
                         }
@@ -828,22 +828,22 @@ class SearchMenu extends React.Component {
                       />
                       <Text
                         style={{
-                          marginLeft: 20,
-                          fontSize: 22,
+                          marginLeft: ViewScale(20),
+                          fontSize: ViewScale(22),
                           color: '#20416e',
                           width: '80%',
-                          height: 40,
-                          marginTop: 10,
+                          height: ViewScale(40),
+                          marginTop: ViewScale(10),
                         }}>
                         {title.nameen}
                       </Text>
                       <TouchableOpacity
                         style={{
-                          padding: 20,
-                          paddingLeft: 50,
+                          padding: ViewScale(20),
+                          paddingLeft: ViewScale(50),
                           position: 'absolute',
-                          top: -5,
-                          right: 0,
+                          top: ViewScale(-5),
+                          right: ViewScale(0),
                         }}
                         onPress={() => {
                           this.SelecitemHead({item: title, index: title.id});
@@ -854,7 +854,7 @@ class SearchMenu extends React.Component {
                               ? 'upcircleo'
                               : 'downcircleo'
                           }
-                          size={25}
+                          size={ViewScale(25)}
                           color="#000"
                         />
                       </TouchableOpacity>
@@ -866,7 +866,7 @@ class SearchMenu extends React.Component {
                         <View
                           style={{
                             flexDirection: 'row',
-                            paddingHorizontal: 15,
+                            paddingHorizontal: ViewScale(15),
                             backgroundColor: '#96b3cb20',
                             borderTopColor: '#c1d0dc',
                             borderTopWidth: 1,
@@ -876,13 +876,13 @@ class SearchMenu extends React.Component {
                               <Text
                                 numberOfLines={1}
                                 style={{
-                                  fontSize: 20,
+                                  fontSize: ViewScale(20),
                                   color: '#6f7d91',
-                                  marginLeft: 10,
+                                  marginLeft: ViewScale(10),
                                   width: '90%',
                                 }}>
                                 <Image
-                                  style={{width: 25, height: 15}}
+                                  style={{width: ViewScale(25), height: ViewScale(15)}}
                                   source={{
                                     uri: item.url,
                                   }}
@@ -898,13 +898,13 @@ class SearchMenu extends React.Component {
                             }}
                             checkedIcon={
                               <Image
-                                style={{width: 15, height: 15}}
+                                style={{width: ViewScale(15), height: ViewScale(15)}}
                                 source={require('../../image/checkNotiTrue.png')}
                               />
                             }
                             uncheckedIcon={
                               <Image
-                                style={{width: 15, height: 15}}
+                                style={{width: ViewScale(15), height: ViewScale(15)}}
                                 source={require('../../image/checkNotiFalse.png')}
                               />
                             }
@@ -927,20 +927,20 @@ class SearchMenu extends React.Component {
 
               <View style={Style.ViewLine}>
                 <Image
-                  style={{width: 275}}
+                  style={{width: ViewScale(275)}}
                   source={require('../../image/lineSearch2.png')}
                 />
               </View>
 
-              <View style={{marginBottom: 0}}>
-                <View style={{marginTop: 10, marginBottom: 0}}>
+              <View style={{marginBottom: ViewScale(0)}}>
+                <View style={{marginTop: ViewScale(10), marginBottom: ViewScale(0)}}>
                   <Text style={Style.TextProducts}>
                     {I18n.t('translate_goods')}
                   </Text>
                 </View>
                 <View
                   style={{
-                    marginBottom: 15,
+                    marginBottom: ViewScale(15),
                   }}
                 />
                 <View
@@ -951,7 +951,7 @@ class SearchMenu extends React.Component {
                   }>
                   <View style={Style.ViewSubSearch3}>
                     <Image
-                      style={{width: 15, height: 15}}
+                      style={{width: ViewScale(15), height: ViewScale(15)}}
                       source={
                         this.state.SeachProducts
                           ? require('../../image/searchtabtab.png')
@@ -959,12 +959,12 @@ class SearchMenu extends React.Component {
                       }
                     />
                   </View>
-                  <View style={{marginLeft: 10, width: '77%'}}>
+                  <View style={{marginLeft: ViewScale(10), width: '77%'}}>
                     <View style={{flexDirection: 'row'}}>
                       <TextInput
                         defaultValue={this.state.Coutryname}
                         style={{
-                          fontSize: 22,
+                          fontSize: ViewScale(22),
                           padding: 0,
                           width: '100%',
                           color: '#000000',
@@ -1015,13 +1015,13 @@ class SearchMenu extends React.Component {
                       {
                         flexDirection: 'row',
                         backgroundColor: '#96b3cb20',
-                        marginTop: 10,
-                        borderTopLeftRadius: 10,
-                        borderTopRightRadius: 10,
+                        marginTop: ViewScale(10),
+                        borderTopLeftRadius: ViewScale(10),
+                        borderTopRightRadius: ViewScale(10),
                       },
                       this.state.togleUserProduct[title.id] && {
-                        borderBottomRightRadius: 10,
-                        borderBottomLeftRadius: 10,
+                        borderBottomRightRadius: ViewScale(10),
+                        borderBottomLeftRadius: ViewScale(10),
                       },
                     ]}>
                     <CheckBox
@@ -1029,8 +1029,8 @@ class SearchMenu extends React.Component {
                         <Text
                           numberOfLines={1}
                           style={{
-                            marginLeft: 10,
-                            fontSize: 22,
+                            marginLeft: ViewScale(10),
+                            fontSize: ViewScale(22),
                             color: '#20416e',
                             width: '80%',
                           }}>
@@ -1043,13 +1043,13 @@ class SearchMenu extends React.Component {
                       }}
                       checkedIcon={
                         <Image
-                          style={{width: 15, height: 15}}
+                          style={{width: ViewScale(15), height: ViewScale(15)}}
                           source={require('../../image/checkNotiTrue.png')}
                         />
                       }
                       uncheckedIcon={
                         <Image
-                          style={{width: 15, height: 15}}
+                          style={{width: ViewScale(15), height: ViewScale(15)}}
                           source={require('../../image/checkNotiFalse.png')}
                         />
                       }
@@ -1067,8 +1067,8 @@ class SearchMenu extends React.Component {
                 keyExtractor={item => item.nameen}
               />
             )}
-            <View style={{marginBottom: 0}}>
-              <View style={{marginTop: 10, marginBottom: 0}}>
+            <View style={{marginBottom: ViewScale(0)}}>
+              <View style={{marginTop: ViewScale(10), marginBottom: ViewScale(0)}}>
                 <Text style={Style.TextProducts}>
                   {I18n.t('transalte_marketofinterest')}
                 </Text>
@@ -1092,11 +1092,11 @@ class SearchMenu extends React.Component {
                         ],
                       });
                     }}
-                    style={{backgroundColor: '#e7edf2', margin: 4}}>
+                    style={{backgroundColor: '#e7edf2', margin: ViewScale(4)}}>
                     <Text
                       style={{
                         color: '#20416e',
-                        fontSize: 18,
+                        fontSize: ViewScale(18),
                         textAlign: 'center',
                       }}>
                       {I18n.locale === 'th' ? data.titleth : data.title}
@@ -1104,8 +1104,8 @@ class SearchMenu extends React.Component {
                     </Text>
                     <Icon1
                       name="closecircle"
-                      size={18}
-                      style={{color: '#7C7C7C', marginTop: 6}}
+                      size={ViewScale(18)}
+                      style={{color: '#7C7C7C', marginTop: ViewScale(6)}}
                     />
                   </Chip>
                 </View>
@@ -1125,11 +1125,11 @@ class SearchMenu extends React.Component {
                       });
                       console.log('ประเทศ', this.state.Selec[data]);
                     }}
-                    style={{backgroundColor: '#e7edf2', margin: 4}}>
+                    style={{backgroundColor: '#e7edf2', margin: ViewScale(4)}}>
                     <Text
                       style={{
                         color: '#20416e',
-                        fontSize: 18,
+                        fontSize: ViewScale(18),
                         textAlign: 'center',
                       }}>
                       {data}
@@ -1137,8 +1137,8 @@ class SearchMenu extends React.Component {
                     </Text>
                     <Icon1
                       name="closecircle"
-                      size={18}
-                      style={{color: '#7C7C7C', marginTop: 6}}
+                      size={ViewScale(18)}
+                      style={{color: '#7C7C7C', marginTop: ViewScale(6)}}
                     />
                   </Chip>
                 </View>
@@ -1156,12 +1156,12 @@ class SearchMenu extends React.Component {
                       ],
                     });
                   }}
-                  style={{backgroundColor: '#e7edf2', margin: 4}}>
-                  <Text style={{color: '#20416e', fontSize: 18}}>{data} </Text>
+                  style={{backgroundColor: '#e7edf2', margin: ViewScale(4)}}>
+                  <Text style={{color: '#20416e', fontSize: ViewScale(18)}}>{data} </Text>
                   <Icon1
                     name="closecircle"
-                    size={18}
-                    style={{color: '#7C7C7C', marginTop: 6}}
+                    size={ViewScale(18)}
+                    style={{color: '#7C7C7C', marginTop: ViewScale(6)}}
                   />
                 </Chip>
               ))}

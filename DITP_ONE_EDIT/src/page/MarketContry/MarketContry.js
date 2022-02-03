@@ -28,6 +28,7 @@ import Headers from '../../components/Headers';
 import Headerstage from '../../components/Headerstage';
 import {CheckBox, Overlay} from 'react-native-elements';
 import I18n from '../../utils/I18n';
+import { ViewScale } from '../../config/ViewScale';
 import {SendBasket, DeleteBasket} from '../../actions/auth.actions';
 import {
   getMarketData,
@@ -653,12 +654,12 @@ class MarketContry extends React.Component {
           {marginTop: this.state.dataMarketData.length == 0 ? height * 0.22 : 0},
         ]}>
         {this.state.fetching_from_server ? (
-          <ActivityIndicator color="black" style={{margin: 15}} />
+          <ActivityIndicator color="black" style={{margin: ViewScale(15)}} />
         ) : (
           <View>
             {this.state.dataMarketData.length == 0 ? (
               <View style={{alignItems: 'center'}}>
-                <Text style={{fontSize: 20}}>{I18n.t('translate_Nodata')}</Text>
+                <Text style={{fontSize: ViewScale(20)}}>{I18n.t('translate_Nodata')}</Text>
               </View>
             ) : null}
           </View>
@@ -673,7 +674,7 @@ class MarketContry extends React.Component {
       <View style={Style.ViewFlatList1}>
         <View style={Style.ViewFlatList4}>
           <View style={Style.marginLeft10}>
-            <Image style={{width: 33, height: 24}} source={item.picture} />
+            <Image style={{width: ViewScale(33), height: ViewScale(24)}} source={item.picture} />
           </View>
           <View style={Style.ViewFlatList3}>
             <View style={Style.flewRow}>
@@ -692,24 +693,24 @@ class MarketContry extends React.Component {
                 </View>
                 <TouchableOpacity disabled onPress={() => console.log('VIEW')}>
                   <Image
-                    style={{width: 21, height: 13}}
+                    style={{width: ViewScale(21), height: ViewScale(13)}}
                     source={require('../../image/ViewEye.png')}
                   />
                 </TouchableOpacity>
               </View>
             </View>
           </View>
-          <View style={{right: 18, bottom: 20}}>
+          <View style={{right: ViewScale(18), bottom: ViewScale(20)}}>
             <CheckBox
               checkedIcon={
                 <Image
-                  style={{width: 30, height: 30}}
+                  style={{width: ViewScale(30), height: ViewScale(30)}}
                   source={require('../../image/PickerMarket.png')}
                 />
               }
               uncheckedIcon={
                 <Image
-                  style={{width: 30, height: 30}}
+                  style={{width: ViewScale(30), height: ViewScale(30)}}
                   source={require('../../image/shoping.png')}
                 />
               }
@@ -770,7 +771,7 @@ class MarketContry extends React.Component {
         <View style={Style.ViewFlatList4}>
           <View style={Style.marginLeft10}>
             <Image
-              style={{width: 33, height: 24, top: 6}}
+              style={{width: ViewScale(33), height: ViewScale(24), top: ViewScale(6)}}
               source={{uri: item.flag_url}}
             />
           </View>
@@ -786,7 +787,7 @@ class MarketContry extends React.Component {
                 {item.title}
               </Text>
             </View>
-            <View style={[Style.flewRow, {flex: 1, marginVertical: 10}]}>
+            <View style={[Style.flewRow, {flex: 1, marginVertical: ViewScale(10)}]}>
               <Text style={Style.fontFlatList2}>
                 {item.timeElapsed} - {item.country_name}
               </Text>
@@ -797,13 +798,13 @@ class MarketContry extends React.Component {
                   flex: 0.4,
                   alignItems: 'center',
 
-                  left: 40,
+                  left: ViewScale(40),
                 }}>
                 <View>
                   <Text
                     style={[
                       Style.fontFlatList3,
-                      {fontFamily: 'PSL-Text', top: 1},
+                      {fontFamily: 'PSL-Text', top: ViewScale(1)},
                     ]}>
                     {' '}
                     {item.view} {I18n.t('translate_View')}
@@ -811,7 +812,7 @@ class MarketContry extends React.Component {
                 </View>
                 <TouchableOpacity onPress={() => console.log('VIEW')}>
                   <Image
-                    style={{width: 21, height: 13}}
+                    style={{width: ViewScale(21), height: ViewScale(13)}}
                     source={require('../../image/eyeviewx.png')}
                   />
                 </TouchableOpacity>
@@ -822,17 +823,17 @@ class MarketContry extends React.Component {
             <CheckBox
               containerStyle={[
                 Style.basketIconContainer,
-                {top: -15, right: 10},
+                {top: ViewScale(-15), right: ViewScale(10)},
               ]}
               checkedIcon={
                 <Image
-                  style={{width: 28, height: 28}}
+                  style={{width: ViewScale(28), height: ViewScale(28)}}
                   source={require('../../image/PickerMarket.png')}
                 />
               }
               uncheckedIcon={
                 <Image
-                  style={{width: 28, height: 30}}
+                  style={{width: ViewScale(28), height: ViewScale(30)}}
                   source={require('../../image/shoping.png')}
                 />
               }
@@ -1049,7 +1050,7 @@ class MarketContry extends React.Component {
             zIndex: -1,
             backgroundColor: '#FFFFFF',
             flex: 1,
-            marginTop: Platform.OS === 'android' && 90,
+            marginTop: Platform.OS === 'android' && ViewScale(90),
           }}>
           <Headerstage nameTab={I18n.t('translate_HInter')} />
           {/* <View
@@ -1099,8 +1100,8 @@ class MarketContry extends React.Component {
             <View
               style={{
                 flexDirection: 'row',
-                paddingHorizontal: 10,
-                marginBottom: 8,
+                paddingHorizontal: ViewScale(10),
+                marginBottom: ViewScale(8),
               }}>
               <Popover
                 isVisible={this.state.closePopover}
@@ -1125,7 +1126,7 @@ class MarketContry extends React.Component {
                   opacity: 0.6,
                 }}
                 from={
-                  <View style={{zIndex: -1, flex: 1, paddingHorizontal: 5}}>
+                  <View style={{zIndex: -1, flex: 1, paddingHorizontal: ViewScale(5)}}>
                     <TouchableOpacity
                       onPress={() => {
                         this.setState({closePopover: true});
@@ -1139,7 +1140,7 @@ class MarketContry extends React.Component {
                       </View>
                       <View style={Style.Viewin2}>
                         <Icon
-                          size={15}
+                          size={ViewScale(15)}
                           name="keyboard-arrow-down"
                           style={{
                             color: '#FFFFFF',
@@ -1155,8 +1156,8 @@ class MarketContry extends React.Component {
                   <View
                     style={{
                       flexDirection: 'row',
-                      marginTop: 20,
-                      marginHorizontal: 15,
+                      marginTop: ViewScale(20),
+                      marginHorizontal: ViewScale(15),
                     }}>
                     <View style={Style.choosetime1}>
                       <RNPickerSelect
@@ -1204,14 +1205,14 @@ class MarketContry extends React.Component {
                           <View
                             style={{
                               justifyContent: 'center',
-                              height: 32,
+                              height: ViewScale(32),
                               flex: 1,
                             }}>
                             {this.state.setValueYear === undefined ||
                             this.state.setValueYear === null ? (
                               <Text
                                 style={{
-                                  fontSize: 20,
+                                  fontSize: ViewScale(20),
                                   color: '#2d6dc4',
                                   textAlign: 'center',
                                 }}>
@@ -1220,7 +1221,7 @@ class MarketContry extends React.Component {
                             ) : (
                               <Text
                                 style={{
-                                  fontSize: 20,
+                                  fontSize: ViewScale(20),
                                   color: '#2d6dc4',
                                   textAlign: 'center',
                                 }}>
@@ -1231,12 +1232,12 @@ class MarketContry extends React.Component {
                           <View
                             style={{
                               justifyContent: 'center',
-                              height: 32,
+                              height: ViewScale(32),
                               flex: 0.2,
                             }}>
                             {Platform.OS !== 'android' && (
                               <Icon
-                                size={15}
+                                size={ViewScale(15)}
                                 name="keyboard-arrow-down"
                                 style={{
                                   color: '#2d6dc4',
@@ -1257,10 +1258,10 @@ class MarketContry extends React.Component {
                         borderWidth: 0.5,
                         borderColor: '#FFFFFF',
                         backgroundColor: '#FFFFFF',
-                        height: 35,
-                        paddingHorizontal: 10,
-                        marginHorizontal: 3,
-                        borderRadius: 17,
+                        height: ViewScale(35),
+                        paddingHorizontal: ViewScale(10),
+                        marginHorizontal: ViewScale(3),
+                        borderRadius: ViewScale(17),
                         borderColor: '#2d6dc4',
                         borderWidth: 1,
                       }}>
@@ -1419,7 +1420,7 @@ class MarketContry extends React.Component {
                         <View style={{flexDirection: 'row'}}>
                           <View
                             style={{
-                              height: 32,
+                              height: ViewScale(32),
 
                               justifyContent: 'center',
                               flex: 1,
@@ -1428,7 +1429,7 @@ class MarketContry extends React.Component {
                             this.state.setValueMounth === null ? (
                               <Text
                                 style={{
-                                  fontSize: 20,
+                                  fontSize: ViewScale(20),
                                   color: '#2d6dc4',
                                   textAlign: 'center',
                                 }}>
@@ -1440,7 +1441,7 @@ class MarketContry extends React.Component {
                             ) : (
                               <Text
                                 style={{
-                                  fontSize: 20,
+                                  fontSize: ViewScale(20),
                                   color: '#2d6dc4',
                                   textAlign: 'center',
                                   borderWidth: 0,
@@ -1452,12 +1453,12 @@ class MarketContry extends React.Component {
                           <View
                             style={{
                               flex: 0.2,
-                              height: 32,
+                              height: ViewScale(32),
                               justifyContent: 'center',
                             }}>
                             {Platform.OS !== 'android' && (
                               <Icon
-                                size={15}
+                                size={ViewScale(15)}
                                 name="keyboard-arrow-down"
                                 style={{
                                   color: '#2d6dc4',
@@ -1477,10 +1478,10 @@ class MarketContry extends React.Component {
                         borderWidth: 0.5,
                         borderColor: '#FFFFFF',
                         backgroundColor: '#FFFFFF',
-                        height: 35,
-                        paddingHorizontal: 10,
-                        marginHorizontal: 3,
-                        borderRadius: 17,
+                        height: ViewScale(35),
+                        paddingHorizontal: ViewScale(10),
+                        marginHorizontal: ViewScale(3),
+                        borderRadius: ViewScale(17),
                         borderWidth: 1,
                         borderColor: '#2d6dc4',
                       }}>
@@ -1529,13 +1530,13 @@ class MarketContry extends React.Component {
                           <View
                             style={{
                               justifyContent: 'center',
-                              height: 32,
+                              height: ViewScale(32),
                               flex: 1,
                             }}>
                             {this.state.setValueDay === null ? (
                               <Text
                                 style={{
-                                  fontSize: 20,
+                                  fontSize: ViewScale(20),
                                   color: '#2d6dc4',
                                   textAlign: 'center',
                                 }}>
@@ -1545,7 +1546,7 @@ class MarketContry extends React.Component {
                             ) : (
                               <Text
                                 style={{
-                                  fontSize: 20,
+                                  fontSize: ViewScale(20),
                                   color: '#2d6dc4',
                                   textAlign: 'center',
                                 }}>
@@ -1556,12 +1557,12 @@ class MarketContry extends React.Component {
                           <View
                             style={{
                               justifyContent: 'center',
-                              height: 32,
+                              height: ViewScale(32),
                               flex: 0.2,
                             }}>
                             {Platform.OS !== 'android' && (
                               <Icon
-                                size={15}
+                                size={ViewScale(15)}
                                 name="keyboard-arrow-down"
                                 style={{
                                   color: '#2d6dc4',
@@ -1577,12 +1578,12 @@ class MarketContry extends React.Component {
                   <View
                     style={{
                       backgroundColor: '#2d6dc4',
-                      borderRadius: 17,
-                      height: 34,
+                      borderRadius: ViewScale(17),
+                      height: ViewScale(34),
                       justifyContent: 'center',
-                      marginHorizontal: 15,
-                      marginTop: 10,
-                      marginBottom: 10,
+                      marginHorizontal: ViewScale(15),
+                      marginTop: ViewScale(10),
+                      marginBottom: ViewScale(10),
                     }}>
                     <TouchableOpacity
                       onPress={() =>
@@ -1609,7 +1610,7 @@ class MarketContry extends React.Component {
                         style={{
                           textAlign: 'center',
                           color: '#FFFFFF',
-                          fontSize: 22,
+                          fontSize: ViewScale(22),
                         }}>
                         {I18n.t('transalte_Bt_sesrch')}
                       </Text>
@@ -1618,7 +1619,7 @@ class MarketContry extends React.Component {
                 </View>
               </Popover>
 
-              <View style={{zIndex: -1, flex: 1, paddingHorizontal: 5}}>
+              <View style={{zIndex: -1, flex: 1, paddingHorizontal: ViewScale(5)}}>
                 <TouchableOpacity
                   onPress={() => {
                     this.setState({
@@ -1633,7 +1634,7 @@ class MarketContry extends React.Component {
                   </View>
                   <View style={Style.Viewin2}>
                     <Icon
-                      size={15}
+                      size={ViewScale(15)}
                       name="keyboard-arrow-down"
                       style={{
                         color: '#FFFFFF',
@@ -1647,7 +1648,7 @@ class MarketContry extends React.Component {
               {/* ค้นหาประเทศ */}
 
               {/* {this.state.searchproduct === false ? ( */}
-                <View style={{zIndex: -1, flex: 1, paddingHorizontal: 5}}>
+                <View style={{zIndex: -1, flex: 1, paddingHorizontal: ViewScale(5)}}>
                   <TouchableOpacity
                     onPress={() => {
                       this.setState({
@@ -1662,7 +1663,7 @@ class MarketContry extends React.Component {
                     </View>
                     <View style={Style.Viewin2}>
                       <Icon
-                        size={15}
+                        size={ViewScale(15)}
                         name="keyboard-arrow-down"
                         style={{
                           color: '#FFFFFF',
@@ -1733,7 +1734,7 @@ class MarketContry extends React.Component {
                   ]}
                   customTickIcon
                   defaultIndex={0}
-                  containerStyle={{width: 125, height: 60}}
+                  containerStyle={{width: ViewScale(125), height: ViewScale(60)}}
                   onChangeItem={item =>
                     this.sortbyMarket(item.label, item.value)
                   }
@@ -1752,7 +1753,7 @@ class MarketContry extends React.Component {
                           <View>
                             <View style={{justifyContent: 'center'}}>
                              
-                              <Text style={{width: 1, height: 20}}> </Text>
+                              <Text style={{width: 1, height: ViewScale(20)}}> </Text>
                             </View>
 
                             <View style={Style.ViewTabSearch}>
@@ -1770,7 +1771,7 @@ class MarketContry extends React.Component {
                                 </Text>
                                 <View style={Style.ViewImgSearch}>
                                   <Image
-                                    style={{width: 13, height: 10}}
+                                    style={{width: ViewScale(13), height: ViewScale(10)}}
                                     source={require('../../image/TapSearcOne.png')}
                                   />
                                 </View>
@@ -1868,7 +1869,7 @@ class MarketContry extends React.Component {
             </View>
           )}
 
-          <View style={{flex: 1, marginHorizontal: 10}}>
+          <View style={{flex: 1, marginHorizontal: ViewScale(10)}}>
             {this.state.loading ? (
               <ActivityIndicator size="large" />
             ) : (
@@ -1949,21 +1950,21 @@ class MarketContry extends React.Component {
                 flexDirection: 'row',
                 borderWidth: 1,
                 borderColor: '#999999',
-                borderRadius: 18,
+                borderRadius: ViewScale(18),
                 //  width: width * 0.8,
                 // top: height * -0.06,
                 backgroundColor: '#FFFFFF',
               }}>
               <Image
-                style={{width: 24, height: 24, top: Platform.OS === 'ios' ? 6 : 14, marginHorizontal: 5}}
+                style={{width: ViewScale(24), height: ViewScale(24), top: Platform.OS === 'ios' ? ViewScale(6) : ViewScale(14), marginHorizontal: ViewScale(5)}}
                 source={require('../../image/searchbluex.png')}
               />
               <TextInput
                 autoCorrect={true}
                 defaultValue={this.state.Coutryname}
                 style={{
-                  fontSize: 22,
-                  height: Platform.OS === 'ios' ? 33 : 45,
+                  fontSize: ViewScale(22),
+                  height: Platform.OS === 'ios' ? ViewScale(33) : ViewScale(45),
                   width: '100%',
                   color: '#000000',
                   fontFamily: 'Kittithada Bold 75',
@@ -1988,21 +1989,21 @@ class MarketContry extends React.Component {
                     {
                       flexDirection: 'row',
                       backgroundColor: '#e7edf2',
-                      marginTop: 10,
-                      borderTopLeftRadius: 10,
-                      borderTopRightRadius: 10,
+                      marginTop: ViewScale(10),
+                      borderTopLeftRadius: ViewScale(10),
+                      borderTopRightRadius: ViewScale(10),
                     },
                     this.state.togleUser[title.id] && {
-                      borderBottomRightRadius: 10,
-                      borderBottomLeftRadius: 10,
+                      borderBottomRightRadius: ViewScale(10),
+                      borderBottomLeftRadius: ViewScale(10),
                     },
                   ]}>
                   <CheckBox
                     title={
                       <Text
                         style={{
-                          marginLeft: 10,
-                          fontSize: 22,
+                          marginLeft: ViewScale(10),
+                          fontSize: ViewScale(22),
                           color: '#20416e',
                           width: '100%',
                         }}>
@@ -2015,7 +2016,7 @@ class MarketContry extends React.Component {
                     }}
                     checkedIcon={
                       <Image
-                        style={{width: 24, height: 24}}
+                        style={{width: ViewScale(24), height: ViewScale(24)}}
                         source={require('../../image/rrr.png')}
                       />
                     }
@@ -2023,10 +2024,10 @@ class MarketContry extends React.Component {
                       <View
                         style={{
                           borderWidth: 1,
-                          width: 24,
-                          height: 24,
+                          width: ViewScale(24),
+                          height: ViewScale(24),
                           borderColor: '#999999',
-                          borderRadius: 3.4,
+                          borderRadius: ViewScale(3.4),
                           backgroundColor: '#FFFFFF',
                         }}
                       />
@@ -2042,19 +2043,19 @@ class MarketContry extends React.Component {
                   />
                   <Text
                     style={{
-                      marginLeft: 20,
-                      fontSize: 20,
+                      marginLeft: ViewScale(20),
+                      fontSize: ViewScale(20),
                       color: '#20416e',
                       width: '80%',
-                      height: 35,
-                      marginTop: 10,
+                      height: ViewScale(35),
+                      marginTop: ViewScale(10),
                     }}>
                     {title.nameen}
                   </Text>
                   <TouchableOpacity
                     style={{
-                      padding: 15,
-                      paddingLeft: 50,
+                      padding: ViewScale(15),
+                      paddingLeft: ViewScale(50),
                       position: 'absolute',
                       top: -5,
                       right: 0,
@@ -2070,7 +2071,7 @@ class MarketContry extends React.Component {
                           ? 'upcircleo'
                           : 'downcircleo'
                       }
-                      size={25}
+                      size={ViewScale(25)}
                       color="#73838f"
                     />
                   </TouchableOpacity>
@@ -2082,7 +2083,7 @@ class MarketContry extends React.Component {
                     <View
                       style={{
                         flexDirection: 'row',
-                        paddingHorizontal: 15,
+                        paddingHorizontal: ViewScale(15),
                         backgroundColor: '#96b3cb20',
                         borderTopColor: '#c1d0dc',
                         borderTopWidth: 1,
@@ -2093,13 +2094,13 @@ class MarketContry extends React.Component {
                           <Text
                             numberOfLines={1}
                             style={{
-                              fontSize: 20,
+                              fontSize: ViewScale(20),
                               color: '#6f7d91',
-                              marginLeft: 10,
+                              marginLeft: ViewScale(10),
                               width: '90%',
                             }}>
                             <Image
-                              style={{width: 25, height: 15}}
+                              style={{width: ViewScale(25), height: ViewScale(15)}}
                               source={{
                                 uri: item.url,
                               }}
@@ -2113,7 +2114,7 @@ class MarketContry extends React.Component {
                         }}
                         checkedIcon={
                           <Image
-                            style={{width: 24, height: 24}}
+                            style={{width: ViewScale(24), height: ViewScale(24)}}
                             source={require('../../image/rrr.png')}
                           />
                         }
@@ -2121,10 +2122,10 @@ class MarketContry extends React.Component {
                           <View
                             style={{
                               borderWidth: 1,
-                              width: 24,
-                              height: 24,
+                              width: ViewScale(24),
+                              height: ViewScale(24),
                               borderColor: '#999999',
-                              borderRadius: 3.4,
+                              borderRadius: ViewScale(3.4),
                               backgroundColor: '#FFFFFF',
                             }}
                           />
@@ -2174,15 +2175,15 @@ class MarketContry extends React.Component {
               }}
               style={{
                 backgroundColor: '#2d6dc4',
-                height: 40,
-                borderRadius: 24,
+                height: ViewScale(40),
+                borderRadius: ViewScale(24),
                 justifyContent: 'center',
               }}>
               <Text
                 style={{
                   color: '#FFFF',
                   textAlign: 'center',
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                 }}>
                 {I18n.t('transalte_Searchcontinents')}
               </Text>
@@ -2206,19 +2207,19 @@ class MarketContry extends React.Component {
                 flexDirection: 'row',
                 borderWidth: 1,
                 borderColor: '#999999',
-                borderRadius: 18,
+                borderRadius: ViewScale(18),
                 backgroundColor: '#FFFFFF',
               }}>
               <Image
-                style={{width: 24, height: 24, top:  Platform.OS === 'ios' ? 6 : 14, marginHorizontal: 5}}
+                style={{width: ViewScale(24), height: ViewScale(24), top:  Platform.OS === 'ios' ? ViewScale(6) : ViewScale(14), marginHorizontal: ViewScale(5)}}
                 source={require('../../image/searchbluex.png')}
               />
               <TextInput
                 autoCorrect={true}
                 defaultValue={this.state.Product}
                 style={{
-                  fontSize: 20,
-                  height: Platform.OS === 'ios' ? 33 : 45,
+                  fontSize: ViewScale(20),
+                  height: Platform.OS === 'ios' ? ViewScale(33) : ViewScale(45),
                   width: '100%',
                   color: '#000000',
                   fontFamily: 'Kittithada Bold 75',
@@ -2244,21 +2245,21 @@ class MarketContry extends React.Component {
                       {
                         flexDirection: 'row',
                         backgroundColor: '#96b3cb20',
-                        marginTop: 10,
-                        borderTopLeftRadius: 10,
-                        borderTopRightRadius: 10,
+                        marginTop: ViewScale(10),
+                        borderTopLeftRadius: ViewScale(10),
+                        borderTopRightRadius: ViewScale(10),
                       },
                       this.state.togleUserProduct[title.id] && {
-                        borderBottomRightRadius: 10,
-                        borderBottomLeftRadius: 10,
+                        borderBottomRightRadius: ViewScale(10),
+                        borderBottomLeftRadius: ViewScale(10),
                       },
                     ]}>
                     <CheckBox
                       title={
                         <Text
                           style={{
-                            marginLeft: 10,
-                            fontSize: 22,
+                            marginLeft: ViewScale(10),
+                            fontSize: ViewScale(22),
                             color: '#20416e',
                             width: '100%',
                           }}>
@@ -2271,7 +2272,7 @@ class MarketContry extends React.Component {
                       }}
                       checkedIcon={
                         <Image
-                          style={{width: 24, height: 24}}
+                          style={{width: ViewScale(24), height: ViewScale(24)}}
                           source={require('../../image/rrr.png')}
                         />
                       }
@@ -2279,10 +2280,10 @@ class MarketContry extends React.Component {
                         <View
                           style={{
                             borderWidth: 1,
-                            width: 24,
-                            height: 24,
+                            width: ViewScale(24),
+                            height: ViewScale(24),
                             borderColor: '#999999',
-                            borderRadius: 3.4,
+                            borderRadius: ViewScale(3.4),
                             backgroundColor: '#FFFFFF',
                           }}
                         />
@@ -2304,7 +2305,7 @@ class MarketContry extends React.Component {
                     <View
                       style={{
                         flexDirection: 'row',
-                        paddingHorizontal: 15,
+                        paddingHorizontal: ViewScale(15),
                         backgroundColor: '#96b3cb20',
                         borderTopColor: '#c1d0dc',
                         borderTopWidth: 1,
@@ -2340,15 +2341,15 @@ class MarketContry extends React.Component {
               }}
               style={{
                 backgroundColor: '#2d6dc4',
-                height: 40,
-                borderRadius: 24,
+                height: ViewScale(40),
+                borderRadius: ViewScale(24),
                 justifyContent: 'center',
               }}>
               <Text
                 style={{
                   color: '#FFFF',
                   textAlign: 'center',
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                 }}>
                 {I18n.t('transalte_search_product')}
               </Text>
@@ -2361,24 +2362,24 @@ class MarketContry extends React.Component {
 }
 const pickerSelectStyles2 = StyleSheet.create({
   inputIOS: {
-    fontSize: 18,
+    fontSize: ViewScale(18),
     color: '#c0c0c0',
     paddingHorizontal: 1,
     justifyContent: 'center',
-    paddingTop: Platform.OS === 'ios' ? 2 : -3,
-    paddingBottom: 5,
-    height: 40,
+    paddingTop: Platform.OS === 'ios' ? ViewScale(2) : ViewScale(-3),
+    paddingBottom: ViewScale(5),
+    height: ViewScale(40),
   },
   inputAndroid: {
-    height: 40,
-    fontSize: 23,
+    height: ViewScale(40),
+    fontSize: ViewScale(23),
     color: '#c0c0c0',
     fontWeight: 'normal',
     fontFamily: 'PSL Kittithada Pro',
     width: '100%',
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    paddingRight: 70,
+    paddingHorizontal: ViewScale(10),
+    paddingVertical: ViewScale(8),
+    paddingRight: ViewScale(70),
   },
 });
 const mapStateToProps = state => ({

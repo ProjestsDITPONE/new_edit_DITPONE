@@ -25,6 +25,7 @@ import Icon3 from 'react-native-vector-icons/AntDesign';
 import {CheckBox} from 'react-native-elements';
 import RBSheet from 'react-native-raw-bottom-sheet';
 import I18n from '../../utils/I18n';
+import { ViewScale } from '../../config/ViewScale';
 import {
   getRegion,
   SeachRegion,
@@ -353,7 +354,7 @@ class NewSettingContry extends React.Component {
         behavior={Platform.OS == 'ios' ? 'padding' : 'position'}
         contentContainerStyle={Style.flex1}
         style={Style.flex1}>
-        <ScrollView style={{marginBottom: 20}}>
+        <ScrollView style={{marginBottom: ViewScale(20)}}>
           <View
             style={{
               // width: width,
@@ -363,7 +364,7 @@ class NewSettingContry extends React.Component {
               // paddingHorizontal: 45,
             }}>
             <View style={[Style.ViewLine, {}]}>
-              <View style={{marginBottom: 10}}>
+              <View style={{marginBottom: ViewScale(10)}}>
                 {/* <Text style={[Style.TextCountry]}>
                   {I18n.t('translate_Mybas')}
                 </Text> */}
@@ -387,14 +388,14 @@ class NewSettingContry extends React.Component {
                       ],
                     });
                   }}
-                  style={{backgroundColor: '#e7edf2', marginHorizontal: 2,marginBottom:5}}>
-                  <Text style={{color: '#20416e', fontSize: 18}}>
+                  style={{backgroundColor: '#e7edf2', marginHorizontal: ViewScale(2),marginBottom:ViewScale(5)}}>
+                  <Text style={{color: '#20416e', fontSize: ViewScale(18)}}>
                     {I18n.locale ==='th'? data.titleth : data.title} {'  '}
                   </Text>
                   <Icon1
                     name="closecircle"
-                    size={18}
-                    style={{color: '#7C7C7C', marginTop: 6}}
+                    size={ViewScale(18)}
+                    style={{color: '#7C7C7C', marginTop: ViewScale(6)}}
                   />
                 </Chip>
               ))}
@@ -411,14 +412,14 @@ class NewSettingContry extends React.Component {
                       ],
                     });
                   }}
-                  style={{backgroundColor: '#e7edf2', marginHorizontal: 2,marginBottom:5}}>
-                  <Text style={{color: '#20416e', fontSize: 18}}>
+                  style={{backgroundColor: '#e7edf2', marginHorizontal: ViewScale(2),marginBottom:ViewScale(5)}}>
+                  <Text style={{color: '#20416e', fontSize: ViewScale(18)}}>
                     {data} {'  '}{' '}
                   </Text>
                   <Icon1
                     name="closecircle"
-                    size={18}
-                    style={{color: '#7C7C7C', marginTop: 6}}
+                    size={ViewScale(18)}
+                    style={{color: '#7C7C7C', marginTop: ViewScale(6)}}
                   />
                 </Chip>
               ))}
@@ -435,14 +436,14 @@ class NewSettingContry extends React.Component {
                       ],
                     });
                   }}
-                  style={{backgroundColor: '#e7edf2', marginHorizontal: 2,marginBottom:5}}>
-                  <Text style={{color: '#20416e', fontSize: 18}}>
+                  style={{backgroundColor: '#e7edf2', marginHorizontal: ViewScale(2),marginBottom:ViewScale(5)}}>
+                  <Text style={{color: '#20416e', fontSize: ViewScale(18)}}>
                     {data} {'  '}{' '}
                   </Text>
                   <Icon1
                     name="closecircle"
-                    size={18}
-                    style={{color: '#7C7C7C', marginTop: 6}}
+                    size={ViewScale(18)}
+                    style={{color: '#7C7C7C', marginTop: ViewScale(6)}}
                   />
                 </Chip>
               ))}
@@ -455,8 +456,8 @@ class NewSettingContry extends React.Component {
                   <Text
                     style={{
                       color: '#f96145',
-                      fontSize: 20,
-                      marginBottom: 15,
+                      fontSize: ViewScale(20),
+                      marginBottom: ViewScale(15),
                       textAlign: 'center',
                     }}>
                
@@ -470,12 +471,12 @@ class NewSettingContry extends React.Component {
                 borderColor: '#c1d0dc',
                 borderWidth: 0.5,
                 flex: 1,
-                height: 0.2,
+                height: ViewScale(0.2),
               }}
             />
 
-            <View style={{paddingHorizontal: '13%', marginTop: 15}}>
-              <View style={{marginBottom: 10}}>
+            <View style={{paddingHorizontal: '13%', marginTop: ViewScale(15)}}>
+              <View style={{marginBottom: ViewScale(10)}}>
                 <Text style={Style.TextCountry}>
                   {I18n.t('translate_COUNTRY')}
                 </Text>
@@ -488,21 +489,21 @@ class NewSettingContry extends React.Component {
                 }>
                 <View
                   style={{
-                    marginTop: 8,
-                    marginLeft: 15,
+                    marginTop: ViewScale(8),
+                    marginLeft: ViewScale(15),
                     backgroundColor: 'transparent',
                   }}>
                   <Image
-                    style={{width: 15, height: 15, marginTop: -2}}
+                    style={{width: ViewScale(15), height: ViewScale(15), marginTop: ViewScale(-2)}}
                     source={require('../../image/searchtabtab.png')}
                   />
-                  <View style={{marginLeft: 25, width: '100%', marginTop: -21}}>
+                  <View style={{marginLeft: ViewScale(25), width: '100%', marginTop: ViewScale(-21)}}>
                     <TouchableOpacity
                       style={{
                         flexDirection: 'row',
 
-                        width: 200,
-                        height: 25,
+                        width: ViewScale(200),
+                        height: ViewScale(25),
                       }}
                       onPress={() => {
                         this.setState({
@@ -510,13 +511,13 @@ class NewSettingContry extends React.Component {
                           checkFocus1: true,
                         });
                       }}>
-                      <Text style={{color: '#999999', fontSize: 20}}>
+                      <Text style={{color: '#999999', fontSize: ViewScale(20)}}>
                         {I18n.t('translate_Seachcontry')}
                       </Text>
 
                       {searchTerm != '' && (
                         <TouchableOpacity
-                          hitSlop={{left: 50}}
+                          hitSlop={{left: ViewScale(50)}}
                           onPress={() => this.setState({searchTerm: ''})}>
                           {/* <Icon4
                             name="x"
@@ -551,13 +552,13 @@ class NewSettingContry extends React.Component {
                     flexDirection: 'row',
                     borderWidth: 1,
                     borderColor: '#999999',
-                    borderRadius: 18,
+                    borderRadius: ViewScale(18),
                     //  width: width * 0.8,
                     // top: height * -0.06,
                     backgroundColor: '#FFFFFF',
                   }}>
                   <Image
-                    style={{width: 24, height: 24, top:Platform.OS === 'ios'?6:14, marginHorizontal: 5}}
+                    style={{width: ViewScale(24), height: ViewScale(24), top:Platform.OS === 'ios'?ViewScale(6):ViewScale(14), marginHorizontal: ViewScale(5)}}
                     source={require('../../image/searchbluex.png')}
                   />
                   
@@ -565,8 +566,8 @@ class NewSettingContry extends React.Component {
                     autoCorrect={true}
                     defaultValue={this.state.Coutryname}
                     style={{
-                      fontSize: 22,
-                      height: Platform.OS === 'ios' ? 33 : 45,
+                      fontSize: ViewScale(22),
+                      height: Platform.OS === 'ios' ? ViewScale(33) : ViewScale(45),
                       width: '100%',
                       color: '#000000',
                       fontFamily: 'Kittithada Bold 75',
@@ -592,21 +593,21 @@ class NewSettingContry extends React.Component {
                         {
                           flexDirection: 'row',
                           backgroundColor: '#e7edf2',
-                          marginTop: 10,
-                          borderTopLeftRadius: 10,
-                          borderTopRightRadius: 10,
+                          marginTop: ViewScale(10),
+                          borderTopLeftRadius: ViewScale(10),
+                          borderTopRightRadius: ViewScale(10),
                         },
                         this.state.togleUser[title.id] && {
-                          borderBottomRightRadius: 10,
-                          borderBottomLeftRadius: 10,
+                          borderBottomRightRadius: ViewScale(10),
+                          borderBottomLeftRadius: ViewScale(10),
                         },
                       ]}>
                       <CheckBox
                         title={
                           <Text
                             style={{
-                              marginLeft: 10,
-                              fontSize: 22,
+                              marginLeft: ViewScale(10),
+                              fontSize: ViewScale(22),
                               color: '#20416e',
                               width: '100%',
                             }}>
@@ -619,7 +620,7 @@ class NewSettingContry extends React.Component {
                         }}
                         checkedIcon={
                           <Image
-                            style={{width: 24, height: 24}}
+                            style={{width: ViewScale(24), height: ViewScale(24)}}
                             source={require('../../image/rrr.png')}
                           />
                         }
@@ -627,10 +628,10 @@ class NewSettingContry extends React.Component {
                           <View
                             style={{
                               borderWidth: 1,
-                              width: 24,
-                              height: 24,
+                              width: ViewScale(24),
+                              height: ViewScale(24),
                               borderColor: '#999999',
-                              borderRadius: 3.4,
+                              borderRadius: ViewScale(3.4),
                               backgroundColor: '#FFFFFF',
                             }}
                           />
@@ -646,19 +647,19 @@ class NewSettingContry extends React.Component {
                       />
                       <Text
                         style={{
-                          marginLeft: 20,
-                          fontSize: 20,
+                          marginLeft: ViewScale(20),
+                          fontSize: ViewScale(20),
                           color: '#20416e',
                           width: '80%',
-                          height: 35,
-                          marginTop: 10,
+                          height: ViewScale(35),
+                          marginTop: ViewScale(10),
                         }}>
                         {I18n.locale === 'th'? title.name_th:title.name}
                       </Text>
                       <TouchableOpacity
                         style={{
-                          padding: 15,
-                          paddingLeft: 50,
+                          padding: ViewScale(15),
+                          paddingLeft: ViewScale(50),
                           position: 'absolute',
                           top: -5,
                           right: 0,
@@ -674,7 +675,7 @@ class NewSettingContry extends React.Component {
                               ? 'upcircleo'
                               : 'downcircleo'
                           }
-                          size={25}
+                          size={ViewScale(25)}
                           color="#73838f"
                         />
                       </TouchableOpacity>
@@ -686,7 +687,7 @@ class NewSettingContry extends React.Component {
                         <View
                           style={{
                             flexDirection: 'row',
-                            paddingHorizontal: 15,
+                            paddingHorizontal: ViewScale(15),
                             backgroundColor: '#96b3cb20',
                             borderTopColor: '#c1d0dc',
                             borderTopWidth: 1,
@@ -697,13 +698,13 @@ class NewSettingContry extends React.Component {
                               <Text
                                 numberOfLines={1}
                                 style={{
-                                  fontSize: 20,
+                                  fontSize: ViewScale(20),
                                   color: '#6f7d91',
-                                  marginLeft: 10,
+                                  marginLeft: ViewScale(10),
                                   width: '90%',
                                 }}>
                                 <Image
-                                  style={{width: 25, height: 15}}
+                                  style={{width: ViewScale(25), height: ViewScale(15)}}
                                   source={{
                                     uri: item.url,
                                   }}
@@ -717,7 +718,7 @@ class NewSettingContry extends React.Component {
                             }}
                             checkedIcon={
                               <Image
-                                style={{width: 24, height: 24}}
+                                style={{width: ViewScale(24), height: ViewScale(24)}}
                                 source={require('../../image/rrr.png')}
                               />
                             }
@@ -725,10 +726,10 @@ class NewSettingContry extends React.Component {
                               <View
                                 style={{
                                   borderWidth: 1,
-                                  width: 24,
-                                  height: 24,
+                                  width: ViewScale(24),
+                                  height: ViewScale(24),
                                   borderColor: '#999999',
-                                  borderRadius: 3.4,
+                                  borderRadius: ViewScale(3.4),
                                   backgroundColor: '#FFFFFF',
                                 }}
                               />
@@ -760,15 +761,15 @@ class NewSettingContry extends React.Component {
                   }}
                   style={{
                     backgroundColor: '#2d6dc4',
-                    height: 40,
-                    borderRadius: 24,
+                    height: ViewScale(40),
+                    borderRadius: ViewScale(24),
                     justifyContent: 'center',
                   }}>
                   <Text
                     style={{
                       color: '#FFFF',
                       textAlign: 'center',
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                     }}>
                     {I18n.locale ==='th'? 'บันทึก':'save'}
                   </Text>
@@ -776,15 +777,15 @@ class NewSettingContry extends React.Component {
               </Overlay>
             )}
 
-            <View style={{paddingHorizontal: 25}}>
+            <View style={{paddingHorizontal: ViewScale(25)}}>
               {/* <Image
                 style={{width: 275}}
                 source={require('../../image/lineSearch2.png')}
               /> */}
             </View>
 
-            <View style={{paddingHorizontal: '13%', marginTop: 15}}>
-              <View style={{marginBottom: 10}}>
+            <View style={{paddingHorizontal: '13%', marginTop: ViewScale(15)}}>
+              <View style={{marginBottom: ViewScale(10)}}>
                 <Text style={Style.TextCountry}>
                   {' '}
                   {I18n.t('translate_PRODUCTS')}
@@ -793,22 +794,22 @@ class NewSettingContry extends React.Component {
               <View style={Style.ViewSubSearch88}>
                 <View
                   style={{
-                    marginTop: 8,
-                    marginLeft: 15,
+                    marginTop: ViewScale(8),
+                    marginLeft: ViewScale(15),
                     backgroundColor: 'transparent',
                   }}>
                   <Image
-                    style={{width: 15, height: 15, marginTop: -2}}
+                    style={{width: ViewScale(15), height: ViewScale(15), marginTop: ViewScale(-2)}}
                     source={require('../../image/searchtabtab.png')}
                   />
-                  <View style={{marginLeft: 25, width: '80%', marginTop: -21}}>
+                  <View style={{marginLeft: ViewScale(25), width: '80%', marginTop: ViewScale(-21)}}>
                   
                     <TouchableOpacity
                       style={{
                         flexDirection: 'row',
 
-                        width: 200,
-                        height: 25,
+                        width: ViewScale(200),
+                        height: ViewScale(25),
                       }}
                       onPress={() => {
                         // console.log('OOOOKOKO');
@@ -817,12 +818,12 @@ class NewSettingContry extends React.Component {
                           checkFocus2: true,
                         });
                       }}>
-                      <Text style={{color: '#999999', fontSize: 20}}>
+                      <Text style={{color: '#999999', fontSize: ViewScale(20)}}>
                         {I18n.t('translate_Seachcontry')}
                       </Text>
                       {searchTermProduct != '' && (
                         <TouchableOpacity
-                          hitSlop={{left: 50}}
+                          hitSlop={{left: ViewScale(50)}}
                           onPress={() =>
                             this.setState({searchTermProduct: ''})
                           }>
@@ -842,7 +843,7 @@ class NewSettingContry extends React.Component {
                   top: height * 0.045,
                   height: height * 0.7,
                   width: width * 0.8,
-                  borderRadius: 8,
+                  borderRadius: ViewScale(8),
                 }}
                 isVisible={this.state.checkFocus2}
                 onBackdropPress={() => this.setState({checkFocus2: false})}>
@@ -855,15 +856,15 @@ class NewSettingContry extends React.Component {
                     backgroundColor: '#FFFFFF',
                   }}>
                   <Image
-                    style={{width: 24, height: 24, top: Platform.OS === 'ios' ? 6 : 14, marginHorizontal: 5}}
+                    style={{width: ViewScale(24), height: ViewScale(24), top: Platform.OS === 'ios' ? ViewScale(6) : ViewScale(14), marginHorizontal: ViewScale(5)}}
                     source={require('../../image/searchbluex.png')}
                   />
                   <TextInput
                     autoCorrect={true}
                     defaultValue={this.state.Product}
                     style={{
-                      fontSize: 20,
-                      height: Platform.OS === 'ios' ? 33 : 45,
+                      fontSize: ViewScale(20),
+                      height: Platform.OS === 'ios' ? ViewScale(33) : ViewScale(45),
                       width: '100%',
                       color: '#000000',
                       fontFamily: 'Kittithada Bold 75',
@@ -890,21 +891,21 @@ class NewSettingContry extends React.Component {
                             {
                               flexDirection: 'row',
                               backgroundColor: '#96b3cb20',
-                              marginTop: 10,
-                              borderTopLeftRadius: 10,
-                              borderTopRightRadius: 10,
+                              marginTop: ViewScale(10),
+                              borderTopLeftRadius: ViewScale(10),
+                              borderTopRightRadius: ViewScale(10),
                             },
                             this.state.togleUserProduct[title.id] && {
-                              borderBottomRightRadius: 10,
-                              borderBottomLeftRadius: 10,
+                              borderBottomRightRadius: ViewScale(10),
+                              borderBottomLeftRadius: ViewScale(10),
                             },
                           ]}>
                           <CheckBox
                             title={
                               <Text
                                 style={{
-                                  marginLeft: 10,
-                                  fontSize: 22,
+                                  marginLeft: ViewScale(10),
+                                  fontSize: ViewScale(22),
                                   color: '#20416e',
                                   width: '100%',
                                 }}>
@@ -918,7 +919,7 @@ class NewSettingContry extends React.Component {
                             }}
                             checkedIcon={
                               <Image
-                                style={{width: 24, height: 24}}
+                                style={{width: ViewScale(24), height: ViewScale(24)}}
                                 source={require('../../image/rrr.png')}
                               />
                             }
@@ -926,10 +927,10 @@ class NewSettingContry extends React.Component {
                               <View
                                 style={{
                                   borderWidth: 1,
-                                  width: 24,
-                                  height: 24,
+                                  width: ViewScale(24),
+                                  height: ViewScale(24),
                                   borderColor: '#999999',
-                                  borderRadius: 3.4,
+                                  borderRadius: ViewScale(3.4),
                                   backgroundColor: '#FFFFFF',
                                 }}
                               />
@@ -952,7 +953,7 @@ class NewSettingContry extends React.Component {
                         <View
                           style={{
                             flexDirection: 'row',
-                            paddingHorizontal: 15,
+                            paddingHorizontal: ViewScale(15),
                             backgroundColor: '#96b3cb20',
                             borderTopColor: '#c1d0dc',
                             borderTopWidth: 1,
@@ -970,15 +971,15 @@ class NewSettingContry extends React.Component {
                   }}
                   style={{
                     backgroundColor: '#2d6dc4',
-                    height: 40,
-                    borderRadius: 24,
+                    height: ViewScale(40),
+                    borderRadius: ViewScale(24),
                     justifyContent: 'center',
                   }}>
                   <Text
                     style={{
                       color: '#FFFF',
                       textAlign: 'center',
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                     }}>
                     {I18n.t('translate_Bt_save')}
                   </Text>
@@ -995,13 +996,13 @@ class NewSettingContry extends React.Component {
           <TouchableOpacity
             style={{
               flex: 1,
-              height: 35,
+              height: ViewScale(35),
               backgroundColor: '#2d6dc4',
               justifyContent: 'center',
-              borderRadius: 24,
-              marginHorizontal: 40,
-              marginTop: 55,
-              marginBottom: 15,
+              borderRadius: ViewScale(24),
+              marginHorizontal: ViewScale(40),
+              marginTop: ViewScale(55),
+              marginBottom: ViewScale(15),
             }}
             onPress={() => {
               // if (this.state.check) {
@@ -1058,7 +1059,7 @@ class NewSettingContry extends React.Component {
             }}>
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
 
                 textAlign: 'center',
 

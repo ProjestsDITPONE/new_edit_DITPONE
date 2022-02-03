@@ -2122,7 +2122,7 @@ class AnalyzeAi extends React.Component {
                        style={Styles.fromTouchableOpacity}>
                        <View style={Styles.view1}>
                          <View style={Styles.view2}>
-                           <Text style={Styles.viewtext3}>{I18n.t('transalte_period_time')}</Text>
+                           <Text style={Styles.viewtext3}>{I18n.t('')}</Text>
                          </View>
    
                          {/* <View style={Styles.viewivon4}>

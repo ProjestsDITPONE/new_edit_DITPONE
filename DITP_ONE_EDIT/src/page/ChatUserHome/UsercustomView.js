@@ -17,6 +17,7 @@ import {Actions} from 'react-native-router-flux';
 import RNFetchBlob from 'rn-fetch-blob';
 import {connect} from 'react-redux';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {ViewScale} from '../../config/ViewScale'
 
 
 class UsercustomView extends React.Component {
@@ -55,30 +56,30 @@ class UsercustomView extends React.Component {
                 <View
                   style={{
                     backgroundColor: 'red',
-                    width: 260,
+                    width: ViewScale(260),
                     height: null,
              
-                    borderRadius: 8,
+                    borderRadius: ViewScale(8),
 
                     flex: 1,
-                    marginHorizontal: 4,
-                    marginTop: 5,
-                    marginBottom: 10,
+                    marginHorizontal: ViewScale(4),
+                    marginTop: ViewScale(5),
+                    marginBottom: ViewScale(10),
                   }}>
                   <View>
                     <Image
                       resizeMode={'contain'}
                       style={{
-                        width: 260,
-                        height: 160,
-                        borderRadius: 13,
-                        marginHorizontal: 0,
+                        width: ViewScale(260),
+                        height: ViewScale(160),
+                        borderRadius: ViewScale(13),
+                        marginHorizontal: ViewScale(0),
                       }}
                       source={{uri: item.image_url}}
                     />
                     <Text
                       style={{
-                        fontSize: 19,
+                        fontSize: ViewScale(19),
                     
                         textAlign: 'center',
                         fontFamily: 'PSL Kittithada Pro',
@@ -91,10 +92,10 @@ class UsercustomView extends React.Component {
                       style={{
                         fontFamily: 'PSL Kittithada Pro',
                       
-                        fontSize: 19,
+                        fontSize: ViewScale(19),
                     
                         textAlign: 'center',
-                        marginHorizontal: 20,
+                        marginHorizontal: ViewScale(20),
                         color: '#4d4d4d',
                       }}>
                       {item.subtitle}
@@ -116,11 +117,11 @@ class UsercustomView extends React.Component {
                             }}
                             style={{
                               borderWidth: 1,
-                              marginHorizontal: 45,
-                              borderRadius: 10,
-                              marginBottom: 15,
-                              marginTop: 5,
-                              height: 30,
+                              marginHorizontal: ViewScale(45),
+                              borderRadius: ViewScale(10),
+                              marginBottom: ViewScale(15),
+                              marginTop: ViewScale(5),
+                              height: ViewScale(30),
                               justifyContent: 'center',
                               borderColor: '#e7e7e7',
                               backgroundColor: '#e7e7e7',
@@ -128,10 +129,10 @@ class UsercustomView extends React.Component {
                             <Text
                               numberOfLines={2}
                               style={{
-                                fontSize: 19,
+                                fontSize: ViewScale(19),
                             
                                 textAlign: 'center',
-                                marginHorizontal: 20,
+                                marginHorizontal: ViewScale(20),
                                 color: '#4d4d4d',
                               }}>
                               {data.title}
@@ -149,18 +150,18 @@ class UsercustomView extends React.Component {
           <View>
             <Text
               style={{
-                borderRadius: 10,
-                marginBottom: 10,
-                marginTop: 5,
+                borderRadius: ViewScale(10),
+                marginBottom: ViewScale(10),
+                marginTop: ViewScale(5),
                 height: null,
                 justifyContent: 'center',
                 fontFamily: 'PSL Kittithada Pro',
               
 
-                fontSize: 19,
+                fontSize: ViewScale(19),
             
                 textAlign: 'left',
-                marginHorizontal: 15,
+                marginHorizontal: ViewScale(15),
                 color: '#4d4d4d',
               }}>
               {this.props.currentMessage.imageList.text} 
@@ -183,11 +184,11 @@ class UsercustomView extends React.Component {
                   }}
                   style={{
                     borderWidth: 1,
-                    marginHorizontal: 45,
-                    borderRadius: 10,
-                    marginBottom: 10,
-                    marginTop: 1,
-                    height: 30,
+                    marginHorizontal: ViewScale(45),
+                    borderRadius: ViewScale(10),
+                    marginBottom: ViewScale(10),
+                    marginTop: ViewScale(1),
+                    height: ViewScale(30),
                     justifyContent: 'center',
                     borderColor: '#FFF',
                     backgroundColor: '#FFF',
@@ -195,10 +196,10 @@ class UsercustomView extends React.Component {
                   <Text
                     numberOfLines={2}
                     style={{
-                      fontSize: 19,
+                      fontSize: ViewScale(19),
                   
                       textAlign: 'center',
-                      marginHorizontal: 20,
+                      marginHorizontal: ViewScale(20),
                       color: '#4d4d4d',
                       fontFamily: 'PSL Kittithada Pro',
                     
@@ -212,7 +213,7 @@ class UsercustomView extends React.Component {
            
             </View>
             {this.props.currentMessage.dataquick_replies !== undefined ?(
-            <View style={{marginHorizontal: 30}} >
+            <View style={{marginHorizontal: ViewScale(30)}} >
               {this.props.currentMessage.dataquick_replies.map(data =>{
                 return(
                   <View style={{}}>
@@ -231,11 +232,11 @@ class UsercustomView extends React.Component {
                   }}
                   style={{
                     borderWidth: 1,
-                    marginHorizontal: 15,
-                    borderRadius: 10,
-                    marginBottom: 5,
-                    marginTop: 5,
-                    height: 30,
+                    marginHorizontal: ViewScale(15),
+                    borderRadius: ViewScale(10),
+                    marginBottom: ViewScale(5),
+                    marginTop: ViewScale(5),
+                    height: ViewScale(30),
                     justifyContent: 'center',
                     borderColor: '#1A4797',
                     backgroundColor: '#FFF',
@@ -243,10 +244,10 @@ class UsercustomView extends React.Component {
                   <Text
                     numberOfLines={2}
                     style={{
-                      fontSize: 19,
+                      fontSize: ViewScale(19),
                   
                       textAlign: 'center',
-                      marginHorizontal: 20,
+                      marginHorizontal: ViewScale(20),
                       color: '#1A4797',
                       fontFamily: 'PSL Kittithada Pro',
                      
@@ -274,17 +275,17 @@ class UsercustomView extends React.Component {
       flexWrap: 'wrap',}}>
         <Text
           style={{
-            borderRadius: 10,
-            marginBottom: 10,
-            marginTop: 5,
+            borderRadius: ViewScale(10),
+            marginBottom: ViewScale(10),
+            marginTop: ViewScale(5),
             height: null,
             justifyContent: 'center',
             fontFamily: 'PSL Kittithada Pro',
             fontWeight: 'normal',
-            fontSize: 19,
+            fontSize: ViewScale(19),
            
             textAlign: 'left',
-            marginHorizontal: 15,
+            marginHorizontal: ViewScale(15),
             color: '#4d4d4d',
           }}>
           {this.props.currentMessage.text1} 
@@ -299,19 +300,19 @@ class UsercustomView extends React.Component {
       flexWrap: 'wrap',}}>
         <Text
           style={{
-            borderRadius: 10,
-            marginBottom: 10,
-            marginTop: 5,
+            borderRadius: ViewScale(10),
+            marginBottom: ViewScale(10),
+            marginTop: ViewScale(5),
             height: null,
             justifyContent: 'center',
             fontFamily: 'PSL Kittithada Pro',
             fontWeight: 'normal',
           
             
-            fontSize: 19,
+            fontSize: ViewScale(19),
          
             textAlign: 'right',
-            marginHorizontal: 15,
+            marginHorizontal: ViewScale(15),
             color: '#4d4d4d',
           }}>
           {this.props.currentMessage.title_name}  
@@ -328,19 +329,19 @@ class UsercustomView extends React.Component {
       flexWrap: 'wrap',}}>
         <Text
           style={{
-            borderRadius: 10,
-            marginBottom: 10,
-            marginTop: 5,
+            borderRadius: ViewScale(10),
+            marginBottom: ViewScale(10),
+            marginTop: ViewScale(5),
             height: null,
             justifyContent: 'center',
             fontFamily: 'PSL Kittithada Pro',
             fontWeight: 'normal',
            
             
-            fontSize: 19,
+            fontSize: ViewScale(19),
          
             textAlign: 'right',
-            marginHorizontal: 15,
+            marginHorizontal: ViewScale(15),
             color: 'red',
           }}>
           {this.props.currentMessage.text1}  
@@ -359,19 +360,19 @@ class UsercustomView extends React.Component {
         {this.props.currentMessage.text1 !== '' ? (
           <Text
             style={{
-              borderRadius: 10,
-              marginBottom: 10,
-              marginTop: 5,
+              borderRadius: ViewScale(10),
+              marginBottom: ViewScale(10),
+              marginTop: ViewScale(5),
               height: null,
               justifyContent: 'center',
               fontFamily: 'PSL Kittithada Pro',
               fontWeight: 'normal',
              
 
-              fontSize: 19,
+              fontSize: ViewScale(19),
           
               textAlign: 'left',
-              marginHorizontal: 15,
+              marginHorizontal: ViewScale(15),
               color: '#4d4d4d',
             }}>
             {this.props.currentMessage.showtextdataquick_replies}
@@ -404,11 +405,11 @@ class UsercustomView extends React.Component {
                   }}
                   style={{
                     borderWidth: 1,
-                    marginHorizontal: 15,
-                    borderRadius: 10,
-                    marginBottom: 5,
-                    marginTop: 5,
-                    height: 30,
+                    marginHorizontal: ViewScale(15),
+                    borderRadius: ViewScale(10),
+                    marginBottom: ViewScale(5),
+                    marginTop: ViewScale(5),
+                    height: ViewScale(30),
                     justifyContent: 'center',
                     borderColor: '#1A4797',
                     backgroundColor: '#FFF',
@@ -416,10 +417,10 @@ class UsercustomView extends React.Component {
                   <Text
                     numberOfLines={2}
                     style={{
-                      fontSize: 19,
+                      fontSize: ViewScale(19),
                   
                       textAlign: 'center',
-                      marginHorizontal: 20,
+                      marginHorizontal: ViewScale(20),
                       color: '#1A4797',
                       fontFamily: 'PSL Kittithada Pro',
                       fontWeight: 'normal',
@@ -501,16 +502,16 @@ export default connect(
 const styles2 = StyleSheet.create({
   container: {},
   mapView: {
-    width: 150,
-    height: 100,
-    borderRadius: 13,
-    margin: 3,
+    width: ViewScale(150),
+    height: ViewScale(100),
+    borderRadius: ViewScale(13),
+    margin: ViewScale(3),
   },
   image: {
-    width: 150,
-    height: 100,
-    borderRadius: 13,
-    margin: 3,
+    width: ViewScale(150),
+    height: ViewScale(100),
+    borderRadius: ViewScale(13),
+    margin: ViewScale(3),
     resizeMode: 'cover',
   },
   webview: {

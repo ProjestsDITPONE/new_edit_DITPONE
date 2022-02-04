@@ -20,6 +20,7 @@ import RNFetchBlob from 'rn-fetch-blob';
 import {Overlay, ListItem} from 'react-native-elements';
 import SocketIOClient from 'socket.io-client';
 import DocumentPicker from 'react-native-document-picker';
+import {ViewScale} from '../../config/ViewScale'
 import Icon from 'react-native-vector-icons/AntDesign';
 import {
   GiftedChat,
@@ -147,14 +148,14 @@ class UserChatHome extends Component {
                     alignItems: 'center',
                   }}>
                   <Image
-                    style={{width: 20, height: 20}}
+                    style={{width: ViewScale(20), height: ViewScale(20)}}
                     source={require('../../image/Ms.png')}
                   />
                 </View>
                 <View style={{flex: 0.4}}>
                   <Text
                     style={{
-                      fontSize: 25,
+                      fontSize: ViewScale(25),
                       color: '#FFFFFF',
                       fontFamily: 'Kittithada Bold 75',
                     }}>
@@ -166,9 +167,9 @@ class UserChatHome extends Component {
             }
             leftComponent={
               <TouchableOpacity
-                style={{padding: 0}}
+                style={{padding: ViewScale(0)}}
                 onPress={() => this.props.navigation.goBack()}>
-                <Icon name="left" size={20} color={'#FFFFFF'} />
+                <Icon name="left" size={ViewScale(20)} color={'#FFFFFF'} />
               </TouchableOpacity>
             }
             backgroundColor="transparent"
@@ -204,7 +205,7 @@ class UserChatHome extends Component {
                     ? ['#1d61bd', '#5dbde6']
                     : ['#FFFFFF', '#FFFFFF']
                 }
-                style={{height: 42, justifyContent: 'center'}}>
+                style={{height: ViewScale(42), justifyContent: 'center'}}>
                 <Text
                   style={
                     this.state.heightTab2 == 0
@@ -221,7 +222,7 @@ class UserChatHome extends Component {
               }}
               style={{
                 flex: 0.7,
-                height: 42,
+                height: ViewScale(42),
                 justifyContent: 'center',
                 borderWidth: 0.8,
                 borderColor: '#1d61bd',
@@ -234,7 +235,7 @@ class UserChatHome extends Component {
                     ? ['#1d61bd', '#5dbde6']
                     : ['#FFFFFF', '#FFFFFF']
                 }
-                style={{height: 42, justifyContent: 'center'}}>
+                style={{height: ViewScale(42), justifyContent: 'center'}}>
                 <Text
                   style={
                     this.state.heightTab2 == 1
@@ -278,30 +279,30 @@ class UserChatHome extends Component {
                   <View
                     style={{
                       backgroundColor: '#FFFFFF',
-                      height: 82,
+                      height: ViewScale(82),
                       borderBottomWidth: 1,
                       borderColor: '#eaeaea',
                     }}>
                     <View style={{flexDirection: 'row'}}>
                       <View
                         style={{
-                          height: 82,
-                          marginHorizontal: 5,
+                          height: ViewScale(82),
+                          marginHorizontal: ViewScale(5),
                           justifyContent: 'center',
                           flex: 0.2,
-                          padding: 5,
+                          padding: ViewScale(5),
                         }}>
                         {/* <Text style={{}} >{data.ditpone_fullname}  </Text> */}
                         <View
                           style={{
                             backgroundColor: '#999999',
-                            borderRadius: 35,
-                            height: 50,
-                            width: 50,
+                            borderRadius: ViewScale(35),
+                            height: ViewScale(50),
+                            width: ViewScale(50),
                           }}>
                           <Text
                             style={{
-                              fontSize: 40,
+                              fontSize: ViewScale(40),
                               color: '#FFF',
                               textAlign: 'center',
                             }}>
@@ -311,14 +312,14 @@ class UserChatHome extends Component {
                       </View>
                       <View
                         style={{
-                          height: 82,
+                          height: ViewScale(82),
 
                           justifyContent: 'center',
 
                           flex: 0.7,
                         }}>
                         {/* <Text style={{}} >{data.ditpone_fullname}  </Text> */}
-                        <Text style={{fontSize: 25, color: '#000000'}}>
+                        <Text style={{fontSize: ViewScale(25), color: '#000000'}}>
                           {' '}
                           {data.item.thaitrade_company}
                         </Text>
@@ -326,7 +327,7 @@ class UserChatHome extends Component {
                       </View>
                       <View
                         style={{
-                          height: 82,
+                          height: ViewScale(82),
 
                           justifyContent: 'center',
                           flex: 0.4,
@@ -339,7 +340,7 @@ class UserChatHome extends Component {
                         <Text
                           numberOfLines={1}
                           style={{
-                            fontSize: 15,
+                            fontSize: ViewScale(15),
                             color: '#9b9b9b',
 
                             textAlign: 'center',
@@ -349,7 +350,7 @@ class UserChatHome extends Component {
                         </Text>
                         <View
                           style={{
-                            height: 22,
+                            height: ViewScale(22),
                           }}
                         />
                         {this.state.ckread === true && (
@@ -361,9 +362,9 @@ class UserChatHome extends Component {
                             <View
                               style={{
                                 backgroundColor: 'red',
-                                width: 9,
-                                height: 9,
-                                borderRadius: 20,
+                                width: ViewScale(9),
+                                height: ViewScale(9),
+                                borderRadius: ViewScale(20),
                               }}
                             />
                           </View>
@@ -374,14 +375,14 @@ class UserChatHome extends Component {
                 </TouchableHighlight>
               )}
               renderHiddenItem={(data, rowMap) => (
-                <View style={{height: 82}}>
+                <View style={{height: ViewScale(82)}}>
                   <View
                     style={{
                       alignItems: 'center',
                       flex: 1,
                       flexDirection: 'row',
                       justifyContent: 'space-between',
-                      paddingLeft: 15,
+                      paddingLeft: ViewScale(15),
                     }}>
                     <TouchableOpacity
                       style={{
@@ -405,24 +406,24 @@ class UserChatHome extends Component {
                           style={{
                             flex: 0.3,
                             alignItems: 'center',
-                            bottom: 0,
+                            bottom: ViewScale(0),
                             justifyContent: 'center',
-                            height: 75,
-                            top: 0,
+                            height: ViewScale(75),
+                            top: ViewScale(0),
                             backgroundColor: '#568ae0',
-                            borderRadius: 8,
-                            marginHorizontal: 5,
+                            borderRadius: ViewScale(8),
+                            marginHorizontal: ViewScale(5),
                           }}>
                           <Image
                             source={require('../../image/combinedshape2x.png')}
-                            style={{width: 20, height: 20, marginTop: 10}}
+                            style={{width: ViewScale(20), height: ViewScale(20), marginTop: ViewScale(10)}}
                           />
 
                           <Text
                             style={{
                               color: '#FFFFFF',
-                              fontSize: 20,
-                              marginTop: 5,
+                              fontSize: ViewScale(20),
+                              marginTop: ViewScale(5),
                             }}>
                             {'เพิ่มเติม'}
                           </Text>
@@ -430,32 +431,32 @@ class UserChatHome extends Component {
                       }>
                       <View
                         style={{
-                          padding: 10,
+                          padding: ViewScale(10),
                         }}>
                         <TouchableOpacity
-                          style={{flexDirection: 'row', marginBottom: 10}}>
-                          <View style={{marginHorizontal: 20}}>
+                          style={{flexDirection: 'row', marginBottom: ViewScale(10)}}>
+                          <View style={{marginHorizontal: ViewScale(20)}}>
                             <Image
-                              style={{width: 20, height: 20, marginTop: 5}}
+                              style={{width: ViewScale(20), height: ViewScale(20), marginTop: ViewScale(5)}}
                               source={require('../../image/stopchatx.png')}
                             />
                           </View>
-                          <View style={{marginHorizontal: 10}}>
-                            <Text style={{fontSize: 20, color: '#4a4a4a'}}>
+                          <View style={{marginHorizontal: ViewScale(10)}}>
+                            <Text style={{fontSize: ViewScale(20), color: '#4a4a4a'}}>
                               บล็อก
                             </Text>
                           </View>
                         </TouchableOpacity>
                         <TouchableOpacity
-                          style={{flexDirection: 'row', marginBottom: 10}}>
-                          <View style={{marginHorizontal: 20}}>
+                          style={{flexDirection: 'row', marginBottom: ViewScale(10)}}>
+                          <View style={{marginHorizontal: ViewScale(20)}}>
                             <Image
-                              style={{width: 18, height: 15, marginTop: 5}}
+                              style={{width: ViewScale(18), height: ViewScale(15), marginTop: 5}}
                               source={require('../../image/messchat.png')}
                             />
                           </View>
-                          <View style={{marginHorizontal: 10}}>
-                            <Text style={{fontSize: 20, color: '#4a4a4a'}}>
+                          <View style={{marginHorizontal: ViewScale(10)}}>
+                            <Text style={{fontSize: ViewScale(20), color: '#4a4a4a'}}>
                               ทำเครื่องหมายเป็นยังไม่ได้อ่าน
                             </Text>
                           </View>
@@ -468,22 +469,22 @@ class UserChatHome extends Component {
                       }}
                       style={{
                         flex: 0.3,
-                        height: 75,
+                        height: ViewScale(75),
                         alignItems: 'center',
-                        bottom: 0,
+                        bottom: ViewScale(0),
                         justifyContent: 'center',
 
-                        top: 0,
+                        top: ViewScale(0),
                         backgroundColor: '#f86767',
-                        borderRadius: 8,
-                        marginHorizontal: 5,
+                        borderRadius: ViewScale(8),
+                        marginHorizontal: ViewScale(5),
                       }}>
                       <Image
                         source={require('../../image/deletematerial2x.png')}
-                        style={{width: 15, height: 20, marginTop: 10}}
+                        style={{width: ViewScale(15), height: ViewScale(20), marginTop: ViewScale(10)}}
                       />
                       <Text
-                        style={{color: '#FFFFFF', fontSize: 20, marginTop: 5}}>
+                        style={{color: '#FFFFFF', fontSize: ViewScale(20), marginTop: ViewScale(5)}}>
                         {'ลบ'}
                       </Text>
                     </TouchableOpacity>
@@ -512,53 +513,53 @@ class UserChatHome extends Component {
                       <View
                         style={{
                           backgroundColor: '#FFFFFF',
-                          height: 82,
+                          height: ViewScale(82),
                           borderBottomWidth: 1,
                           borderColor: '#eaeaea',
                         }}>
                         <View style={{flexDirection: 'row'}}>
                           <View
                             style={{
-                              height: 82,
-                              marginHorizontal: 5,
+                              height: ViewScale(82),
+                              marginHorizontal: ViewScale(5),
                               justifyContent: 'center',
                               flex: 0.2,
-                              padding: 5,
+                              padding: ViewScale(5),
                             }}>
                             {/* <Text style={{}} >{data.ditpone_fullname}  </Text> */}
                             <Image
                               source={data.item.user.img}
                               style={{
-                                width: 59,
-                                height: 58,
-                                marginHorizontal: 5,
+                                width: ViewScale(59),
+                                height: ViewScale(58),
+                                marginHorizontal: ViewScale(5),
                               }}
                             />
                           </View>
                           <View
                             style={{
-                              height: 82,
+                              height: ViewScale(82),
 
                               justifyContent: 'center',
 
                               flex: 0.7,
                             }}>
                             {/* <Text style={{}} >{data.ditpone_fullname}  </Text> */}
-                            <Text style={{fontSize: 25, color: '#000000'}}>
+                            <Text style={{fontSize: ViewScale(25), color: '#000000'}}>
                               {' '}
                               {data.ditpone_fullname}{' '}
                             </Text>
                             {data.item.read === false ? (
                               <Text
                                 numberOfLines={1}
-                                style={{fontSize: 20, color: '#000000'}}>
+                                style={{fontSize: ViewScale(20), color: '#000000'}}>
                                 {' '}
                                 {data.item.text}{' '}
                               </Text>
                             ) : (
                               <Text
                                 numberOfLines={1}
-                                style={{fontSize: 20, color: '#9b9b9b'}}>
+                                style={{fontSize: ViewScale(20), color: '#9b9b9b'}}>
                                 {' '}
                                 {data.item.text}{' '}
                               </Text>
@@ -566,7 +567,7 @@ class UserChatHome extends Component {
                           </View>
                           <View
                             style={{
-                              height: 82,
+                              height: ViewScale(82),
 
                               justifyContent: 'center',
                               flex: 0.4,
@@ -586,7 +587,7 @@ class UserChatHome extends Component {
                             </Text>
                             <View
                               style={{
-                                height: 22,
+                                height: ViewScale(22),
                               }}
                             />
                             {data.item.read === false && (
@@ -598,9 +599,9 @@ class UserChatHome extends Component {
                                 <View
                                   style={{
                                     backgroundColor: 'red',
-                                    width: 9,
-                                    height: 9,
-                                    borderRadius: 20,
+                                    width: ViewScale(9),
+                                    height: ViewScale(9),
+                                    borderRadius: ViewScale(20),
                                   }}
                                 />
                               </View>
@@ -613,7 +614,7 @@ class UserChatHome extends Component {
                 </View>
               )}
               renderHiddenItem={(data, rowMap) => (
-                <View style={{height: 82}}>
+                <View style={{height: ViewScale(82)}}>
                   {data.item.read === false && (
                     <View
                       style={{
@@ -621,15 +622,15 @@ class UserChatHome extends Component {
                         flex: 1,
                         flexDirection: 'row',
                         justifyContent: 'space-between',
-                        paddingLeft: 15,
+                        paddingLeft: ViewScale(15),
                       }}>
                       <TouchableOpacity
                         style={{
                           flex: 1,
                           alignItems: 'center',
-                          bottom: 0,
+                          bottom: ViewScale(0),
                           justifyContent: 'center',
-                          top: 0,
+                          top: ViewScale(0),
                         }}>
                         <Text>{''}</Text>
                       </TouchableOpacity>
@@ -645,24 +646,24 @@ class UserChatHome extends Component {
                             style={{
                               flex: 0.3,
                               alignItems: 'center',
-                              bottom: 0,
+                              bottom: ViewScale(0),
                               justifyContent: 'center',
-                              height: 75,
-                              top: 0,
+                              height: ViewScale(75),
+                              top: ViewScale(0),
                               backgroundColor: '#568ae0',
-                              borderRadius: 8,
-                              marginHorizontal: 5,
+                              borderRadius: ViewScale(8),
+                              marginHorizontal: ViewScale(5),
                             }}>
                             <Image
                               source={require('../../image/combinedshape2x.png')}
-                              style={{width: 20, height: 20, marginTop: 10}}
+                              style={{width: ViewScale(20), height: ViewScale((20)), marginTop: ViewScale(10)}}
                             />
 
                             <Text
                               style={{
                                 color: '#FFFFFF',
-                                fontSize: 20,
-                                marginTop: 5,
+                                fontSize: ViewScale(20),
+                                marginTop: ViewScale(5),
                               }}>
                               {'เพิ่มเติม'}
                             </Text>
@@ -670,32 +671,32 @@ class UserChatHome extends Component {
                         }>
                         <View
                           style={{
-                            padding: 10,
+                            padding: ViewScale(10),
                           }}>
                           <TouchableOpacity
-                            style={{flexDirection: 'row', marginBottom: 10}}>
-                            <View style={{marginHorizontal: 20}}>
+                            style={{flexDirection: 'row', marginBottom: ViewScale(10)}}>
+                            <View style={{marginHorizontal: ViewScale(20)}}>
                               <Image
-                                style={{width: 20, height: 20, marginTop: 5}}
+                                style={{width: ViewScale(20), height: ViewScale(20), marginTop: ViewScale(5)}}
                                 source={require('../../image/stopchatx.png')}
                               />
                             </View>
-                            <View style={{marginHorizontal: 10}}>
-                              <Text style={{fontSize: 20, color: '#4a4a4a'}}>
+                            <View style={{marginHorizontal: ViewScale(10)}}>
+                              <Text style={{fontSize: ViewScale(20), color: '#4a4a4a'}}>
                                 บล็อก
                               </Text>
                             </View>
                           </TouchableOpacity>
                           <TouchableOpacity
-                            style={{flexDirection: 'row', marginBottom: 10}}>
-                            <View style={{marginHorizontal: 20}}>
+                            style={{flexDirection: 'row', marginBottom: ViewScale(10)}}>
+                            <View style={{marginHorizontal: ViewScale(20)}}>
                               <Image
-                                style={{width: 18, height: 15, marginTop: 5}}
+                                style={{width: ViewScale(18), height: ViewScale(15), marginTop: ViewScale(5)}}
                                 source={require('../../image/messchat.png')}
                               />
                             </View>
-                            <View style={{marginHorizontal: 10}}>
-                              <Text style={{fontSize: 20, color: '#4a4a4a'}}>
+                            <View style={{marginHorizontal: ViewScale(10)}}>
+                              <Text style={{fontSize: ViewScale(20), color: '#4a4a4a'}}>
                                 ทำเครื่องหมายเป็นยังไม่ได้อ่าน
                               </Text>
                             </View>
@@ -705,25 +706,25 @@ class UserChatHome extends Component {
                       <TouchableOpacity
                         style={{
                           flex: 0.3,
-                          height: 75,
+                          height: ViewScale(75),
                           alignItems: 'center',
-                          bottom: 0,
+                          bottom: ViewScale(0),
                           justifyContent: 'center',
 
-                          top: 0,
+                          top: ViewScale(0),
                           backgroundColor: '#f86767',
-                          borderRadius: 8,
-                          marginHorizontal: 5,
+                          borderRadius: ViewScale(8),
+                          marginHorizontal: ViewScale(5),
                         }}>
                         <Image
                           source={require('../../image/deletematerial2x.png')}
-                          style={{width: 15, height: 20, marginTop: 10}}
+                          style={{width: ViewScale(15), height: ViewScale(20), marginTop: ViewScale(10)}}
                         />
                         <Text
                           style={{
                             color: '#FFFFFF',
-                            fontSize: 20,
-                            marginTop: 5,
+                            fontSize: ViewScale(20),
+                            marginTop: ViewScale(5),
                           }}>
                           {'ลบ'}
                         </Text>
@@ -754,10 +755,10 @@ class UserChatHome extends Component {
                 <Text
                   style={{
                     color: '#20416e',
-                    fontSize: 22,
+                    fontSize: ViewScale(22),
                     fontFamily: 'Kittithada Bold 75',
                     textAlign: 'center',
-                    marginBottom: 20,
+                    marginBottom: ViewScale(20),
                   }}>
                   {'ยืนยันการลบการสนทนา \nจะไม่สามารถดูการสนทนาของท่านได้อีก'}
                 </Text>
@@ -769,16 +770,16 @@ class UserChatHome extends Component {
                     style={{
                       justifyContent: 'center',
                       flex: 1,
-                      height: 39,
+                      height: ViewScale(39),
                       backgroundColor: '#f86767',
-                      borderRadius: 45,
-                      marginHorizontal: 5,
+                      borderRadius: ViewScale(45),
+                      marginHorizontal: ViewScale(5),
                     }}>
                     <Text
                       style={{
                         textAlign: 'center',
                         color: '#FFF',
-                        fontSize: 20,
+                        fontSize: ViewScale(20),
                       }}>
                       {'ยกเลิก'}
                     </Text>
@@ -787,16 +788,16 @@ class UserChatHome extends Component {
                     style={{
                       justifyContent: 'center',
                       flex: 1,
-                      height: 39,
+                      height: ViewScale(39),
                       backgroundColor: '#2d6dc4',
-                      borderRadius: 25,
-                      marginHorizontal: 5,
+                      borderRadius: ViewScale(25),
+                      marginHorizontal: ViewScale(5),
                     }}>
                     <Text
                       style={{
                         textAlign: 'center',
                         color: '#FFF',
-                        fontSize: 20,
+                        fontSize: ViewScale(20),
                       }}>
                       {'ยืนยัน'}
                     </Text>

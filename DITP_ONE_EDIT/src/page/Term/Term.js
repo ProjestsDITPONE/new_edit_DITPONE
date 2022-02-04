@@ -16,6 +16,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 import Headers from '../../components/Headers';
 import Style from './Styles';
 import {connect} from 'react-redux';
+import { ViewScale } from '../../config/ViewScale';
 import {getTerms, UpdateTerm} from '../../actions/data.actions';
 import HTML from 'react-native-render-html';
 import I18n from '../../utils/I18n';
@@ -99,7 +100,7 @@ const Term = ({
         }}
         source={require('../../image/background.png')}
       />
-      <View style={{marginTop: Platform.OS === 'android' && 90, zIndex: -1}} />
+      <View style={{marginTop: Platform.OS === 'android' && ViewScale(90), zIndex: -1}} />
       <ScrollView style={{zIndex: -1}}>
         <View style={[Style.background, {height: '85%'}]}>
           <View style={{alignSelf: 'center'}}>
@@ -109,14 +110,15 @@ const Term = ({
           </View>
           <View
             style={{
-              marginTop: 20,
+              // backgroundColor: 'red',
+              marginTop: ViewScale(20),
               flex: 1,
             }}>
             <View style={Style.termView}>
               {I18n.locale === 'th' && (
                 <ScrollView contentContainerStyle={{height: null}}>
                   <HTML
-                    baseFontStyle={{fontSize: 18, fontWeight: 'normal'}}
+                    baseFontStyle={{fontSize: ViewScale(18), fontWeight: 'normal'}}
                     containerStyle={Style.textterm}
                     html={
                       TermsRedux.isSuccess
@@ -129,7 +131,7 @@ const Term = ({
               {I18n.locale === 'en' && (
                 <ScrollView contentContainerStyle={{height: null}}>
                   <HTML
-                    baseFontStyle={{fontSize: 18, fontWeight: 'normal'}}
+                    baseFontStyle={{fontSize: ViewScale(18), fontWeight: 'normal'}}
                     containerStyle={Style.textterm}
                     html={
                       TermsRedux.isSuccess
@@ -153,25 +155,25 @@ const Term = ({
                 <View
                   style={{
                     flexDirection: 'row',
-                    marginLeft: 20,
+                    marginLeft: ViewScale(20),
                   }}>
                   <Text
                     numberOfLines={2}
                     style={{
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                       color: '#ffffff',
                     }}>
                     {I18n.t('translate_understand_check')}
                   </Text>
                 </View>
               }
-              textStyle={{fontSize: 20, color: '#ffffff'}}
+              textStyle={{fontSize: ViewScale(20), color: '#ffffff'}}
               checked={checkterm}
               checkedIcon={
                 <View
                   style={{
-                    width: 20,
-                    height: 20,
+                    width: ViewScale(20),
+                    height: ViewScale(20),
                     backgroundColor: '#FFFFFF',
                     alignItems: 'center',
                     alignSelf: 'center',
@@ -179,14 +181,14 @@ const Term = ({
                   }}>
                   <Image
                     source={require('../../image/true.png')}
-                    style={{width: 14, height: 12}}
+                    style={{width: ViewScale(14), height: ViewScale(12)}}
                   />
                 </View>
               }
               uncheckedIcon={
                 <Image
                   source={require('../../image/Chck.png')}
-                  style={{width: 20, height: 20}}
+                  style={{width: ViewScale(20), height: ViewScale(20)}}
                 />
               }
               onPress={() => {

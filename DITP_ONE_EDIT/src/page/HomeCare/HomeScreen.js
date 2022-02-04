@@ -14,6 +14,7 @@ import Styles from './Styles';
 import { connect } from 'react-redux';
 import Headers from '../../components/Headers';
 import I18n from '../../utils/I18n';
+import { ViewScale } from '../../config/ViewScale';
 import {
   Country,
   TypeComplaint,
@@ -92,7 +93,7 @@ class HomeCare extends React.Component {
                       : { marginLeft: 80 }
               }
               name="level-down"
-              size={18}
+              size={ViewScale(18)}
               color="#cccccc"
             />
           ),
@@ -203,7 +204,7 @@ class HomeCare extends React.Component {
           source={require('../../image/background.png')}
         />
 
-        <View style={{ marginTop: Platform.OS === 'android' && 90 }} />
+        <View style={{ marginTop: Platform.OS === 'android' && ViewScale(90) }} />
         <ScrollView style={{ zIndex: -1, width: '100%' }}>
           <View style={Styles.view}>
             <Image
@@ -218,7 +219,7 @@ class HomeCare extends React.Component {
               justifyContent: 'center',
               flexDirection: 'row',
               alignSelf: 'center',
-              marginTop: 50,
+              marginTop: ViewScale(50),
             }}>
             <TouchableOpacity
               style={{ width: '50%' }}
@@ -227,7 +228,7 @@ class HomeCare extends React.Component {
               }}>
               <Image
                 resizeMode={'contain'}
-                style={{ width: '100%', height: 200 }}
+                style={{ width: '100%', height: ViewScale(200) }}
                 source={require('../../image/humman2.png')}
               />
               <View style={Styles.viewsubText}>
@@ -250,7 +251,7 @@ class HomeCare extends React.Component {
               }}>
               <Image
                 resizeMode={'contain'}
-                style={{ width: '100%', height: 200 }}
+                style={{ width: '100%', height: ViewScale(200) }}
                 source={require('../../image/humman1.png')}
               />
               <View style={Styles.viewsubText}>

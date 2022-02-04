@@ -19,6 +19,7 @@ import Icon2 from 'react-native-vector-icons/FontAwesome';
 import Icon3 from 'react-native-vector-icons/Entypo';
 import Headers from '../../components/Headers';
 import Headerstage from '../../components/Headerstage';
+import { ViewScale } from '../../config/ViewScale';
 
 import {
   getAppealHome,
@@ -121,28 +122,28 @@ const AppealHome = ({
       const Listloader = [
         <TouchableOpacity
           onPress={() => navigation.navigate('AppealView')}
-          style={{borderRadius: 10}}>
+          style={{borderRadius: ViewScale(10)}}>
           <ImageBackground
             source={require('../../image/percentBack.png')}
             style={Styles.backgroundAppel}>
             <View
               style={{
-                marginTop: 10,
+                marginTop: ViewScale(10),
                 flex: 0.85,
                 alignItems: 'center',
               }}>
-              <Text style={{fontSize: 24, color: '#FFFFFF'}}>
+              <Text style={{fontSize: ViewScale(24), color: '#FFFFFF'}}>
                 {''}
                 ลูกค้าไม่ยอมชำระเงินเป็นเวลา 1 ปี{'\n'}
                 <View>
                   <Image
-                    style={{width: 11, height: 11}}
+                    style={{width: ViewScale(11), height: ViewScale(11)}}
                     source={require('../../image/calenda.png')}
                   />
                 </View>
                 <Text
                   style={{
-                    fontSize: 16,
+                    fontSize: ViewScale(16),
                     color: '#20416e',
                   }}>
                   {' '}
@@ -153,7 +154,7 @@ const AppealHome = ({
               </Text>
             </View>
             <View style={{justifyContent: 'center', flex: 0.1}}>
-              <Icon name="rightcircleo" size={25} color="#FFFFFF" />
+              <Icon name="rightcircleo" size={ViewScale(25)} color="#FFFFFF" />
             </View>
           </ImageBackground>
         </TouchableOpacity>,
@@ -198,17 +199,17 @@ const AppealHome = ({
             style={
               item.comp_perces === 0
                 ? {
-                    width: 65,
-                    height: 65,
+                    width: ViewScale(65),
+                    height: ViewScale(65),
                     borderColor: '#ff9800',
-                    borderRadius: 45,
+                    borderRadius: ViewScale(45),
                     backgroundColor: '#fff',
                   }
                 : ''
             }
           />
           <View style={Styles.reportCardTitle}>
-            <Text style={{fontSize: 24, color: '#FFFFFF'}}>
+            <Text style={{fontSize: ViewScale(24), color: '#FFFFFF'}}>
               {item.comp_name}
             </Text>
             <View style={[Styles.flexRow, {alignItems: 'center'}]}>
@@ -224,7 +225,7 @@ const AppealHome = ({
             </View>
           </View>
           <View style={{alignItems: 'center', flexDirection: 'row-reverse'}}>
-            <Icon name="rightcircleo" size={24} color="#FFFFFF" />
+            <Icon name="rightcircleo" size={ViewScale(24)} color="#FFFFFF" />
           </View>
         </ImageBackground>
       </TouchableOpacity>
@@ -252,26 +253,26 @@ const AppealHome = ({
             style={
               item.comp_perces === 25
                 ? {
-                    width: 65,
-                    height: 65,
+                    width: ViewScale(65),
+                    height: ViewScale(65),
                     borderColor: '#ff9800',
-                    borderRadius: 45,
+                    borderRadius: ViewScale(45),
                     backgroundColor: '#fff',
                   }
                 : item.comp_perces === 50
                 ? {
-                    width: 65,
-                    height: 65,
+                    width: ViewScale(65),
+                    height: ViewScale(65),
                     borderColor: '#ff9800',
-                    borderRadius: 45,
+                    borderRadius: ViewScale(45),
                     backgroundColor: '#fff',
                   }
                 : item.comp_perces === 75
                 ? {
-                    width: 65,
-                    height: 65,
+                    width: ViewScale(65),
+                    height: ViewScale(65),
                     borderColor: '#ff9800',
-                    borderRadius: 45,
+                    borderRadius: ViewScale(45),
                     backgroundColor: '#fff',
                   }
                 : ''
@@ -279,7 +280,7 @@ const AppealHome = ({
           />
 
           <View style={Styles.reportCardTitle}>
-            <Text style={{fontSize: 24, color: '#FFFFFF'}}>
+            <Text style={{fontSize: ViewScale(24), color: '#FFFFFF'}}>
               {item.comp_name}
             </Text>
             <View style={[Styles.flexRow, {alignItems: 'center'}]}>
@@ -295,7 +296,7 @@ const AppealHome = ({
             </View>
           </View>
           <View style={{alignItems: 'center', flexDirection: 'row-reverse'}}>
-            <Icon name="rightcircleo" size={24} color="#FFFFFF" />
+            <Icon name="rightcircleo" size={ViewScale(24)} color="#FFFFFF" />
           </View>
         </ImageBackground>
       </TouchableOpacity>
@@ -316,17 +317,17 @@ const AppealHome = ({
             style={
               item.comp_perces === 100
                 ? {
-                    width: 65,
-                    height: 65,
+                    width: ViewScale(65),
+                    height: ViewScale(65),
                     borderColor: '#ff9800',
-                    borderRadius: 45,
+                    borderRadius: ViewScale(45),
                     backgroundColor: '#fff',
                   }
                 : ''
             }
           />
           <View style={Styles.reportCardTitle}>
-            <Text style={{fontSize: 24, color: '#FFFFFF'}}>
+            <Text style={{fontSize: ViewScale(24), color: '#FFFFFF'}}>
               {item.comp_name}
             </Text>
             <View style={[Styles.flexRow, {alignItems: 'center'}]}>
@@ -342,7 +343,7 @@ const AppealHome = ({
             </View>
           </View>
           <View style={{alignItems: 'center', flexDirection: 'row-reverse'}}>
-            <Icon name="rightcircleo" size={25} color="#FFFFFF" />
+            <Icon name="rightcircleo" size={ViewScale(25)} color="#FFFFFF" />
           </View>
         </ImageBackground>
       </TouchableOpacity>
@@ -369,7 +370,7 @@ const AppealHome = ({
         backScreen={false}
         ArrowColor={true}
       />
-      <View style={{marginTop: Platform.OS === 'android' && 90}} />
+      <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
       <Headerstage nameTab={I18n.t('translate_Myreport')} />
       <View style={{zIndex: -1}}>
         <View style={Styles.searchContainer}>
@@ -378,7 +379,7 @@ const AppealHome = ({
             style={Styles.searchBackground}>
             <Searchbar
               style={Styles.searchBar}
-              icon={() => <Icon2 name="search" size={25} color="#fff" />}
+              icon={() => <Icon2 name="search" size={ViewScale(25)} color="#fff" />}
               onSubmitEditing={() => LoadAPISearch()}
               onChangeText={txt => setSearch(txt)}
               returnKeyType="search"
@@ -397,7 +398,7 @@ const AppealHome = ({
                 {I18n.t('translate_Status')} :
               </Text>
               <View style={Styles.waitingPill}>
-                <Text style={{fontSize: 22, color: '#FFFFFF'}}>
+                <Text style={{fontSize: ViewScale(22), color: '#FFFFFF'}}>
                   {I18n.t('translate_Waiting')}
                 </Text>
               </View>
@@ -407,10 +408,10 @@ const AppealHome = ({
                   onPress={() =>
                     navigation.navigate('AppealViewAll', {showpercens: '0'})
                   }>
-                  <Text style={{fontSize: 22, color: '#FFFFFF'}}>
+                  <Text style={{fontSize: ViewScale(22), color: '#FFFFFF'}}>
                     {I18n.t('translate_ViewAll')}
                   </Text>
-                  <Icon3 name="chevron-small-right" color="#FFFFFF" size={23} />
+                  <Icon3 name="chevron-small-right" color="#FFFFFF" size={ViewScale(23)} />
                 </TouchableOpacity>
               </View>
             </View>
@@ -440,11 +441,11 @@ const AppealHome = ({
                   <View>
                     <Text
                       style={{
-                        fontSize: 25,
+                        fontSize: ViewScale(25),
                         color: '#FFFFFF',
                         justifyContent: 'center',
                         alignSelf: 'center',
-                        paddingTop: 40,
+                        paddingTop: ViewScale(40),
                       }}>
                       {I18n.t('translate_NodataCare')}
                     </Text>
@@ -455,11 +456,11 @@ const AppealHome = ({
               <View>
                 <Text
                   style={{
-                    fontSize: 25,
+                    fontSize: ViewScale(25),
                     color: '#FFFFFF',
                     justifyContent: 'center',
                     alignSelf: 'center',
-                    paddingTop: 40,
+                    paddingTop: ViewScale(40),
                   }}>
                   {I18n.t('translate_NodataCare')}
                 </Text>
@@ -473,7 +474,7 @@ const AppealHome = ({
                   {I18n.t('translate_Status')} :
                 </Text>
                 <View style={Styles.pendingPill}>
-                  <Text style={{fontSize: 22, color: '#FFFFFF'}}>
+                  <Text style={{fontSize: ViewScale(22), color: '#FFFFFF'}}>
                     {I18n.t('translate_Pending')}
                   </Text>
                 </View>
@@ -483,13 +484,13 @@ const AppealHome = ({
                     onPress={() =>
                       navigation.navigate('AppealViewAll', {showpercens: '1,2'})
                     }>
-                    <Text style={{fontSize: 22, color: '#FFFFFF'}}>
+                    <Text style={{fontSize: ViewScale(22), color: '#FFFFFF'}}>
                       {I18n.t('translate_ViewAll')}
                     </Text>
                     <Icon3
                       name="chevron-small-right"
                       color="#FFFFFF"
-                      size={23}
+                      size={ViewScale(23)}
                     />
                   </TouchableOpacity>
                 </View>
@@ -517,11 +518,11 @@ const AppealHome = ({
                   <View>
                     <Text
                       style={{
-                        fontSize: 25,
+                        fontSize: ViewScale(25),
                         color: '#FFFFFF',
                         justifyContent: 'center',
                         alignSelf: 'center',
-                        paddingTop: 40,
+                        paddingTop: ViewScale(40),
                       }}>
                       {I18n.t('translate_NodataCare')}
                     </Text>
@@ -532,11 +533,11 @@ const AppealHome = ({
               <View>
                 <Text
                   style={{
-                    fontSize: 25,
+                    fontSize: ViewScale(25),
                     color: '#FFFFFF',
                     justifyContent: 'center',
                     alignSelf: 'center',
-                    paddingTop: 40,
+                    paddingTop: ViewScale(40),
                   }}>
                   {I18n.t('translate_NodataCare')}
                 </Text>
@@ -549,7 +550,7 @@ const AppealHome = ({
                   {I18n.t('translate_Status')} :
                 </Text>
                 <View style={Styles.completePill}>
-                  <Text style={{fontSize: 22, color: '#FFFFFF'}}>
+                  <Text style={{fontSize: ViewScale(22), color: '#FFFFFF'}}>
                     {I18n.t('translate_Complete')}
                   </Text>
                 </View>
@@ -559,14 +560,14 @@ const AppealHome = ({
                     onPress={() =>
                       navigation.navigate('AppealViewAll', {showpercens: '3'})
                     }>
-                    <Text style={{fontSize: 22, color: '#FFFFFF'}}>
+                    <Text style={{fontSize: ViewScale(22), color: '#FFFFFF'}}>
                       {I18n.t('translate_ViewAll')}
                     </Text>
                     <Icon3
                       name="chevron-small-right"
                       color="#FFFFFF"
-                      size={23}
-                      style={{marginTop: 2}}
+                      size={ViewScale(23)}
+                      style={{marginTop: ViewScale(2)}}
                     />
                   </TouchableOpacity>
                 </View>
@@ -590,11 +591,11 @@ const AppealHome = ({
                   <View>
                     <Text
                       style={{
-                        fontSize: 25,
+                        fontSize: ViewScale(25),
                         color: '#FFFFFF',
                         justifyContent: 'center',
                         alignSelf: 'center',
-                        paddingTop: 40,
+                        paddingTop: ViewScale(40),
                       }}>
                       {I18n.t('translate_NodataCare')}
                     </Text>
@@ -605,11 +606,11 @@ const AppealHome = ({
               <View>
                 <Text
                   style={{
-                    fontSize: 25,
+                    fontSize: ViewScale(25),
                     color: '#FFFFFF',
                     justifyContent: 'center',
                     alignSelf: 'center',
-                    paddingTop: 40,
+                    paddingTop: ViewScale(40),
                   }}>
                   {I18n.t('translate_NodataCare')}
                 </Text>

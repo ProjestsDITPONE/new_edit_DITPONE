@@ -21,6 +21,7 @@ import Icon2 from 'react-native-vector-icons/FontAwesome';
 import Headers from '../../components/Headers';
 import Headerstage from '../../components/Headerstage';
 import Styles from './Styles';
+import { ViewScale } from '../../config/ViewScale';
 import I18n from '../../utils/I18n';
 import {
   getAppealViewAll,
@@ -136,49 +137,49 @@ const AppealViewAll = ({route, navigation, dispatch, getAppealAll, Token}) => {
           style={
             item.comp_perces === 0
               ? {
-                  width: 65,
-                  height: 65,
+                  width: ViewScale(65),
+                  height: ViewScale(65),
                   borderColor: '#ff9800',
-                  borderRadius: 45,
+                  borderRadius: ViewScale(45),
                   backgroundColor: '#fff',
                 }
               : item.comp_perces === 25
               ? {
-                  width: 65,
-                  height: 65,
+                  width: ViewScale(65),
+                  height: ViewScale(65),
                   borderColor: '#ff9800',
-                  borderRadius: 45,
+                  borderRadius: ViewScale(45),
                   backgroundColor: '#fff',
                 }
               : item.comp_perces === 50
               ? {
-                  width: 65,
-                  height: 65,
+                  width: ViewScale(65),
+                  height: ViewScale(65),
                   borderColor: '#ff9800',
-                  borderRadius: 45,
+                  borderRadius: ViewScale(45),
                   backgroundColor: '#fff',
                 }
               : item.comp_perces == 75
               ? {
-                  width: 65,
-                  height: 65,
+                  width: ViewScale(65),
+                  height: ViewScale(65),
                   borderColor: '#ff9800',
-                  borderRadius: 45,
+                  borderRadius: ViewScale(45),
                   backgroundColor: '#fff',
                 }
               : item.comp_perces == 100
               ? {
-                  width: 65,
-                  height: 65,
+                  width: ViewScale(65),
+                  height: ViewScale(65),
                   borderColor: '#ff9800',
-                  borderRadius: 45,
+                  borderRadius: ViewScale(45),
                   backgroundColor: '#fff',
                 }
               : ''
           }
         />
         <View style={Styles.reportCardTitle}>
-          <Text style={{fontSize: 24, color: '#FFFFFF'}}>{item.comp_name}</Text>
+          <Text style={{fontSize: ViewScale(24), color: '#FFFFFF'}}>{item.comp_name}</Text>
           <View style={[Styles.flexRow, {alignItems: 'center'}]}>
             <Image
               style={Styles.reportCardCalender}
@@ -192,7 +193,7 @@ const AppealViewAll = ({route, navigation, dispatch, getAppealAll, Token}) => {
           </View>
         </View>
         <View style={{alignItems: 'center', flexDirection: 'row-reverse'}}>
-          <Icon name="rightcircleo" size={25} color="#FFFFFF" />
+          <Icon name="rightcircleo" size={ViewScale(25)} color="#FFFFFF" />
         </View>
       </ImageBackground>
     );
@@ -215,7 +216,7 @@ const AppealViewAll = ({route, navigation, dispatch, getAppealAll, Token}) => {
         }}
         source={require('../../image/background.png')}
       />
-      <View style={{marginTop: Platform.OS === 'android' && 90}} />
+      <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
       <Headerstage nameTab={I18n.t('translate_Myreport')} />
       <View style={{flex: 1, zIndex: -1}}>
         <View style={Styles.searchContainer}>
@@ -224,7 +225,7 @@ const AppealViewAll = ({route, navigation, dispatch, getAppealAll, Token}) => {
             style={Styles.searchBackground}>
             <Searchbar
               style={Styles.searchBar}
-              icon={() => <Icon2 name="search" size={25} color="#fff" />}
+              icon={() => <Icon2 name="search" size={ViewScale(25)} color="#fff" />}
               onSubmitEditing={() => LoadAPISearch()}
               onChangeText={txt => setSearchtext(txt)}
               returnKeyType="search"
@@ -255,11 +256,11 @@ const AppealViewAll = ({route, navigation, dispatch, getAppealAll, Token}) => {
             <View>
               <Text
                 style={{
-                  fontSize: 25,
+                  fontSize: ViewScale(25),
                   color: '#FFFFFF',
                   justifyContent: 'center',
                   alignSelf: 'center',
-                  paddingTop: 40,
+                  paddingTop: ViewScale(40),
                 }}>
                 {I18n.t('translate_NodataCare')}
               </Text>

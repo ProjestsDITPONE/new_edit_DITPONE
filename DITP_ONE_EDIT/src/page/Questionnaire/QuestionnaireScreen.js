@@ -25,6 +25,7 @@ import {SearchableSectionList} from '../../lib_edit/react-native-searchable-list
 import CheckboxTree from 'react-checkbox-tree';
 import LinearGradient from 'react-native-linear-gradient';
 import {backgroundColor} from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
+import {ViewScale} from '../../config/ViewScale'
 
 const {height, width} = Dimensions.get('window');
 const nodes = [
@@ -409,14 +410,14 @@ class QuestionnaireScreen extends React.Component {
       <View style={{flexDirection: 'row'}}>
         <CheckBox
           textStyle={{
-            fontSize: 18,
+            fontSize: ViewScale(18),
             color: '#4b4b4b',
             fontWeight: 'normal',
             fontFamily: 'PSL Kittithada Pro',
           }}
           checkedIcon={
             <Image
-              style={{width: 18, height: 18}}
+              style={{width: ViewScale(18), height: ViewScale(18)}}
               source={require('../../image/rrr.png')}
             />
           }
@@ -425,10 +426,10 @@ class QuestionnaireScreen extends React.Component {
               style={{
                 backgroundColor: '#FFFFFF',
                 borderWidth: 0.5,
-                width: 18,
-                height: 18,
+                width: ViewScale(18),
+                height: ViewScale(18),
                 borderColor: '#999999',
-                borderRadius: 2.6,
+                borderRadius: ViewScale(2.6),
               }}
             />
           }
@@ -471,12 +472,12 @@ class QuestionnaireScreen extends React.Component {
           paddingVertical: (height * 7) / 100,
 
           flex: 1,
-          marginHorizontal: 4,
-          marginVertical: 4,
-          borderRadius: 4,
+          marginHorizontal: ViewScale(4),
+          marginVertical: ViewScale(4),
+          borderRadius: ViewScale(4),
           borderColor: '#2d6dc4',
           justifyContent: 'center',
-          paddingHorizontal: 20,
+          paddingHorizontal: ViewScale(20),
           backgroundColor:
             this.state.CheckBox2[item.questionnaire_code] === false
               ? '#FFFFFF'
@@ -488,7 +489,7 @@ class QuestionnaireScreen extends React.Component {
               this.state.CheckBox2[item.questionnaire_code] === false
                 ? '#2d6dc4'
                 : '#FFFFFF',
-            fontSize: 40,
+            fontSize: ViewScale(40),
             textAlign: 'center',
           }}>
           {this._CutText(item.questionnaire_name)}
@@ -499,7 +500,7 @@ class QuestionnaireScreen extends React.Component {
               this.state.CheckBox2[item.questionnaire_code] === false
                 ? '#2d6dc4'
                 : '#FFFFFF',
-            fontSize: 18,
+            fontSize: ViewScale(18),
             textAlign: 'center',
           }}>
           {this._CutText2(item.questionnaire_name)}
@@ -566,7 +567,7 @@ class QuestionnaireScreen extends React.Component {
           leftComponent={
             <View>
               <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
-                <Icon2 name="left" size={20} />
+                <Icon2 name="left" size={ViewScale(20)} />
               </TouchableOpacity>
             </View>
           }
@@ -593,7 +594,7 @@ class QuestionnaireScreen extends React.Component {
                 end={{x: 1, y: 0}}
                 style={[
                   Style.ViewSub3,
-                  {height: 42, marginTop: -9, marginBottom: 10},
+                  {height: ViewScale(42), marginTop: ViewScale(-9), marginBottom: ViewScale(10)},
                 ]}>
                 {console.log(this.state.HearderQuestion.questionnaire_name)}
                 <Text style={[Style.TextSub2, {padding: 0}]}>
@@ -633,7 +634,7 @@ class QuestionnaireScreen extends React.Component {
               
               <View style={[Style.marginTop20, {}]}>
                 <View style={{alignItems: 'center'}}>
-                  <View style={{margin: 20}}>
+                  <View style={{margin: ViewScale(20)}}>
                     {/* <Image
                       style={Style.ImgSub2}
                       source={require('../../image/pageQuestion1.png')}
@@ -774,7 +775,7 @@ class QuestionnaireScreen extends React.Component {
                 end={{x: 1, y: 0}}
                 style={[
                   Style.ViewSub3,
-                  {height: 42, marginTop: -9, marginBottom: 10},
+                  {height: ViewScale(42), marginTop: ViewScale(-9), marginBottom: ViewScale(10)},
                 ]}>
                 <Text style={Style.TextSub2}>
                   {'  '}2) {this.state.HearderQuestion3.questionnaire_name}
@@ -822,7 +823,7 @@ class QuestionnaireScreen extends React.Component {
                       renderSectionHeader={({
                         section: {continent_title, data},
                       }) => (
-                        <View style={{width: '100%', marginTop: 10}}>
+                        <View style={{width: '100%', marginTop: ViewScale(10)}}>
                           <View
                             style={{
                               flexDirection: 'row',
@@ -831,7 +832,7 @@ class QuestionnaireScreen extends React.Component {
                             }}>
                             <CheckBox
                               textStyle={{
-                                fontSize: 17.5,
+                                fontSize: ViewScale(17.5),
                                 color: '#4b4b4b',
                                 fontWeight: 'normal',
                                 fontFamily: 'PSL Kittithada Pro',
@@ -841,18 +842,18 @@ class QuestionnaireScreen extends React.Component {
                                   style={{
                                     backgroundColor: '#FFFFFF',
                                     borderWidth: 0.5,
-                                    width: 18,
-                                    height: 18,
+                                    width: ViewScale(18),
+                                    height: ViewScale(18),
                                     borderColor: '#999999',
-                                    borderRadius: 2.6,
+                                    borderRadius: ViewScale(2.6),
                                   }}
                                 />
                               }
                               checkedIcon={
                                 <Image
                                   style={{
-                                    width: 18,
-                                    height: 18,
+                                    width: ViewScale(18),
+                                    height: ViewScale(18),
                                   }}
                                   source={require('../../image/rrr.png')}
                                 />
@@ -891,9 +892,9 @@ class QuestionnaireScreen extends React.Component {
                                     index: continent_title.id,
                                   });
                                 }}
-                                style={{padding: 10}}>
+                                style={{padding: ViewScale(10)}}>
                                 <Image
-                                  style={{width: 8, height: 6}}
+                                  style={{width: ViewScale(8), height: ViewScale(6)}}
                                   source={require('../../image/downreqes.png')}
                                 />
                               </TouchableOpacity>
@@ -922,7 +923,7 @@ class QuestionnaireScreen extends React.Component {
                           {this.state.togleUser[item.id_main] && (
                             <CheckBox
                               textStyle={{
-                                fontSize: 17.5,
+                                fontSize: ViewScale(17.5),
                                 color: '#4b4b4b',
                                 fontWeight: 'normal',
                                 fontFamily: 'PSL Kittithada Pro',
@@ -932,18 +933,18 @@ class QuestionnaireScreen extends React.Component {
                                   style={{
                                     backgroundColor: '#FFFFFF',
                                     borderWidth: 0.5,
-                                    width: 18,
-                                    height: 18,
+                                    width: ViewScale(18),
+                                    height: ViewScale(18),
                                     borderColor: '#999999',
-                                    borderRadius: 2.6,
+                                    borderRadius: ViewScale(2.6),
                                   }}
                                 />
                               }
                               checkedIcon={
                                 <Image
                                   style={{
-                                    width: 18,
-                                    height: 18,
+                                    width: ViewScale(18),
+                                    height: ViewScale(18),
                                   }}
                                   source={require('../../image/rrr.png')}
                                 />
@@ -952,7 +953,7 @@ class QuestionnaireScreen extends React.Component {
                               containerStyle={{
                                 backgroundColor: 'transparent',
                                 borderColor: 'transparent',
-                                left: 20,
+                                left: ViewScale(20),
                               }}
                               checked={
                                 this.state.checkBox3[item.questionnaire_code]
@@ -978,7 +979,7 @@ class QuestionnaireScreen extends React.Component {
                       {this.state.checkAll === false ? (
                         <CheckBox
                           textStyle={{
-                            fontSize: 17.5,
+                            fontSize: ViewScale(17.5),
                             color: '#4b4b4b',
                             fontWeight: 'normal',
                             fontFamily: 'PSL Kittithada Pro',
@@ -988,18 +989,18 @@ class QuestionnaireScreen extends React.Component {
                               style={{
                                 backgroundColor: '#FFFFFF',
                                 borderWidth: 0.5,
-                                width: 18,
-                                height: 18,
+                                width: ViewScale(18),
+                                height: ViewScale(18),
                                 borderColor: '#999999',
-                                borderRadius: 2.6,
+                                borderRadius: ViewScale(2.6),
                               }}
                             />
                           }
                           checkedIcon={
                             <Image
                               style={{
-                                width: 18,
-                                height: 18,
+                                width: ViewScale(18),
+                                height: ViewScale(18),
                               }}
                               source={require('../../image/rrr.png')}
                             />
@@ -1017,7 +1018,7 @@ class QuestionnaireScreen extends React.Component {
                       ) : (
                         <CheckBox
                           textStyle={{
-                            fontSize: 17.5,
+                            fontSize: ViewScale(17.5),
                             color: '#4b4b4b',
                             fontWeight: 'normal',
                             fontFamily: 'PSL Kittithada Pro',
@@ -1027,18 +1028,18 @@ class QuestionnaireScreen extends React.Component {
                               style={{
                                 backgroundColor: '#FFFFFF',
                                 borderWidth: 0.5,
-                                width: 18,
-                                height: 18,
+                                width: ViewScale(18),
+                                height: ViewScale(18),
                                 borderColor: '#999999',
-                                borderRadius: 2.6,
+                                borderRadius: ViewScale(2.6),
                               }}
                             />
                           }
                           checkedIcon={
                             <Image
                               style={{
-                                width: 18,
-                                height: 18,
+                                width: ViewScale(18),
+                                height: ViewScale(18),
                               }}
                               source={require('../../image/rrr.png')}
                             />
@@ -1060,7 +1061,7 @@ class QuestionnaireScreen extends React.Component {
               </ScrollView>
 
               <View style={{alignItems: 'center'}}>
-                <View style={{margin: 20}}>
+                <View style={{margin: ViewScale(20)}}>
                   {/* <Image
                     style={Style.ImgSub2}
                     source={require('../../image/pageQuestion3.png')}
@@ -1087,12 +1088,12 @@ class QuestionnaireScreen extends React.Component {
                       }}
                       cancle={() => this.setState({PopupAlert: false})}
                       Icon={
-                        <Icon name="alert-circle" size={100} color="#e82d2d" />
+                        <Icon name="alert-circle" size={ViewScale(100)} color="#e82d2d" />
                       }
                     />
                   </Overlay>
                 )}
-                <View style={{flexDirection: 'row', marginBottom: 5}}>
+                <View style={{flexDirection: 'row', marginBottom: ViewScale(5)}}>
                   <TouchableOpacity
                     onPress={() => {
                       this.swiper.scrollToIndex({
@@ -1102,15 +1103,15 @@ class QuestionnaireScreen extends React.Component {
                     }}
                     style={{
                       width: '46%',
-                      height: 38,
+                      height: ViewScale(38),
                       borderWidth: 1,
                       borderColor: '#2d6dc4',
-                      borderRadius: 21.5,
+                      borderRadius: ViewScale(21.5),
                       justifyContent: 'center',
                       alignItems: 'center',
-                      marginRight: 10,
+                      marginRight: ViewScale(10),
                     }}>
-                    <Text style={{fontSize: 25, color: '#2d6dc4'}}>
+                    <Text style={{fontSize: ViewScale(25), color: '#2d6dc4'}}>
                       {I18n.t('translate_Back')}
                     </Text>
                   </TouchableOpacity>
@@ -1127,9 +1128,9 @@ class QuestionnaireScreen extends React.Component {
                     }}
                     style={{
                       width: '46%',
-                      height: 38,
+                      height: ViewScale(38),
                       backgroundColor: '#2d6dc4',
-                      borderRadius: 21.5,
+                      borderRadius: ViewScale(21.5),
                       justifyContent: 'center',
                       alignItems: 'center',
                     }}>

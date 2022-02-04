@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 import I18n from '../utils/I18n';
 import Icon2 from 'react-native-vector-icons/Feather';
 import Styles from '../page/Home/Styles';
+import {ViewScale} from '../config/ViewScale'
 export default class Popup3 extends Component {
   constructor(props) {
     super(props);
@@ -35,7 +36,7 @@ export default class Popup3 extends Component {
           <View style={Styles.popup3RatingImageContainer}>
             <TouchableOpacity onPress={this.props.Ass1}>
               <Image
-                style={{width: 68, height: 68}}
+                style={{width: ViewScale(68), height: ViewScale(68)}}
                 source={this.props.Image1}
               />
             </TouchableOpacity>
@@ -44,7 +45,7 @@ export default class Popup3 extends Component {
           <View style={Styles.popup3RatingImageContainer}>
             <TouchableOpacity onPress={this.props.Ass2}>
               <Image
-                style={{width: 68, height: 68}}
+                style={{width: ViewScale(68), height: ViewScale(68)}}
                 source={this.props.Image2}
               />
             </TouchableOpacity>
@@ -53,7 +54,7 @@ export default class Popup3 extends Component {
           <View style={Styles.popup3RatingImageContainer}>
             <TouchableOpacity onPress={this.props.Ass3}>
               <Image
-                style={{width: 68, height: 68}}
+                style={{width: ViewScale(68), height: ViewScale(68)}}
                 source={this.props.Image3}
               />
             </TouchableOpacity>
@@ -66,7 +67,7 @@ export default class Popup3 extends Component {
           disabled={this.props.Touch}
           onPress={this.props.Touch2}
           style={this.props.TouchStyle}>
-          <Text style={Styles.popupButtonAcceptText}>ส่ง</Text>
+          <Text style={Styles.popupButtonAcceptText}>{I18n.locale === 'th' ? 'ส่ง' : 'Send'}</Text>
         </TouchableOpacity>
       </View>
     );

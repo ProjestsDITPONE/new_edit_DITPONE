@@ -21,6 +21,7 @@ import FormSet4_History from '../../components/FormDITPCare/FormSet4_History';
 import FormSet5_History from '../../components/FormDITPCare/FormSet5_History';
 import FormSet33_History from '../../components/FormDITPCare/FormSet33_History';
 import FormSet34_History from '../../components/FormDITPCare/FormSet34_History';
+import { ViewScale } from '../../config/ViewScale';
 
 const AppealView = ({route, navigation}) => {
   
@@ -41,7 +42,7 @@ const AppealView = ({route, navigation}) => {
   return (
     <View style={Style.backgroundView}>
       <Headers badgeNumber="2" navigation={navigation} backScreen={false} />
-      <View style={{marginTop: Platform.OS === 'android' && 90}} />
+      <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
       <Headerstage nameTab={I18n.t('translate_Myreport')} />
 
       <View style={{backgroundColor: '#F0F3F4', flex: 1, zIndex: -1}}>
@@ -65,7 +66,7 @@ const AppealView = ({route, navigation}) => {
                 </View>
                 <Icon
                   name={array === null ? 'downcircleo' : 'upcircleo'}
-                  size={20}
+                  size={ViewScale(20)}
                   color="#5f5f5f"
                 />
               </View>
@@ -79,14 +80,14 @@ const AppealView = ({route, navigation}) => {
                   {I18n.t('translate_Date_T')} :
                 </Text>
                 <Image
-                  style={{width: 12, height: 12}}
+                  style={{width: ViewScale(12), height: ViewScale(12)}}
                   source={require('../../image/calendagray.png')}
                 />
                 <Text style={Style.textUser}>
                   {' '}
                   {route.params.detail.comp_date}{' '}
                 </Text>
-                <Icon name="clockcircleo" size={13} />
+                <Icon name="clockcircleo" size={ViewScale(13)} />
                 <Text style={Style.textUser}>
                   {' '}
                   {route.params.detail.comp_time}
@@ -263,9 +264,9 @@ const AppealView = ({route, navigation}) => {
                       </Text>
                     </View>
                     <Icon
-                      style={{marginTop: 9}}
+                      style={{marginTop: ViewScale(9)}}
                       name={array2 === null ? 'downcircleo' : 'upcircleo'}
-                      size={20}
+                      size={ViewScale(20)}
                       color="#5f5f5f"
                     />
                   </View>
@@ -277,10 +278,10 @@ const AppealView = ({route, navigation}) => {
                     <View style={Style.ViewBox1}>
                       <View style={Style.documentPanel}>
                         <Image
-                          style={{width: 27, height: 30, margin: 10}}
+                          style={{width: ViewScale(27), height: ViewScale(30), margin: ViewScale(10)}}
                           source={require('../../image/PDF.png')}
                         />
-                        <Text style={{fontSize: 20, color: '#4b4b4b'}}>
+                        <Text style={{fontSize: ViewScale(20), color: '#4b4b4b'}}>
                           {value.caseAttach_file_name}
                         </Text>
                       </View>
@@ -291,7 +292,7 @@ const AppealView = ({route, navigation}) => {
           )}
           {/*0% */}
           {route.params.detail.comp_process == '0' && (
-            <View style={[Style.ViewBox5, {marginTop: 15, marginBottom: 20}]}>
+            <View style={[Style.ViewBox5, {marginTop: ViewScale(15), marginBottom: ViewScale(20)}]}>
               <View
                 style={[
                   Style.viewSub2,
@@ -305,7 +306,7 @@ const AppealView = ({route, navigation}) => {
                     {I18n.t('translate_Status')} :{' '}
                   </Text>
                   <View style={Style.viewSub6}>
-                    <Text style={{fontSize: 22, color: '#FFFFFF'}}>
+                    <Text style={{fontSize: ViewScale(22), color: '#FFFFFF'}}>
                       Waiting
                     </Text>
                   </View>
@@ -315,17 +316,17 @@ const AppealView = ({route, navigation}) => {
               <View
                 style={{
                   flex: 1,
-                  marginLeft: 50,
-                  marginTop: 30,
+                  marginLeft: ViewScale(50),
+                  marginTop: ViewScale(30),
                   flexDirection: 'row',
                   alignSelf: 'center',
                   justifyContent: 'center',
-                  marginBottom: 5,
+                  marginBottom: ViewScale(5),
                 }}>
                 <Image source={require('../../image/percen0.png')} />
                 <View style={{justifyContent: 'flex-end'}}>
                   <Image
-                    style={{height: 120, width: 100}}
+                    style={{height: ViewScale(120), width: ViewScale(100)}}
                     source={require('../../image/percentgirl.png')}
                   />
                 </View>
@@ -334,7 +335,7 @@ const AppealView = ({route, navigation}) => {
           )}
           {/*25% */}
           {route.params.detail.comp_process == '1' && (
-            <View style={[Style.ViewBox5, {marginTop: 15, marginBottom: 20}]}>
+            <View style={[Style.ViewBox5, {marginTop: ViewScale(15), marginBottom: ViewScale(20)}]}>
               <View
                 style={[
                   Style.viewSub2,
@@ -348,7 +349,7 @@ const AppealView = ({route, navigation}) => {
                     {I18n.t('translate_Status')} :{' '}
                   </Text>
                   <View style={Style.viewSub8}>
-                    <Text style={{fontSize: 22, color: '#FFFFFF'}}>
+                    <Text style={{fontSize: ViewScale(22), color: '#FFFFFF'}}>
                       ln process
                     </Text>
                   </View>
@@ -356,7 +357,7 @@ const AppealView = ({route, navigation}) => {
                 <View>
                   <Text
                     style={{
-                      fontSize: 22,
+                      fontSize: ViewScale(22),
                       fontStyle: 'italic',
                       color: '#20416e',
                     }}>
@@ -368,17 +369,17 @@ const AppealView = ({route, navigation}) => {
               <View
                 style={{
                   flex: 1,
-                  marginLeft: 50,
-                  marginTop: 30,
+                  marginLeft: ViewScale(50),
+                  marginTop: ViewScale(30),
                   flexDirection: 'row',
                   alignSelf: 'center',
                   justifyContent: 'center',
-                  marginBottom: 5,
+                  marginBottom: ViewScale(5),
                 }}>
                 <Image source={require('../../image/percen1.png')} />
                 <View style={{justifyContent: 'flex-end'}}>
                   <Image
-                    style={{height: 120, width: 100}}
+                    style={{height: ViewScale(120), width: ViewScale(100)}}
                     source={require('../../image/percentgirl.png')}
                   />
                 </View>
@@ -387,7 +388,7 @@ const AppealView = ({route, navigation}) => {
           )}
           {/* 50% */}
           {route.params.detail.comp_process == '2' && (
-            <View style={[Style.ViewBox5, {marginTop: 15, marginBottom: 20}]}>
+            <View style={[Style.ViewBox5, {marginTop: ViewScale(15), marginBottom: ViewScale(20)}]}>
               <View
                 style={[
                   Style.viewSub2,
@@ -401,7 +402,7 @@ const AppealView = ({route, navigation}) => {
                     {I18n.t('translate_Status')} :{' '}
                   </Text>
                   <View style={Style.viewSub8}>
-                    <Text style={{fontSize: 22, color: '#FFFFFF'}}>
+                    <Text style={{fontSize: ViewScale(22), color: '#FFFFFF'}}>
                       ln process
                     </Text>
                   </View>
@@ -409,7 +410,7 @@ const AppealView = ({route, navigation}) => {
                 <View>
                   <Text
                     style={{
-                      fontSize: 22,
+                      fontSize: ViewScale(22),
                       fontStyle: 'italic',
                       color: '#20416e',
                     }}>
@@ -421,17 +422,17 @@ const AppealView = ({route, navigation}) => {
               <View
                 style={{
                   flex: 1,
-                  marginLeft: 50,
-                  marginTop: 30,
+                  marginLeft: ViewScale(50),
+                  marginTop: ViewScale(30),
                   flexDirection: 'row',
                   alignSelf: 'center',
                   justifyContent: 'center',
-                  marginBottom: 5,
+                  marginBottom: ViewScale(5),
                 }}>
                 <Image source={require('../../image/percen2.png')} />
                 <View style={{justifyContent: 'flex-end'}}>
                   <Image
-                    style={{height: 120, width: 100}}
+                    style={{height: ViewScale(120), width: ViewScale(100)}}
                     source={require('../../image/percentgirl.png')}
                   />
                 </View>
@@ -440,7 +441,7 @@ const AppealView = ({route, navigation}) => {
           )}
           {/* 75%*/}
           {route.params.detail.comp_process == '3' && (
-            <View style={[Style.ViewBox5, {marginTop: 15, marginBottom: 20}]}>
+            <View style={[Style.ViewBox5, {marginTop: ViewScale(15), marginBottom: ViewScale(20)}]}>
               <View
                 style={[
                   Style.viewSub2,
@@ -454,7 +455,7 @@ const AppealView = ({route, navigation}) => {
                     {I18n.t('translate_Status')} :{' '}
                   </Text>
                   <View style={Style.viewSub8}>
-                    <Text style={{fontSize: 22, color: '#FFFFFF'}}>
+                    <Text style={{fontSize: ViewScale(22), color: '#FFFFFF'}}>
                       ln process
                     </Text>
                   </View>
@@ -462,7 +463,7 @@ const AppealView = ({route, navigation}) => {
                 <View>
                   <Text
                     style={{
-                      fontSize: 22,
+                      fontSize: ViewScale(22),
                       fontStyle: 'italic',
                       color: '#20416e',
                     }}>
@@ -474,17 +475,17 @@ const AppealView = ({route, navigation}) => {
               <View
                 style={{
                   flex: 1,
-                  marginLeft: 50,
-                  marginTop: 30,
+                  marginLeft: ViewScale(50),
+                  marginTop: ViewScale(30),
                   flexDirection: 'row',
                   alignSelf: 'center',
                   justifyContent: 'center',
-                  marginBottom: 5,
+                  marginBottom: ViewScale(5),
                 }}>
                 <Image source={require('../../image/percen3.png')} />
                 <View style={{justifyContent: 'flex-end'}}>
                   <Image
-                    style={{height: 120, width: 100}}
+                    style={{height: ViewScale(120), width: ViewScale(100)}}
                     source={require('../../image/percentgirl.png')}
                   />
                 </View>
@@ -493,7 +494,7 @@ const AppealView = ({route, navigation}) => {
           )}
           {/* 100%*/}
           {route.params.detail.comp_process == '4' && (
-            <View style={[Style.ViewBox5, {marginTop: 15, marginBottom: 20}]}>
+            <View style={[Style.ViewBox5, {marginTop: ViewScale(15), marginBottom: ViewScale(20)}]}>
               <View
                 style={[
                   Style.viewSub2,
@@ -507,13 +508,13 @@ const AppealView = ({route, navigation}) => {
                     {I18n.t('translate_Status')} :{' '}
                   </Text>
                   <View style={Style.viewSub9}>
-                    <Text style={{fontSize: 22, color: '#FFFFFF'}}>
+                    <Text style={{fontSize: ViewScale(22), color: '#FFFFFF'}}>
                       {I18n.t('translate_Complete')}
                     </Text>
                   </View>
                 </View>
                 <View>
-                  <Text style={{fontSize: 22, color: '#20416e'}}>
+                  <Text style={{fontSize: ViewScale(22), color: '#20416e'}}>
                     {I18n.t('translate_CaseID')} :{' '}
                     {route.params.detail.comp_caseId}
                   </Text>
@@ -523,17 +524,17 @@ const AppealView = ({route, navigation}) => {
               <View
                 style={{
                   flex: 1,
-                  marginLeft: 50,
-                  marginTop: 30,
+                  marginLeft: ViewScale(50),
+                  marginTop: ViewScale(30),
                   flexDirection: 'row',
                   alignSelf: 'center',
                   justifyContent: 'center',
-                  marginBottom: 5,
+                  marginBottom: ViewScale(5),
                 }}>
                 <Image source={require('../../image/percen4.png')} />
                 <View style={{justifyContent: 'flex-end'}}>
                   <Image
-                    style={{height: 120, width: 100}}
+                    style={{height: ViewScale(120), width: ViewScale(100)}}
                     source={require('../../image/percentgirl.png')}
                   />
                 </View>
@@ -542,24 +543,24 @@ const AppealView = ({route, navigation}) => {
           )}
           {/* โปรดรอเจ้าหน้าทีตรวจสอบ */}
           {route.params.detail.comp_process == '0' && (
-            <View style={[Style.alertContainer, {paddingHorizontal: 30}]}>
-              <View style={{alignSelf: 'center', marginRight: 10}}>
+            <View style={[Style.alertContainer, {paddingHorizontal: ViewScale(30)}]}>
+              <View style={{alignSelf: 'center', marginRight: ViewScale(10)}}>
                 <Image
                   source={require('../../image/sand.png')}
-                  style={{width: 30, height: 30}}
+                  style={{width: ViewScale(30), height: ViewScale(30)}}
                 />
               </View>
-              <Text style={{fontSize: 20, color: '#20416e', flex: 1}}>
+              <Text style={{fontSize: ViewScale(20), color: '#20416e', flex: 1}}>
                 {I18n.t('translate_authoritieswating')}
               </Text>
             </View>
           )}
           {route.params.detail.comp_process != '4' && (
             <View style={Style.alertContainer}>
-              <View style={{justifyContent: 'center', marginRight: 5}}>
-                <Icon3 name="alert-circle" size={35} color="#fe2c2c" />
+              <View style={{justifyContent: 'center', marginRight: ViewScale(5)}}>
+                <Icon3 name="alert-circle" size={ViewScale(35)} color="#fe2c2c" />
               </View>
-              <Text style={{fontSize: 22, color: '#fe2c2c', flex: 1}}>
+              <Text style={{fontSize: ViewScale(22), color: '#fe2c2c', flex: 1}}>
                 {I18n.t('translate_Callcenter_from')}
               </Text>
             </View>
@@ -589,7 +590,7 @@ const AppealView = ({route, navigation}) => {
                   style={Style.checkmarkImage}
                   source={require('../../image/Wong.png')}>
                   <Image
-                    style={{height: 15, width: 20}}
+                    style={{height: ViewScale(15), width: ViewScale(20)}}
                     source={require('../../image/Accept.png')}
                   />
                 </ImageBackground>
@@ -624,7 +625,7 @@ const AppealView = ({route, navigation}) => {
                   style={Style.checkmarkImage}
                   source={require('../../image/Wong.png')}>
                   <Image
-                    style={{height: 15, width: 20}}
+                    style={{height: ViewScale(15), width: ViewScale(20)}}
                     source={require('../../image/Accept.png')}
                   />
                 </ImageBackground>
@@ -659,7 +660,7 @@ const AppealView = ({route, navigation}) => {
                   style={Style.checkmarkImage}
                   source={require('../../image/Wong.png')}>
                   <Image
-                    style={{height: 15, width: 20}}
+                    style={{height: ViewScale(15), width: ViewScale(20)}}
                     source={require('../../image/Accept.png')}
                   />
                 </ImageBackground>
@@ -694,7 +695,7 @@ const AppealView = ({route, navigation}) => {
                   style={Style.checkmarkImage}
                   source={require('../../image/Wong.png')}>
                   <Image
-                    style={{height: 15, width: 20}}
+                    style={{height: ViewScale(15), width: ViewScale(20)}}
                     source={require('../../image/Accept.png')}
                   />
                 </ImageBackground>
@@ -709,25 +710,25 @@ const AppealView = ({route, navigation}) => {
               style={{
                 width: '95%',
                 height: null,
-                padding: 20,
+                padding: ViewScale(20),
               }}>
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: '#07866a',
                   flex: 1,
-                  marginBottom: 10,
+                  marginBottom: ViewScale(10),
                 }}>
                 {I18n.t('textHeadEnd_complaintHistory')}
               </Text>
 
               <View
                 style={{
-                  padding: 8,
+                  padding: ViewScale(8),
                   backgroundColor: '#ffffff',
-                  borderRadius: 10,
+                  borderRadius: ViewScale(10),
                 }}>
-                <Text style={{color: '#858585', fontSize: 20}}>
+                <Text style={{color: '#858585', fontSize: ViewScale(20)}}>
                   {route.params.detail.comp_resultProcess}
                 </Text>
               </View>

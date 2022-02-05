@@ -1,25 +1,26 @@
 import {StyleSheet} from 'react-native';
+import { ViewScale } from '../../config/ViewScale';
 export default StyleSheet.create({
   background: {
     height: '100%',
   },
   containerHearder: {
     backgroundColor: 'transparent',
-    paddingTop: 0,
-    height: 40,
+    paddingTop: ViewScale(0),
+    height: ViewScale(40),
     borderBottomColor: 'transparent',
   },
   textHearder: {
-    fontSize: 30,
+    fontSize: ViewScale(30),
     //fontWeight: 'bold',
     color: '#FFFFFF',
   },
   termView: {
     backgroundColor: '#fff',
-    borderRadius: 10,
+    borderRadius: ViewScale(10),
     opacity: 0.8,
-    paddingLeft: 10,
-    paddingVertical: 10,
+    paddingLeft: ViewScale(10),
+    paddingVertical: ViewScale(10),
     // maxWidth: 381,
     width: '95%',
     //height: 490,
@@ -33,11 +34,11 @@ export default StyleSheet.create({
   checkContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginVertical: 20,
-    marginHorizontal: 10,
+    marginVertical: ViewScale(20),
+    marginHorizontal: ViewScale(10),
   },
   checkView: {
-    marginLeft: 20,
+    marginLeft: ViewScale(20),
     flexDirection: 'row',
     alignContent: 'stretch',
   },
@@ -49,29 +50,29 @@ export default StyleSheet.create({
   },
   checkText: {
     color: '#ffffff',
-    fontSize: 20,
-    marginTop: 3,
+    fontSize: ViewScale(20),
+    marginTop: ViewScale(3),
     //fontWeight: 'bold',
   },
   ViewAccept: {
     alignSelf: 'center',
     flex: 0.2,
-    marginBottom: 20,
+    marginBottom: ViewScale(20),
   },
   BTNview: {
     width: '80%',
-    height: 48,
+    height: ViewScale(48),
     backgroundColor: '#f96145',
     alignContent: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
-    paddingHorizontal: 10,
+    borderRadius: ViewScale(10),
+    paddingHorizontal: ViewScale(10),
   },
   TextView: {
     alignSelf: 'center',
     alignItems: 'center',
     alignContent: 'center',
-    fontSize: 25,
+    fontSize: ViewScale(25),
     color: '#FFFFFF',
   },
   opacityBTN: {

@@ -20,6 +20,7 @@ import {
 } from 'react-native';
 import InAppBrowser from 'react-native-inappbrowser-reborn';
 import {getDeepLinkAct} from '../../config/utilities';
+import { ViewScale } from '../../config/ViewScale';
 import RNFetchBlob from 'rn-fetch-blob';
 import {Overlay, ListItem} from 'react-native-elements';
 import SocketIOClient from 'socket.io-client';
@@ -590,10 +591,10 @@ class UserChatRoom extends Component {
         style={{flexDirection: 'row',
         
         // borderRadius:20,
-        marginTop:5,
-        marginBottom:1,
-        borderTopLeftRadius:15,
-        borderTopRightRadius:15,
+        marginTop:ViewScale(5),
+        marginBottom:ViewScale(1),
+        borderTopLeftRadius:ViewScale(15),
+        borderTopRightRadius:ViewScale(15),
         borderBottomLeftRadius:props.currentMessage.userview === props.currentMessage.user._id ? 15:0,
         borderBottomRightRadius:props.currentMessage.userview === props.currentMessage.user._id ? 0:15,
         flexWrap: 'wrap',
@@ -601,18 +602,18 @@ class UserChatRoom extends Component {
           <Text
           numberOfLines={2}
             style={{
-              borderRadius: 10,
-              marginBottom: 10,
+              borderRadius: ViewScale(10),
+              marginBottom: ViewScale(10),
               width:width*0.6,
-              marginTop: 5,
+              marginTop: ViewScale(5),
               height: null,
               justifyContent: 'center',
               fontFamily: 'PSL Kittithada Pro',
               fontWeight: 'normal',
-              fontSize: 19,
+              fontSize: ViewScale(19),
               textDecorationLine: 'underline',
               // textAlign: props.currentMessage.userview === props.currentMessage.user._id ?'right':'left',
-              marginHorizontal: 15,
+              marginHorizontal: ViewScale(15),
               color: '#2d6dc4',
 
             }}>
@@ -656,9 +657,9 @@ class UserChatRoom extends Component {
         <Icon2
           name="send"
           style={{
-            top: Platform.OS === 'android' ? -10 : -10,
-            marginHorizontal: 20,
-            fontSize: 22,
+            top: Platform.OS === 'android' ? ViewScale(-10) : ViewScale(-10),
+            marginHorizontal: ViewScale(20),
+            fontSize: ViewScale(22),
             color: '#2d6dc4',
           }}
         />
@@ -711,24 +712,24 @@ class UserChatRoom extends Component {
             }}
             style={{
               marginHorizontal: 5,
-              marginLeft: Platform.OS === 'android' ? 10 : 10,
+              marginLeft: Platform.OS === 'android' ? ViewScale(10) : ViewScale(10),
             }}>
             <Image
-              style={{width: 11, resizeMode: 'contain'}}
+              style={{width: ViewScale(11), resizeMode: 'contain'}}
               source={require('../../image/attachfile.png')}
             />
           </TouchableOpacity>
-          <TouchableOpacity style={{marginHorizontal: 5, marginTop: -11}}>
+          <TouchableOpacity style={{marginHorizontal: ViewScale(5), marginTop: ViewScale(-11)}}>
             <Image
-              style={{width: 23, resizeMode: 'contain'}}
+              style={{width: ViewScale(23), resizeMode: 'contain'}}
               source={require('../../image/cameraimg.png')}
             />
           </TouchableOpacity>
           <TouchableOpacity
       
-            style={{marginHorizontal: 5}}>
+            style={{marginHorizontal: ViewScale(5)}}>
             <Image
-              style={{width: 20, resizeMode: 'contain', marginTop: 4}}
+              style={{width: ViewScale(20), resizeMode: 'contain', marginTop: ViewScale(4)}}
               source={require('../../image/photochat1.png')}
             />
           </TouchableOpacity>
@@ -737,7 +738,7 @@ class UserChatRoom extends Component {
           {...props}
           placeholder="ข้อความ ..."
           textInputStyle={{
-            fontSize: 21,
+            fontSize: ViewScale(21),
             fontFamily: 'PSL Kittithada Pro',
             fontWeight: 'normal',
           }}
@@ -746,10 +747,10 @@ class UserChatRoom extends Component {
             borderTopColor: '#e7e7e7',
             borderLeftWidth: 1.5,
             borderLeftColor: '#e7e7e7',
-            marginLeft: 90,
+            marginLeft: ViewScale(90),
 
             flex: 1,
-            borderRadius: 8,
+            borderRadius: ViewScale(8),
           }}
         />
       </View>
@@ -764,8 +765,8 @@ class UserChatRoom extends Component {
       <Avatar
         {...props}
         imageStyle={{
-          left: {width: 40, height: 40},
-          right: {width: 40, height: 40},
+          left: {width: ViewScale(40), height: ViewScale(40)},
+          right: {width: ViewScale(40), height: ViewScale(40)},
         }}
       />
     );
@@ -793,7 +794,7 @@ class UserChatRoom extends Component {
                 <View style={{flex: 1}}>
                   <Text
                     style={{
-                      fontSize: 25,
+                      fontSize: ViewScale(25),
                       color: '#FFFFFF',
                       fontFamily: 'Kittithada Bold 75',
                     }}>
@@ -832,7 +833,7 @@ class UserChatRoom extends Component {
                     style={{flex: 1, justifyContent: 'center'}}>
                     <Icon1
                       name="menu"
-                      size={25}
+                      size={ViewScale(25)}
                       color="#FFF"
                       style={{alignSelf: 'center'}}
                     />
@@ -881,28 +882,28 @@ class UserChatRoom extends Component {
                     onPress={this.open_file11}
                     style={{
                       
-                      width:20,
-                      marginHorizontal: 3,
-                      marginLeft: Platform.OS === 'android' ? 12 : 10,
+                      width:ViewScale(20),
+                      marginHorizontal: ViewScale(3),
+                      marginLeft: Platform.OS === 'android' ? ViewScale(12) : ViewScale(10),
                     }}>
                     <Image
-                      style={{width: 11, resizeMode: 'contain'}}
+                      style={{width: ViewScale(11), resizeMode: 'contain'}}
                       source={require('../../image/attachfile.png')}
                     />
                   </TouchableOpacity>
                   <TouchableOpacity
                   onPress={this.open_camera11}
-                    style={{marginHorizontal: 5, marginTop: -11}}>
+                    style={{marginHorizontal: ViewScale(5), marginTop: ViewScale(-11)}}>
                     <Image
-                      style={{width: 23, resizeMode: 'contain'}}
+                      style={{width: ViewScale(23), resizeMode: 'contain'}}
                       source={require('../../image/cameraimg.png')}
                     />
                   </TouchableOpacity>
                   <TouchableOpacity
                     onPress={this.open_library11}
-                    style={{marginHorizontal: 8}}>
+                    style={{marginHorizontal: ViewScale(8)}}>
                     <Image
-                      style={{width: 20, resizeMode: 'contain', marginTop: 4}}
+                      style={{width: ViewScale(20), resizeMode: 'contain', marginTop: ViewScale(4)}}
                       source={require('../../image/photochat1.png')}
                     />
                   </TouchableOpacity>
@@ -911,7 +912,7 @@ class UserChatRoom extends Component {
                   {...props}
                   placeholder="ข้อความ ..."
                   textInputStyle={{
-                    fontSize: 21,
+                    fontSize: ViewScale(21),
                     fontFamily: 'PSL Kittithada Pro',
                     fontWeight: 'normal',
                   }}
@@ -920,10 +921,10 @@ class UserChatRoom extends Component {
                     borderTopColor: '#e7e7e7',
                     borderLeftWidth: 1.5,
                     borderLeftColor: '#e7e7e7',
-                    marginLeft: Platform.OS==='android'? 100:96,
+                    marginLeft: Platform.OS==='android'? ViewScale(100):ViewScale(96),
 
                     flex: 1,
-                    borderRadius: 8,
+                    borderRadius: ViewScale(8),
                   }}
                 />
               </View>

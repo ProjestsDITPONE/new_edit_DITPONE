@@ -19,6 +19,7 @@ import {getContect} from '../../actions/data.actions';
 import {connect} from 'react-redux';
 import Styles from './Styles';
 import LinearGradient from 'react-native-linear-gradient';
+import {ViewScale} from '../../config/ViewScale'
 import {borderColor} from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 const height = Dimensions.get('window').height;
@@ -119,12 +120,12 @@ const Contect = ({navigation, dispatch}) => {
             // borderBottomWidth: 180,
             // borderBottomColor: '#FFFFFF',
 
-            borderBottomRightRadius: 110,
-            borderBottomLeftRadius: 110,
+            borderBottomRightRadius: ViewScale(110),
+            borderBottomLeftRadius: ViewScale(110),
 
             zIndex: Platform.OS === 'android' ? 9999 : -1,
           }}>
-          <View style={{marginTop: 43, zIndex: -99}} />
+          <View style={{marginTop: ViewScale(43), zIndex: -99}} />
           <Headerstage nameTab={I18n.t('translate_ContactDepartment')} />
         </LinearGradient>
 
@@ -132,11 +133,11 @@ const Contect = ({navigation, dispatch}) => {
           resizeMode={'contain'}
           style={{
             width: '100%',
-            height: 210,
+            height: ViewScale(210),
             zIndex: Platform.OS === 'android' ? 9999 : 0,
             // borderWidth:1,
 
-            marginTop: Platform.OS === 'android' ? -height * 0.22 : -185,
+            marginTop: Platform.OS === 'android' ? -height * 0.22 : ViewScale(-185),
           }}
           source={require('../../image/contactx.png')}
         />
@@ -149,26 +150,26 @@ const Contect = ({navigation, dispatch}) => {
               colors={['#9c7df6', '#3986ee']}
               style={{
                 // backgroundColor: '#FFFFFF',
-                borderRadius: 10,
-                marginTop: Platform.OS === 'android' ? -185 : -185,
+                borderRadius: ViewScale(10),
+                marginTop: Platform.OS === 'android' ? ViewScale(-185) : ViewScale(-185),
                 zIndex: Platform.OS === 'android' ? 999 : -999,
-                marginHorizontal: 15,
+                marginHorizontal: ViewScale(15),
               }}>
               <View
                 style={{
-                  paddingTop: 200,
+                  paddingTop: ViewScale(200),
                   backgroundColor: '#FFFFFF',
-                  marginHorizontal: 0.3,
-                  borderWidth: 0.3,
-                  borderRadius: 10,
+                  marginHorizontal: ViewScale(0.3),
+                  borderWidth: ViewScale(0.3),
+                  borderRadius: ViewScale(10),
                   borderColor: '#9c7df6',
                   marginBottom: 1,
                 }}>
                 <Text
                   style={{
-                    fontSize: 20,
+                    fontSize: ViewScale(20),
                     color: '#20416e',
-                    marginHorizontal: 10,
+                    marginHorizontal: ViewScale(10),
                     fontFamily: 'Kittithada Bold 75',
                   }}>
                   กรมส่งเสริมการค้าระหว่างประเทศ (บางกระสอ)
@@ -176,10 +177,10 @@ const Contect = ({navigation, dispatch}) => {
 
                 <View
                   style={{
-                    marginTop: 5,
-                    width: 100,
-                    marginHorizontal: 10,
-                    height: 35,
+                    marginTop: ViewScale(5),
+                    width: ViewScale(100),
+                    marginHorizontal: ViewScale(10),
+                    height: ViewScale(35),
                   }}>
                   <View style={Styles.ViewSub12}>
                     <TouchableOpacity
@@ -198,7 +199,7 @@ const Contect = ({navigation, dispatch}) => {
                     numberOfLines={2}
                     style={[
                       Styles.TextSub1,
-                      {marginHorizontal: 25, marginRight: 10},
+                      {marginHorizontal: ViewScale(25), marginRight: ViewScale(10)},
                     ]}>
                     {I18n.locale === 'th'
                       ? '563 ถนน นนทบุรี ตำบล บางกระสอ อำเภอ เมือง '+'\n'+'จังหวัด นนทบุรี 11000'
@@ -209,23 +210,23 @@ const Contect = ({navigation, dispatch}) => {
                 <View
                   style={{
                     flexDirection: 'row',
-                    marginHorizontal: 20,
+                    marginHorizontal: ViewScale(20),
                   }}>
                   <View>
                     <Image
-                      style={{width: 10, height: 10, top: 3, left: 5}}
+                      style={{width: ViewScale(10), height: ViewScale(10), top: ViewScale(3), left: ViewScale(5)}}
                       source={require('../../image/numberphone.png')}
                     />
                   </View>
-                  <View style={{marginBottom:20}}>
+                  <View style={{marginBottom:ViewScale(20)}}>
                     <Text
                       onPress={() => {
                         Call(Address1.tel);
                       }}
                       style={{
                         color: '#4b4b4b',
-                        fontSize: 17,
-                        marginHorizontal: 15,
+                        fontSize: ViewScale(17),
+                        marginHorizontal: ViewScale(15),
                       }}>
                       {Phone(Address1.tel)}
                     </Text>
@@ -234,7 +235,7 @@ const Contect = ({navigation, dispatch}) => {
                 
 
                 <Image
-                  style={{width: '90%', height: 1, marginHorizontal: 15,marginBottom:15}}
+                  style={{width: '90%', height: ViewScale(1), marginHorizontal: ViewScale(15),marginBottom:ViewScale(15)}}
                   source={require('../../image/linecontectx.png')}
                 />
 
@@ -242,9 +243,9 @@ const Contect = ({navigation, dispatch}) => {
                   <>
                     <Text
                       style={{
-                        fontSize: 20,
+                        fontSize: ViewScale(20),
                         color: '#20416e',
-                        marginHorizontal: 10,
+                        marginHorizontal: ViewScale(10),
                         fontFamily: 'Kittithada Bold 75',
                       }}>
                       กรมส่งเสริมการค้าระหว่างประเทศ (ถนนรัชดาภิเษก)
@@ -253,24 +254,24 @@ const Contect = ({navigation, dispatch}) => {
                       <Text
                         style={[
                           Styles.TextSub1,
-                          {marginHorizontal: 25, marginRight: 10},
+                          {marginHorizontal: ViewScale(25), marginRight: ViewScale(10)},
                         ]}>
                         - สถานบันฝึกอบรมการค้าระหว่างประเทศ
                       </Text>
                       <Text
                         style={[
                           Styles.TextSub1,
-                          {marginHorizontal: 25, marginRight: 10},
+                          {marginHorizontal: ViewScale(25), marginRight: ViewScale(10)},
                         ]}>
                         - ศูนย์บริการส่งออกแบบเบ็ดเสร็จ
                       </Text>
                     </View>
                     <View
                       style={{
-                        marginTop: 5,
-                        width: 100,
-                        marginHorizontal: 10,
-                        height: 35,
+                        marginTop: ViewScale(5),
+                        width: ViewScale(100),
+                        marginHorizontal: ViewScale(10),
+                        height: ViewScale(35),
                       }}>
                       <View style={Styles.ViewSub12}>
                         <TouchableOpacity
@@ -288,7 +289,7 @@ const Contect = ({navigation, dispatch}) => {
                       <Text
                         style={[
                           Styles.TextSub1,
-                          {marginHorizontal: 25, marginRight: 10},
+                          {marginHorizontal: ViewScale(25), marginRight: ViewScale(10)},
                         ]}>
                         {I18n.locale === 'th'
                           ? '22/77 ถนน รัชดาภิเษก เขต จตุจักร กรุงเทพ 10900'
@@ -298,12 +299,12 @@ const Contect = ({navigation, dispatch}) => {
                     <View
                       style={{
                         flexDirection: 'row',
-                        marginHorizontal: 20,
-                        marginBottom: 10,
+                        marginHorizontal: ViewScale(20),
+                        marginBottom: ViewScale(10),
                       }}>
                       <View>
                         <Image
-                          style={{width: 10, height: 10, top: 3, left: 5}}
+                          style={{width: ViewScale(10), height: ViewScale(10), top: ViewScale(3), left: ViewScale(5)}}
                           source={require('../../image/numberphone.png')}
                         />
                       </View>
@@ -314,8 +315,8 @@ const Contect = ({navigation, dispatch}) => {
                           }}
                           style={{
                             color: '#4b4b4b',
-                            fontSize: 17,
-                            marginHorizontal: 15,
+                            fontSize: ViewScale(17),
+                            marginHorizontal: ViewScale(15),
                           }}>
                           {Phone(Address2.tel)}
                         </Text>
@@ -360,28 +361,28 @@ const Contect = ({navigation, dispatch}) => {
               colors={['#9c7df6', '#3986ee']}
               style={{
                 backgroundColor: '#FFFFFF',
-                borderRadius: 10,
-                marginTop: 10,
-                marginHorizontal: 15,
+                borderRadius: ViewScale(10),
+                marginTop: ViewScale(10),
+                marginHorizontal: ViewScale(15),
               }}>
               <View
                 style={{
                   backgroundColor: '#FFFFFF',
-                  borderRadius: 10,
-                  marginHorizontal: 0.3,
-                  marginVertical: 0.3,
-                  borderWidth: 0.3,
+                  borderRadius: ViewScale(10),
+                  marginHorizontal: ViewScale(0.3),
+                  marginVertical: ViewScale(0.3),
+                  borderWidth: ViewScale(0.3),
                   borderColor: '#9c7df6',
-                  marginBottom: 1,
+                  marginBottom: ViewScale(1),
                 }}>
                 <Text
                   style={{
-                    fontSize: 20,
+                    fontSize: ViewScale(20),
                     color: '#20416e',
-                    marginHorizontal: 10,
+                    marginHorizontal: ViewScale(10),
                     fontFamily: 'Kittithada Bold 75',
-                    marginBottom: 5,
-                    marginTop: 5,
+                    marginBottom: ViewScale(5),
+                    marginTop: ViewScale(5),
                   }}>
                   {I18n.t('translate_Contect1')}
                 </Text>
@@ -394,21 +395,21 @@ const Contect = ({navigation, dispatch}) => {
                     <Image
                       resizeMode={'contain'}
                       style={{
-                        width: 60,
-                        height: 60,
+                        width: ViewScale(60),
+                        height: ViewScale(60),
                       }}
                       source={require('../../image/DITPWWWWW.png')}
                     />
                     <Text
                       style={{
                         color: '#20416e',
-                        fontSize: 18,
+                        fontSize: ViewScale(18),
                         fontFamily: 'Kittithada Bold 75',
                       }}>
                       Website
                       {''}
                     </Text>
-                    <Text style={{marginTop: -5}}>{''}</Text>
+                    <Text style={{marginTop: ViewScale(-5)}}>{''}</Text>
                   </TouchableOpacity>
                   <TouchableOpacity
                     onPress={() => {
@@ -418,8 +419,8 @@ const Contect = ({navigation, dispatch}) => {
                     <Image
                       resizeMode={'contain'}
                       style={{
-                        width: 60,
-                        height: 60,
+                        width: ViewScale(60),
+                        height: ViewScale(60),
                       }}
                       source={require('../../image/callcenter.png')}
                     />
@@ -427,7 +428,7 @@ const Contect = ({navigation, dispatch}) => {
                     <Text
                       style={{
                         color: '#20416e',
-                        fontSize: 18,
+                        fontSize: ViewScale(18),
                         fontFamily: 'Kittithada Bold 75',
                       }}>
                       Call Center 1169
@@ -442,8 +443,8 @@ const Contect = ({navigation, dispatch}) => {
                     <Image
                       resizeMode={'contain'}
                       style={{
-                        width: 60,
-                        height: 60,
+                        width: ViewScale(60),
+                        height: ViewScale(60),
                       }}
                       source={require('../../image/mess.png')}
                     />
@@ -451,7 +452,7 @@ const Contect = ({navigation, dispatch}) => {
                     <Text
                       style={{
                         color: '#20416e',
-                        fontSize: 18,
+                        fontSize: ViewScale(18),
                         fontFamily: 'Kittithada Bold 75',
                       }}>
                       E-mail
@@ -466,29 +467,29 @@ const Contect = ({navigation, dispatch}) => {
               colors={['#9c7df6', '#3986ee']}
               style={{
                 backgroundColor: '#FFFFFF',
-                borderRadius: 10,
-                marginTop: 10,
-                marginHorizontal: 15,
-                marginBottom: 10,
+                borderRadius: ViewScale(10),
+                marginTop: ViewScale(10),
+                marginHorizontal: ViewScale(15),
+                marginBottom: ViewScale(10),
               }}>
               <View
                 style={{
                   backgroundColor: '#FFFFFF',
-                  borderRadius: 10,
-                  marginHorizontal: 0.3,
-                  marginVertical: 0.3,
-                  borderWidth: 0.3,
+                  borderRadius: ViewScale(10),
+                  marginHorizontal: ViewScale(0.3),
+                  marginVertical: ViewScale(0.3),
+                  borderWidth: ViewScale(0.3),
                   borderColor: '#9c7df6',
-                  marginBottom: 1,
+                  marginBottom: ViewScale(1),
                 }}>
                 <Text
                   style={{
-                    fontSize: 20,
+                    fontSize: ViewScale(20),
                     color: '#20416e',
-                    marginHorizontal: 10,
+                    marginHorizontal: ViewScale(10),
                     fontFamily: 'Kittithada Bold 75',
-                    marginBottom: 5,
-                    marginTop: 5,
+                    marginBottom: ViewScale(5),
+                    marginTop: ViewScale(5),
                   }}>
                   Social Media
                 </Text>
@@ -505,8 +506,8 @@ const Contect = ({navigation, dispatch}) => {
                     <Image
                       resizeMode={'contain'}
                       style={{
-                        width: 60,
-                        height: 60,
+                        width: ViewScale(60),
+                        height: ViewScale(60),
                       }}
                       source={require('../../image/facebookx.png')}
                     />
@@ -518,8 +519,8 @@ const Contect = ({navigation, dispatch}) => {
                     <Image
                       resizeMode={'contain'}
                       style={{
-                        width: 60,
-                        height: 60,
+                        width: ViewScale(60),
+                        height: ViewScale(60),
                       }}
                       source={require('../../image/twix.png')}
                     />
@@ -530,8 +531,8 @@ const Contect = ({navigation, dispatch}) => {
                     <Image
                       resizeMode={'contain'}
                       style={{
-                        width: 60,
-                        height: 60,
+                        width: ViewScale(60),
+                        height: ViewScale(60),
                       }}
                       source={require('../../image/insx.png')}
                     />
@@ -545,8 +546,8 @@ const Contect = ({navigation, dispatch}) => {
                     <Image
                       resizeMode={'contain'}
                       style={{
-                        width: 60,
-                        height: 60,
+                        width: ViewScale(60),
+                        height: ViewScale(60),
                       }}
                       source={require('../../image/linex.png')}
                     />
@@ -557,8 +558,8 @@ const Contect = ({navigation, dispatch}) => {
                     <Image
                       resizeMode={'contain'}
                       style={{
-                        width: 60,
-                        height: 60,
+                        width: ViewScale(60),
+                        height: ViewScale(60),
                       }}
                       source={require('../../image/Youtubex.png')}
                     />
@@ -566,7 +567,7 @@ const Contect = ({navigation, dispatch}) => {
                 </View>
               </View>
             </LinearGradient>
-            <View style={{marginBottom: 20}}>
+            <View style={{marginBottom: ViewScale(20)}}>
               <Text> </Text>
             </View>
           </>

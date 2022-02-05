@@ -250,10 +250,10 @@ class Headers extends React.Component {
           <View
             style={{
               zIndex: 99,
-              width: ViewScale(100),
+              width: 100,
               position: 'absolute',
-              left: ViewScale(15),
-              top: ViewScale(-5),
+              left: 15,
+              top: -5,
             }}>
             {this.LeftComponent(this.state.fadeAnim)}
           </View>
@@ -279,10 +279,10 @@ class Headers extends React.Component {
           <View
             style={{
               zIndex: 99,
-              width: ViewScale(100),
+              width: 100,
               position: 'absolute',
-              right: ViewScale(-5),
-              top: ViewScale(5),
+              right: -5,
+              top: 5,
             }}>
             {this.RightComponent(this.state.fadeAnim)}
           </View>
@@ -300,7 +300,7 @@ class Headers extends React.Component {
         <View style={styles.handler}>
           <ImageBackground
             source={require('../image/bgshadow.png')}
-            imageStyle={{height: ViewScale(58), width: ViewScale(50), alignSelf: 'center'}}
+            imageStyle={{height: 58, width: 50, alignSelf: 'center'}}
             style={{}}>
             <Image
               style={[styles.HeaderCenterIcon, {}]}
@@ -427,7 +427,7 @@ class Headers extends React.Component {
                       height: ViewScale(19),
                       width: I18n.locale === 'th' ? ViewScale(83) : ViewScale(83),
                       left: Platform.OS === 'ios' ? ViewScale(6) : ViewScale(10),
-                      top: 0,
+                      top: ViewScale(0),
                     }}
                     style={[styles.BGChatSt, {justifyContent: 'center'}]}>
                     <View style={{alignItems: 'center'}}>
@@ -436,7 +436,7 @@ class Headers extends React.Component {
                           styles.TextBGChat,
                           {
                             textAlign: 'center',
-                            left: Platform.OS === 'ios' ? 19 : 23,
+                            left: Platform.OS === 'ios' ? ViewScale(19) : ViewScale(23),
                             top: ViewScale(-4),
                           },
                         ]}>
@@ -537,13 +537,13 @@ class Headers extends React.Component {
           {this.props.CountNotification.CountNotification > 0 ? (
             <Badge
               badgeStyle={{
-                top: 3,
-                right: 10,
-                width: 21,
-                height: 21,
-                borderRadius: 35,
+                top: ViewScale(3),
+                right: ViewScale(10),
+                width: ViewScale(21),
+                height: ViewScale(21),
+                borderRadius: ViewScale(35),
               }}
-              textStyle={{fontSize: 15}}
+              textStyle={{fontSize: ViewScale(15)}}
               // value={this.props.badgeNumber}
               value={this.props.CountNotification.CountNotification - 10}
               // value={10}
@@ -554,14 +554,14 @@ class Headers extends React.Component {
             this.state.CountNoti > 0 && (
               <Badge
                 badgeStyle={{
-                  top: 3,
-                  right: 2,
-                  width: 21,
-                  height: 21,
-                  borderRadius: 35,
-                  left: 17,
+                  top: ViewScale(3),
+                  right: ViewScale(2),
+                  width: ViewScale(21),
+                  height: ViewScale(21),
+                  borderRadius: ViewScale(35),
+                  left: ViewScale(17),
                 }}
-                textStyle={{fontSize: 15}}
+                textStyle={{fontSize: ViewScale(15)}}
                 // value={1}
                 value={
                   this.state.CountNoti > 99 ? 99 + '+' : this.state.CountNoti
@@ -680,7 +680,7 @@ class Headers extends React.Component {
                 this.setState({PopupLogout: false});
               }}
               cancle={() => this.setState({PopupLogout: false})}
-              Icon={<Icon2 name="alert-circle" size={ViewScale(100)} color="#e82d2d" />}
+              Icon={<Icon2 name="alert-circle" size={100} color="#e82d2d" />}
             />
           </Overlay>
         )}
@@ -810,11 +810,11 @@ class Headers extends React.Component {
               }}>
               <Animated.View
                 style={(styles.ViewInColMenuTop, {opacity: anime2})}>
-                <View style={{zIndex: 1, right: ViewScale(13), bottom: ViewScale(13)}}>
+                <View style={{zIndex: 1, right: 1, bottom: 13}}>
                   {this.props.CountNotification.CountNotification > 0 ? (
                     <Badge
-                      badgeStyle={{width: ViewScale(25), height: ViewScale(25), borderRadius: 15}}
-                      textStyle={{fontSize: ViewScale(15)}}
+                      badgeStyle={{width: 25, height: 25, borderRadius: 15}}
+                      textStyle={{fontSize: 15}}
                       // value={10}
                       value={
                         this.props.CountNotification.CountNotification - 10
@@ -935,7 +935,7 @@ export default connect(
 const styles = StyleSheet.create({
   zIndex99: {
     zIndex: 9999,
-    height: ViewScale(115),
+    height: 115,
   },
   frontContainer: {
     flex: 1,
@@ -943,20 +943,20 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   imageMenuTop: {
-    width: ViewScale(80),
-    height: ViewScale(55),
+    width: 80,
+    height: 55,
     alignSelf: 'center',
   },
   textMenuTop: {
     color: '#40536d',
-    fontSize: ViewScale(18),
+    fontSize: ViewScale(20),
     alignSelf: 'center',
     textAlign: 'center',
     fontFamily: 'Kittithada Bold 75',
   },
   ViewMainMenuTop: {
-    paddingHorizontal: ViewScale(10),
-    paddingTop: ViewScale(30),
+    paddingHorizontal: 10,
+    paddingTop: 30,
     flexDirection: 'row',
     justifyContent: 'space-around',
   },
@@ -966,7 +966,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   ViewInColMenuTop: {
-    height: ViewScale(120),
+    height: 120,
   },
   image: {
     resizeMode: 'cover',
@@ -976,53 +976,53 @@ const styles = StyleSheet.create({
     backgroundColor: null,
     width: width,
     alignItems: 'center',
-    marginTop: ViewScale(35),
+    marginTop: 35,
   },
   imageTop1: {
-    height: ViewScale(100),
-    width: ViewScale(250),
-    marginTop: Platform.OS === 'android' ? ViewScale(-5) : ViewScale(18),
+    height: 100,
+    width: 250,
+    marginTop: Platform.OS === 'android' ? -5 : 18,
     position: 'absolute',
     left: '50%',
-    marginLeft: ViewScale(-125),
+    marginLeft: -125,
   },
   content: {
     backgroundColor: null,
     justifyContent: 'space-around',
-    height: ViewScale(120),
+    height: 120,
     borderBottomColor: '#ffffff00',
   },
   iconArrowDown: {
-    height: ViewScale(5),
-    width: ViewScale(8),
-    marginTop: Platform.OS === 'android' ? ViewScale(75) : ViewScale(-13),
+    height: 5,
+    width: 8,
+    marginTop: Platform.OS === 'android' ? 75 : -13,
     position: Platform.OS === 'android' ? 'absolute' : 'relative',
-    right: Platform.OS === 'android' ? ViewScale(-3) : ViewScale(0),
+    right: Platform.OS === 'android' ? -3 : 0,
   },
   iconArrowUp: {
-    height: ViewScale(5),
-    width: ViewScale(8),
-    marginTop: ViewScale(20),
+    height: 5,
+    width: 8,
+    marginTop: 20,
     alignSelf: 'center',
   },
   BGHeader: {
-    height: aspectRatio == 2 ? ViewScale(62) : ViewScale(75),
+    height: aspectRatio == 2 ? 62 : 75,
     width: '100%',
-    marginTop: ViewScale(23),
+    marginTop: Platform.OS === 'ios' ? 23 : 10,
   },
-  BGHeaderSt: {height: ViewScale(120), width: '100%'},
+  BGHeaderSt: {height: 120, width: '100%'},
   HeaderCenterIcon: {
-    width: ViewScale(50),
-    height: ViewScale(50),
+    width: 50,
+    height: 50,
   },
   marginTopD30: {
-    marginTop: ViewScale(-30),
+    marginTop: -30,
   },
   marginTopD60: {
-    marginTop: ViewScale(-60),
+    marginTop: -60,
   },
   paddingR5: {
-    paddingRight: ViewScale(5),
+    paddingRight: 5,
   },
   iconHumanBack: {
     width: ViewScale(23),
@@ -1036,14 +1036,14 @@ const styles = StyleSheet.create({
     display: 'none',
   },
   BGChat: {
-    height: ViewScale(19),
-    width: ViewScale(87),
+    height: 19,
+    width: 87,
   },
   BGChatSt: {
     height: ViewScale(24),
     width: null,
     marginTop: ViewScale(13),
-    marginLeft: 0,
+    marginLeft: ViewScale(0),
     right: ViewScale(10),
     left: Platform.OS === 'android' ? ViewScale(-16) : ViewScale(-8),
   },
@@ -1060,14 +1060,14 @@ const styles = StyleSheet.create({
   ViewIconNoti: {
     // paddingLeft: 10,
     // paddingRight: 20,
-    marginHorizontal: ViewScale(6),
+    marginHorizontal: 6,
   },
   height35: {
-    height: ViewScale(35),
+    height: 35,
   },
   iconBadge: {
     position: 'absolute',
-    top: ViewScale(13),
-    right: ViewScale(12),
+    top: 13,
+    right: 12,
   },
 });

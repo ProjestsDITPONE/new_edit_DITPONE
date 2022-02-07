@@ -2951,7 +2951,7 @@ class DevlopRegister extends React.Component {
             </Text>
           ) : (
             <Text
-              style={{ textAlign: "center", fontSize: 18, color: "#2d6dc4" }}
+              style={{ textAlign: "center", fontSize: ViewScale(18), color: "#2d6dc4" }}
             >
               {item.txt}
             </Text>
@@ -5758,7 +5758,7 @@ class DevlopRegister extends React.Component {
             {this.state.sucess === false ? (
               <View>
                 <FlatList
-                  style={{ width: "95%", alignSelf: "center" }}
+                  style={{ fontSize: 18, width: "95%", alignSelf: "center" }}
                   data={
                     this.props.getUser.userDetails.res_result.type === 3
                       ? dadamenu3
@@ -15818,7 +15818,7 @@ class DevlopRegister extends React.Component {
                           <DropDownItem
                             key={i}
                             style={{
-                              marginHorizontal: 15,
+                              marginHorizontal: ViewScale(15),
                               backgroundColor: "#FFF",
                             }}
                             contentVisible={false}
@@ -16274,7 +16274,7 @@ class DevlopRegister extends React.Component {
               />
               <View
                 style={{
-                  marginHorizontal: 10,
+                  marginHorizontal: ViewScale(10),
                   // shadowColor: '#000',
                   // shadowOffset: {
                   //   width: 0,
@@ -16887,7 +16887,7 @@ class DevlopRegister extends React.Component {
                         alignItems: "center",
                       }}
                     >
-                      <Text style={{ fontSize: 24, color: "#ffffff" }}>
+                      <Text style={{ fontSize: ViewScale(24), color: "#ffffff" }}>
                         {I18n.t("transalte_edit_accompanying_info")}
                       </Text>
                     </TouchableOpacity>
@@ -17899,7 +17899,7 @@ class DevlopRegister extends React.Component {
                                     // marginBottom: 15,
 
                                     justifyContent: "center",
-                                    marginHorizontal: 3,
+                                    marginHorizontal: ViewScale(3),
                                     // flexDirection: 'row',
                                     alignItems: "center",
                                     display: "flex",

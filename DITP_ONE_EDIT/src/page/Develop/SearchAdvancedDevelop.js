@@ -708,11 +708,11 @@ class SearchAdvancedDevelop extends Component {
           {marginTop: this.state.Recommend.length == 0 ? height * 0.15 : 0},
         ]}>
         {this.state.fetching_from_server ? (
-          <ActivityIndicator color="black" style={{margin: 15}} />
+          <ActivityIndicator color="black" style={{margin: ViewScale(15)}} />
         ) : (
           <View>
             {this.state.Recommend.length == 0 ? (
-              <Text style={{fontSize: 22}}>{I18n.t('translate_Nodata')}</Text>
+              <Text style={{fontSize: ViewScale(22)}}>{I18n.t('translate_Nodata')}</Text>
             ) : null}
           </View>
         )}
@@ -2424,7 +2424,7 @@ class SearchAdvancedDevelop extends Component {
                     )}
                     <View style={{margin: ViewScale(10)}}>
                       <Image
-                        style={{width: ViewScale(334), height: 1}}
+                        style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
                       />
                     </View>
@@ -2530,7 +2530,7 @@ class SearchAdvancedDevelop extends Component {
 
                     <View style={{margin: ViewScale(10)}}>
                       <Image
-                        style={{width: ViewScale(334), height: 1}}
+                        style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
                       />
                     </View>

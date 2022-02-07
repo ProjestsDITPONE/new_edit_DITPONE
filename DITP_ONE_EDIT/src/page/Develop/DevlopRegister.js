@@ -44,6 +44,7 @@ import RNPickerSelect from "react-native-picker-select";
 import DropDownItem from "react-native-drop-down-item_edit";
 import RNFetchBlob from "rn-fetch-blob";
 import { borderColor } from "react-native/Libraries/Components/View/ReactNativeStyleAttributes";
+import { ViewScale } from "../../config/ViewScale";
 
 import {
   getDatarefer,
@@ -2917,15 +2918,15 @@ class DevlopRegister extends React.Component {
     return (
       <LinearGradient
         style={{
-          borderRadius: 8,
+          borderRadius: ViewScale(8),
           flex: 1,
           borderWidth: 1,
-          marginVertical: 4,
-          height: 34,
+          marginVertical: ViewScale(4),
+          height: ViewScale(34),
           justifyContent: "center",
           borderColor: "#2d6dc4",
           marginLeft: index % 2 != 0 ? 0 : 5,
-          marginRight: 5,
+          marginRight: ViewScale(5),
         }}
         colors={
           this.state.Isative == index
@@ -2944,7 +2945,7 @@ class DevlopRegister extends React.Component {
         >
           {this.state.Isative == index ? (
             <Text
-              style={{ textAlign: "center", fontSize: 18, color: "#FFFFFF" }}
+              style={{ textAlign: "center", fontSize: ViewScale(18), color: "#FFFFFF" }}
             >
               {item.txt}
             </Text>
@@ -2959,7 +2960,7 @@ class DevlopRegister extends React.Component {
             <View
               style={{
                 position: "absolute",
-                right: 25,
+                right: ViewScale(25),
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -2967,16 +2968,16 @@ class DevlopRegister extends React.Component {
             >
               <Icon2
                 name="circle"
-                size={20}
-                style={{ color: "#FFF", position: "absolute", top: 0, left: 0 }}
+                size={ViewScale(20)}
+                style={{ color: "#FFF", position: "absolute", top: ViewScale(0), left: ViewScale(0) }}
               />
               <Icon2
                 name="check-circle"
-                size={20}
+                size={ViewScale(20)}
                 style={{
                   position: "absolute",
-                  top: 0,
-                  left: 0,
+                  top: ViewScale(0),
+                  left: ViewScale(0),
                   color: "#39b54a",
                 }}
               />
@@ -2986,7 +2987,7 @@ class DevlopRegister extends React.Component {
             <View
               style={{
                 position: "absolute",
-                right: 25,
+                right: ViewScale(25),
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -2997,21 +2998,21 @@ class DevlopRegister extends React.Component {
                 <View>
                   <Icon2
                     name="circle"
-                    size={20}
+                    size={ViewScale(20)}
                     style={{
                       color: "#FFF",
                       position: "absolute",
-                      top: 0,
-                      left: 0,
+                      top: ViewScale(0),
+                      left: ViewScale(0),
                     }}
                   />
                   <Icon4
                     name="exclamation-circle"
-                    size={20}
+                    size={ViewScale(20)}
                     style={{
                       position: "absolute",
-                      top: 0,
-                      left: 0,
+                      top: ViewScale(0),
+                      left: ViewScale(0),
                       color: "#ffaf47",
                     }}
                   />
@@ -3020,21 +3021,21 @@ class DevlopRegister extends React.Component {
                 <View>
                   <Icon2
                     name="circle"
-                    size={20}
+                    size={ViewScale(20)}
                     style={{
                       color: "#FFF",
                       position: "absolute",
-                      top: 0,
-                      left: 0,
+                      top: ViewScale(0),
+                      left: ViewScale(0),
                     }}
                   />
                   <Icon2
                     name="check-circle"
-                    size={20}
+                    size={ViewScale(20)}
                     style={{
                       position: "absolute",
-                      top: 0,
-                      left: 0,
+                      top: ViewScale(0),
+                      left: ViewScale(0),
                       color: "#39b54a",
                     }}
                   />
@@ -3046,7 +3047,7 @@ class DevlopRegister extends React.Component {
             <View
               style={{
                 position: "absolute",
-                right: 25,
+                right: ViewScale(25),
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -3056,21 +3057,21 @@ class DevlopRegister extends React.Component {
                 <View>
                   <Icon2
                     name="circle"
-                    size={20}
+                    size={ViewScale(20)}
                     style={{
                       color: "#FFF",
                       position: "absolute",
-                      top: 0,
-                      left: 0,
+                      top: ViewScale(0),
+                      left: ViewScale(0),
                     }}
                   />
                   <Icon4
                     name="exclamation-circle"
-                    size={20}
+                    size={ViewScale(20)}
                     style={{
                       position: "absolute",
-                      top: 0,
-                      left: 0,
+                      top: ViewScale(0),
+                      left: ViewScale(0),
                       color: "#ffaf47",
                     }}
                   />
@@ -3079,21 +3080,21 @@ class DevlopRegister extends React.Component {
                 <View>
                   <Icon2
                     name="circle"
-                    size={20}
+                    size={ViewScale(20)}
                     style={{
                       color: "#FFF",
                       position: "absolute",
-                      top: 0,
-                      left: 0,
+                      top: ViewScale(0),
+                      left: ViewScale(0),
                     }}
                   />
                   <Icon2
                     name="check-circle"
-                    size={20}
+                    size={ViewScale(20)}
                     style={{
                       position: "absolute",
-                      top: 0,
-                      left: 0,
+                      top: ViewScale(0),
+                      left: ViewScale(0),
                       color: "#39b54a",
                     }}
                   />
@@ -3105,7 +3106,7 @@ class DevlopRegister extends React.Component {
             <View
               style={{
                 position: "absolute",
-                right: 25,
+                right: ViewScale(25),
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -3117,21 +3118,21 @@ class DevlopRegister extends React.Component {
                     <View>
                       <Icon2
                         name="circle"
-                        size={20}
+                        size={ViewScale(20)}
                         style={{
                           color: "#FFF",
                           position: "absolute",
-                          top: 0,
-                          left: 0,
+                          top: ViewScale(0),
+                          left: ViewScale(0),
                         }}
                       />
                       <Icon4
                         name="exclamation-circle"
-                        size={20}
+                        size={ViewScale(20)}
                         style={{
                           position: "absolute",
-                          top: 0,
-                          left: 0,
+                          top: ViewScale(0),
+                          left: ViewScale(0),
                           color: "#ffaf47",
                         }}
                       />
@@ -3140,21 +3141,21 @@ class DevlopRegister extends React.Component {
                     <View>
                       <Icon2
                         name="circle"
-                        size={20}
+                        size={ViewScale(20)}
                         style={{
                           color: "#FFF",
                           position: "absolute",
-                          top: 0,
-                          left: 0,
+                          top: ViewScale(0),
+                          left: ViewScale(0),
                         }}
                       />
                       <Icon2
                         name="check-circle"
-                        size={20}
+                        size={ViewScale(20)}
                         style={{
                           position: "absolute",
-                          top: 0,
-                          left: 0,
+                          top: ViewScale(0),
+                          left: ViewScale(0),
                           color: "#39b54a",
                         }}
                       />
@@ -3167,21 +3168,21 @@ class DevlopRegister extends React.Component {
                     <View>
                       <Icon2
                         name="circle"
-                        size={20}
+                        size={ViewScale(20)}
                         style={{
                           color: "#FFF",
                           position: "absolute",
-                          top: 0,
-                          left: 0,
+                          top: ViewScale(0),
+                          left: ViewScale(0),
                         }}
                       />
                       <Icon4
                         name="exclamation-circle"
-                        size={20}
+                        size={ViewScale(20)}
                         style={{
                           position: "absolute",
-                          top: 0,
-                          left: 0,
+                          top: ViewScale(0),
+                          left: ViewScale(0),
                           color: "#ffaf47",
                         }}
                       />
@@ -3190,21 +3191,21 @@ class DevlopRegister extends React.Component {
                     <View>
                       <Icon2
                         name="circle"
-                        size={20}
+                        size={ViewScale(20)}
                         style={{
                           color: "#FFF",
                           position: "absolute",
-                          top: 0,
-                          left: 0,
+                          top: ViewScale(0),
+                          left: ViewScale(0),
                         }}
                       />
                       <Icon2
                         name="check-circle"
-                        size={20}
+                        size={ViewScale(20)}
                         style={{
                           position: "absolute",
-                          top: 0,
-                          left: 0,
+                          top: ViewScale(0),
+                          left: ViewScale(0),
                           color: "#39b54a",
                         }}
                       />
@@ -3226,8 +3227,8 @@ class DevlopRegister extends React.Component {
           // borderWidth:1,
           flex: 1,
           flexDirection: "row",
-          marginHorizontal: 20,
-          marginTop: 10,
+          marginHorizontal: ViewScale(20),
+          marginTop: ViewScale(10),
           backgroundColor: "#FFF",
           shadowColor: "#f8f9fb",
           shadowOffset: {
@@ -3242,32 +3243,32 @@ class DevlopRegister extends React.Component {
       >
         <CheckBox
           textStyle={{
-            fontSize: 20,
+            fontSize: ViewScale(20),
             color: "#73838f",
             fontWeight: "normal",
             fontFamily: "PSL Kittithada Pro",
 
             // height: 30,
             // paddingHorizontal: 10,
-            marginHorizontal: 10,
+            marginHorizontal: ViewScale(10),
           }}
           uncheckedIcon={
             <View
               style={{
                 backgroundColor: "#FFFFFF",
                 borderWidth: 0.5,
-                width: 18,
-                height: 18,
+                width: ViewScale(18),
+                height: ViewScale(18),
                 borderColor: "#FFFFFF",
-                borderRadius: 2.6,
+                borderRadius: ViewScale(2.6),
               }}
             />
           }
           checkedIcon={
             <Image
               style={{
-                width: 18,
-                height: 18,
+                width: ViewScale(18),
+                height: ViewScale(18),
               }}
               source={require("../../image/rrr.png")}
             />
@@ -3294,35 +3295,35 @@ class DevlopRegister extends React.Component {
                 });
               }}
               style={{
-                marginHorizontal: 15,
+                marginHorizontal: ViewScale(15),
 
                 width: "80%",
               }}
             >
-              <Text style={{ color: "#163c70", fontSize: 20 }}>
+              <Text style={{ color: "#163c70", fontSize: ViewScale(20) }}>
                 {item.name}
               </Text>
               <Text
                 numberOfLines={2}
-                style={{ color: "#73838f", fontSize: 20 }}
+                style={{ color: "#73838f", fontSize: ViewScale(20) }}
               >
                 {item.ProductCategory}
               </Text>
               <Text
                 numberOfLines={1}
-                style={{ color: "#163c70", fontSize: 20 }}
+                style={{ color: "#163c70", fontSize: ViewScale(20) }}
               >
                 {item.ProductSubCategory}
               </Text>
               <Text
                 numberOfLines={2}
-                style={{ color: "#73838f", fontSize: 20 }}
+                style={{ color: "#73838f", fontSize: ViewScale(20) }}
               >
                 {item.ProductGroup}
               </Text>
               <Text
                 numberOfLines={2}
-                style={{ color: "#73838f", fontSize: 20 }}
+                style={{ color: "#73838f", fontSize: ViewScale(20) }}
               >
                 {item.ProductBrandNameTh}
               </Text>
@@ -3369,13 +3370,13 @@ class DevlopRegister extends React.Component {
             justifyContent: "center",
             // alignItems: 'flex-end',
             // width: 48,
-            left: -20,
+            left: ViewScale(-20),
           }}
         >
           <Image
             style={{
-              width: 18,
-              height: 18,
+              width: ViewScale(18),
+              height: ViewScale(18),
             }}
             source={require("../../image/penlist.png")}
           />
@@ -3389,8 +3390,8 @@ class DevlopRegister extends React.Component {
         style={{
           flex: 1,
           flexDirection: "row",
-          marginHorizontal: 20,
-          marginTop: 10,
+          marginHorizontal: ViewScale(20),
+          marginTop: ViewScale(10),
           backgroundColor: "#FFF",
           shadowColor: "#f8f9fb",
           shadowOffset: {
@@ -3405,7 +3406,7 @@ class DevlopRegister extends React.Component {
       >
         <CheckBox
           textStyle={{
-            fontSize: 20,
+            fontSize: ViewScale(20),
             color: "#73838f",
             fontWeight: "normal",
             fontFamily: "PSL Kittithada Pro",
@@ -3418,19 +3419,19 @@ class DevlopRegister extends React.Component {
             <View
               style={{
                 backgroundColor: "#FFFFFF",
-                borderWidth: 0.5,
-                width: 18,
-                height: 18,
+                borderWidth: ViewScale(0.5),
+                width: ViewScale(18),
+                height: ViewScale(18),
                 borderColor: "#999999",
-                borderRadius: 2.6,
+                borderRadius: ViewScale(2.6),
               }}
             />
           }
           checkedIcon={
             <Image
               style={{
-                width: 18,
-                height: 18,
+                width: ViewScale(18),
+                height: ViewScale(18),
               }}
               source={require("../../image/rrrred.png")}
             />
@@ -3438,24 +3439,24 @@ class DevlopRegister extends React.Component {
           title={
             <View
               style={{
-                marginHorizontal: 15,
+                marginHorizontal: ViewScale(15),
               }}
             >
-              <Text style={{ color: "#163c70", fontSize: 20 }}>
+              <Text style={{ color: "#163c70", fontSize: ViewScale(20) }}>
                 {item.name}
               </Text>
               <Text
                 numberOfLines={1}
-                style={{ color: "#73838f", fontSize: 20 }}
+                style={{ color: "#73838f", fontSize: ViewScale(20) }}
               >
                 {item.ProductCategory}
               </Text>
-              <Text style={{ color: "#163c70", fontSize: 20 }}>
+              <Text style={{ color: "#163c70", fontSize: ViewScale(20) }}>
                 {item.ProductSubCategory}
               </Text>
               <Text
                 numberOfLines={1}
-                style={{ color: "#73838f", fontSize: 20 }}
+                style={{ color: "#73838f", fontSize: ViewScale(20) }}
               >
                 {item.ProductGroup}
               </Text>
@@ -3481,7 +3482,7 @@ class DevlopRegister extends React.Component {
         style={{
           flex: 1,
 
-          marginVertical: 5,
+          marginVertical: ViewScale(5),
           flexDirection: index <= 1 ? "row" : "column",
         }}
       >
@@ -3492,9 +3493,9 @@ class DevlopRegister extends React.Component {
           style={{
             borderWidth: 1,
             borderColor: "#2d6dc4",
-            marginHorizontal: 30,
-            height: 35,
-            borderRadius: 4,
+            marginHorizontal: ViewScale(30),
+            height: ViewScale(35),
+            borderRadius: ViewScale(4),
             backgroundColor:
               this.state.checkBoxbisness[index] === true
                 ? "#2d6dc4"
@@ -3510,7 +3511,7 @@ class DevlopRegister extends React.Component {
                 this.state.checkBoxbisness[index] === true
                   ? "#FFFFFF"
                   : "#2d6dc4",
-              fontSize: 18,
+              fontSize: ViewScale(18),
             }}
           >
             {item.Value}
@@ -3528,7 +3529,7 @@ class DevlopRegister extends React.Component {
             style={{
               backgroundColor: "#FFF",
               flexDirection: "row",
-              paddingBottom: 5,
+              paddingBottom: ViewScale(5),
             }}
           >
             <View
@@ -3539,7 +3540,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
                   textAlign: "right",
                 }}
@@ -3555,7 +3556,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#2d6dc4",
                 }}
               >
@@ -3570,7 +3571,7 @@ class DevlopRegister extends React.Component {
             style={{
               backgroundColor: "#FFF",
               flexDirection: "row",
-              paddingBottom: 5,
+              paddingBottom: ViewScale(5),
             }}
           >
             <View
@@ -3581,7 +3582,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
                   textAlign: "right",
                 }}
@@ -3597,7 +3598,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#2d6dc4",
                 }}
               >
@@ -3619,7 +3620,7 @@ class DevlopRegister extends React.Component {
           style={{
             backgroundColor: "#FFF",
             flexDirection: "row",
-            paddingBottom: 5,
+            paddingBottom: ViewScale(5),
           }}
         >
           <View
@@ -3630,7 +3631,7 @@ class DevlopRegister extends React.Component {
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "right",
               }}
@@ -3646,7 +3647,7 @@ class DevlopRegister extends React.Component {
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#2d6dc4",
               }}
             >
@@ -3666,7 +3667,7 @@ class DevlopRegister extends React.Component {
             style={{
               backgroundColor: "#FFF",
               flexDirection: "row",
-              paddingBottom: 5,
+              paddingBottom: ViewScale(5),
             }}
           >
             <View
@@ -3677,7 +3678,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
                   textAlign: "right",
                 }}
@@ -3693,7 +3694,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#2d6dc4",
                 }}
               >
@@ -3708,7 +3709,7 @@ class DevlopRegister extends React.Component {
             style={{
               backgroundColor: "#FFF",
               flexDirection: "row",
-              paddingBottom: 5,
+              paddingBottom: ViewScale(5),
             }}
           >
             <View
@@ -3719,7 +3720,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
                   textAlign: "right",
                 }}
@@ -3735,7 +3736,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#2d6dc4",
                 }}
               >
@@ -3750,7 +3751,7 @@ class DevlopRegister extends React.Component {
             style={{
               backgroundColor: "#FFF",
               flexDirection: "row",
-              paddingBottom: 5,
+              paddingBottom: ViewScale(5),
             }}
           >
             <View
@@ -3761,7 +3762,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
                   textAlign: "right",
                 }}
@@ -3777,7 +3778,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#2d6dc4",
                 }}
               >
@@ -3793,7 +3794,7 @@ class DevlopRegister extends React.Component {
             style={{
               backgroundColor: "#FFF",
               flexDirection: "row",
-              paddingBottom: 5,
+              paddingBottom: ViewScale(5),
             }}
           >
             <View
@@ -3804,7 +3805,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
                   textAlign: "right",
                 }}
@@ -3820,7 +3821,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#2d6dc4",
                 }}
               >
@@ -3836,7 +3837,7 @@ class DevlopRegister extends React.Component {
             style={{
               backgroundColor: "#FFF",
               flexDirection: "row",
-              paddingBottom: 5,
+              paddingBottom: ViewScale(5),
             }}
           >
             <View
@@ -3847,7 +3848,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
                   textAlign: "right",
                 }}
@@ -3863,7 +3864,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#2d6dc4",
                 }}
               >
@@ -3879,7 +3880,7 @@ class DevlopRegister extends React.Component {
             style={{
               backgroundColor: "#FFF",
               flexDirection: "row",
-              paddingBottom: 5,
+              paddingBottom: ViewScale(5),
             }}
           >
             <View
@@ -3890,7 +3891,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
                   textAlign: "right",
                 }}
@@ -3906,7 +3907,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#2d6dc4",
                 }}
               >
@@ -3921,7 +3922,7 @@ class DevlopRegister extends React.Component {
             style={{
               backgroundColor: "#FFF",
               flexDirection: "row",
-              paddingBottom: 5,
+              paddingBottom: ViewScale(5),
             }}
           >
             <View
@@ -3932,7 +3933,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
                   textAlign: "right",
                 }}
@@ -3948,7 +3949,7 @@ class DevlopRegister extends React.Component {
             >
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#2d6dc4",
                 }}
               >
@@ -3970,7 +3971,7 @@ class DevlopRegister extends React.Component {
           style={{
             backgroundColor: "#FFF",
             flexDirection: "row",
-            paddingBottom: 5,
+            paddingBottom: ViewScale(5),
           }}
         >
           <View
@@ -3981,7 +3982,7 @@ class DevlopRegister extends React.Component {
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "right",
               }}
@@ -3997,7 +3998,7 @@ class DevlopRegister extends React.Component {
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#2d6dc4",
               }}
             >
@@ -4012,7 +4013,7 @@ class DevlopRegister extends React.Component {
 
   Listmember = ({ item, index }) => {
     return (
-      <View style={{ height: 100, flexDirection: "column", marginTop: -20 }}>
+      <View style={{ height: ViewScale(100), flexDirection: "column", marginTop: ViewScale(-20) }}>
         <ImageBackground
           source={require("../../image/bgregister.png")}
           style={{
@@ -4026,13 +4027,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               flexDirection: "row",
-              marginHorizontal: 30,
+              marginHorizontal: ViewScale(30),
               // marginTop: 25,
               // borderWidth:1
             }}
           >
             <Text
-              style={{ color: "#73838f", fontSize: 19, marginHorizontal: 10 }}
+              style={{ color: "#73838f", fontSize: ViewScale(19), marginHorizontal: ViewScale(10) }}
             >
               {/* {index+1}{'. '}  */}
               {I18n.locale == "th"
@@ -4046,48 +4047,48 @@ class DevlopRegister extends React.Component {
   };
   ListmemberDelete = ({ item, index }) => {
     return (
-      <View style={{ height: 100, flexDirection: "column", marginTop: -20 }}>
+      <View style={{ height: ViewScale(100), flexDirection: "column", marginTop: ViewScale(-20) }}>
         <ImageBackground
           source={require("../../image/bgregister.png")}
           style={styles.image}
         >
           <View
             style={{
-              height: 50,
+              height: ViewScale(50),
               flexDirection: "row",
-              marginHorizontal: 30,
+              marginHorizontal: ViewScale(30),
               // marginTop: 25,
               // borderWidth:1
             }}
           >
             <CheckBox
               textStyle={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#73838f",
                 fontWeight: "normal",
                 fontFamily: "PSL Kittithada Pro",
 
-                height: 30,
-                paddingHorizontal: 10,
-                marginHorizontal: 20,
+                height: ViewScale(30),
+                paddingHorizontal: ViewScale(10),
+                marginHorizontal: ViewScale(20),
               }}
               uncheckedIcon={
                 <View
                   style={{
                     backgroundColor: "#FFFFFF",
                     borderWidth: 0.5,
-                    width: 18,
-                    height: 18,
+                    width: ViewScale(18),
+                    height: ViewScale(18),
                     borderColor: "#999999",
-                    borderRadius: 2.6,
+                    borderRadius: ViewScale(2.6),
                   }}
                 />
               }
               checkedIcon={
                 <Image
                   style={{
-                    width: 18,
-                    height: 18,
+                    width: ViewScale(18),
+                    height: ViewScale(18),
                   }}
                   source={require("../../image/rrrred.png")}
                 />
@@ -4154,22 +4155,22 @@ class DevlopRegister extends React.Component {
             resizeMode={"contain"}
             style={{
               width: "96%",
-              height: 170,
+              height: ViewScale(170),
 
-              marginHorizontal: 5,
+              marginHorizontal: ViewScale(5),
             }}
             source={{ uri: item.ProductPictures }}
           />
           <View
             style={{
               backgroundColor: "#eaf0f9",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4180,13 +4181,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#FFF",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4197,13 +4198,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#eaf0f9",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4214,13 +4215,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#FFF",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4231,13 +4232,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#eaf0f9",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4248,13 +4249,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#FFF",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4265,13 +4266,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#eaf0f9",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4282,13 +4283,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#FFF",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4299,13 +4300,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#eaf0f9",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4316,13 +4317,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#FFF",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4333,13 +4334,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#eaf0f9",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4350,13 +4351,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#FFF",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4367,13 +4368,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#eaf0f9",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4384,13 +4385,13 @@ class DevlopRegister extends React.Component {
           <View
             style={{
               backgroundColor: "#FFF",
-              height: 40,
+              height: ViewScale(40),
               justifyContent: "center",
             }}
           >
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
                 textAlign: "center",
               }}
@@ -4407,33 +4408,33 @@ class DevlopRegister extends React.Component {
     return (
       <View
         style={{
-          height: 60,
+          height: ViewScale(60),
           flexDirection: "row",
-          marginHorizontal: 30,
+          marginHorizontal: ViewScale(30),
           // marginTop: 25,
           // borderWidth:1
         }}
       >
         <CheckBox
           textStyle={{
-            fontSize: 20,
+            fontSize: ViewScale(20),
             color: "#73838f",
             fontWeight: "normal",
             fontFamily: "PSL Kittithada Pro",
 
-            height: 30,
-            paddingHorizontal: 10,
-            marginHorizontal: 20,
+            height: ViewScale(30),
+            paddingHorizontal: ViewScale(10),
+            marginHorizontal: ViewScale(20),
           }}
           uncheckedIcon={
             <View
               style={{
                 backgroundColor: "#FFFFFF",
                 borderWidth: 0.5,
-                width: 18,
-                height: 18,
+                width: ViewScale(18),
+                height: ViewScale(18),
                 borderColor: "#999999",
-                borderRadius: 12,
+                borderRadius: ViewScale(12),
               }}
             />
           }
@@ -4442,20 +4443,20 @@ class DevlopRegister extends React.Component {
               style={{
                 backgroundColor: "#FFFFFF",
                 borderWidth: 0.5,
-                width: 18,
-                height: 18,
+                width: ViewScale(18),
+                height: ViewScale(18),
                 borderColor: "#999999",
-                borderRadius: 12,
+                borderRadius: ViewScale(12),
               }}
             >
               <View
                 style={{
                   backgroundColor: "#39b54a",
-                  width: 10,
-                  height: 10,
-                  borderRadius: 12,
-                  top: 3.6,
-                  left: 3.3,
+                  width: ViewScale(10),
+                  height: ViewScale(10),
+                  borderRadius: ViewScale(12),
+                  top: ViewScale(3.6),
+                  left: ViewScale(3.3),
                 }}
               />
             </View>
@@ -4481,7 +4482,7 @@ class DevlopRegister extends React.Component {
       <View
         style={{
           flex: 1,
-          marginTop: 3,
+          marginTop: ViewScale(3),
           shadowColor: "#f9fafc",
           shadowOffset: {
             width: 0,
@@ -4501,30 +4502,30 @@ class DevlopRegister extends React.Component {
               : require("../../image/bglock.png")
           }
           resizeMode={"stretch"}
-          imageStyle={{ width: "100%", height: 125 }}
+          imageStyle={{ width: "100%", height: ViewScale(125) }}
           style={{
             flexDirection: "row",
             alignItems: "center",
             flex: 1,
           }}
         >
-          <View style={{ flex: 1, marginTop: 25 }}>
+          <View style={{ flex: 1, marginTop: ViewScale(25) }}>
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
 
-                marginHorizontal: 35,
+                marginHorizontal: ViewScale(35),
               }}
             >
               {item.Label}
             </Text>
             <Text
               style={{
-                fontSize: 22,
+                fontSize: ViewScale(22),
                 color: "#73838f",
-                marginHorizontal: 35,
-                marginTop: 0,
+                marginHorizontal: ViewScale(35),
+                marginTop: ViewScale(0),
               }}
             >
               {item.Data}
@@ -4540,7 +4541,7 @@ class DevlopRegister extends React.Component {
       <View
         style={{
           flex: 1,
-          marginTop: 3,
+          marginTop: ViewScale(3),
           shadowColor: "#f9fafc",
           shadowOffset: {
             width: 0,
@@ -4556,30 +4557,30 @@ class DevlopRegister extends React.Component {
           <ImageBackground
             source={require("../../image/bgregister.png")}
             resizeMode={"stretch"}
-            imageStyle={{ width: "100%", height: 160 }}
+            imageStyle={{ width: "100%", height: ViewScale(160) }}
             style={{
               flexDirection: "row",
               alignItems: "center",
               flex: 1,
             }}
           >
-            <View style={{ flex: 1, marginTop: 30 }}>
+            <View style={{ flex: 1, marginTop: ViewScale(30) }}>
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
 
-                  marginHorizontal: 35,
+                  marginHorizontal: ViewScale(35),
                 }}
               >
                 ที่อยู่ติดต่อ
               </Text>
               <Text
                 style={{
-                  fontSize: 22,
+                  fontSize: ViewScale(22),
                   color: "#73838f",
-                  marginHorizontal: 35,
-                  marginTop: 0,
+                  marginHorizontal: ViewScale(35),
+                  marginTop: ViewScale(0),
                 }}
               >
                 {this.state.contact_address_type1}{" "}
@@ -4605,7 +4606,7 @@ class DevlopRegister extends React.Component {
       <View
         style={{
           flex: 1,
-          marginTop: 3,
+          marginTop: ViewScale(3),
           shadowColor: "#f9fafc",
           shadowOffset: {
             width: 0,
@@ -4621,30 +4622,30 @@ class DevlopRegister extends React.Component {
           <ImageBackground
             source={require("../../image/bgregister.png")}
             resizeMode={"stretch"}
-            imageStyle={{ width: "100%", height: 160 }}
+            imageStyle={{ width: "100%", height: ViewScale(160) }}
             style={{
               flexDirection: "row",
               alignItems: "center",
               flex: 1,
             }}
           >
-            <View style={{ flex: 1, marginTop: 30 }}>
+            <View style={{ flex: 1, marginTop: ViewScale(30) }}>
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
 
-                  marginHorizontal: 35,
+                  marginHorizontal: ViewScale(35),
                 }}
               >
                 {item.Label}
               </Text>
               <Text
                 style={{
-                  fontSize: 22,
+                  fontSize: ViewScale(22),
                   color: "#73838f",
-                  marginHorizontal: 35,
-                  marginTop: 0,
+                  marginHorizontal: ViewScale(35),
+                  marginTop: ViewScale(0),
                 }}
               >
                 {item.Data}
@@ -4657,30 +4658,30 @@ class DevlopRegister extends React.Component {
           <ImageBackground
             source={require("../../image/bgregister.png")}
             resizeMode={"stretch"}
-            imageStyle={{ width: "100%", height: 160 }}
+            imageStyle={{ width: "100%", height: ViewScale(160) }}
             style={{
               flexDirection: "row",
               alignItems: "center",
               flex: 1,
             }}
           >
-            <View style={{ flex: 1, marginTop: 30 }}>
+            <View style={{ flex: 1, marginTop: ViewScale(30) }}>
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                   color: "#163c70",
 
-                  marginHorizontal: 35,
+                  marginHorizontal: ViewScale(35),
                 }}
               >
                 {item.Label}
               </Text>
               <Text
                 style={{
-                  fontSize: 22,
+                  fontSize: ViewScale(22),
                   color: "#73838f",
-                  marginHorizontal: 35,
-                  marginTop: 0,
+                  marginHorizontal: ViewScale(35),
+                  marginTop: ViewScale(0),
                 }}
               >
                 {item.Data}
@@ -4698,7 +4699,7 @@ class DevlopRegister extends React.Component {
       <View
         style={{
           flex: 1,
-          marginTop: 3,
+          marginTop: ViewScale(3),
           shadowColor: "#f9fafc",
           shadowOffset: {
             width: 0,
@@ -4717,30 +4718,30 @@ class DevlopRegister extends React.Component {
               : require("../../image/bglock.png")
           }
           resizeMode={"stretch"}
-          imageStyle={{ width: "100%", height: 125 }}
+          imageStyle={{ width: "100%", height: ViewScale(125) }}
           style={{
             flexDirection: "row",
             alignItems: "center",
             flex: 1,
           }}
         >
-          <View style={{ flex: 1, marginTop: 25 }}>
+          <View style={{ flex: 1, marginTop: ViewScale(25) }}>
             <Text
               style={{
-                fontSize: 20,
+                fontSize: ViewScale(20),
                 color: "#163c70",
 
-                marginHorizontal: 35,
+                marginHorizontal: ViewScale(35),
               }}
             >
               {item.Label}
             </Text>
             <Text
               style={{
-                fontSize: 22,
+                fontSize: ViewScale(22),
                 color: "#73838f",
-                marginHorizontal: 35,
-                marginTop: 0,
+                marginHorizontal: ViewScale(35),
+                marginTop: ViewScale(0),
               }}
             >
               {item.Data}
@@ -4755,7 +4756,7 @@ class DevlopRegister extends React.Component {
       <View
         style={{
           flex: 1,
-          marginTop: 3,
+          marginTop: ViewScale(3),
           shadowColor: "#f9fafc",
           shadowOffset: {
             width: 0,
@@ -4772,20 +4773,20 @@ class DevlopRegister extends React.Component {
             <ImageBackground
               source={require("../../image/bgregister.png")}
               resizeMode={"stretch"}
-              imageStyle={{ width: "100%", height: 120 }}
+              imageStyle={{ width: "100%", height: ViewScale(120) }}
               style={{
                 flexDirection: "row",
                 alignItems: "center",
                 flex: 1,
               }}
             >
-              <View style={{ flex: 1, marginTop: 20 }}>
+              <View style={{ flex: 1, marginTop: ViewScale(20) }}>
                 <View style={{ flexDirection: "row" }}>
                   <Text
                     style={{
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                       color: "#163c70",
-                      marginHorizontal: 35,
+                      marginHorizontal: ViewScale(35),
                     }}
                   >
                     {item.Label}
@@ -4793,7 +4794,7 @@ class DevlopRegister extends React.Component {
                   <Text
                     style={{
                       color: "red",
-                      left: -32,
+                      left: ViewScale(-32),
                     }}
                   >
                     *
@@ -4802,11 +4803,11 @@ class DevlopRegister extends React.Component {
                 <ImageBackground
                   source={require("../../image/inputedittext.png")}
                   resizeMode={"stretch"}
-                  imageStyle={{ height: 28, width: "100%" }}
+                  imageStyle={{ height: ViewScale(28), width: "100%" }}
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
-                    marginHorizontal: 35,
+                    marginHorizontal: ViewScale(35),
                   }}
                 >
                   <TextInput
@@ -4814,9 +4815,9 @@ class DevlopRegister extends React.Component {
                       this.setState({ contact_postcode: text });
                     }}
                     style={{
-                      fontSize: 24,
+                      fontSize: ViewScale(24),
                       color: "#73838f",
-                      marginHorizontal: 10,
+                      marginHorizontal: ViewScale(10),
                       flex: 1,
                     }}
                   >
@@ -4830,20 +4831,20 @@ class DevlopRegister extends React.Component {
             <ImageBackground
               source={require("../../image/bgregister.png")}
               resizeMode={"stretch"}
-              imageStyle={{ width: "100%", height: 120 }}
+              imageStyle={{ width: "100%", height: ViewScale(120) }}
               style={{
                 flexDirection: "row",
                 alignItems: "center",
                 flex: 1,
               }}
             >
-              <View style={{ flex: 1, marginTop: 20 }}>
+              <View style={{ flex: 1, marginTop: ViewScale(20) }}>
                 <View style={{ flexDirection: "row" }}>
                   <Text
                     style={{
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                       color: "#163c70",
-                      marginHorizontal: 35,
+                      marginHorizontal: ViewScale(35),
                     }}
                   >
                     {item.Label}
@@ -4851,7 +4852,7 @@ class DevlopRegister extends React.Component {
                   <Text
                     style={{
                       color: "red",
-                      left: -32,
+                      left: ViewScale(-32),
                     }}
                   >
                     *
@@ -4860,11 +4861,11 @@ class DevlopRegister extends React.Component {
                 <ImageBackground
                   source={require("../../image/inputedittext.png")}
                   resizeMode={"stretch"}
-                  imageStyle={{ height: 28, width: "100%" }}
+                  imageStyle={{ height: ViewScale(28), width: "100%" }}
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
-                    marginHorizontal: 35,
+                    marginHorizontal: ViewScale(35),
                   }}
                 >
                   <TextInput
@@ -4872,9 +4873,9 @@ class DevlopRegister extends React.Component {
                       this.setState({ contact_postcode: text });
                     }}
                     style={{
-                      fontSize: 24,
+                      fontSize: ViewScale(24),
                       color: "#73838f",
-                      marginHorizontal: 10,
+                      marginHorizontal: ViewScale(10),
                       flex: 1,
                     }}
                   >
@@ -4888,20 +4889,20 @@ class DevlopRegister extends React.Component {
             <ImageBackground
               source={require("../../image/bgregister.png")}
               resizeMode={"stretch"}
-              imageStyle={{ width: "100%", height: 120 }}
+              imageStyle={{ width: "100%", height: ViewScale(120) }}
               style={{
                 flexDirection: "row",
                 alignItems: "center",
                 flex: 1,
               }}
             >
-              <View style={{ flex: 1, marginTop: 20 }}>
+              <View style={{ flex: 1, marginTop: ViewScale(20) }}>
                 <View style={{ flexDirection: "row" }}>
                   <Text
                     style={{
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                       color: "#163c70",
-                      marginHorizontal: 35,
+                      marginHorizontal: ViewScale(35),
                     }}
                   >
                     {item.Label}
@@ -4909,7 +4910,7 @@ class DevlopRegister extends React.Component {
                   <Text
                     style={{
                       color: "red",
-                      left: -32,
+                      left: ViewScale(-32),
                     }}
                   >
                     *
@@ -4918,11 +4919,11 @@ class DevlopRegister extends React.Component {
                 <ImageBackground
                   source={require("../../image/inputedittext.png")}
                   resizeMode={"stretch"}
-                  imageStyle={{ height: 28, width: "100%" }}
+                  imageStyle={{ height: ViewScale(28), width: "100%" }}
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
-                    marginHorizontal: 35,
+                    marginHorizontal: ViewScale(35),
                     // borderWidth: 1,
                     borderColor: "red",
                   }}
@@ -5001,8 +5002,8 @@ class DevlopRegister extends React.Component {
                           <Text
                             style={{
                               color: "#73838f",
-                              fontSize: 24,
-                              marginHorizontal: 15,
+                              fontSize: ViewScale(24),
+                              marginHorizontal: ViewScale(15),
                             }}
                           >
                             {this.state.getProvinceNameTh}
@@ -5011,8 +5012,8 @@ class DevlopRegister extends React.Component {
                           <Text
                             style={{
                               color: "#73838f",
-                              fontSize: 24,
-                              marginHorizontal: 15,
+                              fontSize: ViewScale(24),
+                              marginHorizontal: ViewScale(15),
                             }}
                           >
                             {this.checkProvince(item.Data)}
@@ -5030,9 +5031,9 @@ class DevlopRegister extends React.Component {
                         }
                       >
                         <Icon
-                          style={{ color: "#73838f", marginTop: 6 }}
+                          style={{ color: "#73838f", marginTop: ViewScale(6) }}
                           name="keyboard-arrow-down"
-                          size={16}
+                          size={ViewScale(16)}
                         />
                       </View>
                     </View>
@@ -5045,20 +5046,20 @@ class DevlopRegister extends React.Component {
             <ImageBackground
               source={require("../../image/bgregister.png")}
               resizeMode={"stretch"}
-              imageStyle={{ width: "100%", height: 120 }}
+              imageStyle={{ width: "100%", height: ViewScale(120) }}
               style={{
                 flexDirection: "row",
                 alignItems: "center",
                 flex: 1,
               }}
             >
-              <View style={{ flex: 1, marginTop: 20 }}>
+              <View style={{ flex: 1, marginTop: ViewScale(20) }}>
                 <View style={{ flexDirection: "row" }}>
                   <Text
                     style={{
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                       color: "#163c70",
-                      marginHorizontal: 35,
+                      marginHorizontal: ViewScale(35),
                     }}
                   >
                     {item.Label}
@@ -5066,7 +5067,7 @@ class DevlopRegister extends React.Component {
                   <Text
                     style={{
                       color: "red",
-                      left: -32,
+                      left: ViewScale(-32),
                     }}
                   >
                     *
@@ -5075,11 +5076,11 @@ class DevlopRegister extends React.Component {
                 <ImageBackground
                   source={require("../../image/inputedittext.png")}
                   resizeMode={"stretch"}
-                  imageStyle={{ height: 28, width: "100%" }}
+                  imageStyle={{ height: ViewScale(28), width: "100%" }}
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
-                    marginHorizontal: 35,
+                    marginHorizontal: ViewScale(35),
                     // borderWidth: 1,
                     borderColor: "red",
                   }}
@@ -5153,8 +5154,8 @@ class DevlopRegister extends React.Component {
                           <Text
                             style={{
                               color: "#73838f",
-                              fontSize: 24,
-                              marginHorizontal: 15,
+                              fontSize: ViewScale(24),
+                              marginHorizontal: ViewScale(15),
                             }}
                           >
                             {this.state.getDataAmporNameTh}
@@ -5163,8 +5164,8 @@ class DevlopRegister extends React.Component {
                           <Text
                             style={{
                               color: "#73838f",
-                              fontSize: 24,
-                              marginHorizontal: 15,
+                              fontSize: ViewScale(24),
+                              marginHorizontal: ViewScale(15),
                             }}
                           >
                             {item.Data}
@@ -5182,9 +5183,9 @@ class DevlopRegister extends React.Component {
                         }
                       >
                         <Icon
-                          style={{ color: "#73838f", marginTop: 6 }}
+                          style={{ color: "#73838f", marginTop: ViewScale(6) }}
                           name="keyboard-arrow-down"
-                          size={16}
+                          size={ViewScale(16)}
                         />
                       </View>
                     </View>
@@ -5197,20 +5198,20 @@ class DevlopRegister extends React.Component {
             <ImageBackground
               source={require("../../image/bgregister.png")}
               resizeMode={"stretch"}
-              imageStyle={{ width: "100%", height: 120 }}
+              imageStyle={{ width: "100%", height: ViewScale(120) }}
               style={{
                 flexDirection: "row",
                 alignItems: "center",
                 flex: 1,
               }}
             >
-              <View style={{ flex: 1, marginTop: 20 }}>
+              <View style={{ flex: 1, marginTop: ViewScale(20) }}>
                 <View style={{ flexDirection: "row" }}>
                   <Text
                     style={{
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                       color: "#163c70",
-                      marginHorizontal: 35,
+                      marginHorizontal: ViewScale(35),
                     }}
                   >
                     {item.Label}
@@ -5218,7 +5219,7 @@ class DevlopRegister extends React.Component {
                   <Text
                     style={{
                       color: "red",
-                      left: -32,
+                      left: ViewScale(-32),
                     }}
                   >
                     *
@@ -5227,11 +5228,11 @@ class DevlopRegister extends React.Component {
                 <ImageBackground
                   source={require("../../image/inputedittext.png")}
                   resizeMode={"stretch"}
-                  imageStyle={{ height: 28, width: "100%" }}
+                  imageStyle={{ height: ViewScale(28), width: "100%" }}
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
-                    marginHorizontal: 35,
+                    marginHorizontal: ViewScale(35),
                     // borderWidth: 1,
                     borderColor: "red",
                   }}
@@ -5299,8 +5300,8 @@ class DevlopRegister extends React.Component {
                           <Text
                             style={{
                               color: "#73838f",
-                              fontSize: 24,
-                              marginHorizontal: 15,
+                              fontSize: ViewScale(24),
+                              marginHorizontal: ViewScale(15),
                             }}
                           >
                             {this.state.getDatatumburNameTh}
@@ -5309,8 +5310,8 @@ class DevlopRegister extends React.Component {
                           <Text
                             style={{
                               color: "#73838f",
-                              fontSize: 24,
-                              marginHorizontal: 15,
+                              fontSize: ViewScale(24),
+                              marginHorizontal: ViewScale(15),
                             }}
                           >
                             {/* {item.Data} */}
@@ -5328,9 +5329,9 @@ class DevlopRegister extends React.Component {
                         }
                       >
                         <Icon
-                          style={{ color: "#73838f", marginTop: 6 }}
+                          style={{ color: "#73838f", marginTop: ViewScale(6) }}
                           name="keyboard-arrow-down"
-                          size={16}
+                          size={ViewScale(16)}
                         />
                       </View>
                     </View>
@@ -5345,20 +5346,20 @@ class DevlopRegister extends React.Component {
             <ImageBackground
               source={require("../../image/bgregister.png")}
               resizeMode={"stretch"}
-              imageStyle={{ width: "100%", height: 120 }}
+              imageStyle={{ width: "100%", height: ViewScale(120) }}
               style={{
                 flexDirection: "row",
                 alignItems: "center",
                 flex: 1,
               }}
             >
-              <View style={{ flex: 1, marginTop: 20 }}>
+              <View style={{ flex: 1, marginTop: ViewScale(20) }}>
                 <View style={{ flexDirection: "row" }}>
                   <Text
                     style={{
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                       color: "#163c70",
-                      marginHorizontal: 35,
+                      marginHorizontal: ViewScale(35),
                     }}
                   >
                     {item.Label}
@@ -5366,7 +5367,7 @@ class DevlopRegister extends React.Component {
                   <Text
                     style={{
                       color: "red",
-                      left: -32,
+                      left: ViewScale(-32),
                     }}
                   >
                     *
@@ -5375,11 +5376,11 @@ class DevlopRegister extends React.Component {
                 <ImageBackground
                   source={require("../../image/inputedittext.png")}
                   resizeMode={"stretch"}
-                  imageStyle={{ height: 28, width: "100%" }}
+                  imageStyle={{ height: ViewScale(28), width: "100%" }}
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
-                    marginHorizontal: 35,
+                    marginHorizontal: ViewScale(35),
                   }}
                 >
                   <TextInput
@@ -5387,9 +5388,9 @@ class DevlopRegister extends React.Component {
                       this.setState({ contact_postcode: text });
                     }}
                     style={{
-                      fontSize: 24,
+                      fontSize: ViewScale(24),
                       color: "#73838f",
-                      marginHorizontal: 10,
+                      marginHorizontal: ViewScale(10),
                       flex: 1,
                     }}
                   >
@@ -5405,20 +5406,20 @@ class DevlopRegister extends React.Component {
             <ImageBackground
               source={require("../../image/bgregister.png")}
               resizeMode={"stretch"}
-              imageStyle={{ width: "100%", height: 120 }}
+              imageStyle={{ width: "100%", height: ViewScale(120) }}
               style={{
                 flexDirection: "row",
                 alignItems: "center",
                 flex: 1,
               }}
             >
-              <View style={{ flex: 1, marginTop: 20 }}>
+              <View style={{ flex: 1, marginTop: ViewScale(20) }}>
                 <View style={{ flexDirection: "row" }}>
                   <Text
                     style={{
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                       color: "#163c70",
-                      marginHorizontal: 35,
+                      marginHorizontal: ViewScale(35),
                     }}
                   >
                     {item.Label}
@@ -5426,7 +5427,7 @@ class DevlopRegister extends React.Component {
                   <Text
                     style={{
                       color: "red",
-                      left: -32,
+                      left: ViewScale(-32),
                     }}
                   >
                     *
@@ -5435,11 +5436,11 @@ class DevlopRegister extends React.Component {
                 <ImageBackground
                   source={require("../../image/inputedittext.png")}
                   resizeMode={"stretch"}
-                  imageStyle={{ height: 28, width: "100%" }}
+                  imageStyle={{ height: ViewScale(28), width: "100%" }}
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
-                    marginHorizontal: 35,
+                    marginHorizontal: ViewScale(35),
                     // borderWidth: 1,
                     borderColor: "red",
                   }}
@@ -5502,8 +5503,8 @@ class DevlopRegister extends React.Component {
                           <Text
                             style={{
                               color: "#73838f",
-                              fontSize: 24,
-                              marginHorizontal: 15,
+                              fontSize: ViewScale(24),
+                              marginHorizontal: ViewScale(15),
                             }}
                           >
                             {this.state.getcontryNameTh}
@@ -5512,8 +5513,8 @@ class DevlopRegister extends React.Component {
                           <Text
                             style={{
                               color: "#73838f",
-                              fontSize: 24,
-                              marginHorizontal: 15,
+                              fontSize: ViewScale(24),
+                              marginHorizontal: ViewScale(15),
                             }}
                           >
                             {this.checkContry(item.Data)}
@@ -5530,9 +5531,9 @@ class DevlopRegister extends React.Component {
                         }
                       >
                         <Icon
-                          style={{ color: "#73838f", marginTop: 6 }}
+                          style={{ color: "#73838f", marginTop: ViewScale(6) }}
                           name="keyboard-arrow-down"
-                          size={16}
+                          size={ViewScale(16)}
                         />
                       </View>
                     </View>
@@ -5590,7 +5591,7 @@ class DevlopRegister extends React.Component {
           navigation={this.props.navigation}
           backScreen={false}
         />
-        <View style={{ marginTop: Platform.OS === "android" && 90 }} />
+        <View style={{ marginTop: Platform.OS === "android" && ViewScale(90) }} />
         <HeaderstageRegister
           nameTab={I18n.t("transalte_registerdevlop")}
           nameTab2={1}
@@ -5598,16 +5599,16 @@ class DevlopRegister extends React.Component {
 
         {/* /////////////////////////////////////////////////////////////componnt ect /////////////////////////// */}
         <KeyboardAvoidingView
-          behavior={Platform.OS === "ios" ? "padding" : 20}
+          behavior={Platform.OS === "ios" ? "padding" : ViewScale(20)}
           style={{ flex: 1, zIndex: -1 }}
         >
           <ScrollView onScroll={({ nativeEvent }) => {}} style={{ flex: 1 }}>
             <ListItem
               containerStyle={{
-                marginBottom: 8,
-                borderRadius: 10,
+                marginBottom: ViewScale(8),
+                borderRadius: ViewScale(10),
                 alignSelf: "center",
-                marginTop: 10,
+                marginTop: ViewScale(10),
                 width: "95%",
                 shadowColor: "#f4f6fa ",
                 // shadowOffset: {
@@ -5633,13 +5634,13 @@ class DevlopRegister extends React.Component {
                   /> */}
                       <Image
                         source={imgtype}
-                        style={{ width: 55, height: 50, borderRadius: 15 }}
+                        style={{ width: ViewScale(55), height: ViewScale(50), borderRadius: ViewScale(15) }}
                       />
                       <Text
                         style={{
-                          fontSize: 15,
+                          fontSize: ViewScale(15),
                           color: "#6f819a",
-                          marginTop: 8,
+                          marginTop: ViewScale(8),
                           textAlign: "center",
                         }}
                       >
@@ -5664,7 +5665,7 @@ class DevlopRegister extends React.Component {
                         onPress={() => {}}
                         numberOfLines={2}
                         style={{
-                          fontSize: 18,
+                          fontSize: ViewScale(18),
                           color: "#4b4b4b",
                           fontFamily: "Kittithada Bold 75",
                         }}
@@ -5676,7 +5677,7 @@ class DevlopRegister extends React.Component {
                     <View
                       style={{
                         width: "20%",
-                        bottom: 10,
+                        bottom: ViewScale(10),
                       }}
                     />
                   </View>
@@ -5695,12 +5696,12 @@ class DevlopRegister extends React.Component {
                     >
                       {location === "ออนไลน์" ? (
                         <Image
-                          style={{ width: 13, height: 13, top: 3 }}
+                          style={{ width: ViewScale(13), height: ViewScale(13), top: ViewScale(3) }}
                           source={require("../../image/WWW.png")}
                         />
                       ) : (
                         <Image
-                          style={{ width: 9, height: 12, top: 3 }}
+                          style={{ width: ViewScale(9), height: ViewScale(12), top: ViewScale(3) }}
                           source={require("../../image/makerlocation.png")}
                         />
                       )}
@@ -5716,7 +5717,7 @@ class DevlopRegister extends React.Component {
                     >
                       <Text
                         numberOfLines={2}
-                        style={{ fontSize: 15.5, color: "#6f819a" }}
+                        style={{ fontSize: ViewScale(15.5), color: "#6f819a" }}
                       >
                         {"  "}
                         {location}
@@ -5734,16 +5735,16 @@ class DevlopRegister extends React.Component {
                     flexDirection: "row",
                     alignItems: "center",
                     marginLeft: 1,
-                    top: 3,
+                    top: ViewScale(3),
                   }}
                 >
                   <Image
-                    style={{ width: 17, height: 13 }}
+                    style={{ width: ViewScale(17), height: ViewScale(13) }}
                     source={require("../../image/readDetail.png")}
                   />
                   <Text
                     style={{
-                      fontSize: 15,
+                      fontSize: ViewScale(15),
                       color: "#7fadec",
                       fontFamily: "PSL Kittithada Pro",
                     }}
@@ -5809,7 +5810,7 @@ class DevlopRegister extends React.Component {
                                       resizeMode={"stretch"}
                                       imageStyle={{
                                         width: "100%",
-                                        height: 125,
+                                        height: ViewScale(125),
                                       }}
                                       style={{
                                         flexDirection: "row",
@@ -5817,13 +5818,13 @@ class DevlopRegister extends React.Component {
                                         flex: 1,
                                       }}
                                     >
-                                      <View style={{ flex: 1, marginTop: 25 }}>
+                                      <View style={{ flex: 1, marginTop: ViewScale(25) }}>
                                         <Text
                                           style={{
-                                            fontSize: 20,
+                                            fontSize: ViewScale(20),
                                             color: "#163c70",
 
-                                            marginHorizontal: 35,
+                                            marginHorizontal: ViewScale(35),
                                           }}
                                         >
                                           {/* {item.Label} */}
@@ -5832,10 +5833,10 @@ class DevlopRegister extends React.Component {
                                         </Text>
                                         <Text
                                           style={{
-                                            fontSize: 22,
+                                            fontSize: ViewScale(22),
                                             color: "#73838f",
-                                            marginHorizontal: 35,
-                                            marginTop: 0,
+                                            marginHorizontal: ViewScale(35),
+                                            marginTop: ViewScale(0),
                                           }}
                                         >
                                           {from1.Data}
@@ -5854,7 +5855,7 @@ class DevlopRegister extends React.Component {
                                       resizeMode={"stretch"}
                                       imageStyle={{
                                         width: "100%",
-                                        height: 125,
+                                        height: ViewScale(125),
                                       }}
                                       style={{
                                         flexDirection: "row",
@@ -5862,13 +5863,13 @@ class DevlopRegister extends React.Component {
                                         flex: 1,
                                       }}
                                     >
-                                      <View style={{ flex: 1, marginTop: 25 }}>
+                                      <View style={{ flex: 1, marginTop: ViewScale(25) }}>
                                         <Text
                                           style={{
-                                            fontSize: 20,
+                                            fontSize: ViewScale(20),
                                             color: "#163c70",
 
-                                            marginHorizontal: 35,
+                                            marginHorizontal: ViewScale(35),
                                           }}
                                         >
                                           {/* {item.Label} */}
@@ -5877,10 +5878,10 @@ class DevlopRegister extends React.Component {
                                         </Text>
                                         <Text
                                           style={{
-                                            fontSize: 22,
+                                            fontSize: ViewScale(22),
                                             color: "#73838f",
-                                            marginHorizontal: 35,
-                                            marginTop: 0,
+                                            marginHorizontal: ViewScale(35),
+                                            marginTop: ViewScale(0),
                                           }}
                                         >
                                           {this.showTitlename(from1.Data)}
@@ -5900,7 +5901,7 @@ class DevlopRegister extends React.Component {
                                       <View
                                         style={{
                                           flex: 1,
-                                          marginTop: 3,
+                                          marginTop: ViewScale(3),
                                           shadowColor: "#f9fafc",
                                           shadowOffset: {
                                             width: 0,
@@ -5921,7 +5922,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 153,
+                                            height: ViewScale(153),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -5930,14 +5931,14 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 25 }}
+                                            style={{ flex: 1, marginTop: ViewScale(25) }}
                                           >
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#163c70",
 
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               {/* {item.Label} */}
@@ -5946,10 +5947,10 @@ class DevlopRegister extends React.Component {
                                             </Text>
                                             <Text
                                               style={{
-                                                fontSize: 22,
+                                                fontSize: ViewScale(22),
                                                 color: "#73838f",
-                                                marginHorizontal: 35,
-                                                marginTop: 0,
+                                                marginHorizontal: ViewScale(35),
+                                                marginTop: ViewScale(0),
                                               }}
                                             >
                                               {this.state
@@ -6006,7 +6007,7 @@ class DevlopRegister extends React.Component {
                                   <View
                                     style={{
                                       flex: 1,
-                                      marginTop: 3,
+                                      marginTop: ViewScale(3),
                                       shadowColor: "#f9fafc",
                                       shadowOffset: {
                                         width: 0,
@@ -6028,7 +6029,7 @@ class DevlopRegister extends React.Component {
                                       resizeMode={"stretch"}
                                       imageStyle={{
                                         width: "100%",
-                                        height: 125,
+                                        height: ViewScale(125),
                                       }}
                                       style={{
                                         flexDirection: "row",
@@ -6036,13 +6037,13 @@ class DevlopRegister extends React.Component {
                                         flex: 1,
                                       }}
                                     >
-                                      <View style={{ flex: 1, marginTop: 25 }}>
+                                      <View style={{ flex: 1, marginTop: ViewScale(25) }}>
                                         <Text
                                           style={{
-                                            fontSize: 20,
+                                            fontSize: ViewScale(20),
                                             color: "#163c70",
 
-                                            marginHorizontal: 35,
+                                            marginHorizontal: ViewScale(35),
                                           }}
                                         >
                                           {/* {item.Label} */}
@@ -6051,10 +6052,10 @@ class DevlopRegister extends React.Component {
                                         </Text>
                                         <Text
                                           style={{
-                                            fontSize: 22,
+                                            fontSize: ViewScale(22),
                                             color: "#73838f",
-                                            marginHorizontal: 35,
-                                            marginTop: 0,
+                                            marginHorizontal: ViewScale(35),
+                                            marginTop: ViewScale(0),
                                           }}
                                         >
                                           {from1.Data === "" ? "-" : from1.Data}
@@ -6074,7 +6075,7 @@ class DevlopRegister extends React.Component {
                                 <View
                                   style={{
                                     flex: 1,
-                                    marginTop: 3,
+                                    marginTop: ViewScale(3),
                                     shadowColor: "#f9fafc",
                                     shadowOffset: {
                                       width: 0,
@@ -6095,7 +6096,7 @@ class DevlopRegister extends React.Component {
                                     resizeMode={"stretch"}
                                     imageStyle={{
                                       width: "100%",
-                                      height: 125,
+                                      height: ViewScale(125),
                                     }}
                                     style={{
                                       flexDirection: "row",
@@ -6103,23 +6104,23 @@ class DevlopRegister extends React.Component {
                                       flex: 1,
                                     }}
                                   >
-                                    <View style={{ flex: 1, marginTop: 25 }}>
+                                    <View style={{ flex: 1, marginTop: ViewScale(25) }}>
                                       <Text
                                         style={{
-                                          fontSize: 20,
+                                          fontSize: ViewScale(20),
                                           color: "#163c70",
 
-                                          marginHorizontal: 35,
+                                          marginHorizontal: ViewScale(35),
                                         }}
                                       >
                                         {from1.Label}
                                       </Text>
                                       <Text
                                         style={{
-                                          fontSize: 22,
+                                          fontSize: ViewScale(22),
                                           color: "#73838f",
-                                          marginHorizontal: 35,
-                                          marginTop: 0,
+                                          marginHorizontal: ViewScale(35),
+                                          marginTop: ViewScale(0),
                                         }}
                                       >
                                         {from1.Data}
@@ -6136,7 +6137,7 @@ class DevlopRegister extends React.Component {
                                   <View
                                     style={{
                                       flex: 1,
-                                      marginTop: 3,
+                                      marginTop: ViewScale(3),
                                       shadowColor: "#f9fafc",
                                       shadowOffset: {
                                         width: 0,
@@ -6155,7 +6156,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 145,
+                                            height: ViewScale(145),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -6164,16 +6165,16 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 20 }}
+                                            style={{ flex: 1, marginTop: ViewScale(20) }}
                                           >
                                             <View
                                               style={{ flexDirection: "row" }}
                                             >
                                               <Text
                                                 style={{
-                                                  fontSize: 20,
+                                                  fontSize: ViewScale(20),
                                                   color: "#163c70",
-                                                  marginHorizontal: 35,
+                                                  marginHorizontal: ViewScale(35),
                                                 }}
                                               >
                                                 {DataItemss.Label}
@@ -6181,7 +6182,7 @@ class DevlopRegister extends React.Component {
                                               <Text
                                                 style={{
                                                   color: "red",
-                                                  left: -32,
+                                                  left: ViewScale(-32),
                                                 }}
                                               >
                                                 *
@@ -6191,13 +6192,13 @@ class DevlopRegister extends React.Component {
                                               source={require("../../image/inputedittext.png")}
                                               resizeMode={"stretch"}
                                               imageStyle={{
-                                                height: 28,
+                                                height: ViewScale(28),
                                                 width: "100%",
                                               }}
                                               style={{
                                                 flexDirection: "row",
                                                 alignItems: "center",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               <TextInput
@@ -6207,13 +6208,13 @@ class DevlopRegister extends React.Component {
                                                   });
                                                 }}
                                                 style={{
-                                                  fontSize: 24,
+                                                  fontSize: ViewScale(24),
                                                   color: "#73838f",
-                                                  marginHorizontal: 10,
+                                                  marginHorizontal: ViewScale(10),
                                                   marginTop:
                                                     Platform.OS === "android"
-                                                      ? -11
-                                                      : 0,
+                                                      ? ViewScale(-11)
+                                                      : ViewScale(0),
                                                   flex: 1,
                                                   fontFamily:
                                                     Platform.OS === "android"
@@ -6226,7 +6227,7 @@ class DevlopRegister extends React.Component {
                                                   style={{
                                                     borderWidth: 1,
                                                     color: "#163c70",
-                                                    fontSize: 24,
+                                                    fontSize: ViewScale(24),
                                                     flex: 1,
                                                   }}
                                                 >
@@ -6243,7 +6244,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 145,
+                                            height: ViewScale(145),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -6252,16 +6253,16 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 20 }}
+                                            style={{ flex: 1, marginTop: ViewScale(20) }}
                                           >
                                             <View
                                               style={{ flexDirection: "row" }}
                                             >
                                               <Text
                                                 style={{
-                                                  fontSize: 20,
+                                                  fontSize: ViewScale(20),
                                                   color: "#163c70",
-                                                  marginHorizontal: 35,
+                                                  marginHorizontal: ViewScale(35),
                                                 }}
                                               >
                                                 {DataItemss.Label}
@@ -6269,7 +6270,7 @@ class DevlopRegister extends React.Component {
                                               <Text
                                                 style={{
                                                   color: "red",
-                                                  left: -32,
+                                                  left: ViewScale(-32),
                                                 }}
                                               >
                                                 *
@@ -6279,13 +6280,13 @@ class DevlopRegister extends React.Component {
                                               source={require("../../image/inputedittext.png")}
                                               resizeMode={"stretch"}
                                               imageStyle={{
-                                                height: 28,
+                                                height: ViewScale(28),
                                                 width: "100%",
                                               }}
                                               style={{
                                                 flexDirection: "row",
                                                 alignItems: "center",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               <TextInput
@@ -6296,14 +6297,14 @@ class DevlopRegister extends React.Component {
                                                 }}
                                                 placeholder={DataItemss.Data}
                                                 style={{
-                                                  fontSize: 24,
+                                                  fontSize: ViewScale(24),
                                                   color: "#73838f",
-                                                  marginHorizontal: 10,
+                                                  marginHorizontal: ViewScale(10),
                                                   flex: 1,
                                                   marginTop:
                                                     Platform.OS === "android"
-                                                      ? -11
-                                                      : 0,
+                                                      ? ViewScale(-11)
+                                                      : ViewScale(0),
                                                   fontFamily:
                                                     Platform.OS === "android"
                                                       ? "Kittithada Bold 75"
@@ -6315,7 +6316,7 @@ class DevlopRegister extends React.Component {
                                                   style={{
                                                     borderWidth: 1,
                                                     color: "#163c70",
-                                                    fontSize: 24,
+                                                    fontSize: ViewScale(24),
                                                     flex: 1,
                                                   }}
                                                 >
@@ -6332,7 +6333,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 120,
+                                            height: ViewScale(120),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -6341,16 +6342,16 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 20 }}
+                                            style={{ flex: 1, marginTop: ViewScale(20) }}
                                           >
                                             <View
                                               style={{ flexDirection: "row" }}
                                             >
                                               <Text
                                                 style={{
-                                                  fontSize: 20,
+                                                  fontSize: ViewScale(20),
                                                   color: "#163c70",
-                                                  marginHorizontal: 35,
+                                                  marginHorizontal: ViewScale(35),
                                                 }}
                                               >
                                                 {DataItemss.Label}
@@ -6358,7 +6359,7 @@ class DevlopRegister extends React.Component {
                                               <Text
                                                 style={{
                                                   color: "red",
-                                                  left: -32,
+                                                  left: ViewScale(-32),
                                                 }}
                                               >
                                                 *
@@ -6368,13 +6369,13 @@ class DevlopRegister extends React.Component {
                                               source={require("../../image/inputedittext.png")}
                                               resizeMode={"stretch"}
                                               imageStyle={{
-                                                height: 28,
+                                                height: ViewScale(28),
                                                 width: "100%",
                                               }}
                                               style={{
                                                 flexDirection: "row",
                                                 alignItems: "center",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                                 // borderWidth: 1,
                                                 borderColor: "red",
                                               }}
@@ -6466,8 +6467,8 @@ class DevlopRegister extends React.Component {
                                                       <Text
                                                         style={{
                                                           color: "#73838f",
-                                                          fontSize: 24,
-                                                          marginHorizontal: 15,
+                                                          fontSize: ViewScale(24),
+                                                          marginHorizontal: ViewScale(15),
                                                         }}
                                                       >
                                                         {
@@ -6479,8 +6480,8 @@ class DevlopRegister extends React.Component {
                                                       <Text
                                                         style={{
                                                           color: "#73838f",
-                                                          fontSize: 24,
-                                                          marginHorizontal: 15,
+                                                          fontSize: ViewScale(24),
+                                                          marginHorizontal: ViewScale(15),
                                                         }}
                                                       >
                                                         {DataItemss.Data}
@@ -6499,10 +6500,10 @@ class DevlopRegister extends React.Component {
                                                     <Icon
                                                       style={{
                                                         color: "#73838f",
-                                                        marginTop: 6,
+                                                        marginTop: ViewScale(6),
                                                       }}
                                                       name="keyboard-arrow-down"
-                                                      size={16}
+                                                      size={ViewScale(16)}
                                                     />
                                                   </View>
                                                 </View>
@@ -6517,7 +6518,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 120,
+                                            height: ViewScale(120),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -6526,16 +6527,16 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 20 }}
+                                            style={{ flex: 1, marginTop: ViewScale(20) }}
                                           >
                                             <View
                                               style={{ flexDirection: "row" }}
                                             >
                                               <Text
                                                 style={{
-                                                  fontSize: 20,
+                                                  fontSize: ViewScale(20),
                                                   color: "#163c70",
-                                                  marginHorizontal: 35,
+                                                  marginHorizontal: ViewScale(35),
                                                 }}
                                               >
                                                 {DataItemss.Label}
@@ -6543,7 +6544,7 @@ class DevlopRegister extends React.Component {
                                               <Text
                                                 style={{
                                                   color: "red",
-                                                  left: -32,
+                                                  left: ViewScale(-32),
                                                 }}
                                               >
                                                 *
@@ -6553,13 +6554,13 @@ class DevlopRegister extends React.Component {
                                               source={require("../../image/inputedittext.png")}
                                               resizeMode={"stretch"}
                                               imageStyle={{
-                                                height: 28,
+                                                height: ViewScale(28),
                                                 width: "100%",
                                               }}
                                               style={{
                                                 flexDirection: "row",
                                                 alignItems: "center",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                                 // borderWidth: 1,
                                                 borderColor: "red",
                                               }}
@@ -6644,8 +6645,8 @@ class DevlopRegister extends React.Component {
                                                       <Text
                                                         style={{
                                                           color: "#73838f",
-                                                          fontSize: 24,
-                                                          marginHorizontal: 15,
+                                                          fontSize: ViewScale(24),
+                                                          marginHorizontal: ViewScale(15),
                                                         }}
                                                       >
                                                         {
@@ -6657,8 +6658,8 @@ class DevlopRegister extends React.Component {
                                                       <Text
                                                         style={{
                                                           color: "#73838f",
-                                                          fontSize: 24,
-                                                          marginHorizontal: 15,
+                                                          fontSize: ViewScale(24),
+                                                          marginHorizontal: ViewScale(15),
                                                         }}
                                                       >
                                                         {DataItemss.Data}
@@ -6677,10 +6678,10 @@ class DevlopRegister extends React.Component {
                                                     <Icon
                                                       style={{
                                                         color: "#73838f",
-                                                        marginTop: 6,
+                                                        marginTop: ViewScale(6),
                                                       }}
                                                       name="keyboard-arrow-down"
-                                                      size={16}
+                                                      size={ViewScale(16)}
                                                     />
                                                   </View>
                                                 </View>
@@ -6695,7 +6696,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 120,
+                                            height: ViewScale(120),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -6704,16 +6705,16 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 20 }}
+                                            style={{ flex: 1, marginTop: ViewScale(20) }}
                                           >
                                             <View
                                               style={{ flexDirection: "row" }}
                                             >
                                               <Text
                                                 style={{
-                                                  fontSize: 20,
+                                                  fontSize: ViewScale(20),
                                                   color: "#163c70",
-                                                  marginHorizontal: 35,
+                                                  marginHorizontal: ViewScale(35),
                                                 }}
                                               >
                                                 {DataItemss.Label}
@@ -6721,7 +6722,7 @@ class DevlopRegister extends React.Component {
                                               <Text
                                                 style={{
                                                   color: "red",
-                                                  left: -32,
+                                                  left: ViewScale(-32),
                                                 }}
                                               >
                                                 *
@@ -6731,13 +6732,13 @@ class DevlopRegister extends React.Component {
                                               source={require("../../image/inputedittext.png")}
                                               resizeMode={"stretch"}
                                               imageStyle={{
-                                                height: 28,
+                                                height: ViewScale(28),
                                                 width: "100%",
                                               }}
                                               style={{
                                                 flexDirection: "row",
                                                 alignItems: "center",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                                 // borderWidth: 1,
                                                 borderColor: "red",
                                               }}
@@ -6821,8 +6822,8 @@ class DevlopRegister extends React.Component {
                                                       <Text
                                                         style={{
                                                           color: "#73838f",
-                                                          fontSize: 24,
-                                                          marginHorizontal: 15,
+                                                          fontSize: ViewScale(24),
+                                                          marginHorizontal: ViewScale(15),
                                                         }}
                                                       >
                                                         {
@@ -6834,8 +6835,8 @@ class DevlopRegister extends React.Component {
                                                       <Text
                                                         style={{
                                                           color: "#73838f",
-                                                          fontSize: 24,
-                                                          marginHorizontal: 15,
+                                                          fontSize: ViewScale(24),
+                                                          marginHorizontal: ViewScale(15),
                                                         }}
                                                       >
                                                         {DataItemss.Data}
@@ -6854,10 +6855,10 @@ class DevlopRegister extends React.Component {
                                                     <Icon
                                                       style={{
                                                         color: "#73838f",
-                                                        marginTop: 6,
+                                                        marginTop: ViewScale(6),
                                                       }}
                                                       name="keyboard-arrow-down"
-                                                      size={16}
+                                                      size={ViewScale(16)}
                                                     />
                                                   </View>
                                                 </View>
@@ -6874,7 +6875,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 120,
+                                            height: ViewScale(120),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -6883,16 +6884,16 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 20 }}
+                                            style={{ flex: 1, marginTop: ViewScale(20) }}
                                           >
                                             <View
                                               style={{ flexDirection: "row" }}
                                             >
                                               <Text
                                                 style={{
-                                                  fontSize: 20,
+                                                  fontSize: ViewScale(20),
                                                   color: "#163c70",
-                                                  marginHorizontal: 35,
+                                                  marginHorizontal: ViewScale(35),
                                                 }}
                                               >
                                                 {DataItemss.Label}
@@ -6900,7 +6901,7 @@ class DevlopRegister extends React.Component {
                                               <Text
                                                 style={{
                                                   color: "red",
-                                                  left: -32,
+                                                  left: ViewScale(-32),
                                                 }}
                                               >
                                                 *
@@ -6910,13 +6911,13 @@ class DevlopRegister extends React.Component {
                                               source={require("../../image/inputedittext.png")}
                                               resizeMode={"stretch"}
                                               imageStyle={{
-                                                height: 28,
+                                                height: ViewScale(28),
                                                 width: "100%",
                                               }}
                                               style={{
                                                 flexDirection: "row",
                                                 alignItems: "center",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               <TextInput
@@ -6927,14 +6928,14 @@ class DevlopRegister extends React.Component {
                                                 }}
                                                 placeholder={DataItemss.Data}
                                                 style={{
-                                                  fontSize: 24,
+                                                  fontSize: ViewScale(24),
                                                   color: "#73838f",
-                                                  marginHorizontal: 10,
+                                                  marginHorizontal: ViewScale(10),
                                                   flex: 1,
                                                   marginTop:
                                                     Platform.OS === "android"
-                                                      ? -11
-                                                      : 0,
+                                                      ? ViewScale(-11)
+                                                      : ViewScale(0),
                                                   fontFamily:
                                                     Platform.OS === "android"
                                                       ? "Kittithada Bold 75"
@@ -6946,7 +6947,7 @@ class DevlopRegister extends React.Component {
                                                   style={{
                                                     borderWidth: 1,
                                                     color: "#163c70",
-                                                    fontSize: 24,
+                                                    fontSize: ViewScale(24),
                                                     flex: 1,
                                                   }}
                                                 >
@@ -6965,7 +6966,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 120,
+                                            height: ViewScale(120),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -6974,16 +6975,16 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 20 }}
+                                            style={{ flex: 1, marginTop: ViewScale(20) }}
                                           >
                                             <View
                                               style={{ flexDirection: "row" }}
                                             >
                                               <Text
                                                 style={{
-                                                  fontSize: 20,
+                                                  fontSize: ViewScale(20),
                                                   color: "#163c70",
-                                                  marginHorizontal: 35,
+                                                  marginHorizontal: ViewScale(35),
                                                 }}
                                               >
                                                 {DataItemss.Label}
@@ -6991,7 +6992,7 @@ class DevlopRegister extends React.Component {
                                               <Text
                                                 style={{
                                                   color: "red",
-                                                  left: -32,
+                                                  left: ViewScale(-32),
                                                 }}
                                               >
                                                 *
@@ -7001,13 +7002,13 @@ class DevlopRegister extends React.Component {
                                               source={require("../../image/inputedittext.png")}
                                               resizeMode={"stretch"}
                                               imageStyle={{
-                                                height: 28,
+                                                height: ViewScale(28),
                                                 width: "100%",
                                               }}
                                               style={{
                                                 flexDirection: "row",
                                                 alignItems: "center",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                                 // borderWidth: 1,
                                                 borderColor: "red",
                                               }}
@@ -7079,8 +7080,8 @@ class DevlopRegister extends React.Component {
                                                       <Text
                                                         style={{
                                                           color: "#73838f",
-                                                          fontSize: 24,
-                                                          marginHorizontal: 15,
+                                                          fontSize: ViewScale(24),
+                                                          marginHorizontal: ViewScale(15),
                                                         }}
                                                       >
                                                         {
@@ -7092,8 +7093,8 @@ class DevlopRegister extends React.Component {
                                                       <Text
                                                         style={{
                                                           color: "#73838f",
-                                                          fontSize: 24,
-                                                          marginHorizontal: 15,
+                                                          fontSize: ViewScale(24),
+                                                          marginHorizontal: ViewScale(15),
                                                         }}
                                                       >
                                                         {DataItemss.Data}
@@ -7112,10 +7113,10 @@ class DevlopRegister extends React.Component {
                                                     <Icon
                                                       style={{
                                                         color: "#73838f",
-                                                        marginTop: 6,
+                                                        marginTop: ViewScale(6),
                                                       }}
                                                       name="keyboard-arrow-down"
-                                                      size={16}
+                                                      size={ViewScale(16)}
                                                     />
                                                   </View>
                                                 </View>
@@ -7136,7 +7137,7 @@ class DevlopRegister extends React.Component {
                                   <View
                                     style={{
                                       flex: 1,
-                                      marginTop: 3,
+                                      marginTop: ViewScale(3),
                                       shadowColor: "#f9fafc",
                                       shadowOffset: {
                                         width: 0,
@@ -7155,7 +7156,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 120,
+                                            height: ViewScale(120),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -7164,16 +7165,16 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 20 }}
+                                            style={{ flex: 1, marginTop: ViewScale(20) }}
                                           >
                                             <View
                                               style={{ flexDirection: "row" }}
                                             >
                                               <Text
                                                 style={{
-                                                  fontSize: 20,
+                                                  fontSize: ViewScale(20),
                                                   color: "#163c70",
-                                                  marginHorizontal: 35,
+                                                  marginHorizontal: ViewScale(35),
                                                 }}
                                               >
                                                 {item.Label}
@@ -7181,7 +7182,7 @@ class DevlopRegister extends React.Component {
                                               <Text
                                                 style={{
                                                   color: "red",
-                                                  left: -32,
+                                                  left: ViewScale(-32),
                                                 }}
                                               >
                                                 *
@@ -7191,13 +7192,13 @@ class DevlopRegister extends React.Component {
                                               source={require("../../image/inputedittext.png")}
                                               resizeMode={"stretch"}
                                               imageStyle={{
-                                                height: 28,
+                                                height: ViewScale(28),
                                                 width: "100%",
                                               }}
                                               style={{
                                                 flexDirection: "row",
                                                 alignItems: "center",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               <TextInput
@@ -7208,14 +7209,14 @@ class DevlopRegister extends React.Component {
                                                   });
                                                 }}
                                                 style={{
-                                                  fontSize: 24,
+                                                  fontSize: ViewScale(24),
                                                   color: "#73838f",
-                                                  marginHorizontal: 10,
+                                                  marginHorizontal: ViewScale(10),
                                                   flex: 1,
                                                   marginTop:
                                                     Platform.OS === "android"
-                                                      ? -11
-                                                      : 0,
+                                                      ? ViewScale(-11)
+                                                      : ViewScale(0),
                                                   fontFamily:
                                                     Platform.OS === "android"
                                                       ? "Kittithada Bold 75"
@@ -7227,7 +7228,7 @@ class DevlopRegister extends React.Component {
                                                   style={{
                                                     borderWidth: 1,
                                                     color: "#163c70",
-                                                    fontSize: 24,
+                                                    fontSize: ViewScale(24),
                                                     flex: 1,
                                                   }}
                                                 >
@@ -7244,7 +7245,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 120,
+                                            height: ViewScale(120),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -7253,16 +7254,16 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 20 }}
+                                            style={{ flex: 1, marginTop: ViewScale(20) }}
                                           >
                                             <View
                                               style={{ flexDirection: "row" }}
                                             >
                                               <Text
                                                 style={{
-                                                  fontSize: 20,
+                                                  fontSize: ViewScale(20),
                                                   color: "#163c70",
-                                                  marginHorizontal: 35,
+                                                  marginHorizontal: ViewScale(35),
                                                 }}
                                               >
                                                 {item.Label}
@@ -7270,7 +7271,7 @@ class DevlopRegister extends React.Component {
                                               <Text
                                                 style={{
                                                   color: "red",
-                                                  left: -32,
+                                                  left: ViewScale(-32),
                                                 }}
                                               >
                                                 *
@@ -7280,13 +7281,13 @@ class DevlopRegister extends React.Component {
                                               source={require("../../image/inputedittext.png")}
                                               resizeMode={"stretch"}
                                               imageStyle={{
-                                                height: 28,
+                                                height: ViewScale(28),
                                                 width: "100%",
                                               }}
                                               style={{
                                                 flexDirection: "row",
                                                 alignItems: "center",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               <TextInput
@@ -7298,14 +7299,14 @@ class DevlopRegister extends React.Component {
                                                 }}
                                                 placeholder={item.Data}
                                                 style={{
-                                                  fontSize: 24,
+                                                  fontSize: ViewScale(24),
                                                   color: "#73838f",
-                                                  marginHorizontal: 10,
+                                                  marginHorizontal: ViewScale(10),
                                                   flex: 1,
                                                   marginTop:
                                                     Platform.OS === "android"
-                                                      ? -11
-                                                      : 0,
+                                                      ? ViewScale(-11)
+                                                      : ViewScale(0),
                                                   fontFamily:
                                                     Platform.OS === "android"
                                                       ? "Kittithada Bold 75"
@@ -7317,7 +7318,7 @@ class DevlopRegister extends React.Component {
                                                   style={{
                                                     borderWidth: 1,
                                                     color: "#163c70",
-                                                    fontSize: 24,
+                                                    fontSize: ViewScale(24),
                                                     flex: 1,
                                                   }}
                                                 >
@@ -7334,7 +7335,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 120,
+                                            height: ViewScale(120),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -7343,16 +7344,16 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 20 }}
+                                            style={{ flex: 1, marginTop: ViewScale(20) }}
                                           >
                                             <View
                                               style={{ flexDirection: "row" }}
                                             >
                                               <Text
                                                 style={{
-                                                  fontSize: 20,
+                                                  fontSize: ViewScale(20),
                                                   color: "#163c70",
-                                                  marginHorizontal: 35,
+                                                  marginHorizontal: ViewScale(35),
                                                 }}
                                               >
                                                 {item.Label}
@@ -7360,7 +7361,7 @@ class DevlopRegister extends React.Component {
                                               <Text
                                                 style={{
                                                   color: "red",
-                                                  left: -32,
+                                                  left: ViewScale(-32),
                                                 }}
                                               >
                                                 *
@@ -7370,13 +7371,13 @@ class DevlopRegister extends React.Component {
                                               source={require("../../image/inputedittext.png")}
                                               resizeMode={"stretch"}
                                               imageStyle={{
-                                                height: 28,
+                                                height: ViewScale(28),
                                                 width: "100%",
                                               }}
                                               style={{
                                                 flexDirection: "row",
                                                 alignItems: "center",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               <TextInput
@@ -7387,14 +7388,14 @@ class DevlopRegister extends React.Component {
                                                 }}
                                                 placeholder={item.Data}
                                                 style={{
-                                                  fontSize: 24,
+                                                  fontSize: ViewScale(24),
                                                   color: "#73838f",
-                                                  marginHorizontal: 10,
+                                                  marginHorizontal: ViewScale(10),
                                                   flex: 1,
                                                   marginTop:
                                                     Platform.OS === "android"
-                                                      ? -11
-                                                      : 0,
+                                                      ? ViewScale(-11)
+                                                      : ViewScale(0),
                                                   fontFamily:
                                                     Platform.OS === "android"
                                                       ? "Kittithada Bold 75"
@@ -7406,7 +7407,7 @@ class DevlopRegister extends React.Component {
                                                   style={{
                                                     borderWidth: 1,
                                                     color: "#163c70",
-                                                    fontSize: 24,
+                                                    fontSize: ViewScale(24),
                                                     flex: 1,
                                                   }}
                                                 >
@@ -7423,7 +7424,7 @@ class DevlopRegister extends React.Component {
                                           resizeMode={"stretch"}
                                           imageStyle={{
                                             width: "100%",
-                                            height: 120,
+                                            height: ViewScale(120),
                                           }}
                                           style={{
                                             flexDirection: "row",
@@ -7432,16 +7433,16 @@ class DevlopRegister extends React.Component {
                                           }}
                                         >
                                           <View
-                                            style={{ flex: 1, marginTop: 20 }}
+                                            style={{ flex: 1, marginTop: ViewScale(20) }}
                                           >
                                             <View
                                               style={{ flexDirection: "row" }}
                                             >
                                               <Text
                                                 style={{
-                                                  fontSize: 20,
+                                                  fontSize: ViewScale(20),
                                                   color: "#163c70",
-                                                  marginHorizontal: 35,
+                                                  marginHorizontal: ViewScale(35),
                                                 }}
                                               >
                                                 {item.Label}
@@ -7449,7 +7450,7 @@ class DevlopRegister extends React.Component {
                                               <Text
                                                 style={{
                                                   color: "red",
-                                                  left: -32,
+                                                  left: ViewScale(-32),
                                                 }}
                                               >
                                                 *
@@ -7459,13 +7460,13 @@ class DevlopRegister extends React.Component {
                                               source={require("../../image/inputedittext.png")}
                                               resizeMode={"stretch"}
                                               imageStyle={{
-                                                height: 28,
+                                                height: ViewScale(28),
                                                 width: "100%",
                                               }}
                                               style={{
                                                 flexDirection: "row",
                                                 alignItems: "center",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               <TextInput
@@ -7476,14 +7477,14 @@ class DevlopRegister extends React.Component {
                                                 }}
                                                 placeholder={item.Data}
                                                 style={{
-                                                  fontSize: 24,
+                                                  fontSize: ViewScale(24),
                                                   color: "#73838f",
-                                                  marginHorizontal: 10,
+                                                  marginHorizontal: ViewScale(10),
                                                   flex: 1,
                                                   marginTop:
                                                     Platform.OS === "android"
-                                                      ? -11
-                                                      : 0,
+                                                      ? ViewScale(-11)
+                                                      : ViewScale(0),
                                                   fontFamily:
                                                     Platform.OS === "android"
                                                       ? "Kittithada Bold 75"
@@ -7495,7 +7496,7 @@ class DevlopRegister extends React.Component {
                                                   style={{
                                                     borderWidth: 1,
                                                     color: "#163c70",
-                                                    fontSize: 24,
+                                                    fontSize: ViewScale(24),
                                                     flex: 1,
                                                   }}
                                                 >
@@ -7527,19 +7528,19 @@ class DevlopRegister extends React.Component {
                             <ImageBackground
                               source={require("../../image/bgregister.png")}
                               resizeMode={"stretch"}
-                              imageStyle={{ width: "100%", height: 170 }}
+                              imageStyle={{ width: "100%", height: ViewScale(170) }}
                               style={{
                                 flexDirection: "row",
                                 alignItems: "center",
                               }}
                             >
-                              <View style={{ flex: 1, marginTop: 25 }}>
+                              <View style={{ flex: 1, marginTop: ViewScale(25) }}>
                                 <Text
                                   style={{
-                                    fontSize: 20,
+                                    fontSize: ViewScale(20),
                                     color: "#163c70",
-                                    marginTop: 6,
-                                    marginHorizontal: 35,
+                                    marginTop: ViewScale(6),
+                                    marginHorizontal: ViewScale(35),
                                   }}
                                 >
                                   {I18n.t("member_business")} {""}
@@ -7549,7 +7550,7 @@ class DevlopRegister extends React.Component {
                                     style={{
                                       flexDirection: "row",
                                       flexWrap: "wrap",
-                                      marginHorizontal: 35,
+                                      marginHorizontal: ViewScale(35),
 
                                       backgroundColor: "#FFF",
                                     }}
@@ -7567,10 +7568,10 @@ class DevlopRegister extends React.Component {
                                             {Data.value === "0" && (
                                               <Text
                                                 style={{
-                                                  fontSize: 22,
+                                                  fontSize: ViewScale(22),
                                                   color: "#73838f",
-                                                  marginHorizontal: 3,
-                                                  marginTop: 0,
+                                                  marginHorizontal: ViewScale(3),
+                                                  marginTop: ViewScale(0),
                                                 }}
                                               >
                                                 {I18n.t(
@@ -7583,10 +7584,10 @@ class DevlopRegister extends React.Component {
                                             {Data.value === "1" && (
                                               <Text
                                                 style={{
-                                                  fontSize: 22,
+                                                  fontSize: ViewScale(22),
                                                   color: "#73838f",
-                                                  marginHorizontal: 3,
-                                                  marginTop: 0,
+                                                  marginHorizontal: ViewScale(3),
+                                                  marginTop: ViewScale(0),
                                                 }}
                                               >
                                                 {I18n.t("transalte_exporter")}
@@ -7597,10 +7598,10 @@ class DevlopRegister extends React.Component {
                                             {Data.value === "2" && (
                                               <Text
                                                 style={{
-                                                  fontSize: 22,
+                                                  fontSize: ViewScale(22),
                                                   color: "#73838f",
-                                                  marginHorizontal: 3,
-                                                  marginTop: 0,
+                                                  marginHorizontal: ViewScale(3),
+                                                  marginTop: ViewScale(0),
                                                 }}
                                               >
                                                 {I18n.t(
@@ -7613,10 +7614,10 @@ class DevlopRegister extends React.Component {
                                             {Data.value === "3" && (
                                               <Text
                                                 style={{
-                                                  fontSize: 22,
+                                                  fontSize: ViewScale(22),
                                                   color: "#73838f",
-                                                  marginHorizontal: 3,
-                                                  marginTop: 0,
+                                                  marginHorizontal: ViewScale(3),
+                                                  marginTop: ViewScale(0),
                                                 }}
                                               >
                                                 {I18n.t("transalte_Other")}
@@ -7629,10 +7630,10 @@ class DevlopRegister extends React.Component {
                                     <View style={{ flexDirection: "column" }}>
                                       <Text
                                         style={{
-                                          fontSize: 22,
+                                          fontSize: ViewScale(22),
                                           color: "#73838f",
-                                          marginHorizontal: 3,
-                                          marginTop: 0,
+                                          marginHorizontal: ViewScale(3),
+                                          marginTop: ViewScale(0),
                                         }}
                                       >
                                         {this.state.textbusinessTypeOther}
@@ -7645,18 +7646,18 @@ class DevlopRegister extends React.Component {
                             <ImageBackground
                               source={require("../../image/bgregister.png")}
                               resizeMode={"stretch"}
-                              imageStyle={{ width: "100%", height: 123 }}
+                              imageStyle={{ width: "100%", height: ViewScale(123) }}
                               style={{
-                                marginBottom: 50,
+                                marginBottom: ViewScale(50),
                               }}
                             >
-                              <View style={{ marginHorizontal: 23 }}>
+                              <View style={{ marginHorizontal: ViewScale(23) }}>
                                 <Text
                                   style={{
-                                    fontSize: 20,
+                                    fontSize: ViewScale(20),
                                     color: "#163c70",
-                                    marginTop: 25,
-                                    marginHorizontal: 15,
+                                    marginTop: ViewScale(25),
+                                    marginHorizontal: ViewScale(15),
                                   }}
                                 >
                                   {I18n.t("transalte_interested_export_market")}
@@ -7678,15 +7679,15 @@ class DevlopRegister extends React.Component {
                                         }}
                                         style={{
                                           backgroundColor: "#2d6dc4",
-                                          margin: 4,
+                                          margin: ViewScale(4),
                                         }}
                                       >
                                         <Text
                                           style={{
-                                            fontSize: 20,
+                                            fontSize: ViewScale(20),
                                             color: "#FFFF",
-                                            marginHorizontal: 3,
-                                            marginTop: 0,
+                                            marginHorizontal: ViewScale(3),
+                                            marginTop: ViewScale(0),
                                           }}
                                         >
                                           {I18n.locale === "th"
@@ -7696,10 +7697,10 @@ class DevlopRegister extends React.Component {
                                         {"  "}
                                         <Icon3
                                           name="closecircle"
-                                          size={18}
+                                          size={ViewScale(18)}
                                           style={{
                                             color: "#343434",
-                                            marginTop: 6,
+                                            marginTop: ViewScale(6),
                                           }}
                                         />
                                       </Chip>
@@ -7715,16 +7716,16 @@ class DevlopRegister extends React.Component {
                             <ImageBackground
                               source={require("../../image/bginputx.png")}
                               resizeMode={"stretch"}
-                              imageStyle={{ width: "100%", height: 340 }}
+                              imageStyle={{ width: "100%", height: ViewScale(340) }}
                               style={{}}
                             >
                               <Text
                                 style={{
-                                  fontSize: 20,
+                                  fontSize: ViewScale(20),
                                   color: "#163c70",
 
-                                  marginHorizontal: 35,
-                                  marginTop: 25,
+                                  marginHorizontal: ViewScale(35),
+                                  marginTop: ViewScale(25),
                                 }}
                               >
                                 {I18n.t("member_business")}{" "}
@@ -7733,10 +7734,10 @@ class DevlopRegister extends React.Component {
                                 return (
                                   <View
                                     style={{
-                                      marginTop: 10,
+                                      marginTop: ViewScale(10),
 
-                                      marginHorizontal: 25,
-                                      marginBottom: 5,
+                                      marginHorizontal: ViewScale(25),
+                                      marginBottom: ViewScale(5),
                                     }}
                                   >
                                     <TouchableOpacity
@@ -7759,9 +7760,9 @@ class DevlopRegister extends React.Component {
                                             ? "#2d6dc4"
                                             : "#FFFFFF",
                                         flex: 0.5,
-                                        height: 35,
-                                        borderRadius: 4,
-                                        marginHorizontal: 5,
+                                        height: ViewScale(35),
+                                        borderRadius: ViewScale(4),
+                                        marginHorizontal: ViewScale(5),
                                         justifyContent: "center",
                                       }}
                                     >
@@ -7774,7 +7775,7 @@ class DevlopRegister extends React.Component {
                                             ] === true
                                               ? "#FFFFFF"
                                               : "#2d6dc4",
-                                          fontSize: 18,
+                                          fontSize: ViewScale(18),
                                         }}
                                       >
                                         {/* {Data.Value} */}
@@ -7789,12 +7790,12 @@ class DevlopRegister extends React.Component {
                               <ImageBackground
                                 source={require("../../image/inputedittext.png")}
                                 resizeMode={"stretch"}
-                                imageStyle={{ height: 28, width: "100%" }}
+                                imageStyle={{ height: ViewScale(28), width: "100%" }}
                                 style={{
                                   flexDirection: "row",
                                   alignItems: "center",
-                                  marginHorizontal: 35,
-                                  marginTop: 8,
+                                  marginHorizontal: ViewScale(35),
+                                  marginTop: ViewScale(8),
                                 }}
                               >
                                 <TextInput
@@ -7808,18 +7809,18 @@ class DevlopRegister extends React.Component {
                                     });
                                   }}
                                   style={{
-                                    fontSize: 24,
+                                    fontSize: ViewScale(24),
                                     color: "#c0c0c0",
                                     marginTop:
-                                      Platform.OS === "android" ? -10 : 0,
-                                    marginHorizontal: 10,
+                                      Platform.OS === "android" ? ViewScale(-10) : ViewScale(0),
+                                    marginHorizontal: ViewScale(10),
                                     fontFamily: "PSL Kittithada Pro",
                                     flex: 1,
                                   }}
                                 >
                                   <Text
                                     style={{
-                                      fontSize: 20,
+                                      fontSize: ViewScale(20),
                                       fontFamily: "PSL Kittithada Pro",
                                     }}
                                   >
@@ -7832,18 +7833,18 @@ class DevlopRegister extends React.Component {
                             <ImageBackground
                               source={require("../../image/bgregister.png")}
                               resizeMode={"stretch"}
-                              imageStyle={{ width: "100%", height: 123 }}
+                              imageStyle={{ width: "100%", height: ViewScale(123) }}
                               style={{
-                                marginBottom: 25,
+                                marginBottom: ViewScale(25),
                               }}
                             >
                               <View style={{}}>
                                 <Text
                                   style={{
-                                    fontSize: 20,
+                                    fontSize: ViewScale(20),
                                     color: "#163c70",
-                                    marginTop: 25,
-                                    marginHorizontal: 35,
+                                    marginTop: ViewScale(25),
+                                    marginHorizontal: ViewScale(35),
                                   }}
                                 >
                                   {I18n.t("transalte_interested_export_market")}
@@ -7856,9 +7857,9 @@ class DevlopRegister extends React.Component {
                                   style={{
                                     backgroundColor: "#2d6dc4",
                                     width: "30%",
-                                    marginHorizontal: 35,
-                                    height: 34,
-                                    borderRadius: 17,
+                                    marginHorizontal: ViewScale(35),
+                                    height: ViewScale(34),
+                                    borderRadius: ViewScale(17),
                                     justifyContent: "center",
                                     flexDirection: "row",
                                   }}
@@ -7866,11 +7867,11 @@ class DevlopRegister extends React.Component {
                                   <View
                                     style={{
                                       justifyContent: "center",
-                                      marginHorizontal: 2,
+                                      marginHorizontal: ViewScale(2),
                                     }}
                                   >
                                     <Image
-                                      style={{ width: 15, height: 15 }}
+                                      style={{ width: ViewScale(15), height: ViewScale(15) }}
                                       resizeMode={"stretch"}
                                       source={require("../../image/pencx.png")}
                                     />
@@ -7885,7 +7886,7 @@ class DevlopRegister extends React.Component {
                                       style={{
                                         textAlign: "center",
                                         color: "#FFFFFF",
-                                        fontSize: 18,
+                                        fontSize: ViewScale(18),
                                       }}
                                     >
                                       {I18n.t("transalte_please_select")}
@@ -7914,11 +7915,11 @@ class DevlopRegister extends React.Component {
                               <View style={{ flex: 1 }}>
                                 <View
                                   style={{
-                                    marginTop: 25,
+                                    marginTop: ViewScale(25),
 
-                                    height: 84,
+                                    height: ViewScale(84),
                                     justifyContent: "center",
-                                    marginHorizontal: 15,
+                                    marginHorizontal: ViewScale(15),
                                     backgroundColor: "#FFFFFF",
                                     shadowColor: "#000",
                                     shadowOffset: {
@@ -7933,11 +7934,11 @@ class DevlopRegister extends React.Component {
                                 >
                                   <Text
                                     style={{
-                                      fontSize: 24,
+                                      fontSize: ViewScale(24),
                                       color: "#a3b4c1",
                                       fontStyle: "italic",
                                       textAlign: "center",
-                                      marginHorizontal: 35,
+                                      marginHorizontal: ViewScale(35),
                                     }}
                                   >
                                     {I18n.t("transalte_not_product")}
@@ -7972,7 +7973,7 @@ class DevlopRegister extends React.Component {
                                     style={{
                                       flexDirection: "row",
 
-                                      marginBottom: 10,
+                                      marginBottom: ViewScale(10),
                                     }}
                                   >
                                     <View
@@ -7992,7 +7993,7 @@ class DevlopRegister extends React.Component {
                       ) : (
                         <View>
                           {this.state.editProductfrom === false ? (
-                            <View style={{ marginTop: 10, paddingBottom: 15 }}>
+                            <View style={{ marginTop: ViewScale(10), paddingBottom: ViewScale(15) }}>
                               <View style={{ flex: 1, marginTop: 1 }}>
                                 <View
                                   style={{
@@ -8010,19 +8011,19 @@ class DevlopRegister extends React.Component {
                                     shadowRadius: 3.84,
 
                                     elevation: 5,
-                                    marginHorizontal: 15,
-                                    paddingBottom: 15,
-                                    marginBottom: 1,
+                                    marginHorizontal: ViewScale(15),
+                                    paddingBottom: ViewScale(15),
+                                    marginBottom: ViewScale(1),
                                   }}
                                 >
-                                  <View style={{ flex: 1, marginTop: 15 }}>
+                                  <View style={{ flex: 1, marginTop: ViewScale(15) }}>
                                     <View style={{ flexDirection: "row" }}>
                                       <Text
                                         style={{
-                                          fontSize: 20,
+                                          fontSize: ViewScale(20),
                                           color: "#163c70",
 
-                                          marginHorizontal: 10,
+                                          marginHorizontal: ViewScale(10),
                                         }}
                                       >
                                         {/* ต้องแก้29 */}
@@ -8040,11 +8041,11 @@ class DevlopRegister extends React.Component {
                                     <ImageBackground
                                       source={require("../../image/inputedittext.png")}
                                       resizeMode={"stretch"}
-                                      imageStyle={{ height: 28, width: "100%" }}
+                                      imageStyle={{ height: ViewScale(28), width: "100%" }}
                                       style={{
                                         flexDirection: "row",
                                         alignItems: "center",
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     />
                                     {/* เลือกประเภทสินค้า */}
@@ -8105,8 +8106,8 @@ class DevlopRegister extends React.Component {
                                       <View
                                         style={{
                                           justifyContent: "center",
-                                          height: 30,
-                                          marginHorizontal: 20,
+                                          height: ViewScale(30),
+                                          marginHorizontal: ViewScale(20),
 
                                           flexDirection: "row",
                                         }}
@@ -8122,7 +8123,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={{
                                                 color: "#c0c0c0",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                               }}
                                             >
                                               {I18n.t(
@@ -8134,7 +8135,7 @@ class DevlopRegister extends React.Component {
                                               numberOfLines={2}
                                               style={{
                                                 color: "#163c70",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 flex: 1,
                                               }}
                                             >
@@ -8153,7 +8154,7 @@ class DevlopRegister extends React.Component {
                                           <Icon
                                             style={{ color: "#73838f" }}
                                             name="keyboard-arrow-down"
-                                            size={16}
+                                            size={ViewScale(16)}
                                           />
                                         </View>
                                       </View>
@@ -8179,19 +8180,19 @@ class DevlopRegister extends React.Component {
                                     shadowRadius: 3.84,
 
                                     elevation: 5,
-                                    marginHorizontal: 15,
-                                    paddingBottom: 15,
-                                    marginBottom: 1,
+                                    marginHorizontal: ViewScale(15),
+                                    paddingBottom: ViewScale(15),
+                                    marginBottom: ViewScale(1),
                                   }}
                                 >
-                                  <View style={{ flex: 1, marginTop: 15 }}>
+                                  <View style={{ flex: 1, marginTop: ViewScale(15) }}>
                                     <View style={{ flexDirection: "row" }}>
                                       <Text
                                         style={{
-                                          fontSize: 20,
+                                          fontSize: ViewScale(20),
                                           color: "#163c70",
 
-                                          marginHorizontal: 10,
+                                          marginHorizontal: ViewScale(10),
                                         }}
                                       >
                                         {I18n.t("transalte_cateProductText2")}
@@ -8208,11 +8209,11 @@ class DevlopRegister extends React.Component {
                                     <ImageBackground
                                       source={require("../../image/inputedittext.png")}
                                       resizeMode={"stretch"}
-                                      imageStyle={{ height: 28, width: "100%" }}
+                                      imageStyle={{ height: ViewScale(28), width: "100%" }}
                                       style={{
                                         flexDirection: "row",
                                         alignItems: "center",
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     />
                                     {/* เลือกประเภทสินค้าย่อย */}
@@ -8271,8 +8272,8 @@ class DevlopRegister extends React.Component {
                                       <View
                                         style={{
                                           justifyContent: "center",
-                                          height: 30,
-                                          marginHorizontal: 20,
+                                          height: ViewScale(30),
+                                          marginHorizontal: ViewScale(20),
                                           flexDirection: "row",
                                         }}
                                       >
@@ -8287,7 +8288,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={{
                                                 color: "#c0c0c0",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                               }}
                                             >
                                               {I18n.t(
@@ -8299,7 +8300,7 @@ class DevlopRegister extends React.Component {
                                               numberOfLines={2}
                                               style={{
                                                 color: "#163c70",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 flex: 1,
                                               }}
                                             >
@@ -8318,7 +8319,7 @@ class DevlopRegister extends React.Component {
                                           <Icon
                                             style={{ color: "#73838f" }}
                                             name="keyboard-arrow-down"
-                                            size={16}
+                                            size={ViewScale(16)}
                                           />
                                         </View>
                                       </View>
@@ -8327,7 +8328,7 @@ class DevlopRegister extends React.Component {
                                 </View>
                               </View>
 
-                              <View style={{ flex: 1, marginTop: 1 }}>
+                              <View style={{ flex: 1, marginTop: ViewScale(1) }}>
                                 <View
                                   style={{
                                     flexDirection: "row",
@@ -8344,19 +8345,19 @@ class DevlopRegister extends React.Component {
                                     shadowRadius: 3.84,
 
                                     elevation: 5,
-                                    marginHorizontal: 15,
-                                    paddingBottom: 15,
-                                    marginBottom: 1,
+                                    marginHorizontal: ViewScale(15),
+                                    paddingBottom: ViewScale(15),
+                                    marginBottom: ViewScale(1),
                                   }}
                                 >
-                                  <View style={{ flex: 1, marginTop: 15 }}>
+                                  <View style={{ flex: 1, marginTop: ViewScale(15) }}>
                                     <View style={{ flexDirection: "row" }}>
                                       <Text
                                         style={{
-                                          fontSize: 20,
+                                          fontSize: ViewScale(20),
                                           color: "#163c70",
 
-                                          marginHorizontal: 10,
+                                          marginHorizontal: ViewScale(10),
                                         }}
                                       >
                                         {I18n.t("transalte_cateProductText3")}
@@ -8373,11 +8374,11 @@ class DevlopRegister extends React.Component {
                                     <ImageBackground
                                       source={require("../../image/inputedittext.png")}
                                       resizeMode={"stretch"}
-                                      imageStyle={{ height: 28, width: "100%" }}
+                                      imageStyle={{ height: ViewScale(28), width: "100%" }}
                                       style={{
                                         flexDirection: "row",
                                         alignItems: "center",
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     />
                                     {/* เลือกกลุ่มสินค้า */}
@@ -8430,8 +8431,8 @@ class DevlopRegister extends React.Component {
                                       <View
                                         style={{
                                           justifyContent: "center",
-                                          height: 30,
-                                          marginHorizontal: 20,
+                                          height: ViewScale(30),
+                                          marginHorizontal: ViewScale(20),
 
                                           flexDirection: "row",
                                         }}
@@ -8447,7 +8448,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={{
                                                 color: "#c0c0c0",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                               }}
                                             >
                                               {I18n.t(
@@ -8459,7 +8460,7 @@ class DevlopRegister extends React.Component {
                                               numberOfLines={2}
                                               style={{
                                                 color: "#163c70",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 flex: 1,
                                               }}
                                             >
@@ -8478,7 +8479,7 @@ class DevlopRegister extends React.Component {
                                           <Icon
                                             style={{ color: "#73838f" }}
                                             name="keyboard-arrow-down"
-                                            size={16}
+                                            size={ViewScale(16)}
                                           />
                                         </View>
                                       </View>
@@ -8502,17 +8503,17 @@ class DevlopRegister extends React.Component {
                                   shadowRadius: 3.84,
 
                                   elevation: 5,
-                                  marginHorizontal: 15,
+                                  marginHorizontal: ViewScale(15),
                                 }}
                               >
-                                <View style={{ flex: 1, marginTop: 15 }}>
+                                <View style={{ flex: 1, marginTop: ViewScale(15) }}>
                                   <View style={{ flexDirection: "row" }}>
                                     <Text
                                       style={{
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         color: "#163c70",
 
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     >
                                       {I18n.t("transalte_ProductBrandNameEN")}
@@ -8522,21 +8523,21 @@ class DevlopRegister extends React.Component {
                                   <ImageBackground
                                     source={require("../../image/inputedittext.png")}
                                     resizeMode={"stretch"}
-                                    imageStyle={{ height: 28, width: "100%" }}
+                                    imageStyle={{ height: ViewScale(28), width: "100%" }}
                                     style={{
                                       flexDirection: "row",
                                       alignItems: "center",
-                                      marginHorizontal: 10,
-                                      marginBottom: 10,
+                                      marginHorizontal: ViewScale(10),
+                                      marginBottom: ViewScale(10),
                                     }}
                                   >
                                     <TextInput
                                       style={{
-                                        fontSize: 24,
+                                        fontSize: ViewScale(24),
                                         color: "#73838f",
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                         marginTop:
-                                          Platform.OS === "android" ? -11 : 0,
+                                          Platform.OS === "android" ? ViewScale(-11) : ViewScale(0),
                                         flex: 1,
                                       }}
                                       placeholderTextColor={"#999999"}
@@ -8553,10 +8554,10 @@ class DevlopRegister extends React.Component {
                                   <View style={{ flexDirection: "row" }}>
                                     <Text
                                       style={{
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         color: "#163c70",
 
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     >
                                       {I18n.t("transalte_ProductDescription")}
@@ -8566,19 +8567,19 @@ class DevlopRegister extends React.Component {
                                   <ImageBackground
                                     source={require("../../image/inputedittext.png")}
                                     resizeMode={"stretch"}
-                                    imageStyle={{ height: 90, width: "100%" }}
+                                    imageStyle={{ height: ViewScale(90), width: "100%" }}
                                     style={{
                                       flexDirection: "row",
                                       alignItems: "center",
-                                      marginHorizontal: 10,
+                                      marginHorizontal: ViewScale(10),
                                     }}
                                   >
                                     <Input
                                       // style={{fontSize: 24, color: 'red', marginLeft: 4}}
 
                                       inputContainerStyle={{
-                                        height: 90,
-                                        borderBottomWidth: 0,
+                                        height: ViewScale(90),
+                                        borderBottomWidth: ViewScale(0),
                                       }}
                                       numberOfLines={10}
                                       multiline={true}
@@ -8597,8 +8598,8 @@ class DevlopRegister extends React.Component {
                                     <Text
                                       style={{
                                         color: "#c0c0c0",
-                                        fontSize: 14,
-                                        right: 70,
+                                        fontSize: ViewScale(14),
+                                        right: ViewScale(70),
                                       }}
                                     >
                                       100 Charecter
@@ -8623,17 +8624,17 @@ class DevlopRegister extends React.Component {
                                   shadowRadius: 3.84,
 
                                   elevation: 5,
-                                  marginHorizontal: 15,
+                                  marginHorizontal: ViewScale(15),
                                 }}
                               >
                                 <View style={{ flex: 1 }}>
                                   <View style={{ flexDirection: "row" }}>
                                     <Text
                                       style={{
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         color: "#163c70",
 
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     >
                                       ชื่อแบรนด์
@@ -8643,12 +8644,12 @@ class DevlopRegister extends React.Component {
                                   <ImageBackground
                                     source={require("../../image/inputedittext.png")}
                                     resizeMode={"stretch"}
-                                    imageStyle={{ height: 28, width: "100%" }}
+                                    imageStyle={{ height: ViewScale(28), width: "100%" }}
                                     style={{
                                       flexDirection: "row",
                                       alignItems: "center",
-                                      marginHorizontal: 10,
-                                      marginBottom: 10,
+                                      marginHorizontal: ViewScale(10),
+                                      marginBottom: ViewScale(10),
                                     }}
                                   >
                                     <TextInput
@@ -8658,11 +8659,11 @@ class DevlopRegister extends React.Component {
                                         })
                                       }
                                       style={{
-                                        fontSize: 24,
+                                        fontSize: ViewScale(24),
                                         color: "#73838f",
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                         marginTop:
-                                          Platform.OS === "android" ? -11 : 0,
+                                          Platform.OS === "android" ? ViewScale(-11) : ViewScale(0),
                                         flex: 1,
                                       }}
                                       placeholderTextColor={"#999999"}
@@ -8672,10 +8673,10 @@ class DevlopRegister extends React.Component {
                                   <View style={{ flexDirection: "row" }}>
                                     <Text
                                       style={{
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         color: "#163c70",
 
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     >
                                       รายละเอียดสินค้า
@@ -8685,18 +8686,18 @@ class DevlopRegister extends React.Component {
                                   <ImageBackground
                                     source={require("../../image/inputedittext.png")}
                                     resizeMode={"stretch"}
-                                    imageStyle={{ height: 90, width: "100%" }}
+                                    imageStyle={{ height: ViewScale(90), width: "100%" }}
                                     style={{
                                       flexDirection: "row",
                                       alignItems: "center",
-                                      marginHorizontal: 10,
+                                      marginHorizontal: ViewScale(10),
                                     }}
                                   >
                                     <Input
                                       // style={{fontSize: 24, color: 'red', marginLeft: 4}}
 
                                       inputContainerStyle={{
-                                        height: 90,
+                                        height: ViewScale(90),
                                         borderBottomWidth: 0,
                                       }}
                                       numberOfLines={10}
@@ -8713,8 +8714,8 @@ class DevlopRegister extends React.Component {
                                     <Text
                                       style={{
                                         color: "#c0c0c0",
-                                        fontSize: 14,
-                                        right: 70,
+                                        fontSize: ViewScale(14),
+                                        right: ViewScale(70),
                                       }}
                                     >
                                       100 Charecter
@@ -8738,23 +8739,23 @@ class DevlopRegister extends React.Component {
                                   shadowRadius: 3.84,
 
                                   elevation: 5,
-                                  marginHorizontal: 15,
-                                  paddingBottom: 15,
+                                  marginHorizontal: ViewScale(15),
+                                  paddingBottom: ViewScale(15),
                                 }}
                               >
                                 <View style={{ flex: 1 }}>
                                   <View
                                     style={{
                                       flexDirection: "row",
-                                      paddingBottom: 10,
+                                      paddingBottom: ViewScale(10),
                                     }}
                                   >
                                     <Text
                                       style={{
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         color: "#163c70",
 
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     >
                                       Product's Image / รูปสินค้า
@@ -8779,25 +8780,25 @@ class DevlopRegister extends React.Component {
                                     <View
                                       style={{
                                         flexDirection: "row",
-                                        paddingBottom: 10,
+                                        paddingBottom: ViewScale(10),
                                       }}
                                     >
                                       <View style={{ flex: 0.2 }}>
                                         <Icon2
                                           style={{
-                                            marginHorizontal: 15,
-                                            marginTop: 4,
+                                            marginHorizontal: ViewScale(15),
+                                            marginTop: ViewScale(4),
                                           }}
                                           name="check-circle"
                                           color="#39b54a"
-                                          size={20}
+                                          size={ViewScale(20)}
                                         />
                                       </View>
                                       <View style={{ flex: 0.6 }}>
                                         <Text
                                           numberOfLines={2}
                                           style={{
-                                            fontSize: 20,
+                                            fontSize: ViewScale(20),
                                             color: "#73838f",
                                           }}
                                         >
@@ -8814,12 +8815,12 @@ class DevlopRegister extends React.Component {
                                       >
                                         <Icon
                                           style={{
-                                            marginHorizontal: 15,
-                                            marginTop: 4,
+                                            marginHorizontal: ViewScale(15),
+                                            marginTop: ViewScale(4),
                                           }}
                                           name="delete"
                                           color="red"
-                                          size={20}
+                                          size={ViewScale(20)}
                                         />
                                       </TouchableOpacity>
                                     </View>
@@ -8832,10 +8833,10 @@ class DevlopRegister extends React.Component {
                                       }}
                                       style={{
                                         backgroundColor: "#2d6dc4",
-                                        marginHorizontal: 20,
-                                        width: 116,
-                                        height: 34,
-                                        borderRadius: 24,
+                                        marginHorizontal: ViewScale(20),
+                                        width: ViewScale(116),
+                                        height: ViewScale(34),
+                                        borderRadius: ViewScale(24),
                                         justifyContent: "center",
                                       }}
                                     >
@@ -8847,16 +8848,16 @@ class DevlopRegister extends React.Component {
                                       >
                                         <Icon3
                                           name="arrowup"
-                                          size={16}
+                                          size={ViewScale(16)}
                                           style={{
                                             color: "#FFFFFF",
-                                            marginTop: 3,
+                                            marginTop: ViewScale(3),
                                           }}
                                         />
                                         <Text
                                           style={{
                                             color: "#FFFFFF",
-                                            fontSize: 18,
+                                            fontSize: ViewScale(18),
                                             textAlign: "center",
                                           }}
                                         >
@@ -8869,7 +8870,7 @@ class DevlopRegister extends React.Component {
                               </View>
                             </View>
                           ) : (
-                            <View style={{ marginTop: 10, paddingBottom: 15 }}>
+                            <View style={{ marginTop: ViewScale(10), paddingBottom: ViewScale(15) }}>
                               <View style={{ flex: 1, marginTop: 1 }}>
                                 <View
                                   style={{
@@ -8887,19 +8888,19 @@ class DevlopRegister extends React.Component {
                                     shadowRadius: 3.84,
 
                                     elevation: 5,
-                                    marginHorizontal: 15,
-                                    paddingBottom: 15,
-                                    marginBottom: 1,
+                                    marginHorizontal: ViewScale(15),
+                                    paddingBottom: ViewScale(15),
+                                    marginBottom: ViewScale(1),
                                   }}
                                 >
-                                  <View style={{ flex: 1, marginTop: 15 }}>
+                                  <View style={{ flex: 1, marginTop: ViewScale(15) }}>
                                     <View style={{ flexDirection: "row" }}>
                                       <Text
                                         style={{
-                                          fontSize: 20,
+                                          fontSize: ViewScale(20),
                                           color: "#163c70",
 
-                                          marginHorizontal: 10,
+                                          marginHorizontal: ViewScale(10),
                                         }}
                                       >
                                         Category / ประเภทสินค้า
@@ -8916,11 +8917,11 @@ class DevlopRegister extends React.Component {
                                     <ImageBackground
                                       source={require("../../image/inputedittext.png")}
                                       resizeMode={"stretch"}
-                                      imageStyle={{ height: 28, width: "100%" }}
+                                      imageStyle={{ height: ViewScale(28), width: "100%" }}
                                       style={{
                                         flexDirection: "row",
                                         alignItems: "center",
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     />
                                     {/* เลือกประเภทสินค้า */}
@@ -8982,8 +8983,8 @@ class DevlopRegister extends React.Component {
                                       <View
                                         style={{
                                           justifyContent: "center",
-                                          height: 30,
-                                          marginHorizontal: 20,
+                                          height: ViewScale(30),
+                                          marginHorizontal: ViewScale(20),
 
                                           flexDirection: "row",
                                         }}
@@ -9000,7 +9001,7 @@ class DevlopRegister extends React.Component {
                                               numberOfLines={2}
                                               style={{
                                                 color: "#163c70",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 flex: 1,
                                               }}
                                             >
@@ -9011,7 +9012,7 @@ class DevlopRegister extends React.Component {
                                               numberOfLines={2}
                                               style={{
                                                 color: "#163c70",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 flex: 1,
                                               }}
                                             >
@@ -9030,7 +9031,7 @@ class DevlopRegister extends React.Component {
                                           <Icon
                                             style={{ color: "#73838f" }}
                                             name="keyboard-arrow-down"
-                                            size={16}
+                                            size={ViewScale(16)}
                                           />
                                         </View>
                                       </View>
@@ -9056,19 +9057,19 @@ class DevlopRegister extends React.Component {
                                     shadowRadius: 3.84,
 
                                     elevation: 5,
-                                    marginHorizontal: 15,
-                                    paddingBottom: 15,
-                                    marginBottom: 1,
+                                    marginHorizontal: ViewScale(15),
+                                    paddingBottom: ViewScale(15),
+                                    marginBottom: ViewScale(1),
                                   }}
                                 >
-                                  <View style={{ flex: 1, marginTop: 15 }}>
+                                  <View style={{ flex: 1, marginTop: ViewScale(15) }}>
                                     <View style={{ flexDirection: "row" }}>
                                       <Text
                                         style={{
-                                          fontSize: 20,
+                                          fontSize: ViewScale(20),
                                           color: "#163c70",
 
-                                          marginHorizontal: 10,
+                                          marginHorizontal: ViewScale(10),
                                         }}
                                       >
                                         Sub-Category / ประเภทสินค้าย่อย
@@ -9085,11 +9086,11 @@ class DevlopRegister extends React.Component {
                                     <ImageBackground
                                       source={require("../../image/inputedittext.png")}
                                       resizeMode={"stretch"}
-                                      imageStyle={{ height: 28, width: "100%" }}
+                                      imageStyle={{ height: ViewScale(28), width: "100%" }}
                                       style={{
                                         flexDirection: "row",
                                         alignItems: "center",
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     />
                                     {/* เลือกประเภทสินค้าย่อย */}
@@ -9149,8 +9150,8 @@ class DevlopRegister extends React.Component {
                                       <View
                                         style={{
                                           justifyContent: "center",
-                                          height: 30,
-                                          marginHorizontal: 20,
+                                          height: ViewScale(30),
+                                          marginHorizontal: ViewScale(20),
                                           flexDirection: "row",
                                         }}
                                       >
@@ -9167,7 +9168,7 @@ class DevlopRegister extends React.Component {
                                               numberOfLines={2}
                                               style={{
                                                 color: "#163c70",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 flex: 1,
                                               }}
                                             >
@@ -9181,7 +9182,7 @@ class DevlopRegister extends React.Component {
                                               numberOfLines={2}
                                               style={{
                                                 color: "#163c70",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 flex: 1,
                                               }}
                                             >
@@ -9203,7 +9204,7 @@ class DevlopRegister extends React.Component {
                                           <Icon
                                             style={{ color: "#73838f" }}
                                             name="keyboard-arrow-down"
-                                            size={16}
+                                            size={ViewScale(16)}
                                           />
                                         </View>
                                       </View>
@@ -9212,7 +9213,7 @@ class DevlopRegister extends React.Component {
                                 </View>
                               </View>
 
-                              <View style={{ flex: 1, marginTop: 1 }}>
+                              <View style={{ flex: 1, marginTop: ViewScale(1) }}>
                                 <View
                                   style={{
                                     flexDirection: "row",
@@ -9229,19 +9230,19 @@ class DevlopRegister extends React.Component {
                                     shadowRadius: 3.84,
 
                                     elevation: 5,
-                                    marginHorizontal: 15,
-                                    paddingBottom: 15,
-                                    marginBottom: 1,
+                                    marginHorizontal: ViewScale(15),
+                                    paddingBottom: ViewScale(15),
+                                    marginBottom: ViewScale(1),
                                   }}
                                 >
-                                  <View style={{ flex: 1, marginTop: 15 }}>
+                                  <View style={{ flex: 1, marginTop: ViewScale(15) }}>
                                     <View style={{ flexDirection: "row" }}>
                                       <Text
                                         style={{
-                                          fontSize: 20,
+                                          fontSize: ViewScale(20),
                                           color: "#163c70",
 
-                                          marginHorizontal: 10,
+                                          marginHorizontal: ViewScale(10),
                                         }}
                                       >
                                         Product Group/กลุ่มสินค้า
@@ -9258,11 +9259,11 @@ class DevlopRegister extends React.Component {
                                     <ImageBackground
                                       source={require("../../image/inputedittext.png")}
                                       resizeMode={"stretch"}
-                                      imageStyle={{ height: 28, width: "100%" }}
+                                      imageStyle={{ height: ViewScale(28), width: "100%" }}
                                       style={{
                                         flexDirection: "row",
                                         alignItems: "center",
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     />
                                     {/* เลือกกลุ่มสินค้า */}
@@ -9315,8 +9316,8 @@ class DevlopRegister extends React.Component {
                                       <View
                                         style={{
                                           justifyContent: "center",
-                                          height: 30,
-                                          marginHorizontal: 20,
+                                          height: ViewScale(30),
+                                          marginHorizontal: ViewScale(20),
 
                                           flexDirection: "row",
                                         }}
@@ -9334,7 +9335,7 @@ class DevlopRegister extends React.Component {
                                               numberOfLines={2}
                                               style={{
                                                 color: "#163c70",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 flex: 1,
                                               }}
                                             >
@@ -9345,7 +9346,7 @@ class DevlopRegister extends React.Component {
                                               numberOfLines={2}
                                               style={{
                                                 color: "#163c70",
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 flex: 1,
                                               }}
                                             >
@@ -9367,7 +9368,7 @@ class DevlopRegister extends React.Component {
                                           <Icon
                                             style={{ color: "#73838f" }}
                                             name="keyboard-arrow-down"
-                                            size={16}
+                                            size={ViewScale(16)}
                                           />
                                         </View>
                                       </View>
@@ -9391,17 +9392,17 @@ class DevlopRegister extends React.Component {
                                   shadowRadius: 3.84,
 
                                   elevation: 5,
-                                  marginHorizontal: 15,
+                                  marginHorizontal: ViewScale(15),
                                 }}
                               >
-                                <View style={{ flex: 1, marginTop: 15 }}>
+                                <View style={{ flex: 1, marginTop: ViewScale(15) }}>
                                   <View style={{ flexDirection: "row" }}>
                                     <Text
                                       style={{
                                         fontSize: 20,
                                         color: "#163c70",
 
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     >
                                       Product Brand Name
@@ -9411,19 +9412,19 @@ class DevlopRegister extends React.Component {
                                   <ImageBackground
                                     source={require("../../image/inputedittext.png")}
                                     resizeMode={"stretch"}
-                                    imageStyle={{ height: 28, width: "100%" }}
+                                    imageStyle={{ height: ViewScale(28), width: "100%" }}
                                     style={{
                                       flexDirection: "row",
                                       alignItems: "center",
-                                      marginHorizontal: 10,
-                                      marginBottom: 10,
+                                      marginHorizontal: ViewScale(10),
+                                      marginBottom: ViewScale(10),
                                     }}
                                   >
                                     <TextInput
                                       style={{
-                                        fontSize: 24,
+                                        fontSize: ViewScale(24),
                                         color: "#163c70",
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                         flex: 1,
                                       }}
                                       onChangeText={(value) =>
@@ -9438,7 +9439,7 @@ class DevlopRegister extends React.Component {
                                           numberOfLines={2}
                                           style={{
                                             color: "#163c70",
-                                            fontSize: 24,
+                                            fontSize: ViewScale(24),
                                             flex: 1,
                                           }}
                                         >
@@ -9449,7 +9450,7 @@ class DevlopRegister extends React.Component {
                                           numberOfLines={2}
                                           style={{
                                             color: "#163c70",
-                                            fontSize: 24,
+                                            fontSize: ViewScale(24),
                                             flex: 1,
                                           }}
                                         >
@@ -9461,10 +9462,10 @@ class DevlopRegister extends React.Component {
                                   <View style={{ flexDirection: "row" }}>
                                     <Text
                                       style={{
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         color: "#163c70",
 
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     >
                                       Product Description
@@ -9474,18 +9475,18 @@ class DevlopRegister extends React.Component {
                                   <ImageBackground
                                     source={require("../../image/inputedittext.png")}
                                     resizeMode={"stretch"}
-                                    imageStyle={{ height: 90, width: "100%" }}
+                                    imageStyle={{ height: ViewScale(90), width: "100%" }}
                                     style={{
                                       flexDirection: "row",
                                       alignItems: "center",
-                                      marginHorizontal: 10,
+                                      marginHorizontal: ViewScale(10),
                                     }}
                                   >
                                     <Input
                                       // style={{fontSize: 24, color: 'red', marginLeft: 4}}
 
                                       inputContainerStyle={{
-                                        height: 90,
+                                        height: ViewScale(90),
                                         borderBottomWidth: 0,
                                       }}
                                       numberOfLines={10}
@@ -9505,7 +9506,7 @@ class DevlopRegister extends React.Component {
                                           numberOfLines={2}
                                           style={{
                                             color: "#163c70",
-                                            fontSize: 24,
+                                            fontSize: ViewScale(24),
                                             flex: 1,
                                           }}
                                         >
@@ -9519,7 +9520,7 @@ class DevlopRegister extends React.Component {
                                           numberOfLines={2}
                                           style={{
                                             color: "#163c70",
-                                            fontSize: 24,
+                                            fontSize: ViewScale(24),
                                             flex: 1,
                                           }}
                                         >
@@ -9530,8 +9531,8 @@ class DevlopRegister extends React.Component {
                                     <Text
                                       style={{
                                         color: "#c0c0c0",
-                                        fontSize: 14,
-                                        right: 70,
+                                        fontSize: ViewScale(14),
+                                        right: ViewScale(70),
                                       }}
                                     >
                                       100 Charecter
@@ -9556,17 +9557,17 @@ class DevlopRegister extends React.Component {
                                   shadowRadius: 3.84,
 
                                   elevation: 5,
-                                  marginHorizontal: 15,
+                                  marginHorizontal: ViewScale(15),
                                 }}
                               >
                                 <View style={{ flex: 1 }}>
                                   <View style={{ flexDirection: "row" }}>
                                     <Text
                                       style={{
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         color: "#163c70",
 
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     >
                                       ชื่อแบรนด์
@@ -9576,12 +9577,12 @@ class DevlopRegister extends React.Component {
                                   <ImageBackground
                                     source={require("../../image/inputedittext.png")}
                                     resizeMode={"stretch"}
-                                    imageStyle={{ height: 28, width: "100%" }}
+                                    imageStyle={{ height: ViewScale(28), width: "100%" }}
                                     style={{
                                       flexDirection: "row",
                                       alignItems: "center",
-                                      marginHorizontal: 10,
-                                      marginBottom: 10,
+                                      marginHorizontal: ViewScale(10),
+                                      marginBottom: ViewScale(10),
                                     }}
                                   >
                                     <TextInput
@@ -9591,9 +9592,9 @@ class DevlopRegister extends React.Component {
                                         })
                                       }
                                       style={{
-                                        fontSize: 24,
+                                        fontSize: ViewScale(24),
                                         color: "#163c70",
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                         flex: 1,
                                       }}
                                     >
@@ -9604,7 +9605,7 @@ class DevlopRegister extends React.Component {
                                           numberOfLines={2}
                                           style={{
                                             color: "#163c70",
-                                            fontSize: 24,
+                                            fontSize: ViewScale(24),
                                             flex: 1,
                                           }}
                                         >
@@ -9615,7 +9616,7 @@ class DevlopRegister extends React.Component {
                                           numberOfLines={2}
                                           style={{
                                             color: "#163c70",
-                                            fontSize: 24,
+                                            fontSize: ViewScale(24),
                                             flex: 1,
                                           }}
                                         >
@@ -9630,10 +9631,10 @@ class DevlopRegister extends React.Component {
                                   <View style={{ flexDirection: "row" }}>
                                     <Text
                                       style={{
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         color: "#163c70",
 
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     >
                                       รายละเอียดสินค้า
@@ -9643,18 +9644,18 @@ class DevlopRegister extends React.Component {
                                   <ImageBackground
                                     source={require("../../image/inputedittext.png")}
                                     resizeMode={"stretch"}
-                                    imageStyle={{ height: 90, width: "100%" }}
+                                    imageStyle={{ height: ViewScale(90), width: "100%" }}
                                     style={{
                                       flexDirection: "row",
                                       alignItems: "center",
-                                      marginHorizontal: 10,
+                                      marginHorizontal: ViewScale(10),
                                     }}
                                   >
                                     <Input
                                       // style={{fontSize: 24, color: 'red', marginLeft: 4}}
 
                                       inputContainerStyle={{
-                                        height: 90,
+                                        height: ViewScale(90),
                                         borderBottomWidth: 0,
                                       }}
                                       numberOfLines={10}
@@ -9672,7 +9673,7 @@ class DevlopRegister extends React.Component {
                                           numberOfLines={2}
                                           style={{
                                             color: "#163c70",
-                                            fontSize: 24,
+                                            fontSize: ViewScale(24),
                                             flex: 1,
                                           }}
                                         >
@@ -9686,7 +9687,7 @@ class DevlopRegister extends React.Component {
                                           numberOfLines={2}
                                           style={{
                                             color: "#163c70",
-                                            fontSize: 24,
+                                            fontSize: ViewScale(24),
                                             flex: 1,
                                           }}
                                         >
@@ -9697,8 +9698,8 @@ class DevlopRegister extends React.Component {
                                     <Text
                                       style={{
                                         color: "#c0c0c0",
-                                        fontSize: 14,
-                                        right: 70,
+                                        fontSize: ViewScale(14),
+                                        right: ViewScale(70),
                                       }}
                                     >
                                       100 Charecter
@@ -9722,23 +9723,23 @@ class DevlopRegister extends React.Component {
                                   shadowRadius: 3.84,
 
                                   elevation: 5,
-                                  marginHorizontal: 15,
-                                  paddingBottom: 15,
+                                  marginHorizontal: ViewScale(15),
+                                  paddingBottom: ViewScale(15),
                                 }}
                               >
                                 <View style={{ flex: 1 }}>
                                   <View
                                     style={{
                                       flexDirection: "row",
-                                      paddingBottom: 10,
+                                      paddingBottom: ViewScale(10),
                                     }}
                                   >
                                     <Text
                                       style={{
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         color: "#163c70",
 
-                                        marginHorizontal: 10,
+                                        marginHorizontal: ViewScale(10),
                                       }}
                                     >
                                       Product's Image / รูปสินค้าแก้ไข
@@ -9763,25 +9764,25 @@ class DevlopRegister extends React.Component {
                                     <View
                                       style={{
                                         flexDirection: "row",
-                                        paddingBottom: 10,
+                                        paddingBottom: ViewScale(10),
                                       }}
                                     >
                                       <View style={{ flex: 0.2 }}>
                                         <Icon2
                                           style={{
-                                            marginHorizontal: 15,
-                                            marginTop: 4,
+                                            marginHorizontal: ViewScale(15),
+                                            marginTop: ViewScale(4),
                                           }}
                                           name="check-circle"
                                           color="#39b54a"
-                                          size={20}
+                                          size={ViewScale(20)}
                                         />
                                       </View>
                                       <View style={{ flex: 0.6 }}>
                                         <Text
                                           numberOfLines={2}
                                           style={{
-                                            fontSize: 20,
+                                            fontSize: ViewScale(20),
                                             color: "#73838f",
                                           }}
                                         >
@@ -9798,12 +9799,12 @@ class DevlopRegister extends React.Component {
                                       >
                                         <Icon
                                           style={{
-                                            marginHorizontal: 15,
-                                            marginTop: 4,
+                                            marginHorizontal: ViewScale(15),
+                                            marginTop: ViewScale(4),
                                           }}
                                           name="delete"
                                           color="red"
-                                          size={20}
+                                          size={ViewScale(20)}
                                         />
                                       </TouchableOpacity>
                                     </View>
@@ -9811,18 +9812,18 @@ class DevlopRegister extends React.Component {
                                     <View
                                       style={{
                                         flexDirection: "row",
-                                        paddingBottom: 10,
+                                        paddingBottom: ViewScale(10),
                                       }}
                                     >
                                       <View style={{ flex: 0.2 }}>
                                         <Icon2
                                           style={{
-                                            marginHorizontal: 15,
-                                            marginTop: 4,
+                                            marginHorizontal: ViewScale(15),
+                                            marginTop: ViewScale(4),
                                           }}
                                           name="check-circle"
                                           color="#39b54a"
-                                          size={20}
+                                          size={ViewScale(20)}
                                         />
                                       </View>
                                       <View style={{ flex: 0.6 }}>
@@ -9833,8 +9834,8 @@ class DevlopRegister extends React.Component {
                                           }}
                                           style={{
                                             width: "100%",
-                                            height: 230,
-                                            marginBottom: 20,
+                                            height: ViewScale(230),
+                                            marginBottom: ViewScale(20),
                                           }}
                                         />
                                       </View>
@@ -9848,12 +9849,12 @@ class DevlopRegister extends React.Component {
                                       >
                                         <Icon
                                           style={{
-                                            marginHorizontal: 15,
-                                            marginTop: 4,
+                                            marginHorizontal: ViewScale(15),
+                                            marginTop: ViewScale(4),
                                           }}
                                           name="delete"
                                           color="red"
-                                          size={20}
+                                          size={ViewScale(20)}
                                         />
                                       </TouchableOpacity>
                                     </View>
@@ -9917,11 +9918,11 @@ class DevlopRegister extends React.Component {
                               <View style={{ flex: 1 }}>
                                 <View
                                   style={{
-                                    marginTop: 25,
+                                    marginTop: ViewScale(25),
 
-                                    height: 84,
+                                    height: ViewScale(84),
                                     justifyContent: "center",
-                                    marginHorizontal: 15,
+                                    marginHorizontal: ViewScale(15),
                                     backgroundColor: "#FFFFFF",
                                     shadowColor: "#000",
                                     shadowOffset: {
@@ -9936,11 +9937,11 @@ class DevlopRegister extends React.Component {
                                 >
                                   <Text
                                     style={{
-                                      fontSize: 24,
+                                      fontSize: ViewScale(24),
                                       color: "#a3b4c1",
                                       fontStyle: "italic",
                                       textAlign: "center",
-                                      marginHorizontal: 35,
+                                      marginHorizontal: ViewScale(35),
                                     }}
                                   >
                                     {I18n.t("transalte_no_company_information")}
@@ -9954,7 +9955,7 @@ class DevlopRegister extends React.Component {
                             <>
                               {this.state.Addcompany === true ? (
                                 <View
-                                  style={{ marginTop: 15, marginBottom: 20 }}
+                                  style={{ marginTop: ViewScale(15), marginBottom: ViewScale(20) }}
                                 >
                                   <View style={Styles.viewsearchIDcompany1}>
                                     <View style={Styles.viewsearchIDcompany}>
@@ -9969,7 +9970,7 @@ class DevlopRegister extends React.Component {
                                             searchTextcompany: e,
                                           });
                                         }}
-                                        style={{ fontSize: 18, flex: 1 }}
+                                        style={{ fontSize: ViewScale(18), flex: 1 }}
                                         placeholderTextColor={"#999999"}
                                         placeholder={I18n.t(
                                           "transalte_Search_corporate_number"
@@ -9989,7 +9990,7 @@ class DevlopRegister extends React.Component {
                                         <Text
                                           style={{
                                             textAlign: "center",
-                                            fontSize: 20,
+                                            fontSize: ViewScale(20),
                                             color: "#FFFFFF",
                                           }}
                                         >
@@ -10210,7 +10211,7 @@ class DevlopRegister extends React.Component {
                                         <View
                                           style={{
                                             flex: 1,
-                                            marginTop: 3,
+                                            marginTop: ViewScale(3),
                                             shadowColor: "#f9fafc",
                                             shadowOffset: {
                                               width: 0,
@@ -10229,7 +10230,7 @@ class DevlopRegister extends React.Component {
                                                 resizeMode={"stretch"}
                                                 imageStyle={{
                                                   width: "100%",
-                                                  height: 145,
+                                                  height: ViewScale(145),
                                                 }}
                                                 style={{
                                                   flexDirection: "row",
@@ -10240,7 +10241,7 @@ class DevlopRegister extends React.Component {
                                                 <View
                                                   style={{
                                                     flex: 1,
-                                                    marginTop: 20,
+                                                    marginTop: ViewScale(20),
                                                   }}
                                                 >
                                                   <View
@@ -10250,9 +10251,9 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <Text
                                                       style={{
-                                                        fontSize: 20,
+                                                        fontSize: ViewScale(20),
                                                         color: "#163c70",
-                                                        marginHorizontal: 35,
+                                                        marginHorizontal: ViewScale(35),
                                                       }}
                                                     >
                                                       {DataItemss.Label}
@@ -10260,7 +10261,7 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "red",
-                                                        left: -32,
+                                                        left: ViewScale(-32),
                                                       }}
                                                     >
                                                       *
@@ -10270,13 +10271,13 @@ class DevlopRegister extends React.Component {
                                                     source={require("../../image/inputedittext.png")}
                                                     resizeMode={"stretch"}
                                                     imageStyle={{
-                                                      height: 28,
+                                                      height: ViewScale(28),
                                                       width: "100%",
                                                     }}
                                                     style={{
                                                       flexDirection: "row",
                                                       alignItems: "center",
-                                                      marginHorizontal: 35,
+                                                      marginHorizontal: ViewScale(35),
                                                     }}
                                                   >
                                                     <TextInput
@@ -10286,14 +10287,14 @@ class DevlopRegister extends React.Component {
                                                         });
                                                       }}
                                                       style={{
-                                                        fontSize: 24,
+                                                        fontSize: ViewScale(24),
                                                         color: "#73838f",
-                                                        marginHorizontal: 10,
+                                                        marginHorizontal: ViewScale(10),
                                                         marginTop:
                                                           Platform.OS ===
                                                           "android"
-                                                            ? -11
-                                                            : 0,
+                                                            ? ViewScale(-11)
+                                                            : ViewScale(0),
                                                         flex: 1,
                                                         fontFamily:
                                                           Platform.OS ===
@@ -10307,7 +10308,7 @@ class DevlopRegister extends React.Component {
                                                         style={{
                                                           borderWidth: 1,
                                                           color: "#163c70",
-                                                          fontSize: 24,
+                                                          fontSize: ViewScale(24),
                                                           flex: 1,
                                                         }}
                                                       >
@@ -10324,7 +10325,7 @@ class DevlopRegister extends React.Component {
                                                 resizeMode={"stretch"}
                                                 imageStyle={{
                                                   width: "100%",
-                                                  height: 145,
+                                                  height: ViewScale(145),
                                                 }}
                                                 style={{
                                                   flexDirection: "row",
@@ -10335,7 +10336,7 @@ class DevlopRegister extends React.Component {
                                                 <View
                                                   style={{
                                                     flex: 1,
-                                                    marginTop: 20,
+                                                    marginTop: ViewScale(20),
                                                   }}
                                                 >
                                                   <View
@@ -10345,9 +10346,9 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <Text
                                                       style={{
-                                                        fontSize: 20,
+                                                        fontSize: ViewScale(20),
                                                         color: "#163c70",
-                                                        marginHorizontal: 35,
+                                                        marginHorizontal: ViewScale(35),
                                                       }}
                                                     >
                                                       {DataItemss.Label}
@@ -10355,7 +10356,7 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "red",
-                                                        left: -32,
+                                                        left: ViewScale(-32),
                                                       }}
                                                     >
                                                       *
@@ -10365,13 +10366,13 @@ class DevlopRegister extends React.Component {
                                                     source={require("../../image/inputedittext.png")}
                                                     resizeMode={"stretch"}
                                                     imageStyle={{
-                                                      height: 28,
+                                                      height: ViewScale(28),
                                                       width: "100%",
                                                     }}
                                                     style={{
                                                       flexDirection: "row",
                                                       alignItems: "center",
-                                                      marginHorizontal: 35,
+                                                      marginHorizontal: ViewScale(35),
                                                     }}
                                                   >
                                                     <TextInput
@@ -10384,15 +10385,15 @@ class DevlopRegister extends React.Component {
                                                         DataItemss.Data
                                                       }
                                                       style={{
-                                                        fontSize: 24,
+                                                        fontSize: ViewScale(24),
                                                         color: "#73838f",
-                                                        marginHorizontal: 10,
+                                                        marginHorizontal: ViewScale(10),
                                                         flex: 1,
                                                         marginTop:
                                                           Platform.OS ===
                                                           "android"
-                                                            ? -11
-                                                            : 0,
+                                                            ? ViewScale(-11)
+                                                            : ViewScale(0),
                                                         fontFamily:
                                                           Platform.OS ===
                                                           "android"
@@ -10405,7 +10406,7 @@ class DevlopRegister extends React.Component {
                                                         style={{
                                                           borderWidth: 1,
                                                           color: "#163c70",
-                                                          fontSize: 24,
+                                                          fontSize: ViewScale(24),
                                                           flex: 1,
                                                         }}
                                                       >
@@ -10423,7 +10424,7 @@ class DevlopRegister extends React.Component {
                                                 resizeMode={"stretch"}
                                                 imageStyle={{
                                                   width: "100%",
-                                                  height: 120,
+                                                  height: ViewScale(120),
                                                 }}
                                                 style={{
                                                   flexDirection: "row",
@@ -10434,7 +10435,7 @@ class DevlopRegister extends React.Component {
                                                 <View
                                                   style={{
                                                     flex: 1,
-                                                    marginTop: 20,
+                                                    marginTop: ViewScale(20),
                                                   }}
                                                 >
                                                   <View
@@ -10444,9 +10445,9 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <Text
                                                       style={{
-                                                        fontSize: 20,
+                                                        fontSize: ViewScale(20),
                                                         color: "#163c70",
-                                                        marginHorizontal: 35,
+                                                        marginHorizontal: ViewScale(35),
                                                       }}
                                                     >
                                                       {DataItemss.Label}
@@ -10454,7 +10455,7 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "red",
-                                                        left: -32,
+                                                        left: ViewScale(-32),
                                                       }}
                                                     >
                                                       *
@@ -10464,13 +10465,13 @@ class DevlopRegister extends React.Component {
                                                     source={require("../../image/inputedittext.png")}
                                                     resizeMode={"stretch"}
                                                     imageStyle={{
-                                                      height: 28,
+                                                      height: ViewScale(28),
                                                       width: "100%",
                                                     }}
                                                     style={{
                                                       flexDirection: "row",
                                                       alignItems: "center",
-                                                      marginHorizontal: 35,
+                                                      marginHorizontal: ViewScale(35),
                                                       // borderWidth: 1,
                                                       borderColor: "red",
                                                     }}
@@ -10569,8 +10570,8 @@ class DevlopRegister extends React.Component {
                                                               style={{
                                                                 color:
                                                                   "#73838f",
-                                                                fontSize: 24,
-                                                                marginHorizontal: 15,
+                                                                fontSize: ViewScale(24),
+                                                                marginHorizontal: ViewScale(15),
                                                               }}
                                                             >
                                                               {
@@ -10583,8 +10584,8 @@ class DevlopRegister extends React.Component {
                                                               style={{
                                                                 color:
                                                                   "#73838f",
-                                                                fontSize: 24,
-                                                                marginHorizontal: 15,
+                                                                fontSize: ViewScale(24),
+                                                                marginHorizontal: ViewScale(15),
                                                               }}
                                                             >
                                                               {DataItemss.Data}
@@ -10603,10 +10604,10 @@ class DevlopRegister extends React.Component {
                                                           <Icon
                                                             style={{
                                                               color: "#73838f",
-                                                              marginTop: 6,
+                                                              marginTop: ViewScale(6),
                                                             }}
                                                             name="keyboard-arrow-down"
-                                                            size={16}
+                                                            size={ViewScale(16)}
                                                           />
                                                         </View>
                                                       </View>
@@ -10621,7 +10622,7 @@ class DevlopRegister extends React.Component {
                                                 resizeMode={"stretch"}
                                                 imageStyle={{
                                                   width: "100%",
-                                                  height: 120,
+                                                  height: ViewScale(120),
                                                 }}
                                                 style={{
                                                   flexDirection: "row",
@@ -10632,7 +10633,7 @@ class DevlopRegister extends React.Component {
                                                 <View
                                                   style={{
                                                     flex: 1,
-                                                    marginTop: 20,
+                                                    marginTop: ViewScale(20),
                                                   }}
                                                 >
                                                   <View
@@ -10642,9 +10643,9 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <Text
                                                       style={{
-                                                        fontSize: 20,
+                                                        fontSize: ViewScale(20),
                                                         color: "#163c70",
-                                                        marginHorizontal: 35,
+                                                        marginHorizontal: ViewScale(35),
                                                       }}
                                                     >
                                                       {DataItemss.Label}
@@ -10652,7 +10653,7 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "red",
-                                                        left: -32,
+                                                        left: ViewScale(-32),
                                                       }}
                                                     >
                                                       *
@@ -10662,13 +10663,13 @@ class DevlopRegister extends React.Component {
                                                     source={require("../../image/inputedittext.png")}
                                                     resizeMode={"stretch"}
                                                     imageStyle={{
-                                                      height: 28,
+                                                      height: ViewScale(28),
                                                       width: "100%",
                                                     }}
                                                     style={{
                                                       flexDirection: "row",
                                                       alignItems: "center",
-                                                      marginHorizontal: 35,
+                                                      marginHorizontal: ViewScale(35),
                                                       // borderWidth: 1,
                                                       borderColor: "red",
                                                     }}
@@ -10760,8 +10761,8 @@ class DevlopRegister extends React.Component {
                                                               style={{
                                                                 color:
                                                                   "#73838f",
-                                                                fontSize: 24,
-                                                                marginHorizontal: 15,
+                                                                fontSize: ViewScale(24),
+                                                                marginHorizontal: ViewScale(15),
                                                               }}
                                                             >
                                                               {
@@ -10774,8 +10775,8 @@ class DevlopRegister extends React.Component {
                                                               style={{
                                                                 color:
                                                                   "#73838f",
-                                                                fontSize: 24,
-                                                                marginHorizontal: 15,
+                                                                fontSize: ViewScale(24),
+                                                                marginHorizontal: ViewScale(15),
                                                               }}
                                                             >
                                                               {DataItemss.Data}
@@ -10794,10 +10795,10 @@ class DevlopRegister extends React.Component {
                                                           <Icon
                                                             style={{
                                                               color: "#73838f",
-                                                              marginTop: 6,
+                                                              marginTop: ViewScale(6),
                                                             }}
                                                             name="keyboard-arrow-down"
-                                                            size={16}
+                                                            size={ViewScale(16)}
                                                           />
                                                         </View>
                                                       </View>
@@ -10812,7 +10813,7 @@ class DevlopRegister extends React.Component {
                                                 resizeMode={"stretch"}
                                                 imageStyle={{
                                                   width: "100%",
-                                                  height: 120,
+                                                  height: ViewScale(120),
                                                 }}
                                                 style={{
                                                   flexDirection: "row",
@@ -10823,7 +10824,7 @@ class DevlopRegister extends React.Component {
                                                 <View
                                                   style={{
                                                     flex: 1,
-                                                    marginTop: 20,
+                                                    marginTop: ViewScale(20),
                                                   }}
                                                 >
                                                   <View
@@ -10833,9 +10834,9 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <Text
                                                       style={{
-                                                        fontSize: 20,
+                                                        fontSize: ViewScale(20),
                                                         color: "#163c70",
-                                                        marginHorizontal: 35,
+                                                        marginHorizontal: ViewScale(35),
                                                       }}
                                                     >
                                                       {DataItemss.Label}
@@ -10843,7 +10844,7 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "red",
-                                                        left: -32,
+                                                        left: ViewScale(-32),
                                                       }}
                                                     >
                                                       *
@@ -10853,13 +10854,13 @@ class DevlopRegister extends React.Component {
                                                     source={require("../../image/inputedittext.png")}
                                                     resizeMode={"stretch"}
                                                     imageStyle={{
-                                                      height: 28,
+                                                      height: ViewScale(28),
                                                       width: "100%",
                                                     }}
                                                     style={{
                                                       flexDirection: "row",
                                                       alignItems: "center",
-                                                      marginHorizontal: 35,
+                                                      marginHorizontal: ViewScale(35),
                                                       // borderWidth: 1,
                                                       borderColor: "red",
                                                     }}
@@ -10952,8 +10953,8 @@ class DevlopRegister extends React.Component {
                                                               style={{
                                                                 color:
                                                                   "#73838f",
-                                                                fontSize: 24,
-                                                                marginHorizontal: 15,
+                                                                fontSize: ViewScale(24),
+                                                                marginHorizontal: ViewScale(15),
                                                               }}
                                                             >
                                                               {
@@ -10966,8 +10967,8 @@ class DevlopRegister extends React.Component {
                                                               style={{
                                                                 color:
                                                                   "#73838f",
-                                                                fontSize: 24,
-                                                                marginHorizontal: 15,
+                                                                fontSize: ViewScale(24),
+                                                                marginHorizontal: ViewScale(15),
                                                               }}
                                                             >
                                                               {DataItemss.Data}
@@ -10986,10 +10987,10 @@ class DevlopRegister extends React.Component {
                                                           <Icon
                                                             style={{
                                                               color: "#73838f",
-                                                              marginTop: 6,
+                                                              marginTop: ViewScale(6),
                                                             }}
                                                             name="keyboard-arrow-down"
-                                                            size={16}
+                                                            size={ViewScale(16)}
                                                           />
                                                         </View>
                                                       </View>
@@ -11017,7 +11018,7 @@ class DevlopRegister extends React.Component {
                                                 <View
                                                   style={{
                                                     flex: 1,
-                                                    marginTop: 20,
+                                                    marginTop: ViewScale(20),
                                                   }}
                                                 >
                                                   <View
@@ -11027,9 +11028,9 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <Text
                                                       style={{
-                                                        fontSize: 20,
+                                                        fontSize: ViewScale(20),
                                                         color: "#163c70",
-                                                        marginHorizontal: 35,
+                                                        marginHorizontal: ViewScale(35),
                                                       }}
                                                     >
                                                       {DataItemss.Label}
@@ -11037,7 +11038,7 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "red",
-                                                        left: -32,
+                                                        left: ViewScale(-32),
                                                       }}
                                                     >
                                                       *
@@ -11047,13 +11048,13 @@ class DevlopRegister extends React.Component {
                                                     source={require("../../image/inputedittext.png")}
                                                     resizeMode={"stretch"}
                                                     imageStyle={{
-                                                      height: 28,
+                                                      height: ViewScale(28),
                                                       width: "100%",
                                                     }}
                                                     style={{
                                                       flexDirection: "row",
                                                       alignItems: "center",
-                                                      marginHorizontal: 35,
+                                                      marginHorizontal: ViewScale(35),
                                                     }}
                                                   >
                                                     <TextInput
@@ -11066,15 +11067,15 @@ class DevlopRegister extends React.Component {
                                                         DataItemss.Data
                                                       }
                                                       style={{
-                                                        fontSize: 24,
+                                                        fontSize: ViewScale(24),
                                                         color: "#73838f",
-                                                        marginHorizontal: 10,
+                                                        marginHorizontal: ViewScale(10),
                                                         flex: 1,
                                                         marginTop:
                                                           Platform.OS ===
                                                           "android"
-                                                            ? -11
-                                                            : 0,
+                                                            ? ViewScale(-11)
+                                                            : ViewScale(0),
                                                         fontFamily:
                                                           Platform.OS ===
                                                           "android"
@@ -11087,7 +11088,7 @@ class DevlopRegister extends React.Component {
                                                         style={{
                                                           borderWidth: 1,
                                                           color: "#163c70",
-                                                          fontSize: 24,
+                                                          fontSize: ViewScale(24),
                                                           flex: 1,
                                                         }}
                                                       >
@@ -11106,7 +11107,7 @@ class DevlopRegister extends React.Component {
                                                 resizeMode={"stretch"}
                                                 imageStyle={{
                                                   width: "100%",
-                                                  height: 120,
+                                                  height: ViewScale(120),
                                                 }}
                                                 style={{
                                                   flexDirection: "row",
@@ -11117,7 +11118,7 @@ class DevlopRegister extends React.Component {
                                                 <View
                                                   style={{
                                                     flex: 1,
-                                                    marginTop: 20,
+                                                    marginTop: ViewScale(20),
                                                   }}
                                                 >
                                                   <View
@@ -11127,9 +11128,9 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <Text
                                                       style={{
-                                                        fontSize: 20,
+                                                        fontSize: ViewScale(20),
                                                         color: "#163c70",
-                                                        marginHorizontal: 35,
+                                                        marginHorizontal: ViewScale(35),
                                                       }}
                                                     >
                                                       {DataItemss.Label}
@@ -11137,7 +11138,7 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "red",
-                                                        left: -32,
+                                                        left: ViewScale(-32),
                                                       }}
                                                     >
                                                       *
@@ -11147,13 +11148,13 @@ class DevlopRegister extends React.Component {
                                                     source={require("../../image/inputedittext.png")}
                                                     resizeMode={"stretch"}
                                                     imageStyle={{
-                                                      height: 28,
+                                                      height: ViewScale(28),
                                                       width: "100%",
                                                     }}
                                                     style={{
                                                       flexDirection: "row",
                                                       alignItems: "center",
-                                                      marginHorizontal: 35,
+                                                      marginHorizontal: ViewScale(35),
                                                       // borderWidth: 1,
                                                       borderColor: "red",
                                                     }}
@@ -11232,8 +11233,8 @@ class DevlopRegister extends React.Component {
                                                               style={{
                                                                 color:
                                                                   "#73838f",
-                                                                fontSize: 24,
-                                                                marginHorizontal: 15,
+                                                                fontSize: ViewScale(24),
+                                                                marginHorizontal: ViewScale(15),
                                                               }}
                                                             >
                                                               {
@@ -11246,8 +11247,8 @@ class DevlopRegister extends React.Component {
                                                               style={{
                                                                 color:
                                                                   "#73838f",
-                                                                fontSize: 24,
-                                                                marginHorizontal: 15,
+                                                                fontSize: ViewScale(24),
+                                                                marginHorizontal: ViewScale(15),
                                                               }}
                                                             >
                                                               {DataItemss.Data}
@@ -11266,10 +11267,10 @@ class DevlopRegister extends React.Component {
                                                           <Icon
                                                             style={{
                                                               color: "#73838f",
-                                                              marginTop: 6,
+                                                              marginTop: ViewScale(6),
                                                             }}
                                                             name="keyboard-arrow-down"
-                                                            size={16}
+                                                            size={ViewScale(16)}
                                                           />
                                                         </View>
                                                       </View>
@@ -11292,7 +11293,7 @@ class DevlopRegister extends React.Component {
                                         <View
                                           style={{
                                             flex: 1,
-                                            marginTop: 3,
+                                            marginTop: ViewScale(3),
                                             shadowColor: "#f9fafc",
                                             shadowOffset: {
                                               width: 0,
@@ -11311,7 +11312,7 @@ class DevlopRegister extends React.Component {
                                                 resizeMode={"stretch"}
                                                 imageStyle={{
                                                   width: "100%",
-                                                  height: 120,
+                                                  height: ViewScale(120),
                                                 }}
                                                 style={{
                                                   flexDirection: "row",
@@ -11322,7 +11323,7 @@ class DevlopRegister extends React.Component {
                                                 <View
                                                   style={{
                                                     flex: 1,
-                                                    marginTop: 20,
+                                                    marginTop: ViewScale(20),
                                                   }}
                                                 >
                                                   <View
@@ -11332,9 +11333,9 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <Text
                                                       style={{
-                                                        fontSize: 20,
+                                                        fontSize: ViewScale(20),
                                                         color: "#163c70",
-                                                        marginHorizontal: 35,
+                                                        marginHorizontal: ViewScale(35),
                                                       }}
                                                     >
                                                       {item.Label}
@@ -11342,7 +11343,7 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "red",
-                                                        left: -32,
+                                                        left: ViewScale(-32),
                                                       }}
                                                     >
                                                       *
@@ -11352,13 +11353,13 @@ class DevlopRegister extends React.Component {
                                                     source={require("../../image/inputedittext.png")}
                                                     resizeMode={"stretch"}
                                                     imageStyle={{
-                                                      height: 28,
+                                                      height: ViewScale(28),
                                                       width: "100%",
                                                     }}
                                                     style={{
                                                       flexDirection: "row",
                                                       alignItems: "center",
-                                                      marginHorizontal: 35,
+                                                      marginHorizontal: ViewScale(35),
                                                     }}
                                                   >
                                                     <TextInput
@@ -11369,15 +11370,15 @@ class DevlopRegister extends React.Component {
                                                         });
                                                       }}
                                                       style={{
-                                                        fontSize: 24,
+                                                        fontSize: ViewScale(24),
                                                         color: "#73838f",
-                                                        marginHorizontal: 10,
+                                                        marginHorizontal: ViewScale(10),
                                                         flex: 1,
                                                         marginTop:
                                                           Platform.OS ===
                                                           "android"
-                                                            ? -11
-                                                            : 0,
+                                                            ? ViewScale(-11)
+                                                            : ViewScale(0),
                                                         fontFamily:
                                                           Platform.OS ===
                                                           "android"
@@ -11390,7 +11391,7 @@ class DevlopRegister extends React.Component {
                                                         style={{
                                                           borderWidth: 1,
                                                           color: "#163c70",
-                                                          fontSize: 24,
+                                                          fontSize: ViewScale(24),
                                                           flex: 1,
                                                         }}
                                                       >
@@ -11407,7 +11408,7 @@ class DevlopRegister extends React.Component {
                                                 resizeMode={"stretch"}
                                                 imageStyle={{
                                                   width: "100%",
-                                                  height: 120,
+                                                  height: ViewScale(120),
                                                 }}
                                                 style={{
                                                   flexDirection: "row",
@@ -11418,7 +11419,7 @@ class DevlopRegister extends React.Component {
                                                 <View
                                                   style={{
                                                     flex: 1,
-                                                    marginTop: 20,
+                                                    marginTop: ViewScale(20),
                                                   }}
                                                 >
                                                   <View
@@ -11428,9 +11429,9 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <Text
                                                       style={{
-                                                        fontSize: 20,
+                                                        fontSize: ViewScale(20),
                                                         color: "#163c70",
-                                                        marginHorizontal: 35,
+                                                        marginHorizontal: ViewScale(35),
                                                       }}
                                                     >
                                                       {item.Label}
@@ -11438,7 +11439,7 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "red",
-                                                        left: -32,
+                                                        left: ViewScale(-32),
                                                       }}
                                                     >
                                                       *
@@ -11448,13 +11449,13 @@ class DevlopRegister extends React.Component {
                                                     source={require("../../image/inputedittext.png")}
                                                     resizeMode={"stretch"}
                                                     imageStyle={{
-                                                      height: 28,
+                                                      height: ViewScale(28),
                                                       width: "100%",
                                                     }}
                                                     style={{
                                                       flexDirection: "row",
                                                       alignItems: "center",
-                                                      marginHorizontal: 35,
+                                                      marginHorizontal: ViewScale(35),
                                                     }}
                                                   >
                                                     <TextInput
@@ -11466,15 +11467,15 @@ class DevlopRegister extends React.Component {
                                                       }}
                                                       placeholder={item.Data}
                                                       style={{
-                                                        fontSize: 24,
+                                                        fontSize: ViewScale(24),
                                                         color: "#73838f",
-                                                        marginHorizontal: 10,
+                                                        marginHorizontal: ViewScale(10),
                                                         flex: 1,
                                                         marginTop:
                                                           Platform.OS ===
                                                           "android"
-                                                            ? -11
-                                                            : 0,
+                                                            ? ViewScale(-11)
+                                                            : ViewScale(0),
                                                         fontFamily:
                                                           Platform.OS ===
                                                           "android"
@@ -11487,7 +11488,7 @@ class DevlopRegister extends React.Component {
                                                         style={{
                                                           borderWidth: 1,
                                                           color: "#163c70",
-                                                          fontSize: 24,
+                                                          fontSize: ViewScale(24),
                                                           flex: 1,
                                                         }}
                                                       >
@@ -11504,7 +11505,7 @@ class DevlopRegister extends React.Component {
                                                 resizeMode={"stretch"}
                                                 imageStyle={{
                                                   width: "100%",
-                                                  height: 120,
+                                                  height: ViewScale(120),
                                                 }}
                                                 style={{
                                                   flexDirection: "row",
@@ -11515,7 +11516,7 @@ class DevlopRegister extends React.Component {
                                                 <View
                                                   style={{
                                                     flex: 1,
-                                                    marginTop: 20,
+                                                    marginTop: ViewScale(20),
                                                   }}
                                                 >
                                                   <View
@@ -11525,9 +11526,9 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <Text
                                                       style={{
-                                                        fontSize: 20,
+                                                        fontSize: ViewScale(20),
                                                         color: "#163c70",
-                                                        marginHorizontal: 35,
+                                                        marginHorizontal: ViewScale(35),
                                                       }}
                                                     >
                                                       {item.Label}
@@ -11535,7 +11536,7 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "red",
-                                                        left: -32,
+                                                        left: ViewScale(-32),
                                                       }}
                                                     >
                                                       *
@@ -11545,13 +11546,13 @@ class DevlopRegister extends React.Component {
                                                     source={require("../../image/inputedittext.png")}
                                                     resizeMode={"stretch"}
                                                     imageStyle={{
-                                                      height: 28,
+                                                      height: ViewScale(28),
                                                       width: "100%",
                                                     }}
                                                     style={{
                                                       flexDirection: "row",
                                                       alignItems: "center",
-                                                      marginHorizontal: 35,
+                                                      marginHorizontal: ViewScale(35),
                                                     }}
                                                   >
                                                     <TextInput
@@ -11562,15 +11563,15 @@ class DevlopRegister extends React.Component {
                                                       }}
                                                       placeholder={item.Data}
                                                       style={{
-                                                        fontSize: 24,
+                                                        fontSize: ViewScale(24),
                                                         color: "#73838f",
-                                                        marginHorizontal: 10,
+                                                        marginHorizontal: ViewScale(10),
                                                         flex: 1,
                                                         marginTop:
                                                           Platform.OS ===
                                                           "android"
-                                                            ? -11
-                                                            : 0,
+                                                            ? ViewScale(-11)
+                                                            : ViewScale(0),
                                                         fontFamily:
                                                           Platform.OS ===
                                                           "android"
@@ -11583,7 +11584,7 @@ class DevlopRegister extends React.Component {
                                                         style={{
                                                           borderWidth: 1,
                                                           color: "#163c70",
-                                                          fontSize: 24,
+                                                          fontSize: ViewScale(24),
                                                           flex: 1,
                                                         }}
                                                       >
@@ -11600,7 +11601,7 @@ class DevlopRegister extends React.Component {
                                                 resizeMode={"stretch"}
                                                 imageStyle={{
                                                   width: "100%",
-                                                  height: 120,
+                                                  height: ViewScale(120),
                                                 }}
                                                 style={{
                                                   flexDirection: "row",
@@ -11611,7 +11612,7 @@ class DevlopRegister extends React.Component {
                                                 <View
                                                   style={{
                                                     flex: 1,
-                                                    marginTop: 20,
+                                                    marginTop: ViewScale(20),
                                                   }}
                                                 >
                                                   <View
@@ -11621,9 +11622,9 @@ class DevlopRegister extends React.Component {
                                                   >
                                                     <Text
                                                       style={{
-                                                        fontSize: 20,
+                                                        fontSize: ViewScale(20),
                                                         color: "#163c70",
-                                                        marginHorizontal: 35,
+                                                        marginHorizontal: ViewScale(35),
                                                       }}
                                                     >
                                                       {item.Label}
@@ -11631,7 +11632,7 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "red",
-                                                        left: -32,
+                                                        left: ViewScale(-32),
                                                       }}
                                                     >
                                                       *
@@ -11641,13 +11642,13 @@ class DevlopRegister extends React.Component {
                                                     source={require("../../image/inputedittext.png")}
                                                     resizeMode={"stretch"}
                                                     imageStyle={{
-                                                      height: 28,
+                                                      height: ViewScale(28),
                                                       width: "100%",
                                                     }}
                                                     style={{
                                                       flexDirection: "row",
                                                       alignItems: "center",
-                                                      marginHorizontal: 35,
+                                                      marginHorizontal: ViewScale(35),
                                                     }}
                                                   >
                                                     <TextInput
@@ -11658,15 +11659,15 @@ class DevlopRegister extends React.Component {
                                                       }}
                                                       placeholder={item.Data}
                                                       style={{
-                                                        fontSize: 24,
+                                                        fontSize: ViewScale(24),
                                                         color: "#73838f",
-                                                        marginHorizontal: 10,
+                                                        marginHorizontal: ViewScale(10),
                                                         flex: 1,
                                                         marginTop:
                                                           Platform.OS ===
                                                           "android"
-                                                            ? -11
-                                                            : 0,
+                                                            ? ViewScale(-11)
+                                                            : ViewScale(0),
                                                         fontFamily:
                                                           Platform.OS ===
                                                           "android"
@@ -11679,7 +11680,7 @@ class DevlopRegister extends React.Component {
                                                         style={{
                                                           borderWidth: 1,
                                                           color: "#163c70",
-                                                          fontSize: 24,
+                                                          fontSize: ViewScale(24),
                                                           flex: 1,
                                                         }}
                                                       >
@@ -11697,7 +11698,7 @@ class DevlopRegister extends React.Component {
                                   </View>
                                 </View>
                               ) : (
-                                <View style={{ marginTop: 15 }}>
+                                <View style={{ marginTop: ViewScale(15) }}>
                                   <View style={Styles.viewsearchIDcompany1}>
                                     <View style={Styles.viewsearchIDcompany}>
                                       <Image
@@ -11711,7 +11712,7 @@ class DevlopRegister extends React.Component {
                                             searchTextcompany: e,
                                           });
                                         }}
-                                        style={{ fontSize: 18, flex: 1 }}
+                                        style={{ fontSize: ViewScale(18), flex: 1 }}
                                         placeholderTextColor={"#999999"}
                                         placeholder={I18n.t(
                                           "transalte_Search_corporate_number"
@@ -11731,7 +11732,7 @@ class DevlopRegister extends React.Component {
                                         <Text
                                           style={{
                                             textAlign: "center",
-                                            fontSize: 20,
+                                            fontSize: ViewScale(20),
                                             color: "#FFFFFF",
                                           }}
                                         >
@@ -11745,7 +11746,7 @@ class DevlopRegister extends React.Component {
                                   <View
                                     style={[
                                       Styles.viewcompany1,
-                                      { marginBottom: 20 },
+                                      { marginBottom: ViewScale(20) },
                                     ]}
                                   >
                                     <KeyboardAvoidingView style={{}}>
@@ -11907,7 +11908,7 @@ class DevlopRegister extends React.Component {
                                         resizeMode={"stretch"}
                                         imageStyle={{
                                           width: "100%",
-                                          height: 145,
+                                          height: ViewScale(145),
                                         }}
                                         style={{
                                           flexDirection: "row",
@@ -11918,7 +11919,7 @@ class DevlopRegister extends React.Component {
                                         <View
                                           style={{
                                             flex: 1,
-                                            marginTop: 20,
+                                            marginTop: ViewScale(20),
                                           }}
                                         >
                                           <View
@@ -11928,9 +11929,9 @@ class DevlopRegister extends React.Component {
                                           >
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#163c70",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               {I18n.t("transalte_address_thai")}
@@ -11938,7 +11939,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={{
                                                 color: "red",
-                                                left: -32,
+                                                left: ViewScale(-32),
                                               }}
                                             >
                                               *
@@ -11948,13 +11949,13 @@ class DevlopRegister extends React.Component {
                                             source={require("../../image/inputedittext.png")}
                                             resizeMode={"stretch"}
                                             imageStyle={{
-                                              height: 28,
+                                              height: ViewScale(28),
                                               width: "100%",
                                             }}
                                             style={{
                                               flexDirection: "row",
                                               alignItems: "center",
-                                              marginHorizontal: 35,
+                                              marginHorizontal: ViewScale(35),
                                             }}
                                           >
                                             <TextInput
@@ -11964,13 +11965,13 @@ class DevlopRegister extends React.Component {
                                                 });
                                               }}
                                               style={{
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 color: "#73838f",
-                                                marginHorizontal: 10,
+                                                marginHorizontal: ViewScale(10),
                                                 marginTop:
                                                   Platform.OS === "android"
-                                                    ? -11
-                                                    : 0,
+                                                    ? ViewScale(-11)
+                                                    : ViewScale(0),
                                                 flex: 1,
                                                 fontFamily:
                                                   Platform.OS === "android"
@@ -11983,7 +11984,7 @@ class DevlopRegister extends React.Component {
                                                 style={{
                                                   borderWidth: 1,
                                                   color: "#163c70",
-                                                  fontSize: 24,
+                                                  fontSize: ViewScale(24),
                                                   flex: 1,
                                                 }}
                                               >
@@ -11998,7 +11999,7 @@ class DevlopRegister extends React.Component {
                                         resizeMode={"stretch"}
                                         imageStyle={{
                                           width: "100%",
-                                          height: 145,
+                                          height: ViewScale(145),
                                         }}
                                         style={{
                                           flexDirection: "row",
@@ -12009,7 +12010,7 @@ class DevlopRegister extends React.Component {
                                         <View
                                           style={{
                                             flex: 1,
-                                            marginTop: 20,
+                                            marginTop: ViewScale(20),
                                           }}
                                         >
                                           <View
@@ -12019,9 +12020,9 @@ class DevlopRegister extends React.Component {
                                           >
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#163c70",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               {I18n.t("transalte_address_eng")}
@@ -12029,7 +12030,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={{
                                                 color: "red",
-                                                left: -32,
+                                                left: ViewScale(-32),
                                               }}
                                             >
                                               *
@@ -12039,13 +12040,13 @@ class DevlopRegister extends React.Component {
                                             source={require("../../image/inputedittext.png")}
                                             resizeMode={"stretch"}
                                             imageStyle={{
-                                              height: 28,
+                                              height: ViewScale(28),
                                               width: "100%",
                                             }}
                                             style={{
                                               flexDirection: "row",
                                               alignItems: "center",
-                                              marginHorizontal: 35,
+                                              marginHorizontal: ViewScale(35),
                                             }}
                                           >
                                             <TextInput
@@ -12055,13 +12056,13 @@ class DevlopRegister extends React.Component {
                                                 });
                                               }}
                                               style={{
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 color: "#73838f",
-                                                marginHorizontal: 10,
+                                                marginHorizontal: ViewScale(10),
                                                 marginTop:
                                                   Platform.OS === "android"
-                                                    ? -11
-                                                    : 0,
+                                                    ? ViewScale(-11)
+                                                    : ViewScale(0),
                                                 flex: 1,
                                                 fontFamily:
                                                   Platform.OS === "android"
@@ -12074,7 +12075,7 @@ class DevlopRegister extends React.Component {
                                                 style={{
                                                   borderWidth: 1,
                                                   color: "#163c70",
-                                                  fontSize: 24,
+                                                  fontSize: ViewScale(24),
                                                   flex: 1,
                                                 }}
                                               >
@@ -12090,7 +12091,7 @@ class DevlopRegister extends React.Component {
                                         resizeMode={"stretch"}
                                         imageStyle={{
                                           width: "100%",
-                                          height: 120,
+                                          height: ViewScale(120),
                                         }}
                                         style={{
                                           flexDirection: "row",
@@ -12101,7 +12102,7 @@ class DevlopRegister extends React.Component {
                                         <View
                                           style={{
                                             flex: 1,
-                                            marginTop: 20,
+                                            marginTop: ViewScale(20),
                                           }}
                                         >
                                           <View
@@ -12111,9 +12112,9 @@ class DevlopRegister extends React.Component {
                                           >
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#163c70",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               {I18n.t("pro_userProfile")}
@@ -12121,7 +12122,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={{
                                                 color: "red",
-                                                left: -32,
+                                                left: ViewScale(-32),
                                               }}
                                             >
                                               *
@@ -12131,13 +12132,13 @@ class DevlopRegister extends React.Component {
                                             source={require("../../image/inputedittext.png")}
                                             resizeMode={"stretch"}
                                             imageStyle={{
-                                              height: 28,
+                                              height: ViewScale(28),
                                               width: "100%",
                                             }}
                                             style={{
                                               flexDirection: "row",
                                               alignItems: "center",
-                                              marginHorizontal: 35,
+                                              marginHorizontal: ViewScale(35),
                                               // borderWidth: 1,
                                               borderColor: "red",
                                             }}
@@ -12227,8 +12228,8 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "#73838f",
-                                                        fontSize: 24,
-                                                        marginHorizontal: 15,
+                                                        fontSize: ViewScale(24),
+                                                        marginHorizontal: ViewScale(15),
                                                       }}
                                                     >
                                                       {
@@ -12240,8 +12241,8 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "#73838f",
-                                                        fontSize: 24,
-                                                        marginHorizontal: 15,
+                                                        fontSize: ViewScale(24),
+                                                        marginHorizontal: ViewScale(15),
                                                       }}
                                                     >
                                                       {I18n.t(
@@ -12262,10 +12263,10 @@ class DevlopRegister extends React.Component {
                                                   <Icon
                                                     style={{
                                                       color: "#73838f",
-                                                      marginTop: 6,
+                                                      marginTop: ViewScale(6),
                                                     }}
                                                     name="keyboard-arrow-down"
-                                                    size={16}
+                                                    size={ViewScale(16)}
                                                   />
                                                 </View>
                                               </View>
@@ -12279,7 +12280,7 @@ class DevlopRegister extends React.Component {
                                         resizeMode={"stretch"}
                                         imageStyle={{
                                           width: "100%",
-                                          height: 120,
+                                          height: ViewScale(120),
                                         }}
                                         style={{
                                           flexDirection: "row",
@@ -12290,7 +12291,7 @@ class DevlopRegister extends React.Component {
                                         <View
                                           style={{
                                             flex: 1,
-                                            marginTop: 20,
+                                            marginTop: ViewScale(20),
                                           }}
                                         >
                                           <View
@@ -12300,9 +12301,9 @@ class DevlopRegister extends React.Component {
                                           >
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#163c70",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               {I18n.t("translate_Edite4")}
@@ -12310,7 +12311,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={{
                                                 color: "red",
-                                                left: -32,
+                                                left: ViewScale(-32),
                                               }}
                                             >
                                               *
@@ -12320,13 +12321,13 @@ class DevlopRegister extends React.Component {
                                             source={require("../../image/inputedittext.png")}
                                             resizeMode={"stretch"}
                                             imageStyle={{
-                                              height: 28,
+                                              height: ViewScale(28),
                                               width: "100%",
                                             }}
                                             style={{
                                               flexDirection: "row",
                                               alignItems: "center",
-                                              marginHorizontal: 35,
+                                              marginHorizontal: ViewScale(35),
                                               // borderWidth: 1,
                                               borderColor: "red",
                                             }}
@@ -12409,8 +12410,8 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "#73838f",
-                                                        fontSize: 24,
-                                                        marginHorizontal: 15,
+                                                        fontSize: ViewScale(24),
+                                                        marginHorizontal: ViewScale(15),
                                                       }}
                                                     >
                                                       {
@@ -12422,8 +12423,8 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "#73838f",
-                                                        fontSize: 24,
-                                                        marginHorizontal: 15,
+                                                        fontSize: ViewScale(24),
+                                                        marginHorizontal: ViewScale(15),
                                                       }}
                                                     >
                                                       {I18n.t(
@@ -12444,10 +12445,10 @@ class DevlopRegister extends React.Component {
                                                   <Icon
                                                     style={{
                                                       color: "#73838f",
-                                                      marginTop: 6,
+                                                      marginTop: ViewScale(6),
                                                     }}
                                                     name="keyboard-arrow-down"
-                                                    size={16}
+                                                    size={ViewScale(16)}
                                                   />
                                                 </View>
                                               </View>
@@ -12461,7 +12462,7 @@ class DevlopRegister extends React.Component {
                                         resizeMode={"stretch"}
                                         imageStyle={{
                                           width: "100%",
-                                          height: 120,
+                                          height: ViewScale(120),
                                         }}
                                         style={{
                                           flexDirection: "row",
@@ -12472,7 +12473,7 @@ class DevlopRegister extends React.Component {
                                         <View
                                           style={{
                                             flex: 1,
-                                            marginTop: 20,
+                                            marginTop: ViewScale(20),
                                           }}
                                         >
                                           <View
@@ -12482,9 +12483,9 @@ class DevlopRegister extends React.Component {
                                           >
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#163c70",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               {I18n.t("translate_Edite2")}
@@ -12492,7 +12493,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={{
                                                 color: "red",
-                                                left: -32,
+                                                left: ViewScale(-32),
                                               }}
                                             >
                                               *
@@ -12502,13 +12503,13 @@ class DevlopRegister extends React.Component {
                                             source={require("../../image/inputedittext.png")}
                                             resizeMode={"stretch"}
                                             imageStyle={{
-                                              height: 28,
+                                              height: ViewScale(28),
                                               width: "100%",
                                             }}
                                             style={{
                                               flexDirection: "row",
                                               alignItems: "center",
-                                              marginHorizontal: 35,
+                                              marginHorizontal: ViewScale(35),
                                               // borderWidth: 1,
                                               borderColor: "red",
                                             }}
@@ -12589,8 +12590,8 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "#73838f",
-                                                        fontSize: 24,
-                                                        marginHorizontal: 15,
+                                                        fontSize: ViewScale(24),
+                                                        marginHorizontal: ViewScale(15),
                                                       }}
                                                     >
                                                       {
@@ -12602,8 +12603,8 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "#73838f",
-                                                        fontSize: 24,
-                                                        marginHorizontal: 15,
+                                                        fontSize: ViewScale(24),
+                                                        marginHorizontal: ViewScale(15),
                                                       }}
                                                     >
                                                       {I18n.t(
@@ -12624,10 +12625,10 @@ class DevlopRegister extends React.Component {
                                                   <Icon
                                                     style={{
                                                       color: "#73838f",
-                                                      marginTop: 6,
+                                                      marginTop: ViewScale(6),
                                                     }}
                                                     name="keyboard-arrow-down"
-                                                    size={16}
+                                                    size={ViewScale(16)}
                                                   />
                                                 </View>
                                               </View>
@@ -12641,7 +12642,7 @@ class DevlopRegister extends React.Component {
                                         resizeMode={"stretch"}
                                         imageStyle={{
                                           width: "100%",
-                                          height: 145,
+                                          height: ViewScale(145),
                                         }}
                                         style={{
                                           flexDirection: "row",
@@ -12652,7 +12653,7 @@ class DevlopRegister extends React.Component {
                                         <View
                                           style={{
                                             flex: 1,
-                                            marginTop: 20,
+                                            marginTop: ViewScale(20),
                                           }}
                                         >
                                           <View
@@ -12662,9 +12663,9 @@ class DevlopRegister extends React.Component {
                                           >
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#163c70",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               {I18n.t("postcode_regis")}
@@ -12672,7 +12673,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={{
                                                 color: "red",
-                                                left: -32,
+                                                left: ViewScale(-32),
                                               }}
                                             >
                                               *
@@ -12682,13 +12683,13 @@ class DevlopRegister extends React.Component {
                                             source={require("../../image/inputedittext.png")}
                                             resizeMode={"stretch"}
                                             imageStyle={{
-                                              height: 28,
+                                              height: ViewScale(28),
                                               width: "100%",
                                             }}
                                             style={{
                                               flexDirection: "row",
                                               alignItems: "center",
-                                              marginHorizontal: 35,
+                                              marginHorizontal: ViewScale(35),
                                             }}
                                           >
                                             <TextInput
@@ -12699,13 +12700,13 @@ class DevlopRegister extends React.Component {
                                                 });
                                               }}
                                               style={{
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 color: "#73838f",
-                                                marginHorizontal: 10,
+                                                marginHorizontal: ViewScale(10),
                                                 marginTop:
                                                   Platform.OS === "android"
-                                                    ? -11
-                                                    : 0,
+                                                    ? ViewScale(-11)
+                                                    : ViewScale(0),
                                                 flex: 1,
                                                 fontFamily:
                                                   Platform.OS === "android"
@@ -12718,7 +12719,7 @@ class DevlopRegister extends React.Component {
                                                 style={{
                                                   borderWidth: 1,
                                                   color: "#163c70",
-                                                  fontSize: 24,
+                                                  fontSize: ViewScale(24),
                                                   flex: 1,
                                                 }}
                                               >
@@ -12734,7 +12735,7 @@ class DevlopRegister extends React.Component {
                                         resizeMode={"stretch"}
                                         imageStyle={{
                                           width: "100%",
-                                          height: 120,
+                                          height: ViewScale(120),
                                         }}
                                         style={{
                                           flexDirection: "row",
@@ -12745,7 +12746,7 @@ class DevlopRegister extends React.Component {
                                         <View
                                           style={{
                                             flex: 1,
-                                            marginTop: 20,
+                                            marginTop: ViewScale(20),
                                           }}
                                         >
                                           <View
@@ -12755,9 +12756,9 @@ class DevlopRegister extends React.Component {
                                           >
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#163c70",
-                                                marginHorizontal: 35,
+                                                marginHorizontal: ViewScale(35),
                                               }}
                                             >
                                               {I18n.t("translate_country")}
@@ -12765,7 +12766,7 @@ class DevlopRegister extends React.Component {
                                             <Text
                                               style={{
                                                 color: "red",
-                                                left: -32,
+                                                left: ViewScale(-32),
                                               }}
                                             >
                                               *
@@ -12775,13 +12776,13 @@ class DevlopRegister extends React.Component {
                                             source={require("../../image/inputedittext.png")}
                                             resizeMode={"stretch"}
                                             imageStyle={{
-                                              height: 28,
+                                              height: ViewScale(28),
                                               width: "100%",
                                             }}
                                             style={{
                                               flexDirection: "row",
                                               alignItems: "center",
-                                              marginHorizontal: 35,
+                                              marginHorizontal: ViewScale(35),
                                               // borderWidth: 1,
                                               borderColor: "red",
                                             }}
@@ -12856,8 +12857,8 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "#73838f",
-                                                        fontSize: 24,
-                                                        marginHorizontal: 15,
+                                                        fontSize: ViewScale(24),
+                                                        marginHorizontal: ViewScale(15),
                                                       }}
                                                     >
                                                       {
@@ -12869,8 +12870,8 @@ class DevlopRegister extends React.Component {
                                                     <Text
                                                       style={{
                                                         color: "#73838f",
-                                                        fontSize: 24,
-                                                        marginHorizontal: 15,
+                                                        fontSize: ViewScale(24),
+                                                        marginHorizontal: ViewScale(15),
                                                       }}
                                                     >
                                                       {I18n.t(
@@ -12891,10 +12892,10 @@ class DevlopRegister extends React.Component {
                                                   <Icon
                                                     style={{
                                                       color: "#73838f",
-                                                      marginTop: 6,
+                                                      marginTop: ViewScale(6),
                                                     }}
                                                     name="keyboard-arrow-down"
-                                                    size={16}
+                                                    size={ViewScale(16)}
                                                   />
                                                 </View>
                                               </View>
@@ -13124,9 +13125,9 @@ class DevlopRegister extends React.Component {
                                         }}
                                         style={{
                                           borderWidth: 1,
-                                          marginHorizontal: 15,
-                                          height: 30,
-                                          borderRadius: 18,
+                                          marginHorizontal: ViewScale(15),
+                                          height: ViewScale(30),
+                                          borderRadius: ViewScale(18),
                                           borderColor: "#999999",
                                           marginTop: 10,
                                           flexDirection: "row",
@@ -13134,18 +13135,18 @@ class DevlopRegister extends React.Component {
                                       >
                                         <Image
                                           style={{
-                                            width: 23,
-                                            height: 23,
-                                            marginTop: 4,
-                                            marginHorizontal: 9,
+                                            width: ViewScale(23),
+                                            height: ViewScale(23),
+                                            marginTop: ViewScale(4),
+                                            marginHorizontal: ViewScale(9),
                                           }}
                                           source={require("../../image/searchbluex.png")}
                                         />
                                         <Text
                                           style={{
-                                            fontSize: 18,
+                                            fontSize: ViewScale(18),
                                             color: "#3c3c3c",
-                                            marginTop: 3,
+                                            marginTop: ViewScale(3),
                                           }}
                                         >
                                           {I18n.t(
@@ -13155,11 +13156,11 @@ class DevlopRegister extends React.Component {
                                       </TouchableOpacity>
                                       <View
                                         style={{
-                                          marginTop: 25,
+                                          marginTop: ViewScale(25),
 
-                                          height: 84,
+                                          height: ViewScale(84),
                                           justifyContent: "center",
-                                          marginHorizontal: 15,
+                                          marginHorizontal: ViewScale(15),
                                           backgroundColor: "#FFFFFF",
                                           shadowColor: "#000",
                                           shadowOffset: {
@@ -13174,11 +13175,11 @@ class DevlopRegister extends React.Component {
                                       >
                                         <Text
                                           style={{
-                                            fontSize: 24,
+                                            fontSize: ViewScale(24),
                                             color: "#a3b4c1",
                                             fontStyle: "italic",
                                             textAlign: "center",
-                                            marginHorizontal: 35,
+                                            marginHorizontal: ViewScale(35),
                                           }}
                                         >
                                           {I18n.t(
@@ -13218,9 +13219,9 @@ class DevlopRegister extends React.Component {
                                         }}
                                         style={{
                                           borderWidth: 1,
-                                          marginHorizontal: 15,
-                                          height: 30,
-                                          borderRadius: 18,
+                                          marginHorizontal: ViewScale(15),
+                                          height: ViewScale(30),
+                                          borderRadius: ViewScale(18),
                                           borderColor: "#999999",
 
                                           flexDirection: "row",
@@ -13228,18 +13229,18 @@ class DevlopRegister extends React.Component {
                                       >
                                         <Image
                                           style={{
-                                            width: 23,
-                                            height: 23,
-                                            marginTop: 4,
-                                            marginHorizontal: 9,
+                                            width: ViewScale(23),
+                                            height: ViewScale(23),
+                                            marginTop: ViewScale(4),
+                                            marginHorizontal: ViewScale(9),
                                           }}
                                           source={require("../../image/searchbluex.png")}
                                         />
                                         <Text
                                           style={{
-                                            fontSize: 18,
+                                            fontSize: ViewScale(18),
                                             color: "#3c3c3c",
-                                            marginTop: 3,
+                                            marginTop: ViewScale(3),
                                           }}
                                         >
                                           {I18n.t(
@@ -13250,8 +13251,8 @@ class DevlopRegister extends React.Component {
                                       {/* แสดงรายชื่อ เข้าร่วมกิจกรรม */}
                                       <FlatList
                                         style={{
-                                          marginBottom: 20,
-                                          marginTop: 10,
+                                          marginBottom: ViewScale(20),
+                                          marginTop: ViewScale(10),
                                         }}
                                         data={this.state.datamember}
                                         renderItem={this.Listmember}
@@ -13262,8 +13263,8 @@ class DevlopRegister extends React.Component {
                                     <View>
                                       <FlatList
                                         style={{
-                                          marginBottom: 20,
-                                          marginTop: 10,
+                                          marginBottom: ViewScale(20),
+                                          marginTop: ViewScale(10),
                                         }}
                                         data={this.state.datamember}
                                         renderItem={this.ListmemberDelete}
@@ -13273,7 +13274,7 @@ class DevlopRegister extends React.Component {
                                         style={{
                                           flexDirection: "row",
 
-                                          marginBottom: 10,
+                                          marginBottom: ViewScale(10),
                                         }}
                                       >
                                         <View
@@ -13296,7 +13297,7 @@ class DevlopRegister extends React.Component {
                               {this.state.IDtype === "1" ? (
                                 <View>
                                   <View
-                                    style={{ marginTop: 15, marginBottom: 15 }}
+                                    style={{ marginTop: ViewScale(15), marginBottom: ViewScale(15) }}
                                   >
                                     <View style={{ flex: 1, marginTop: 1 }}>
                                       <View
@@ -13315,23 +13316,23 @@ class DevlopRegister extends React.Component {
                                           shadowRadius: 3.84,
 
                                           elevation: 5,
-                                          marginHorizontal: 15,
-                                          paddingBottom: 15,
-                                          marginBottom: 1,
+                                          marginHorizontal: ViewScale(15),
+                                          paddingBottom: ViewScale(15),
+                                          marginBottom: ViewScale(1),
                                         }}
                                       >
                                         <View
-                                          style={{ flex: 1, marginTop: 15 }}
+                                          style={{ flex: 1, marginTop: ViewScale(15) }}
                                         >
                                           <View
                                             style={{ flexDirection: "row" }}
                                           >
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#163c70",
 
-                                                marginHorizontal: 10,
+                                                marginHorizontal: ViewScale(10),
                                               }}
                                             >
                                               คำนำหน้าชื่อ
@@ -13349,13 +13350,13 @@ class DevlopRegister extends React.Component {
                                             source={require("../../image/inputedittext.png")}
                                             resizeMode={"stretch"}
                                             imageStyle={{
-                                              height: 28,
+                                              height: ViewScale(28),
                                               width: "100%",
                                             }}
                                             style={{
                                               flexDirection: "row",
                                               alignItems: "center",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           />
                                           <RNPickerSelect
@@ -13386,8 +13387,8 @@ class DevlopRegister extends React.Component {
                                             <View
                                               style={{
                                                 justifyContent: "center",
-                                                height: 30,
-                                                marginHorizontal: 20,
+                                                height: ViewScale(30),
+                                                marginHorizontal: ViewScale(20),
 
                                                 flexDirection: "row",
                                               }}
@@ -13403,7 +13404,7 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
+                                                      fontSize: ViewScale(24),
                                                     }}
                                                   >
                                                     {"เลือกคำนำหน้า"}
@@ -13412,7 +13413,7 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
+                                                      fontSize: ViewScale(24),
                                                     }}
                                                   >
                                                     {this.state.titlename}
@@ -13430,7 +13431,7 @@ class DevlopRegister extends React.Component {
                                                 <Icon
                                                   style={{ color: "#73838f" }}
                                                   name="keyboard-arrow-down"
-                                                  size={16}
+                                                  size={ViewScale(16)}
                                                 />
                                               </View>
                                             </View>
@@ -13455,19 +13456,19 @@ class DevlopRegister extends React.Component {
                                         shadowRadius: 3.84,
 
                                         elevation: 5,
-                                        marginHorizontal: 15,
-                                        paddingBottom: 15,
-                                        marginBottom: 1,
+                                        marginHorizontal: ViewScale(15),
+                                        paddingBottom: ViewScale(15),
+                                        marginBottom: ViewScale(1),
                                       }}
                                     >
-                                      <View style={{ flex: 1, marginTop: 15 }}>
+                                      <View style={{ flex: 1, marginTop: ViewScale(15) }}>
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             ชื่อ
@@ -13485,21 +13486,21 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                             onChangeText={(text) => {
@@ -13516,10 +13517,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             นามสกุล
@@ -13537,14 +13538,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -13554,9 +13555,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -13568,10 +13569,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             Name
@@ -13589,14 +13590,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -13606,9 +13607,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -13620,10 +13621,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             Surname
@@ -13641,14 +13642,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -13658,9 +13659,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -13672,10 +13673,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             อาชีพ
@@ -13686,14 +13687,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -13701,9 +13702,9 @@ class DevlopRegister extends React.Component {
                                               this.setState({ major: text });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           />
@@ -13711,7 +13712,7 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
                                               marginHorizontal: 10,
@@ -13725,14 +13726,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -13742,9 +13743,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -13754,10 +13755,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             ตำแหน่ง
@@ -13768,21 +13769,21 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                             onChangeText={(text) => {
@@ -13797,10 +13798,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             Position
@@ -13811,14 +13812,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -13828,9 +13829,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -13842,10 +13843,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             {I18n.t("company_complaintP")}
@@ -13863,14 +13864,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <RNPickerSelect
@@ -13939,8 +13940,8 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
-                                                      marginHorizontal: 15,
+                                                      fontSize: ViewScale(24),
+                                                      marginHorizontal: ViewScale(15),
                                                     }}
                                                   >
                                                     {
@@ -13952,8 +13953,8 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
-                                                      marginHorizontal: 15,
+                                                      fontSize: ViewScale(24),
+                                                      marginHorizontal: ViewScale(15),
                                                     }}
                                                   >
                                                     {/* {this.checkContry(item.Data)} */}
@@ -13975,10 +13976,10 @@ class DevlopRegister extends React.Component {
                                                 <Icon
                                                   style={{
                                                     color: "#73838f",
-                                                    marginTop: 6,
+                                                    marginTop: ViewScale(6),
                                                   }}
                                                   name="keyboard-arrow-down"
-                                                  size={16}
+                                                  size={ViewScale(16)}
                                                 />
                                               </View>
                                             </View>
@@ -13988,10 +13989,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             {I18n.t("postcode_regis")}
@@ -14009,14 +14010,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -14026,9 +14027,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -14040,10 +14041,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             จังหวัด
@@ -14061,14 +14062,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <RNPickerSelect
@@ -14153,8 +14154,8 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
-                                                      marginHorizontal: 15,
+                                                      fontSize: ViewScale(24),
+                                                      marginHorizontal: ViewScale(15),
                                                     }}
                                                   >
                                                     {
@@ -14166,8 +14167,8 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
-                                                      marginHorizontal: 15,
+                                                      fontSize: ViewScale(24),
+                                                      marginHorizontal: ViewScale(15),
                                                     }}
                                                   >
                                                     {/* {this.checkContry(item.Data)} */}
@@ -14187,10 +14188,10 @@ class DevlopRegister extends React.Component {
                                                 <Icon
                                                   style={{
                                                     color: "#73838f",
-                                                    marginTop: 6,
+                                                    marginTop: ViewScale(6),
                                                   }}
                                                   name="keyboard-arrow-down"
-                                                  size={16}
+                                                  size={ViewScale(16)}
                                                 />
                                               </View>
                                             </View>
@@ -14199,10 +14200,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             อำเภอ/เขต
@@ -14220,14 +14221,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <RNPickerSelect
@@ -14307,8 +14308,8 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
-                                                      marginHorizontal: 15,
+                                                      fontSize: ViewScale(24),
+                                                      marginHorizontal: ViewScale(15),
                                                     }}
                                                   >
                                                     {
@@ -14320,8 +14321,8 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
-                                                      marginHorizontal: 15,
+                                                      fontSize: ViewScale(24),
+                                                      marginHorizontal: ViewScale(15),
                                                     }}
                                                   >
                                                     {/* {this.checkContry(item.Data)} */}
@@ -14342,10 +14343,10 @@ class DevlopRegister extends React.Component {
                                                 <Icon
                                                   style={{
                                                     color: "#73838f",
-                                                    marginTop: 6,
+                                                    marginTop: ViewScale(6),
                                                   }}
                                                   name="keyboard-arrow-down"
-                                                  size={16}
+                                                  size={ViewScale(16)}
                                                 />
                                               </View>
                                             </View>
@@ -14354,10 +14355,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             ตำบล/แขวง
@@ -14375,14 +14376,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <RNPickerSelect
@@ -14453,8 +14454,8 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
-                                                      marginHorizontal: 15,
+                                                      fontSize: ViewScale(24),
+                                                      marginHorizontal: ViewScale(15),
                                                     }}
                                                   >
                                                     {
@@ -14466,8 +14467,8 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
-                                                      marginHorizontal: 15,
+                                                      fontSize: ViewScale(24),
+                                                      marginHorizontal: ViewScale(15),
                                                     }}
                                                   >
                                                     {/* {this.checkContry(item.Data)} */}
@@ -14489,10 +14490,10 @@ class DevlopRegister extends React.Component {
                                                 <Icon
                                                   style={{
                                                     color: "#73838f",
-                                                    marginTop: 6,
+                                                    marginTop: ViewScale(6),
                                                   }}
                                                   name="keyboard-arrow-down"
-                                                  size={16}
+                                                  size={ViewScale(16)}
                                                 />
                                               </View>
                                             </View>
@@ -14501,10 +14502,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             ที่อยู่ติดต่อ
@@ -14522,14 +14523,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -14539,9 +14540,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -14553,10 +14554,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             อีเมล
@@ -14567,14 +14568,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -14584,9 +14585,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -14599,10 +14600,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flex: 1 }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             หมายเลขโทรศัพท์
@@ -14612,13 +14613,13 @@ class DevlopRegister extends React.Component {
                                             source={require("../../image/inputedittext.png")}
                                             resizeMode={"stretch"}
                                             imageStyle={{
-                                              height: 28,
+                                              height: ViewScale(28),
                                               width: "100%",
                                             }}
                                             style={{
                                               flexDirection: "row",
                                               alignItems: "center",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             <TouchableOpacity
@@ -14648,14 +14649,14 @@ class DevlopRegister extends React.Component {
                                               />
                                               <Image
                                                 style={{
-                                                  width: 12,
-                                                  height: 7,
+                                                  width: ViewScale(12),
+                                                  height: ViewScale(7),
 
-                                                  right: 3,
+                                                  right: ViewScale(3),
                                                   top:
                                                     Platform.OS === "ios"
-                                                      ? 1
-                                                      : 3,
+                                                      ? ViewScale(1)
+                                                      : ViewScale(3),
                                                 }}
                                                 source={require("../../image/arrowtitle.png")}
                                               />
@@ -14667,14 +14668,14 @@ class DevlopRegister extends React.Component {
                                                 });
                                               }}
                                               style={{
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 color: "#73838f",
-                                                marginHorizontal: 25,
-                                                marginTop: 0,
+                                                marginHorizontal: ViewScale(25),
+                                                marginTop: ViewScale(0),
                                                 width: width * 0.4,
-                                                marginTop: 0,
+                                                marginTop: ViewScale(0),
 
-                                                right: 25,
+                                                right: ViewScale(25),
                                               }}
                                             >
                                               <Text>
@@ -14690,9 +14691,9 @@ class DevlopRegister extends React.Component {
                               ) : (
                                 <View>
                                   <View
-                                    style={{ marginTop: 15, marginBottom: 15 }}
+                                    style={{ marginTop: ViewScale(15), marginBottom: ViewScale(15) }}
                                   >
-                                    <View style={{ flex: 1, marginTop: 1 }}>
+                                    <View style={{ flex: 1, marginTop: ViewScale(1) }}>
                                       <View
                                         style={{
                                           flexDirection: "row",
@@ -14709,23 +14710,23 @@ class DevlopRegister extends React.Component {
                                           shadowRadius: 3.84,
 
                                           elevation: 5,
-                                          marginHorizontal: 15,
-                                          paddingBottom: 15,
-                                          marginBottom: 1,
+                                          marginHorizontal: ViewScale(15),
+                                          paddingBottom: ViewScale(15),
+                                          marginBottom: ViewScale(1),
                                         }}
                                       >
                                         <View
-                                          style={{ flex: 1, marginTop: 15 }}
+                                          style={{ flex: 1, marginTop: ViewScale(15) }}
                                         >
                                           <View
                                             style={{ flexDirection: "row" }}
                                           >
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#163c70",
 
-                                                marginHorizontal: 10,
+                                                marginHorizontal: ViewScale(10),
                                               }}
                                             >
                                               Title
@@ -14743,13 +14744,13 @@ class DevlopRegister extends React.Component {
                                             source={require("../../image/inputedittext.png")}
                                             resizeMode={"stretch"}
                                             imageStyle={{
-                                              height: 28,
+                                              height: ViewScale(28),
                                               width: "100%",
                                             }}
                                             style={{
                                               flexDirection: "row",
                                               alignItems: "center",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           />
                                           <RNPickerSelect
@@ -14790,8 +14791,8 @@ class DevlopRegister extends React.Component {
                                             <View
                                               style={{
                                                 justifyContent: "center",
-                                                height: 30,
-                                                marginHorizontal: 20,
+                                                height: ViewScale(30),
+                                                marginHorizontal: ViewScale(20),
 
                                                 flexDirection: "row",
                                               }}
@@ -14807,7 +14808,7 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
+                                                      fontSize: ViewScale(24),
                                                     }}
                                                   >
                                                     {"Select your title"}
@@ -14816,7 +14817,7 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
+                                                      fontSize: ViewScale(24),
                                                     }}
                                                   >
                                                     {this.state.titlename}
@@ -14834,7 +14835,7 @@ class DevlopRegister extends React.Component {
                                                 <Icon
                                                   style={{ color: "#73838f" }}
                                                   name="keyboard-arrow-down"
-                                                  size={16}
+                                                  size={ViewScale(16)}
                                                 />
                                               </View>
                                             </View>
@@ -14859,19 +14860,19 @@ class DevlopRegister extends React.Component {
                                         shadowRadius: 3.84,
 
                                         elevation: 5,
-                                        marginHorizontal: 15,
-                                        paddingBottom: 15,
-                                        marginBottom: 1,
+                                        marginHorizontal: ViewScale(15),
+                                        paddingBottom: ViewScale(15),
+                                        marginBottom: ViewScale(1),
                                       }}
                                     >
-                                      <View style={{ flex: 1, marginTop: 15 }}>
+                                      <View style={{ flex: 1, marginTop: ViewScale(15) }}>
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             Name
@@ -14889,14 +14890,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -14906,9 +14907,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -14920,10 +14921,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             Surname
@@ -14941,14 +14942,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale9,
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -14958,9 +14959,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -14973,10 +14974,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             Corporate
@@ -14987,14 +14988,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -15004,9 +15005,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -15017,10 +15018,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             Position
@@ -15031,14 +15032,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -15048,9 +15049,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -15063,10 +15064,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             Address
@@ -15084,14 +15085,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -15101,9 +15102,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -15115,10 +15116,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             country
@@ -15136,14 +15137,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <RNPickerSelect
@@ -15212,8 +15213,8 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
-                                                      marginHorizontal: 15,
+                                                      fontSize: ViewScale(24),
+                                                      marginHorizontal: ViewScale(15),
                                                     }}
                                                   >
                                                     {
@@ -15225,8 +15226,8 @@ class DevlopRegister extends React.Component {
                                                   <Text
                                                     style={{
                                                       color: "#73838f",
-                                                      fontSize: 24,
-                                                      marginHorizontal: 15,
+                                                      fontSize: ViewScale(24),
+                                                      marginHorizontal: ViewScale(15),
                                                     }}
                                                   >
                                                     {/* {this.checkContry(item.Data)} */}
@@ -15246,10 +15247,10 @@ class DevlopRegister extends React.Component {
                                                 <Icon
                                                   style={{
                                                     color: "#73838f",
-                                                    marginTop: 6,
+                                                    marginTop: ViewScale(6),
                                                   }}
                                                   name="keyboard-arrow-down"
-                                                  size={16}
+                                                  size={ViewScale(16)}
                                                 />
                                               </View>
                                             </View>
@@ -15259,10 +15260,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flexDirection: "row" }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             Email
@@ -15273,14 +15274,14 @@ class DevlopRegister extends React.Component {
                                           source={require("../../image/inputedittext.png")}
                                           resizeMode={"stretch"}
                                           imageStyle={{
-                                            height: 28,
+                                            height: ViewScale(28),
                                             width: "100%",
                                           }}
                                           style={{
                                             flexDirection: "row",
                                             alignItems: "center",
-                                            marginHorizontal: 10,
-                                            marginBottom: 10,
+                                            marginHorizontal: ViewScale(10),
+                                            marginBottom: ViewScale(10),
                                           }}
                                         >
                                           <TextInput
@@ -15290,9 +15291,9 @@ class DevlopRegister extends React.Component {
                                               });
                                             }}
                                             style={{
-                                              fontSize: 24,
+                                              fontSize: ViewScale(24),
                                               color: "#73838f",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                               flex: 1,
                                             }}
                                           >
@@ -15305,10 +15306,10 @@ class DevlopRegister extends React.Component {
                                         <View style={{ flex: 1 }}>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#163c70",
 
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             Phone Number
@@ -15318,13 +15319,13 @@ class DevlopRegister extends React.Component {
                                             source={require("../../image/inputedittext.png")}
                                             resizeMode={"stretch"}
                                             imageStyle={{
-                                              height: 28,
+                                              height: ViewScale(28),
                                               width: "100%",
                                             }}
                                             style={{
                                               flexDirection: "row",
                                               alignItems: "center",
-                                              marginHorizontal: 10,
+                                              marginHorizontal: ViewScale(10),
                                             }}
                                           >
                                             <TouchableOpacity
@@ -15354,14 +15355,14 @@ class DevlopRegister extends React.Component {
                                               />
                                               <Image
                                                 style={{
-                                                  width: 12,
-                                                  height: 7,
+                                                  width: ViewScale(12),
+                                                  height: ViewScale(7),
 
-                                                  right: 3,
+                                                  right: ViewScale(3),
                                                   top:
                                                     Platform.OS === "ios"
-                                                      ? 1
-                                                      : 3,
+                                                      ? ViewScale(1)
+                                                      : ViewScale(3),
                                                 }}
                                                 source={require("../../image/arrowtitle.png")}
                                               />
@@ -15373,13 +15374,13 @@ class DevlopRegister extends React.Component {
                                                 });
                                               }}
                                               style={{
-                                                fontSize: 24,
+                                                fontSize: ViewScale(24),
                                                 color: "#73838f",
-                                                marginHorizontal: 25,
+                                                marginHorizontal: ViewScale(25),
                                                 width: width * 0.4,
-                                                marginTop: 0,
+                                                marginTop: ViewScale(0),
 
-                                                right: 25,
+                                                right: ViewScale(25),
                                               }}
                                             >
                                               <Text>
@@ -15402,7 +15403,7 @@ class DevlopRegister extends React.Component {
                 </View>
               </View>
             ) : (
-              <View style={{ marginTop: 10 }}>
+              <View style={{ marginTop: ViewScale(10) }}>
                 {this.props.getUser.userDetails.res_result.type === 3 && (
                   <ScrollView style={{ alignSelf: "center" }}>
                     {this.state.Allcontents
@@ -15411,7 +15412,7 @@ class DevlopRegister extends React.Component {
                             <DropDownItem
                               key={i}
                               style={{
-                                marginHorizontal: 15,
+                                marginHorizontal: ViewScale(15),
                                 backgroundColor: "#FFF",
                               }}
                               contentVisible={false}
@@ -15421,11 +15422,11 @@ class DevlopRegister extends React.Component {
                                 <View style={styles.header}>
                                   <Text
                                     style={{
-                                      fontSize: 22,
+                                      fontSize: ViewScale(22),
                                       color: "#FFF",
                                       flex: 1,
 
-                                      marginHorizontal: 15,
+                                      marginHorizontal: ViewScale(15),
                                     }}
                                   >
                                     {param.title}
@@ -15437,12 +15438,12 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#FFF",
                                   flexDirection: "row",
-                                  paddingBottom: 5,
+                                  paddingBottom: ViewScale(5),
                                 }}
                               >
                                 <FlatList
                                   style={{
-                                    marginBottom: 20,
+                                    marginBottom: ViewScale(20),
                                   }}
                                   data={this.state.FormDatatype1}
                                   renderItem={this.ListDatamemberCheckout}
@@ -15453,12 +15454,12 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#FFF",
                                   flexDirection: "row",
-                                  paddingBottom: 5,
+                                  paddingBottom: ViewScale(5),
                                 }}
                               >
                                 <FlatList
                                   style={{
-                                    marginBottom: 20,
+                                    marginBottom: ViewScale(20),
                                   }}
                                   data={this.state.FormDatatype1addnress}
                                   renderItem={this.ListDataAddnressCheckout}
@@ -15469,12 +15470,12 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#FFF",
                                   flexDirection: "row",
-                                  paddingBottom: 5,
+                                  paddingBottom: ViewScale(5),
                                 }}
                               >
                                 <FlatList
                                   style={{
-                                    marginBottom: 20,
+                                    marginBottom: ViewScale(20),
                                   }}
                                   data={this.state.FormDatatype1contact}
                                   renderItem={this.ListDataContactCheckout}
@@ -15486,7 +15487,7 @@ class DevlopRegister extends React.Component {
                         })
                       : null}
 
-                    <View style={{ height: 10 }} />
+                    <View style={{ height: ViewScale(10) }} />
                   </ScrollView>
                 )}
                 {this.props.getUser.userDetails.res_result.type === 1 && (
@@ -15497,7 +15498,7 @@ class DevlopRegister extends React.Component {
                             <DropDownItem
                               key={i}
                               style={{
-                                marginHorizontal: 15,
+                                marginHorizontal: ViewScale(15),
                                 backgroundColor: "#FFF",
                               }}
                               contentVisible={false}
@@ -15507,11 +15508,11 @@ class DevlopRegister extends React.Component {
                                 <View style={styles.header}>
                                   <Text
                                     style={{
-                                      fontSize: 22,
+                                      fontSize: ViewScale(22),
                                       color: "#FFF",
                                       flex: 1,
 
-                                      marginHorizontal: 15,
+                                      marginHorizontal: ViewScale(15),
                                     }}
                                   >
                                     {param.title}
@@ -15521,7 +15522,7 @@ class DevlopRegister extends React.Component {
                             >
                               <FlatList
                                 style={{
-                                  marginBottom: 20,
+                                  marginBottom: ViewScale(20),
                                 }}
                                 data={this.state.FormDatatype1}
                                 renderItem={this.ListDataNitiCheckout}
@@ -15529,7 +15530,7 @@ class DevlopRegister extends React.Component {
                               />
                               <FlatList
                                 style={{
-                                  marginBottom: 20,
+                                  marginBottom: ViewScale(20),
                                 }}
                                 data={this.state.FormDatatype1addnress}
                                 renderItem={this.ListDataAddnressCheckout}
@@ -15537,7 +15538,7 @@ class DevlopRegister extends React.Component {
                               />
                               <FlatList
                                 style={{
-                                  marginBottom: 20,
+                                  marginBottom: ViewScale(20),
                                 }}
                                 data={this.state.FormDatatype1contact}
                                 renderItem={this.ListDataContactCheckout}
@@ -15548,7 +15549,7 @@ class DevlopRegister extends React.Component {
                         })
                       : null}
 
-                    <View style={{ height: 10 }} />
+                    <View style={{ height: ViewScale(10) }} />
                   </ScrollView>
                 )}
                 <ScrollView style={{ alignSelf: "center" }}>
@@ -15558,7 +15559,7 @@ class DevlopRegister extends React.Component {
                           <DropDownItem
                             key={i}
                             style={{
-                              marginHorizontal: 15,
+                              marginHorizontal: ViewScale(15),
                               backgroundColor: "#FFF",
                             }}
                             contentVisible={false}
@@ -15568,11 +15569,11 @@ class DevlopRegister extends React.Component {
                               <View style={styles.header}>
                                 <Text
                                   style={{
-                                    fontSize: 22,
+                                    fontSize: ViewScale(22),
                                     color: "#FFF",
                                     flex: 1,
 
-                                    marginHorizontal: 15,
+                                    marginHorizontal: ViewScale(15),
                                   }}
                                 >
                                   {param.title}
@@ -15605,7 +15606,7 @@ class DevlopRegister extends React.Component {
                               >
                                 <Text
                                   style={{
-                                    fontSize: 20,
+                                    fontSize: ViewScale(20),
                                     color: "#163c70",
                                     textAlign: "right",
                                   }}
@@ -15619,7 +15620,7 @@ class DevlopRegister extends React.Component {
                                   style={{
                                     flexDirection: "row",
                                     flexWrap: "wrap",
-                                    marginHorizontal: 35,
+                                    marginHorizontal: ViewScale(35),
                                     width: width * 0.3,
                                     backgroundColor: "#FFF",
                                   }}
@@ -15639,7 +15640,7 @@ class DevlopRegister extends React.Component {
                                           {Data.value === "0" && (
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#2d6dc4",
 
                                                 marginTop: 0,
@@ -15657,7 +15658,7 @@ class DevlopRegister extends React.Component {
                                                 fontSize: 20,
                                                 color: "#2d6dc4",
 
-                                                marginTop: 0,
+                                                marginTop: ViewScale(0),
                                               }}
                                             >
                                               {I18n.t("transalte_exporter")}
@@ -15669,10 +15670,10 @@ class DevlopRegister extends React.Component {
                                           {Data.value === "2" && (
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#2d6dc4",
 
-                                                marginTop: 0,
+                                                marginTop: ViewScale(0),
                                               }}
                                             >
                                               {I18n.t(
@@ -15687,10 +15688,10 @@ class DevlopRegister extends React.Component {
                                           {Data.value === "3" && (
                                             <Text
                                               style={{
-                                                fontSize: 20,
+                                                fontSize: ViewScale(20),
                                                 color: "#2d6dc4",
 
-                                                marginTop: 0,
+                                                marginTop: ViewScale(0),
                                               }}
                                             >
                                               {I18n.t("transalte_Other")}
@@ -15704,10 +15705,10 @@ class DevlopRegister extends React.Component {
                                   <View style={{ flexDirection: "column" }}>
                                     <Text
                                       style={{
-                                        fontSize: 20,
+                                        fontSize: ViewScale(20),
                                         color: "#2d6dc4",
 
-                                        marginTop: 0,
+                                        marginTop: ViewScale(0),
                                       }}
                                     >
                                       {this.state.textbusinessTypeOther}
@@ -15733,7 +15734,7 @@ class DevlopRegister extends React.Component {
                               >
                                 <Text
                                   style={{
-                                    fontSize: 20,
+                                    fontSize: ViewScale(20),
                                     color: "#163c70",
                                     textAlign: "right",
                                   }}
@@ -15765,7 +15766,7 @@ class DevlopRegister extends React.Component {
                                   style={{
                                     flexDirection: "row",
                                     flexWrap: "wrap",
-                                    marginHorizontal: 35,
+                                    marginHorizontal: ViewScale(35),
                                     width: "40%",
                                     backgroundColor: "#FFF",
                                   }}
@@ -15784,10 +15785,10 @@ class DevlopRegister extends React.Component {
                                         <View>
                                           <Text
                                             style={{
-                                              fontSize: 20,
+                                              fontSize: ViewScale(20),
                                               color: "#2d6dc4",
 
-                                              marginTop: 0,
+                                              marginTop: ViewScale(0),
                                             }}
                                           >
                                             {I18n.locale === "th"
@@ -15807,7 +15808,7 @@ class DevlopRegister extends React.Component {
                       })
                     : null}
 
-                  <View style={{ height: 10 }} />
+                  <View style={{ height: ViewScale(10) }} />
                 </ScrollView>
                 {/* สินค้า */}
                 <ScrollView style={{ alignSelf: "center" }}>
@@ -15827,11 +15828,11 @@ class DevlopRegister extends React.Component {
                               <View style={styles.header}>
                                 <Text
                                   style={{
-                                    fontSize: 22,
+                                    fontSize: ViewScale(22),
                                     color: "#FFF",
                                     flex: 1,
 
-                                    marginHorizontal: 15,
+                                    marginHorizontal: ViewScale(15),
                                   }}
                                 >
                                   {param.title}
@@ -15849,7 +15850,7 @@ class DevlopRegister extends React.Component {
                       })
                     : null}
 
-                  <View style={{ height: 10 }} />
+                  <View style={{ height: ViewScale(10) }} />
                 </ScrollView>
                 {this.props.getUser.userDetails.res_result.type === 3 && (
                   <ScrollView style={{ alignSelf: "center" }}>
@@ -15859,7 +15860,7 @@ class DevlopRegister extends React.Component {
                             <DropDownItem
                               key={i}
                               style={{
-                                marginHorizontal: 15,
+                                marginHorizontal: ViewScale(15),
                                 backgroundColor: "#FFF",
                               }}
                               contentVisible={false}
@@ -15869,11 +15870,11 @@ class DevlopRegister extends React.Component {
                                 <View style={styles.header}>
                                   <Text
                                     style={{
-                                      fontSize: 22,
+                                      fontSize: ViewScale(22),
                                       color: "#FFF",
                                       flex: 1,
 
-                                      marginHorizontal: 15,
+                                      marginHorizontal: ViewScale(15),
                                     }}
                                   >
                                     {param.title}
@@ -15885,12 +15886,12 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#FFF",
                                   flexDirection: "row",
-                                  paddingBottom: 5,
+                                  paddingBottom: ViewScale(5),
                                 }}
                               >
                                 <FlatList
                                   style={{
-                                    marginBottom: 20,
+                                    marginBottom: ViewScale(20),
                                   }}
                                   data={this.state.FormDatacompany}
                                   renderItem={this.ListDatamemberCheckout}
@@ -15901,12 +15902,12 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#FFF",
                                   flexDirection: "row",
-                                  paddingBottom: 5,
+                                  paddingBottom: ViewScale(5),
                                 }}
                               >
                                 <FlatList
                                   style={{
-                                    marginBottom: 20,
+                                    marginBottom: ViewScale(20),
                                   }}
                                   data={this.state.FormDatacompanyaddress}
                                   renderItem={this.ListDataAddnressCheckout}
@@ -15917,12 +15918,12 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#FFF",
                                   flexDirection: "row",
-                                  paddingBottom: 5,
+                                  paddingBottom: ViewScale(5),
                                 }}
                               >
                                 <FlatList
                                   style={{
-                                    marginBottom: 20,
+                                    marginBottom: ViewScale(20),
                                   }}
                                   data={this.state.FormDatacompanycantact}
                                   renderItem={this.ListDataContactCheckout}
@@ -15934,7 +15935,7 @@ class DevlopRegister extends React.Component {
                         })
                       : null}
 
-                    <View style={{ height: 25 }} />
+                    <View style={{ height: ViewScale(25) }} />
                   </ScrollView>
                 )}
                 {this.props.getUser.userDetails.res_result.type === 1 && (
@@ -15945,7 +15946,7 @@ class DevlopRegister extends React.Component {
                             <DropDownItem
                               key={i}
                               style={{
-                                marginHorizontal: 15,
+                                marginHorizontal: ViewScale(15),
                                 backgroundColor: "#FFF",
                               }}
                               contentVisible={false}
@@ -15955,11 +15956,11 @@ class DevlopRegister extends React.Component {
                                 <View style={styles.header}>
                                   <Text
                                     style={{
-                                      fontSize: 22,
+                                      fontSize: ViewScale(22),
                                       color: "#FFF",
                                       flex: 1,
 
-                                      marginHorizontal: 15,
+                                      marginHorizontal: ViewScale(15),
                                     }}
                                   >
                                     {param.title}
@@ -15972,7 +15973,7 @@ class DevlopRegister extends React.Component {
                                   backgroundColor: "#FFF",
                                   alignItems: "center",
                                   flexDirection: "row",
-                                  paddingBottom: 5,
+                                  paddingBottom: ViewScale(5),
                                 }}
                               >
                                 <View
@@ -15983,7 +15984,7 @@ class DevlopRegister extends React.Component {
                                 >
                                   <FlatList
                                     style={{
-                                      marginBottom: 20,
+                                      marginBottom: ViewScale(20),
                                     }}
                                     data={this.state.datamember}
                                     renderItem={this.Listmember}
@@ -15996,14 +15997,14 @@ class DevlopRegister extends React.Component {
                         })
                       : null}
 
-                    <View style={{ height: 25 }} />
+                    <View style={{ height: ViewScale(25) }} />
                   </ScrollView>
                 )}
                 {/* นโยบาย  */}
                 <View style={{ alignItems: "center" }}>
                   <CheckBox
                     textStyle={{
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                       color: "#73838f",
                       fontWeight: "normal",
                     }}
@@ -16012,20 +16013,20 @@ class DevlopRegister extends React.Component {
                         style={{
                           backgroundColor: "#FFFFFF",
                           borderWidth: 0.5,
-                          width: 18,
-                          height: 18,
+                          width: ViewScale(18),
+                          height: ViewScale(18),
                           borderColor: "#999999",
-                          borderRadius: 2.6,
-                          marginTop: -20,
+                          borderRadius: ViewScale(2.6),
+                          marginTop: -ViewScale(20),
                         }}
                       />
                     }
                     checkedIcon={
                       <Image
                         style={{
-                          width: 18,
-                          height: 18,
-                          marginTop: -20,
+                          width: ViewScale(18),
+                          height: ViewScale(18),
+                          marginTop: ViewScale(-20),
                         }}
                         source={require("../../image/rrr.png")}
                       />
@@ -16033,13 +16034,13 @@ class DevlopRegister extends React.Component {
                     title={
                       <View
                         style={{
-                          marginHorizontal: 15,
+                          marginHorizontal: ViewScale(15),
                         }}
                       >
                         <View>
                           <Text
                             style={{
-                              fontSize: 20,
+                              fontSize: ViewScale(20),
                               color: "#40536d",
                               textAlign: "center",
                             }}
@@ -16056,7 +16057,7 @@ class DevlopRegister extends React.Component {
                         >
                           <Text
                             style={{
-                              fontSize: 18,
+                              fontSize: ViewScale(18),
                               color: "#2d6dc4",
                               textAlign: "center",
                               textDecorationLine: "underline",
@@ -16096,7 +16097,7 @@ class DevlopRegister extends React.Component {
               top: height * 0.03,
               height: height * 0.7,
               width: width * 0.8,
-              borderRadius: 8,
+              borderRadius: ViewScale(8),
               shadowColor: "#000",
               shadowOffset: {
                 width: 0,
@@ -16112,27 +16113,27 @@ class DevlopRegister extends React.Component {
           >
             <View
               style={{
-                height: Platform.OS === "android" ? 40 : 0,
-                borderRadius: 18,
+                height: Platform.OS === "android" ? ViewScale(40) : ViewScale(0),
+                borderRadius: ViewScale(18),
                 borderWidth: 1,
                 borderColor: "#dadada",
                 flexDirection: "row",
                 alignItems: "center",
-                marginTop: 10,
+                marginTop: ViewScale(10),
               }}
             >
               <Image
                 style={{
-                  width: 24,
-                  height: 24,
+                  width: ViewScale(24),
+                  height: ViewScale(24),
                   backgroundColor: "transparent",
-                  marginLeft: 10,
-                  top: 3,
+                  marginLeft: ViewScale(10),
+                  top: ViewScale(3),
                 }}
                 source={require("../../image/searchbluex.png")}
               />
               <TextInput
-                style={{ fontSize: 20, flex: 1 }}
+                style={{ fontSize: ViewScale(20), flex: 1 }}
                 placeholder={I18n.t("transalte_Bt_sesrch")}
                 placeholderTextColor={"#999999"}
                 onChangeText={(searchTerm) => this.setState({ searchTerm })}
@@ -16150,7 +16151,7 @@ class DevlopRegister extends React.Component {
                   <View
                     style={{
                       flexDirection: "row",
-                      paddingHorizontal: 10,
+                      paddingHorizontal: ViewScale(10),
                       backgroundColor: "#FFF",
                     }}
                   >
@@ -16160,18 +16161,18 @@ class DevlopRegister extends React.Component {
                           style={{
                             backgroundColor: "#FFFFFF",
                             borderWidth: 0.5,
-                            width: 18,
-                            height: 18,
+                            width: ViewScale(18),
+                            height: ViewScale(18),
                             borderColor: "#999999",
-                            borderRadius: 2.6,
+                            borderRadius: ViewScale(2.6),
                           }}
                         />
                       }
                       checkedIcon={
                         <Image
                           style={{
-                            width: 18,
-                            height: 18,
+                            width: ViewScale(18),
+                            height: ViewScale(18),
                           }}
                           source={require("../../image/rrr.png")}
                         />
@@ -16193,9 +16194,9 @@ class DevlopRegister extends React.Component {
                         <Text
                           numberOfLines={1}
                           style={{
-                            fontSize: 20,
+                            fontSize: ViewScale(20),
                             color: "#6f7d91",
-                            marginLeft: 10,
+                            marginLeft: ViewScale(10),
                             width: "100%",
                           }}
                         >
@@ -16215,8 +16216,8 @@ class DevlopRegister extends React.Component {
               }}
               style={{
                 backgroundColor: "#2d6dc4",
-                height: 40,
-                borderRadius: 24,
+                height: ViewScale(40),
+                borderRadius: ViewScale(24),
                 justifyContent: "center",
               }}
             >
@@ -16224,7 +16225,7 @@ class DevlopRegister extends React.Component {
                 style={{
                   color: "#FFFF",
                   textAlign: "center",
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                 }}
               >
                 {I18n.t("translate_Save")}
@@ -16237,14 +16238,14 @@ class DevlopRegister extends React.Component {
           <Overlay
             backdropStyle={{ backgroundColor: "#2d6dc480" }}
             overlayStyle={{
-              borderWidth: 2,
+              borderWidth: ViewScale(2),
               borderColor: "#568ae0",
               // backgroundColor: '#568ae0',
               // top: height * 0.001,
               top: height * 0.03,
               height: height * 0.8,
               width: width * 0.9,
-              borderRadius: 8,
+              borderRadius: ViewScale(8),
               shadowColor: "#000",
               shadowOffset: {
                 width: 0,
@@ -16269,7 +16270,7 @@ class DevlopRegister extends React.Component {
             <ScrollView style={{}}>
               <Image
                 source={{ uri: this.state.ProductPictures_popup }}
-                style={{ width: "100%", height: 230, marginBottom: 20 }}
+                style={{ width: "100%", height: ViewScale(230), marginBottom: ViewScale(20) }}
               />
               <View
                 style={{
@@ -16285,31 +16286,31 @@ class DevlopRegister extends React.Component {
                   // elevation: 5,
                   borderWidth: 0.5,
                   borderColor: "#FFFF",
-                  padding: 10,
+                  padding: ViewScale(10),
                 }}
               >
-                <Text style={{ color: "#163c70", fontSize: 20 }}>
+                <Text style={{ color: "#163c70", fontSize: ViewScale(20) }}>
                   Category / ประเภทสินค้า :
                 </Text>
-                <Text style={{ color: "#2d6dc4", fontSize: 20 }}>
+                <Text style={{ color: "#2d6dc4", fontSize: ViewScale(20) }}>
                   {this.state.ProductCategory_popup}
                 </Text>
-                <Text style={{ color: "#163c70", fontSize: 20 }}>
+                <Text style={{ color: "#163c70", fontSize: ViewScale(20) }}>
                   Sub-Category / ประเภทสินค้าย่อย :
                 </Text>
-                <Text style={{ color: "#2d6dc4", fontSize: 20 }}>
+                <Text style={{ color: "#2d6dc4", fontSize: ViewScale(20) }}>
                   {this.state.ProductSubCategory_popup}
                 </Text>
-                <Text style={{ color: "#163c70", fontSize: 20 }}>
+                <Text style={{ color: "#163c70", fontSize: ViewScale(20) }}>
                   Product Group / กลุ่มสินค้า :
                 </Text>
-                <Text style={{ color: "#2d6dc4", fontSize: 20 }}>
+                <Text style={{ color: "#2d6dc4", fontSize: ViewScale(20) }}>
                   {this.state.ProductGroup_popup}
                 </Text>
               </View>
               <View
                 style={{
-                  marginHorizontal: 10,
+                  marginHorizontal: ViewScale(10),
                   // shadowColor: '#000',
                   // shadowOffset: {
                   //   width: 0,
@@ -16321,25 +16322,25 @@ class DevlopRegister extends React.Component {
                   // elevation: 5,
                   borderWidth: 0.5,
                   borderColor: "#FFFF",
-                  padding: 10,
+                  padding: ViewScale(10),
                 }}
               >
-                <Text style={{ color: "#163c70", fontSize: 20 }}>
+                <Text style={{ color: "#163c70", fontSize: ViewScale(20) }}>
                   ชื่อแบรนด์ :
                 </Text>
-                <Text style={{ color: "#2d6dc4", fontSize: 20 }}>
+                <Text style={{ color: "#2d6dc4", fontSize: ViewScale(20) }}>
                   {this.state.ProductBrandNameTh_popup}
                 </Text>
-                <Text style={{ color: "#163c70", fontSize: 20 }}>
+                <Text style={{ color: "#163c70", fontSize: ViewScale(20) }}>
                   รายละเอียดสินค้า :
                 </Text>
-                <Text style={{ color: "#2d6dc4", fontSize: 20 }}>
+                <Text style={{ color: "#2d6dc4", fontSize: ViewScale(20) }}>
                   {this.state.ProductDescriptionTh_popup}
                 </Text>
               </View>
               <View
                 style={{
-                  marginHorizontal: 10,
+                  marginHorizontal: ViewScale(10),
                   // shadowColor: '#000',
                   // shadowOffset: {
                   //   width: 0,
@@ -16351,19 +16352,19 @@ class DevlopRegister extends React.Component {
                   // elevation: 5,
                   borderWidth: 0.5,
                   borderColor: "#FFFF",
-                  padding: 10,
+                  padding: ViewScale(10),
                 }}
               >
-                <Text style={{ color: "#163c70", fontSize: 20 }}>
+                <Text style={{ color: "#163c70", fontSize: ViewScale(20) }}>
                   Product Brand Name :
                 </Text>
-                <Text style={{ color: "#2d6dc4", fontSize: 20 }}>
+                <Text style={{ color: "#2d6dc4", fontSize: ViewScale(20) }}>
                   {this.state.ProductBrandNameEn_popup}
                 </Text>
-                <Text style={{ color: "#163c70", fontSize: 20 }}>
+                <Text style={{ color: "#163c70", fontSize: ViewScale(20) }}>
                   Product Description :
                 </Text>
-                <Text style={{ color: "#2d6dc4", fontSize: 20 }}>
+                <Text style={{ color: "#2d6dc4", fontSize: ViewScale(20) }}>
                   {this.state.ProductDescriptionEn_popup}
                 </Text>
               </View>
@@ -16402,7 +16403,7 @@ class DevlopRegister extends React.Component {
               top: height * 0.03,
               height: height * 0.7,
               width: width * 0.8,
-              borderRadius: 8,
+              borderRadius: ViewScale(8),
               shadowColor: "#000",
               shadowOffset: {
                 width: 0,
@@ -16418,7 +16419,7 @@ class DevlopRegister extends React.Component {
           >
             <View>
               <Text
-                style={{ textAlign: "center", fontSize: 20, color: "#6f7d91" }}
+                style={{ textAlign: "center", fontSize: ViewScale(20), color: "#6f7d91" }}
               >
                 {I18n.t("transalte_Add_contact_information")}
               </Text>
@@ -16437,23 +16438,23 @@ class DevlopRegister extends React.Component {
                   marginTop: 13,
                   // width: '100%',
                   flex: 1,
-                  height: 35,
+                  height: ViewScale(35),
                   backgroundColor: "#FFFFFF",
                   borderColor: "#cacaca",
                   borderWidth: 1,
-                  borderRadius: 16,
-                  marginLeft: 0,
+                  borderRadius: ViewScale(16),
+                  marginLeft: ViewScale(0),
                   flexDirection: "row",
                   alignItems: "center",
-                  marginHorizontal: 10,
+                  marginHorizontal: ViewScale(10),
                 }}
               >
                 <Image
-                  style={[Styles.Image, { marginTop: 3 }]}
+                  style={[Styles.Image, { marginTop: ViewScale(3) }]}
                   source={require("../../image/searchblue.png")}
                 />
                 <TextInput
-                  style={{ fontSize: 20, flex: 1, color: "#0D0C0C" }}
+                  style={{ fontSize: ViewScale(20), flex: 1, color: "#0D0C0C" }}
                   placeholder={I18n.t("transalte_Enter_ID_card_number")}
                   placeholderTextColor={"#999999"}
                   onChangeText={(searchTerm) => this.setState({ searchTerm })}
@@ -16463,9 +16464,9 @@ class DevlopRegister extends React.Component {
                 style={{
                   flex: 0.4,
                   backgroundColor: "#2d6dc4",
-                  height: 35,
-                  borderRadius: 16,
-                  marginTop: 13,
+                  height: ViewScale(35),
+                  borderRadius: ViewScale(16),
+                  marginTop: ViewScale(13),
                 }}
               >
                 <TouchableOpacity
@@ -16480,7 +16481,7 @@ class DevlopRegister extends React.Component {
                     style={{
                       color: "#FFFF",
                       textAlign: "center",
-                      fontSize: 20,
+                      fontSize: ViewScale(20),
                     }}
                   >
                     {I18n.t("transalte_ButtonSearch")}
@@ -16505,7 +16506,7 @@ class DevlopRegister extends React.Component {
                   <View
                     style={{
                       flexDirection: "row",
-                      paddingHorizontal: 10,
+                      paddingHorizontal: ViewScale(10),
                       backgroundColor: "#FFF",
                     }}
                   >
@@ -16515,18 +16516,18 @@ class DevlopRegister extends React.Component {
                           style={{
                             backgroundColor: "#FFFFFF",
                             borderWidth: 0.5,
-                            width: 18,
-                            height: 18,
+                            width: ViewScale(18),
+                            height: ViewScale(18),
                             borderColor: "#999999",
-                            borderRadius: 2.6,
+                            borderRadius: ViewScale(2.6),
                           }}
                         />
                       }
                       checkedIcon={
                         <Image
                           style={{
-                            width: 18,
-                            height: 18,
+                            width: ViewScale(18),
+                            height: ViewScale(18),
                           }}
                           source={require("../../image/rrr.png")}
                         />
@@ -16551,9 +16552,9 @@ class DevlopRegister extends React.Component {
                           <Text
                             numberOfLines={1}
                             style={{
-                              fontSize: 20,
+                              fontSize: ViewScale(20),
                               color: "#6f7d91",
-                              marginLeft: 10,
+                              marginLeft: ViewScale(10),
                               width: "100%",
                             }}
                           >
@@ -16581,8 +16582,8 @@ class DevlopRegister extends React.Component {
               }}
               style={{
                 backgroundColor: "#2d6dc4",
-                height: 40,
-                borderRadius: 24,
+                height: ViewScale(40),
+                borderRadius: ViewScale(24),
                 justifyContent: "center",
               }}
             >
@@ -16590,7 +16591,7 @@ class DevlopRegister extends React.Component {
                 style={{
                   color: "#FFFF",
                   textAlign: "center",
-                  fontSize: 20,
+                  fontSize: ViewScale(20),
                 }}
               >
                 {I18n.t("translate_Save")}
@@ -16610,7 +16611,7 @@ class DevlopRegister extends React.Component {
               top: height * 0.03,
               height: height * 0.4,
               width: width * 0.8,
-              borderRadius: 8,
+              borderRadius: ViewScale(8),
               shadowColor: "#000",
               shadowOffset: {
                 width: 0,
@@ -16627,18 +16628,18 @@ class DevlopRegister extends React.Component {
             }
           >
             <ScrollView style={{}}>
-              <View style={{ marginTop: 30 }}>
+              <View style={{ marginTop: ViewScale(30) }}>
                 <Text
                   style={{
                     textAlign: "center",
-                    fontSize: 24,
+                    fontSize: ViewScale(24),
                     color: "#20416e",
                   }}
                 >
                   {I18n.t("transalte_Check_participants")}
                 </Text>
               </View>
-              <View style={{ height: 130 }}>
+              <View style={{ height: ViewScale(130) }}>
                 <FlatList
                   scrollEnabled={false}
                   style={{}}
@@ -16650,30 +16651,30 @@ class DevlopRegister extends React.Component {
 
               <View
                 style={{
-                  height: Platform.OS === "android" ? 40 : 40,
-                  borderRadius: 18,
+                  height: Platform.OS === "android" ? ViewScale(40) : ViewScale(40),
+                  borderRadius: ViewScale(18),
                   borderWidth: 1,
                   borderColor: "#dadada",
                   flexDirection: "row",
                   alignItems: "center",
                   // marginTop: 10,
-                  marginBottom: 30,
+                  marginBottom: ViewScale(30),
                 }}
               >
                 <Image
                   style={{
-                    width: 24,
-                    height: 24,
+                    width: ViewScale(24),
+                    height: ViewScale(24),
                     backgroundColor: "transparent",
-                    marginLeft: 10,
-                    top: 3,
+                    marginLeft: ViewScale(10),
+                    top: ViewScale(3),
                   }}
                   source={require("../../image/searchbluex.png")}
                 />
                 <TextInput
                   keyboardType="numeric"
                   style={{
-                    fontSize: 20, 
+                    fontSize: ViewScale(20), 
                     flex: 1,
                     color: "#0D0C0C",
                   }}
@@ -16684,9 +16685,9 @@ class DevlopRegister extends React.Component {
                   }
                 >
                   {this.state.IDnemberCI === undefined ? (
-                    <Text style={{ color: "#0D0C0C", fontSize: 13 }}>{""}</Text>
+                    <Text style={{ color: "#0D0C0C", fontSize: ViewScale(13) }}>{""}</Text>
                   ) : (
-                    <Text style={{ color: "#0D0C0C", fontSize: 13 }}>
+                    <Text style={{ color: "#0D0C0C", fontSize: ViewScale(13) }}>
                       {this.state.IDnemberCI}
                     </Text>
                   )}
@@ -16699,8 +16700,8 @@ class DevlopRegister extends React.Component {
                 }}
                 style={{
                   backgroundColor: "#2d6dc4",
-                  height: 40,
-                  borderRadius: 24,
+                  height: ViewScale(40),
+                  borderRadius: ViewScale(24),
                   justifyContent: "center",
                 }}
               >
@@ -16708,7 +16709,7 @@ class DevlopRegister extends React.Component {
                   style={{
                     color: "#FFFF",
                     textAlign: "center",
-                    fontSize: 20,
+                    fontSize: ViewScale(20),
                   }}
                 >
                   {I18n.t("transalte_Bt_sesrch")}
@@ -16739,16 +16740,16 @@ class DevlopRegister extends React.Component {
                       }}
                       style={{
                         width: width * 0.8,
-                        height: 38,
+                        height: ViewScale(38),
                         backgroundColor: "#f86767",
-                        borderRadius: 21.5,
-                        marginBottom: 10,
-                        marginHorizontal: 40,
+                        borderRadius: ViewScale(21.5),
+                        marginBottom: ViewScale(10),
+                        marginHorizontal: ViewScale(40),
                         justifyContent: "center",
                         alignItems: "center",
                       }}
                     >
-                      <Text style={{ fontSize: 24, color: "#ffffff" }}>
+                      <Text style={{ fontSize: ViewScale(24), color: "#ffffff" }}>
                         {I18n.t("transalte_Edit_Juristic_Information")}
                       </Text>
                     </TouchableOpacity>
@@ -16758,16 +16759,16 @@ class DevlopRegister extends React.Component {
                       }}
                       style={{
                         width: width * 0.8,
-                        height: 38,
+                        height: ViewScale(38),
                         backgroundColor: "#2d6dc4",
-                        borderRadius: 21.5,
-                        marginBottom: 15,
-                        marginHorizontal: 40,
+                        borderRadius: ViewScale(21.5),
+                        marginBottom: ViewScale(15),
+                        marginHorizontal: ViewScale(40),
                         justifyContent: "center",
                         alignItems: "center",
                       }}
                     >
-                      <Text style={{ fontSize: 24, color: "#ffffff" }}>
+                      <Text style={{ fontSize: ViewScale(24), color: "#ffffff" }}>
                         {I18n.t("translate_Next")}
                       </Text>
                     </TouchableOpacity>
@@ -16776,7 +16777,7 @@ class DevlopRegister extends React.Component {
                   <View
                     style={{
                       flexDirection: "row",
-                      marginHorizontal: 40,
+                      marginHorizontal: ViewScale(40),
                     }}
                   >
                     <TouchableOpacity
@@ -16786,13 +16787,13 @@ class DevlopRegister extends React.Component {
                       style={{
                         backgroundColor: "#FFFFFF",
                         borderColor: "#2d6dc4",
-                        height: 40,
+                        height: ViewScale(40),
                         flex: 1,
-                        borderRadius: 24,
+                        borderRadius: ViewScale(24),
                         // marginBottom: 15,
                         borderWidth: 1,
                         justifyContent: "center",
-                        marginHorizontal: 3,
+                        marginHorizontal: ViewScale(3),
                         // flexDirection: 'row',
                         alignItems: "center",
                         display: "flex",
@@ -16804,27 +16805,27 @@ class DevlopRegister extends React.Component {
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          marginHorizontal: 5,
+                          marginHorizontal: ViewScale(5),
                           transform: [{ translateX: -10 }],
                         }}
                       >
                         <Icon
                           name="chevron-left"
-                          size={25}
+                          size={ViewScale(25)}
                           style={{
                             color: "#2d6dc4",
-                            marginTop: 0,
+                            marginTop: ViewScale(0),
                             flex: 0.5,
                           }}
                         />
                         <Text
                           style={{
                             color: "#2d6dc4",
-                            fontSize: 22,
+                            fontSize: ViewScale(22),
 
                             flex: 0.4,
 
-                            marginTop: 0,
+                            marginTop: ViewScale(0),
                           }}
                         >
                           {I18n.t("translate_Back")}
@@ -16841,22 +16842,22 @@ class DevlopRegister extends React.Component {
                       style={{
                         backgroundColor: "#2d6dc4",
                         flex: 1,
-                        height: 40,
-                        borderRadius: 24,
-                        marginBottom: 15,
+                        height: ViewScale(40),
+                        borderRadius: ViewScale(24),
+                        marginBottom: ViewScale(15),
                         justifyContent: "center",
-                        marginHorizontal: 2,
+                        marginHorizontal: ViewScale(2),
                         flexDirection: "row",
                       }}
                     >
                       <Text
                         style={{
                           color: "#FFFFFF",
-                          fontSize: 22,
+                          fontSize: ViewScale(22),
 
                           flex: 1,
                           textAlign: "center",
-                          marginTop: 5.5,
+                          marginTop: ViewScale(5.5),
                         }}
                       >
                         {I18n.t("translate_Save")}
@@ -16877,11 +16878,11 @@ class DevlopRegister extends React.Component {
                       }}
                       style={{
                         width: width * 0.8,
-                        height: 38,
+                        height: ViewScale(38),
                         backgroundColor: "#f86767",
-                        borderRadius: 21.5,
-                        marginBottom: 10,
-                        marginHorizontal: 40,
+                        borderRadius: ViewScale(21.5),
+                        marginBottom: ViewScale(10),
+                        marginHorizontal: ViewScale(40),
                         justifyContent: "center",
                         alignItems: "center",
                       }}
@@ -16893,7 +16894,7 @@ class DevlopRegister extends React.Component {
                     <View
                       style={{
                         flexDirection: "row",
-                        marginHorizontal: 40,
+                        marginHorizontal: ViewScale(40),
                       }}
                     >
                       <TouchableOpacity
@@ -16903,13 +16904,13 @@ class DevlopRegister extends React.Component {
                         style={{
                           backgroundColor: "#FFFFFF",
                           borderColor: "#2d6dc4",
-                          height: 40,
+                          height: ViewScale(40),
                           flex: 1,
-                          borderRadius: 24,
+                          borderRadius: ViewScale(24),
                           // marginBottom: 15,
                           borderWidth: 1,
                           justifyContent: "center",
-                          marginHorizontal: 3,
+                          marginHorizontal: ViewScale(3),
                           // flexDirection: 'row',
                           alignItems: "center",
                           display: "flex",
@@ -16921,27 +16922,27 @@ class DevlopRegister extends React.Component {
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
-                            marginHorizontal: 5,
+                            marginHorizontal: ViewScale(5),
                             transform: [{ translateX: -10 }],
                           }}
                         >
                           <Icon
                             name="chevron-left"
-                            size={25}
+                            size={ViewScale(25)}
                             style={{
                               color: "#2d6dc4",
-                              marginTop: 0,
+                              marginTop: ViewScale(0),
                               flex: 0.5,
                             }}
                           />
                           <Text
                             style={{
                               color: "#2d6dc4",
-                              fontSize: 22,
+                              fontSize: ViewScale(22),
 
                               flex: 0.4,
 
-                              marginTop: 0,
+                              marginTop: ViewScale(0),
                             }}
                           >
                             {I18n.t("translate_Back")}
@@ -16956,34 +16957,34 @@ class DevlopRegister extends React.Component {
                         style={{
                           backgroundColor: "#2d6dc4",
                           flex: 1,
-                          height: 40,
-                          borderRadius: 24,
-                          marginBottom: 15,
+                          height: ViewScale(40),
+                          borderRadius: ViewScale(24),
+                          marginBottom: ViewScale(15),
                           justifyContent: "center",
-                          marginHorizontal: 2,
+                          marginHorizontal: ViewScale(2),
                           flexDirection: "row",
                         }}
                       >
                         <Text
                           style={{
                             color: "#FFFFFF",
-                            fontSize: 22,
+                            fontSize: ViewScale(22),
 
                             flex: 1,
                             textAlign: "center",
-                            marginTop: 5.5,
+                            marginTop: ViewScale(5.5),
                           }}
                         >
                           {I18n.t("translate_Next")}
                         </Text>
                         <Icon
                           name="chevron-right"
-                          size={25}
+                          size={ViewScale(25)}
                           style={{
                             color: "#FFF",
 
                             flex: 0.2,
-                            marginTop: 5.5,
+                            marginTop: ViewScale(5.5),
                           }}
                         />
                       </TouchableOpacity>
@@ -16993,7 +16994,7 @@ class DevlopRegister extends React.Component {
                   <View
                     style={{
                       flexDirection: "row",
-                      marginHorizontal: 40,
+                      marginHorizontal: ViewScale(40),
                     }}
                   >
                     <TouchableOpacity
@@ -17003,13 +17004,13 @@ class DevlopRegister extends React.Component {
                       style={{
                         backgroundColor: "#FFFFFF",
                         borderColor: "#2d6dc4",
-                        height: 40,
+                        height: ViewScale(40),
                         flex: 1,
-                        borderRadius: 24,
+                        borderRadius: ViewScale(24),
                         // marginBottom: 15,
                         borderWidth: 1,
                         justifyContent: "center",
-                        marginHorizontal: 3,
+                        marginHorizontal: ViewScale(3),
                         // flexDirection: 'row',
                         alignItems: "center",
                         display: "flex",
@@ -17021,27 +17022,27 @@ class DevlopRegister extends React.Component {
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          marginHorizontal: 5,
+                          marginHorizontal: ViewScale(5),
                           transform: [{ translateX: -10 }],
                         }}
                       >
                         <Icon
                           name="chevron-left"
-                          size={25}
+                          size={ViewScale(25)}
                           style={{
                             color: "#2d6dc4",
-                            marginTop: 0,
+                            marginTop: ViewScale(0),
                             flex: 0.5,
                           }}
                         />
                         <Text
                           style={{
                             color: "#2d6dc4",
-                            fontSize: 22,
+                            fontSize: ViewScale(22),
 
                             flex: 0.4,
 
-                            marginTop: 0,
+                            marginTop: ViewScale(0),
                           }}
                         >
                           {I18n.t("translate_Back")}
@@ -17057,22 +17058,22 @@ class DevlopRegister extends React.Component {
                       style={{
                         backgroundColor: "#2d6dc4",
                         flex: 1,
-                        height: 40,
-                        borderRadius: 24,
-                        marginBottom: 15,
+                        height: ViewScale(40),
+                        borderRadius: ViewScale(24),
+                        marginBottom: ViewScale(15),
                         justifyContent: "center",
-                        marginHorizontal: 2,
+                        marginHorizontal: ViewScale(2),
                         flexDirection: "row",
                       }}
                     >
                       <Text
                         style={{
                           color: "#FFFFFF",
-                          fontSize: 22,
+                          fontSize: ViewScale(22),
 
                           flex: 1,
                           textAlign: "center",
-                          marginTop: 5.5,
+                          marginTop: ViewScale(5.5),
                         }}
                       >
                         {I18n.t("translate_Save")}
@@ -17099,10 +17100,10 @@ class DevlopRegister extends React.Component {
                           }}
                           style={{
                             backgroundColor: "#04a68a",
-                            marginHorizontal: 35,
-                            height: 38,
-                            borderRadius: 24,
-                            marginBottom: 10,
+                            marginHorizontal: ViewScale(35),
+                            height: ViewScale(38),
+                            borderRadius: ViewScale(24),
+                            marginBottom: ViewScale(10),
                             justifyContent: "center",
                             flexDirection: "row",
                             alignContent: "center",
@@ -17111,18 +17112,18 @@ class DevlopRegister extends React.Component {
                         >
                           <Icon
                             name="add-circle"
-                            size={20}
+                            size={ViewScale(20)}
                             style={{
                               color: "#FFFFFF",
-                              marginTop: 9,
+                              marginTop: ViewScale(9),
                               flex: 0.1,
                             }}
                           />
                           <Text
                             style={{
                               color: "#FFFFFF",
-                              fontSize: 22,
-                              marginTop: 5,
+                              fontSize: ViewScale(22),
+                              marginTop: ViewScale(5),
                             }}
                           >
                             {I18n.t("transalte_add_product")}
@@ -17131,8 +17132,8 @@ class DevlopRegister extends React.Component {
                         <View
                           style={{
                             flexDirection: "row",
-                            marginHorizontal: 40,
-                            marginBottom: 14,
+                            marginHorizontal: ViewScale(40),
+                            marginBottom: ViewScale(14),
                           }}
                         >
                           <TouchableOpacity
@@ -17142,9 +17143,9 @@ class DevlopRegister extends React.Component {
                             style={{
                               backgroundColor: "#FFFFFF",
                               borderColor: "#2d6dc4",
-                              height: 38,
+                              height: ViewScale(38),
                               flex: 1,
-                              borderRadius: 24,
+                              borderRadius: ViewScale(24),
                               // marginBottom: 15,
                               borderWidth: 1,
                               justifyContent: "center",
@@ -17160,27 +17161,27 @@ class DevlopRegister extends React.Component {
                                 display: "flex",
                                 alignItems: "center",
                                 justifyContent: "center",
-                                marginHorizontal: 5,
+                                marginHorizontal: ViewScale(5),
                                 transform: [{ translateX: -10 }],
                               }}
                             >
                               <Icon
                                 name="chevron-left"
-                                size={25}
+                                size={ViewScale(25)}
                                 style={{
                                   color: "#2d6dc4",
-                                  marginTop: 0,
+                                  marginTop: ViewScale(0),
                                   flex: 0.5,
                                 }}
                               />
                               <Text
                                 style={{
                                   color: "#2d6dc4",
-                                  fontSize: 22,
+                                  fontSize: ViewScale(22),
 
                                   flex: 0.4,
 
-                                  marginTop: 0,
+                                  marginTop: ViewScale(0),
                                 }}
                               >
                                 {I18n.t("translate_Back")}
@@ -17195,13 +17196,13 @@ class DevlopRegister extends React.Component {
                             style={{
                               backgroundColor: "#2d6dc4",
                               borderColor: "#2d6dc4",
-                              height: 38,
+                              height: ViewScale(38),
                               flex: 1,
-                              borderRadius: 24,
+                              borderRadius: ViewScale(24),
                               // marginBottom: 15,
 
                               justifyContent: "center",
-                              marginHorizontal: 3,
+                              marginHorizontal: ViewScale(3),
                               // flexDirection: 'row',
                               alignItems: "center",
                               display: "flex",
@@ -17213,18 +17214,18 @@ class DevlopRegister extends React.Component {
                                 display: "flex",
                                 alignItems: "center",
                                 justifyContent: "center",
-                                marginHorizontal: 5,
+                                marginHorizontal: ViewScale(5),
                                 transform: [{ translateX: 10 }],
                               }}
                             >
                               <Text
                                 style={{
                                   color: "#FFF",
-                                  fontSize: 22,
+                                  fontSize: ViewScale(22),
 
                                   flex: 1,
 
-                                  marginTop: 0,
+                                  marginTop: ViewScale(0),
                                   textAlign: "center",
                                 }}
                               >
@@ -17232,10 +17233,10 @@ class DevlopRegister extends React.Component {
                               </Text>
                               <Icon
                                 name="chevron-right"
-                                size={25}
+                                size={ViewScale(25)}
                                 style={{
                                   color: "#FFF",
-                                  marginTop: 0,
+                                  marginTop: ViewScale(0),
                                   flex: 0.3,
                                 }}
                               />
@@ -17256,10 +17257,10 @@ class DevlopRegister extends React.Component {
                               }}
                               style={{
                                 backgroundColor: "#04a68a",
-                                marginHorizontal: 35,
-                                height: 38,
-                                borderRadius: 24,
-                                marginBottom: 10,
+                                marginHorizontal: ViewScale(35),
+                                height: ViewScale(38),
+                                borderRadius: ViewScale(24),
+                                marginBottom: ViewScale(10),
                                 justifyContent: "center",
                                 flexDirection: "row",
                                 alignContent: "center",
@@ -17268,18 +17269,18 @@ class DevlopRegister extends React.Component {
                             >
                               <Icon
                                 name="add-circle"
-                                size={20}
+                                size={ViewScale(20)}
                                 style={{
                                   color: "#FFFFFF",
-                                  marginTop: 9,
+                                  marginTop: ViewScale(9),
                                   flex: 0.1,
                                 }}
                               />
                               <Text
                                 style={{
                                   color: "#FFFFFF",
-                                  fontSize: 22,
-                                  marginTop: 5,
+                                  fontSize: ViewScale(22),
+                                  marginTop: ViewScale(5),
                                 }}
                               >
                                 {I18n.t("transalte_add_product")}
@@ -17290,7 +17291,7 @@ class DevlopRegister extends React.Component {
                             <View
                               style={{
                                 flexDirection: "row",
-                                marginHorizontal: 32,
+                                marginHorizontal: ViewScale(32),
                               }}
                             >
                               <TouchableOpacity
@@ -17300,13 +17301,13 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#FFFFFF",
                                   borderColor: "#2d6dc4",
-                                  height: 38,
+                                  height: ViewScale(38),
                                   width: "30%",
-                                  borderRadius: 24,
+                                  borderRadius: ViewScale(24),
                                   // marginBottom: 15,
                                   borderWidth: 1,
                                   justifyContent: "center",
-                                  marginHorizontal: 3,
+                                  marginHorizontal: ViewScale(3),
                                   // flexDirection: 'row',
                                   alignItems: "center",
                                   display: "flex",
@@ -17318,13 +17319,13 @@ class DevlopRegister extends React.Component {
                                     display: "flex",
                                     alignItems: "center",
                                     justifyContent: "center",
-                                    marginHorizontal: 5,
+                                    marginHorizontal: ViewScale(5),
                                     transform: [{ translateX: -10 }],
                                   }}
                                 >
                                   <Icon
                                     name="chevron-left"
-                                    size={25}
+                                    size={ViewScale(25)}
                                     style={{
                                       color: "#2d6dc4",
                                       // marginTop: 9.1,
@@ -17333,7 +17334,7 @@ class DevlopRegister extends React.Component {
                                   <Text
                                     style={{
                                       color: "#2d6dc4",
-                                      fontSize: 22,
+                                      fontSize: ViewScale(22),
                                       // textAlign: 'left',
                                       // flex: 0.7,
 
@@ -17355,28 +17356,28 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#f86767",
                                   width: "34%",
-                                  height: 38,
-                                  borderRadius: 24,
-                                  marginBottom: 15,
+                                  height: ViewScale(38),
+                                  borderRadius: ViewScale(24),
+                                  marginBottom: ViewScale(15),
                                   justifyContent: "center",
-                                  marginHorizontal: 5,
+                                  marginHorizontal: ViewScale(5),
                                   flexDirection: "row",
                                 }}
                               >
                                 <Icon
                                   name="delete"
-                                  size={18}
+                                  size={ViewScale(18)}
                                   style={{
                                     color: "#FFFFFF",
-                                    marginTop: 9,
+                                    marginTop: ViewScale(9),
                                   }}
                                 />
                                 <Text
                                   style={{
                                     color: "#FFFFFF",
-                                    fontSize: 22,
+                                    fontSize: ViewScale(22),
                                     textAlign: "center",
-                                    marginTop: 5,
+                                    marginTop: ViewScale(5),
                                   }}
                                 >
                                   {I18n.t("transalte_delete_product")}
@@ -17389,31 +17390,31 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#2d6dc4",
                                   width: "30%",
-                                  height: 38,
-                                  borderRadius: 24,
-                                  marginBottom: 15,
+                                  height: ViewScale(38),
+                                  borderRadius: ViewScale(24),
+                                  marginBottom: ViewScale(15),
                                   justifyContent: "center",
-                                  marginHorizontal: 2,
+                                  marginHorizontal: ViewScale(2),
                                   flexDirection: "row",
                                 }}
                               >
                                 <Text
                                   style={{
                                     color: "#FFFFFF",
-                                    fontSize: 22,
+                                    fontSize: ViewScale(22),
                                     textAlign: "right",
                                     flex: 0.5,
-                                    marginTop: 5,
+                                    marginTop: ViewScale(5),
                                   }}
                                 >
                                   {I18n.t("translate_Next")}
                                 </Text>
                                 <Icon
                                   name="chevron-right"
-                                  size={25}
+                                  size={ViewScale(25)}
                                   style={{
                                     color: "#FFFFFF",
-                                    marginTop: 6,
+                                    marginTop: ViewScale(6),
                                     flex: 0.2,
                                   }}
                                 />
@@ -17425,7 +17426,7 @@ class DevlopRegister extends React.Component {
                             <View
                               style={{
                                 flexDirection: "row",
-                                marginBottom: 20,
+                                marginBottom: ViewScale(20),
                               }}
                             >
                               <View
@@ -17434,7 +17435,7 @@ class DevlopRegister extends React.Component {
 
                                   flex: 1,
                                   justifyContent: "center",
-                                  marginHorizontal: 20,
+                                  marginHorizontal: ViewScale(20),
                                 }}
                               >
                                 <TouchableOpacity
@@ -17446,9 +17447,9 @@ class DevlopRegister extends React.Component {
                                     borderWidth: 1,
                                     backgroundColor: "#FFFFFF",
                                     flex: 1,
-                                    height: 38,
-                                    borderRadius: 24,
-                                    marginHorizontal: 5,
+                                    height: ViewScale(38),
+                                    borderRadius: ViewScale(24),
+                                    marginHorizontal: ViewScale(5),
                                     justifyContent: "center",
                                     flexDirection: "row",
                                     alignContent: "center",
@@ -17457,8 +17458,8 @@ class DevlopRegister extends React.Component {
                                   <Text
                                     style={{
                                       color: "#f86969",
-                                      fontSize: 22,
-                                      marginTop: 3.5,
+                                      fontSize: ViewScale(22),
+                                      marginTop: ViewScale(3.5),
                                     }}
                                   >
                                     {I18n.t("translate_Bt_cancel")}
@@ -17473,9 +17474,9 @@ class DevlopRegister extends React.Component {
                                     backgroundColor: "#f86969",
 
                                     flex: 1,
-                                    height: 38,
-                                    borderRadius: 24,
-                                    marginHorizontal: 5,
+                                    height: ViewScale(38),
+                                    borderRadius: ViewScale(24),
+                                    marginHorizontal: ViewScale(5),
                                     justifyContent: "center",
                                     flexDirection: "row",
                                     alignContent: "center",
@@ -17483,18 +17484,18 @@ class DevlopRegister extends React.Component {
                                 >
                                   <Icon
                                     name="delete"
-                                    size={20}
+                                    size={ViewScale(20)}
                                     style={{
                                       color: "#FFFFFF",
                                       flex: 0.3,
-                                      marginTop: 9,
+                                      marginTop: ViewScale(9),
                                     }}
                                   />
                                   <Text
                                     style={{
                                       color: "#FFFFFF",
-                                      fontSize: 22,
-                                      marginTop: 3.5,
+                                      fontSize: ViewScale(22),
+                                      marginTop: ViewScale(3.5),
                                     }}
                                   >
                                     {I18n.t("transalte_delete_product")}
@@ -17513,8 +17514,8 @@ class DevlopRegister extends React.Component {
                       <View
                         style={{
                           flexDirection: "row",
-                          marginHorizontal: 32,
-                          marginTop: 20,
+                          marginHorizontal: ViewScale(32),
+                          marginTop: ViewScale(20),
                         }}
                       >
                         <TouchableOpacity
@@ -17524,13 +17525,13 @@ class DevlopRegister extends React.Component {
                           style={{
                             backgroundColor: "#FFFFFF",
                             borderColor: "#2d6dc4",
-                            height: 38,
+                            height: ViewScale(38),
                             flex: 1,
-                            borderRadius: 24,
+                            borderRadius: ViewScale(24),
                             // marginBottom: 15,
                             borderWidth: 1,
                             justifyContent: "center",
-                            marginHorizontal: 3,
+                            marginHorizontal: ViewScale(3),
                             // flexDirection: 'row',
                             alignItems: "center",
                             display: "flex",
@@ -17542,27 +17543,27 @@ class DevlopRegister extends React.Component {
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
-                              marginHorizontal: 5,
+                              marginHorizontal: ViewScale(5),
                               transform: [{ translateX: -10 }],
                             }}
                           >
                             <Icon
                               name="chevron-left"
-                              size={25}
+                              size={ViewScale(25)}
                               style={{
                                 color: "#2d6dc4",
-                                marginTop: 0,
+                                marginTop: ViewScale(0),
                                 flex: 0.5,
                               }}
                             />
                             <Text
                               style={{
                                 color: "#2d6dc4",
-                                fontSize: 22,
+                                fontSize: ViewScale(22),
 
                                 flex: 0.4,
 
-                                marginTop: 0,
+                                marginTop: ViewScale(0),
                               }}
                             >
                               {I18n.t("translate_Back")}
@@ -17579,20 +17580,20 @@ class DevlopRegister extends React.Component {
                           style={{
                             backgroundColor: "#2d6dc4",
                             flex: 1,
-                            height: 38,
-                            borderRadius: 24,
-                            marginBottom: 15,
+                            height: ViewScale(38),
+                            borderRadius: ViewScale(24),
+                            marginBottom: ViewScale(15),
                             justifyContent: "center",
-                            marginHorizontal: 2,
+                            marginHorizontal: ViewScale(2),
                             flexDirection: "row",
                           }}
                         >
                           <Text
                             style={{
                               color: "#FFFFFF",
-                              fontSize: 22,
+                              fontSize: ViewScale(22),
                               flex: 0.9,
-                              marginTop: 5,
+                              marginTop: ViewScale(5),
 
                               textAlign: "center",
                             }}
@@ -17605,8 +17606,8 @@ class DevlopRegister extends React.Component {
                       <View
                         style={{
                           flexDirection: "row",
-                          marginHorizontal: 32,
-                          marginTop: 20,
+                          marginHorizontal: ViewScale(32),
+                          marginTop: ViewScale(20),
                         }}
                       >
                         <TouchableOpacity
@@ -17619,13 +17620,13 @@ class DevlopRegister extends React.Component {
                           style={{
                             backgroundColor: "#FFFFFF",
                             borderColor: "#2d6dc4",
-                            height: 38,
+                            height: ViewScale(38),
                             flex: 1,
-                            borderRadius: 24,
+                            borderRadius: ViewScale(24),
                             // marginBottom: 15,
                             borderWidth: 1,
                             justifyContent: "center",
-                            marginHorizontal: 3,
+                            marginHorizontal: ViewScale(3),
                             // flexDirection: 'row',
                             alignItems: "center",
                             display: "flex",
@@ -17637,27 +17638,27 @@ class DevlopRegister extends React.Component {
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
-                              marginHorizontal: 5,
+                              marginHorizontal: ViewScale(5),
                               transform: [{ translateX: -10 }],
                             }}
                           >
                             <Icon
                               name="chevron-left"
-                              size={25}
+                              size={ViewScale(25)}
                               style={{
                                 color: "#2d6dc4",
-                                marginTop: 0,
+                                marginTop: ViewScale(0),
                                 flex: 0.5,
                               }}
                             />
                             <Text
                               style={{
                                 color: "#2d6dc4",
-                                fontSize: 22,
+                                fontSize: ViewScale(22),
 
                                 flex: 0.4,
 
-                                marginTop: 0,
+                                marginTop: ViewScale(0),
                               }}
                             >
                               {I18n.t("translate_Back")}
@@ -17676,20 +17677,20 @@ class DevlopRegister extends React.Component {
                           style={{
                             backgroundColor: "#2d6dc4",
                             flex: 1,
-                            height: 38,
-                            borderRadius: 24,
-                            marginBottom: 15,
+                            height: ViewScale(38),
+                            borderRadius: ViewScale(24),
+                            marginBottom: ViewScale(15),
                             justifyContent: "center",
-                            marginHorizontal: 2,
+                            marginHorizontal: ViewScale(2),
                             flexDirection: "row",
                           }}
                         >
                           <Text
                             style={{
                               color: "#FFFFFF",
-                              fontSize: 22,
+                              fontSize: ViewScale(22),
                               flex: 0.9,
-                              marginTop: 5,
+                              marginTop: ViewScale(5),
 
                               textAlign: "center",
                             }}
@@ -17722,23 +17723,23 @@ class DevlopRegister extends React.Component {
                                 }}
                                 style={{
                                   backgroundColor: "#04a68a",
-                                  marginHorizontal: 35,
-                                  height: 38,
-                                  borderRadius: 24,
-                                  marginBottom: 10,
+                                  marginHorizontal: ViewScale(35),
+                                  height: ViewScale(38),
+                                  borderRadius: ViewScale(24),
+                                  marginBottom: ViewScale(10),
                                   justifyContent: "center",
                                   flexDirection: "row",
                                   alignContent: "center",
                                   width: width * 0.8,
                                 }}
                               >
-                                <View style={{ marginHorizontal: 6 }}>
+                                <View style={{ marginHorizontal: ViewScale(6) }}>
                                   <Icon
                                     name="add-circle"
-                                    size={20}
+                                    size={ViewScale(20)}
                                     style={{
                                       color: "#FFFFFF",
-                                      marginTop: 9,
+                                      marginTop: ViewScale(9),
                                       // flex: 0.1,
                                       // borderWidth:1
                                     }}
@@ -17748,8 +17749,8 @@ class DevlopRegister extends React.Component {
                                   <Text
                                     style={{
                                       color: "#FFFFFF",
-                                      fontSize: 22,
-                                      marginTop: 5,
+                                      fontSize: ViewScale(22),
+                                      marginTop: ViewScale(5),
                                     }}
                                   >
                                     {I18n.t(
@@ -17769,10 +17770,10 @@ class DevlopRegister extends React.Component {
                             }}
                             style={{
                               backgroundColor: "#04a68a",
-                              marginHorizontal: 35,
-                              height: 38,
-                              borderRadius: 24,
-                              marginBottom: 10,
+                              marginHorizontal: ViewScale(35),
+                              height: ViewScale(38),
+                              borderRadius: ViewScale(24),
+                              marginBottom: ViewScale(10),
                               justifyContent: "center",
                               flexDirection: "row",
                               alignContent: "center",
@@ -17781,10 +17782,10 @@ class DevlopRegister extends React.Component {
                           >
                             <Icon
                               name="add-circle"
-                              size={20}
+                              size={ViewScale(20)}
                               style={{
                                 color: "#FFFFFF",
-                                marginTop: 9,
+                                marginTop: ViewScale(9),
                                 flex: 0.1,
                               }}
                             />
@@ -17792,8 +17793,8 @@ class DevlopRegister extends React.Component {
                             <Text
                               style={{
                                 color: "#FFFFFF",
-                                fontSize: 22,
-                                marginTop: 5,
+                                fontSize: ViewScale(22),
+                                marginTop: ViewScale(5),
                               }}
                             >
                               {I18n.t("transalte_Add_contact_information_new")}
@@ -17804,8 +17805,8 @@ class DevlopRegister extends React.Component {
                         <View
                           style={{
                             flexDirection: "row",
-                            marginHorizontal: 40,
-                            marginBottom: 14,
+                            marginHorizontal: ViewScale(40),
+                            marginBottom: ViewScale(14),
                           }}
                         >
                           <TouchableOpacity
@@ -17815,13 +17816,13 @@ class DevlopRegister extends React.Component {
                             style={{
                               backgroundColor: "#FFFFFF",
                               borderColor: "#2d6dc4",
-                              height: 38,
+                              height: ViewScale(38),
                               flex: 1,
-                              borderRadius: 24,
+                              borderRadius: ViewScale(24),
                               // marginBottom: 15,
                               borderWidth: 1,
                               justifyContent: "center",
-                              marginHorizontal: 3,
+                              marginHorizontal: ViewScale(3),
                               // flexDirection: 'row',
                               alignItems: "center",
                               display: "flex",
@@ -17833,27 +17834,27 @@ class DevlopRegister extends React.Component {
                                 display: "flex",
                                 alignItems: "center",
                                 justifyContent: "center",
-                                marginHorizontal: 5,
+                                marginHorizontal: ViewScale(5),
                                 transform: [{ translateX: -10 }],
                               }}
                             >
                               <Icon
                                 name="chevron-left"
-                                size={25}
+                                size={ViewScale(25)}
                                 style={{
                                   color: "#2d6dc4",
-                                  marginTop: 0,
+                                  marginTop: ViewScale(0),
                                   flex: 0.5,
                                 }}
                               />
                               <Text
                                 style={{
                                   color: "#2d6dc4",
-                                  fontSize: 22,
+                                  fontSize: ViewScale(22),
 
                                   flex: 0.4,
 
-                                  marginTop: 0,
+                                  marginTop: ViewScale(0),
                                 }}
                               >
                                 {I18n.t("translate_Back")}
@@ -17892,7 +17893,7 @@ class DevlopRegister extends React.Component {
                                   style={{
                                     backgroundColor: "#2d6dc4",
                                     borderColor: "#2d6dc4",
-                                    height: 38,
+                                    height: ViewScale(38),
                                     flex: 1,
                                     borderRadius: 24,
                                     // marginBottom: 15,
@@ -17910,18 +17911,18 @@ class DevlopRegister extends React.Component {
                                       display: "flex",
                                       alignItems: "center",
                                       justifyContent: "center",
-                                      marginHorizontal: 5,
+                                      marginHorizontal: ViewScale(5),
                                       transform: [{ translateX: 10 }],
                                     }}
                                   >
                                     <Text
                                       style={{
                                         color: "#FFF",
-                                        fontSize: 22,
+                                        fontSize: ViewScale(22),
 
                                         flex: 1,
 
-                                        marginTop: 0,
+                                        marginTop: ViewScale(0),
                                         textAlign: "center",
                                       }}
                                     >
@@ -17931,10 +17932,10 @@ class DevlopRegister extends React.Component {
                                     </Text>
                                     <Icon
                                       name="chevron-right"
-                                      size={25}
+                                      size={ViewScale(25)}
                                       style={{
                                         color: "#FFF",
-                                        marginTop: 0,
+                                        marginTop: ViewScale(0),
                                         flex: 0.3,
                                       }}
                                     />
@@ -17974,13 +17975,13 @@ class DevlopRegister extends React.Component {
                                   style={{
                                     backgroundColor: "#2d6dc4",
                                     borderColor: "#2d6dc4",
-                                    height: 38,
+                                    height: ViewScale(38),
                                     flex: 1,
-                                    borderRadius: 24,
+                                    borderRadius: ViewScale(24),
                                     // marginBottom: 15,
 
                                     justifyContent: "center",
-                                    marginHorizontal: 3,
+                                    marginHorizontal: ViewScale(3),
                                     // flexDirection: 'row',
                                     alignItems: "center",
                                     display: "flex",
@@ -17992,18 +17993,18 @@ class DevlopRegister extends React.Component {
                                       display: "flex",
                                       alignItems: "center",
                                       justifyContent: "center",
-                                      marginHorizontal: 5,
+                                      marginHorizontal: ViewScale(5),
                                       transform: [{ translateX: 10 }],
                                     }}
                                   >
                                     <Text
                                       style={{
                                         color: "#FFF",
-                                        fontSize: 22,
+                                        fontSize: ViewScale(22),
 
                                         flex: 1,
 
-                                        marginTop: 0,
+                                        marginTop: ViewScale(0),
                                         textAlign: "center",
                                       }}
                                     >
@@ -18013,10 +18014,10 @@ class DevlopRegister extends React.Component {
                                     </Text>
                                     <Icon
                                       name="chevron-right"
-                                      size={25}
+                                      size={ViewScale(25)}
                                       style={{
                                         color: "#FFF",
-                                        marginTop: 0,
+                                        marginTop: ViewScale(0),
                                         flex: 0.3,
                                       }}
                                     />
@@ -18034,13 +18035,13 @@ class DevlopRegister extends React.Component {
                               style={{
                                 backgroundColor: "#2d6dc4",
                                 borderColor: "#2d6dc4",
-                                height: 38,
+                                height: ViewScale(38),
                                 flex: 1,
-                                borderRadius: 24,
+                                borderRadius: ViewScale(24),
                                 // marginBottom: 15,
 
                                 justifyContent: "center",
-                                marginHorizontal: 3,
+                                marginHorizontal: ViewScale(3),
                                 // flexDirection: 'row',
                                 alignItems: "center",
                                 display: "flex",
@@ -18052,18 +18053,18 @@ class DevlopRegister extends React.Component {
                                   display: "flex",
                                   alignItems: "center",
                                   justifyContent: "center",
-                                  marginHorizontal: 5,
+                                  marginHorizontal: ViewScale(5),
                                   transform: [{ translateX: 10 }],
                                 }}
                               >
                                 <Text
                                   style={{
                                     color: "#FFF",
-                                    fontSize: 22,
+                                    fontSize: ViewScale(22),
 
                                     flex: 1,
 
-                                    marginTop: 0,
+                                    marginTop: ViewScale(0),
                                     textAlign: "center",
                                   }}
                                 >
@@ -18071,10 +18072,10 @@ class DevlopRegister extends React.Component {
                                 </Text>
                                 <Icon
                                   name="chevron-right"
-                                  size={25}
+                                  size={ViewScale(25)}
                                   style={{
                                     color: "#FFF",
-                                    marginTop: 0,
+                                    marginTop: ViewScale(0),
                                     flex: 0.3,
                                   }}
                                 />
@@ -18098,10 +18099,10 @@ class DevlopRegister extends React.Component {
                                 }}
                                 style={{
                                   backgroundColor: "#04a68a",
-                                  marginHorizontal: 35,
-                                  height: 38,
-                                  borderRadius: 24,
-                                  marginBottom: 10,
+                                  marginHorizontal: ViewScale(35),
+                                  height: ViewScale(38),
+                                  borderRadius: ViewScale(24),
+                                  marginBottom: ViewScale(10),
                                   justifyContent: "center",
                                   flexDirection: "row",
                                   alignContent: "center",
@@ -18110,18 +18111,18 @@ class DevlopRegister extends React.Component {
                               >
                                 <Icon
                                   name="add-circle"
-                                  size={20}
+                                  size={ViewScale(20)}
                                   style={{
                                     color: "#FFFFFF",
-                                    marginTop: 9,
+                                    marginTop: ViewScale(9),
                                     flex: 0.1,
                                   }}
                                 />
                                 <Text
                                   style={{
                                     color: "#FFFFFF",
-                                    fontSize: 22,
-                                    marginTop: 5,
+                                    fontSize: ViewScale(22),
+                                    marginTop: ViewScale(5),
                                   }}
                                 >
                                   {I18n.t("transalte_add_company")}
@@ -18135,10 +18136,10 @@ class DevlopRegister extends React.Component {
                                 }}
                                 style={{
                                   backgroundColor: "#04a68a",
-                                  marginHorizontal: 35,
-                                  height: 38,
-                                  borderRadius: 24,
-                                  marginBottom: 10,
+                                  marginHorizontal: ViewScale(35),
+                                  height: ViewScale(38),
+                                  borderRadius: ViewScale(24),
+                                  marginBottom: ViewScale(10),
                                   justifyContent: "center",
                                   flexDirection: "row",
                                   alignContent: "center",
@@ -18147,18 +18148,18 @@ class DevlopRegister extends React.Component {
                               >
                                 <Icon
                                   name="add-circle"
-                                  size={20}
+                                  size={ViewScale(20)}
                                   style={{
                                     color: "#FFFFFF",
-                                    marginTop: 9,
+                                    marginTop: ViewScale(9),
                                     flex: 0.2,
                                   }}
                                 />
                                 <Text
                                   style={{
                                     color: "#FFFFFF",
-                                    fontSize: 22,
-                                    marginTop: 5,
+                                    fontSize: ViewScale(22),
+                                    marginTop: ViewScale(5),
                                   }}
                                 >
                                   {I18n.t(
@@ -18172,7 +18173,7 @@ class DevlopRegister extends React.Component {
                             <View
                               style={{
                                 flexDirection: "row",
-                                marginHorizontal: 32,
+                                marginHorizontal: ViewScale(32),
                               }}
                             >
                               <TouchableOpacity
@@ -18182,13 +18183,13 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#FFFFFF",
                                   borderColor: "#2d6dc4",
-                                  height: 38,
+                                  height: ViewScale(38),
                                   width: "30%",
-                                  borderRadius: 24,
+                                  borderRadius: ViewScale(24),
                                   // marginBottom: 15,
                                   borderWidth: 1,
                                   justifyContent: "center",
-                                  marginHorizontal: 3,
+                                  marginHorizontal: ViewScale(3),
                                   // flexDirection: 'row',
                                   alignItems: "center",
                                   display: "flex",
@@ -18200,13 +18201,13 @@ class DevlopRegister extends React.Component {
                                     display: "flex",
                                     alignItems: "center",
                                     justifyContent: "center",
-                                    marginHorizontal: 5,
+                                    marginHorizontal: ViewScale(5),
                                     transform: [{ translateX: -10 }],
                                   }}
                                 >
                                   <Icon
                                     name="chevron-left"
-                                    size={25}
+                                    size={ViewScale(25)}
                                     style={{
                                       color: "#2d6dc4",
                                       // marginTop: 9.1,
@@ -18215,7 +18216,7 @@ class DevlopRegister extends React.Component {
                                   <Text
                                     style={{
                                       color: "#2d6dc4",
-                                      fontSize: 22,
+                                      fontSize: ViewScale(22),
                                       // textAlign: 'left',
                                       // flex: 0.7,
 
@@ -18239,28 +18240,28 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#f86767",
                                   width: "34%",
-                                  height: 38,
-                                  borderRadius: 24,
-                                  marginBottom: 15,
+                                  height: ViewScale(38),
+                                  borderRadius: ViewScale(24),
+                                  marginBottom: ViewScale(15),
                                   justifyContent: "center",
-                                  marginHorizontal: 5,
+                                  marginHorizontal: ViewScale(5),
                                   flexDirection: "row",
                                 }}
                               >
                                 <Icon
                                   name="delete"
-                                  size={18}
+                                  size={ViewScale(18)}
                                   style={{
                                     color: "#FFFFFF",
-                                    marginTop: 9,
+                                    marginTop: ViewScale(9),
                                   }}
                                 />
                                 <Text
                                   style={{
                                     color: "#FFFFFF",
-                                    fontSize: 22,
+                                    fontSize: ViewScale(22),
                                     textAlign: "center",
-                                    marginTop: 5,
+                                    marginTop: ViewScale(5),
                                   }}
                                 >
                                   {I18n.t("transalte_delete_participant")}
@@ -18274,31 +18275,31 @@ class DevlopRegister extends React.Component {
                                 style={{
                                   backgroundColor: "#2d6dc4",
                                   width: "30%",
-                                  height: 38,
-                                  borderRadius: 24,
-                                  marginBottom: 15,
+                                  height: ViewScale(38),
+                                  borderRadius: ViewScale(24),
+                                  marginBottom: ViewScale(15),
                                   justifyContent: "center",
-                                  marginHorizontal: 2,
+                                  marginHorizontal: ViewScale(2),
                                   flexDirection: "row",
                                 }}
                               >
                                 <Text
                                   style={{
                                     color: "#FFFFFF",
-                                    fontSize: 22,
+                                    fontSize: ViewScale(22),
                                     textAlign: "right",
                                     flex: 0.5,
-                                    marginTop: 5,
+                                    marginTop: ViewScale(5),
                                   }}
                                 >
                                   {I18n.t("translate_Next")}
                                 </Text>
                                 <Icon
                                   name="chevron-right"
-                                  size={25}
+                                  size={ViewScale(25)}
                                   style={{
                                     color: "#FFFFFF",
-                                    marginTop: 6,
+                                    marginTop: ViewScale(6),
                                     flex: 0.2,
                                   }}
                                 />
@@ -18310,7 +18311,7 @@ class DevlopRegister extends React.Component {
                             <View
                               style={{
                                 flexDirection: "row",
-                                marginBottom: 20,
+                                marginBottom: ViewScale(20),
                               }}
                             >
                               <View
@@ -18319,7 +18320,7 @@ class DevlopRegister extends React.Component {
 
                                   flex: 1,
                                   justifyContent: "center",
-                                  marginHorizontal: 20,
+                                  marginHorizontal: ViewScale(20),
                                 }}
                               >
                                 <TouchableOpacity
@@ -18331,9 +18332,9 @@ class DevlopRegister extends React.Component {
                                     borderWidth: 1,
                                     backgroundColor: "#FFFFFF",
                                     flex: 1,
-                                    height: 38,
-                                    borderRadius: 24,
-                                    marginHorizontal: 5,
+                                    height: ViewScale(38),
+                                    borderRadius: ViewScale(24),
+                                    marginHorizontal: ViewScale(5),
                                     justifyContent: "center",
                                     flexDirection: "row",
                                     alignContent: "center",
@@ -18342,8 +18343,8 @@ class DevlopRegister extends React.Component {
                                   <Text
                                     style={{
                                       color: "#f86969",
-                                      fontSize: 22,
-                                      marginTop: 3.5,
+                                      fontSize: ViewScale(22),
+                                      marginTop: ViewScale(3.5),
                                     }}
                                   >
                                     {I18n.t("translate_Bt_cancel")}
@@ -18358,9 +18359,9 @@ class DevlopRegister extends React.Component {
                                     backgroundColor: "#f86969",
 
                                     flex: 1,
-                                    height: 38,
-                                    borderRadius: 24,
-                                    marginHorizontal: 5,
+                                    height: ViewScale(38),
+                                    borderRadius: ViewScale(24),
+                                    marginHorizontal: ViewScale(5),
                                     justifyContent: "center",
                                     flexDirection: "row",
                                     alignContent: "center",
@@ -18368,18 +18369,18 @@ class DevlopRegister extends React.Component {
                                 >
                                   <Icon
                                     name="delete"
-                                    size={20}
+                                    size={ViewScale(20)}
                                     style={{
                                       color: "#FFFFFF",
                                       flex: 0.3,
-                                      marginTop: 9,
+                                      marginTop: ViewScale(9),
                                     }}
                                   />
                                   <Text
                                     style={{
                                       color: "#FFFFFF",
-                                      fontSize: 22,
-                                      marginTop: 3.5,
+                                      fontSize: ViewScale(22),
+                                      marginTop: ViewScale(3.5),
                                     }}
                                   >
                                     {I18n.t("transalte_delete_participant")}
@@ -18396,8 +18397,8 @@ class DevlopRegister extends React.Component {
                   <View
                     style={{
                       flexDirection: "row",
-                      marginHorizontal: 32,
-                      marginTop: 0,
+                      marginHorizontal: ViewScale(32),
+                      marginTop: ViewScale(0),
                     }}
                   >
                     <TouchableOpacity
@@ -18407,13 +18408,13 @@ class DevlopRegister extends React.Component {
                       style={{
                         backgroundColor: "#FFFFFF",
                         borderColor: "#2d6dc4",
-                        height: 38,
+                        height: ViewScale(38),
                         flex: 1,
-                        borderRadius: 24,
+                        borderRadius: ViewScale(24),
                         // marginBottom: 15,
                         borderWidth: 1,
                         justifyContent: "center",
-                        marginHorizontal: 3,
+                        marginHorizontal: ViewScale(3),
                         // flexDirection: 'row',
                         alignItems: "center",
                         display: "flex",
@@ -18425,27 +18426,27 @@ class DevlopRegister extends React.Component {
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          marginHorizontal: 5,
+                          marginHorizontal: ViewScale(5),
                           transform: [{ translateX: -10 }],
                         }}
                       >
                         <Icon
                           name="chevron-left"
-                          size={25}
+                          size={ViewScale(25)}
                           style={{
                             color: "#2d6dc4",
-                            marginTop: 0,
+                            marginTop: ViewScale(0),
                             flex: 0.5,
                           }}
                         />
                         <Text
                           style={{
                             color: "#2d6dc4",
-                            fontSize: 22,
+                            fontSize: ViewScale(22),
 
                             flex: 0.4,
 
-                            marginTop: 0,
+                            marginTop: ViewScale(0),
                           }}
                         >
                           {I18n.t("translate_Back")}
@@ -18462,20 +18463,20 @@ class DevlopRegister extends React.Component {
                       style={{
                         backgroundColor: "#2d6dc4",
                         flex: 1,
-                        height: 38,
-                        borderRadius: 24,
-                        marginBottom: 15,
+                        height: ViewScale(38),
+                        borderRadius: ViewScale(24),
+                        marginBottom: ViewScale(15),
                         justifyContent: "center",
-                        marginHorizontal: 2,
+                        marginHorizontal: ViewScale(2),
                         flexDirection: "row",
                       }}
                     >
                       <Text
                         style={{
                           color: "#FFFFFF",
-                          fontSize: 22,
+                          fontSize: ViewScale(22),
                           flex: 0.9,
-                          marginTop: 5,
+                          marginTop: ViewScale(5),
 
                           textAlign: "center",
                         }}
@@ -18489,11 +18490,11 @@ class DevlopRegister extends React.Component {
             )}
           </View>
         ) : (
-          <View style={{ marginTop: -9 }}>
+          <View style={{ marginTop: ViewScale(-9) }}>
             <View
               style={{
-                marginHorizontal: 25,
-                marginBottom: 10,
+                marginHorizontal: ViewScale(25),
+                marginBottom: ViewScale(10),
               }}
             >
               <TouchableOpacity
@@ -18504,8 +18505,8 @@ class DevlopRegister extends React.Component {
                   backgroundColor: "#FFFFFF",
                   justifyContent: "center",
                   borderColor: "#2d6dc4",
-                  height: 40,
-                  borderRadius: 24,
+                  height: ViewScale(40),
+                  borderRadius: ViewScale(24),
                   borderWidth: 1,
                   flexDirection: "row",
                 }}
@@ -18513,7 +18514,7 @@ class DevlopRegister extends React.Component {
                 <View style={{ justifyContent: "center" }}>
                   <Icon
                     name="keyboard-arrow-left"
-                    size={25}
+                    size={ViewScale(25)}
                     style={{ color: "#2d6dc4" }}
                   />
                 </View>
@@ -18521,8 +18522,8 @@ class DevlopRegister extends React.Component {
                   <Text
                     style={{
                       textAlign: "center",
-                      right: 12,
-                      fontSize: 22,
+                      right: ViewScale(12),
+                      fontSize: ViewScale(22),
                       color: "#2d6dc4",
                     }}
                   >
@@ -18535,9 +18536,9 @@ class DevlopRegister extends React.Component {
             {/* ปุ่มยืนยัน */}
             <View
               style={{
-                marginHorizontal: 25,
+                marginHorizontal: ViewScale(25),
 
-                marginBottom: 15,
+                marginBottom: ViewScale(15),
               }}
             >
               <TouchableOpacity
@@ -18547,8 +18548,8 @@ class DevlopRegister extends React.Component {
                 style={{
                   backgroundColor: "#2d6dc4",
 
-                  borderRadius: 24,
-                  height: 40,
+                  borderRadius: ViewScale(24),
+                  height: ViewScale(40),
                   justifyContent: "center",
                 }}
               >
@@ -18556,7 +18557,7 @@ class DevlopRegister extends React.Component {
                   style={{
                     textAlign: "center",
 
-                    fontSize: 22,
+                    fontSize: ViewScale(22),
                     color: "#FFFFFF",
                   }}
                 >
@@ -18597,18 +18598,18 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: "cover",
     justifyContent: "center",
-    height: 110,
+    height: ViewScale(110),
   },
   text: {
     color: "white",
-    fontSize: 42,
+    fontSize: ViewScale(42),
     fontWeight: "bold",
     textAlign: "center",
     backgroundColor: "#000000a0",
   },
   header: {
     width: "100%",
-    paddingVertical: 5,
+    paddingVertical: ViewScale(5),
     // paddingHorizontal: 12,
     flexWrap: "wrap",
     flexDirection: "row",
@@ -18619,26 +18620,26 @@ const styles = StyleSheet.create({
 });
 const pickerSelectStyles2 = StyleSheet.create({
   inputIOS: {
-    fontSize: 23,
+    fontSize: ViewScale(23),
     color: "#73838f",
     // paddingHorizontal: 10,
     justifyContent: "center",
     borderWidth: 1,
-    marginHorizontal: 10,
-    paddingBottom: 5,
+    marginHorizontal: ViewScale(10),
+    paddingBottom: ViewScale(5),
     flex: 0.8,
     width: "100%",
   },
   inputAndroid: {
-    height: 40,
-    fontSize: 23,
+    height: ViewScale(40),
+    fontSize: ViewScale(23),
     color: "#73838f",
     fontWeight: "normal",
     fontFamily: "PSL Kittithada Pro",
     width: "100%",
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    paddingRight: 70,
+    paddingHorizontal: ViewScale(10),
+    paddingVertical: ViewScale(8),
+    paddingRight: ViewScale(70),
   },
   inputMore: {
     color: "red",

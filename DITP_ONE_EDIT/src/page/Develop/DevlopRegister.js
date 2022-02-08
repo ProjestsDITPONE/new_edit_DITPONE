@@ -16115,6 +16115,7 @@ class DevlopRegister extends React.Component {
               style={{
                 height: Platform.OS === "android" ? ViewScale(40) : ViewScale(0),
                 borderRadius: ViewScale(18),
+                height: ViewScale(35),
                 borderWidth: 1,
                 borderColor: "#dadada",
                 flexDirection: "row",

@@ -847,8 +847,8 @@ class TradeActivitiesScreen extends React.Component {
             //   elevation: 1,
             // }}
             containerStyle={{
-              marginBottom: 8,
-              borderRadius: 10,
+              marginBottom: ViewScale(8),
+              borderRadius: ViewScale(10),
               alignSelf: 'center',
               flex: 1,
               width: '95%',
@@ -870,6 +870,7 @@ class TradeActivitiesScreen extends React.Component {
               elevation: 5,
             }}
             style={{
+              marginTop: ViewScale(2),
               width: '100%',
               height: null,
               flex: 1,

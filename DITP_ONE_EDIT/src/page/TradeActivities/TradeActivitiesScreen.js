@@ -445,7 +445,7 @@ class TradeActivitiesScreen extends React.Component {
           {marginTop: this.state.Recommend.length === 0 ? height * 0.07 : 0},
         ]}>
         {this.state.fetching_from_server ? (
-          <ActivityIndicator color="black" style={{margin: 15}} />
+          <ActivityIndicator color="black" style={{margin: ViewScale(15)}} />
         ) : (
           <View>
             {this.state.Recommend.length == 0 ? (
@@ -830,53 +830,8 @@ class TradeActivitiesScreen extends React.Component {
       <View style={{zIndex: -999}}>
         {item.active_status != false && (
           <ListItem
-            // containerStyle={{
-            //   marginBottom: 8,
-            //   borderRadius: 10,
-            //   alignSelf: 'center',
-            //   flex: 1,
-            //   width: '95%',
-            //   shadowColor: '#f4f6fa ',
-            //   // shadowOffset: {
-            //   //   width: 0,
-            //   //   height: 1,
-            //   // },
-            //   // shadowOpacity: 0.18,
-            //   // shadowRadius: 1.00,
-
-            //   elevation: 1,
-            // }}
-            containerStyle={{
-              marginBottom: ViewScale(8),
-              borderRadius: ViewScale(10),
-              alignSelf: 'center',
-              flex: 1,
-              width: '95%',
-              // shadowColor: '#f4f6fa ',
-              // shadowOffset: {
-              //   width: 0,
-              //   height: 1,
-              // },=j;
-              // shadowOpacity: 0.18,
-              // shadowRadius: 1.00,
-              shadowColor: '#000',
-              shadowOffset: {
-                width: 0,
-                height: 2,
-              },
-              shadowOpacity: 0.25,
-              shadowRadius: 3.84,
-      
-              elevation: 5,
-            }}
-            style={{
-              marginTop: ViewScale(2),
-              width: '100%',
-              height: null,
-              flex: 1,
-
-              backgroundColor: '#f4f5f850',
-            }}
+            containerStyle={Styles.containerStyle}
+            style={Styles.styleListitem}
             leftAvatar={
               <View style={[Styles.alignItemsCenter, {flex: 0.4}]}>
                 <View style={{alignItems: 'center'}}>
@@ -1007,13 +962,13 @@ class TradeActivitiesScreen extends React.Component {
                       <CheckBox
                         checkedIcon={
                           <Image
-                            style={{width: ViewScale(25), height: ViewScale(25), top: -10}}
+                            style={{width: ViewScale(25), height: ViewScale(25), top: ViewScale(-10)}}
                             source={require('../../image/PickerMarket.png')}
                           />
                         }
                         uncheckedIcon={
                           <Image
-                            style={{width: ViewScale(25), height: ViewScale(25), top: -10}}
+                            style={{width: ViewScale(25), height: ViewScale(25), top: ViewScale(-10)}}
                             source={require('../../image/shoping.png')}
                           />
                         }
@@ -1044,23 +999,17 @@ class TradeActivitiesScreen extends React.Component {
                     )}
                   </View>
                 </View>
-                <View style={{flex: 1, flexDirection: 'row', marginBottom: 10}}>
+                <View style={{flex: 1, flexDirection: 'row', marginBottom: ViewScale(10)}}>
                   <View
-                    style={{
-                      flex: 0.1,
-                      flexDirection: 'row',
-                      alignItems: 'center',
-
-                      alignSelf: 'flex-start',
-                    }}>
+                    style={Styles.viewmap}>
                     {item.activity_list_location_th === 'ออนไลน์' ? (
                       <Image
-                        style={{width: ViewScale(13), height: ViewScale(13), top: 3}}
+                        style={{width: ViewScale(13), height: ViewScale(13), top: ViewScale(3)}}
                         source={require('../../image/WWW.png')}
                       />
                     ) : (
                       <Image
-                        style={{width: ViewScale(9), height: ViewScale(12), top: 3}}
+                        style={{width: ViewScale(9), height: ViewScale(12), top: ViewScale(3)}}
                         source={require('../../image/makerlocation.png')}
                       />
                     )}
@@ -1084,32 +1033,15 @@ class TradeActivitiesScreen extends React.Component {
                 </View>
                 <View style={{flex: 1, flexDirection: 'row'}}>
                   <View
-                    style={{
-                      flex: 0.1,
-                      flexDirection: 'row',
-                      alignItems: 'center',
-
-                      alignSelf: 'flex-start',
-                    }}>
+                    style={Styles.viewImagecountry}>
                     <Image
-                      style={{
-                        width: ViewScale(16),
-                        height: ViewScale(12),
-                        top: 3,
-                        borderWidth: 0.4,
-                        borderColor: '#4b4b4b',
-                      }}
+                      style={Styles.Imagecountry}
                       source={{uri: item.img_flag}}
                     />
                   </View>
 
                   <View
-                    style={{
-                      flex: 1.4,
-                      flexDirection: 'row',
-                      alignItems: 'center',
-                      alignSelf: 'flex-start',
-                    }}>
+                    style={StylesviewLocation}>
                     <Text numberOfLines={2} style={Styles.textactivityloca}>
                       {'  '}
                       {I18n.locale === 'th'
@@ -1121,7 +1053,7 @@ class TradeActivitiesScreen extends React.Component {
               </View>
             }
             subtitle={
-              <View style={[Styles.ViewSub10, {marginTop: 15, flex: 1}]}>
+              <View style={[Styles.ViewSub10, {marginTop: ViewScale(15), flex: 1}]}>
                 {/* {this.props.getStatus1.isResult.status_confirm_identity
                   .status_code != 0 &&
                 this.props.getStatus1.isResult.status_confirm_identity
@@ -1242,7 +1174,7 @@ class TradeActivitiesScreen extends React.Component {
                   }
                   style={Styles.TouchRead}>
                   <Image
-                    style={{width: 17, height: 13}}
+                    style={{width: ViewScale(17), height: ViewScale(13)}}
                     source={require('../../image/readDetail.png')}
                   />
                   <Text style={Styles.textactivityread}>
@@ -1259,7 +1191,7 @@ class TradeActivitiesScreen extends React.Component {
                   style={{flex: 1, alignItems: 'flex-end'}}>
                   <Image
                     resizeMode={'contain'}
-                    style={{width: 14, height: 16}}
+                    style={{width: ViewScale(14), height: ViewScale(16)}}
                     source={require('../../image/sharelx.png')}
                   />
                 </TouchableOpacity>
@@ -1275,11 +1207,11 @@ class TradeActivitiesScreen extends React.Component {
                         {right: 10, justifyContent: 'center'},
                       ]}>
                       <Image
-                        style={{width: 26, height: 15}}
+                        style={{width: ViewScale(26), height: ViewScale(15)}}
                         source={require('../../image/liveme.png')}
                       />
-                      <View style={{bottom: 13, right: 22}}>
-                        <Text style={{fontSize: 10, color: '#334c6e'}}>
+                      <View style={{bottom: ViewScale(13), right: ViewScale(22)}}>
+                        <Text style={{fontSize: ViewScale(10), color: '#334c6e'}}>
                           {I18n.t('translate_Prepare')}
                         </Text>
                       </View>
@@ -1295,14 +1227,14 @@ class TradeActivitiesScreen extends React.Component {
                     <View
                       style={[
                         Styles.ViewSub3,
-                        {right: 10, justifyContent: 'center'},
+                        {right: ViewScale(10), justifyContent: 'center'},
                       ]}>
                       <Image
-                        style={{width: 26, height: 15}}
+                        style={{width: ViewScale(26), height: ViewScale(15)}}
                         source={require('../../image/liveme.png')}
                       />
-                      <View style={{bottom: 13, right: 22}}>
-                        <Text style={{fontSize: 10, color: '#ff5e5e'}}>
+                      <View style={{bottom: ViewScale(13), right: ViewScale(22)}}>
+                        <Text style={{fontSize: ViewScale(10), color: '#ff5e5e'}}>
                           {I18n.t('translate_OnAir')}
                         </Text>
                       </View>
@@ -1318,14 +1250,14 @@ class TradeActivitiesScreen extends React.Component {
                     <View
                       style={[
                         Styles.ViewSub3,
-                        {right: 10, justifyContent: 'center'},
+                        {right: ViewScale(10), justifyContent: 'center'},
                       ]}>
                       <Image
-                        style={{width: 26, height: 15}}
+                        style={{width: ViewScale(26), height: ViewScale(15)}}
                         source={require('../../image/liveme.png')}
                       />
-                      <View style={{bottom: 13, right: 22}}>
-                        <Text style={{fontSize: 10, color: '#b7b7b7'}}>
+                      <View style={{bottom: ViewScale(13), right: ViewScale(22)}}>
+                        <Text style={{fontSize: ViewScale(10), color: '#b7b7b7'}}>
                           {I18n.t('translate_returnBack')}
                         </Text>
                       </View>
@@ -1348,11 +1280,11 @@ class TradeActivitiesScreen extends React.Component {
           width: ViewScale(260),
           height: ViewScale(140),
           borderWidth: 1,
-          borderRadius: 8,
+          borderRadius: ViewScale(8),
           borderColor: '#3986ee',
           flex: 1,
-          marginHorizontal: 10,
-          marginTop: 20,
+          marginHorizontal: ViewScale(10),
+          marginTop: ViewScale(20),
         }}>
         <TouchableOpacity
           onPress={() => {
@@ -1411,8 +1343,8 @@ class TradeActivitiesScreen extends React.Component {
                 style={{
                   flexDirection: 'row',
                   alignItems: 'center',
-                  marginTop: 10,
-                  marginLeft: 5,
+                  marginTop: ViewScale(10),
+                  marginLeft: ViewScale(5),
                 }}>
                 <Image
                   style={{width: ViewScale(30), height: ViewScale(30)}}
@@ -1428,10 +1360,10 @@ class TradeActivitiesScreen extends React.Component {
               <View
                 style={{
                   width: '80%',
-                  marginTop: 5,
+                  marginTop: ViewScale(5),
                   flexDirection: 'row',
-                  marginLeft: -8,
-                  left: 0,
+                  marginLeft: ViewScale(-8),
+                  left: ViewScale(0),
                 }}>
                 <Text numberOfLines={2} style={Styles.TextSub4}>
                   {I18n.locale === 'th'
@@ -1439,7 +1371,7 @@ class TradeActivitiesScreen extends React.Component {
                     : item.activity_list_topic_en}
                 </Text>
               </View>
-              <View style={{width: '73%', marginBottom: 5, left: -12}}>
+              <View style={{width: '73%', marginBottom: ViewScale(5), left: ViewScale(-12)}}>
                 <Text style={Styles.TextSub3}>
                   {I18n.t('translate_Numberexposure')} {item.max_of_participate}{' '}
                   {I18n.t('translate_Case')}
@@ -1449,7 +1381,7 @@ class TradeActivitiesScreen extends React.Component {
                 style={{
                   left: 0,
                   width: '80%',
-                  bottom: 5,
+                  bottom: ViewScale(5),
                   flexDirection: 'row',
                 }}>
                 <View style={[Styles.ViewSub8, {flex: 1}]}>
@@ -1482,8 +1414,8 @@ class TradeActivitiesScreen extends React.Component {
                           style={Styles.ImgBackgroungSub1}
                           source={require('../../image/newlive.png')}
                         />
-                        <View style={{bottom: 13, right: 30}}>
-                          <Text style={{fontSize: 12, color: '#334c6e'}}>
+                        <View style={{bottom: ViewScale(13), right: ViewScale(30)}}>
+                          <Text style={{fontSize: ViewScale(12), color: '#334c6e'}}>
                             {I18n.t('translate_Prepare')}
                           </Text>
                         </View>
@@ -1500,8 +1432,8 @@ class TradeActivitiesScreen extends React.Component {
                           style={Styles.ImgBackgroungSub1}
                           source={require('../../image/newlive.png')}
                         />
-                        <View style={{bottom: 13, right: 25}}>
-                          <Text style={{fontSize: 12, color: '#ff7373'}}>
+                        <View style={{bottom: ViewScale(13), right: ViewScale(25)}}>
+                          <Text style={{fontSize: ViewScale(12), color: '#ff7373'}}>
                             {I18n.t('translate_OnAir')}
                           </Text>
                         </View>
@@ -1518,8 +1450,8 @@ class TradeActivitiesScreen extends React.Component {
                           style={Styles.ImgBackgroungSub1}
                           source={require('../../image/newlive.png')}
                         />
-                        <View style={{bottom: 13, right: 28}}>
-                          <Text style={{fontSize: 12, color: '#b7b7b7'}}>
+                        <View style={{bottom: ViewScale(13), right: ViewScale(28)}}>
+                          <Text style={{fontSize: ViewScale(12), color: '#b7b7b7'}}>
                             {I18n.t('translate_returnBack')}
                           </Text>
                         </View>
@@ -1532,9 +1464,6 @@ class TradeActivitiesScreen extends React.Component {
           </View>
         </TouchableOpacity>
       </View>
-      // </LinearGradient>
-      // </View>
-      // </ImageBackground>
     );
   };
 
@@ -1544,17 +1473,17 @@ class TradeActivitiesScreen extends React.Component {
         style={{
           flex: 1,
         }}>
-        <View style={{flex: 0.8, marginBottom: 20}}>
+        <View style={{flex: 0.8, marginBottom: ViewScale(20)}}>
           <MonthSelectorCalendar
             containerStyle={{bottom: 20}}
             maxDate={Moment('01-01-3000', 'DD-MM-YYYY')}
             minDate={Moment('01-01-2000', 'DD-MM-YYYY')}
-            prevIcon={<Icon1 name="left" size={20} />}
-            nextIcon={<Icon1 name="right" size={20} />}
+            prevIcon={<Icon1 name="left" size={ViewScale(20)} />}
+            nextIcon={<Icon1 name="right" size={ViewScale(20)} />}
             localeLanguage="en"
-            yearTextStyle={{color: '#000', fontSize: 20}}
-            selectedMonthTextStyle={{color: '#FFF', fontSize: 20}}
-            monthTextStyle={{color: '#000', fontSize: 20}}
+            yearTextStyle={{color: '#000', fontSize: ViewScale(20)}}
+            selectedMonthTextStyle={{color: '#FFF', fontSize: ViewScale(20)}}
+            monthTextStyle={{color: '#000', fontSize: ViewScale(20)}}
             selectedBackgroundColor={'#2d6dc4'}
             selectedDate={this.state.month}
             onMonthTapped={date => {
@@ -1588,8 +1517,8 @@ class TradeActivitiesScreen extends React.Component {
             justifyContent: 'center',
             alignItems: 'center',
             alignSelf: 'center',
-            marginTop: 20,
-            borderRadius: 50,
+            marginTop: ViewScale(20),
+            borderRadius: ViewScale(50),
             backgroundColor: '#2d6dc4',
           }}
           onPress={async () => {
@@ -1617,7 +1546,7 @@ class TradeActivitiesScreen extends React.Component {
           <Text
             style={{
               color: '#fff',
-              fontSize: 25,
+              fontSize: ViewScale(25),
             }}>
             {I18n.t('translate_Accept')}
           </Text>
@@ -1630,8 +1559,8 @@ class TradeActivitiesScreen extends React.Component {
             justifyContent: 'center',
             alignItems: 'center',
             alignSelf: 'center',
-            marginTop: 10,
-            borderRadius: 50,
+            marginTop: ViewScale(10),
+            borderRadius: ViewScale(50),
             backgroundColor: '#96b3cb',
           }}
           onPress={async () => {
@@ -1655,7 +1584,7 @@ class TradeActivitiesScreen extends React.Component {
           <Text
             style={{
               color: '#fff',
-              fontSize: 25,
+              fontSize: ViewScale(25),
             }}>
             {I18n.t('translate_Clean')}
           </Text>
@@ -1668,16 +1597,16 @@ class TradeActivitiesScreen extends React.Component {
             justifyContent: 'center',
             alignItems: 'center',
             alignSelf: 'center',
-            marginBottom: 20,
-            marginTop: 10,
-            borderRadius: 50,
+            marginBottom: ViewScale(20),
+            marginTop: ViewScale(10),
+            borderRadius: ViewScale(50),
             backgroundColor: '#f96145',
           }}
           onPress={() => this.RBSheet.close()}>
           <Text
             style={{
               color: '#fff',
-              fontSize: 25,
+              fontSize: ViewScale(25),
             }}>
             {I18n.t('translate_Cancel')}
           </Text>
@@ -1813,40 +1742,10 @@ class TradeActivitiesScreen extends React.Component {
               });
             }}>
             <ListItem
-              // containerStyle={{
-              //   width: '95%',
-              //   borderRadius: 10,
-              //   marginBottom: 6,
-              //   alignSelf: 'center',
-              //   backgroundColor: '#FFFFFF',
-              // }}
-              containerStyle={{
-                marginBottom: 8,
-                borderRadius: 10,
-                alignSelf: 'center',
-                flex: 1,
-                width: '95%',
-                // shadowColor: '#f4f6fa ',
-                // shadowOffset: {
-                //   width: 0,
-                //   height: 1,
-                // },=j;
-                // shadowOpacity: 0.18,
-                // shadowRadius: 1.00,
-                shadowColor: '#000',
-                shadowOffset: {
-                  width: 0,
-                  height: 2,
-                },
-                shadowOpacity: 0.25,
-                shadowRadius: 3.84,
-        
-                elevation: 5,
-              }}
+              containerStyle={Styles.containerStyle}
               style={{
                 width: '100%',
                 height: null,
-
                 backgroundColor: '#f4f5f850',
               }}
               leftAvatar={
@@ -1888,36 +1787,22 @@ class TradeActivitiesScreen extends React.Component {
                       start={{x: 0, y: 0}}
                       end={{x: 1, y: 0}}
                       colors={['#9c7df6', '#3986ee']}
-                      style={{width: ViewScale(35), height: ViewScale(35), borderRadius: 17}}>
+                      style={{width: ViewScale(35), height: ViewScale(35), borderRadius: ViewScale(17)}}>
                       <Text
                         style={{
                           color: '#FFFFFF',
                           fontSize: ViewScale(20),
                           textAlign: 'center',
-                          marginTop: 6,
+                          marginTop: ViewScale(6),
                         }}>
                         {item.activity_list}
                       </Text>
                     </LinearGradient>
                   </View>
                   <View style={{flex: 0.1, justifyContent: 'center'}}>
-                    <Icon name="chevron-right" size={25} color="#3986ee" />
+                    <Icon name="chevron-right" size={ViewScale(25)} color="#3986ee" />
                   </View>
                 </View>
-
-                // <View
-                //   style={{
-                //     width: 103,
-                //     height: 20,
-                //     backgroundColor: '#2d6dc4',
-                //     borderRadius: 11.5,
-                //     justifyContent: 'center',
-                //     alignItems: 'center',
-                //   }}>
-                //   <Text style={{fontSize: 14, color: '#FFFFFF'}}>
-                //     {item.activity_list} {I18n.t('translate_activities')}
-                //   </Text>
-                // </View>
               }
             />
           </TouchableOpacity>
@@ -1937,11 +1822,11 @@ class TradeActivitiesScreen extends React.Component {
           navigation={this.props.navigation}
           backScreen={abc}
         />
-        <View style={{marginTop: Platform.OS === 'android' && 90}} />
+        <View style={{marginTop: Platform.OS === 'android' && ViewScale(90)}} />
 
         {this.props.getUser.userDetails.res_result.type != 6 && (
           <KeyboardAvoidingView
-            behavior={Platform.OS === 'ios' ? 'padding' : 20}
+            behavior={Platform.OS === 'ios' ? 'padding' : ViewScale(20)}
             style={{flex: 1, zIndex: -1}}>
             <ScrollView style={{zIndex: -1}}>
               {/* <Headerstage nameTab={I18n.t('translate_HearderTrade')} /> */}
@@ -1960,17 +1845,17 @@ class TradeActivitiesScreen extends React.Component {
                     },
                     draggableIcon: {
                       backgroundColor: '#d8d8d8',
-                      width: 80,
+                      width: ViewScale(80),
                     },
                     container: {
-                      borderTopLeftRadius: 10,
-                      borderTopRightRadius: 10,
+                      borderTopLeftRadius: ViewScale(10),
+                      borderTopRightRadius: ViewScale(10),
                     },
                   }}>
                   {this.BarCalendar()}
                 </RBSheet>
                 {this.state.Toppic != undefined && (
-                  <View style={{marginBottom: 10}}>
+                  <View style={{marginBottom: ViewScale(10)}}>
                     {this.state.Toppic.length > 0 && (
                       <View>
                         <View
@@ -1998,7 +1883,7 @@ class TradeActivitiesScreen extends React.Component {
                             </Text>
                           </View>
                         </View>
-                        <View style={{width: '100%', flex: 1, bottom: 10,}}>
+                        <View style={{width: '100%', flex: 1, bottom: ViewScale(10),}}>
                           <FlatList
                             extraData={this.state}
                             horizontal={true}
@@ -2032,58 +1917,23 @@ class TradeActivitiesScreen extends React.Component {
                       <View
                         style={{
                           alignItems: 'center',
-                          padding: 8,
-                          marginBottom: 1,
+                          padding: ViewScale(8),
+                          marginBottom: ViewScale(1),
                           zIndex: -1,
-                        
                         }}>
                         <View
                           style={{
                             flexDirection: 'row',
                             flex: 1,
-                            // marginHorizontal: 10,
                           }}>
                           <View
-                            style={{
-                              marginTop: 13,
-                              // width: '100%',
-                              flex: 1,
-                              height: ViewScale(35),
-                              backgroundColor: '#FFFFFF',
-                              borderColor: '#cacaca',
-                              borderWidth: 1,
-                              borderRadius: 16,
-                              marginLeft: 0,
-                              flexDirection: 'row',
-                              alignItems: 'center',
-                              marginHorizontal: 5,
-                            }}>
+                            style={Styles.viewSearch}>
                             <Image
-                              style={[Styles.Image, {marginTop: 3}]}
+                              style={[Styles.Image, {marginTop: ViewScale(3)}]}
                               source={require('../../image/searchblue.png')}
                             />
-                            {/* {this.state.CheckRecom.length > 0 ? (
-                              <TextInput
-                                onChangeText={e => {
-                                  // this.SearchSubmit(e);
-                                }}
-                                placeholderTextColor="#dadada"
-                                style={[Styles.TextInputseach1]}
-                                placeholder={I18n.t('translate_Seach')}
-                              />
-                            ) : (
-                              <TextInput
-                                onChangeText={e => {
-                                  // this.SearchSubmitToppick(e);
-                                }}
-                                placeholderTextColor="#dadada"
-                                style={[Styles.TextInputseach1]}
-                                placeholder={I18n.t('translate_Seach')}
-                              />
-                            )} */}
                             <TextInput
                               onChangeText={e => {
-                                // this.SearchSubmit(e);
                                 this.setState({textSearch: e});
                               }}
                               placeholderTextColor="#dadada"
@@ -2093,14 +1943,7 @@ class TradeActivitiesScreen extends React.Component {
                             />
                           </View>
                           <View
-                            style={{
-                              flex: 0.4,
-                              backgroundColor: '#2d6dc4',
-                              height: ViewScale(35),
-                              borderRadius: 16,
-                              marginTop: 13,
-                              marginHorizontal: 7,
-                            }}>
+                            style={Styles.BTsearch}>
                             <TouchableOpacity
                               onPress={() => {
                                 this.setState(
@@ -2121,13 +1964,7 @@ class TradeActivitiesScreen extends React.Component {
                             </TouchableOpacity>
                           </View>
                           <View
-                            style={{
-                              flex: 0.5,
-                              backgroundColor: '#ff5e5e',
-                              height: ViewScale(35),
-                              borderRadius: 16,
-                              marginTop: 13,
-                            }}>
+                            style={Styles.Btclear}>
                             <TouchableOpacity
                               onPress={() => {
                                 this.setState(
@@ -2163,22 +2000,11 @@ class TradeActivitiesScreen extends React.Component {
                         <View
                           style={{
                             flexDirection: 'row',
-                            marginTop: 10,
+                            marginTop: ViewScale(10),
                             flex: 1,
                           }}>
                           <View
-                            style={{
-                              marginTop: 5,
-                              // width: '50%',
-                              flex: 1,
-                              height: ViewScale(34),
-                              backgroundColor: '#FFFFFF',
-
-                              borderRadius: 21.5,
-                              marginHorizontal: 5,
-                              // flexDirection: 'row',
-                              marginBottom: 4,
-                            }}>
+                            style={Styles.typeAndnedActivity}>
                             <RNPickerSelect
                               disabled={this.state.checkRNPickerstate}
                               useNativeAndroidPickerStyle={false}
@@ -2270,7 +2096,7 @@ class TradeActivitiesScreen extends React.Component {
                                 <View style={Styles.view3icon}>
                                   <Icon
                                     name="chevron-down"
-                                    size={20}
+                                    size={ViewScale(20)}
                                     color="#2d6dc4"
                                     style={{}}
                                   />
@@ -2280,19 +2106,7 @@ class TradeActivitiesScreen extends React.Component {
                           </View>
 
                           <View
-                            style={{
-                              marginTop: 5,
-                              // width: '50%',
-                              flex: 1,
-                              height: ViewScale(34),
-                              backgroundColor: '#FFFFFF',
-                              // borderColor: '#2d6dc4',
-                              // borderWidth: 1,
-                              borderRadius: 21.5,
-                              marginHorizontal: 5,
-                              // flexDirection: 'row',
-                              marginBottom: 4,
-                            }}>
+                            style={Styles.typeAndnedActivity}>
                             <RNPickerSelect
                               disabled={this.state.checkRNPickerstate}
                               useNativeAndroidPickerStyle={false}
@@ -2401,7 +2215,7 @@ class TradeActivitiesScreen extends React.Component {
                                 <View style={Styles.view3icon}>
                                   <Icon
                                     name="chevron-down"
-                                    size={20}
+                                    size={ViewScale(20)}
                                     color="#2d6dc4"
                                     style={{}}
                                   />
@@ -2413,21 +2227,10 @@ class TradeActivitiesScreen extends React.Component {
                         <View
                           style={{
                             flexDirection: 'row',
-                            marginTop: 10,
+                            marginTop: ViewScale(10),
                           }}>
                           <View
-                            style={{
-                              // width: '50%',
-                              flex: 1,
-                              height: ViewScale(34),
-                              backgroundColor: '#FFFFFF',
-                              // borderColor: '#4b4b4b',
-                              // borderWidth: 1,
-                              borderRadius: 17,
-                              marginHorizontal: 5,
-                              justifyContent: 'center',
-                              // flexDirection: 'row',
-                            }}>
+                            style={Styles.selectItem}>
                             <RNPickerSelect
                               disabled={this.state.checkRNPickerstate}
                               useNativeAndroidPickerStyle={false}
@@ -2447,12 +2250,6 @@ class TradeActivitiesScreen extends React.Component {
                               }}
                               onValueChange={
                                 (value, index) =>
-                                  // console.log(value,index),
-                                  // console.log(
-                                  //   this.state.datagetproduct[index].name_th,
-                                  //   this.state.datagetproduct[index]
-                                  //     .activity_product_category_id,
-                                  // )
                                   this.setState({
                                     datagetproductname_th: this.state
                                       .datagetproduct[index].name_th,
@@ -2460,17 +2257,6 @@ class TradeActivitiesScreen extends React.Component {
                                       .datagetproduct[index]
                                       .activity_product_category_id,
                                   })
-
-                                // Detail: [],
-                                // isListEnd: false,
-                                // loading: false,
-                                // fetching_from_server: false,
-                                // },
-                                // function() {
-                                //   this.offset = 0;
-                                //   this._getDetailactivities();
-                                //   // },
-                                // )
                               }
                               items={this.state.datagetproduct.map(object => ({
                                 label: object.name_th.toString(),
@@ -2504,7 +2290,7 @@ class TradeActivitiesScreen extends React.Component {
                                 <View style={[Styles.view3icon, {flex: 0.3}]}>
                                   <Icon
                                     name="chevron-down"
-                                    size={20}
+                                    size={ViewScale(20)}
                                     color="#4b4b4b"
                                     // color="#2d6dc4"
                                     style={{}}
@@ -2515,18 +2301,7 @@ class TradeActivitiesScreen extends React.Component {
                           </View>
 
                           <View
-                            style={{
-                              // width: '50%',
-                              flex: 1,
-                              height: ViewScale(34),
-                              backgroundColor: '#FFFFFF',
-                              // borderColor: '#2d6dc4',
-                              // borderWidth: 1,
-                              borderRadius: 17,
-                              marginHorizontal: 3,
-                              justifyContent: 'center',
-                              // flexDirection: 'row',
-                            }}>
+                            style={Styles.selectItem}>
                             <RNPickerSelect
                               disabled={this.state.checkRNPickerstate}
                               useNativeAndroidPickerStyle={false}
@@ -2623,7 +2398,7 @@ class TradeActivitiesScreen extends React.Component {
                                 <View style={[Styles.view3icon, {flex: 0.3}]}>
                                   <Icon
                                     name="chevron-down"
-                                    size={20}
+                                    size={ViewScale(20)}
                                     color="#2d6dc4"
                                     style={{}}
                                   />
@@ -2649,16 +2424,7 @@ class TradeActivitiesScreen extends React.Component {
 
                                 });
                               }}
-                              style={{
-                                borderWidth: 1,
-                                borderColor: '#2d6dc4',
-                                height: ViewScale(34),
-                                flex: 1,
-                                borderRadius: 17,
-                                marginHorizontal: 3,
-                                backgroundColor: '#FFFF',
-                                justifyContent: 'center',
-                              }}>
+                              style={Styles.touchOnlineOn}>
                               <Text style={Styles.Notnoline}>{I18n.t('translate_Online')}</Text>
                             </TouchableOpacity>
                           ) : (
@@ -2677,23 +2443,9 @@ class TradeActivitiesScreen extends React.Component {
 
                                 });
                               }}
-                              style={{
-                                borderWidth: 1,
-                                borderColor: '#2d6dc4',
-                                height: ViewScale(34),
-                                flex: 1,
-                                borderRadius: 17,
-                                marginHorizontal: 3,
-                                backgroundColor: '#2d6dc4',
-                                justifyContent: 'center',
-                              }}>
+                              style={Styles.touchOnlineOff}>
                               <Text
-                                style={{
-                                  textAlign: 'center',
-                                  color: '#FFF',
-                                  fontFamily: 'Mitr-Regular',
-                                  fontSize: ViewScale(13),
-                                }}>
+                                style={Styles.Ononline}>
                                 {I18n.t('translate_Online')}
                               </Text>
                             </TouchableOpacity>
@@ -2790,7 +2542,7 @@ class TradeActivitiesScreen extends React.Component {
                       />
                     )}
                   </View>
-                  <View style={{margin: 10}}>
+                  <View style={{margin: ViewScale(10)}}>
                     <Text style={Styles.popupTextTitle}>{this.state.name}</Text>
                     <Text style={Styles.opoupTextData1}>
                       {this.state.StarD} - {this.state.EndD}
@@ -2806,7 +2558,7 @@ class TradeActivitiesScreen extends React.Component {
                       }}>
                       <View style={{flex: 1, flexDirection: 'row'}}>
                         <Image
-                          style={{width: ViewScale(18), height: ViewScale(13), top: 4}}
+                          style={{width: ViewScale(18), height: ViewScale(13), top: ViewScale(4)}}
                           source={{uri: this.state.contry_img_flag}}
                         />
                         <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
@@ -2822,7 +2574,7 @@ class TradeActivitiesScreen extends React.Component {
                           style={{
                             backgroundColor: '#2d6dc4',
 
-                            borderRadius: 11,
+                            borderRadius: ViewScale(11),
                           }}>
                           <Text
                             style={{
@@ -2850,12 +2602,12 @@ class TradeActivitiesScreen extends React.Component {
                       </Text>
                     </View>
 
-                    <View style={{marginTop: 10}}>
+                    <View style={{marginTop: ViewScale(10)}}>
                       <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_ActPrice')} : {this.state.price}
                       </Text>
                     </View>
-                    <View style={{marginTop: 0}}>
+                    <View style={{marginTop: ViewScale(0)}}>
                       <Text style={{fontSize: ViewScale(18), color: '#3a3a3a'}}>
                         {I18n.t('translate_Num')} : {this.state.partic}{' '}
                         {I18n.t('translate_case')}
@@ -2873,7 +2625,7 @@ class TradeActivitiesScreen extends React.Component {
                               {I18n.t('translate_LIVE')}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 33}}>
+                          <View style={{bottom: ViewScale(13), right: ViewScale(33)}}>
                             <Text style={{fontSize: ViewScale(12), color: '#334c6e'}}>
                               {I18n.t('translate_Prepare')}
                             </Text>
@@ -2892,7 +2644,7 @@ class TradeActivitiesScreen extends React.Component {
                               {I18n.t('translate_LIVE')}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 31}}>
+                          <View style={{bottom: ViewScale(13), right: ViewScale(31)}}>
                             <Text style={{fontSize: ViewScale(12), color: '#ff5e5e'}}>
                               {I18n.t('translate_OnAir')}
                             </Text>
@@ -2911,7 +2663,7 @@ class TradeActivitiesScreen extends React.Component {
                               {I18n.t('translate_LIVE')}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 31}}>
+                          <View style={{bottom: ViewScale(13), right: ViewScale(31)}}>
                             <Text style={{fontSize: ViewScale(12), color: '#b7b7b7'}}>
                               {I18n.t('translate_returnBack')}
                             </Text>
@@ -2919,7 +2671,7 @@ class TradeActivitiesScreen extends React.Component {
                         </View>
                       </TouchableOpacity>
                     )}
-                    <View style={{margin: 10}}>
+                    <View style={{margin: ViewScale(10)}}>
                       <Image
                         style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
@@ -2943,7 +2695,7 @@ class TradeActivitiesScreen extends React.Component {
                         <Icon3
                           color="#2d6dc4"
                           name="keyboard-arrow-down"
-                          size={20}
+                          size={ViewScale(20)}
                         />
                       </View>
                     ) : (
@@ -3019,13 +2771,13 @@ class TradeActivitiesScreen extends React.Component {
                           <Icon3
                             color="#2d6dc4"
                             name="keyboard-arrow-up"
-                            size={20}
+                            size={ViewScale(20)}
                           />
                         </View>
                       </>
                     )}
 
-                    <View style={{margin: 10}}>
+                    <View style={{margin: ViewScale(10)}}>
                       <Image
                         style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
@@ -3099,7 +2851,7 @@ class TradeActivitiesScreen extends React.Component {
                                 source={require('../../image/startoppick.png')}
                               />
 
-                              <Text style={{fontSize: 20, color: '#163c70'}}>
+                              <Text style={{fontSize: ViewScale(20), color: '#163c70'}}>
                                 {'  '}
                                 {I18n.t('translate_Delete_basket')}
                               </Text>
@@ -3219,7 +2971,7 @@ class TradeActivitiesScreen extends React.Component {
                         onPress={() => {
                           this.onShareDatali(this.state.name, this.state.url);
                         }}
-                        style={{alignSelf: 'flex-end', marginTop: -25}}>
+                        style={{alignSelf: 'flex-end', marginTop: ViewScale(-25)}}>
                         <Image
                           resizeMode={'contain'}
                           style={{width: ViewScale(14), height: ViewScale(16)}}
@@ -3276,7 +3028,7 @@ class TradeActivitiesScreen extends React.Component {
                       </View>
                     )}
                   </View>
-                  <View style={{margin: 10}}>
+                  <View style={{margin: ViewScale(10)}}>
                     <Text style={Styles.popupTextTitle}>{this.state.name}</Text>
                     <Text style={Styles.opoupTextData1}>
                       {this.state.StarD} - {this.state.EndD}
@@ -3305,7 +3057,7 @@ class TradeActivitiesScreen extends React.Component {
                           style={{
                             backgroundColor: '#2d6dc4',
 
-                            borderRadius: 11,
+                            borderRadius: ViewScale(11),
                           }}>
                           <Text style={Styles.popupTextMap}>{I18n.t('transalte_map')}</Text>
                         </TouchableOpacity>
@@ -3326,12 +3078,12 @@ class TradeActivitiesScreen extends React.Component {
                       </Text>
                     </View>
 
-                    <View style={{marginTop: 10}}>
+                    <View style={{marginTop: ViewScale(10)}}>
                       <Text style={Styles.opoupTextData1}>
                         {I18n.t('translate_ActPrice')} : {this.state.price}
                       </Text>
                     </View>
-                    <View style={{marginTop: 0}}>
+                    <View style={{marginTop: ViewScale(0)}}>
                       <Text style={Styles.opoupTextData1}>
                         {I18n.t('translate_Num')} : {this.state.partic}{' '}
                         {I18n.t('translate_case')}
@@ -3349,7 +3101,7 @@ class TradeActivitiesScreen extends React.Component {
                               {I18n.t('translate_LIVE')}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 33}}>
+                          <View style={{bottom: ViewScale(13), right: ViewScale(33)}}>
                             <Text style={{fontSize: ViewScale(12), color: '#334c6e'}}>
                               {I18n.t('translate_Prepare')}
                             </Text>
@@ -3368,7 +3120,7 @@ class TradeActivitiesScreen extends React.Component {
                               {I18n.t('translate_LIVE')}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 31}}>
+                          <View style={{bottom: ViewScale(13), right: ViewScale(31)}}>
                             <Text style={{fontSize: ViewScale(12), color: '#ff5e5e'}}>
                               {I18n.t('translate_OnAir')}
                             </Text>
@@ -3387,7 +3139,7 @@ class TradeActivitiesScreen extends React.Component {
                               {I18n.t('translate_LIVE')}
                             </Text>
                           </ImageBackground>
-                          <View style={{bottom: 13, right: 31}}>
+                          <View style={{bottom: ViewScale(13), right: ViewScale(31)}}>
                             <Text style={{fontSize: ViewScale(12), color: '#b7b7b7'}}>
                               {I18n.t('translate_returnBack')}
                             </Text>
@@ -3395,7 +3147,7 @@ class TradeActivitiesScreen extends React.Component {
                         </View>
                       </TouchableOpacity>
                     )}
-                    <View style={{margin: 10}}>
+                    <View style={{margin: ViewScale(10)}}>
                       <Image
                         style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
@@ -3414,7 +3166,7 @@ class TradeActivitiesScreen extends React.Component {
                         <Icon3
                           color="#2d6dc4"
                           name="keyboard-arrow-down"
-                          size={20}
+                          size={ViewScale(20)}
                         />
                       </View>
                     ) : (
@@ -3486,12 +3238,12 @@ class TradeActivitiesScreen extends React.Component {
                           <Icon3
                             color="#2d6dc4"
                             name="keyboard-arrow-up"
-                            size={20}
+                            size={ViewScale(20)}
                           />
                         </View>
                       </>
                     )}
-                    <View style={{margin: 10}}>
+                    <View style={{margin: ViewScale(10)}}>
                       <Image
                         style={{width: ViewScale(334), height: ViewScale(1)}}
                         source={require('../../image/line6.png')}
@@ -3521,7 +3273,7 @@ class TradeActivitiesScreen extends React.Component {
                     </View>
                     <View
                       style={{
-                        marginTop: 13,
+                        marginTop: ViewScale(13),
 
                         alignItems: 'center',
                       }}>
@@ -3632,10 +3384,10 @@ class TradeActivitiesScreen extends React.Component {
                       onPress={() => {
                         this.onShareDatali(this.state.name, this.state.url);
                       }}
-                      style={{alignSelf: 'flex-end', marginTop: -25}}>
+                      style={{alignSelf: 'flex-end', marginTop: ViewScale(-25)}}>
                       <Image
                         resizeMode={'contain'}
-                        style={{width: 14, height: 16}}
+                        style={{width: ViewScale(14), height: ViewScale(16)}}
                         source={require('../../image/sharelx.png')}
                       />
                     </TouchableOpacity>
@@ -3655,14 +3407,14 @@ class TradeActivitiesScreen extends React.Component {
                 Platform.OS === 'android' ? '#2d6dc4' : '#2d6dc4',
               opacity: Platform.OS === 'android' ? 0.8 : 0.8,
             }}>
-            <View style={{width: width, paddingBottom: 15, marginTop: 15}}>
-              <View style={{alignSelf: 'center', paddingBottom: 15}}>
+            <View style={{width: width, paddingBottom: ViewScale(15), marginTop: ViewScale(15)}}>
+              <View style={{alignSelf: 'center', paddingBottom: ViewScale(15)}}>
                 <TouchableOpacity
                   style={{
                     backgroundColor: '#2d6dc4',
                     height: ViewScale(40),
                     width: width * 0.7,
-                    borderRadius: 20,
+                    borderRadius: ViewScale(20),
                     justifyContent: 'center',
                   }}>
                   <Text
@@ -3682,7 +3434,7 @@ class TradeActivitiesScreen extends React.Component {
                     backgroundColor: '#568ae0',
                     height: 40,
                     width: width * 0.7,
-                    borderRadius: 20,
+                    borderRadius: ViewScale(20),
                     justifyContent: 'center',
                   }}>
                   <Text
@@ -3714,13 +3466,13 @@ class TradeActivitiesScreen extends React.Component {
                 width: width * 0.8,
                 alignItems: 'center',
               }}>
-              <View style={{paddingBottom: 10}}>
+              <View style={{paddingBottom: ViewScale(10)}}>
                 <Image
                   style={{width: ViewScale(78), height: ViewScale(60)}}
                   source={{uri: this.state.imgmenu}}
                 />
               </View>
-              <View style={{paddingBottom: 10}}>
+              <View style={{paddingBottom: ViewScale(10)}}>
                 <Text style={{fontSize: ViewScale(20), color: '#2d6dc4'}}>
                   {this.state.namemenu}
                 </Text>
@@ -3738,7 +3490,7 @@ class TradeActivitiesScreen extends React.Component {
                 {I18n.t('translate_Readmore')} :{' '}
               </Text>
               <Text
-                style={{fontSize: 20, color: '#7d7d7d', marginHorizontal: 10}}>
+                style={{fontSize: ViewScale(20), color: '#7d7d7d', marginHorizontal: ViewScale(10)}}>
                 {this.state.detailmenu}
               </Text>
             </View>
@@ -3750,23 +3502,23 @@ class TradeActivitiesScreen extends React.Component {
 }
 const pickerSelectStyles2 = StyleSheet.create({
   inputIOS: {
-    fontSize: 23,
+    fontSize: ViewScale(23),
     color: '#73838f',
-    paddingHorizontal: 10,
+    paddingHorizontal: ViewScale(10),
     justifyContent: 'center',
-    paddingTop: Platform.OS === 'ios' ? 2 : -3,
-    paddingBottom: 5,
+    paddingTop: Platform.OS === 'ios' ? ViewScale(2) : ViewScale(-3),
+    paddingBottom: ViewScale(5),
   },
   inputAndroid: {
-    height: 40,
-    fontSize: 23,
+    height: ViewScale(40),
+    fontSize: ViewScale(23),
     color: '#73838f',
     fontWeight: 'normal',
     fontFamily: 'PSL Kittithada Pro',
     width: '100%',
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    paddingRight: 70,
+    paddingHorizontal: ViewScale(10),
+    paddingVertical: ViewScale(8),
+    paddingRight: ViewScale(70),
   },
 });
 const mapDispatchToProps = dispatch => ({

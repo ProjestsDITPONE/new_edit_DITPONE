@@ -162,7 +162,7 @@ export default StyleSheet.create({
     // marginLeft: 20,
   },
   ImgTouchRead: {
-    width: 17,
+    width: ViewScale(17),
     height: ViewScale(13),
   },
   ViewTab2: {

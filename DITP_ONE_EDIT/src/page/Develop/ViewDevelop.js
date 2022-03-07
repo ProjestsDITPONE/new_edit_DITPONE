@@ -405,7 +405,7 @@ class ViewDevelop extends React.Component {
     return (
       <View
         style={{
-          padding: 10,
+          padding: ViewScale(10),
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "row",
@@ -414,12 +414,12 @@ class ViewDevelop extends React.Component {
         }}
       >
         {this.state.fetching_from_server ? (
-          <ActivityIndicator color="black" style={{ margin: 15 }} />
+          <ActivityIndicator color="black" style={{ margin: ViewScale(15) }} />
         ) : (
           <View>
             {this.state.AllDevelop.length == 0 ? (
               <View style={{ alignItems: "center" }}>
-                <Text style={{ fontSize: 22 }}>
+                <Text style={{ fontSize: ViewScale(22) }}>
                   {I18n.t("translate_Nodata")}
                 </Text>
               </View>
@@ -433,7 +433,7 @@ class ViewDevelop extends React.Component {
     return (
       <View
         style={{
-          padding: 10,
+          padding: ViewScale(10),
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "row",
@@ -443,12 +443,12 @@ class ViewDevelop extends React.Component {
         }}
       >
         {this.state.fetching_from_server ? (
-          <ActivityIndicator color="black" style={{ margin: 15 }} />
+          <ActivityIndicator color="black" style={{ margin: ViewScale(15) }} />
         ) : (
           <View>
             {this.state.AllDevelopElearning.length == 0 ? (
               <View style={{ alignItems: "center" }}>
-                <Text style={{ fontSize: 22 }}>
+                <Text style={{ fontSize: ViewScale(22) }}>
                   {I18n.t("translate_Nodata")}
                 </Text>
               </View>
@@ -1196,19 +1196,19 @@ class ViewDevelop extends React.Component {
                 <View
                   style={{
                     width: "100%",
-                    bottom: 10,
+                    bottom: ViewScale(10),
                   }}
                 >
                   <CheckBox
                     checkedIcon={
                       <Image
-                        style={{ width: 25, height: 25, top: -10 }}
+                        style={{ width: ViewScale(25), height: ViewScale(25), top: ViewScale(-10) }}
                         source={require("../../image/PickerMarket.png")}
                       />
                     }
                     uncheckedIcon={
                       <Image
-                        style={{ width: 25, height: 25, top: -10 }}
+                        style={{ width: ViewScale(25), height: ViewScale(25), top: ViewScale(-10) }}
                         source={require("../../image/shoping.png")}
                       />
                     }
@@ -1220,7 +1220,7 @@ class ViewDevelop extends React.Component {
                   />
                 </View>
               </View>
-              <View style={{ flex: 1, flexDirection: "row", marginTop: 5,}}>
+              <View style={{ flex: 1, flexDirection: "row", marginTop: ViewScale(5),}}>
                 <View
                   style={{
                     flex: 0.1,
@@ -1430,15 +1430,15 @@ class ViewDevelop extends React.Component {
                   <View
                     style={[
                       Styles.ViewSub3,
-                      { right: 10, justifyContent: "center" },
+                      { right: ViewScale(10), justifyContent: "center" },
                     ]}
                   >
                     <Image
-                      style={{ width: 26, height: 15 }}
+                      style={{ width: ViewScale(26), height: ViewScale(15) }}
                       source={require("../../image/liveme.png")}
                     />
-                    <View style={{ bottom: 13, right: 22 }}>
-                      <Text style={{ fontSize: 10, color: "#334c6e" }}>
+                    <View style={{ bottom: ViewScale(13), right: ViewScale(22) }}>
+                      <Text style={{ fontSize: ViewScale(10), color: "#334c6e" }}>
                         {I18n.t("translate_Prepare")}
                       </Text>
                     </View>
@@ -1453,15 +1453,15 @@ class ViewDevelop extends React.Component {
                   <View
                     style={[
                       Styles.ViewSub3,
-                      { right: 10, justifyContent: "center" },
+                      { right: ViewScale(10), justifyContent: "center" },
                     ]}
                   >
                     <Image
-                      style={{ width: 26, height: 15 }}
+                      style={{ width: ViewScale(26), height: ViewScale(15) }}
                       source={require("../../image/liveme.png")}
                     />
-                    <View style={{ bottom: 13, right: 22 }}>
-                      <Text style={{ fontSize: 10, color: "#ff5e5e" }}>
+                    <View style={{ bottom: ViewScale(13), right: ViewScale(22) }}>
+                      <Text style={{ fontSize: ViewScale(10), color: "#ff5e5e" }}>
                         {I18n.t("translate_OnAir")}
                       </Text>
                     </View>
@@ -1476,15 +1476,15 @@ class ViewDevelop extends React.Component {
                   <View
                     style={[
                       Styles.ViewSub3,
-                      { right: 10, justifyContent: "center" },
+                      { right: ViewScale(10), justifyContent: "center" },
                     ]}
                   >
                     <Image
-                      style={{ width: 26, height: 15 }}
+                      style={{ width: ViewScale(26), height: ViewScale(15) }}
                       source={require("../../image/liveme.png")}
                     />
-                    <View style={{ bottom: 13, right: 22 }}>
-                      <Text style={{ fontSize: 10, color: "#b7b7b7" }}>
+                    <View style={{ bottom: ViewScale(13), right: ViewScale(22) }}>
+                      <Text style={{ fontSize: ViewScale(10), color: "#b7b7b7" }}>
                         {I18n.t("translate_returnBack")}
                       </Text>
                     </View>
@@ -1509,8 +1509,8 @@ class ViewDevelop extends React.Component {
       <View style={{ backgroundColor: "#f7f9fc" }}>
         <ListItem
           containerStyle={{
-            marginBottom: 8,
-            borderRadius: 10,
+            marginBottom: ViewScale(8),
+            borderRadius: ViewScale(10),
             alignSelf: "center",
             flex: 1,
             width: "95%",
@@ -1667,19 +1667,19 @@ class ViewDevelop extends React.Component {
                 <View
                   style={{
                     width: "30%",
-                    bottom: 10,
+                    bottom: ViewScale(10),
                   }}
                 >
                   <CheckBox
                     checkedIcon={
                       <Image
-                        style={{ width: 25, height: 25, top: -10 }}
+                        style={{ width: ViewScale(25), height: ViewScale(25), top: ViewScale(-10) }}
                         source={require("../../image/PickerMarket.png")}
                       />
                     }
                     uncheckedIcon={
                       <Image
-                        style={{ width: 25, height: 25, top: -10 }}
+                        style={{ width: ViewScale(25), height: ViewScale(25), top: ViewScale(-10) }}
                         source={require("../../image/shoping.png")}
                       />
                     }
@@ -1703,12 +1703,12 @@ class ViewDevelop extends React.Component {
                 >
                   {item.activity_list_location_th === "ออนไลน์" ? (
                     <Image
-                      style={{ width: 13, height: 13, top: 3 }}
+                      style={{ width: ViewScale(13), height: ViewScale(13), top: ViewScale(3) }}
                       source={require("../../image/WWW.png")}
                     />
                   ) : (
                     <Image
-                      style={{ width: 9, height: 12, top: 3 }}
+                      style={{ width: ViewScale(9), height: ViewScale(12), top: ViewScale(3) }}
                       source={require("../../image/makerlocation.png")}
                     />
                   )}
@@ -1733,7 +1733,7 @@ class ViewDevelop extends React.Component {
             </View>
           }
           subtitle={
-            <View style={[Styles.ViewSub10, { marginTop: 15, flex: 1 }]}>
+            <View style={[Styles.ViewSub10, { marginTop: ViewScale(15), flex: 1 }]}>
               {/* {this.props.getStatus1.isResult.status_confirm_identity
                 .status_code != 0 &&
               this.props.getStatus1.isResult.status_confirm_identity
@@ -1876,7 +1876,7 @@ class ViewDevelop extends React.Component {
                 style={Styles.TouchRead}
               >
                 <Image
-                  style={{ width: 17, height: 13 }}
+                  style={{ width: ViewScale(17), height: ViewScale(13) }}
                   source={require("../../image/readDetail.png")}
                 />
                 <Text style={Styles.textreaddetail}>
@@ -1892,7 +1892,7 @@ class ViewDevelop extends React.Component {
               >
                 <Image
                   resizeMode={"contain"}
-                  style={{ width: 14, height: 16 }}
+                  style={{ width: (14), height: (16) }}
                   source={require("../../image/sharelx.png")}
                 />
               </TouchableOpacity>
@@ -1904,15 +1904,15 @@ class ViewDevelop extends React.Component {
                   <View
                     style={[
                       Styles.ViewSub3,
-                      { right: 10, justifyContent: "center" },
+                      { right: ViewScale(10), justifyContent: "center" },
                     ]}
                   >
                     <Image
-                      style={{ width: 26, height: 15 }}
+                      style={{ width: ViewScale(26), height: ViewScale(15) }}
                       source={require("../../image/liveme.png")}
                     />
-                    <View style={{ bottom: 13, right: 22 }}>
-                      <Text style={{ fontSize: 10, color: "#334c6e" }}>
+                    <View style={{ bottom: ViewScale(13), right: ViewScale(22) }}>
+                      <Text style={{ fontSize: ViewScale(10), color: "#334c6e" }}>
                         {I18n.t("translate_Prepare")}
                       </Text>
                     </View>
@@ -1927,15 +1927,15 @@ class ViewDevelop extends React.Component {
                   <View
                     style={[
                       Styles.ViewSub3,
-                      { right: 10, justifyContent: "center" },
+                      { right: ViewScale(10), justifyContent: "center" },
                     ]}
                   >
                     <Image
-                      style={{ width: 26, height: 15 }}
+                      style={{ width: ViewScale(26), height: ViewScale(15) }}
                       source={require("../../image/liveme.png")}
                     />
-                    <View style={{ bottom: 13, right: 22 }}>
-                      <Text style={{ fontSize: 10, color: "#ff5e5e" }}>
+                    <View style={{ bottom: ViewScale(13), right: ViewScale(22) }}>
+                      <Text style={{ fontSize: ViewScale(10), color: "#ff5e5e" }}>
                         {I18n.t("translate_OnAir")}
                       </Text>
                     </View>
@@ -1950,15 +1950,15 @@ class ViewDevelop extends React.Component {
                   <View
                     style={[
                       Styles.ViewSub3,
-                      { right: 10, justifyContent: "center" },
+                      { right: ViewScale(10), justifyContent: "center" },
                     ]}
                   >
                     <Image
-                      style={{ width: 26, height: 15 }}
+                      style={{ width: ViewScale(26), height: ViewScale(15) }}
                       source={require("../../image/liveme.png")}
                     />
-                    <View style={{ bottom: 13, right: 22 }}>
-                      <Text style={{ fontSize: 10, color: "#b7b7b7" }}>
+                    <View style={{ bottom: ViewScale(13), right: ViewScale(22) }}>
+                      <Text style={{ fontSize: ViewScale(10), color: "#b7b7b7" }}>
                         {I18n.t("translate_returnBack")}
                       </Text>
                     </View>
@@ -2039,7 +2039,7 @@ class ViewDevelop extends React.Component {
                       />
                     )}
                   </View>
-                  <View style={{ margin: 10 }}>
+                  <View style={{ margin: ViewScale(10) }}>
                     <Text style={Styles.popupTextTitle}>{this.state.name}</Text>
                     <Text style={Styles.opoupTextData1}>
                       {this.state.StarD} - {this.state.EndD}
@@ -2057,7 +2057,7 @@ class ViewDevelop extends React.Component {
                     >
                       <View style={{ flex: 1, flexDirection: "row" }}>
                         <Image
-                          style={{ width: 18, height: 13, top: 4 }}
+                          style={{ width: ViewScale(18), height: ViewScale(13), top: ViewScale(4) }}
                           source={{ uri: this.state.contry_img_flag }}
                         />
                         <Text style={Styles.popupTextloca}>
@@ -2070,7 +2070,7 @@ class ViewDevelop extends React.Component {
                           style={{
                             backgroundColor: "#2d6dc4",
 
-                            borderRadius: 11,
+                            borderRadius: ViewScale(11),
                           }}
                         >
                           <Text style={Styles.popupTextMap}>
@@ -2087,12 +2087,12 @@ class ViewDevelop extends React.Component {
                     >
                       {this.state.location === "ออนไลน์" ? (
                         <Image
-                          style={{ width: 12, height: 12, top: 0 }}
+                          style={{ width: ViewScale(12), height: ViewScale(12), top: ViewScale(0) }}
                           source={require("../../image/WWW.png")}
                         />
                       ) : (
                         <Image
-                          style={{ width: 9, height: 12 }}
+                          style={{ width: ViewScale(9), height: ViewScale(12) }}
                           source={require("../../image/maker2.png")}
                         />
                       )}
@@ -2105,7 +2105,7 @@ class ViewDevelop extends React.Component {
                         {this.state.location}
                       </Text>
                     </View>
-                    <View style={{ marginTop: 10 }}>
+                    <View style={{ marginTop: ViewScale(10) }}>
                       <Text style={Styles.opoupTextData1}>
                         {I18n.t("translate_ActPrice")} : {this.state.price}
                       </Text>
@@ -2130,8 +2130,8 @@ class ViewDevelop extends React.Component {
                               {I18n.t("translate_LIVE")}
                             </Text>
                           </ImageBackground>
-                          <View style={{ bottom: 13, right: 33 }}>
-                            <Text style={{ fontSize: 12, color: "#334c6e" }}>
+                          <View style={{ bottom: ViewScale(13), right: ViewScale(33) }}>
+                            <Text style={{ fontSize: ViewScale(12), color: "#334c6e" }}>
                               {I18n.t("translate_Prepare")}
                             </Text>
                           </View>
@@ -2151,8 +2151,8 @@ class ViewDevelop extends React.Component {
                               {I18n.t("translate_LIVE")}
                             </Text>
                           </ImageBackground>
-                          <View style={{ bottom: 13, right: 31 }}>
-                            <Text style={{ fontSize: 12, color: "#ff5e5e" }}>
+                          <View style={{ bottom: ViewScale(13), right: ViewScale(31) }}>
+                            <Text style={{ fontSize: ViewScale(12), color: "#ff5e5e" }}>
                               {I18n.t("translate_OnAir")}
                             </Text>
                           </View>
@@ -2172,17 +2172,17 @@ class ViewDevelop extends React.Component {
                               {I18n.t("translate_LIVE")}
                             </Text>
                           </ImageBackground>
-                          <View style={{ bottom: 13, right: 31 }}>
-                            <Text style={{ fontSize: 12, color: "#b7b7b7" }}>
+                          <View style={{ bottom: ViewScale(13), right: ViewScale(31) }}>
+                            <Text style={{ fontSize: ViewScale(12), color: "#b7b7b7" }}>
                               {I18n.t("translate_returnBack")}
                             </Text>
                           </View>
                         </View>
                       </TouchableOpacity>
                     )}
-                    <View style={{ margin: 10 }}>
+                    <View style={{ margin: ViewScale(10) }}>
                       <Image
-                        style={{ width: 334, height: 1 }}
+                        style={{ width: ViewScale(334), height: 1 }}
                         source={require("../../image/line6.png")}
                       />
                     </View>
@@ -2202,7 +2202,7 @@ class ViewDevelop extends React.Component {
                         <Icon3
                           color="#2d6dc4"
                           name="keyboard-arrow-down"
-                          size={20}
+                          size={ViewScale(20)}
                         />
                       </View>
                     ) : (
@@ -2267,7 +2267,7 @@ class ViewDevelop extends React.Component {
                         <Text style={Styles.popupTextTitledetail}>
                           {I18n.t("translate_Main")}
                         </Text>
-                        <View style={{ width: 321, height: null }}>
+                        <View style={{ width: ViewScale(321), height: null }}>
                           <Text style={Styles.popupTextdetail}>
                             {this.state.detail}
                           </Text>
@@ -2286,14 +2286,14 @@ class ViewDevelop extends React.Component {
                           <Icon3
                             color="#2d6dc4"
                             name="keyboard-arrow-up"
-                            size={20}
+                            size={ViewScale(20)}
                           />
                         </View>
                       </>
                     )}
-                    <View style={{ margin: 10 }}>
+                    <View style={{ margin: ViewScale(10) }}>
                       <Image
-                        style={{ width: 334, height: 1 }}
+                        style={{ width: ViewScale(334), height: ViewScale(1) }}
                         source={require("../../image/line6.png")}
                       />
                     </View>
@@ -2308,7 +2308,7 @@ class ViewDevelop extends React.Component {
                       </Text>
                       <View style={{ flexDirection: "row" }}>
                         <Image
-                          style={{ width: 29, height: 29 }}
+                          style={{ width: ViewScale(29), height: ViewScale(29) }}
                           source={require("../../image/phonelx.png")}
                         />
 
@@ -2316,7 +2316,7 @@ class ViewDevelop extends React.Component {
                           onPress={() => {
                             this.Call(this.state.deparment_tel);
                           }}
-                          style={{ color: "#2d6dc4", fontSize: 18, top: 4 }}
+                          style={{ color: "#2d6dc4", fontSize: ViewScale(18), top: ViewScale(4) }}
                         >
                           {"   "} {this.state.deparment_tel}
                         </Text>
@@ -2324,7 +2324,7 @@ class ViewDevelop extends React.Component {
                     </View>
                     <View
                       style={{
-                        marginTop: 13,
+                        marginTop: ViewScale(13),
                         alignItems: "center",
                       }}
                     >
@@ -2342,7 +2342,7 @@ class ViewDevelop extends React.Component {
                           style={{ flexDirection: "row" }}
                         >
                           <Image
-                            style={{ width: 20, height: 20 }}
+                            style={{ width: ViewScale(20), height: ViewScale(20) }}
                             source={require("../../image/shoping.png")}
                           />
                           <Text style={Styles.popupTextdelect}>
@@ -2364,7 +2364,7 @@ class ViewDevelop extends React.Component {
                           style={{ flexDirection: "row" }}
                         >
                           <Image
-                            style={{ width: 20, height: 20 }}
+                            style={{ width: ViewScale(20), height: ViewScale(20) }}
                             source={require("../../image/startoppick.png")}
                           />
                           <Text style={Styles.popupTextdelect}>
@@ -2458,11 +2458,11 @@ class ViewDevelop extends React.Component {
                         onPress={() => {
                           this.onShareDetali(this.state.name, this.state.url);
                         }}
-                        style={{ alignSelf: "flex-end", marginTop: -25 }}
+                        style={{ alignSelf: "flex-end", marginTop: ViewScale(-25) }}
                       >
                         <Image
                           resizeMode={"contain"}
-                          style={{ width: 14, height: 16 }}
+                          style={{ width: ViewScale(14), height: ViewScale(16) }}
                           source={require("../../image/sharelx.png")}
                         />
                       </TouchableOpacity>
@@ -2515,7 +2515,7 @@ class ViewDevelop extends React.Component {
                 <View
                   style={{
                     flexDirection: "row",
-                    marginTop: 10,
+                    marginTop: ViewScale(10),
                   }}
                 >
                   <Popover
@@ -2547,7 +2547,7 @@ class ViewDevelop extends React.Component {
                         }}
                         style={{
                           flex: 1,
-                          marginHorizontal: 10,
+                          marginHorizontal: ViewScale(10),
                           height: ViewScale(34),
                           backgroundColor: "#2d6dc4",
 
@@ -2572,7 +2572,7 @@ class ViewDevelop extends React.Component {
                       style={{
                         flex: 1,
                         borderWidth: 1,
-                        height: 100,
+                        height: ViewScale(100),
                         borderColor: "#2d6dc4",
                       }}
                     >
@@ -2586,10 +2586,10 @@ class ViewDevelop extends React.Component {
                           style={{
                             // borderWidth: 1,
                             flex: 1,
-                            height: 35,
-                            marginHorizontal: 10,
-                            marginVertical: 10,
-                            borderRadius: 17,
+                            height: ViewScale(35),
+                            marginHorizontal: ViewScale(10),
+                            marginVertical: ViewScale(10),
+                            borderRadius: ViewScale(17),
                             // backgroundColor: 'red',
                             // borderColor: 'red',
                             // justifyContent:'center'
@@ -2631,8 +2631,8 @@ class ViewDevelop extends React.Component {
                                 flexDirection: "row",
                                 borderWidth: 1,
                                 borderColor: "#2d6dc4",
-                                height: 35,
-                                borderRadius: 17,
+                                height: ViewScale(35),
+                                borderRadius: ViewScale(17),
                               }}
                             >
                               {this.state.valueSelectActivity3dev ===
@@ -2672,7 +2672,7 @@ class ViewDevelop extends React.Component {
                                   <Text
                                     style={{
                                       color: "#2d6dc4",
-                                      fontSize: 20,
+                                      fontSize: ViewScale(20),
                                       textAlign: "center",
                                     }}
                                   >
@@ -2686,7 +2686,7 @@ class ViewDevelop extends React.Component {
                               >
                                 <Icon
                                   name="chevron-down"
-                                  size={20}
+                                  size={ViewScale(20)}
                                   color="#2d6dc4"
                                   style={{ justifyContent: "center" }}
                                 />
@@ -2699,10 +2699,10 @@ class ViewDevelop extends React.Component {
                           style={{
                             // borderWidth: 1,
                             flex: 1,
-                            height: 35,
-                            marginHorizontal: 10,
-                            marginVertical: 10,
-                            borderRadius: 17,
+                            height: ViewScale(35),
+                            marginHorizontal: ViewScale(10),
+                            marginVertical: ViewScale(10),
+                            borderRadius: ViewScale(17),
                             // borderColor: 'red',
                           }}
                         >
@@ -2779,8 +2779,8 @@ class ViewDevelop extends React.Component {
                                 flexDirection: "row",
                                 borderWidth: 1,
                                 borderColor: "#2d6dc4",
-                                height: 35,
-                                borderRadius: 17,
+                                height: ViewScale(35),
+                                borderRadius: ViewScale(17),
                               }}
                             >
                               {this.state.valueSelectActivity2dev ===
@@ -2821,7 +2821,7 @@ class ViewDevelop extends React.Component {
                               >
                                 <Icon
                                   name="chevron-down"
-                                  size={20}
+                                  size={ViewScale(20)}
                                   color="#2d6dc4"
                                   style={{}}
                                 />
@@ -2849,11 +2849,11 @@ class ViewDevelop extends React.Component {
                         }}
                         style={{
                           backgroundColor: "#2d6dc4",
-                          marginHorizontal: 10,
+                          marginHorizontal: ViewScale(10),
 
-                          height: 34,
+                          height: ViewScale(34),
 
-                          borderRadius: 17,
+                          borderRadius: ViewScale(17),
                           justifyContent: "center",
                         }}
                       >
@@ -2876,10 +2876,10 @@ class ViewDevelop extends React.Component {
                     }}
                     style={{
                       flex: 1,
-                      marginHorizontal: 10,
+                      marginHorizontal: ViewScale(10),
                       height: ViewScale(34),
                       backgroundColor: "#2d6dc4",
-                      borderRadius: 8,
+                      borderRadius: ViewScale(8),
                       justifyContent: "center",
                     }}
                   >
@@ -2908,9 +2908,9 @@ class ViewDevelop extends React.Component {
                 ) : (
                   <View
                     style={{
-                      marginTop: 10,
+                      marginTop: ViewScale(10),
                       backgroundColor: "#f7f9fc",
-                      marginBottom: 10,
+                      marginBottom: ViewScale(10),
                     }}
                   >
                     {this.state.AllDevelop.length > 0 ? (
@@ -2920,7 +2920,7 @@ class ViewDevelop extends React.Component {
                         // scrollEnabled={false}
                         contentContainerStyle={[
                           Styles.flastListContainer,
-                          { marginTop: 10 },
+                          { marginTop: ViewScale(10) },
                         ]}
                         extraData={this.state}
                         data={AllDevelop}
@@ -2936,7 +2936,7 @@ class ViewDevelop extends React.Component {
                         {this.state.fetching_from_server ? (
                           <ActivityIndicator
                             color="black"
-                            style={{ margin: 15 }}
+                            style={{ margin: ViewScale(15) }}
                           />
                         ) : (
                           <View style={Styles.footerNotdata}>
@@ -2955,20 +2955,20 @@ class ViewDevelop extends React.Component {
             </View>
           )}
           {this.state.selectedIndex === 1 && (
-            <View style={{ marginTop: 10 }}>
-              <View style={{ marginHorizontal: 10 }}>
+            <View style={{ marginTop: ViewScale(10) }}>
+              <View style={{ marginHorizontal: ViewScale(10) }}>
                 <View
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
                     borderWidth: 1,
-                    borderRadius: 18,
+                    borderRadius: ViewScale(18),
 
                     borderColor: "#dadada",
                   }}
                 >
                   <Image
-                    style={{ width: ViewScale(22), height: ViewScale(22), left: 10, top: 2 }}
+                    style={{ width: ViewScale(22), height: ViewScale(22), left: ViewScale(10), top: ViewScale(2) }}
                     source={require("../../image/searchbluex.png")}
                   />
 
@@ -2984,7 +2984,7 @@ class ViewDevelop extends React.Component {
                 <View
                   style={{
                     flexDirection: "row",
-                    marginTop: 10,
+                    marginTop: ViewScale(10),
                   }}
                 >
                   <Popover
@@ -3017,7 +3017,7 @@ class ViewDevelop extends React.Component {
                         }}
                         style={{
                           flex: 1,
-                          marginHorizontal: 10,
+                          marginHorizontal: ViewScale(10),
                           height: ViewScale(34),
                           backgroundColor: "#2d6dc4",
 
@@ -3041,7 +3041,7 @@ class ViewDevelop extends React.Component {
                       style={{
                         flex: 1,
                         borderWidth: 1,
-                        height: 100,
+                        height: ViewScale(100),
                         borderColor: "#2d6dc4",
                       }}
                     >
@@ -3055,10 +3055,10 @@ class ViewDevelop extends React.Component {
                           style={{
                             borderWidth: 1,
                             flex: 1,
-                            height: 35,
-                            marginHorizontal: 10,
-                            marginVertical: 10,
-                            borderRadius: 17,
+                            height: ViewScale(35),
+                            marginHorizontal: ViewScale(10),
+                            marginVertical: ViewScale(10),
+                            borderRadius: ViewScale(17),
                             borderColor: "#2d6dc4",
                           }}
                         >
@@ -3105,9 +3105,9 @@ class ViewDevelop extends React.Component {
                                     <Text
                                       style={{
                                         color: "#2d6dc4",
-                                        fontSize: 20,
-                                        left: 60,
-                                        top: 3.5,
+                                        fontSize: ViewScale(20),
+                                        left: ViewScale(60),
+                                        top: ViewScale(3.5),
                                       }}
                                     >
                                       {this.state.setdefulttear}
@@ -3116,9 +3116,9 @@ class ViewDevelop extends React.Component {
                                     <Text
                                       style={{
                                         color: "#2d6dc4",
-                                        fontSize: 20,
-                                        left: 60,
-                                        top: 3.5,
+                                        fontSize: ViewScale(20),
+                                        left: ViewScale(60),
+                                        top: ViewScale(3.5),
                                       }}
                                     >
                                       {/* {I18n.t('translate_chooseyear')} */}
@@ -3130,9 +3130,9 @@ class ViewDevelop extends React.Component {
                                 <Text
                                   style={{
                                     color: "#2d6dc4",
-                                    fontSize: 20,
-                                    left: 50,
-                                    top: 3.5,
+                                    fontSize: ViewScale(20),
+                                    left: ViewScale(50),
+                                    top: ViewScale(3.5),
                                   }}
                                 >
                                   {this.state.valueSelectActivity3dev}
@@ -3142,9 +3142,9 @@ class ViewDevelop extends React.Component {
                             <View style={{ flexDirection: "row-reverse" }}>
                               <Icon
                                 name="chevron-down"
-                                size={20}
+                                size={ViewScale(20)}
                                 color="#2d6dc4"
-                                style={{ top: -17, left: 8 }}
+                                style={{ top: ViewScale(-17), left: ViewScale(8) }}
                               />
                             </View>
                           </RNPickerSelect>
@@ -3154,10 +3154,10 @@ class ViewDevelop extends React.Component {
                           style={{
                             borderWidth: 1,
                             flex: 1,
-                            height: 35,
-                            marginHorizontal: 10,
-                            marginVertical: 10,
-                            borderRadius: 17,
+                            height: ViewScale(35),
+                            marginHorizontal: ViewScale(10),
+                            marginVertical: ViewScale(10),
+                            borderRadius: ViewScale(17),
                             borderColor: "#2d6dc4",
                           }}
                         >
@@ -3235,9 +3235,9 @@ class ViewDevelop extends React.Component {
                                 <Text
                                   style={{
                                     color: "#2d6dc4",
-                                    fontSize: 20,
-                                    left: 50,
-                                    top: 3.5,
+                                    fontSize: ViewScale(20),
+                                    left: ViewScale(50),
+                                    top: ViewScale(3.5),
                                   }}
                                 >
                                   {/* {I18n.t('translate_choosemouth')} */}
@@ -3247,9 +3247,9 @@ class ViewDevelop extends React.Component {
                                 <Text
                                   style={{
                                     color: "#2d6dc4",
-                                    fontSize: 20,
-                                    left: 50,
-                                    top: 3.5,
+                                    fontSize: ViewScale(20),
+                                    left: ViewScale(50),
+                                    top: ViewScale(3.5),
                                   }}
                                 >
                                   {this.state.valueSelectActivity2devE}
@@ -3259,9 +3259,9 @@ class ViewDevelop extends React.Component {
                             <View style={{ flexDirection: "row-reverse" }}>
                               <Icon
                                 name="chevron-down"
-                                size={20}
+                                size={ViewScale(20)}
                                 color="#2d6dc4"
-                                style={{ top: -17, left: 8 }}
+                                style={{ top: ViewScale(-17), left: ViewScale(8) }}
                               />
                             </View>
                           </RNPickerSelect>
@@ -3286,18 +3286,18 @@ class ViewDevelop extends React.Component {
                         }}
                         style={{
                           backgroundColor: "#2d6dc4",
-                          marginHorizontal: 10,
+                          marginHorizontal: ViewScale(10),
 
-                          height: 34,
+                          height: ViewScale(34),
 
-                          borderRadius: 17,
+                          borderRadius: ViewScale(17),
                           justifyContent: "center",
                         }}
                       >
                         <Text
                           style={{
                             color: "#FFFFFF",
-                            fontSize: 20,
+                            fontSize: ViewScale(20),
                             textAlign: "center",
                           }}
                         >
@@ -3313,11 +3313,11 @@ class ViewDevelop extends React.Component {
                     }}
                     style={{
                       flex: 1,
-                      marginHorizontal: 10,
+                      marginHorizontal: ViewScale(10),
                       height: ViewScale(34),
                       backgroundColor: "#2d6dc4",
 
-                      borderRadius: 8,
+                      borderRadius: ViewScale(8),
                       justifyContent: "center",
                     }}
                   >
@@ -3340,12 +3340,12 @@ class ViewDevelop extends React.Component {
                     <ActivityIndicator
                       size="small"
                       color="black"
-                      style={{ margin: 15 }}
+                      style={{ margin: ViewScale(15) }}
                     />
                   </View>
                 ) : (
                   <View
-                    style={{ backgroundColor: "#f7f9fc", marginBottom: 10 }}
+                    style={{ backgroundColor: "#f7f9fc", marginBottom: ViewScale(10) }}
                   >
                     {this.state.AllDevelopElearning.length > 0 ? (
                       // <ScrollView style={{marginTop: 10}}>
@@ -3366,12 +3366,12 @@ class ViewDevelop extends React.Component {
                         {this.state.fetching_from_server2 ? (
                           <ActivityIndicator
                             color="black"
-                            style={{ margin: 15 }}
+                            style={{ margin: ViewScale(15) }}
                           />
                         ) : (
                           <View style={Styles.footerNotdata}>
                             {this.state.AllDevelopElearning.length == 0 ? (
-                              <Text style={{ fontSize: 22 }}>
+                              <Text style={{ fontSize: ViewScale(22) }}>
                                 {I18n.t("translate_Nodata")}
                               </Text>
                             ) : null}
@@ -3391,24 +3391,24 @@ class ViewDevelop extends React.Component {
 }
 const pickerSelectStyles2 = StyleSheet.create({
   inputIOS: {
-    fontSize: 23,
+    fontSize: ViewScale(23),
     color: "#73838f",
-    paddingHorizontal: 10,
+    paddingHorizontal: ViewScale(10),
     justifyContent: "center",
-    paddingTop: Platform.OS === "ios" ? 2 : -3,
-    paddingBottom: 5,
+    paddingTop: Platform.OS === "ios" ? ViewScale(2) : ViewScale(-3),
+    paddingBottom: ViewScale(5),
     // borderWidth:1
   },
   inputAndroid: {
-    height: 40,
-    fontSize: 23,
+    height: ViewScale(40),
+    fontSize: ViewScale(23),
     color: "#73838f",
     fontWeight: "normal",
     fontFamily: "PSL Kittithada Pro",
     width: "100%",
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    paddingRight: 70,
+    paddingHorizontal: ViewScale(10),
+    paddingVertical: ViewScale(8),
+    paddingRight: ViewScale(70),
   },
 });
 

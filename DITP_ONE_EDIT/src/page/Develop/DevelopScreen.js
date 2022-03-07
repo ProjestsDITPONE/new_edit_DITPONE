@@ -747,12 +747,12 @@ class DevelopScreen extends React.Component {
     return (
       <View style={Styles.footer}>
         {this.state.fetching_from_server ? (
-          <ActivityIndicator color="black" style={{ margin: 15 }} />
+          <ActivityIndicator color="black" style={{ margin: ViewScale(15) }} />
         ) : (
           <View>
             {this.state.Recommend.length == 0 ? (
               <View style={{ alignItems: "center" }}>
-                <Text style={{ fontSize: 20 }}>
+                <Text style={{ fontSize: ViewScale(20) }}>
                   {I18n.t("translate_Nodata")}
                 </Text>
               </View>
@@ -766,11 +766,11 @@ class DevelopScreen extends React.Component {
     return (
       <View style={Styles.footer}>
         {this.state.fetching_from_server1 ? (
-          <ActivityIndicator color="black" style={{ margin: 15 }} />
+          <ActivityIndicator color="black" style={{ margin: ViewScale(15) }} />
         ) : (
           <View style={{ alignItems: "center" }}>
             {this.state.AllDevelop.length == 0 ? (
-              <Text style={{ fontSize: 20 }}>{I18n.t("translate_Nodata")}</Text>
+              <Text style={{ fontSize: ViewScale(20) }}>{I18n.t("translate_Nodata")}</Text>
             ) : null}
           </View>
         )}
@@ -1091,11 +1091,11 @@ class DevelopScreen extends React.Component {
           width: ViewScale(260),
           height: ViewScale(140),
           borderWidth: 1,
-          borderRadius: 8,
+          borderRadius: ViewScale(8),
           borderColor: "#3986ee",
           flex: 1,
-          marginHorizontal: 10,
-          marginTop: 20,
+          marginHorizontal: ViewScale(10),
+          marginTop: ViewScale(20),
         }}
       >
         <TouchableOpacity
@@ -1138,8 +1138,8 @@ class DevelopScreen extends React.Component {
                 style={{
                   flexDirection: "row",
                   alignItems: "center",
-                  marginTop: 10,
-                  marginLeft: 5,
+                  marginTop: ViewScale(10),
+                  marginLeft: ViewScale(5),
                 }}
               >
                 <Image
@@ -1158,8 +1158,8 @@ class DevelopScreen extends React.Component {
                   width: "80%",
                   marginTop: 5,
                   flexDirection: "row",
-                  marginLeft: -8,
-                  left: 0,
+                  marginLeft: ViewScale(-8),
+                  left: ViewScale(0),
                 }}
               >
                 <Text numberOfLines={2} style={Styles.TextSub4}>
@@ -1179,9 +1179,9 @@ class DevelopScreen extends React.Component {
 
               <View
                 style={{
-                  left: 0,
+                  left: ViewScale(0),
                   width: "80%",
-                  bottom: 5,
+                  bottom: ViewScale(5),
                   flexDirection: "row",
                 }}
               >
@@ -1220,8 +1220,8 @@ class DevelopScreen extends React.Component {
                           style={Styles.ImgBackgroungSub1}
                           source={require("../../image/newlive.png")}
                         />
-                        <View style={{ bottom: 13, right: 30 }}>
-                          <Text style={{ fontSize: 12, color: "#334c6e" }}>
+                        <View style={{ bottom: ViewScale(13), right: ViewScale(30) }}>
+                          <Text style={{ fontSize: ViewScale(12), color: "#334c6e" }}>
                             {I18n.t("translate_Prepare")}
                           </Text>
                         </View>
@@ -1238,8 +1238,8 @@ class DevelopScreen extends React.Component {
                         style={Styles.ImgBackgroungSub1}
                         source={require("../../image/newlive.png")}
                       />
-                      <View style={{ bottom: 13, right: 25 }}>
-                        <Text style={{ fontSize: 12, color: "#ff5e5e" }}>
+                      <View style={{ bottom: ViewScale(13), right: ViewScale(25) }}>
+                        <Text style={{ fontSize: ViewScale(12), color: "#ff5e5e" }}>
                           {I18n.t("translate_OnAir")}
                         </Text>
                       </View>
@@ -1256,8 +1256,8 @@ class DevelopScreen extends React.Component {
                         style={Styles.ImgBackgroungSub1}
                         source={require("../../image/newlive.png")}
                       />
-                      <View style={{ bottom: 13, right: 31 }}>
-                        <Text style={{ fontSize: 12, color: "#b7b7b7" }}>
+                      <View style={{ bottom: ViewScale(13), right: ViewScale(31) }}>
+                        <Text style={{ fontSize: ViewScale(12), color: "#b7b7b7" }}>
                           {I18n.t("translate_returnBack")}
                         </Text>
                       </View>
@@ -1293,7 +1293,7 @@ class DevelopScreen extends React.Component {
       return (
         <View style={Styles.container}>
           <View style={{ flex: 1 }}>
-            <View style={{ width: 420 }}>
+            <View style={{ width: ViewScale(420) }}>
               <CalendarPicker
                 selectYearTitle={
                   I18n.locale === "th" ? "เลือกปี " : "Select Year "
@@ -1337,17 +1337,17 @@ class DevelopScreen extends React.Component {
                         "December",
                       ]
                 }
-                prevIcon={<Icon1 name="left" size={20} />}
-                nextIcon={<Icon1 name="right" size={20} />}
+                prevIcon={<Icon1 name="left" size={ViewScale(20)} />}
+                nextIcon={<Icon1 name="right" size={ViewScale(20)} />}
                 minDate={Moment("01-01-2019", "DD-MM-YYYY")}
                 previousTitle="<"
-                previousTitleStyle={{ color: "#9b9b9b", fontSize: 25 }}
+                previousTitleStyle={{ color: "#9b9b9b", fontSize: ViewScale(25) }}
                 nextTitle=">"
-                nextTitleStyle={{ color: "#9b9b9b", fontSize: 25 }}
+                nextTitleStyle={{ color: "#9b9b9b", fontSize: ViewScale(25) }}
                 selectedDayColor={"#2d6dc4"}
                 selectedDayTextColor={"#fff"}
                 selectedStartDate={this.state.selecStartDate}
-                textStyle={{ color: "#000", fontSize: 20 }}
+                textStyle={{ color: "#000", fontSize: ViewScale(20) }}
                 onDateChange={(value) => {
                   setTimeout(() => {
                     this.setState({
@@ -1435,16 +1435,16 @@ class DevelopScreen extends React.Component {
       return (
         <View style={Styles.container}>
           <View style={{ flex: 1 }}>
-            <View style={{ width: 420 }}>
+            <View style={{ width: ViewScale(420) }}>
               <MonthSelectorCalendar
                 maxDate={Moment("01-01-3000", "DD-MM-YYYY")}
                 minDate={Moment("01-01-2000", "DD-MM-YYYY")}
-                prevIcon={<Icon1 name="left" size={20} />}
-                nextIcon={<Icon1 name="right" size={20} />}
+                prevIcon={<Icon1 name="left" size={ViewScale(20)} />}
+                nextIcon={<Icon1 name="right" size={ViewScale(20)} />}
                 localeLanguage="en"
-                yearTextStyle={{ color: "#000", fontSize: 20 }}
-                selectedMonthTextStyle={{ color: "#FFF", fontSize: 20 }}
-                monthTextStyle={{ color: "#000", fontSize: 20 }}
+                yearTextStyle={{ color: "#000", fontSize: ViewScale(20) }}
+                selectedMonthTextStyle={{ color: "#FFF", fontSize: ViewScale(20) }}
+                monthTextStyle={{ color: "#000", fontSize: ViewScale(20) }}
                 selectedBackgroundColor={"#2d6dc4"}
                 selectedDate={this.state.month1}
                 onMonthTapped={(date) => {
@@ -1509,8 +1509,8 @@ class DevelopScreen extends React.Component {
               justifyContent: "center",
               alignItems: "center",
               alignSelf: "center",
-              marginTop: 10,
-              borderRadius: 50,
+              marginTop: ViewScale(10),
+              borderRadius: ViewScale(50),
               backgroundColor: "#96b3cb",
             }}
             onPress={async () => {
@@ -1636,7 +1636,7 @@ class DevelopScreen extends React.Component {
                   /> */}
                       <Image
                         source={require("../../image/devlop.png")}
-                        style={{ width: 55, height: 50, borderRadius: 15 }}
+                        style={{ width: ViewScale(55), height: ViewScale(50), borderRadius: ViewScale(15) }}
                       />
                       <Text style={Styles.textactivityDate}>
                         {this.Star_Date(item.activity_list_start_date)}
@@ -1711,19 +1711,19 @@ class DevelopScreen extends React.Component {
                     <View
                       style={{
                         width: "20%",
-                        bottom: 10,
+                        bottom: ViewScale(10),
                       }}
                     >
                       <CheckBox
                         checkedIcon={
                           <Image
-                            style={{ width: 25, height: 25, top: -10 }}
+                            style={{ width: ViewScale(25), height: ViewScale(25), top: ViewScale(-10) }}
                             source={require("../../image/PickerMarket.png")}
                           />
                         }
                         uncheckedIcon={
                           <Image
-                            style={{ width: 25, height: 25, top: -10 }}
+                            style={{ width: ViewScale(25), height: ViewScale(25), top: ViewScale(-10) }}
                             source={require("../../image/shoping.png")}
                           />
                         }
@@ -1752,12 +1752,12 @@ class DevelopScreen extends React.Component {
                     >
                       {item.activity_list_location_th === "ออนไลน์" ? (
                         <Image
-                          style={{ width: 13, height: 13, top: 3 }}
+                          style={{ width: ViewScale(13), height: ViewScale(13), top: ViewScale(3) }}
                           source={require("../../image/WWW.png")}
                         />
                       ) : (
                         <Image
-                          style={{ width: 9, height: 12, top: 3 }}
+                          style={{ width: ViewScale(9), height: ViewScale(12), top: ViewScale(3) }}
                           source={require("../../image/makerlocation.png")}
                         />
                       )}
@@ -2017,11 +2017,11 @@ class DevelopScreen extends React.Component {
                         style={{
                           flexDirection: "row",
                           alignItems: "center",
-                          marginLeft: 1,
+                          marginLeft: ViewScale(1),
                         }}
                       >
                         <Image
-                          style={{ width: 17, height: 13 }}
+                          style={{ width: ViewScale(17), height: ViewScale(13) }}
                           source={require("../../image/readDetail.png")}
                         />
                         <Text style={Styles.textreaddetail}>
@@ -2081,12 +2081,12 @@ class DevelopScreen extends React.Component {
                           type: this.props.getUser.userDetails.res_result.type,
                         })
                       }
-                      hitSlop={{ top: 20, bottom: 20, left: 50, right: 50 }}
+                      hitSlop={{ top: ViewScale(20), bottom: ViewScale(20), left: ViewScale(50), right: ViewScale(50) }}
                       style={Styles.TouchRead}
                     >
                       <Text
                         style={{
-                          fontSize: 20,
+                          fontSize: ViewScale(20),
                           color: "#7fadec",
                           fontFamily: "Kittithada Bold 75",
                         }}
@@ -2105,7 +2105,7 @@ class DevelopScreen extends React.Component {
                   >
                     <Image
                       resizeMode={"contain"}
-                      style={{ width: 14, height: 16 }}
+                      style={{ width: ViewScale(14), height: ViewScale(16) }}
                       source={require("../../image/sharelx.png")}
                     />
                   </TouchableOpacity>
@@ -2171,7 +2171,7 @@ class DevelopScreen extends React.Component {
             isVisible={this.state.Show}
           >
             <View style={Styles.OverlayHight}>
-              <View style={[Styles.OverlayView1, { marginTop: -10 }]}>
+              <View style={[Styles.OverlayView1, { marginTop: ViewScale(-10) }]}>
                 <TouchableOpacity
                   onPress={() => this.setState({ Show: false })}
                 >
@@ -2188,20 +2188,20 @@ class DevelopScreen extends React.Component {
                     {this.state.img != "" ? (
                       <Image
                         resizeMode={"cover"}
-                        style={{ width: 334, height: 216 }}
+                        style={{ width: ViewScale(334), height: ViewScale(216) }}
                         source={{ uri: this.state.img }}
                       />
                     ) : (
                       <View style={{ alignItems: "center" }}>
                         <Image
                           resizeMode={"contain"}
-                          style={{ width: "100%", height: 216 }}
+                          style={{ width: "100%", height: ViewScale(216) }}
                           source={require("../../image/banerDrive.png")}
                         />
                       </View>
                     )}
                   </View>
-                  <View style={{ margin: 10 }}>
+                  <View style={{ margin: ViewScale(10) }}>
                     <Text style={Styles.popupTextTitle}>{this.state.name}</Text>
                     <Text style={Styles.opoupTextData1}>
                       {this.state.StarD} - {this.state.EndD}
@@ -2228,7 +2228,7 @@ class DevelopScreen extends React.Component {
                     >
                       <View style={{ flex: 1, flexDirection: "row" }}>
                         <Image
-                          style={{ width: 18, height: 13, top: 4 }}
+                          style={{ width: ViewScale(18), height: ViewScale(13), top: ViewScale(4) }}
                           source={{ uri: this.state.contry_img_flag }}
                         />
                         <Text style={Styles.popupTextloca}>
@@ -2241,7 +2241,7 @@ class DevelopScreen extends React.Component {
                           style={{
                             backgroundColor: "#2d6dc4",
 
-                            borderRadius: 11,
+                            borderRadius: ViewScale(11),
                           }}
                         >
                           <Text style={Styles.popupTextMap}>
@@ -2258,12 +2258,12 @@ class DevelopScreen extends React.Component {
                     >
                       {this.state.location === "ออนไลน์" ? (
                         <Image
-                          style={{ width: 13, height: 13, top: 0 }}
+                          style={{ width: ViewScale(13), height: ViewScale(13), top: ViewScale(0) }}
                           source={require("../../image/WWW.png")}
                         />
                       ) : (
                         <Image
-                          style={{ width: 9, height: 12, top: 0 }}
+                          style={{ width: ViewScale(9), height: ViewScale(12), top: ViewScale(0) }}
                           source={require("../../image/makerlocation.png")}
                         />
                       )}
@@ -2273,12 +2273,12 @@ class DevelopScreen extends React.Component {
                       </Text>
                     </View>
 
-                    <View style={{ marginTop: 10 }}>
+                    <View style={{ marginTop: ViewScale(10) }}>
                       <Text style={Styles.opoupTextData1}>
                         {I18n.t("translate_ActPrice")} : {this.state.price}
                       </Text>
                     </View>
-                    <View style={{ marginTop: 0 }}>
+                    <View style={{ marginTop: ViewScale(0) }}>
                       <Text style={Styles.opoupTextData1}>
                         {I18n.t("translate_Num")} : {this.state.partic}{" "}
                         {I18n.t("translate_case")}
@@ -2298,8 +2298,8 @@ class DevelopScreen extends React.Component {
                               {I18n.t("translate_LIVE")}
                             </Text>
                           </ImageBackground>
-                          <View style={{ bottom: 13, right: 33 }}>
-                            <Text style={{ fontSize: 12, color: "#334c6e" }}>
+                          <View style={{ bottom: ViewScale(13), right: ViewScale(33) }}>
+                            <Text style={{ fontSize: ViewScale(12), color: "#334c6e" }}>
                               {I18n.t("translate_Prepare")}
                             </Text>
                           </View>
@@ -2319,8 +2319,8 @@ class DevelopScreen extends React.Component {
                               {I18n.t("translate_LIVE")}
                             </Text>
                           </ImageBackground>
-                          <View style={{ bottom: 13, right: 31 }}>
-                            <Text style={{ fontSize: 12, color: "#ff5e5e" }}>
+                          <View style={{ bottom: ViewScale(13), right: ViewScale(31) }}>
+                            <Text style={{ fontSize: ViewScale(12), color: "#ff5e5e" }}>
                               {I18n.t("translate_OnAir")}
                             </Text>
                           </View>
@@ -2340,17 +2340,17 @@ class DevelopScreen extends React.Component {
                               {I18n.t("translate_LIVE")}
                             </Text>
                           </ImageBackground>
-                          <View style={{ bottom: 13, right: 31 }}>
-                            <Text style={{ fontSize: 12, color: "#b7b7b7" }}>
+                          <View style={{ bottom: ViewScale(13), right: ViewScale(31) }}>
+                            <Text style={{ fontSize: ViewScale(12), color: "#b7b7b7" }}>
                               {I18n.t("translate_returnBack")}
                             </Text>
                           </View>
                         </View>
                       </TouchableOpacity>
                     )}
-                    <View style={{ margin: 10 }}>
+                    <View style={{ margin: ViewScale(10) }}>
                       <Image
-                        style={{ width: 334, height: 1 }}
+                        style={{ width: ViewScale(334), height: ViewScale(1) }}
                         source={require("../../image/line6.png")}
                       />
                     </View>
@@ -2370,7 +2370,7 @@ class DevelopScreen extends React.Component {
                         <Icon3
                           color="#2d6dc4"
                           name="keyboard-arrow-down"
-                          size={20}
+                          size={ViewScale(20)}
                         />
                       </View>
                     ) : (
@@ -2402,7 +2402,7 @@ class DevelopScreen extends React.Component {
                         </Text>
                         {/* thking */}
 
-                        <View style={{ width: 321, height: null }}>
+                        <View style={{ width: ViewScale(321), height: null }}>
                           <Text style={Styles.popupTextdetail}>
                             {this.state.detail}
                           </Text>
@@ -2421,7 +2421,7 @@ class DevelopScreen extends React.Component {
                           <Icon3
                             color="#2d6dc4"
                             name="keyboard-arrow-up"
-                            size={20}
+                            size={ViewScale(20)}
                           />
                         </View>
                       </>
@@ -2438,9 +2438,9 @@ class DevelopScreen extends React.Component {
                         {I18n.t('translate_case')}
                       </Text>
                     </View> */}
-                    <View style={{ margin: 10 }}>
+                    <View style={{ margin: ViewScale(10) }}>
                       <Image
-                        style={{ width: 334, height: 1 }}
+                        style={{ width: ViewScale(334), height: ViewScale(1) }}
                         source={require("../../image/line6.png")}
                       />
                     </View>
@@ -2456,7 +2456,7 @@ class DevelopScreen extends React.Component {
                       </Text>
                       <View style={{ flexDirection: "row" }}>
                         <Image
-                          style={{ width: 29, height: 29 }}
+                          style={{ width: ViewScale(29), height: ViewScale(29) }}
                           source={require("../../image/phonelx.png")}
                         />
 
@@ -2464,7 +2464,7 @@ class DevelopScreen extends React.Component {
                           onPress={() => {
                             this.Call(this.state.deparment_tel);
                           }}
-                          style={{ color: "#2d6dc4", fontSize: 18, top: 4 }}
+                          style={{ color: "#2d6dc4", fontSize: ViewScale(18), top: ViewScale(4) }}
                         >
                           {"   "} {this.state.deparment_tel}
                         </Text>
@@ -2473,7 +2473,7 @@ class DevelopScreen extends React.Component {
 
                     <View
                       style={{
-                        marginTop: 13,
+                        marginTop: ViewScale(13),
                         alignItems: "center",
                       }}
                     >
@@ -2489,7 +2489,7 @@ class DevelopScreen extends React.Component {
                           style={{ flexDirection: "row" }}
                         >
                           <Image
-                            style={{ width: 20, height: 20 }}
+                            style={{ width: ViewScale(20), height: ViewScale(20) }}
                             source={require("../../image/shoping.png")}
                           />
                           <Text style={Styles.popupTextdelect}>
@@ -2509,7 +2509,7 @@ class DevelopScreen extends React.Component {
                           style={{ flexDirection: "row" }}
                         >
                           <Image
-                            style={{ width: 20, height: 20 }}
+                            style={{ width: ViewScale(20), height: ViewScale(20) }}
                             source={require("../../image/startoppick.png")}
                           />
                           <Text style={Styles.popupTextdelect}>
@@ -2606,11 +2606,11 @@ class DevelopScreen extends React.Component {
                         </View>
                       )}
                       <TouchableOpacity
-                        style={{ alignSelf: "flex-end", marginTop: -25 }}
+                        style={{ alignSelf: "flex-end", marginTop: ViewScale(-25) }}
                       >
                         <Image
                           resizeMode={"contain"}
-                          style={{ width: 14, height: 16 }}
+                          style={{ width: ViewScale(14), height: ViewScale(16) }}
                           source={require("../../image/sharelx.png")}
                         />
                       </TouchableOpacity>
@@ -2633,7 +2633,7 @@ class DevelopScreen extends React.Component {
                 {this.state.Toppic != undefined && (
                   <View
                     style={{
-                      marginBottom: 13,
+                      marginBottom: ViewScale(13),
                       shadowColor: "#eff1f6",
                       shadowOffset: {
                         width: 0,
@@ -2674,7 +2674,7 @@ class DevelopScreen extends React.Component {
                             </Text>
                           </View>
                         </View>
-                        <View style={[Styles.marginLeft10, { bottom: 10 }]}>
+                        <View style={[Styles.marginLeft10, { bottom: ViewScale(10) }]}>
                           <FlatList
                             horizontal={true}
                             keyExtractor={(item, index) => index}
@@ -2695,7 +2695,7 @@ class DevelopScreen extends React.Component {
                 <View
                   style={{
                     flex: 1,
-                    marginHorizontal: 10,
+                    marginHorizontal: ViewScale(10),
                     flexDirection: "row",
                   }}
                 />
@@ -2708,10 +2708,10 @@ class DevelopScreen extends React.Component {
         ) : (
           <View style={{ flex: 1, zIndex: -1 , backgroundColor: 'red'}}>
             <ScrollView>
-              <View style={{ margin: 20 }}>
+              <View style={{ margin: ViewScale(20) }}>
                 <Text
                   style={{
-                    fontSize: 24,
+                    fontSize: ViewScale(24),
                     color: "#40536d",
                     fontFamily: "Kittithada Bold 75",
                   }}
@@ -2724,11 +2724,11 @@ class DevelopScreen extends React.Component {
                     style={{
                       marginTop: 5,
                       width: "100%",
-                      height: 30,
+                      height: ViewScale(30),
                       backgroundColor: "#FFFFFF",
                       borderColor: "#cacaca",
                       borderWidth: 1,
-                      borderRadius: 21.5,
+                      borderRadius: ViewScale(21.5),
                       justifyContent: "center",
                       flexDirection: "row",
                       alignItems: "center",
@@ -2780,9 +2780,9 @@ class DevelopScreen extends React.Component {
                   )}
                 </View>
               ) : (
-                <View style={{ marginTop: 10, alignSelf: "center" }}>
+                <View style={{ marginTop: ViewScale(10), alignSelf: "center" }}>
                   <Text
-                    style={{ fontSize: 20, fontFamily: "Kittithada Bold 75" }}
+                    style={{ fontSize: ViewScale(20), fontFamily: "Kittithada Bold 75" }}
                   >
                     {I18n.t("translate_Nodata")}
                   </Text>
@@ -2798,24 +2798,24 @@ class DevelopScreen extends React.Component {
 
 const pickerSelectStyles2 = StyleSheet.create({
   inputIOS: {
-    fontSize: 23,
+    fontSize: ViewScale(23),
     color: "#73838f",
-    paddingHorizontal: 10,
+    paddingHorizontal: ViewScale(10),
     justifyContent: "center",
-    paddingTop: Platform.OS === "ios" ? 2 : -3,
-    paddingBottom: 5,
-    height: 40,
+    paddingTop: Platform.OS === "ios" ? ViewScale(2) : ViewScale(-3),
+    paddingBottom: ViewScale(5),
+    height: ViewScale(40),
   },
   inputAndroid: {
-    height: 40,
-    fontSize: 23,
+    height: ViewScale(40),
+    fontSize: ViewScale(23),
     color: "#73838f",
     fontWeight: "normal",
     fontFamily: "PSL Kittithada Pro",
     width: "100%",
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    paddingRight: 70,
+    paddingHorizontal: ViewScale(10),
+    paddingVertical: ViewScale(8),
+    paddingRight: ViewScale(70),
   },
 });
 
